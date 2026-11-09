@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><LangVersion>8.0</LangVersion><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings><EnableDefaultCompileItems>false</EnableDefaultCompileItems><DefineConstants>LIFE_GATHER</DefineConstants></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../test-boundaries/ExpeditionBoundary.cs" />
+    <Compile Include="*.cs;.generated/*.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIFarm.cs" Link="AIFarm.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIBed.cs" Link="AIBed.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AISkill.cs" Link="AISkill.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AILife.cs" Link="AILife.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIChestAreas.cs" Link="AIChestAreas.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs" Link="Core/AILifeTree.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIGatheringRules.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs" Link="Core/AIMaintenanceRules.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs" Link="Core/AIPlanProtocol.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs" Link="Core/AIPlanRules.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs" Link="Core/AIGoalKinds.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs" Link="Core/AIOutcomes.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIExpCore.cs" Link="AIExpCore.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIGoalText.cs" Link="AIGoalText.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs" Link="Core/AIInventoryRules.cs" />
+  </ItemGroup>
+</Project>

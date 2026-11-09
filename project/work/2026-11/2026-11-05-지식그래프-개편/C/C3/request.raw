@@ -1,0 +1,6 @@
+method=GET
+url=http://127.0.0.1:18331/v1/health
+started_at=2026-11-05T10:12:15.6578583+09:00
+finished_at=2026-11-05T10:12:15.6941942+09:00
+curl_exit=0
+http_code=200 url_effective=http://127.0.0.1:18331/v1/health

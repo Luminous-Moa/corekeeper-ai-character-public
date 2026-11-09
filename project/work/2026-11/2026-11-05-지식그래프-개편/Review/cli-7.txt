@@ -1,0 +1,6 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs:654-658 sha256=38976c95d61cfcc13cb0da5b9a3bf1e83f9346a37db671706d64da096c0c2fe8
+654:     private static string StatusText()
+655:     {
+656:         bool on = AIWorldSettings.Members(WorldId).Contains(AIAgent.Cur.Id);
+657:         return $"AI {AiName}({AIAgent.Cur.Id}): 이 월드에서 {(on ? "켜짐" : "꺼짐")} · 지금 {StageText()}{(_stage == Stage.Walking ? " · 목표 " + AIBrain.Goal.Text : "")} · 명령: /ai {AIAgent.Cur.Id} on|off|goal …";
+658:     }

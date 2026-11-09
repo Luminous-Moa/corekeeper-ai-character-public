@@ -1,0 +1,4466 @@
+{
+  "node": {
+    "action": "toggle_door",
+    "evidenceContext": {
+      "fixedCodeRoot": "../게임원본-상호작용/code",
+      "priorResearchRoot": "../2026-11",
+      "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated",
+      "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+      "sessionWorkRoot": ".."
+    },
+    "id": "door",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "d4ba501e22e6255eb90dacfa0c9e6fe17a6a89f8a9bda6f7f6e53d313828e9cc",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+      "pointer": "/cases/13"
+    },
+    "roleBindings": [
+      {
+        "conditional": true,
+        "objectId": 4776,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1046/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:655073976693170849",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "6617139259265393313"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 71616,
+            "pointers": [
+              "/1046/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "a0c7f2a5b2fe8568309f34c6066c34ddacb5d13d88c48107eb9ac0e97d5e9068"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7375096053766759073",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "6617139259265393313"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 75797,
+            "pointers": [
+              "/1046/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "416dcd8daa874d381ab92f8240225441c93f9fbe7e6f600caa92b92b59801da9"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4776,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1043/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2979476361202264287",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3506813727344138017"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 53191,
+            "pointers": [
+              "/1043/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "4bcd50f0d826c2842b6ec427b69fa344103a832606a830f9ecb216e3506d2bef"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4642294204218632415",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3506813727344138017"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 61867,
+            "pointers": [
+              "/1043/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "5bdd3829f66bde6f31df931f119bf32545eb69b545be5c1c7d039e3f5a8f3b6d"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4776,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-191096236532324504",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-5828359600107247768"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 4817,
+            "pointers": [
+              "/1044/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "268325e43627a4ea8800bbef4cdf9c8968fe9019750af64927ae73fb1280c984"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1044/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7209359287751563416",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-5828359600107247768"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 32013,
+            "pointers": [
+              "/1044/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "b78600e0d6059dad39e5205a5997282898ac72b17778406230cc94966f96bbcb"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4770,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4873693111578434148",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2306008987947591068"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "3405169035074561436"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-7365954512055081572"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "472039540915987868"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-4217729218450463332"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 20052,
+            "pointers": [
+              "/1024/links/0/matches/0/components/20"
+            ],
+            "rawByteSha256": "e3f029c9203e35b38456319993ad0e015a557a24d73d92f6b044b9a239563072"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5752208273858733026",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2908067726795562014"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 24610,
+            "pointers": [
+              "/1024/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "841b78feccf5d2bbeb39b80f6eb9d380ae9b239bfcdc148eb01c076c00b84298"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5832886624431332382",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2908067726795562014"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 67941,
+            "pointers": [
+              "/1024/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "0e1387a9faac1c5c67986dc0cfaca47c76fbe0a2a386f9ea6446d304d5e90c5b"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2215303966424015842",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4774,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4217397684564792603",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5283897955321440997"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 16642,
+            "pointers": [
+              "/1035/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "6548bb0a51cf0e845566dcc564bd2c2e483b7134e51bfde7d38a9df98b145782"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1035/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2727342068014574309",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5283897955321440997"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 51864,
+            "pointers": [
+              "/1035/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "39b98d4fab1140570abda80a939168ae2b5c6ac337ff84bd48f73109dc28f65c"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2524690453239067",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4774,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1037/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1734205382027454921",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-749080382271968823"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 46799,
+            "pointers": [
+              "/1037/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "89b1d5538cf1107d40c2f32098ab231813c0d7f5840272e9dae11cfa615c7418"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3263790576590203337",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-749080382271968823"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 54679,
+            "pointers": [
+              "/1037/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "a77e31ffde20027a6d85b989b4351333029ed1fc054ff7c0eb54ad75045cbe9c"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4501222490903795255",
+        "variation": 2
+      },
+      {
+        "conditional": true,
+        "objectId": 4771,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1029/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:484880136052684002",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1198573747837455134"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 62978,
+            "pointers": [
+              "/1029/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "bc65e0eea8a2a2c9144a45f4ad79ed20f686458dd3f8a4d101b51cde85768083"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7845901695460652258",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1198573747837455134"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 78291,
+            "pointers": [
+              "/1029/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "be4aa69cf41cbea6c59af29587de4176485d98704929e6aa288516446dc0ace0"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4937970075249920798",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4770,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1240324977541426871",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-278843477809934007"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 1267,
+            "pointers": [
+              "/1021/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "d39bae609c67c52607e972645efe23cbc9712a906fb3259ba0e9ae5b3570ce8d"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4873693111578434148",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2306008987947591068"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "3405169035074561436"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-7365954512055081572"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "472039540915987868"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-4217729218450463332"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 20052,
+            "pointers": [
+              "/1021/links/0/matches/0/components/20"
+            ],
+            "rawByteSha256": "e3f029c9203e35b38456319993ad0e015a557a24d73d92f6b044b9a239563072"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:758313264860320073",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-278843477809934007"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 76880,
+            "pointers": [
+              "/1021/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "4f558b7c05a6aa4a507620323acac4d905d89947b62bf96d3d944e32615104f4"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5007901266009501367",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4771,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1026/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8715232567761087188",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1705967341524200148"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 39905,
+            "pointers": [
+              "/1026/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "aad238c71de96eb669f64ba6116d44217a4baef9ffad5e29d180cd670f5af3dc"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4869840413253195052",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1705967341524200148"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 63073,
+            "pointers": [
+              "/1026/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "c7efce4809f30e92c587be0eaa278a9cc75c29da2457de201e214737eaa5f2e8"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5020078570993396436",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4775,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1040/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8616797709808066168",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "1961678390167052680"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 39360,
+            "pointers": [
+              "/1040/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "d51efbe130618c4b17cb65d86293a04a0a26454512ed778be34100994e8cc65c"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2006580599146389896",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "1961678390167052680"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 48225,
+            "pointers": [
+              "/1040/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "3e300fa4d7e1ea21c197e9542274b93346125c4afee34709dbfe829c5f2bbe7f"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5571680734746599032",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4771,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1028/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5530804814141975747",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4494040892098483005"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 66424,
+            "pointers": [
+              "/1028/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "7d208f14d9e315ee7d45c3763c3477c0c75f5d23b2e7ea3bf78bcb417fc0ecc5"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7325142414130998467",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4494040892098483005"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 75579,
+            "pointers": [
+              "/1028/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "a39dbcbf0ffb5024d342d4c79c4fbd575160a37e345a2a06db395603930b8ba2"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5595960035363197757",
+        "variation": 2
+      },
+      {
+        "conditional": true,
+        "objectId": 4775,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1079632110213068132",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1331569624411469156"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 420,
+            "pointers": [
+              "/1041/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "9f2ae3f7e96cb0797598dad51539a40a33dfc4447a9b4e04ba4d14bd8486c662"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1041/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4939899676743174812",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1331569624411469156"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 63414,
+            "pointers": [
+              "/1041/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "8c7d03b46d036b12bd50e865f9b6364cc240662ac1b30ab624bffad415cdbee6"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6494215759462462820",
+        "variation": 2
+      },
+      {
+        "conditional": true,
+        "objectId": 4774,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1038/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8749617865883185676",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1079206951941108236"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 40078,
+            "pointers": [
+              "/1038/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "72dea191860c3c1ae8b03dd4f747ec5c848fbc5ac827c78a2226fab523201951"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7572002212804300276",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1079206951941108236"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 76817,
+            "pointers": [
+              "/1038/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "a9cd38e43416f02cc1fe059dd8f50533456076f613a6cbb729baa14b4ad0512b"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6839364857902395916",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4772,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1031/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7741178330565967897",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6143664953462816793"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 34778,
+            "pointers": [
+              "/1031/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "1357e1585572dcddc843c60952050b42ef8c71604164bde7fb25b562fdaf5e79"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5932447919030337511",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6143664953462816793"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 68418,
+            "pointers": [
+              "/1031/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "f23d9feb169e8131073a2ab7a9bc5c7ac64cbaf188d197b44fda39009381f902"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7489877281178189849",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4803,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3492474201136667776",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3248023407145032832"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 12958,
+            "pointers": [
+              "/1059/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "b6c423ffd87402ee4949ca4fda83eebbe24ea2490dfdb87fee6ce90c976db706"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1059/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6247808926750448768",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-3248023407145032832"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 27091,
+            "pointers": [
+              "/1059/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "2b390b4d6b30ee9a519461c631425f6d60b8ec02e0202932889882911dac7f8d"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7600185308003671168",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4771,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1027/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7497418563192913998",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4684869311979552690"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 76408,
+            "pointers": [
+              "/1027/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "787d62cfd9e6d567aa05134d813c2ae10e164f47dd06f459d0c85bc43df644e7"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8810823070030397518",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4684869311979552690"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 83224,
+            "pointers": [
+              "/1027/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "ed43f2a0859f1f73972e93096f0695e0c9e2796c750657f82ad17787d7386c92"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2459589687045816398",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4772,
+        "origin": [
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1654444360737650210",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "851912721853352414"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 3418,
+            "pointers": [
+              "/1033/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "4f049a90b65670297cf7aa1f3cb5ced9716fd84b12b4629f9a7a7197e37821ff"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1033/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5753215180384859682",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "851912721853352414"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 24620,
+            "pointers": [
+              "/1033/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "ac8c13691c3630c685c9e91f98110baca531c382f408321628f4ffb78c5f9caf"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4337170394235963870",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4803,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3120035095259202320",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6405416023072260880"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 11082,
+            "pointers": [
+              "/1061/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "b9611986807c7d10555c484d527c558178986fb21d63e937031d0b484b5f2a79"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1061/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2358156233144188144",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6405416023072260880"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 50014,
+            "pointers": [
+              "/1061/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "814313f469ddbac97e1f330e27c4000d74a9b495b90f50dc75bac4a45eddee69"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5380959825951833328",
+        "variation": 2
+      },
+      {
+        "conditional": true,
+        "objectId": 4774,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1036/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7897504600760157344",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "4855868602932362080"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 35588,
+            "pointers": [
+              "/1036/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "030d134c4fbbd1b2408e23ed161a1b982074c5940e95097702811b0c335ff568"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7674327693056965472",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "4855868602932362080"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 77360,
+            "pointers": [
+              "/1036/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "54c9575a3e240a6930cd781520bb98c37a519e60d7a83e726eab4c17b63f5697"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5762387272797354848",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4775,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2727481412442573339",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2144978844964697573"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 9085,
+            "pointers": [
+              "/1042/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "7c7db3debf93631dcdc7d649b871c91cbabe16fc3b9f4933a311cab3585adcc0"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1042/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7719249694046276123",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2144978844964697573"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 34640,
+            "pointers": [
+              "/1042/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "64e6f1594c858a953f67ec180ef6ce7824306d9cc26d889a224b315d7fea16cb"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5887550651480487397",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4772,
+        "origin": [
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2942991925150467899",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7186003021248317243"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 10167,
+            "pointers": [
+              "/1032/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "87735e6a5cfd22dcf8d7d13edcee4ac771114325af16447ba059875e40f91401"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1032/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7859778690108737339",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7186003021248317243"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 35388,
+            "pointers": [
+              "/1032/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "c3cc06d90ece169fd98b48e709a7bd04506285ecbb2a45706c9a9e15a04ed0bd"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6424560797989025989",
+        "variation": 2
+      },
+      {
+        "conditional": true,
+        "objectId": 4775,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1039/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7923927425483404369",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3695805630727064495"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 35740,
+            "pointers": [
+              "/1039/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "a9c3fc9c6106e18646285d639e73baffe35fd67e7a17a8db859670512fe74016"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:249192661806549935",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3695805630727064495"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 50688,
+            "pointers": [
+              "/1039/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "7118df7165cab96fd8444eb8b7f731d15401c618892355eef5b6603da57b1d25"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6970437196385199",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4803,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1062/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3094939256217904764",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-412286074387716484"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 53805,
+            "pointers": [
+              "/1062/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "399cf998314498ea8c509817a165611c7545f5a1110ad5623843245f8d930db6"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6186576460553365116",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-412286074387716484"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 69800,
+            "pointers": [
+              "/1062/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "227617b547ad399c97bbad889e6c320946d830dc1ddff5627b95e3e74f5aad07"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7122170361253635708",
+        "variation": 3
+      },
+      {
+        "conditional": true,
+        "objectId": 4772,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1030/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1698540034595915099",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-96905997416954533"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 46621,
+            "pointers": [
+              "/1030/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "2e4de9798a9c89b9c39d543711dc18b440add4bd2ad349e04f4929b62d39a374"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3875978714498631003",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-96905997416954533"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 57903,
+            "pointers": [
+              "/1030/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "18b33f343d493196a230c977a41e3835e021087f1f7c88f830cbf511afeac50f"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7450584677095146843",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 4770,
+        "origin": [
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2510133542798389231",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2348759034486091759"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 7931,
+            "pointers": [
+              "/1022/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "96c64734e9f3f146edd574aa1d2957a30ee55e243bac3e5275f668734fb55b23"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4873693111578434148",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2306008987947591068"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "3405169035074561436"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-7365954512055081572"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "472039540915987868"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-4217729218450463332"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 20052,
+            "pointers": [
+              "/1022/links/0/matches/0/components/20"
+            ],
+            "rawByteSha256": "e3f029c9203e35b38456319993ad0e015a557a24d73d92f6b044b9a239563072"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8300605837933441007",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2348759034486091759"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 37723,
+            "pointers": [
+              "/1022/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "531fe917b98852b62ed1783ced97d4cdfbf385a9a59085ddccb756f9047e5539"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7982685884360593425",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4776,
+        "origin": [
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4599916732285346880",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2561753993102007232"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 18607,
+            "pointers": [
+              "/1045/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "1a7130d0c1756e0700eb55c5fa5128a21d5cf4f7468938be2bdc8f6e19ad9c38"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1045/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2867441368064957376",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2561753993102007232"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 52600,
+            "pointers": [
+              "/1045/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "de2dedac5be9537a7a3fc84989b42fbf54ec2d0893b8ffc4d247ab782d7c7e9d"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816",
+        "variation": 2
+      },
+      {
+        "conditional": true,
+        "objectId": 4803,
+        "origin": [
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4722019689450070835",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2370208563829564211"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "8052444602874633421"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "2662023106627411149"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "7292723709045677261"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-3078388605308592947"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 19263,
+            "pointers": [
+              "/1060/links/0/matches/0/components/24"
+            ],
+            "rawByteSha256": "c3f41ae7979004134e6e637660a68f282248a04d61b0b991c400947ae15291b4"
+          },
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4962688282726667716",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "1895765444278785476"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 63534,
+            "pointers": [
+              "/1060/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "cf07f805d4491f8b5456378eb8e99d52253e1003e892362406538c56941d8225"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7157193002488272324",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "1895765444278785476"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 74718,
+            "pointers": [
+              "/1060/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "194ed200e01c57a424cddbbd76b89f6bba799c77d55e42fd17777f62a0b5e880"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8463478218944124356",
+        "variation": 1
+      },
+      {
+        "conditional": true,
+        "objectId": 4770,
+        "origin": [
+          {
+            "class": "ChangeVariationTriggerAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-449365485560155399",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8236657254439079175"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1993565397469075137"
+              }
+            },
+            "line": 18086,
+            "pointers": [
+              "/1023/links/1/matches/0/components/19"
+            ],
+            "rawByteSha256": "8ff0d75958015c350fc98dce9535d1c3f75274530abc7cc2f80887b26c8c578f"
+          },
+          {
+            "class": "InteractableObject",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4873693111578434148",
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 0,
+              "ignorePlayerDirectionRadiusPercentage": 1.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2306008987947591068"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "radius": 1.0,
+              "requireLineOfSight": 0,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [],
+                  "optionalSpriteObjectOutlines": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "3405169035074561436"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-7365954512055081572"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "472039540915987868"
+                    },
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-4217729218450463332"
+                    }
+                  ],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "line": 20052,
+            "pointers": [
+              "/1023/links/0/matches/0/components/20"
+            ],
+            "rawByteSha256": "e3f029c9203e35b38456319993ad0e015a557a24d73d92f6b044b9a239563072"
+          },
+          {
+            "class": "DoorAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5012169756603206919",
+            "data": {
+              "changesColliderByVariation": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8236657254439079175"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6766395227410021026"
+              }
+            },
+            "line": 20767,
+            "pointers": [
+              "/1023/links/1/matches/0/components/16"
+            ],
+            "rawByteSha256": "64532559a4051d219f5faf0bfecf664c7ed4b5bc30356e026efbed0d4896fb60"
+          }
+        ],
+        "role": "conditional_interactable_door",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8986054333669421817",
+        "variation": 2
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "28 exact authored sources and variations",
+    "status": "reused_pass_pending_review"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "door/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "0c6fbdb666096b13b797b9678a7d79abdacb6aaf8df757f414383d41b75390d7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/conditions"
+      },
+      "value": [
+        "active ChangeVariationTriggerAuthoring; valid selected input, trigger buffer and enabled Simulate",
+        "runtime database current variation target and required collider components"
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "assetEvidence",
+      "id": "door/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "0a43d23fef565acb572e0596be2f30913230b5a4499e9c0f47d918ad8d68ef8f",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/assetEvidence"
+      },
+      "value": "coverage.json"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "door/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "3010576f614ab9648209700f84cf3297834e4a42bc66e1807d6f5e9cd6bd435e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/codeEvidence"
+      },
+      "value": "2026-11-07-행동전체추출/review/A-review.md and pinned code"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "relationLinks",
+      "id": "door/evidence/relationLinks",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "1e579947f95b64d058146e54b306fd14316c36cd8dc0e44b2e1b0dc92b2799ac",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/relationLinks"
+      },
+      "value": "role-links.json"
+    },
+    {
+      "relation": "has_failure",
+      "field": "negativeCases",
+      "id": "door/failure/negativeCases",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "01c23c86a465e63bdb8c5c39dc03a82d218b5c89b54f9aeb36d94ab94f124636",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/negativeCases"
+      },
+      "value": [
+        "no selection, no use buffer or disabled Simulate",
+        "runtime prefab selection, missing component or collider conditions differ"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "entry",
+      "id": "door/flow/entry",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "e56804510f0df2e17b45702d4cc0fa30282311f9bbb82163ee39c38eec6576a5",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/entry"
+      },
+      "value": "interactable selection/use buffer -> TriggerSetVariationSystem"
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "door/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "88ded570770b6383a0b1481f43817a90681463ab9984c6bf82e2031bde538b3b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/transitions"
+      },
+      "value": [
+        {
+          "from": "trigger",
+          "refs": [
+            "Interaction.CoreKeeper/Interaction/TriggerSetVariationSystem.cs:145-157"
+          ],
+          "to": "ObjectDataCD.variation written to current DB variationToToggleTo"
+        },
+        {
+          "from": "variation change",
+          "refs": [
+            "Pug.Other/ColliderVariationSystem.cs:144-151",
+            "Pug.Other/PathFindSystem.cs:1404-1444"
+          ],
+          "to": "collider lookup writes prefab collider, conditionally pathfinding uses state"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "outcomes",
+      "id": "door/result/outcomes",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "6cf46dbc76883d1dd35b824f545e3f378119fa1e180f8db64dedc73b755dc7e9",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/outcomes"
+      },
+      "value": [
+        "actual ECS variation and conditional collider writes; target source candidates preserved per claim",
+        "non-electric door pathfinding treats variations 1/3 as open"
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "door/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "bdf5eef7730f72a9734a95a1740f2221da6b7ac3e34b0cab201dfa58a16d799e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/13/boundaries"
+      },
+      "value": [
+        "actual bake, prefab choice, occupancy and passage unobserved; same ID/variation sources not collapsed"
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:B-world-tools122",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:0",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:1",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:10",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:11",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:15",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:16",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:18",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:19",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:2",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:20",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:21",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:22",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:23",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:24",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:25",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:26",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:27",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:29",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:3",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:30",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:31",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:32",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:33",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:34",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:35",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:36",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:39",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:40",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:41",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:45",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:46",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:48",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:49",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:51",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:52",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:53",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:54",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:55",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:56",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:59",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:6",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:60",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:61",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:62",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:63",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:64",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:65",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:66",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:68",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:69",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:7",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:71",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:72",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:74",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:75",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:8",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:9",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/0",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/1",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/10",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/11",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/12",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/13",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/14",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/15",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/16",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/17",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/18",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/19",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/2",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/20",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/21",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/22",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/23",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/24",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/25",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/26",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/27",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/3",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/4",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/5",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/6",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/7",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/8",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "door/role/9",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2215303966424015842#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2524690453239067#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4501222490903795255#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4937970075249920798#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5007901266009501367#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5020078570993396436#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5571680734746599032#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5595960035363197757#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6494215759462462820#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6839364857902395916#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7489877281178189849#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7600185308003671168#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:2459589687045816398#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:4337170394235963870#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5380959825951833328#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5762387272797354848#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5887550651480487397#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6424560797989025989#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6970437196385199#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7122170361253635708#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7450584677095146843#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7982685884360593425#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8463478218944124356#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8986054333669421817#toggle_door",
+      "kind": "claim",
+      "action": "toggle_door"
+    }
+  ],
+  "incoming": [
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2215303966424015842#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2524690453239067#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4501222490903795255#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4937970075249920798#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5007901266009501367#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5020078570993396436#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5571680734746599032#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5595960035363197757#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6494215759462462820#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6839364857902395916#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7489877281178189849#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7600185308003671168#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:2459589687045816398#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:4337170394235963870#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5380959825951833328#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5762387272797354848#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5887550651480487397#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6424560797989025989#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6970437196385199#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7122170361253635708#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7450584677095146843#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7982685884360593425#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8463478218944124356#toggle_door"
+    ],
+    [
+      "has_completion",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8986054333669421817#toggle_door"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-2215303966424015842"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-2215303966424015842"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-2524690453239067"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-2524690453239067"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-4501222490903795255"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-4501222490903795255"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-4937970075249920798"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-4937970075249920798"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5007901266009501367"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5007901266009501367"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5020078570993396436"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5020078570993396436"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5571680734746599032"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5571680734746599032"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5595960035363197757"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-5595960035363197757"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-6494215759462462820"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-6494215759462462820"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-6839364857902395916"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-6839364857902395916"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7489877281178189849"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7489877281178189849"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7600185308003671168"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7600185308003671168"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8467324617677133197"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2459589687045816398"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2459589687045816398"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4337170394235963870"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4337170394235963870"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5380959825951833328"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5380959825951833328"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5762387272797354848"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5762387272797354848"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5887550651480487397"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5887550651480487397"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:6424560797989025989"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:6424560797989025989"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:6970437196385199"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:6970437196385199"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:7122170361253635708"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:7122170361253635708"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:7450584677095146843"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:7450584677095146843"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:7982685884360593425"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:7982685884360593425"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8463478218944124356"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8463478218944124356"
+    ],
+    [
+      "conditional_interactable_door",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8986054333669421817"
+    ],
+    [
+      "conditional_target_variation_candidate",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8986054333669421817"
+    ]
+  ]
+}

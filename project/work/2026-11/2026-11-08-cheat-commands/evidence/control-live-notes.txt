@@ -1,0 +1,234 @@
+16:11:17 Gemini walking
+16:11:23 sent /ai gemini hold on
+16:11:24 (3.1s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hold on, filtered - Luminous: /ai gemini hold on.
+[AIPlayerSpike] t=120.6 chat command from host: '/ai gemini hold on'
+[AIPlayerSpike] t=120.6 @Gemini SKILL 기다리기 CANCELLED after 1.4s: reason='/ai hold' start=(0.00,0.15) end=(0.00,0.15) facts=[]
+== C1 hold: baseline after hold on
+16:11:39 SEND=7 REPORT=0 lastT=t=128.9
+16:11:44 sent /ai gemini spawn SlimeBlob ~2 ~0
+16:11:44 (4.3s) [AIPlayerSpike] t=140.8 @Gemini chat reply: [시험용] SlimeBlob 생성 (2,0)
+MESSAGE: [시험용] SlimeBlob 생성 (2,0)
+16:11:59 SEND=7 REPORT=0 lastT=t=140.8
+16:12:31 sent /ai gemini hostto ai
+16:12:31 (3.3s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto ai, filtered - Luminous: /ai gemini hostto ai.
+[AIPlayerSpike] t=188.1 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=188.1 @Gemini TEST-ONLY hostto: host teleport queued from (33.6,-11.0) to (0.0,2.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:12:43 sent /ai gemini spawn AggressiveSlimeBlob ~1 ~0
+16:12:44 (5.2s) [AIPlayerSpike] t=200.5 @Gemini chat reply: [시험용] AggressiveSlimeBlob 생성 (1,0)
+MESSAGE: [시험용] AggressiveSlimeBlob 생성 (1,0)
+16:12:59 sent /ai gemini hp 100
+16:12:59 (3.0s) [AIPlayerSpike] t=216.3 @Gemini chat reply: [시험용] Gemini 체력 102 > 100
+MESSAGE: [시험용] Gemini 체력 102 > 100
+16:12:59 SEND=7 REPORT=0 lastT=t=216.3
+== hold + tp 11 -5
+16:13:14 sent /ai gemini tp 11 -5
+16:13:15 (3.1s) [AIPlayerSpike] t=231.6 @Gemini chat reply: [시험용] Gemini 순간이동 (11,-5) > (11,-5), 약 6초
+MESSAGE: [시험용] Gemini 순간이동 (11,-5) > (11,-5), 약 6초
+16:13:24 SEND=7 REPORT=0 lastT=t=231.6
+16:13:35 sent /ai gemini hostto ai
+16:13:35 (3.2s) [AIPlayerSpike] t=252.1 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=252.1 @Gemini TEST-ONLY hostto: host teleport queued from (0.0,-0.1) to (11.0,-3.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:13:47 sent /ai gemini spawn MushroomEnemy ~1 ~0
+16:13:47 (4.9s) [AIPlayerSpike] t=264.2 @Gemini chat reply: [시험용] MushroomEnemy 생성 (12,-5)
+MESSAGE: [시험용] MushroomEnemy 생성 (12,-5)
+16:13:52 sent /ai gemini spawn AggressiveSlimeBlob ~0 ~1
+16:13:52 (5.1s) [AIPlayerSpike] t=269.5 @Gemini chat reply: [시험용] AggressiveSlimeBlob 생성 (11,-4)
+MESSAGE: [시험용] AggressiveSlimeBlob 생성 (11,-4)
+16:14:11 sent /ai gemini hp 100
+16:14:11 (3.0s) [AIPlayerSpike] t=288.3 @Gemini chat reply: [시험용] Gemini 체력 100 > 100
+MESSAGE: [시험용] Gemini 체력 100 > 100
+16:14:11 SEND=7 REPORT=0 lastT=t=288.3
+16:14:24 sent /ai gemini hostto -8 5
+16:14:24 (3.5s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto -8 5, filtered - Luminous: /ai gemini hostto -8 5.
+[AIPlayerSpike] t=301.2 chat command from host: '/ai gemini hostto -8 5'
+[AIPlayerSpike] t=301.2 @Gemini TEST-ONLY hostto: host teleport queued from (11.0,-3.0) to (-8.0,5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:14:48 sent /ai gemini hp 100
+16:14:48 (3.8s) [AIPlayerSpike] t=325.2 @Gemini chat reply: [시험용] Gemini 체력 100 > 100
+MESSAGE: [시험용] Gemini 체력 100 > 100
+16:14:51 sent /ai gemini where
+16:14:51 (2.9s) [AIPlayerSpike] t=328.4 @Gemini chat reply: [시험용] 서버 전체 적 266: AggressiveSlimeBlob (10.9,-4.9) d=0.1 hp=150
+MESSAGE: [시험용] 서버 전체 적 266: AggressiveSlimeBlob (10.9,-4.9) d=0.1 hp=150
+16:14:51 SEND=7 REPORT=0 lastT=t=328.4
+16:15:06 sent /ai gemini spawn MushroomBrute ~1 ~1
+16:15:06 (5.2s) [AIPlayerSpike] t=343.5 @Gemini chat reply: [시험용] MushroomBrute 생성 (12,-4)
+MESSAGE: [시험용] MushroomBrute 생성 (12,-4)
+16:15:30 sent /ai gemini hp 100
+16:15:30 (3.0s) [AIPlayerSpike] t=366.7 @Gemini chat reply: [시험용] Gemini 체력 100 > 100
+MESSAGE: [시험용] Gemini 체력 100 > 100
+16:15:30 SEND=7 REPORT=0 lastT=t=366.7
+16:15:40 sent /ai gemini hostto 11 3
+16:15:40 (3.5s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 11 3, filtered - Luminous: /ai gemini hostto 11 3.
+[AIPlayerSpike] t=377.2 chat command from host: '/ai gemini hostto 11 3'
+[AIPlayerSpike] t=377.2 @Gemini TEST-ONLY hostto: host teleport queued from (-8.0,4.8) to (11.0,3.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:16:18 sent /ai gemini hostto -20 20
+16:16:18 (3.6s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto -20 20, filtered - Luminous: /ai gemini hostto -20 20.
+[AIPlayerSpike] t=415.1 chat command from host: '/ai gemini hostto -20 20'
+[AIPlayerSpike] t=415.1 @Gemini TEST-ONLY hostto: host teleport queued from (11.0,3.0) to (-20.0,20.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:16:22 NOT SENT: chat box did not open
+16:16:30 (11.5s) TIMEOUT \[시험용\]
+16:16:35 sent /ai gemini spawn MushroomEnemy ~-1 ~0
+16:16:35 (4.7s) [AIPlayerSpike] t=431.8 @Gemini chat reply: [시험용] MushroomEnemy 생성 (10,-5)
+MESSAGE: [시험용] MushroomEnemy 생성 (10,-5)
+16:17:08 sent /ai gemini hp 100
+16:17:08 (3.0s) [AIPlayerSpike] t=465.1 @Gemini chat reply: [시험용] Gemini 체력 100 > 100
+MESSAGE: [시험용] Gemini 체력 100 > 100
+16:17:08 SEND=7 REPORT=0 lastT=t=465.1
+== hold: mention
+16:17:22 sent @Gemini hello, can you hear me
+16:17:22 (4.1s) [AIPlayerSpike] t=479.2 MENTION from host to [gemini]: '@Gemini hello, can you hear me'
+[AIPlayerSpike] t=479.2 @Gemini PLANNER: report 'host_said' held (/ai hold)
+16:17:30 SEND=7 REPORT=0 lastT=t=479.2
+== hold: /ai goal
+16:17:34 sent /ai gemini goal dirt 5
+16:17:34 (3.4s) [AIPlayerSpike] t=491.1 @Gemini GOAL set rev=2 source=host: 흙벽 블록(WallDirtBlock) 5개 모으기 (start count 0)
+16:17:44 SEND=7 REPORT=0 lastT=t=491.1
+== C2 hold off
+16:18:01 SEND=7 REPORT=0 lastT=t=491.1
+16:18:04 sent /ai gemini hold off
+16:18:04 (3.2s) [AIPlayerSpike] t=521.5 @Gemini TEST-ONLY hold OFF: Gemini: deciding again from the current facts (goal '흙벽 블록(WallDirtBlock) 5개 모으기')
+16:18:25 SEND=16 REPORT=1 lastT=t=534.9
+16:18:40 sent /ai gemini hold on
+16:18:40 (3.1s) [AIPlayerSpike] t=557.0 @Gemini TEST-ONLY hold ON: Gemini: no model calls, no automatic actions; running skill stopped, request in flight dropped (goal kept: '호스트 따라가기')
+16:18:40 SEND=34 REPORT=3 lastT=t=557.0
+== C3 tp (hold off)
+16:18:57 sent /ai gemini hold off
+16:18:57 (3.2s) [AIPlayerSpike] t=573.7 @Gemini TEST-ONLY hold OFF: Gemini: deciding again from the current facts (goal '호스트 따라가기')
+16:19:00 sent /ai gemini tp 11 3
+16:19:00 (3.0s) [AIPlayerSpike] t=577.0 @Gemini TEST-ONLY tp: Gemini from (8,-11) to (11,3) for (11,3); skill stopped, choices dropped, decisions wait for the arrival
+16:19:17 sent /ai gemini hold on
+16:19:17 (3.1s) [AIPlayerSpike] t=594.3 @Gemini TEST-ONLY hold ON: Gemini: no model calls, no automatic actions; running skill stopped, request in flight dropped (goal kept: '없음')
+16:19:17 SEND=45 REPORT=5 lastT=t=594.3
+== C3 tp host (hold off)
+16:19:32 sent /ai gemini hostto 11 -5
+16:19:32 (3.5s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 11 -5, filtered - Luminous: /ai gemini hostto 11 -5.
+[AIPlayerSpike] t=609.0 chat command from host: '/ai gemini hostto 11 -5'
+[AIPlayerSpike] t=609.0 @Gemini TEST-ONLY hostto: host teleport queued from (-20.0,20.0) to (11.0,-5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:19:42 sent /ai gemini hold off
+16:19:42 (3.2s) [AIPlayerSpike] t=619.4 @Gemini TEST-ONLY hold OFF: Gemini: deciding again from the current facts (goal '없음')
+16:19:46 sent /ai gemini tp host
+16:19:46 (3.2s) [AIPlayerSpike] t=622.8 @Gemini TEST-ONLY tp: Gemini from (23,8) to (10,-6) for 호스트 옆; skill stopped, choices dropped, decisions wait for the arrival
+16:20:01 sent /ai gemini hold on
+16:20:01 (3.1s) [AIPlayerSpike] t=638.1 @Gemini TEST-ONLY hold ON: Gemini: no model calls, no automatic actions; running skill stopped, request in flight dropped (goal kept: '없음')
+16:20:01 SEND=64 REPORT=7 lastT=t=638.1
+== C3 tp into wall block (held)
+16:20:18 sent /ai gemini placetilearea WallDirtBlock 20 -14 28 -6
+16:20:18 (5.9s) [AIPlayerSpike] t=655.5 @Gemini chat reply: [시험용] Dirt wall 설치 (20,-14)~(28,-6) 81/81칸
+MESSAGE: [시험용] Dirt wall 설치 (20,-14)~(28,-6) 81/81칸
+16:20:22 NOT SENT: chat box did not open
+16:20:30 (11.2s) TIMEOUT \[시험용\]
+16:20:42 sent /ai gemini hostto ai
+16:20:42 (2.7s) [AIPlayerSpike] t=678.8 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=678.8 @Gemini TEST-ONLY hostto: host teleport queued from (11.0,-5.0) to (3.0,-1.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:20:50 SEND=64 REPORT=7 lastT=t=678.8
+16:21:00 sent /ai gemini tp 24 -10
+16:21:01 (3.2s) [AIPlayerSpike] t=697.5 @Gemini chat reply: [시험용] Gemini 순간이동 (24,-10) > (24,-10) (걸을 수 있는 칸 확인 못함), 약 6초
+MESSAGE: [시험용] Gemini 순간이동 (24,-10) > (24,-10) (걸을 수 있는 칸 확인 못함), 약 6초
+16:21:13 sent /ai gemini hostto ai
+16:21:13 (3.3s) [AIPlayerSpike] t=710.0 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=710.0 @Gemini TEST-ONLY hostto: host teleport queued from (3.0,-1.0) to (24.0,-10.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:21:21 SEND=64 REPORT=7 lastT=t=710.0
+== hold off inside wall
+16:21:32 sent /ai gemini hold off
+16:21:33 (3.2s) [AIPlayerSpike] t=729.6 @Gemini TEST-ONLY hold OFF: Gemini: deciding again from the current facts (goal '없음')
+16:21:46 sent /ai gemini hold on
+16:21:46 (3.2s) [AIPlayerSpike] t=743.0 @Gemini TEST-ONLY hold ON: Gemini: no model calls, no automatic actions; running skill stopped, request in flight dropped (goal kept: '없음')
+16:21:46 SEND=67 REPORT=8 lastT=t=743.0
+== C4 F2 item spawn (held)
+16:22:05 sent /ai gemini inv
+16:22:05 (2.8s) [AIPlayerSpike] t=761.8 @Gemini chat reply: [Gemini] 가방: 0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx63, 7:WoodMiningPickx50, 8:BombPepperSeedx1, 9:WoodMiningPickx0, 10:GlowingTulipSeedx2, 11:Slimex1, 12:WallDirtBlockx5, 13:HeartBerrySeedx1 · 든 것 6번 칸 WoodSword · 앞 40칸 중 빈 칸 26
+16:22:08 sent /ai gemini hostto ai
+16:22:08 (3.3s) [AIPlayerSpike] t=765.3 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=765.3 @Gemini TEST-ONLY hostto: host teleport queued from (0.0,-0.1) to (0.0,2.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:22:19 sent /ai gemini spawn Wood ~3 ~0
+16:22:20 (4.1s) [AIPlayerSpike] t=776.6 @Gemini chat reply: [시험용] Wood 아이템 떨굼 (3,0)
+MESSAGE: [시험용] Wood 아이템 떨굼 (3,0)
+16:22:23 sent /ai gemini spawn Wood ~1 ~0
+16:22:24 (3.9s) [AIPlayerSpike] t=780.6 @Gemini chat reply: [시험용] Wood 아이템 떨굼 (1,0)
+MESSAGE: [시험용] Wood 아이템 떨굼 (1,0)
+16:22:32 sent /ai gemini inv
+16:22:33 (2.8s) [AIPlayerSpike] t=789.6 @Gemini chat reply: [Gemini] 가방: 0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx63, 7:WoodMiningPickx50, 8:BombPepperSeedx1, 9:WoodMiningPickx0, 10:GlowingTulipSeedx2, 11:Slimex1, 12:WallDirtBlockx5, 13:HeartBerrySeedx1, 14:Woodx1 · 든 것 6번 칸 WoodSword · 앞 40칸 중 빈 칸 25
+16:22:35 sent /ai gemini look
+16:22:36 (2.8s) [AIPlayerSpike] t=792.6 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (0.0,-0.1) · 호스트 (0.0,1.7) · 벽 73(광석 0) · 적 0 · 아이템 2 · 물체 68
+MESSAGE: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (0.0,-0.1) · 호스트 (0.0,1.7) · 벽 73(광석 0) · 적 0 · 아이템 2 · 물체 68
+16:22:36 SEND=67 REPORT=8 lastT=t=
+== C1 retry: damage/down while held (far from core)
+16:22:59 sent /ai gemini tp 30 -20
+16:22:59 (3.3s) [AIPlayerSpike] t=816.4 @Gemini chat reply: [시험용] Gemini 순간이동 (30,-20) > (30,-20), 약 6초
+MESSAGE: [시험용] Gemini 순간이동 (30,-20) > (30,-20), 약 6초
+16:23:12 sent /ai gemini hostto 30 -32
+16:23:12 (3.5s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 30 -32, filtered - Luminous: /ai gemini hostto 30 -32.
+[AIPlayerSpike] t=829.2 chat command from host: '/ai gemini hostto 30 -32'
+[AIPlayerSpike] t=829.2 @Gemini TEST-ONLY hostto: host teleport queued from (0.0,1.7) to (30.0,-32.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:23:16 NOT SENT: chat box did not open
+16:23:24 (11.3s) TIMEOUT \[시험용\]
+16:23:27 NOT SENT: chat box did not open
+16:23:35 (11.3s) TIMEOUT \[시험용\]
+16:23:40 sent /ai gemini spawn AggressiveSlimeBlob ~-1 ~0
+16:23:41 (5.2s) [AIPlayerSpike] t=857.5 @Gemini chat reply: [시험용] AggressiveSlimeBlob 생성 (29,-20)
+MESSAGE: [시험용] AggressiveSlimeBlob 생성 (29,-20)
+16:23:45 sent /ai gemini spawn MushroomEnemy ~0 ~1
+16:23:45 (4.6s) [AIPlayerSpike] t=862.3 @Gemini chat reply: [시험용] MushroomEnemy 생성 (30,-19)
+MESSAGE: [시험용] MushroomEnemy 생성 (30,-19)
+16:24:18 sent /ai gemini hp 5
+16:24:18 (2.9s) [AIPlayerSpike] t=895.4 @Gemini chat reply: [시험용] Gemini 체력 102 > 5
+MESSAGE: [시험용] Gemini 체력 102 > 5
+16:24:19 SEND=67 REPORT=8 lastT=t=895.4
+16:24:32 sent /ai gemini spawn MushroomBrute ~1 ~0
+16:24:33 (4.7s) [AIPlayerSpike] t=909.7 @Gemini chat reply: [시험용] MushroomBrute 생성 (31,-20)
+MESSAGE: [시험용] MushroomBrute 생성 (31,-20)
+16:25:06 sent /ai gemini where
+16:25:06 (3.0s) [AIPlayerSpike] t=942.8 @Gemini chat reply: [시험용] 서버 전체 적 280: AggressiveSlimeBlob (30.9,-19.7) d=0.9 hp=150
+MESSAGE: [시험용] 서버 전체 적 280: AggressiveSlimeBlob (30.9,-19.7) d=0.9 hp=150
+16:25:09 sent /ai gemini hp 5
+16:25:09 (2.9s) [AIPlayerSpike] t=946.0 @Gemini chat reply: [시험용] Gemini 체력 5 > 5
+MESSAGE: [시험용] Gemini 체력 5 > 5
+16:25:09 SEND=67 REPORT=8 lastT=t=946.0
+16:25:20 sent /ai gemini hostto ai
+16:25:21 (3.3s) [AIPlayerSpike] t=957.6 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=957.6 @Gemini TEST-ONLY hostto: host teleport queued from (0.0,-0.1) to (30.0,-18.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:25:47 sent /ai gemini hp 100
+16:25:47 (3.2s) [AIPlayerSpike] t=984.2 @Gemini chat reply: [시험용] Gemini 체력 5 > 100
+MESSAGE: [시험용] Gemini 체력 5 > 100
+== C5 setup under hold
+16:25:47 SEND=67 REPORT=8 lastT=t=984.2
+16:25:53 sent /ai gemini placetilearea WallDirtBlock 14 -10 26 0
+16:25:54 (6.0s) [AIPlayerSpike] t=990.5 @Gemini chat reply: [시험용] Dirt wall 설치 (14,-10)~(26,0) 143/143칸
+MESSAGE: [시험용] Dirt wall 설치 (14,-10)~(26,0) 143/143칸
+16:25:59 sent /ai gemini removetilearea wall 14 -5 20 -5
+16:25:59 (5.1s) [AIPlayerSpike] t=995.8 @Gemini chat reply: [시험용] wall 제거 (14,-5)~(20,-5) 7칸
+MESSAGE: [시험용] wall 제거 (14,-5)~(20,-5) 7칸
+16:26:04 sent /ai gemini removetilearea wall 20 -4 20 -1
+16:26:04 (5.0s) [AIPlayerSpike] t=1001.1 @Gemini chat reply: [시험용] wall 제거 (20,-4)~(20,-1) 4칸
+MESSAGE: [시험용] wall 제거 (20,-4)~(20,-1) 4칸
+16:26:09 sent /ai gemini removetilearea wall 21 -5 26 -5
+16:26:10 (5.3s) [AIPlayerSpike] t=1006.5 @Gemini chat reply: [시험용] wall 제거 (21,-5)~(26,-5) 6칸
+MESSAGE: [시험용] wall 제거 (21,-5)~(26,-5) 6칸
+16:26:15 sent /ai gemini removetilearea wall 20 -9 20 -6
+16:26:15 (5.0s) [AIPlayerSpike] t=1011.8 @Gemini chat reply: [시험용] wall 제거 (20,-9)~(20,-6) 4칸
+MESSAGE: [시험용] wall 제거 (20,-9)~(20,-6) 4칸
+16:26:20 sent /ai gemini placetile Copper ore 15 -4
+16:26:20 (4.7s) [AIPlayerSpike] t=1016.7 @Gemini chat reply: [시험용] Dirt ore 설치 (15,-4)
+MESSAGE: [시험용] Dirt ore 설치 (15,-4)
+16:26:24 sent /ai gemini placetile Tin ore 16 -4
+16:26:24 (4.5s) [AIPlayerSpike] t=1021.3 @Gemini chat reply: [시험용] LarvaHive ore 설치 (16,-4)
+MESSAGE: [시험용] LarvaHive ore 설치 (16,-4)
+16:26:29 sent /ai gemini placetile CopperOre 17 -6
+16:26:29 (4.8s) [AIPlayerSpike] t=1026.2 @Gemini chat reply: [시험용] Dirt ore 설치 (17,-6)
+MESSAGE: [시험용] Dirt ore 설치 (17,-6)
+16:26:34 sent /ai gemini spawn WoodenWorkBench 11 -3
+16:26:34 (5.0s) [AIPlayerSpike] t=1031.5 @Gemini chat reply: [시험용] WoodenWorkBench 생성 (11,-3)
+MESSAGE: [시험용] WoodenWorkBench 생성 (11,-3)
+16:26:39 sent /ai gemini spawn Furnace 11 -7
+16:26:39 (4.1s) [AIPlayerSpike] t=1035.8 @Gemini chat reply: [시험용] Furnace 생성 (11,-7)
+MESSAGE: [시험용] Furnace 생성 (11,-7)
+16:26:44 sent /ai gemini spawn InventoryChest 9 -5
+16:26:44 (4.7s) [AIPlayerSpike] t=1040.7 @Gemini chat reply: [시험용] InventoryChest 생성 (9,-5)
+MESSAGE: [시험용] InventoryChest 생성 (9,-5)
+C5 elapsed 57s
+16:26:44 SEND=67 REPORT=8 lastT=t=1040.7
+16:26:55 sent /ai gemini hostto 18 -5
+16:26:55 (3.6s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 18 -5, filtered - Luminous: /ai gemini hostto 18 -5.
+[AIPlayerSpike] t=1052.1 chat command from host: '/ai gemini hostto 18 -5'
+[AIPlayerSpike] t=1052.1 @Gemini TEST-ONLY hostto: host teleport queued from (30.0,-18.0) to (18.0,-5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+16:27:11 SEND=67 REPORT=8 lastT=t=1058.9
+16:27:11 end: save and exit

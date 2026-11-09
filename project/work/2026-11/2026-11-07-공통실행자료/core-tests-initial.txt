@@ -1,0 +1,1180 @@
+== S0
+  [OK] Core/ is linked (AIPlanProtocol)
+  [OK] ExpJson: JSON null is a present key with a null value
+  [OK] ExpJson: escaped quote and newline are decoded
+  [OK] ExpJson: a nested key of the same name does not shadow the top-level one
+  [OK] ExpJson: cut, empty and non-JSON bodies give null
+  [OK] ExpJson: numbers are double
+== S1
+  [OK] fixtures/plan/cases.expect.json exists
+  [OK] ok-set-gather: reads as expected
+  [OK] ok-set-gather: same as the old reader
+  [OK] ok-set-craft: reads as expected
+  [OK] ok-set-craft: same as the old reader
+  [OK] ok-set-store-item: reads as expected
+  [OK] ok-set-store-item: same as the old reader
+  [OK] ok-set-store-null-item: reads as expected
+  [OK] ok-set-store-null-item: same as the old reader
+  [OK] ok-set-explore-quoted-why: reads as expected
+  [OK] ok-set-explore-quoted-why: differs from the old reader (escape)
+  [OK] ok-hold: reads as expected
+  [OK] ok-hold: same as the old reader
+  [OK] ok-ask: reads as expected
+  [OK] ok-ask: same as the old reader
+  [OK] err-limit: reads as expected
+  [OK] err-limit: same as the old reader
+  [OK] err-limit-float-retry: reads as expected
+  [OK] err-limit-float-retry: same as the old reader
+  [OK] err-auth: reads as expected
+  [OK] err-auth: same as the old reader
+  [OK] err-login: reads as expected
+  [OK] err-login: same as the old reader
+  [OK] err-spawn: reads as expected
+  [OK] err-spawn: same as the old reader
+  [OK] err-unknown-member: reads as expected
+  [OK] err-unknown-member: same as the old reader
+  [OK] err-busy: reads as expected
+  [OK] err-busy: same as the old reader
+  [OK] err-bridge: reads as expected
+  [OK] err-bridge: same as the old reader
+  [OK] env-parse: reads as expected
+  [OK] env-parse: same as the old reader
+  [OK] env-timeout: reads as expected
+  [OK] env-timeout: same as the old reader
+  [OK] env-aborted: reads as expected
+  [OK] env-aborted: same as the old reader
+  [OK] env-error-detail-null: reads as expected
+  [OK] env-error-detail-null: same as the old reader
+  [OK] esc-say: reads as expected
+  [OK] esc-say: differs from the old reader (escape)
+  [OK] nested-memo-first: reads as expected
+  [OK] nested-memo-first: differs from the old reader (nested)
+  [OK] nested-error-in-answer: reads as expected
+  [OK] nested-error-in-answer: differs from the old reader (nested)
+  [OK] for-string-number: reads as expected
+  [OK] for-string-number: same as the old reader
+  [OK] for-missing: reads as expected
+  [OK] for-missing: same as the old reader
+  [OK] for-null: reads as expected
+  [OK] for-null: differs from the old reader (malformed)
+  [OK] count-out-of-range: reads as expected
+  [OK] count-out-of-range: same as the old reader
+  [OK] decision-number: reads as expected
+  [OK] decision-number: same as the old reader
+  [OK] count-float: reads as expected
+  [OK] count-float: differs from the old reader (unreachable)
+  [OK] dup-key: reads as expected
+  [OK] dup-key: differs from the old reader (unreachable)
+  [OK] cut-body: reads as expected
+  [OK] cut-body: differs from the old reader (unreachable)
+  [OK] empty-body: reads as expected
+  [OK] empty-body: same as the old reader
+  [OK] html-body: reads as expected
+  [OK] html-body: same as the old reader
+  [OK] 32 cases
+  cases by legacy class: escape 2, malformed 1, nested 2, same 24, unreachable 3
+  differences from the old reader:
+  | case | class | field old -> new |
+  | ok-set-explore-quoted-why | escape | Answer.Why error \ -> error "answer" test |
+  | esc-say | escape | Answer.Say 그는 \ -> 그는 "이동"이라고 했다\n다음 줄 \ 끝 |
+  | nested-memo-first | nested | Answer.Decision hold -> set; Answer.Why memo why -> real why; Answer.Goal explore\|<null>\|-1 -> gather\|Wood\|2 |
+  | nested-error-in-answer | nested | ErrorRaw my own field -> null |
+  | for-null | malformed | Answer.For -1/-1 -> none |
+  | count-float | unreachable | Answer.Goal gather\|Wood\|-1 -> gather\|Wood\|3 |
+  | dup-key | unreachable | Answer.Decision hold -> set |
+  | cut-body | unreachable | ErrorRaw limit -> <null> |
+== R1
+  [OK] every internal goal kind is registered once
+  [OK] C# external goal vocabulary matches the shared contract
+  [OK] internal kinds and case changes are not wire goals
+  [OK] host aliases stay compatible: None
+  [OK] host aliases stay compatible: Gather
+  [OK] host aliases stay compatible: Explore
+  [OK] host aliases stay compatible: Follow
+  [OK] host aliases stay compatible: Craft
+  [OK] host aliases stay compatible: Store
+  [OK] host aliases stay compatible: Home
+  [OK] host aliases stay compatible: Farm
+  [OK] host aliases stay compatible: Cook
+  [OK] host aliases stay compatible: Free
+  [OK] host aliases stay compatible: Goto
+  [OK] host aliases stay compatible: Place
+  [OK] gather item fallback and no-goal commands stay separate
+  [OK] valid gather: the mod reader retains the bridge goal without range normalization
+  [OK] valid explore: the mod reader retains the bridge goal without range normalization
+  [OK] valid follow: the mod reader retains the bridge goal without range normalization
+  [OK] valid craft: the mod reader retains the bridge goal without range normalization
+  [OK] valid store: the mod reader retains the bridge goal without range normalization
+  [OK] valid home: the mod reader retains the bridge goal without range normalization
+  [OK] valid farm: the mod reader retains the bridge goal without range normalization
+  [OK] valid cook: the mod reader retains the bridge goal without range normalization
+  [OK] valid goto: the mod reader retains the bridge goal without range normalization
+  [OK] valid place: the mod reader retains the bridge goal without range normalization
+  [OK] gather count -1: the mod reader retains the bridge goal without range normalization
+  [OK] gather count -1: planner bound comes from the contract
+  [OK] gather count 0: the mod reader retains the bridge goal without range normalization
+  [OK] gather count 0: planner bound comes from the contract
+  [OK] gather count 1: the mod reader retains the bridge goal without range normalization
+  [OK] gather count 1: planner bound comes from the contract
+  [OK] gather count 30: the mod reader retains the bridge goal without range normalization
+  [OK] gather count 30: planner bound comes from the contract
+  [OK] gather count 31: the mod reader retains the bridge goal without range normalization
+  [OK] gather count 31: planner bound comes from the contract
+  [OK] craft count -1: the mod reader retains the bridge goal without range normalization
+  [OK] craft count -1: planner bound comes from the contract
+  [OK] craft count 0: the mod reader retains the bridge goal without range normalization
+  [OK] craft count 0: planner bound comes from the contract
+  [OK] craft count 1: the mod reader retains the bridge goal without range normalization
+  [OK] craft count 1: planner bound comes from the contract
+  [OK] craft count 10: the mod reader retains the bridge goal without range normalization
+  [OK] craft count 10: planner bound comes from the contract
+  [OK] craft count 11: the mod reader retains the bridge goal without range normalization
+  [OK] craft count 11: planner bound comes from the contract
+  [OK] place count -1: the mod reader retains the bridge goal without range normalization
+  [OK] place count -1: planner bound comes from the contract
+  [OK] place count 0: the mod reader retains the bridge goal without range normalization
+  [OK] place count 0: planner bound comes from the contract
+  [OK] place count 1: the mod reader retains the bridge goal without range normalization
+  [OK] place count 1: planner bound comes from the contract
+  [OK] place count 30: the mod reader retains the bridge goal without range normalization
+  [OK] place count 30: planner bound comes from the contract
+  [OK] place count 31: the mod reader retains the bridge goal without range normalization
+  [OK] place count 31: planner bound comes from the contract
+  [OK] store item: the mod reader retains the bridge goal without range normalization
+  [OK] experience key compatibility: 
+  [OK] experience key compatibility: 
+  [OK] experience key compatibility: gather:None
+  [OK] experience key compatibility: craft:None
+  [OK] experience key compatibility: explore
+  [OK] experience key compatibility: follow
+  [OK] experience key compatibility: store
+  [OK] experience key compatibility: home:Wood
+  [OK] experience key compatibility: place:Torch
+  [OK] experience key compatibility: 99:Wood
+  [OK] experience key compatibility: 99
+  [OK] later place step keeps the upper bound only; world-start validation stays separate
+  [OK] inventory step lower bound and actual place-start validation are preserved
+== AR
+  [OK] approach: empty list keeps the initial reason and default stand
+  [OK] approach: first success stops further attempts
+  [OK] approach: third succeeds after exactly two failures
+  [OK] approach: fourth is not tried; last attempted stand/reason survive failure
+  [OK] approach: short lists stop at their own length
+  [OK] approach: attempt exceptions propagate unchanged
+== TH
+  [OK] history: unassessed enemy has no cannot-come record
+  [OK] history: false assessment is recorded only in its own instance
+  [OK] history: repeating a false assessment keeps the record
+  [OK] history: true assessment removes the previous cannot-come record
+  [OK] history: 64 records remain
+  [OK] history: the 65th record does not clear (strictly greater than 64 before insertion)
+  [OK] history: next record clears first, even when repeating an existing key
+  [OK] history: a true record also applies the size clear before removal
+== S2
+  [OK] nav failure '시간 초과 (길찾기 game-bfs)': no-path rule by sentence and by value
+  [OK] nav failure '막힘(-61,52에서 세 번 못 움직임) (길찾기 game-bfs)': no-path rule by sentence and by value
+  [OK] nav failure '길 없음(게임 길찾기: 타일·물체 고려) (길찾기 game)': no-path rule by sentence and by value
+  [OK] nav failure '길 없음(막힌 칸 2개를 피하면) (길찾기 tile)': no-path rule by sentence and by value
+  [OK] nav failure '길 없음 (길찾기 tile)': no-path rule by sentence and by value
+  [OK] other walk end '목표 칸이 걸을 수 없는 곳(wall)': no no-path rule
+  [OK] other walk end '오류: NullReferenceException': no no-path rule
+  [OK] other walk end '새 기술 공격(으)로 바뀜': no no-path rule
+  [OK] other walk end '도착 (3,4), 길찾기 game': no no-path rule
+  [OK] other walk end 'AI가 쓰러짐(체력 0)': no no-path rule
+  [OK] down sentences (AIBody.Tick, TunnelSkill summary)
+  [OK] other failures are not downs
+  [OK] the attack's kill sentence
+  [OK] attack end '대상이 안 보임 (체력 50→20)' is not a kill
+  [OK] attack end '시간 초과 (체력 50→20)' is not a kill
+  [OK] attack end '대상에게 갈 길 없음 (길 없음, 체력 50→50)' is not a kill
+  [OK] (the attack's timeout sentence would match the walk rule; the brain reads that rule only for walks)
+  [OK] emergency trigger '긴급: 체력 감소(100→80)'
+  [OK] emergency trigger '긴급: 새 적 MushroomEnemy이(가) 바로 옆(1.2칸)'
+  [OK] emergency trigger '체력 감소(100→85)'
+  [OK] not an emergency '새 적 보임(Slime 6.0칸)'
+  [OK] not an emergency '전투 중 계속 다시 판단'
+  [OK] not an emergency '기술 끝(공격 완료)'
+  [OK] not an emergency '재시도(HTTP 500 )'
+  [OK] not an emergency '곧 끝남: 지금 하는 '걷기'(goto:3,4)이 약 0.3초 뒤 끝남. 끝난 뒤 이어서 할 행동을 고른다'
+  [OK] not an emergency '자기 방어: 체력이 줄어듦(-5)'
+  [OK] stale reject '오래된 답: 목표 수정 번호가 바뀜(2→3)'
+  [OK] stale reject '오래된 답: 기다리는 동안 쓰러짐'
+  [OK] stale reject '오래된 답: 190초'
+  [OK] not stale '답 JSON이 없음'
+  [OK] not stale '답의 for가 보낸 보고와 다름(report -1/7, goal_rev -1/3)'
+  [OK] not stale '모르는 decision 'go''
+  [OK] not stale '보고의 can_do.gather에 없는 품목 'IronOre''
+  [OK] not stale '개수 범위 밖(40)'
+  [OK] tool-short: the joined note and the pieces agree
+  [OK] no tool-short piece: neither
+  [OK] goal end goal done :705/:722/:748: stated completed/(sentence) = classified completed/
+  [OK] goal end /ai stop (AIBodySkills :308): stated cancelled/(sentence) = classified cancelled/
+  [OK] goal end /ai goal 없음 :498: stated cancelled/(sentence) = classified cancelled/
+  [OK] goal end cost cap :853: stated system/(sentence) = classified system/
+  [OK] goal end no api key :1125: stated system/(sentence) = classified system/
+  [OK] goal end 3 failures :1465: stated system/(sentence) = classified system/
+  [OK] goal end free time over :439: stated unknown/(sentence) = classified unknown/
+  [OK] goal end explore ended :1196: stated exhausted/ = classified exhausted/
+  [OK] goal end home stall :1159: stated blocked/no_place = classified blocked/no_place
+  [OK] goal end store stall :1159: stated blocked/no_place = classified blocked/no_place
+  [OK] goal end craft stall :1183: stated blocked/cannot_craft = classified blocked/cannot_craft
+  [OK] goal end craft stall with left-out :1183: stated blocked/cannot_craft = classified blocked/cannot_craft
+  [OK] goal end only wait :1209: stated blocked/only_wait = classified blocked/only_wait
+  [OK] goal end gather stall, tool (content decides) :1183: stated blocked/(sentence) = classified blocked/tool_weak
+  [OK] goal end gather stall, no source (content decides) :1183: stated blocked/(sentence) = classified blocked/no_source
+  [OK] goal end farm stall (content decides) :1159: stated blocked/(sentence) = classified blocked/no_source
+  [OK] (known edge: a craft note with '기다리기뿐' classifies as only_wait; S2b records the stated cannot_craft, StallTests)
+== S4
+  [OK] empty: nothing waiting
+  [OK] the latest wins
+  [OK] take empties it
+  [OK] a null kind is ignored (it is not a report)
+  [OK] an empty kind is a report, as the old string was (non-null)
+  [OK] clear: nothing waiting
+  [OK] the text travels with the kind (for feature work 3)
+== S2b
+  [OK] wait-only stall recorded blocked/only_wait (got blocked/only_wait)
+  [OK] wait-only stall: cause is the sentence after 'stalled:', LLM source kept
+  [OK] wait-only stall: the stated values agree with the sentence (no OUTCOME-MISMATCH)
+  [OK] the next report's experience part names the wait-only block of gather:Wood: {"now":"곡괭이 없음(레벨 1), 무기 없음(레벨 1), 방어구 레벨 1, 최대 체력 110, 지역 Slime","play_hours":0,"goal_runs":1,"running":null,"recent":["방금 gather:Wood×5(LLM) → 막힘(할 행동 없음) 0/5, 60초, Slime에서"],"by_goal":[{"key":"gather:Wood","runs":1,"done":0,"blocked":1,"other":0,"block":"풀리지 않음","note":"아직 풀리지 않은 막힘(할 행동 없음: 잠깐 할 행동이 없던 상태, 10분 뒤 다시 볼 수 있음); 마지막 방금 막힘(Slime에서)"}]}
+  [OK] a wait-only block is judged again after the short wait (10 min)
+  [OK] LLM gather stalls: cls from the sentence (got tool_weak, no_source)
+  [OK] LLM gather stalls: no OUTCOME-MISMATCH
+  [OK] the next report names both blocks (도구 부족, 모을 곳 못 찾음)
+  [OK] stated cannot_craft decides over the sentence's only_wait (got cannot_craft)
+  [OK] with the test switch the disagreement is logged once
+  [OK] without the test switch: same record, nothing logged
+  [OK] explore end: exhausted, empty cls and cause
+  [OK] system end: stated outcome, cause from the sentence
+== S6b
+  [OK] L1 corpus: 864 builds, 10 recursed, 0 incomplete (expected 864 / 10 / 0)
+  [FAIL] L1 corpus replay: 848 builds exactly the same as the old code, 6 different: #512: item 0: got #1 dig dig:0,0 dig_0_0 '기지로 가기 — 기지 (0,0) 코어(정하지 않아 기본값), 여기서 36칸. 아는 길 58칸, 부술 벽 3개(WallDirtBlock 3), 예상 약 32초. 기지 옆 (0,0)에 서면 끝. 최근 이 대상에서 실패 1회: (29,21)에 서서 (8,22) 쪽으로 가다가 같은 곳에서 두 번 실패: 길 없음 (길찾기 mod-asta…. 현재 상태에서 다시 시도할지는 직접 선택.' vs #1 dig dig:0,0 dig_0_0 '기지로 가기 — 기지 (0,0) 코어(정하지 않아 기본값), 여기서 36칸. 아는 길 58칸, 부술 벽 3개(WallDirtBlock 3), 예상 약 32초. 기지 옆 (0,0)에 서면 끝. 최근 이 대상에서 실패 1회: (29,21)에 서서 (8,22) 쪽으로 가다가 같은 곳에서 두 번 실패: 길 없음 (길찾기 mod-asta….' | #512 (no cut setting, peace): item 0: got #1 dig dig:0,0 dig_0_0 '기지로 가기 — 기지 (0,0) 코어(정하지 않아 기본값), 여기서 36칸. 아는 길 58칸, 부술 벽 3개(WallDirtBlock 3), 예상 약 32초. 기지 옆 (0,0)에 서면 끝. 최근 이 대상에서 실패 1회: (29,21)에 서서 (8,22) 쪽으로 가다가 같은 곳에서 두 번 실패: 길 없음 (길찾기 mod-asta…. 현재 상태에서 다시 시도할지는 직접 선택.' vs #1 dig dig:0,0 dig_0_0 '기지로 가기 — 기지 (0,0) 코어(정하지 않아 기본값), 여기서 36칸. 아는 길 58칸, 부술 벽 3개(WallDirtBlock 3), 예상 약 32초. 기지 옆 (0,0)에 서면 끝. 최근 이 대상에서 실패 1회: (29,21)에 서서 (8,22) 쪽으로 가다가 같은 곳에서 두 번 실패: 길 없음 (길찾기 mod-asta….' | #513: skipped '' vs 'dig:0,0((29,21)에 서서 (8,22) 쪽으로 가다가 같은 곳에서 두 번 실패: 길 없음 (길찾기 mod-asta…)'
+    (covered: close-fight set 236, 15 items after the cut 28, failure memory 356, recent switch 807, no goal 19)
+  [FAIL] L1 corpus, default cut: 412 out-of-combat builds exactly the same as the old code (cut 14), 6 different
+  [OK] L1 corpus, default cut: 436 combat builds keep the old list as their head (3 longer than the old cut, up to +1), 0 different
+  [OK] LimitFor: combat 0 = no cut, combat setting 14 = old cut, out of combat always 14
+  [OK] Finish: no cut keeps 25 + wait (26), cut 14 keeps 14 + wait (15)
+  [OK] hand record H1 BodyCan false drops mine and dig
+  [FAIL] hand record H2 Doable false leaves the next goal step as the break-off option: item 0: got #1 attack attack:50 attack_50 '공격 A 최근 이 대상에서 실패 1회: 막힘. 현재 상태에서 다시 시도할지는 직접 선택.' vs #1 attack attack:50 attack_50 '공격 A 최근 이 대상에서 실패 1회: 막힘.'
+  [FAIL] hand record H3 Doable false everywhere: no break-off option, then a twice-failed attack left out: skipped '' vs 'attack:50(막힘)'
+  [OK] replay refuses a value the old code did not evaluate (asked for a value the old code did not evaluate: id 3)
+== B1
+  [OK] the Esc copy here matches AIPlanReport.Esc (source text)
+  [OK] the reader decodes \t, \r, \u0001 to control characters (B1 premise)
+  [OK] report built from \t, \r, \u0001 and all of U+0000-U+001F has no raw control character
+  [OK] that report parses with System.Text.Json
+  [OK] that report parses with Node JSON.parse (ok)
+  [OK] the rf-S7 Esc on the same text fails Node JSON.parse (bad: Bad control character in string literal in JSON at position 63 (line 1 column 64))
+  [OK] control characters become one space each, like \n
+  [OK] strings without control characters escape exactly as the rf-S7 Esc
+  [OK] a normal report is byte-identical to rf-S7
+== C2
+  [OK] staying in the anticipation: hit at 1.16s (expected ~1.14)
+  [OK] 1 tile sideways after a 0.4 s delay: the aim follows to 0.45 s and the move is too short (hit=True, gap 0.00)
+  [OK] 2 tiles sideways after a 0.4 s delay: out of the line (gap 1.71)
+  [OK] 2 tiles sideways, wall 3 tiles behind me: the charge stops at the wall after 5.9 tiles
+  [OK] codes: miss1.7/wall5.9 / hit@1.16
+  [OK] after the aim lock a 1.5-tile side move with no delay is out of the line (gap 1.50)
+  [OK] boundary: a finished 1.1-tile move escapes (gap 1.10), a 1.0-tile one does not
+  [OK] a move that starts too late is hit before it gets away (at 0.26s)
+  [OK] following attack: standing 1.5 tiles off escapes (gap 1.50), walking at the enemy to swing is hit (hit=True at 0.54s, gap 0.00)
+  [OK] following attack from 6 tiles off: not reached in time (gap 3.55)
+  [OK] charging past me 2 tiles off the line: not hit (gap 2.00)
+  [OK] ready phase: no charge prediction
+  [OK] open behind: wall at 2.75 tiles; nothing within 8 tiles the other way
+  [OK] outcome sentences: assumption first, escape / no escape, wall -> vulnerable 3.6 s, the wall breaks
+  [OK] no advice words: 예상(가정: 약 0.40초 뒤 출발, 조준은 전조 시작 0.45초까지 내…
+  [OK] no advice words: 예상(가정: 약 0.40초 뒤 출발, 조준은 전조 시작 0.45초까지 내…
+  [OK] no advice words: 예상(가정: 약 0.40초 뒤 출발, 조준은 전조 시작 0.45초까지 내…
+  [OK] no advice words: 예상(가정: 다음 돌진이 이 도착지로 겨눠 오고 내가 맞지 않을 때): …
+  [OK] no advice words: 예상(가정: 다음 돌진이 이 도착지로 겨눠 오고 내가 맞지 않을 때): …
+  [OK] time sentence: vulnerability left then, distance then (in / out of reach)
+  [OK] 1. late continue after the action ended: stale (계속하라던 실행 #1이 이미 끝남)
+  [OK] 2. continue of run #1 while run #2 of the same key runs: stale (계속하라던 실행이 이미 바뀜(#1→#2, 같은 키의 새 실행))
+  [OK] 2b. continue of the running run itself: continue
+  [OK] 3a. a long action switch in mid-motion waits for the boundary (as before)
+  [OK] 3b. the older request's continue (attack run) after the held switch: stale
+  [OK] 3c. the older request's short move: applied at once (no boundary wait, no 2 s forced apply)
+  [OK] 3d. the older request choosing what runs now: continue, no restart
+  [OK] 4. step: idle -> apply, mid-motion -> apply at once, emergency -> apply (got ApplyNow/ApplyNow/ApplyNow)
+  [OK] 4. hit: idle -> apply, mid-motion -> apply at once, emergency -> apply (got ApplyNow/ApplyNow/ApplyNow)
+  [OK] 4. approach: idle -> apply, mid-motion -> apply at once, emergency -> apply (got ApplyNow/ApplyNow/ApplyNow)
+  [OK] 4. hold: idle -> apply, mid-motion -> apply at once, emergency -> apply (got ApplyNow/ApplyNow/ApplyNow)
+  [OK] 4. attack: idle -> apply, mid-motion -> hold, emergency -> apply (got ApplyNow/Hold/ApplyNow)
+  [OK] 4. away: idle -> apply, mid-motion -> hold, emergency -> apply (got ApplyNow/Hold/ApplyNow)
+  [OK] 4. retreat: idle -> apply, mid-motion -> hold, emergency -> apply (got ApplyNow/Hold/ApplyNow)
+  [OK] 4. eat: idle -> apply, mid-motion -> hold, emergency -> apply (got ApplyNow/Hold/ApplyNow)
+  [OK] 4. wait: idle -> apply, mid-motion -> hold, emergency -> apply (got ApplyNow/Hold/ApplyNow)
+  [OK] 5a. first copy of an answer: apply
+  [OK] 5b. second copy of the same answer: continue (no second start)
+  [OK] 5c. a continue with no run number (older build) keeps the old sentence
+  [OK] 9a. hit again during the swing: queued after it
+  [OK] 9b. continue of the swing: continue (no new swing)
+  [OK] 9c. hit again after the swing ended: swing now (key hit:7)
+  [OK] 9d. hit again while something else runs: applied at once as a short action
+  [OK] 4b. waiting switch after a StaleContinue answer: kept
+  [OK] 4b. waiting switch after a Continue answer: replaced/dropped
+  [OK] 4b. waiting switch after a ApplyNow answer: replaced/dropped
+  [OK] 4b. waiting switch after a Hold answer: replaced/dropped
+  [OK] 4b. waiting switch after a QueueAfter answer: replaced/dropped
+  [OK] 7. five anticipations 0.1 s apart: 1 drop, first answer at 0.31s, 3 answers (the urgent re-ask is not dropped again)
+  [OK] 7b. a request sent after the anticipation, or none in flight: nothing dropped
+  [OK] 5d. failure causes: refusal, empty, rate limit, server, network, client, timeout
+  [OK] 5e. retry waits: in combat refusal at the floor, server 1 s, rate limit 3 s; out of combat 3 s as before
+  [OK] 5f. a refusal in combat does not stop the goal; an anticipation may ask again after a refusal, not after a rate limit
+  [OK] 8. prior motion: standstill / same / turn / reverse
+  [OK] 8b. moving along the new direction: the frame's displacement goes that way
+  [OK] one swing: pressed 6 frames until it started, released after, done (휘두르기 1회 끝)
+  [OK] one swing after the previous one's cooldown: pressed 16 frames, done
+  [OK] 4. target out of reach before the swing: fails (휘두르기 전에 대상이 휘두르는 거리 밖으로 벗어남)
+  [OK] 5. no swing start within 1.0s: fails (1.0초 안에 휘두르기가 시작되지 않음)
+  [OK] 5. timer unreadable: pressed until 0.34s (< 0.35), then done (휘두르기 1회(게임 타이머를 못 읽어 0.35초만 누름))
+  [OK] 5. after it is done it never presses again
+  [OK] composite hit stage: ends 0.26s (swing seen at the first frame >= 0.10 s; 0.02 s frames), pressed 6 frames (휘두르기 시작 0.12초 뒤 다음 단계로)
+  [OK] composite: applied at once mid-motion; continue only for its own run
+  [OK] move kind: away
+  [OK] move kind: retreat
+  [OK] move kind: explore
+  [OK] move kind: dig
+  [OK] move kind: follow
+  [OK] move kind: step
+  [OK] move kind: approach
+  [OK] not a move kind: attack
+  [OK] not a move kind: hit
+  [OK] not a move kind: hold
+  [OK] not a move kind: mine
+  [OK] not a move kind: pickup
+  [OK] not a move kind: eat
+  [OK] not a move kind: wait
+  [OK] not a move kind: continue
+  [OK] not a move kind: craft
+  [OK] not a move kind: break
+  [OK] F2. on the line, blocker in front: short of me (gap 0.00, run 1.0), if it does not stop: hit at 1.16s
+  [OK] F2. sentence: on the line, stops first (assumed), the object and that it was not measured, what if it does not stop:  돌진선 안(선 중심에서 약 0.0칸, 맞는 폭 약 1.05칸)이지만 돌진이 약 1.0칸 가서 물체 GiantMushroom(돌진을 멈추는지 확인 못 함)에 먼저 부딪혀 멈춘다고 봄 — 나에게 닿기 전. 멈추면 버섯 야수 취약 3.6초(약 0.82초 뒤부터). 그것에 멈추지 않으면 약 1.16초 뒤 나에게 부딪힘(피해 약 58).
+  [OK] F2. code: short0.0/obj1.0>hit@1.16
+  [OK] F2. a wall stop: 'wall', no 'not measured' note
+  [OK] F2. off the line: still 'miss' (miss1.7/wall5.9 / miss1.7/obj5.9)
+  [OK] F2. behind a charge going away: not short of me (gap 0.00)
+  [OK] F2. ② R2 #1 (blocked tile (-27,36)): short0.7/obj0.1>hit@1.12 — was miss0.7/wall0.1; it ran 4.7 tiles and hit
+  [OK] F2. ready-phase sentence names what it would stop at
+  [OK] F2. no advice words in the new sentences
+  [OK] F2. no advice words in the new sentences
+  [OK] F2. no advice words in the new sentences
+  [OK] F2. every charge prediction uses the set without critter-only tiles; the walking check (ClearWay) keeps them
+  [OK] F1. watched: none without an AI; within 24 tiles of an AI; not beyond
+  [OK] F1. the mod loop no longer reads chargers every frame (only the decision loop of an AI that is on)
+  [OK] F1. every CHARGE / BRUTE-HP line goes through MLog (test switch testcmds.on)
+  [OK] F1. the decision loop reads them after the test switches are refreshed
+  [OK] small: the watch forgets its chargers and events when the world changes / unloads
+  [OK] small: urgent re-ask within the close-fight range only; from farther it waits while the charge is on, dropped when it is over
+  [OK] HEAD 1. ChargeTrigger keeps the waiting switch (no _held = null, no HeldDropped)
+  [OK] HEAD 1. the urgent answer settles it: applied / held replaces it, a stale one leaves it
+  [OK] R1. request in flight + held switch + anticipation: the request is dropped, the held switch stays
+  [OK] R1a. before the boundary the held switch keeps waiting
+  [OK] R1a. the urgent answer arrives: ApplyNow, the held switch is replaced (one owner)
+  [OK] R1a'. a long urgent answer: applied at once, replaces the held switch
+  [OK] R1b. the held switch starts at the boundary (or idle / 2 s) while the urgent request is in flight
+  [OK] R1c. a stale urgent answer leaves the held switch
+  [FAIL] R1d. 'timeout' drops the waiting choices as before
+  [OK] R1d. 'AI down' drops the waiting choices as before
+  [FAIL] R1d. 'no goal' drops the waiting choices as before
+  [FAIL] R1d. 'self-defence over' drops the waiting choices as before
+  [OK] R1d. 'reset' drops the waiting choices as before
+  [OK] R1d. 'goal cleared' drops the waiting choices as before
+  [OK] R1d. 'new goal' drops the waiting choices as before
+  [FAIL] R1d. 'free time' drops the waiting choices as before
+  [FAIL] R1d. 'prefetch: 'x' Done' drops the waiting choices as before
+  [OK] R1. wiring: AbortRequest asks AbortDropsWaiting, ChargeTrigger aborts with AbortForCharge, TryApplyHeld uses HeldApplyNow
+  [OK] re-review: 'walls around break' only when it stops at a wall
+  [OK] F4. short switches are their own class; boundary / timeout / emergency as before
+  [OK] F4. step -> step at once counted apart from 'between movement options'
+  [OK] F4. a short action at once is 'short' also in an emergency request
+  [OK] HEAD 2. other inputs: the line as before (same text)
+  [OK] HEAD 2. close fight with a charger: long switches listed with the restart fact, short-short only counted: 최근 10초 동안 긴 동작(공격(계속)·거리 벌리기·먹기 등)이 걸린 전환 1번: 공격(1.2초 만에)→한 번 치기. 긴 동작은 바꾸면 처음부터 다시 시작한다. 최근 10초 동안 짧은 동작(짧은 이동·한 번 치기·접근·제자리·복합)끼리 바꾼 것 2번(짧은 동작은 고르면 바로 시작하고 끝나면 바로 다시 판단하게 되어 있다).
+  [OK] HEAD 2. only short switches: no restart sentence
+  [OK] HEAD 2. none: empty; kind of a key
+  [OK] small: timer unreadable, the swing seen at 0.10 s: no press after it (no room for a second swing)
+  [OK] small: kill = health read and <= 0 (no health component, being destroyed: not a kill)
+  [OK] small: AITargetEnd uses that rule
+  [OK] small: the weapon breaks after the swing started: told once (hits recorded as broken), still one swing (휘두르기 1회 끝)
+  [OK] small: the weapon gone before the swing: fails, nothing pressed after (휘두르기 전에 손의 무기가 바뀌거나 없어짐)
+  [OK] small: replaced after the swing started: the one swing is over (휘두르기 뒤 손의 무기가 바뀌거나 없어짐(휘두르기 1회로 끝))
+  [OK] small: broken already at the start: nothing new to tell, the swing goes on
+  [OK] small: HitOnceSkill checks its weapon slot every frame
+== P1
+  [OK] 1a. the corridor tile is an option with the fact, not dropped: 여기 놓으면 이 너머로 이어지는 길이 막힘(보이는 범위 밖까지 이어진 길)
+  [OK] 1b. the AI's own tile is not an option
+  [OK] 1c. a wall tile is not an option
+  [OK] 1d. an open room tile: clean (길을 끊지 않음)
+  [OK] 1e. the options: a clean spot first and the cutting spot kept as its own kind (ok | cut-out)
+  [OK] 1f. without a decision a clean spot is chosen
+  [OK] 2a. tiles the game never takes (noPlace) are not options
+  [OK] 2b. the only way to the chest: an option that says it blocks the chest (여기 놓으면 WoodenChest(1,4)로 가는 길이 막힘)
+  [OK] 2c. an own plot tile is an option with the fact (내 밭 1칸 위)
+  [OK] 2d. without a decision neither the chest's way nor the plot is chosen
+  [OK] 3a. a spot the game refused is not an option
+  [OK] 3b. outside the base radius: an option with the fact (기지 중심에서 8칸 — 기지 반경 4칸 밖이라 기지 것으로 세지 않음)
+  [OK] 3c. water is not a spot for an item that cannot go on water
+  [OK] 3d. water is a spot for a water-placeable item, with the fact (물 1칸을 메움)
+  [OK] 5. the spawn pad 3x3 is never an option; (0,-2), (2,0), (-2,1) are (78 options)
+  [OK] 6a. the stand on the AI's side of a corridor tile: (3,0)
+  [OK] 6b. an option's stand that is only reachable through the footprint is not used: (3,0)
+  [OK] 6c. no other stand without crossing: none (fails instead of walking through)
+  [OK] 6d. the option's stand is used while it is reachable (side (4,2)): (4,2)
+  [OK] 6d2. a diagonal stand the option named is not used; a side one is: (3,3)
+  [OK] 6e. each option's stated stand is the one the skill walks to (14 options)
+  [OK] 7a. a noStand tile is never an option's stand (R1)
+  [OK] 7b. StandFor skips a noStand tile even when the option preferred it: (3,2)
+  [OK] 7c. a corridor tile: a wall cuts (여기 놓으면 이 너머로 이어지는 길이 막힘(보이는 범위 밖까지 이어진 길)), a floor does not (길을 끊지 않음) (F10)
+  [OK] 7d. a floor may go on the AI's own tile (F10)
+  [OK] N2. without crossing the stand is the outside (5,4) (5,4); allowed to cross the tile, the inside stand (3,4) is reached (3,4)
+  [OK] 4. same spot and stand as the old filter: 400/400 (old found none in 2)
+== E2
+  [OK] 1a. a room with one corridor: a 1-block option, the seed inside (d1/m6: gaps 1 blocks 1 area 34 unk 0 win 0 seen 1)
+  [OK] 1b. the unknown end is never inside
+  [OK] 1c. facts say blocks are missing when the bag has none
+  [OK] 2. a closed room: already closed, with the fact that enemies can still spawn inside (d1/m6: gaps 0 blocks 0 area 15 unk 0 win 0 seen 0)
+  [OK] 3. a diagonal-only contact does not connect (4-way): already closed (d1/m6: gaps 0 blocks 0 area 14 unk 0 win 0 seen 0)
+  [OK] G1a. a fully seen closed cave behind a corridor: the 1-block corridor option and the shut option both (d1/m6: gaps 1 blocks 8 area 5 unk 0 win 0 seen 8 | d3/m6: gaps 1 blocks 1 area 80 unk 0 win 0 seen 1 | d23/m6: gaps 2 blocks 4 area 250 unk 0 win 0 seen 4 | d24/m6: gaps 0 blocks 0 area 256 unk 0 win 0 seen 0)
+  [OK] G1b. the corridor option says the outside is a seen space (틈 1곳, 막을 칸 1칸(가장 긴 틈 1칸), 블록 1개 필요, 가진 블록 5개, 둘러싸이는 넓이 80칸, 안쪽에 놓을 수 있는 칸 80칸, 틈 1의 문 자리 (9,7): 문을 달려면 양옆에 벽 2칸이 더 필요, 막을 칸 1칸 너머는 본 적 있는 바깥 공간)
+  [OK] 4a. an option with a wide gap exists (d1/m6: gaps 1 blocks 7 area 5 unk 0 win 0 seen 7 | d2/m6: gaps 1 blocks 9 area 12 unk 1 win 0 seen 8)
+  [OK] 4b. batches of at most 7 (7,2), one closing batch per gap
+  [OK] 4c. the closing batch's last tile has an inside stand
+  [OK] 4d. with a door tile (3,5) the gap's batches leave it open and none closes that gap
+  [OK] G2. the last open tile of a gap is found from the ground now (a middle tile when the rest is walled), not from the batch
+  [OK] G3. while the door tile is open no wall closes the gap; the door does (placed from inside)
+  [OK] 5. a cut holding a tile the game never takes is not offered (d1/m6: gaps 1 blocks 1 area 15 unk 0 win 1 seen 0)
+  [OK] 6. a water gap is a cut tile with the water fact (d1/m6: gaps 1 blocks 1 area 10 unk 0 win 0 seen 1)
+  [OK] G10. unknown tiles and the window edge are told apart (d1/m6: gaps 1 blocks 1 area 9 unk 1 win 0 seen 0)
+  [OK] OG1. open ground: 4 built edges of different sizes (d1/m6: gaps 1 blocks 8 area 5 unk 0 win 0 seen 8 | d5/m6: gaps 1 blocks 24 area 61 unk 0 win 0 seen 24 | d10/m6: gaps 1 blocks 44 area 221 unk 0 win 0 seen 44 | d14/m6: gaps 1 blocks 60 area 421 unk 0 win 0 seen 60)
+  [OK] OG2. a built edge is laid in batches of at most 7, closed from inside (7,1)
+  [OK] OG3. the 60-block limit leaves small open-ground bases (largest offered 421 tiles), larger ones are said to be left out
+  [OK] G9. options time: open 61x61 39 ms (48 cuts), 41x41 39 ms, cave 2 ms (offline, .NET; logged, not a frame budget)
+  [OK] G11. ground: the non-water block first; water: only a water block; none fits: -1
+  [OK] L1. an option that leaves a station outside says so; every option says how many inside tiles can take an object (d1/m6: gaps 1 blocks 1 area 34 unk 0 win 0 seen 1 | d5/m6: gaps 1 blocks 1 area 43 unk 0 win 0 seen 1)
+  [OK] L2. around the workbench: an edge holding it (d0/m6: gaps 2 blocks 2 area 7 unk 0 win 0 seen 2 | d0/m12: gaps 1 blocks 1 area 43 unk 0 win 0 seen 1)
+  [OK] M1a. the overlay lands on the same cells: X/! on floor, T on inside floor, G the door spot, O the object (2 place, 1 torches)
+  [OK] M1b. the map JSON parses: rows, objects with tiles, plans with preview/confirmed state, door, batches, overlay rows
+  [OK] D1a. a corridor gap: the door spot has walls on both sides (틈 1곳, 막을 칸 1칸(가장 긴 틈 1칸), 블록 1개 필요, 가진 블록 1개, 둘러싸이는 넓이 14칸, 안쪽에 놓을 수 있는 칸 14칸, 틈 1의 문 자리 (4,2): 양옆이 벽(이 둘레의 벽 포함), 막을 칸 1칸 너머는 본 적 있는 바깥 공간)
+  [OK] D1b. a door spot with open sides is kept with the fact '더 필요' (틈 2곳, 막을 칸 2칸(가장 긴 틈 1칸), 블록 2개 필요, 가진 블록 5개, 둘러싸이는 넓이 15칸, 안쪽에 놓을 수 있는 칸 15칸, 틈 1의 문 자리 (3,2): 문을 달려면 양옆에 벽 1칸이 더 필요, 틈 2의 문 자리 (5,2): 문을 달려면 양옆에 벽 1칸이 더 필요, 막을 칸 2칸 너머는 본 적 있는 바깥 공간)
+  [OK] D1c. a straight gap: the door spot (4,1) needs 0 more walls; its sides (3,1),(5,1) are in the batches, the door is not
+  [OK] 8a. through a closed door: Approach->Open->Pass->Close->Done, presses 2, door closed (열림(누름 1번, 문 중심에서 0.65칸); 닫힘(누름 1번, 문 중심에서 0.56칸))
+  [OK] 8b. a door that does not open: 2 presses, then '2번 눌러도 문이 열리지 않음(누른 자리 문 중심에서 0.62칸)'
+  [OK] G5a. a press that never finishes: the open step ends by time (6.1s, '문 열기 6초 넘음(누름 1번, 마지막 누름이 아직 안 보내짐, 문 중심에서 0.55칸 — 누를 자리에 섬)')
+  [OK] G5b. a blocked far spot: the close step ends by time ('문 닫기 6초 넘음(누름 0번, 문 중심에서 0.20칸 — 누를 자리보다 문에 가까움(문 칸 안이거나 밀림))')
+  [OK] G5c. no close press from 4 tiles away (it walks to the door first)
+  [OK] 8c. an automatic door: walked through without a press (Done)
+  [OK] 8d. variation 1/3 open, 0/2 closed; 2/3 is an east-west passage
+== G3
+  [OK] K1. an enemy in the same room: open way 2 tiles, it can come (Open 2 True)
+  [OK] K2. an enemy past the own door: through door (6,5), 6 tiles, it cannot come (doors stay shut for enemies) (Door (6, 5) 6 False)
+  [OK] K3. an enemy in a sealed pocket: cannot reach now, it cannot come (None)
+  [OK] K4. inside enemy facts: side, distance from the edge, the way (기지 안쪽, 둘레에서 1칸. 닿는 길: 열린 길 2칸. 벽을 부수는 종류로 알려지지 않음(쫓다가 막히면 약한 벽은 때릴 수 있음, 규칙 wall-break-ways (1); 문은 체력 2라 타일 피해가 1이라도 있으면 그 조건을 채움, door-enemy, 추정).)
+  [OK] K5. outside enemy past the door: 'through the door N tiles', a wall-breaking kind (brute), cannot come (기지 바깥, 둘레에서 3칸. 닿는 길: 문 (6,5)을 지나 6칸(문을 열고 나가서 침; 지나간 뒤 문은 닫음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 다만 문은 체력 2·피해 감소 0이라, 쫓다가 문에 막힌 적이 치면 곧 부서질 수 있음(규칙 wall-break-ways (1)·door-enemy, 추정). 부서지면 그 칸은 열린 길이 됨. 벽을 부수는 종류: 돌진으로 벽을 부숨(흙 등급은 한 번에, 돌 이상은 대체로 버팀; 규칙 brute-breaks-walls, 게임+실측). 문·울타리·뿌리가 길 위에 있으면 돌진을 시작하지 않았음(단계 1 실측).)
+  [OK] K6. sealed enemy: 'behind a wall, cannot reach now', not a known breaker (기지 바깥, 둘레에서 3칸. 닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 벽을 부수는 종류로 알려지지 않음(쫓다가 막히면 약한 벽은 때릴 수 있음, 규칙 wall-break-ways (1); 문은 체력 2라 타일 피해가 1이라도 있으면 그 조건을 채움, door-enemy, 추정).)
+  [OK] K7. no base: no side facts, the way and the kind stay
+  [OK] U1. only through an unseen tile: 'unseen way', it may come (Unseen True)
+  [OK] U2. both open to the window's edge: may connect outside the window (Unseen)
+  [OK] F1. fence: the AI cannot walk to it; a walker cannot come, a flier can (None False True)
+  [OK] F2. bat names count as fliers (estimate)
+  [OK] T1. enemies behind a closed door / walls only: no fight state (no 'ask again at once')
+  [OK] T2. one enemy that can come: fight state
+  [OK] T3. so close it can hit now: a threat when nothing is shut between (재실측 N-g: behind walls it is none)
+  [OK] T4. beyond the range: not a threat
+  [OK] T5. 100 s with only an unreachable enemy: no self-defence episode, no combat ticks (starts 0, running 0, combat 0)
+  [OK] T6. the enemy is shut out at 2 s: self-defence ends 3 s after the last threat (at 4.5 s)
+  [OK] T7. damage still starts self-defence (something hits from where the AI cannot see a way)
+  [OK] R1. a placed wall gone is found (memory against the tile now)
+  [OK] R2. a placed door gone is found
+  [OK] R3. natural edge tiles opened are found (6), a closed one is not
+  [OK] R4. an edge tile not in view is counted as unchecked, not as broken
+  [OK] R5. edge counts: 20 tiles, own walls 2, doors 1
+  [OK] R6. an unbuilt planned gap tile is not a breach (the fill options cover it)
+  [OK] R7. repair batches: one per opening, each closes it, the gone door is not a wall batch (2)
+  [OK] R8. every repair tile is placed from an inside stand
+  [OK] R9. a 9-tile breach: 7 + 2, the last batch closes, both know the whole opening (7/2c)
+  [OK] R10. repair material facts: blocks held against the edge, broken tiles, doors (보수 재료: 가진 벽 블록 3개(WallDirtBlock 3), 가진 문 0개. 둘레 20칸(놓은 벽 2칸, 자연 벽·물체 17칸, 문 1개); 지금 부서진 곳 7칸·없어진 문 1개, 지금 안 보여 확인 못 한 둘레 1칸. 적이 부순 벽은 아이템을 떨구지 않음(규칙 wall-no-drop): 보수할 블록은 따로 모아 둬야 함.)
+  [OK] P1. only a melee weapon to hold: fails (melee weapons do not hit placed objects)
+  [OK] P2. pick-up order: approach, swing, health drops, gone, bag +1, place again (Approach:walk Hit:swing Hit:swing Collect Place:place; 체력 2→1 체력 1→0 가방 +1 )
+  [OK] P3. 5 s of swings without a health change: fails with the fact
+  [OK] P4. gone but not in the bag within 3 s: fails
+  [OK] P5. pick-up only (no new tile): done once in the bag
+  [OK] Q1. outside: the nearest inside tile through the own door ((7, 2) Door (8, 2) 3)
+  [OK] Q2. inside: a walkable inside tile next to the pad, not the pad ((2, 2))
+  [OK] Q3. core base: the point is off the spawn pad ((-2, 0))
+  [OK] G6a. every base option kind counts as no goal progress
+  [OK] G6b. close fight: no base option becomes 'break off and continue the goal' ( set=close-fight(no goal step to break off for))
+  [OK] G6c. no progress candidate in the set: the gather goal's stall check still sees 'nothing moves the goal'
+  [OK] G6d. calm: the base options are offered and none of them is progress
+  [OK] RF1a. behind a fence: a ranged attacker and a jumper get at the AI (shoot / jump over), a walker does not (True True False)
+  [OK] RF1b. a ranged enemy 4 tiles away behind a fence: fight state (fast re-decision, close-fight set, combat hp trigger)
+  [OK] RF1c. T: an enemy behind a fence + health lost within 1.5 s -> fight state (any enemy in range); not hurt -> no fight state (M4c kept)
+  [OK] RF1d. hurt: an enemy in range over a fence is a threat, beyond the range none; one past a closed door none (recheck R1)
+  [OK] RF1e. hit over a fence for 6 s: one self-defence episode, fight state while hit (13 ticks), ends 3 s after (11.0 s)
+  [OK] RF1f. kill facts: a ranged attacker shoots over fences, a jumper jumps them (닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 원거리 공격을 하는 종류: 걸어올 길은 없지만 울타리·물 너머로 쏠 수 있음(투사체가 넘어옴, 추정).)
+  [OK] RF2a. target 2 tiles away with an own door between: through the door first, not the short hop (OwnDoor)
+  [OK] RF2b. past the door: the short hop once, then 'no way after the door' (one door per walk, N1) (ShortHop FailAfterDoor)
+  [OK] RF2c. no own door between: the short hop, the pad hop and the failure as before
+  [OK] RF2d. the enemy 2 tiles past the own door: reached only through door (4,1) (Door (4, 1) 4)
+  [OK] RF3a. repair, no wall block: 'broken N tiles, 0 blocks — cannot place' (기지 둘레 보수: 부서진 곳 7칸((1,4) (2,4) (3,4) (4,4) (5,4) (6,4) …, 묶음 2개), 가진 벽 블록 0개 — 놓을 수 없음(보수 재료가 필요; 적이 부순 벽은 블록을 떨구지 않음, wall-no-drop))
+  [OK] RF3b. door back, no door in the bag (기지 문 다시 달기 (8,2): 가방에 문 없음(문을 만들거나 가져와야 함) — 지금은 이 칸이 열려 있어 적도 지나감)
+  [OK] RF5a. diagonal gap: door spot (3,3) needs 1 wall off the plan ((2, 3)); it is in the fill batch, the door is not
+  [OK] RF5b. before the batch the door cannot go in; after it (gap tile + the extra side wall) both sides are walls
+  [OK] RF3c. the door spot's wait is a fact: '양옆 벽 대기(… 1칸 더 필요 …)' (문 자리 (3,3): 양옆 벽 대기(동서 1칸 더 필요; (2,3)는 메우기 묶음에 들어 있음))
+  [OK] RF5c. an object beside the door spot is no wall for both: the spot says 1 more needed (an object tile: no block can go there), SidesReady agrees (1)
+  [OK] RF5d. a side wall placed off the cut is edge memory: gone -> breach '(5,2) 문 자리 옆에 놓았던 벽이 없어짐(문은 양옆이 벽이어야 함)', its own repair batch closing no opening; the other opening still closes (2 batches)
+  [OK] RF4a. closed base: material walls through door (4,2), nearest first, 3 at most ((5, 0):4 (6, 4):5 (8, 2):5)
+  [OK] RF4b. the fact says the door and the steps (문 (4,2)을 지나 4칸(나가서 캠; 지나간 뒤 문은 닫음))
+  [OK] RF4c. a wall reached by an open walk stays 'open way N tiles'
+  [OK] RS1. past a closed door: 'the door has health 2, a blocked chaser can break it soon (estimate)' (기지 바깥, 둘레에서 3칸. 닿는 길: 문 (6,5)을 지나 6칸(문을 열고 나가서 침; 지나간 뒤 문은 닫음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 다만 문은 체력 2·피해 감소 0이라, 쫓다가 문에 막힌 적이 치면 곧 부서질 수 있음(규칙 wall-break-ways (1)·door-enemy, 추정). 부서지면 그 칸은 열린 길이 됨. 벽을 부수는 종류로 알려지지 않음(쫓다가 막히면 약한 벽은 때릴 수 있음, 규칙 wall-break-ways (1); 문은 체력 2라 타일 피해가 1이라도 있으면 그 조건을 채움, door-enemy, 추정).)
+  [OK] RS3a. gone but not in the bag: failed and forgotten; still standing after 5 s of swings: failed and kept
+  [OK] RS3b. hold: a working pick, else the empty hand (free or made free), a broken pick last
+  [OK] RS3c. a pick swing: 'it can also hit the edge wall next to it (estimate)'
+  [OK] RS4a. breaches: rings once, not again for the same, again with a new plan (True True True)
+  [OK] RS4b. a waiting reason keeps the breach (체력 감소(80→70); 기지 둘레 부서짐 2곳((1,4) 자연 벽·물체가 있던 둘레 칸이 열림, (8,1) 놓았던 벽이 없어짐))
+  [OK] RR1a. a walker sealed in a wall pocket + health -1: no threat (nothing crosses a wall); behind a fence + hurt: a threat
+  [OK] RR1b. hurt: a drop with the max health (hunger) is no hit; a drop beyond it, or with the max unchanged, is
+  [OK] RR2. door side tiles: the wall axis only (east/west or north/south), never the passage in front / behind
+  [OK] RR3. known open way first, then the door if its hop fails; door first, then the short hop if the door's A* fails, then fail (ShortHop OwnDoor / OwnDoor ShortHop Fail)
+  [OK] RR4. an inside door-side wall gone: a side repair batch; the door-spot fact says 'in a repair batch' (문 자리 (3,3): 양옆 벽 대기(동서 1칸 더 필요; (2,3)는 문 옆 벽(놓은 벽·자연 벽)이 없어진 칸이라 보수 묶음에 들어 있음))
+  [OK] RR5a. mining a door's side wall: 'the door loses a side', not 'the edge opens'; an edge wall keeps 'the edge opens'
+  [OK] R2b. null, inside and unrelated walls have no edge fact
+  [OK] R2b. wall meaning and exact display remain compatible
+  [OK] RR5b. the jump fact says fences / water, and that pits count as closed here (닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 뛰어 덮치는 종류: 울타리·물을 뛰어넘을 수 있음(추정; 구덩이를 넘는다는 관찰도 있으나(1-게임조사 2.2) 이 계산은 구덩이를 막힘으로 침).)
+  [OK] L1a. (as measured) without the base memory the inside leaves by the window's top and the enemy past the shut door 'can come' (Door comes=True)
+  [OK] L1b. with the edge memory: the enemy past the shut door cannot come, no threat; the way is through door (-10,-18) (Door (-10, -18) 6 comes=False)
+  [OK] L1c. an unseen edge tile is remembered closed (the unknown-tile rule only off the base): before comes=True, now comes=False
+  [OK] L1d. a remembered open gap (-8,12) beyond the window: the inside may lead out there, the enemy can come (unknown) (Door comes=True)
+  [OK] L1e. a base inside the window: the same reach with or without memory (Door 8 / Door 8)
+  [OK] L2a. the stand tile next to a shut door is the nearest tile it can stand on, not the door tile (-4,-5)
+  [OK] L2b. away from the door the stand tile is the rounded one (-4,-5)
+  [OK] L2c. (as measured) from the door tile the enemy 2 tiles out is an open way and comes; from the stand tile it is past the door and cannot come (Open/True -> Door/False)
+  [OK] L3a. not in a door: nothing owed
+  [OK] L3b. standing in the open own door (-4,-6): it is owed a close
+  [OK] L3c. the closing tail runs at a skill's end when the owed door is open and the AI is within 2.5 tiles (not when far, down, or the door is shut)
+  [OK] L3d. retreat end behind the door: closed from the inside side with one press ('지난 문 (-4,-6) 닫음(닫힘(누름 1번, 문 중심에서 0.55칸))')
+  [OK] L3e. a kill in the doorway (in the door tile): it goes to the inside stand (y -5.36) and closes from the inside (review S1)
+  [OK] L3f. a failed close is a fact on the end and the door stays owed ('지난 문 (-4,-6) 닫기 실패: 지나간 뒤 2번 눌러도 문이 닫히지 않음(열린 채; 누른 자리 문 중심에서 0.70칸) — 열린 채(적도 지나감)')
+  [OK] L3g. a door seen shut is owed nothing
+  [OK] L4a. stuck on the game's path from the spawn pad to an outside target (pad -> (-10,-21)): the own door is the next try, not 'no way' (OwnDoor)
+  [OK] L4b. stuck right at the own door: the door before a known-way hop (OwnDoor); not stuck there: the known way first as before (ShortHop)
+  [OK] L4c. one door per walk still: past a door, stuck again is no second door (FailAfterDoor)
+  [OK] L5a. the hung door's two natural side walls are edge memory (so no material wall)
+  [OK] L5b. the mine option on a side wall says the door falls and the edge opens ('기지 문 (-4,-6) 옆 벽 — 캐면 문이 떨어짐(문은 가방으로 들어감, 단계 3 실측) — 문 칸이 열려 둘레가 열림(적 지나감)')
+  [OK] R2b. hung door fact preserves coordinate and exact text
+  [OK] L5c. the side wall gone and the door gone are both broken parts ((-5,-6) 문 옆 자연 벽이 없어짐(문은 양옆이 벽이어야 함; 벽이 없어지면 달린 문이 떨어짐, 단계 3 실측), (-4,-6) 달았던 문이 없어짐)
+  [OK] L5d. the side wall has its own repair batch (no opening of its own); the door goes back by 'door back'
+  [OK] L5e. the door-back note points to the repair batch, not an empty fill batch ('문 자리 (-4,-6): 양옆 벽 대기(동서 1칸 더 필요; (-5,-6)는 문 옆 벽(놓은 벽·자연 벽)이 없어진 칸이라 보수 묶음에 들어 있음)')
+  [OK] L5f. before the door is hung the side tiles are no edge memory (the fill batches handle them)
+  [OK] L6a. (as measured) read against HealthCD.maxHealth, starving 100 -> 75 looked like a hit
+  [OK] L6b. against the max with conditions (75 at hunger 0) it is no hit: no self-defence, no fence enemy made a threat
+  [OK] L6c. a hit while starving is still a hit
+  [OK] L7a. the breach reason reaches the next call even after the skill end overwrote the waiting reason ('기술 끝(뿌리 캐기 완료); 기지 둘레 부서짐 2곳((-5,-5) 놓았던 벽이 없어짐, (3,-1) 자연 벽·물체가 있던 둘레 칸이 열림)')
+  [OK] L7b. it is carried once
+  [OK] L7c. a newer count replaces the older waiting one
+  [OK] L7d. a root on an edge tile says cutting it opens the edge; inside / outside roots say nothing ('기지 둘레 칸의 큰 뿌리 — 없애면 둘레가 열림(적 지나감)')
+  [OK] L8a. (as measured) at (-10,-18.86) the AI is not on the inside stand's side: it walks to the stand first
+  [OK] L8b. past the tile edge towards the stand it places; in the tile's own half not yet
+  [OK] L8c. an outside stand (decision A) is placed from outside
+  [OK] LA1. with a door on the edge: '바깥에서 닫음, 둘레 문 (x,y)로 드나듦'
+  [OK] LA2. without a door: '…들어가려면 벽 하나를 부숴야 함'
+  [OK] LA3. the gap tile has an inside stand and an outside stand: both are options ((2, 3) / (2, 5))
+  [OK] LB1. a remembered own door on a gap tile is taken as that gap's door
+  [OK] LB2. no list, or a door off the gaps: nothing taken
+  [OK] LS1. the retreat's way has no kill wording ('문 (-4,-6)을 지나 3칸(문을 열고 지나감; 지나간 뒤 문은 닫음)')
+  [OK] LS2. the pick-up facts say 체력 (no CJK 力) ('체력 1→0 가방 +1')
+== NL
+  [OK] no mention: ordinary chat, nobody
+  [OK] @Claude -> claude
+  [OK] Korean names with a particle or comma after them; table order
+  [OK] @모두 -> every member
+  [OK] an e-mail address is not a mention
+  [OK] case-insensitive, no repeats
+  [OK] an unknown name is not a mention
+  [OK] other Korean names (지피티, 제미나이)
+  [OK] '@' alone: no candidates yet
+  [OK] @c -> Claude, ChatGPT (codex/chatgpt)
+  [OK] Tab fills the first candidate and a space
+  [OK] completion keeps the text before the mention
+  [OK] @모 -> 모두
+  [OK] @클 (committed Hangul) -> Claude
+  [OK] @ㅋ (IME composing, lone consonant) -> Claude
+  [OK] @크 (IME composing, 클 without its final consonant) -> Claude
+  [OK] @ㄱ -> 그록
+  [OK] after a space the mention is finished: no hint
+  [OK] @ inside a word: no hint
+  [OK] hint line lists the candidates
+  [OK] no candidate: no hint, Tab does nothing
+  [OK] host line to me: to, to_me, ago, no 'new' (seen)
+  [OK] my own say is marked (나) and never new
+  [OK] a teammate's say after my last report is new, no to_me
+  [OK] @모두 line: to 모두, to_me, new, escaped
+  [OK] the log keeps the last 40 lines
+  [OK] a report carries the last 10 lines
+  [OK] lines to another member are not to_me
+  [OK] periodic does not replace host_said
+  [OK] a goal event does not replace host_said
+  [OK] a goal event replaces periodic
+  [OK] the host's /ai goal replaces a goal event
+  [OK] same priority: the latest wins
+  [OK] 60 s after the last report: due
+  [OK] 59 s: not yet
+  [OK] a request on the way or waiting: not due
+  [OK] upper LLM unavailable: not due (the retry time rules)
+  [OK] period 0: off
+  [OK] the default 120 s period
+  [OK] ended below half (42/100): reported
+  [OK] ended at half (50/100), no down: not reported
+  [OK] a down in the fight: reported even at full health after standing up
+  [OK] tally per kind: saved fights + new ones, downs counted per fight
+  [OK] a fight line: foes, fell, downs, damage, end health, record
+  [OK] several of one kind, none fell
+  [OK] facts only, no advice words
+  [OK] older than 10 minutes: not in the report
+  [OK] the log keeps the last 5 fights
+  [OK] say, errors, command answers: shown
+  [OK] status lines: only with verbose
+  [OK] nothing: not watching (no periodic look)
+  [OK] auto or a goal: watching
+  [OK] between two plan steps (no goal for a frame): watching
+  [OK] after a hold (auto off, goal put down): still watching, so the put-off instruction comes back (B1)
+  [OK] not stale: applied
+  [OK] stale, not the host: dropped as before
+  [OK] stale answer to the host: keep / ask applied (the say reaches the host)
+  [OK] stale set / hold to the host: asked again once
+  [OK] stale twice: the say and order are kept, the goal is not changed
+  [OK] order applies only to the instruction the answer's report saw
+  [OK] same goal revision: not stale
+  [OK] the same plan went on to the next steps: not stale (the fight_end answer of 5-실게임2 is applied)
+  [OK] no plan and the goal changed: stale as before
+  [OK] the plan stopped or ended meanwhile (host goal, failed step, plan done): stale
+  [OK] another plan now: stale
+  [OK] a plan started after the report was sent: stale
+  [OK] the plan ended while the periodic answer was on the way: the answer is applied (not dropped)
+  [OK] a goal set after the plan ended (host or another source): stale as before
+  [OK] another plan runs now: stale
+  [OK] a plan that stopped (failed step, hold) is not an ended one: stale
+  [OK] the owed plan_done: a set or hold answer replaces it
+  [OK] keep / ask / talk-only with nothing to go on: the owed plan_done goes once
+  [OK] keep while a goal or plan runs by then: no owed call
+  [OK] the order values
+  [OK] no order (or an unknown one): no change — not 답함, not 따름 (R2)
+  [OK] the planner's own events reach the report whatever the mode; others only while watching (R5)
+  [OK] a plan without its goal (cleared outside it, or another goal): stopped like a failed step
+  [OK] its step running, between two steps, or no plan: not orphaned
+  [OK] "say": null is no say (작은 지적 5)
+  [OK] an orders entry applies to instructions the report carried
+  [OK] order follow: followed, and the set answer's source will carry it
+  [OK] R2: keep + say without order leaves the instruction as it was (logged), not 답함
+  [OK] R3: the earlier followed instruction is not overwritten and keeps its plan
+  [FAIL] its plan done: the earlier one closes (끝남) and drops out; the latest stays
+  [OK] R3: the question is answered and the put-off 구리 10개 is still in host_orders_open
+  [OK] report: host_order is the latest, host_orders_open the earlier open ones
+  [OK] orders: the earlier put-off one is followed again (its source is set by the set answer)
+  [OK] orders for an instruction the report did not carry: not applied
+  [OK] talk-only (stale twice, the goal not changed): a follow is not taken (작은 지적 4)
+  [OK] a fourth open instruction pushes the oldest open one out (밀려남, logged)
+  [OK] Carried: the followed instructions a source carries
+  [OK] PutOff: the plan put down leaves its instructions put off (open), the one the hold follows stays followed
+  [OK] R1: the owed plan_done, the ended plan, the next step and the hold watch go
+  [OK] R1: every open instruction closes as 멈춤 and the plan goes
+  [OK] R1: the stop is an event for the next report
+  [OK] R1: a stopped instruction is closed for good
+  [OK] nothing open or running: no stop event
+  [OK] orders: integer ids with string values
+  [OK] a JSON null say is read as no say
+  [OK] hold with order follow: the instruction stays followed
+  [OK] hold without follow: put off as before
+  [OK] arrows, ellipsis and dashes become ASCII
+  [OK] Hangul, ·, @ and brackets stay
+  [OK] the hint line needs no change for the font
+  [OK] same notice hidden within 5 min, another character's shown
+  [OK] shown again after 5 min; one was hidden
+  [OK] watching: a failed report goes again
+  [OK] not watching: no endless retry of other reports
+  [OK] not watching: the host's words up to 3 sends, then stop (and tell)
+  [OK] a down is told once (back_up or fight_end), a new down again
+  [OK] a fight whose down back_up already told: no second call
+  [OK] a low fight without a down calls whatever back_up did
+  [OK] end health after a down is marked (작은 지적 9)
+  [OK] @allright is not @all
+  [OK] @claudex is not @claude
+  [OK] @claude야 / @Claude, still Claude
+  [OK] plan triggers rank with the goal events
+  [OK] a step is done on goal_done / completed / explore_ended
+  [OK] stalls stop the plan
+  [OK] no plan: plan null
+  [OK] a plan owns the goals set with its source
+  [OK] report: step k of n, now, next
+  [OK] a done step: the next one, no call
+  [OK] a failed step stops the rest; the report shows where and what is left
+  [OK] the stopped plan is shown once
+  [OK] the last step done: the plan is over
+  [OK] a new set answer replaces what was left
+  [OK] the reader takes plan steps in order (a non-object step stays as an empty step)
+  [OK] no plan key: Plan null
+  [OK] K1: every step can be taken: no cut
+  [OK] K1: step 1 cannot be taken: cut 0 (the goal stays)
+  [OK] K1: step 3 cannot: steps 1-2 are set
+  [OK] K1: no list: no cut
+  [OK] K1: cut 0 note: where, why, the steps not taken, say and order kept
+  [OK] K1: cut 2 note: steps 1-2 taken, from step 3 not
+  [OK] K1: no cut, or a cut past the steps: no note
+  [OK] K1: nothing taken, nothing runs, not asked yet: ask again now
+  [OK] K1: a goal runs: no re-ask, the next report carries the why
+  [OK] K1: a plan runs or a step is about to start: no re-ask
+  [OK] K1: asked again already: not a second time (no loop on the same impossible step)
+  [OK] K1: some steps were taken, or none cut: no re-ask
+  [OK] K1: cut 0 with order follow: the instruction stays 받음 (open), no source carries it
+  [OK] K1: cut 0 with order defer: applied
+  [OK] K2: the plan step stuck: its instruction is 막힘, open, not carried any more
+  [OK] K2: a 막힘 instruction stays in host_orders_open for the next report
+  [OK] K2: a 막힘 instruction can be followed again (orders)
+  [OK] K2: a 막힘 instruction can be dropped
+  [OK] K2: /ai stop closes 막힘 and 따름 alike as 멈춤
+  [FAIL] K2: a goal done: 끝남 (closed) as before
+== G3f
+  [OK] F1a. no goal + self-defence + an own door left open: the close option is in the model's input next to the combat options (attack:7 attack:9 away:0 retreat:-4,-5 doorclose:-4,-6 wait)
+  [OK] F1b. (as found) put into lCraft under no goal it never reached the model
+  [OK] F1c. close fight with a goal: the close option stays (it is no break-off step, the break-off step stays too) (attack:3 doorclose:-4,-6 mine:5,5 wait)
+  [OK] F1d. with a goal out of combat: the close comes before the craft options
+  [OK] F2a. a program stop keeps a running tail or checks for one; only a hard stop (host /ai stop, leaving) cuts it
+  [OK] F2b. goal done -> stop next to the open own door: the door is closed before the end is reported ('지난 문 (-4,-6) 닫음(닫힘(누름 1번, 문 중심에서 0.59칸))')
+  [OK] F2c. goal done while the tail runs (also self-defence over / upper LLM hold): the close goes on and the door is closed
+  [OK] F2d. cut by the model's new choice: the door stays owed and the close option is in the next input (no goal)
+  [OK] F3a. the door gap's last batch: no closing of the gap (the door spot stays open) but its last gap tile (9,4) is the outside option's tile ((9, 4))
+  [OK] F3b. closing gap 1 from outside with gap 2 and the door gap open: the open places, not 'break a wall' ('바깥에서 닫음, 둘레에 아직 열린 곳 2곳 있음(가장 가까운 (5,4)) — 그쪽으로 드나들 수 있음')
+  [OK] F3c. the door gap from outside: the door spot (8,4) is the way in ('바깥에서 닫음, 둘레에 아직 열린 곳 1곳 있음(가장 가까운 (8,4)) — 그쪽으로 드나들 수 있음')
+  [OK] F3d. closing the last open place: '둘레 문 (x,y)로 드나듦' with a door, '벽 하나를 부숴야 함' without
+  [OK] F3e. repair closing (0,6): the side wall off the cut opens no way, the gone door (8,4) stays an open place (1)
+  [OK] F3f. (S8) a remembered door that is gone is an open place, not '둘레 문으로 드나듦' ('바깥에서 닫음, 둘레에 아직 열린 곳 1곳 있음(가장 가까운 (8,4)) — 그쪽으로 드나들 수 있음')
+  [OK] F4a. (as found) the edge options in lCraft fill the 14: no root / pickup option is left and the gather goal would end 'stalled' (14 options)
+  [OK] F4b. the edge options after the goal's own: every progress option stays, the goal does not stall (mine:3,3 attack:0 attack:1 eat:berry mine:root1 mine:root2 pickup:wood explore:9,9 edgerepair:1,1 edgerepair:1,1:out edgerepair:2,2 edgerepair:2,2:out edgefill:0:3,4 edgefill:0:3,4:out wait)
+  [OK] F4c. 'continue' is kept; the goal's options come before the edge options, which fill the rest (6)
+  [OK] F4d. crowded: the edge options keep their share (4 of 4) from the last fillers; roots and 'continue' stay; 14 + wait (mine:3,3 attack:0 attack:1 eat:berry mine:filler7 mine:filler6 mine:filler5 mine:filler4 mine:root1 mine:root2 edgerepair:1,1 edgerepair:1,1:out edgerepair:2,2 edgerepair:2,2:out wait)
+  [OK] F4e. without edge options the cut keeps the first 14 as before
+  [OK] S1a. in the door tile (-4.01,-6.46), inside north: it closes from the inside
+  [OK] S1b. inside south but its stand cannot be stood on: the outside close (north) is used
+  [OK] S1c. out of the door tile (on the outside half past the tile edge) it closes from where it is, as before
+  [OK] S2a. health 80 of 150, the bonus ends (max 100) and a hit of 20: a hit
+  [OK] S2b. health 120 of 150, the max drops to 100 and the health with it: no hit
+  [OK] S2c. hunger still no hit; a hit while starving still one
+  [OK] S3a. the enemy cannot come over an unseen edge tile taken from memory: the fact says so ('기지 바깥, 둘레에서 3칸. 닿는 길: 문 (0,-3)을 지나 14칸(문을 열고 나가서 침; 지나간 뒤 문은 닫음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 이 답은 지금 안 보이는 곳의 기억으로 정함(본 적 없는 둘레 1칸은 계획대로 막힘·문으로 봄; 지금 그곳은 안 보여 바뀌었는지 모름). 다만 문은 체력 2·피해 감소 0이라, 쫓다가 문에 막힌 적이 치면 곧 부서질 수 있음(규칙 wall-break-ways (1)·door-enemy, 추정). 부서지면 그 칸은 열린 길이 됨. 벽을 부수는 종류로 알려지지 않음(쫓다가 막히면 약한 벽은 때릴 수 있음, 규칙 wall-break-ways (1); 문은 체력 2라 타일 피해가 1이라도 있으면 그 조건을 채움, door-enemy, 추정).')
+  [OK] S3b. every edge tile seen: no memory note
+  [OK] S4. while the tail runs the owed door is kept; after Reset (tail aborted) a shut door is owed nothing
+  [OK] S5a. the memory cleared / a new plan (4): the old plan's breach reason is dropped
+  [OK] S5b. this plan's breach reason is carried
+  [OK] S7a. pick N 2 with my door on gap 1: said, not ignored (', 고른 문틈 2에는 문 자리를 두지 않음 — 이미 놓은 내 문 (-10,-18)(틈 1)을 둘레 문으로 씀, 틈 2의 칸은 모두 벽으로 메움')
+  [OK] S7b. the door on the chosen gap, no gap chosen, or nothing adopted: no note
+  [OK] N1a. no tail running: the close option is a new close (no note)
+  [OK] N1b. tail running: the same door's close continues it, another door's does not; the option says it is closing now and what is left (' 지금 이 문을 닫는 중(앞 기술이 끝난 뒤의 닫기; 남은 단계: 문 앞 자리로 가서 E로 닫기). 이것을 고르면 이어서 닫음(처음부터 다시 하지 않음); 다른 행동을 고르면 닫기가 끊김.')
+  [OK] N1c. after the press the remaining step is the shut check (' 지금 이 문을 닫는 중(앞 기술이 끝난 뒤의 닫기; 남은 단계: E 1번 누름, 닫힘 확인). 이것을 고르면 이어서 닫음(처음부터 다시 하지 않음); 다른 행동을 고르면 닫기가 끊김.')
+  [OK] N2. the edge share takes only the filler: attacks, keep away, retreat, eat, the door close and 'continue' stay (mine:3,3 attack:1 attack:2 away:0 retreat:0,0 doorclose:-4,-6 eat:berry mine:root0 mine:root1 mine:root2 mine:root3 explore:0 explore:1 place:Torch@1,1 wait)
+  [OK] N3a. an enemy sealed off anyway, the base far beyond the window (20 edge tiles remembered): no memory note
+  [OK] N3b. memory closed the unseen edge tile the enemy would come by: the note stays
+  [OK] N4a. (as found) an ordinary call: the share goes to the first edge options (fill, torch, repair), the door re-hang is left out
+  [OK] N4b. the breach call: repair (both sides) and the door re-hang are in the share first (mine:3,3 mine:filler0 mine:filler1 mine:filler2 mine:filler3 mine:root0 mine:root1 mine:root2 mine:root3 mine:root4 edgerepair:5,5 edgerepair:5,5:out place:WoodDoor@8,4 edgefill:0:1,4 wait)
+  [OK] R2a: changing every edge description leaves repair priority, quota, order and cut categories unchanged
+  [OK] R2a: repair meaning comes from the role, never from the description
+  [OK] N4c. the left-out edge options are one line ('둘레 후보 2개 더 있음(메우기 1, 횃불 1) — 후보 수 상한으로 이번 목록에서 빠짐'); none left out: no line
+  [OK] N4d. an ordinary call says what was left out too ('둘레 후보 2개 더 있음(보수 1, 문 다시 달기 1) — 후보 수 상한으로 이번 목록에서 빠짐')
+== G3r
+  [OK] Na1. the press window: 0.35 / 0.50 / 0.54 no (재실측 failures), 0.62 / 0.70 yes, 0.75 only widened, 0.92 never, not on the other side, not far off the axis
+  [OK] Na2. the earlier outside-close failure (14-단계3: pressed at 0.46 and 1.02) is the same cause: both places are out of the window
+  [OK] Na3. pressed against the door from inside (0.35 off): steps back, opens, passes, closes; presses at 0.68 0.56, 1.6 s (열림(누름 1번, 문 중심에서 0.68칸); 닫힘(누름 1번, 문 중심에서 0.56칸))
+  [OK] Na4. pressed against the door from outside (0.35 off): the same; presses at 0.73 0.60, 2.1 s (열림(누름 1번, 문 중심에서 0.73칸); 닫힘(누름 1번, 문 중심에서 0.60칸))
+  [OK] Na5. from 3 tiles off at full speed: presses at 0.58 0.56, 1.6 s (열림(누름 1번, 문 중심에서 0.58칸); 닫힘(누름 1번, 문 중심에서 0.56칸))
+  [OK] Na6. the tail from (-4.00,-4.38): closes; presses at 0.67, 0.4 s ('지난 문 (-4,-6) 닫음(닫힘(누름 1번, 문 중심에서 0.67칸))')
+  [OK] Na7. the tail at 0.49 off (t=1992): steps back, then closes; presses at 0.65, 0.7 s ('지난 문 (-4,-6) 닫음(닫힘(누름 1번, 문 중심에서 0.65칸))')
+  [OK] Na8. held at 0.35 off: never presses there; '문 열기 6초 넘음(누름 0번, 문 중심에서 0.38칸 — 누를 자리보다 문에 가까움(문 칸 안이거나 밀림))'
+  [OK] Na9. the door state decides: 2 presses from the window, then '2번 눌러도 문이 열리지 않음(누른 자리 문 중심에서 0.62칸)'
+  [OK] D2a. (as logged) the rounded tile is the door tile and the door-passing plan allows it (the A* from there to the door was 0 tiles)
+  [OK] D2b. the plan starts from the stand tile (-4,-5), not the door (-4,-5)
+  [OK] D2c. from the stand tile the door is 1 step away (the door step runs: open -> through -> close)
+  [OK] D2d. pressed from outside the plan starts outside (-14,-18)
+  [OK] D2e. the stand tile itself blocked for the plan: the nearest allowed neighbour (-4,-4)
+  [OK] Nf1. (as logged) without the door no stand is reached from outside; through the own door the inside stand (-5,-1) is
+  [OK] Nf2. the door tile itself is never a stand
+  [OK] Ne1. a stand reached through the tile to place is said by its side: outside '바깥, 놓을 칸을 지나 나가서 놓음' / inside '안쪽, 놓을 칸을 지나 들어가서 놓음'
+  [OK] B0. the fixture: inside 136, door (-14,-17), TheCore 25 tiles
+  [OK] B1. (as measured) the core is on the remembered edge and out of view; read from its tiles the enemy past the shut door 'can come' (Door comes=True)
+  [OK] B2. the edge out of view, no look kept since: as the plan says (closed): cannot come, the way is through the door (Door 8, 4 edge tiles by the plan)
+  [OK] B3. the core remembered as a large object: its tiles closed out of view, cannot come (Door comes=False)
+  [OK] B4. both (the game side): the facts say it cannot come, the way is through the door, and that memory decided it ('기지 바깥, 둘레에서 3칸. 닿는 길: 문 (-14,-17)을 지나 8칸(문을 열고 나가서 침; 지나간 뒤 문은 닫음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 이 답은 지금 안 보이는 곳의 기억으로 정함(이번에 다시 보지 못한 둘레 4칸은 계획대로 막힘; 본 적 있는 큰 물체 4개(LarvaBossStatue, TheCore, SlimeBossStatue, LarvaHiveBossStatue)의 칸은 막힘으로 봄; 지금 그곳은 안 보여 바뀌었는지 모름). 다만 문은 체력 2·피해 감소 0이라, 쫓다가 문에 막힌 적이 치면 곧 부서질 수 있음(규칙 wall-break-ways (1)·door-enemy, 추정). 부서지면 그 칸은 열린 길이 됨. 벽을 부수는 종류로 알려지지 않음(쫓다가 막히면 약한 벽은 때릴 수 있음, 규칙 wall-break-ways (1); 문은 체력 2라 타일 피해가 1이라도 있으면 그 조건을 채움, door-enemy, 추정).')
+  [OK] B5. 결함 1 (option 4, 16.4 s): before 66 combat re-decisions at the 0.25 s floor (measured 41), now 0, self-defence off
+  [OK] B6. a placed wall in view that is gone: the enemy can come again (Open 10)
+  [OK] B7. a remembered object stays while its centre is out of view, and goes when its centre is in view without it
+  [OK] Ng1. a walker 1.40 tiles off past the shut door: nothing gets across, no threat (Door touch=False)
+  [OK] Ng2. the fact says so ('1.5칸 안이지만 사이에 닫힌 문이 있음: 서로 칠 수 없음(위협으로 세지 않음; 문이 열리거나 부서지면 달라짐).')
+  [OK] Ng3. a wall/door-breaking kind and a ranged one within 1.5 tiles stay threats, with the fact why
+  [OK] Ng4. the door open: nothing between, a threat
+  [OK] Ng5. an enemy at (-4,-6.4) pressed against the door: read on the door tile it 'comes' (the inside neighbour), from its stand tile (-4,-7) it does not
+  [OK] Ng6. 35 s with the walker at the door: self-defence never starts (measured SD #4-#6, 28 calls)
+  [OK] Ng7. walls all round: an enemy on the diagonal is not 'nothing between'
+  [OK] Sb1. the cut through my door: '틈 1곳, 막을 칸 1칸(가장 긴 틈 1칸), 더 놓을 블록 없음(틈의 내 문 1칸은 그대로 둘레 문), 둘러싸이는 넓이 32칸, 안쪽에 놓을 수 있는 칸 0칸'
+  [OK] Sb2. the cut goes through my door when it can: without it (6,5), with my door at (6,8) (6,8) (blocks needed 0)
+== G3rr
+  [OK] F1a. (as 9a1b9f9) attack through the door: the straight step toward the enemy between the door step's stand-still frames — the close never happens, the door stays open (Close, presses 0.73, swung with the door open=True)
+  [OK] F1a2. (as 9a1b9f9) the enemy out of reach: back and forth at the far press spot (90 frames walking back), '문 닫기 6초 넘음(누름 0번, 문 중심에서 1.20칸 — 누를 자리에 못 섬(무언가 막음))', the door open
+  [OK] F1a3. now: closes (1.4 s, presses 0.58 0.57)
+  [OK] F1b. with one owner of the move (the door step while it runs): opens, passes, closes from the press window; presses at 0.58 0.57, 1.4 s (열림(누름 1번, 문 중심에서 0.58칸); 닫힘(누름 1번, 문 중심에서 0.57칸))
+  [OK] F1c. from 3 tiles inside at full speed with the straight step: closes (1.6 s, presses 0.58 0.56)
+  [OK] F1d. clearing an object in reach of the far press spot: before the swing cut the step with the door open (Close, swung open=True); now the close comes first, then the swing (1.4 s)
+  [OK] F1e. the rules: the door step's move (also its stand-still) wins while it runs; a skill's straight step only without a walk direction, and the step check is asked only then
+  [OK] S3a. the arrival waits only while the step may hold the door open (a press made, passing, closing)
+  [OK] S3b. the whole door step ends after 12 s: '문 지나기 전체 12초 넘음(닫기 단계, 문 열림, 문 중심에서 0.63칸 — 누를 자리에 섬)'
+  [OK] S1a. corrections that fall short (23) do not widen the window: no press from 0.80 ('문 닫기 6초 넘음(누름 0번, 문 중심에서 0.80칸 — 누를 자리에 못 섬(무언가 막음))')
+  [OK] S1b. after two jumps over the window the far end is 0.85 (an estimate; a standing press at 0.70-0.85 is not measured)
+  [OK] F7. in the door step: '지금 문 (-4,-6) 지나기 단계(문 열림, 남은 단계 지나가기 → 닫기): 다른 행동을 고르면 문이 열린 채 남음(열린 문은 적도 지나감).'; before it opened: '지금 문 (-4,-6) 지나기 단계(문 앞으로 가기, 문은 아직 닫힘: 열기 → 지나가기 → 닫기).'
+  [OK] R5. the reach map notes no last look (the breach scan is the one place)
+  [OK] F2a. the dug-out root (-1,2) in view: the enemy past it can come, the look is kept (open)
+  [OK] F2b. (as 9a1b9f9) out of view the hole was 'closed as planned' and the enemy 'cannot come'; now it is what was seen there last: open, the enemy can come (seen open 1)
+  [OK] F2c. out of view the last look decides, not the tile now (seen open: open)
+  [OK] F2d. seen closed at the last look: out of view closed, said as the last look ('기지 바깥, 둘레에서 3칸. 닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 이 답은 지금 안 보이는 곳의 기억으로 정함(마지막으로 볼 때 막혀 있던 둘레 1칸은 그대로 막힘으로 봄; 지금 그곳은 안 보여 바뀌었는지 모름). 벽을 부수는 종류로 알려지지 않음(쫓다가 막히면 약한 벽은 때릴 수 있음, 규칙 wall-break-ways (1); 문은 체력 2라 타일 피해가 1이라도 있으면 그 조건을 채움, door-enemy, 추정).')
+  [OK] F2e. (as 9a1b9f9) the hole in view is a breach; out of view it was dropped (no repair option, no fact)
+  [OK] F2f. out of view the seen hole stays a breach with its fact ('(-1,2) 자연 벽·물체가 있던 둘레 칸이 열림(기억: (-1,2) 마지막으로 볼 때 열림, 지금 안 보임)'), a repair batch, and no new trigger walking off and back
+  [OK] F3a. without a base the large object memory decided 'cannot come': the fact says so ('닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 이 답은 지금 안 보이는 곳의 기억으로 정함(본 적 있는 큰 물체 1개(Workbench)의 칸은 막힘으로 봄; 지금 그곳은 안 보여 바뀌었는지 모름).')
+  [OK] F4a. the remembered object's tiles in view (the object gone) are open: memory never covers a tile in view
+  [OK] F4b. an object the AI stands inside is not kept as closed
+  [OK] F5. the large object memory clears (AIObjects.ClearMemory on another world, AIMemory.Ensure)
+  [OK] F9. a tile blocked only by a stuck mark reads open in the reach grid (an object closes it, fence/water are low)
+  [OK] F6a. a wall between and a walk round: counted as a threat and said so, no door words ('1.5칸 안이지만 사이에 벽이나 막힌 칸이 있음: 지금은 서로 칠 수 없음(걸어서 돌아올 길은 있어 위협으로 셈).')
+  [OK] F6b. a wall between, no way round: not counted, no door words ('1.5칸 안이지만 사이에 벽이나 막힌 칸이 있음: 서로 칠 수 없음(위협으로 세지 않음).')
+  [OK] F6c. a shut door between: '1.5칸 안이지만 사이에 닫힌 문이 있음: 서로 칠 수 없음(위협으로 세지 않음; 문이 열리거나 부서지면 달라짐).'
+  [OK] F8. the attack's walk target: rounded = the door tile, 'arrived' from inside at 1.0; the stand tile (-4,-7) is 2.0 off (the walk goes through the door)
+  [OK] R1a. (as 61f57e6) in reach at the inner press spot the attack swung at the shut door (0.3 s, no press)
+  [OK] R1b. now: no swing through the shut door; the door step opens, passes and closes first (2.2 s, 2 presses, then the swing)
+  [OK] R1c. 'nothing between' is the facts' touch: false through the shut door, true once it is open
+  [OK] R1d. an enemy whose tile is an object's next to the AI: nothing between (the swing is not lost)
+  [OK] R2a. (the wait alone, as 61f57e6) 6.1 s with the door open, 6 hits taken, no swing, then '문을 지나가지 못함' with the door open (t=6.9 open at 0.9, pass at 0.9, swung=False shut=False)
+  [OK] R2b. the blocked fact is there 0.00 s into the pass ('문 (-4,-6) 닫기가 막힘: 적의 몸이 먼 쪽 누를 자리를 막음(지나가지 못함), 문을 연 뒤 맞음(체력 100→90).'); taking 'hit now' swings 0.03 s later (1 hits)
+  [OK] R2c. blocked: hit since the door opened ('문 (-4,-6) 닫기가 막힘: 문을 연 뒤 맞음(체력 100→90).'), an enemy in the door tile ('문 (-4,-6) 닫기가 막힘: 적의 몸이 문 칸에 있음(문이 닫히지 않음).'); nothing: no fact (and none before the door opened)
+  [OK] R2d. the swing: nothing between always; while the door step holds the door only after 'hit now'
+  [OK] R2e. '문을 연 뒤 닫기 전에는 치지 않음(닫기를 먼저 마치고 침; 보통 1초 안팎, 막히면 문 지나기 전체 최대 12초).' on the running attack's step and on the attack option through a door
+  [OK] R3. (as 61f57e6) after a restart the seen hole was 'closed as planned'; kept with the edge memory it is open, and still a repair (20 tiles saved)
+  [OK] R3b. only a new or changed look marks the memory to save
+  [OK] R4. someone else's shut door between: '1.5칸 안이지만 사이에 닫힌 문(남의 것)이 있음: 서로 칠 수 없음(위협으로 세지 않음; 문이 열리면 달라짐).' (as 61f57e6 read as a wall: '1.5칸 안이지만 사이에 벽이나 막힌 칸이 있음: 서로 칠 수 없음(위협으로 세지 않음).')
+== G3f3
+  [OK] N1a. Caveling (no data read): a wall breaker from the live run, said so ('벽을 부수는 종류(실측): 1마리가 소환 1초 뒤 자연 벽, 2.5초 뒤 놓은 흙 벽을 부수고 수십 초 안에 둘레 14곳을 뚫음(2026-11-06 실측, 규칙 wall-break-ways)')
+  [OK] N1b. a kind with no data, no measurement and no report stays 'not known'
+  [OK] N1c. data: bump damage 30 meets dirt (hp/5 = 27 + 1) but not wood (30 + 1); the door is not said from the tile key (합치기 전 수정 C1: the object key): '벽을 부수는 종류(게임 데이터): 쫓다가 부딪힌 벽을 타일 피해 30로 때림(벽 감소를 뺀 값이 벽 체력/5 이상일 때만: 진흙 블록은 때림)'
+  [OK] N1d. data: a melee tile damage makes a breaker
+  [OK] N1e. data read, no tile damage: said as data, not 'not known' ('게임 데이터에 벽·문 피해 없음(부딪힌 벽 타일 피해 0·부딪힌 물체(문) 피해 0·근접 타일 피해 0·돌진 타일 피해 0; 규칙 wall-break-ways)')
+  [OK] N1f. Caveling with data: the data, then the measurement
+  [OK] N1g. the bump rule (damage − reduction ≥ hp/5) gives the table of 1-게임조사 2.3 (dirt 28, stone 115)
+  [OK] N1h. past the shut door 1.4 tiles: a walker is no threat, a Caveling is (a breaker: hits across), with the fact why
+  [OK] N1i. its kill facts (no base) carry the breaker fact: '닿는 길: 문 (-4,-6)을 지나 2칸(문을 열고 나가서 침; 지나간 뒤 문은 닫음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 다만 문은 체력 2·피해 감소 0이라, 쫓다가 문에 막힌 적이 치면 곧 부서질 수 있음(규칙 wall-break-ways (1)·door-enemy, 추정). 부서지면 그 칸은 열린 길이 됨. 1.5칸 안이지만 사이에 닫힌 문이 있음. 벽·문을 부수는 종류라 그 너머로도 칠 수 있는 것으로 보고 위협으로 셈(추정). 벽을 부수는 종류(실측): 1마리가 소환 1초 뒤 자연 벽, 2.5초 뒤 놓은 흙 벽을 부수고 수십 초 안에 둘레 14곳을 뚫음(2026-11-06 실측, 규칙 wall-break-ways).'
+  [OK] N2a. the short fact for the other options: '고르면 지금 지나는 문 (-4,-6)이 열린 채 남음.'
+  [OK] N2b. it goes on every other option (keep away, retreat, eat, wait, another target); not on going on, nor on 'hit now' (that one says the door stays open)
+  [OK] N2c. the running action's own option carries the door step (open, through, close)
+  [OK] N3a. a door step keeps its trace (phases, presses with the distance): '0.00s 열기; 0.13s pulse 0.05s out @0.35 aim 0.63; 0.40s pulse 0.03s in @0.73 step 0.38; 0.67s pulse 0.02s out @0.54 aim 0.73 step 0.19; 0.93s press 1 @0.73; 0.97s 지나가기; 1.33s 닫기; 1.53s pulse 0.05s in @0.79 aim 0.60 step 0.19; 1.80s pulse 0.03s out @0.41 step 0.38; 2.07s press 1 @0.60; 2.10s Done; '
+  [OK] N3b. a failed step's trace ends 'failed': '0.13s press 1 @0.62; 1.13s press 2 @0.62; failed'
+  [OK] N4a. the door seen gone stays 'the door is gone (memory)' out of view: '(-1,2) 달았던 문이 없어짐(기억: (-1,2) 마지막으로 볼 때 열림, 지금 안 보임)'
+  [OK] N4b. a gap tile with nothing built stays 'not built' (no repair), even seen open
+  [OK] N4c. out of view: the door seen gone lets the enemy outside come (Open); a door seen hanging does not (Door)
+  [OK] N5a. a press held 1.4 s (Release) then sent: the door gets its second after sending; one press, closed (닫힘(누름 1번, 문 중심에서 0.63칸), presses 1)
+  [OK] N6a. from the pad: the old search (pad = no walk) found no stand (the 0.0 s failure); the pad walked off, a side stand (-5,-5)
+  [OK] N6b. the place options from the pad: 112, none on the pad
+  [OK] N7a. the door (-4,-6): no press from (-4.00,-4.78) (1.22 off), yes from (-4.00,-4.87) (1.13, taken at t=1058), the stand centre (-4,-5) and nearer
+  [OK] N7b. the wall (-5,-6): no press from the diagonal places (-4.00,-5.17), (-4.00,-5.31); from the side (-4.00,-6.01) yes
+  [OK] N7c. not on the footprint; a 2x2 from its side yes, from its corner no
+  [OK] N7d. the door seen gone (ground): the side stand (-4,-6) next to the tile, not the diagonal (-4,-5): (-4,-6)
+  [OK] N7e. read as a door (the old memory reading): through the door to the outside side stand (-5,-7), never the diagonal: (-5,-7)
+  [OK] N8a. the down record names what was found when the health fell: '보이는 적 없음; 체력이 줄 때 지속 피해 상태 Poisoned(값 5); 가까운 투사체 9201 1.2칸(보이지 않는 곳에서 쏜 것일 수 있음)'
+  [OK] N8b. nothing found: said so ('보이는 적 없음, 원인 모름(체력이 줄 때 지속 피해 상태도 가까운 투사체도 없었음)')
+  [OK] N8c. an enemy seen comes first; hunger 0 next; no finding is empty
+== G3m
+  [OK] M1a. (as a52384f) from the north the press never came: '설 칸에 왔지만 닿지 않음' after 1.6 s at (-4.00,-5.34) (logged: (-4.00,-4.78), 1.6 s)
+  [OK] M1b. now: the body stands still on the stand side and presses after 0.47 s from (-4.00,-5.06), 0.94 off the tile
+  [OK] M1c. 56/56 walks to the stand (14 start phases x north, south, side, smooth body) press standing still in the window; the slowest after 0.93 s
+  [OK] M1d. the repair (2,1) from (0,0): press after 0.53 s (1.00 off); a 2x2 from its side (0.95 off)
+  [OK] M1e. a body held off the stand: no press, after 3.1 s '설 칸 (-4,-5)에 3초 동안 멈춰 서지 못함(몸이 설 칸 중심에서 0.60칸, 놓을 칸에서 1.60칸 — 무언가 막음)'
+  [OK] M1f. the 0.9 box: a grave body reaching 0.05 into the door tile's box overlaps it; one short of it does not; a hung door's own tile does not overlap its side tile
+  [OK] M1g. the fact: '놓을 칸 (-4,-6)에 PlayerGrave(-4.1,-6.9)의 몸이 겹침 — 게임은 놓을 칸 가운데 0.9칸 상자에 물체가 겹치면 놓지 않음(먼저 치워야 놓임)'
+  [OK] M1h. (검수 D5) a diagonal stand only: no stand, and the fact says the diagonal (1,1) is left out by the rule: '대각 칸 (1,1)은 갈 수 있으나 설 칸으로 쓰지 않음(대각 자리에서 누른 놓기가 실측에서 2번 다 거절됨, 20-실측 run2 t=267.5·335.9; 게임의 놓기 범위로는 대각도 닿지만 그 거절의 원인은 못 가림)'
+  [OK] M2a. a press waiting 1.4 s (Release) is sent once, not dropped (1 tick)
+  [OK] M2b. a press left by an ended skill: (as a52384f) sent later at another place (1); now dropped at the end, never sent ('BODY: interact-with-object press #1 dropped unsent: 기술 공격 끝남 (waited 0.5s)')
+  [OK] M2c. a press no state takes: dropped after 2.7 s with the state ('BODY: interact-with-object press #1 dropped unsent: 2.5초 동안 게임이 누름을 받는 상태가 아님: state=VehicleRiding (waited 2.6s)'), and the next press is taken (it was blocked behind it)
+  [OK] M2d. a press already on its server tick is not dropped (it finishes)
+  [OK] M2e. the door step with presses that never go out: '문 열기 6초 넘음(누름 1번, 마지막 누름이 아직 안 보내짐, 문 중심에서 0.63칸 — 누를 자리에 섬) — 누름 #2을 보내지 못하고 버림(2.5초 동안 게임이 누름을 받는 상태가 아님: state=Release, 2.5초 기다림)'
+  [OK] M3a. object damage 3, tile 0: a door breaker, a threat past the shut door 1.4 off ('문을 부수는 종류(게임 데이터): 쫓다가 부딪힌 물체(문 등)를 피해 3로 때림(문은 체력 2·피해 감소 0이라 때림)')
+  [OK] M3b. tile damage 198, object 0: walls yes; the door not said hit (its side walls: it falls) ('벽을 부수는 종류(게임 데이터): 쫓다가 부딪힌 벽을 타일 피해 198로 때림(벽 감소를 뺀 값이 벽 체력/5 이상일 때만: 진흙 블록·나무 벽·점토 블록·돌 블록은 때림), 부딪힌 물체(문) 피해는 0(문은 직접 안 때림; 문 옆 벽이 부서지면 달린 문이 떨어짐)')
+  [OK] M3c. (D6) only the keys read are said: unread '게임 데이터에서 읽은 값으로는 벽·문을 안 때림(부딪힌 벽 타일 피해 0·근접 타일 피해 0·돌진 타일 피해 0; 못 읽음(모름): 부딪힌 물체(문) 피해; 규칙 wall-break-ways)'; all zero '게임 데이터에 벽·문 피해 없음(부딪힌 벽 타일 피해 0·부딪힌 물체(문) 피해 0·근접 타일 피해 0·돌진 타일 피해 0; 규칙 wall-break-ways)'; no chase state '게임 데이터에 벽·문 피해 없음(쫓다가 부딪힌 것 때리기 없음(그 상태가 없음)·근접 타일 피해 0·돌진 타일 피해 0; 규칙 wall-break-ways)'
+  [OK] M3d. the log line shows a key not read as '?'
+  [OK] M4a. (D1) a failed door step holds no door; a passing one does
+  [OK] M5a. health above the new max going with it is no hit (105 -> 100 at max 100: 0); a loss under the max is (105 -> 100 at max 105: 5; 100 -> 80: 20)
+== PG
+  [OK] 1. 'here' reads and writes back (here)
+  [OK] 1. 'base' reads and writes back (base)
+  [OK] 1. 'core' reads and writes back (core)
+  [OK] 1. 'farm' reads and writes back (farm)
+  [OK] 1. 'tile:-3,12' reads and writes back (tile:-3,12)
+  [OK] 1. 'water:5,-2' reads and writes back (water:5,-2)
+  [OK] 1. 'station:CopperAnvil@2,0' reads and writes back (station:CopperAnvil@2,0)
+  [OK] 1. 'chest:WoodenChest@-1,4' reads and writes back (chest:WoodenChest@-1,4)
+  [OK] 1. 'pot:CookingPot@3,3' reads and writes back (pot:CookingPot@3,3)
+  [OK] 1. 'ore:CopperOre@-40,12' reads and writes back (ore:CopperOre@-40,12)
+  [OK] 1. 'rect:0,0,2,2' reads and writes back (rect:0,0,2,2)
+  [OK] 1. 'line:3,4,7,4' reads and writes back (line:3,4,7,4)
+  [OK] 1b. no where is base
+  [OK] 1c. fixed words in any case
+  [OK] 1d. a bad tile: 'tile:3' — tile:x,y 꼴이 아님
+  [OK] 1e. an object without a tile: 'station:CopperAnvil' — station:<ObjectID>@x,y 꼴이 아님
+  [OK] 1f. an unknown word: 모르는 장소 'somewhere'(here·base·core·farm·tile:x,y·station:<ID>@x,y·chest:…·pot:…·ore:<ID>@x,y·water:x,y·rect:x1,y1,x2,y2·line:x1,y1,x2,y2)
+  [OK] 1g. an unknown kind: 모르는 장소 종류 'cave'
+  [OK] 2a. rect 3x3 = 9 tiles
+  [OK] 2b. a line either way, row order
+  [OK] 2c. a diagonal line is refused: 'line:0,0,3,3' — line은 가로나 세로 한 줄이어야 함
+  [OK] 2d. 36 tiles is over the cap: 'rect:0,0,5,5' — 36칸, 한 번에 30칸까지
+  [OK] 2e. a huge rect is refused without listing it, with its real tile count (검수 S2): 'rect:0,0,1000,1000' — 1002001칸, 한 번에 30칸까지
+  [OK] 2f. exactly 30 tiles is taken
+  [OK] 3a. goto needs a where
+  [OK] 3b. a shape is for place only
+  [OK] 3c. place without a where is base
+  [OK] 4a. 12 lines at most (12)
+  [OK] 4b. fixed first, mine 5, others 2 (base,farm,chest0,chest1,chest2,chest3,chest4,other0,other1,ore CopperOre,ore TinOre,ore IronOre)
+  [OK] 4c. one ore per kind, the rest counted ([chest, 3],[station, 2],[ore, 2],[water, 1])
+  [OK] 4d. places within 900 chars (4 lines, 812 chars, more [chest, 6])
+  [OK] 5a. grouped, each item once, all materials first (손:Torch,WoodenWorkBench | CopperWorkbench:CopperAnvil,CopperHelm)
+  [OK] 5b. the cap counts the rest (1)
+  [OK] 6a. the station in the bag: place it first (CopperSword은(는) CopperAnvil에서 만듦 — 가방에 CopperAnvil 1개, 놓인 CopperAnvil은 모름. 먼저 place CopperAnvil(장소)로 놓은 뒤 craft CopperSword)
+  [OK] 6b. the station can be made: the order (CopperSword은(는) CopperAnvil에서 만듦 — CopperAnvil은(는) CopperWorkbench(보임 (2,0))에서 만듦(CopperBar 0/8). 순서: craft CopperAnvil → place CopperAnvil(장소) → craft CopperSword)
+  [OK] 6c. unknown where the station is made (CopperSword을(를) 만드는 제작대(CopperAnvil)를 만들 곳을 모름)
+  [OK] 6d. no station known at all
+  [OK] 7a. a gap tile
+  [OK] 7b. last tile from outside with a door
+  [OK] 7c. last tile from outside without a door
+  [OK] 7d. last tile from inside
+  [OK] 7e. the door spot
+  [OK] 7f. a door on another gap tile
+  [OK] 7g. a floor / bridge on a gap stays open
+  [OK] 7h. no edge tile, no fact
+  [OK] 8a. the gap's last tile from outside is an option with the fact (여기 놓으면 이 너머로 이어지는 길이 막힘(보이는 범위 밖까지 이어진 길), 둘레 틈 1의 마지막 칸 — 바깥에서 닫음, 둘레에 문 없음, 들어가려면 벽 하나를 부숴야 함)
+  [OK] 8b. the edge option is picked as its own kind
+  [OK] 8c. a bridge across a water column joins the space beyond and cuts nothing (검수 F2: no "막힘" with it) (물 1칸을 메움, 여기 놓으면 물 건너 36칸 공간과 이어짐)
+  [OK] 9a. plan steps keep where (place CopperAnvil base / craft CopperSword 1)
+  [OK] 9b. goal.where is read
+  [OK] 9c. a JSON null where is none
+  [OK] 9d. plan step place CopperAnvil base without count is taken as 1 (count -1)
+  [OK] 9e. the answer goal place without count (brief's example) is taken as 1 (count -1)
+  [OK] 9f. over 30 refused, 0 is 1
+  [OK] 9g. a shape's count is its tiles
+  [OK] 10a. arrived within the arrive distance or on a stand
+  [OK] 10b. a base stand at ring 6 is home; no stand found is not
+  [OK] 11a. a short bag for a shape
+  [OK] 11b. a short bag for a count
+  [OK] 11c. done / short (bag out after some) / stuck (nothing placed) / going
+  [OK] 11d. skipped tiles named (건너뛴 칸 1개: 이미 벽이 있음 1칸 (1,1))
+  [OK] 11e. a shape done with a skipped tile says it (rect:0,0,2,2의 9칸 중 8칸에 WoodFloor 놓음 · 건너뛴 칸 1개: 이미 벽이 있음 1칸 (1,1))
+  [OK] 11f. a shape ended by the bag says placed and not placed (rect:0,0,2,2의 9칸 중 6칸에 WoodFloor 놓음 — 가방에 WoodFloor이(가) 떨어져 3칸 못 놓음)
+  [OK] 11g. a count ended by the bag (WallDirtBlock 3개 놓음(기지) — 가방에 WallDirtBlock이(가) 떨어져 7개 못 놓음)
+  [OK] 11h. many skipped: the rest counted (건너뛴 칸 6개: 이미 물건이 있음 6칸 (0,0) (1,0) (2,0) 외 3칸)
+  [OK] 11i. reasons grouped, none cut off (건너뛴 칸 6개: 이미 벽이 있음 5칸 (0,0) (1,0) (2,0) 외 2칸; 이미 WoodFloor 놓여 있음 1칸 (-1,-3))
+  [OK] 13a. none placed, the rest held before or skipped: stuck, not done
+  [OK] 13b. placed tiles counted once, off-shape ones not
+  [OK] 13c. the end says what this goal placed and what was there before (rect:0,0,2,0의 3칸 중 1칸에 WoodFloor 놓음 · 건너뛴 칸 2개: 이미 WoodFloor 놓여 있음 1칸 (0,0); 이미 벽이 있음 1칸 (2,0))
+  [OK] 14a. tile fault: skip the tile; hand slot / bag: stop
+  [OK] 15a. (-9,0) is 2.2 from (-10,-2): inside radius 3 (2.24)
+  [OK] 15b. an option says "반경 밖" exactly when it is past the radius ((-9,0): 길을 끊지 않음)
+  [OK] 15c. the outside sentence names the same distance (칸 (-10,-2) 중심에서 5.7칸 — 반경 3.0칸 밖)
+  [OK] 16a. the edge-opening walls of a route: a hung door's side wall and an edge wall, not a plain wall or a door-spot side wall (2)
+  [OK] 16b. the option's sentence ( 그중 2개는 기지 둘레 벽(뚫으면 둘레가 열림): (-5,-6) 기지 문 (-4,-6) 옆 벽 — 캐면 문이 떨어짐(문은 가방으로 들어감, 단계 3 실측) — 문 칸이 열려 둘레가 열림(적 지나감); (-9,-3) 기지 둘레 벽 — 캐면 둘레가 열림(적 지나감).)
+  [OK] 16c. no edge wall: no sentence
+  [OK] 16d. a replan onto the edge wall the option stated goes on
+  [OK] 16e. a replan onto an edge wall not stated stops with the sentence (멈춤: 길을 다시 찾으니 기지 둘레를 파는 길만 남음(고를 때 없던 둘레 벽). 그중 1개는 기지 둘레 벽(뚫으면 둘레가 열림): (-5,-6) 기지 문 (-4,-6) 옆 벽 — 캐면 문이 떨어짐(문은 가방으로 들어감, 단계 3 실측) — 문 칸이 열려 둘레가 열림(적 지나감). 문으로 가는 길이 없음)
+  [OK] 16f. the same judge as the enemy dig option (EdgeWallFact.OpensEdge)
+  [OK] 16g. the rebuilt option states the new edge walls and goes on with them ( 그중 2개는 기지 둘레 벽(뚫으면 둘레가 열림): (-5,-6) 기지 문 (-4,-6) 옆 벽 — 캐면 문이 떨어짐(문은 가방으로 들어감, 단계 3 실측) — 문 칸이 열려 둘레가 열림(적 지나감); (-9,-3) 기지 둘레 벽 — 캐면 둘레가 열림(적 지나감).)
+  [OK] 16h. a replan with no edge wall goes on
+  [OK] 17a. one pass (before): the short way mines the edge wall (10,2) though a door is 10 rows down
+  [OK] 17b. two passes: the way by the door (10,12), no edge wall, not marked (30 tiles, closed 14)
+  [OK] 17c. no door: the second pass mines the edge (marked: the options say it is the only way)
+  [OK] 17d. no base edge: one pass, the same route as before
+  [OK] 17e. the target itself on the edge is not closed (digging to it is what was asked)
+  [OK] 17f. the edge way from the second pass says it is the only one
+  PG E1 cost (261x261, warm, best of 3): edge column one pass 32.1 ms / two passes 52.7 ms; edge ring around the target one pass 35.4 ms / two passes 19.1 ms
+  [OK] 20a. the edge way is searched too when the first way is 15 tiles or more or mines walls (and edge walls were met)
+  [OK] 20b. offered when the edge way is 10 walking tiles or more quicker (a hit = 1.2 tiles)
+  [OK] 20c. a long door way is kept, the edge way offered beside it (first est 34.0, edge est 11.2, passes 2)
+  [OK] 20d. a short door way: one pass, no detour
+  [OK] 20e. a first way that mines plain walls is weighed by its time: the edge way offered (est 41.6 vs 11.2)
+  [OK] 20f. the step cap is told apart from no way
+  [OK] 20g. a capped first pass: 'not found within the search', not 'none known' (cap True, used False)
+  [OK] 20h. the edge test is asked once per tile (165 asks, 165 tiles)
+  [OK] 22a. detour check off: the door way in one pass, no edge way searched
+  [OK] 22b. detour check off: no way without the edge still falls back to it (two passes)
+  [OK] 22c. the target's own wall does not count as "walls on the way" (passes 1, edge met 7)
+  [OK] 23a. both passes capped is told apart from no way (a target outside the box: no way, not capped)
+  [OK] 20i. the detour fact (문으로 돌아감 30칸·약 6초(둘레 (10,0)를 파면 12칸·약 4초, 둘레가 열림 — 기지 둘레 벽 — 캐면 둘레가 열림(적 지나감)))
+  [OK] 20j. a first way without a door says it goes around
+  [OK] 21a. the edge way goes last, as an edge option; the door way keeps its place
+  [OK] 21b. over 14 the edge way is cut first and takes no place back (not counted in the edge cut note); the edge share keeps the other edge options (dig:1,1,explore:0,explore:1,explore:2,explore:3,explore:4,explore:5,explore:6,explore:7,explore:8,explore:9,explore:10,edgefill:a,edgefill:b,wait)
+  [OK] 21c. with room the edge way is offered
+  [OK] 21d. a cut combat list (combatMaxCandidates) drops the edge way, not another option
+  [OK] 24a. an ore dig through the edge gets the edge sentence, once (파 들어가기 — 구리 광석 (-16,13) 쪽, 열린 길이 없어 벽 10개(WallDirtBlock 10)를 뚫으며 감. 그중 1개는 기지 둘레 벽(뚫으면 둘레가 열림): (-10,3) 기지 둘레 벽 — 캐면 둘레가 열림(적 지나감).)
+  [OK] 24b. no edge wall on the way: unchanged
+  [OK] 24c. mining the edge wall itself says it (a door-spot side wall does not open the edge)
+  [OK] 25a. tile types on water
+  [OK] 26a. the shortest detour among edge doors and my doors ((-10, 0))
+  [OK] 26b. my door near the way still taken; a far door not
+  [OK] 26c. edge doors: plan and not both inside
+  [OK] 26d. a left-out option keeps its edge fact (Q2), none added when there is none
+  [OK] 27a. shape edge text (그중 2칸이 둘레 틈 1 위(틈 위에 걷지 못하는 것을 놓으면 그 틈을 메움), 3칸이 기지 안쪽 | 그중 4칸이 기지 안쪽)
+  [OK] 28a. the gap tile option stays past the count (4)
+  [OK] 29a. a bridge tile never goes on ground
+  [OK] 29b. no placement settings: ground; settings: the land flag decides
+  [OK] 29c. water only: every spot is a water tile (11 spots)
+  [OK] 29d. ground allowed: ground and water spots (99)
+  [OK] 29e. the no-water sentence only when no water spot
+  [OK] 30a. an old anvil 1.4 tiles away is not the placed one
+  [OK] 30b. on the footprint first, else the nearest new one
+  [OK] 30c. none new (or too far): -1
+  [OK] 18a. out of view (memory) or a door seen there: a way through at the door cost
+  [OK] 18b. in view, another object and no door: blocked; in view and empty: an open tile
+  [OK] 19a. the door sentence
+  [OK] 12a. a list within its chars (2, 1 dropped)
+  [OK] 12b. craft groups within their chars (2 kept, more 3)
+== G3d
+  [OK] D1a. (as 0927753) from (-4,-9.00) the open fails in 7/10 tick phases, each as logged (no press, corrections only 'out' from 0.47 / 0.35): phase 0: '문 열기 6초 넘음(누름 0번, 문 중심에서 0.91칸)' — 0.40s 열기; 0.63s pulse 0.05s out @0.47; 1.03s pulse 0.08s out @0.47; 1.43s pulse 0.13s out @0.47; 1.80s pulse 0.20s out @0.47; 2.20s pulse 0.25s out @0.47; 2.63s pulse 0.25s out @0.35; 3.03s pulse 0.25s out @0.35; 3.43s pulse 0.25s out @0.35; 3.83s pulse 0.25s …
+  [OK] D1b. now from (-4,-9.00), open, pass and close: 10/10, the slowest 1.30 s; presses 20 (0 widened past 0.70, along >= 0.55): right after a correction 10, after a jump over and the walk back 0, without a correction 10; jumps over 0; corrections 10, at most 1 tick each; e.g. 0.40s 열기; 0.60s pulse 0.05s in @0.75 aim 0.59; 0.83s press 1 @0.59; 0.87s 지나가기; 1.10s 닫기; 1.23s press 1 @0.55; 1.27s Done; 
+  [OK] D2a. door passes, 14 start offsets x 10 tick phases x south / north / side: 420/420, the slowest 1.90 s; presses 840 (0 widened past 0.70, along >= 0.53): right after a correction 420, after a jump over and the walk back 0, without a correction 420; jumps over 0; corrections 420, at most 1 tick each (as 0927753 the open failed in 62/420)
+  [OK] D2b. a door with its passage east-west, from the west and the east: 112/112, the slowest 1.90 s; presses 224 (0 widened past 0.70, along >= 0.53): right after a correction 112, after a jump over and the walk back 0, without a correction 112; jumps over 0; corrections 112, at most 1 tick each
+  [OK] D5a. frame rates: 20 fps 105/105 (jumps 0, right after a correction 105/210, widened 0, max 1 tick); 20 fps jitter 105/105 (jumps 0, right after a correction 125/210, widened 0, max 1 tick); 30 fps 105/105 (jumps 0, right after a correction 105/210, widened 0, max 1 tick); 30 fps jitter 105/105 (jumps 0, right after a correction 119/210, widened 0, max 1 tick); 60 fps 105/105 (jumps 0, right after a correction 105/210, widened 0, max 1 tick); 60 fps jitter 105/105 (jumps 0, right after a correction 108/210, widened 0, max 1 tick)
+  [OK] D5b. steps x1.3: 420/420, the slowest 2.43 s; presses 840 (0 widened past 0.70, along >= 0.52): right after a correction 560, after a jump over and the walk back 0, without a correction 280; jumps over 470; corrections 1030, at most 1 tick each | x0.8: 420/420, the slowest 2.13 s; presses 840 (0 widened past 0.70, along >= 0.55): right after a correction 340, after a jump over and the walk back 0, without a correction 500; jumps over 0; corrections 440, at most 1 tick each
+  [OK] D5c. without the one-tick sender (time pulses only): 105/105 (jumps 63, widened 4); MergeFixTests order 105/105; sliding body 12/12
+  [OK] D3a. the aim: from 0.47 (0.50,0.87) to (0.61,0.24) 0.66 off; from 0.75 (-0.71,0.71) to (0.55,0.20) 0.59 off (straight on: 0.75 / 0.47, out)
+  [OK] D3b. no step reaches the window: straight at the spot (-1.00,0.00)
+  [OK] D3c. a correction from 0.47 that ends 1.03 off (out past NearSpot): counted over (1), the next pulse shorter (0.025 s), the walk back ('0.00s pulse 0.05s out @0.47; 0.00s over @1.03; ')
+  [OK] D3d. held at 0.80 (cannot move): aimed corrections fall short, no widening, no press ('문 닫기 6초 넘음(누름 0번, 문 중심에서 0.80칸 — 누를 자리에 못 섬(무언가 막음))')
+  [OK] D3e. (검수 L3) the window keeps the along-axis part above 0.50 (0.47 / 0.29 out, 0.50 / 0.25 widened out; 0.52 / 0.25 in)
+  [OK] D3f. (검수 M1) TickNudge: the move on every frame of the first tick, none on the next while asked, the next two written without a move; the step's own move once not asked; a new id is a new nudge
+  [OK] D3g. (검수 L2) a correction that moved 0.365 makes that the step of the next aim (0.365; '0.00s pulse 0.05s out @0.47; 0.00s pulse 0.03s in @0.84 step 0.37; ')
+  [OK] D4a. the placing's press (the same settle): 420/420 walks to the stand (14 start offsets x 10 tick phases x north / south / side) press standing still in the window, the slowest after 0.80 s; steps x1.3 420/420 (1.00 s); at most 1 tick a correction
+== G3md
+  [OK] MD2a. a closed my door in view: the old reading made it someone else's door (ShutDoor), now the AI's own door (OwnDoor)
+  [OK] MD2b. unchanged: someone else's closed door is ShutDoor; an open door (anyone's, in view or not) is open
+  [OK] MD2c. the AI's way to it: old 'behind a wall' (None: no attack option), now through my door (Door via (6,3) 2 tiles: the attack 'out through the door')
+  [OK] MD2d. what is between: old 'someone else's closed door', now a closed door that is the AI's (otherDoor false)
+  [OK] MD2e. the close fact: old '1.5칸 안이지만 사이에 닫힌 문(남의 것)이 있음: 서로 칠 수 없음(위협으로 세지 않음; 문이 열리면 달라짐).' → now '1.5칸 안이지만 사이에 닫힌 문이 있음: 서로 칠 수 없음(위협으로 세지 않음; 문이 열리거나 부서지면 달라짐).'
+  [OK] MD2f. its kill facts name my door as the way out and the door's weakness: '닿는 길: 문 (6,3)을 지나 2칸(문을 열고 나가서 침; 지나간 뒤 문은 닫음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정). 다만 문은 체력 2·피해 감소 0이라, 쫓다가 문에 막힌 적이 치면 곧 부서질 수 있음(규칙 wall-break-ways (1)·door-enemy, 추정). 부서지면 그 칸은 열린 길이 됨. 1.5칸 안이지만 사이에 닫힌 문이 있음: 서로 칠 수 없음(위협으로 세지 않음; 문이 열리거나 부서지면 달라짐).'
+  [OK] MD2g. unchanged: the walker past the closed door is no threat either way (no extra calls)
+  [OK] MD2h. unchanged: a breaker 1.4 tiles past my door is a threat, with the fact why
+  [OK] MD1a. my door out of view with no door read there: the old reading read the tile (open ground), now the door as last seen (OwnDoor)
+  [OK] MD1b. the enemy outside: old 'it comes' (a threat: self-defence and calls), now not (the door as last seen; the AI's way is through it, Door)
+  [OK] MD1c. my door out of view, standing closed: old ShutDoor, now OwnDoor
+  [OK] MD1d. the look: out of view or a door standing keeps my door; in view with no door for a second forgets it — out of view it is open then (the enemy comes)
+  [OK] MD1g. (32-검수 M1) the look forgets only after no door in every look that could see it for 1 s or more (one miss, an unloaded area, a door seen between, a look out of view between: kept)
+  [OK] MD1e. with a base: my door on an edge tile stays the door out of view (Door); seen gone it is open (Open, comes)
+  [OK] MD1f. OwnDoorStands: out of view the last look (open: gone), in view the door now
+  [OK] MD1h. (32-검수 L1) out of view, last look open: no door (open ground, the enemy comes: Open), even with a door read there now; last look closed: the door
+  [OK] MD1i. own doors: DoorCell reads a door (OwnDoor, or open when it stands open) exactly where OwnDoorStands says it stands
+  [OK] MD3a. an old edge door on a gap tile of the new plan stays an edge door
+  [OK] MD3b. off the new gaps: standing (in view) or last seen standing → my door ((-10, 0) (8, 8)); seen gone → forgotten ((9, 9)); the old Pick kept all 4 as edge doors
+  [OK] MD3c. (-10,0) as my door is read OwnDoor (old reading of a non-edge door: ShutDoor)
+  [OK] MD3d. unchanged: my door on a gap tile of the new plan is adopted as its edge door; the moved ones are not on gaps
+  [OK] MD3e. no old doors: nothing; a plan with no gaps: every standing old door is my door
+  [OK] MDN2. a my door placed on a tile with an old 'seen open' look: read gone out of view (tile); with the look forgotten on placing, the door (OwnDoor)
+  [OK] MDN3a. came in from the west: the old tail closed from the west (dir -1), now from the going side, east (dir 1)
+  [OK] MDN3b. going side not standable: the other side; no neighbour it came from: the standable side; nothing known: 0 (the offset, as before)
+  [OK] MDN3c. unchanged: the AI already on one side (0.7 tiles west) closes from there
+  [OK] MDN1. water / lava on my door's tile is a look with no door (forgotten after 1 s); a wall or an area not loaded is no look; ground with no door forgets, with a door keeps
+  [OK] MDN1b. forgotten, the water tile lets a flier come (Low); kept as my door it hid it
+== FADE
+  [OK] fade: 7 s by default and for an absent or broken value
+  [OK] fadeSeconds is pulled into 0.5..60
+  [OK] 7 s hold: fadeOutTime 8, curve holds 1 up to 7/8
+  [OK] fully clear for the whole 7 s
+  [OK] half way through the 1 s vanish: alpha 0.5
+  [OK] gone at 8 s and after
+  [OK] another hold (3 s): the vanish is still 1 s
+== CW
+  [OK] EndsFirst: only a known remaining time below the answer time (unknown -1 and equal are not)
+  [OK] RemainingNote: the old sentence for an action that does not end first
+  [OK] EndsFirstHead: the measured text (V9) for a short move: warning first, no '이어 하기', no switching cost
+  [OK] EndsFirstHead: no progress -> no parentheses; the motion note follows as before
+  [OK] forecast labels: the old one, and the one when the action ends first
+  [OK] Candidates.cs: the close-fight continue text comes from AIContinueText
+  [OK] Candidates.cs: the ordinary continue head (since, name, key, explore, '이어 하기', progress, motion, switching cost) is the old text
+  [OK] ForShow: the ends-first text shows the action first, the warning after (same characters, moved)
+  [OK] ForShow: any other text (ordinary continue, other options, null) is returned unchanged
+  [OK] Loop.cs: SEND, RESULT, the down record's last choices and the 'AI 판단:' chat use ForShow; the request text does not
+  [OK] Loop.cs: the request JSON is built from the text as made (not ForShow)
+== CHOICE
+  [OK] near filler does not hide a later goal item or hunger food; cap remains two
+  [OK] free time still offers hunger food only, even after two filler drops
+  [OK] a failed/ineligible goal pickup cannot occupy the reserved slot
+  [OK] goal need stays ahead of ordinary actionable filler even when the goal drop arrives automatically
+  [OK] within the same need, prefer the item requiring an approach; no forced pickup execution
+  [OK] one item can satisfy both needs without duplicate actions
+  [OK] multiple drops sharing an action key use one slot
+  [OK] automatic drops stay available when there is room
+  [OK] no admissible pickup means no candidate
+  [OK] logged #30: 14 walking tiles cost slightly more than 13, under the same speed
+  [OK] mining adds its own half-second-per-hit cost; walking speed changes only walking
+  [OK] legacy route choice score and detour threshold are unchanged
+  [OK] detour display consumes seconds without applying the old 2.4 conversion
+  [OK] production scans all drops, rejects bag-full before selection, applies failed/body filter before reserving slots
+  [OK] known explosive prefab fact is wired into direct/route candidates and both continue descriptions
+  [OK] hazard text states uncertainty and actual execution limitation without asserting damage numbers
+  [OK] R1: ordinary route still warns when there is no alternative (home/goto/place can have edge permissions)
+  [OK] R1: dangerous main route / safe alternative each describe their own risk
+  [OK] R1: safe main route / dangerous alternative do not contaminate each other's facts
+  [OK] R1: missing selected route does not borrow another route's hazard fact
+  [OK] R1: production route fact selects with digDetour, never the permitted-edge list
+  [OK] all game-facing walking ETA producers have left the old speed behind
+== UI
+  [OK] UI hover leaves game inputs untouched
+  [OK] First UI mouse down is captured before OnGUI
+  [OK] Repeated queries in one frame remain captured
+  [OK] Dragging beyond UI keeps game input blocked
+  [OK] Release outside UI cannot fire a game release action
+  [OK] Release remains captured for every consumer in frame
+  [OK] Next frame restores ordinary control
+  [OK] Game click outside UI is untouched
+  [OK] Entering panel with a game drag does not steal ownership
+  [OK] World/menu hide immediately clears capture
+  [OK] Reopening leaves no stale release capture
+  [OK] Held world right button entering UI remains unowned
+  [OK] New left UI click is captured while world right button remains held
+  [OK] Mixed-button same-frame queries remain captured
+  [OK] Owned left release is blocked while unowned right stays held
+  [OK] Unowned right hold returns to game next frame
+  [OK] Press and release between polls still capture the click frame
+  [OK] Short-click release remains captured outside UI in the same frame
+  [OK] Short-click capture clears next frame
+== UI-LAYOUT
+  [OK] 1440p uses 20px bitmap text
+  [OK] 1080p uses readable 20px text
+  [OK] 720p preserves compact 10px layout
+  [OK] 4K uses integer 30px text
+  [OK] Selection bar and expanded panel fit (640, 480)
+  [OK] Drawn member button uses the same input coordinate scale (640, 480)
+  [OK] Selection bar and expanded panel fit (1280, 720)
+  [OK] Drawn member button uses the same input coordinate scale (1280, 720)
+  [OK] Selection bar and expanded panel fit (1920, 1080)
+  [OK] Drawn member button uses the same input coordinate scale (1920, 1080)
+  [OK] Selection bar and expanded panel fit (2560, 1440)
+  [OK] Drawn member button uses the same input coordinate scale (2560, 1440)
+  [OK] Selection bar and expanded panel fit (3840, 2160)
+  [OK] Drawn member button uses the same input coordinate scale (3840, 2160)
+  [OK] Selection bar and expanded panel fit (3440, 1440)
+  [OK] Drawn member button uses the same input coordinate scale (3440, 1440)
+  [OK] Selection bar and expanded panel fit (360, 800)
+  [OK] Drawn member button uses the same input coordinate scale (360, 800)
+  [OK] Selection bar and expanded panel fit (1001, 601)
+  [OK] Drawn member button uses the same input coordinate scale (1001, 601)
+  [OK] Unsupported tiny viewport cannot draw off-screen UI
+  [OK] Viewport shrink recomputes scale and anchors without cached dimensions
+== CHAT-SCREEN
+  [OK] Projection uses actual screen dimensions, independent of the low-resolution camera texture
+  [OK] Partial camera viewport keeps its original horizontal location and width
+  [OK] Viewport vertical bounds convert correctly to top-origin GUI pixels
+  [OK] Stable pixel measurement uses parent scale and does not depend on the chat root loading fade
+  [OK] Changed viewport or orthographic projection updates metrics even at the same screen resolution
+  [OK] Full-screen pixel metrics: original Korean 66px becomes 30px, preserving every bitmap row
+  [OK] 12px original cell also selects nearest integer scale to half
+  [OK] 60px original becomes exactly 30px
+  [OK] Small screen never downsamples the 10px bitmap below one pixel per dot
+  [OK] Current 4K compact 66px becomes 30px (44px to 20px in a two-thirds capture)
+  [OK] Invalid camera measurements safely keep normal metrics
+  [OK] Missing projection cannot create zero/infinite font ppu
+FAILED 11 of 1137

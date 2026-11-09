@@ -1,0 +1,197 @@
+{
+  "origin": {
+    "normalizedValueSha256": "f23893ced41c61da10aac8d913953385e255545f93827d23c2201e7d227666bb",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+    "pointer": "/cases/17"
+  },
+  "value": {
+    "id": "bed-sleep",
+    "action": "claim_and_sleep",
+    "build": "26332184",
+    "runtimeTested": false,
+    "status": "investigated_pending_review",
+    "scope": "4760 variation 0 exact source",
+    "roles": [
+      {
+        "role": "conditional_claimable_bed",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6489702218989498397",
+        "objectId": 4760,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "BedAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7325436030249275363",
+            "rawByteSha256": "e84cd59affbb1b15280fcf032a54d5751500ebd7b2dad775f611af3662d15238",
+            "line": 32612,
+            "pointers": [
+              "/1020/links/1/matches/0/components/15"
+            ],
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2310905200684044259"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-5827593301223372952"
+              }
+            }
+          },
+          {
+            "class": "OccupiableAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2809894834437419037",
+            "rawByteSha256": "e60294708e05465249ebb4c3a5f5e53cd14b45155de1d89f6664c62cf2179239",
+            "line": 52300,
+            "pointers": [
+              "/1020/links/1/matches/0/components/19"
+            ],
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2310905200684044259"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3101275352650702654"
+              },
+              "occupiableSlots": [
+                {
+                  "offsetBack": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.375
+                  },
+                  "offsetForward": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.625
+                  },
+                  "offsetLeft": {
+                    "x": 0.375,
+                    "y": 0.0,
+                    "z": -0.0625
+                  },
+                  "offsetRight": {
+                    "x": 0.625,
+                    "y": 0.0,
+                    "z": -0.0625
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "role": "condition_mapping",
+            "path": "full/B/evidence/conditions-table-capture.json",
+            "pointer": "/data/conditionCategories/20/conditions/1",
+            "value": {
+              "Id": 211,
+              "effect": 78,
+              "isAdditiveWithSelf": 0,
+              "isPermanent": 0,
+              "isNegative": 0,
+              "isInheritedByProjectiles": 0,
+              "overrideIfRemainingValueIsHigher": 0,
+              "icon": {
+                "m_FileID": 0,
+                "m_PathID": 750
+              },
+              "useSameDescAsId": 0,
+              "isUnique": 0,
+              "skipShowingSignInfrontOfValue": 0,
+              "showDecimal": 1,
+              "skipShowingStatText": 0,
+              "showAsDamageDeviation": 0
+            }
+          }
+        ]
+      }
+    ],
+    "entry": "ClaimBedSystem proximity and claimed-bed state",
+    "conditions": [
+      "player not dead, riding or god mode; no unbefriended relevant enemy within search; bed unclaimed or claimed by player",
+      "position within squared 0.16 of occupiable offset; runtime state and components valid",
+      "Sleep quality timer starts at entry for 2 seconds; after elapsed BuffsFromQualitySleep must be positive."
+    ],
+    "transitions": [
+      {
+        "from": "eligible bed",
+        "to": "claimed GUID and PlayerClaimedBed entity/position writes",
+        "refs": [
+          "Pug.Other/ClaimBedSystem.cs:202-249,269-335"
+        ]
+      },
+      {
+        "from": "claimed bed proximity",
+        "to": "Sleep state, position and healing condition",
+        "refs": [
+          "Pug.Other/ClaimBedSystem.cs:338-359",
+          "Pug.Other/PlayerState/Sleep.cs:11-83"
+        ]
+      },
+      {
+        "from": "condition effect 78",
+        "to": "positive health buffer and actual player health write",
+        "refs": [
+          "Pug.Other/HealFromConditionsSystem.cs:164-196",
+          "Pug.Other/UpdateHealthFromBufferSystem.cs:194-226",
+          "Pug.Other/PlayerController.cs:7030-7041"
+        ]
+      },
+      {
+        "from": "death respawn",
+        "to": "claimed stored position or default spawn position write",
+        "refs": [
+          "Pug.Other/PlayerState/Death.cs:122-132"
+        ]
+      },
+      {
+        "from": "quality sleep timer elapsed and positive BuffsFromQualitySleep",
+        "to": "add or refresh IncreasedManaRegenEffectiveness with same value for 30 seconds",
+        "refs": [
+          "Pug.Other/PlayerState/Sleep.cs:23-24,41-67"
+        ]
+      },
+      {
+        "from": "summarized condition 255 and mana below unreserved maximum",
+        "to": "multiply regen by 1+value/100; timer, accumulatedMana and ManaCD.mana write and clamp",
+        "refs": [
+          "Pug.Other/ManaSystem.cs:157-195"
+        ]
+      }
+    ],
+    "outcomes": [
+      "sleep adds HealOverTimePercentage condition when allowed, effect 78 on fixed ConditionsTable; healing accumulates per second and sends positive buffer, player heal clamps to conditional max",
+      "bed claim position is used at respawn unless zero, when spawn position is used; hardcore and state gates apply",
+      "After elapsed timer, positive buff adds or refreshes a 30-second regen effectiveness condition. ManaSystem multiplies regen by 1+summarizedConditions[255]/100, then on eligible 0.1-second regen tick adds rounded accumulated mana and clamps to unreserved max; reduced regen timer can further scale it."
+    ],
+    "negativeCases": [
+      "nearby hostile, bed owned by another, excluded player state or insufficient proximity prevents claim/sleep",
+      "healing requires summarized effect, health, collider and no destroyed/disablePhysics; noClip/death blocks player HealPlayer",
+      "sleep condition removed on ExitState",
+      "Before 2 seconds or BuffsFromQualitySleep <= 0 no quality condition is added; at full unreserved mana or while regen timer has not elapsed no regen increment occurs."
+    ],
+    "boundaries": [
+      "condition value, health, enemies, actual state and respawn timing are runtime; no observation",
+      "The buff magnitude, current mana and condition state are runtime values; no guaranteed fixed mana amount or runtime observation."
+    ],
+    "priorClaimIds": [
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6489702218989498397#claim_and_sleep"
+    ],
+    "relationLinks": "role-links.json",
+    "assetEvidence": "coverage.json and condition table pin",
+    "codeEvidence": "pins.json and prior A review"
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "priorResearchRoot": "../2026-11",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+    "sessionWorkRoot": ".."
+  }
+}

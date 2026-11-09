@@ -1,0 +1,1 @@
+Fixed c4a0f5e production AILife.cs prefix before private static List<Entry> Entries plus closing brace equals committed Tools/life-craft-tests/LifeBindingSource.cs after CRLF normalization: True

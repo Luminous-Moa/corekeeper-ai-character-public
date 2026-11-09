@@ -1,0 +1,134 @@
+{
+  "origin": {
+    "normalizedValueSha256": "539eb45883e1093518f04889fe3e0aaca9ed2fa3e94a5d8114a2fd0cb6cb360f",
+    "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "pointer": "/groups/3/payload/extraction.json/records/96"
+  },
+  "value": {
+    "action": "inventory_transfer",
+    "assetEvidence": {
+      "inventory": [
+        {
+          "class": "InventoryAuthoring",
+          "component": {
+            "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+            "data": {
+              "addLootFromTable": 0,
+              "autoTransferEnabled": 0,
+              "canOnlyContainOneItemPerSlot": 1,
+              "cantAddObjectsToInventory": 0,
+              "itemsInInventory": [],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "4264367569285601213"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2030443079484458392"
+              },
+              "maxExtraSize": 0,
+              "objectsGetLockedInPlace": 1,
+              "sizeX": 1,
+              "sizeY": 1,
+              "slotRequirements": [
+                {
+                  "acceptsObjectIds": [
+                    221
+                  ],
+                  "acceptsObjectsWithTags": [],
+                  "denyLegendaryRarity": 0,
+                  "dontShowAnyHint": 0,
+                  "requirementAppliesToAllSlots": 1,
+                  "showInfoText": 0
+                }
+              ]
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3998730237198325693",
+            "pathId": "3998730237198325693",
+            "rawByteSha256": "43cd54baa03145b5dfb50f8ff9c8ec7bd58fdc7c06633a51a36c86667f605caf",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "InventoryAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3998730237198325693",
+          "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4264367569285601213",
+          "gameObjectName": "LockedOctarineChestEntity",
+          "linkKind": "authoringRef"
+        }
+      ],
+      "useEvents": [
+        {
+          "call": {
+            "m_Arguments": {
+              "m_BoolArgument": 0,
+              "m_FloatArgument": 0.0,
+              "m_IntArgument": 0,
+              "m_ObjectArgument": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+              "m_StringArgument": ""
+            },
+            "m_CallState": 2,
+            "m_MethodName": "Use",
+            "m_Mode": 1,
+            "m_Target": {
+              "m_FileID": 0,
+              "m_PathID": "-803352301194981248"
+            },
+            "m_TargetAssemblyTypeName": "Chest, Pug.Core"
+          },
+          "callIndex": 0,
+          "fieldPath": "onUseActions[0]",
+          "linkKind": "graphicalRef",
+          "sourceComponent": "CAB-2ebcba97367158c9b08f790c25d642c9:7449330540306092160",
+          "target": {
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-803352301194981248",
+            "script": {
+              "assembly": "Pug.Objects",
+              "class": "LockedChest",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "targetError": null
+        }
+      ]
+    },
+    "conditions": "Player and active chest UI; approved independent move requests; slot requirements, capacity, source quantity and destination checked at each move.",
+    "evidenceLevel": "code_linked",
+    "failureBranches": "Empty source or same slot can be no change; requirement/capacity/rejection prevents the applicable move.",
+    "id": "CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#inventory_transfer",
+    "inputProcessingConsumer": "Chest.Use -> InventorySlotUI right click -> UIMouse DoMove -> InventoryHandler -> TriggerUIActionsSystem -> InventoryUpdateSystem -> InventoryUtility.TryMove",
+    "objectId": 219,
+    "result": "For a successful eligible one-item move: player slot decremented, mouse slot incremented; a second independently successful move decrements mouse and increments chest. No automatic atomicity between two requests.",
+    "rule": "inventory_transfer",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851",
+    "unknown": "Live entity state, approval and effective slot acceptance unobserved; subclasses may have additional entry conditions.",
+    "variation": 0
+  },
+  "evidenceContext": {
+    "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+    "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+    "originalReferenceContext": {
+      "codeRoot": "../../../게임원본-상호작용/code",
+      "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+      "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+      "rawRoot": "../../../게임원본-상호작용"
+    },
+    "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+    "resolvedReferenceContext": {
+      "codeRoot": "../게임원본-상호작용/code",
+      "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+      "rawRoot": "../게임원본-상호작용"
+    },
+    "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+  }
+}

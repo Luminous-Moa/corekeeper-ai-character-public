@@ -1,0 +1,1016 @@
+{
+  "passed": true,
+  "runtimeTested": false,
+  "wholeScopeComplete": false,
+  "assertions": [
+    {
+      "assertion": "six_records_six_groups",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "append_only_unique_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "exact_source_binding_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "all_links_exact_existing_nodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "source_roles_allowed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "exact_nine_bound_sources_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "six_raw_condition_suppliers_match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "two_raw_hooks_mechanic7_and_source_ids_match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "effect58_has_no_fabricated_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "whole_scope_and_runtime_false",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "every_material_rule_has_reference_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "code_and_data_ref_sha_ranges_match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "pins_match_all_final_evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "assertion": "revision206_other_five_records_unchanged",
+      "passed": true,
+      "detail": {
+        "beforeRecordHashes": {
+          "completion:essential:grapple-input-aim-v1": "e59e38841be26b1af913f9c8f00fbc1a8517e8d5182ef84f2262f235aaab6a5a",
+          "completion:essential:lightning-chain-target-v1": "73cd99b84413ac50739360b2f36f7db5761433cc421f3ae949e154089b85374b",
+          "completion:essential:effect58-input-direction-v1": "581f17a9e7f38447689f1b0e316fdf0bd32a18a9efa40e825c24af83d1b86b17",
+          "completion:essential:condition39-source6839-v1": "1046bc2d1f8ce7835615baf95180ba83b9249e42383c4164d2802ef3ef58ea20",
+          "completion:essential:condition102-source3101-v1": "12eeef0793ed4e98cfd430a587f4092d606c92a00ef84a65c6ddc3abfc57ae8c",
+          "completion:essential:condition206-four-source-aura-v1": "f18ff1637872dade329d3bc1fa911dbe5b78ca5610d07797de6061d0ccdc9cc9"
+        },
+        "afterRecordHashes": {
+          "completion:essential:grapple-input-aim-v1": "e59e38841be26b1af913f9c8f00fbc1a8517e8d5182ef84f2262f235aaab6a5a",
+          "completion:essential:lightning-chain-target-v1": "73cd99b84413ac50739360b2f36f7db5761433cc421f3ae949e154089b85374b",
+          "completion:essential:effect58-input-direction-v1": "581f17a9e7f38447689f1b0e316fdf0bd32a18a9efa40e825c24af83d1b86b17",
+          "completion:essential:condition39-source6839-v1": "1046bc2d1f8ce7835615baf95180ba83b9249e42383c4164d2802ef3ef58ea20",
+          "completion:essential:condition102-source3101-v1": "12eeef0793ed4e98cfd430a587f4092d606c92a00ef84a65c6ddc3abfc57ae8c",
+          "completion:essential:condition206-four-source-aura-v1": "d4e40d0c83663b45ab6f47fe13480336524ceb2f12a6bb5449b68ac01b19b84c"
+        },
+        "changedOnly": "completion:essential:condition206-four-source-aura-v1"
+      }
+    }
+  ],
+  "errors": [],
+  "comparison": [
+    {
+      "group": "grapple8373-8374",
+      "newRecord": "completion:essential:grapple-input-aim-v1",
+      "disposition": "additional_static_attribution_and_bounded_detail_with_existing_reuse",
+      "sourceNodes": [
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+      ],
+      "existingReuse": [
+        "completion:C:equip-gear-swap-v1"
+      ],
+      "existingLinkedSourceEdges": [
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2478670454818034119#0/material/90",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2478670454818034119#0/material/91",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-5134539473572100907#1/material/62",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:926703991974170746#1/material/151",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:547",
+          "references_candidate_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:682",
+          "references_candidate_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "configured-role-link:A-drop-loot-other164:0:547"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:113"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1376"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1395"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:154"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:195"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:236"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:31"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:72"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_equipment_item",
+          "completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "conditional_upgrade_target",
+          "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_claim",
+          "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411#upgrade_equipment"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_coverage_disposition",
+          "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2478670454818034119#0/material/90"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:926703991974170746#1/material/151"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_object_id",
+          "object:8373"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_role_evidence",
+          "role-evidence:A-C-equipment-links:1090"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "has_role_evidence",
+          "role-evidence:A-C-equipment-links:607"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_default_table_output_id",
+          "configured-role-link:A-drop-loot-other164:0:682"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1644"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1679"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1714"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1749"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_default_table_output_id",
+          "record:A:U026:links:1784"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_equipment_item",
+          "completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "conditional_upgrade_target",
+          "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_claim",
+          "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453#upgrade_equipment"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_coverage_disposition",
+          "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2478670454818034119#0/material/91"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-5134539473572100907#1/material/62"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_object_id",
+          "object:8374"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_role_evidence",
+          "role-evidence:A-C-equipment-links:1253"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "has_role_evidence",
+          "role-evidence:A-C-equipment-links:741"
+        ]
+      ],
+      "judgmentGapPrevented": "From either hook item, distinguish a usable input/aim request, cooldown rejection and NothingHit from a successful traversal; gear equip alone cannot provide that distinction."
+    },
+    {
+      "group": "lightning9135",
+      "newRecord": "completion:essential:lightning-chain-target-v1",
+      "disposition": "additional_static_attribution_and_bounded_detail_with_existing_reuse",
+      "sourceNodes": [
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+      ],
+      "existingReuse": [
+        "beam",
+        "common:new-conditions-buffer-consumer"
+      ],
+      "existingLinkedSourceEdges": [
+        [
+          "beam/role/4",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "catalog-binding:B-world-tools122:133",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:106149578713104983#1/material/21",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:260267369545676963#0/material/10",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:3351159776149700062#1/material/83",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "conditional_beam_tool",
+          "beam"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "conditional_upgrade_target",
+          "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_claim",
+          "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916#upgrade_equipment"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_coverage_disposition",
+          "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:106149578713104983#1/material/21"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:260267369545676963#0/material/10"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:3351159776149700062#1/material/83"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_object_id",
+          "object:9135"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+          "has_role_evidence",
+          "role-evidence:A-C-equipment-links:1251"
+        ]
+      ],
+      "judgmentGapPrevented": "From9135, expose aim-only and chain-position results separately from cooldown-gated attacks and reused beam costs, preventing a selected chain from being treated as damage already dealt."
+    },
+    {
+      "group": "effect58",
+      "newRecord": "completion:essential:effect58-input-direction-v1",
+      "disposition": "additional_static_attribution_and_bounded_detail_with_existing_reuse",
+      "sourceNodes": [],
+      "existingReuse": [
+        "common:new-conditions-buffer-consumer",
+        "D114:pet1270-projectile-shatter:common",
+        "beam"
+      ],
+      "existingLinkedSourceEdges": [],
+      "judgmentGapPrevented": "Existing beam/condition consumers can expose why held-button actions or direction changes are suppressed despite an action being otherwise available; no invented Effect58 supplier is needed."
+    },
+    {
+      "group": "condition39-6839",
+      "newRecord": "completion:essential:condition39-source6839-v1",
+      "disposition": "additional_static_attribution_and_bounded_detail_with_existing_reuse",
+      "sourceNodes": [
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+      ],
+      "existingReuse": [
+        "gap-reused-fragment:condition-buffer-consumer:0"
+      ],
+      "existingLinkedSourceEdges": [
+        [
+          "conditional-enemy-hit/role/50",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2224",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2225",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2226",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2227",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2228",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2229",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:2230",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-seasonal-loot-other28:0:90",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-seasonal-loot-other28:0:91",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-seasonal-loot-other28:0:92",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-seasonal-loot-other28:0:93",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "configured-role-link:A-seasonal-loot-other28:0:94",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "conditional_damage_target",
+          "conditional-enemy-hit"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "conditional_death_loot_configuration",
+          "partial-source-role:A-death-loot-other163:0:roles:162"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "conditional_drop_loot_configuration",
+          "partial-source-role:A-drop-loot-other164:0:roles:163"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "conditional_seasonal_loot_producer",
+          "partial-source-role:A-seasonal-loot-other28:0:roles:27"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2224"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2225"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2226"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2227"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2228"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2229"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:2230"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-seasonal-loot-other28:0:90"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-seasonal-loot-other28:0:91"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-seasonal-loot-other28:0:92"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-seasonal-loot-other28:0:93"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "configured_output_candidate",
+          "configured-role-link:A-seasonal-loot-other28:0:94"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "has_object_id",
+          "object:6839"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8092099457503870773",
+          "health_regeneration_source",
+          "D095:applications:application:1246"
+        ]
+      ],
+      "judgmentGapPrevented": "From6839, expose its own signed slow and matching movement write so behavior is not inferred from unrelated health evidence or incorrectly assigned to its victims."
+    },
+    {
+      "group": "condition102-3101",
+      "newRecord": "completion:essential:condition102-source3101-v1",
+      "disposition": "additional_static_attribution_and_bounded_detail_with_existing_reuse",
+      "sourceNodes": [
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+      ],
+      "existingReuse": [
+        "gap-reused-fragment:condition-buffer-consumer:0",
+        "D114:pet1270-projectile-shatter:common",
+        "gap-consumer:condition-direct-four-v4",
+        "common:new-conditions-buffer-consumer"
+      ],
+      "existingLinkedSourceEdges": [
+        [
+          "completion:full-d:environment-initial-table:1",
+          "conditional_spawn_candidate",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "completion:full-d:environment-initial-table:1/automatic-binding/graph.json:1",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "completion:full-d:environment-respawn-table:10",
+          "conditional_spawn_candidate",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "completion:full-d:environment-respawn-table:10/automatic-binding/graph.json:10",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "completion:full-d:environment-respawn-table:10/automatic-binding/primary:10",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "conditional-enemy-hit/role/118",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:651",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:652",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:653",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:654",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:655",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:656",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:657",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:658",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:659",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-drop-loot-other164:0:660",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "configured-role-link:A-seasonal-loot-other28:0:72",
+          "configured_by_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_damage_target",
+          "conditional-enemy-hit"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_death_loot_configuration",
+          "partial-source-role:A-death-loot-other163:0:roles:55"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_drop_loot_configuration",
+          "partial-source-role:A-drop-loot-other164:0:roles:55"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_environment_immunity_configuration",
+          "partial-source-role:A-environment-conditions74:0:roles:66"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_fixed_primary_for",
+          "completion:full-d:environment-respawn-table:10"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_seasonal_loot_producer",
+          "partial-source-role:A-seasonal-loot-other28:0:roles:22"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_spawn_candidate_of",
+          "completion:full-d:environment-initial-table:1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "conditional_spawn_candidate_of",
+          "completion:full-d:environment-respawn-table:10"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:651"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:652"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:653"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:654"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:655"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:656"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:657"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:658"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:659"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-drop-loot-other164:0:660"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "configured_output_candidate",
+          "configured-role-link:A-seasonal-loot-other28:0:72"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "has_object_id",
+          "object:3101"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:965635080865528621",
+          "health_regeneration_source",
+          "D095:applications:application:320"
+        ]
+      ],
+      "judgmentGapPrevented": "From3101, expose its own ranged projectile and receiver stun predicates instead of borrowing pet1270’s producer identity or assuming any hit must stun."
+    },
+    {
+      "group": "condition206-four-aura",
+      "newRecord": "completion:essential:condition206-four-source-aura-v1",
+      "disposition": "additional_static_attribution_and_bounded_detail_with_existing_reuse",
+      "sourceNodes": [
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:3487780934490719581",
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+        "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205"
+      ],
+      "existingReuse": [
+        "gap-reused-fragment:condition-buffer-consumer:0",
+        "partial-role-consumer:A-condition-immunity4:0"
+      ],
+      "existingLinkedSourceEdges": [
+        [
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205/role/0",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205"
+        ],
+        [
+          "completion:full-d:environment-initial-table:179",
+          "conditional_spawn_candidate",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205"
+        ],
+        [
+          "completion:full-d:environment-initial-table:179/automatic-binding/graph.json:278",
+          "source_identity",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205"
+        ],
+        [
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:892577178798500027#0/material/242",
+          "configured_output_source",
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:700"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+          "conditional_source_for",
+          "reviewed-claim:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+          "has_object_id",
+          "object:5875"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8070639519151522419",
+          "health_regeneration_source",
+          "D095:applications:application:947"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:881"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:759"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "has_configuration_review",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "has_material_requirement_evidence",
+          "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:892577178798500027#0/material/242"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "has_object_id",
+          "object:5942"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:23149843004925197",
+          "health_regeneration_source",
+          "D095:applications:application:999"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:3487780934490719581",
+          "conditional_output_of",
+          "conditional-role-link:A-minion-output-v2:5"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:3487780934490719581",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:3487780934490719581#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:3487780934490719581",
+          "has_object_id",
+          "object:1355"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "conditional_death_loot_configuration",
+          "partial-source-role:A-death-loot248:0:roles:110"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:891"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:770"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "conditional_spawn_candidate_of",
+          "completion:full-d:environment-initial-table:179"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "has_object_id",
+          "object:5953"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:7086359454936462205"
+        ]
+      ],
+      "judgmentGapPrevented": "From each of1355/5875/5942/5953, expose the direct-ID emitter, radius/receiver/immunity and removal gates so EffectNone or victim-only damage evidence cannot hide the actual aura path."
+    }
+  ],
+  "limitation": "Producer self-check only. Independent source/generation review and installed/default CLI verification are parent tasks; this is not their substitute."
+}

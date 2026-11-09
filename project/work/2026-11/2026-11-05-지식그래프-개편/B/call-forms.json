@@ -1,0 +1,145 @@
+{
+  "forms": {
+    "C#": {
+      "new": 2508,
+      "string": 7593,
+      "lambda": 566,
+      "call": 16855,
+      "attribute": 28
+    },
+    "JavaScript": {
+      "string": 720,
+      "env": 9,
+      "call": 892,
+      "dynamic-import": 4,
+      "new": 28
+    }
+  },
+  "imports": [
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 33,
+      "target": "node:http"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 34,
+      "target": "node:fs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 35,
+      "target": "node:path"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 36,
+      "target": "node:url"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 37,
+      "target": "Tools/ai-bridge/memgraph.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 38,
+      "target": "Tools/ai-bridge/recall-loop.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 39,
+      "target": "Tools/ai-bridge/preflight.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 40,
+      "target": "Tools/ai-bridge/plan.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "line": 41,
+      "target": "Tools/ai-bridge/protocol.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/memgraph.mjs",
+      "file": "Tools/ai-bridge/memgraph.mjs",
+      "line": 14,
+      "target": "node:fs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/memgraph.mjs",
+      "file": "Tools/ai-bridge/memgraph.mjs",
+      "line": 15,
+      "target": "node:os"
+    },
+    {
+      "from": "code:Tools/ai-bridge/memgraph.mjs",
+      "file": "Tools/ai-bridge/memgraph.mjs",
+      "line": 16,
+      "target": "node:path"
+    },
+    {
+      "from": "code:Tools/ai-bridge/memgraph.mjs",
+      "file": "Tools/ai-bridge/memgraph.mjs",
+      "line": 17,
+      "target": "node:url"
+    },
+    {
+      "from": "code:Tools/ai-bridge/memgraph.mjs",
+      "file": "Tools/ai-bridge/memgraph.mjs",
+      "line": 18,
+      "target": "Tools/knowledge/kg.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/plan.mjs",
+      "file": "Tools/ai-bridge/plan.mjs",
+      "line": 6,
+      "target": "node:path"
+    },
+    {
+      "from": "code:Tools/ai-bridge/plan.mjs",
+      "file": "Tools/ai-bridge/plan.mjs",
+      "line": 7,
+      "target": "Tools/ai-bridge/memgraph.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/plan.mjs",
+      "file": "Tools/ai-bridge/plan.mjs",
+      "line": 8,
+      "target": "Tools/ai-bridge/recall-loop.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/plan.mjs",
+      "file": "Tools/ai-bridge/plan.mjs",
+      "line": 9,
+      "target": "Tools/ai-bridge/protocol.mjs"
+    },
+    {
+      "from": "code:Tools/ai-bridge/protocol.mjs",
+      "file": "Tools/ai-bridge/protocol.mjs",
+      "line": 6,
+      "target": "Tools/ai-bridge/recall-loop.mjs"
+    }
+  ],
+  "notImported": [
+    "Tools/ai-bridge/bridge.mjs"
+  ],
+  "db": {
+    "status": "none-detected",
+    "basis": "No DB schema or SQL/ORM call in scoped source. PugDatabase is game SDK boundary, JSON/JSONL are data."
+  },
+  "analytics": {
+    "status": "none-detected",
+    "basis": "Local JSONL logs and in-game memory events are data; no analytics transport found."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 충돌 해결",
+        "doc": "gapIntegration",
+        "end": 15,
+        "line": 8,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/integration.md",
+        "sha256": "cf7ed42d325b1ec404aab83b4ef74c7785c337a0e7bad872af65252d0f4e328f",
+        "start": 8
+      },
+      {
+        "anchor": "### 공통 규칙",
+        "doc": "gapFixes",
+        "end": 213,
+        "line": 209,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 209
+      },
+      {
+        "anchor": "### 상자 열림 모드",
+        "doc": "gapFixes",
+        "end": 288,
+        "line": 269,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 269
+      },
+      {
+        "anchor": "## 상자 판정 확인",
+        "doc": "gapIntegration",
+        "end": 28,
+        "line": 23,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/integration.md",
+        "sha256": "cf7ed42d325b1ec404aab83b4ef74c7785c337a0e7bad872af65252d0f4e328f",
+        "start": 23
+      },
+      {
+        "anchor": "### 경미",
+        "doc": "gapFixes",
+        "end": 77,
+        "line": 61,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 61
+      }
+    ],
+    "id": "R.gap-implementation",
+    "layer": "참고",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "sourceLocations": [
+      {
+        "end": 15,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/integration.md",
+        "start": 8
+      },
+      {
+        "end": 213,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 209
+      },
+      {
+        "end": 288,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 269
+      },
+      {
+        "end": 28,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/integration.md",
+        "start": 23
+      },
+      {
+        "end": 77,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 61
+      }
+    ],
+    "status": "참고·공식 코드·오프라인/Unity 수용·실게임 미확인",
+    "summary": "가방(파우치·일괄 정리·프리셋·펫·꾸미기·사용·착용 장비 이동·자리 옮기기), 생활(솥 입력 정리·빈 땅 물주기·무괭이 수확·씨앗 뿌리개·기억 시설 누출 수정·침대·근처 상자 재료 제작), 정비(화면 밖 대장간 회수·pending 중 수리·파우치·포기와 상위 알림), 상자 구역 단계(AIChestAreas)와 상자 열림 모드(AIChestMode)를 구현했다. 씨앗 뿌리개 범위, 침대 수면 처리, 착용 칸 직접 내려놓기, 펫·꾸미기 칸 교환, 근처 상자 빠른 쌓기 범위, 악기 연주는 실게임 확인 전 추정이다. HEAD 판단·구현(사용자 결정 아님): 회수 불가 포기를 대장간 없음·칸 빔을 직접 본 경우로 한정했고, 기지에 상자를 더 만들지 판단할 때 세는 상자는 직접 놓은 상자로 남겼다.",
+    "title": "빈 선택지 3범위·상자 공용·상자 열림 모드 구현(공식 49bd748)",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 병합 검수",
+          "doc": "gapFixes",
+          "end": 379,
+          "line": 377,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+          "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+          "start": 377
+        }
+      ],
+      "from": "R.gap-implementation",
+      "id": "E254",
+      "kind": "참고: 검수 범위",
+      "to": "R.gap-review",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 충돌 해결",
+          "doc": "gapIntegration",
+          "end": 15,
+          "line": 8,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/integration.md",
+          "sha256": "cf7ed42d325b1ec404aab83b4ef74c7785c337a0e7bad872af65252d0f4e328f",
+          "start": 8
+        }
+      ],
+      "from": "P.choice-gaps",
+      "id": "E251",
+      "kind": "참고: 구현",
+      "to": "R.gap-implementation",
+      "type": "reference"
+    }
+  ]
+}

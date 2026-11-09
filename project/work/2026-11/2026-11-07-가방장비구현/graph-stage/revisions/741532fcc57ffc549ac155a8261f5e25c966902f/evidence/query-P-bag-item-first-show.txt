@@ -1,0 +1,108 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 만들 결과",
+        "doc": "bagTree",
+        "end": 22,
+        "line": 11,
+        "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+        "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+        "start": 11
+      }
+    ],
+    "id": "P.bag-item-first",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 22,
+        "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+        "start": 11
+      }
+    ],
+    "status": "합의",
+    "summary": "인벤토리→물품이 있는 실제 분류→정확한 보유 슬롯/변형/상태→조작→필요한 인자로 이어 간다. 목표 맥락을 유지하며 목록을 목표 품목 하나로 숨기지 않는다. 관측한 자기 상자 꺼내기 경로도 같은 방식으로 잇는다.",
+    "title": "실제 보유 분류에서 물품과 조작으로 좁히기",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 만들 결과",
+          "doc": "bagTree",
+          "end": 22,
+          "line": 11,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 11
+        }
+      ],
+      "from": "P.bag-item-first",
+      "id": "E101",
+      "kind": "물품별 단계 탐색과 실행",
+      "to": "P.bag-navigation",
+      "type": "reference"
+    },
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 선택지 상한 제거",
+          "doc": "bagTree",
+          "end": 28,
+          "line": 24,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 24
+        }
+      ],
+      "from": "P.bag-item-first",
+      "id": "E102",
+      "kind": "분류로 나누고 실제 항목은 모두 제공",
+      "to": "P.bag-no-cut",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 현재 메뉴 노드 표본",
+          "doc": "bagMenuSamples",
+          "end": 127,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/menu-examples.md",
+          "sha256": "144ea0e156c9567d7ac999586af1972cd1cfe02be855d1951180e70125f91985",
+          "start": 1
+        }
+      ],
+      "from": "P.bag-item-first",
+      "id": "E115",
+      "kind": "참고: 현재 보유 노드 표본",
+      "to": "R.bag-menu-examples",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "2026-11-07 사용자 방향 변경.",
+          "doc": "bagTree",
+          "end": 3,
+          "line": 3,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 3
+        }
+      ],
+      "from": "P.bag-equipment",
+      "id": "E100",
+      "kind": "평면 후보 부분을 새 선택 흐름으로 교체",
+      "to": "P.bag-item-first",
+      "type": "reference"
+    }
+  ]
+}

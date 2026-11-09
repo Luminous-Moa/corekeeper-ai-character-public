@@ -1,0 +1,6 @@
+requests 17; providers celeris=celeris-1.1-decision $0.004/M; reps 2; calls 34 (cap 600)
+requests 17
+celeris (celeris-1.1-decision): answers 34/34, latency p50 268ms p95 780ms max 909ms, tokens/call 5336, est. $0.000726
+
+id	options	logged	celeris
+cont-S2.jsonl:1	14	-	c1 2/2

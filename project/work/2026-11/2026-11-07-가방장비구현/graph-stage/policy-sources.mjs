@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),L='work/2026-11/2026-11-05-지식그래프-실화면',P='work/2026-11/2026-11-07-기획연결';
+const read=p=>fs.readFileSync(path.join(stage,p),'utf8'),write=(p,s)=>fs.writeFileSync(path.join(stage,p),s);
+write(P+'/source.mjs',read(P+'/source.mjs').replaceAll('구현能力','구현 능력'));
+const b=L+'/D/bag-source.mjs';let s=read(b);
+s="import fs from 'node:fs';\nimport {abs} from './live-lib.mjs';\n"+s;
+s=s.replace(' const capabilities=',` const policyPath='../../지식그래프/기획/정책.md',policyText=fs.readFileSync(abs(policyPath),'utf8');\n for(const id of ['pol.bag-agency','pol.bag-boundary']){\n  const at=policyText.indexOf('### '+id+' — '),body=policyText.slice(at).split('\\n### ')[0],start=policyText.slice(0,at).split('\\n').length;\n  if(at<0)throw Error('Missing policy source '+id);\n  const rule=body.match(/^- 규칙: (.*)$/m)[1],loc={path:policyPath,start,end:start+body.trimEnd().split('\\n').length-1};\n  g.nodes.push({id,type:'정책',title:body.split('\\n')[0].split(' — ')[1],rule,summary:rule,status:'합의',class:'결정',sourceLocations:[loc]});\n  g.edges.push({from:'P.bag-agency',to:id,type:'reference',kind:'승인 정책의 원문 요약',class:'해석',evidence:[loc]});\n  for(const mode of ['equip','hold','store','take','drop','give'])g.edges.push({from:id,to:'R.bag-'+mode,type:'reference',kind:'정책의 능력 적용 위치',class:'해석',evidence:[loc],coverage:'관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음'});\n }\n const capabilities=`);
+write(b,s);
+const p=L+'/D/planning.mjs';write(p,read(p).replace(".concat('../2026-11-05-지식그래프-실화면/D/bag-source.mjs')",".concat('../2026-11-05-지식그래프-실화면/D/bag-source.mjs','../../지식그래프/기획/정책.md')"));
+console.log('Added product policy source and scoped capability references.');

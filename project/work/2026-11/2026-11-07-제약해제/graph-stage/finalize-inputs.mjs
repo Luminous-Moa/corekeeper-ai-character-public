@@ -1,0 +1,12 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),work=path.resolve(stage,'../../..'),plan=path.join(work,'2026-11/2026-11-07-기획연결'),live=path.join(work,'2026-11/2026-11-05-지식그래프-실화면');
+const old='6637e8e7027b3e4c9d73ab683706fd538c4b8212',target='5cc5a43ff8df91634c04b44bac9f15f849bdb611';
+for(const f of [path.join(plan,'source.mjs'),path.join(work,'지식그래프/기획/기능.md'),path.join(live,'D/bag-source.mjs'),path.join(stage,'successor-projection.json'),path.join(stage,'new-code-mappings.json')])fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/^\uFEFF/,'').replaceAll(old,target));
+const source=path.join(plan,'source.mjs');let text=fs.readFileSync(source,'utf8');if(text.includes('unrestrictionFinalReview'))throw Error('final evidence already appended');
+text+='\n// 실제 최종 독립검수의 수용 범위. 설치/실게임은 여전히 미확인이다.\nObject.assign(documents,{unrestrictionFinalReview:{layer:\'참고\',path:\'../2026-11-07-제약해제/review.md\'},unrestrictionFinalValidation:{layer:\'참고\',path:\'../2026-11-07-제약해제/validation.md\'}});\n';
+text+='nodes.push({id:\'R.unrestriction-final-review\',title:\'제약해제5cc의정적·대표오프라인독립수용\',layer:\'참고\',status:\'참고·독립수용·미실게임\',summary:\'최종5cc source의실제생산입구·수량/계획/지시·공간·정보·지원동작을감사범위에서수용했다.후속생성gate47·Core·전체컴파일과영역별검증경계를따르며설치/모델/게임성공으로확대하지않는다.\',evidence:[{doc:\'unrestrictionFinalReview\',anchor:\'## 최종 고정란\'},{doc:\'unrestrictionFinalValidation\',anchor:\'## 마지막 생성입구 일괄 대조\'}]});\n';
+text+='edges.push({from:\'P.unrestricted-actions\',to:\'R.unrestriction-final-review\',type:\'참고: 최종source의독립수용범위\',class:\'해석\',evidence:[{doc:\'unrestrictionFinalReview\',anchor:\'## 최종 고정란\'}]});\n';
+text+='{const n=nodes.find(n=>n.id===\'R.unrestriction-candidate\');n.status=\'참고·최종5cc정적/대표오프라인수용·미실게임\';n.summary=\'코드5cc5a43의정적·대표오프라인수용을확인해HEAD가공식반영했다.제품코드층은이정확SHA를pin하고실제함수만정적으로연결한다.영역별검증·최종검수는별도근거를따르며설치/모델/실게임성공은미확인이다.\';n.evidence.push({doc:\'unrestrictionFinalReview\',anchor:\'## 최종 고정란\'});}\n';
+fs.writeFileSync(source,text);
+const feature=path.join(work,'지식그래프/기획/기능.md');text=fs.readFileSync(feature,'utf8').replaceAll('- 상태: 구현 후보·오프라인 검증·실게임 미확인','- 상태: 구현됨·정적/대표오프라인수용·새실게임미확인');fs.writeFileSync(feature,text);
+console.log('final independent acceptance evidence linked '+target);

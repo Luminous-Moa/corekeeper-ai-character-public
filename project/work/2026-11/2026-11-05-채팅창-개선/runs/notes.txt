@@ -1,0 +1,25 @@
+﻿00:13:38 backup done
+00:14:19 bridge up (KG 3187), launching game b2fa4cc (before)
+00:16:25 in world (before), char 4
+00:16:31 sent /ai all on
+00:17:59 sent 12 host lines
+00:18:09 sent @모두 greeting
+00:21:34 /ai stop (before)
+00:21:50 @Gemini one word (before, new-line fade)
+00:22:36 /ai off (before)
+00:23:28 game closed (before), Player-before.log saved
+00:23:37 BuildAndInstall chat-ui 205f60c start
+00:24:29 installed 205f60c exit0 errorCS0 installed .cs 38, different from 205f60c: 0
+00:24:36 launching game (after)
+00:26:00 in world (after), char 4
+00:26:13 sent /ai all on (after)
+00:27:35 sent 12 host lines (after)
+00:27:52 sent @모두 greeting (after)
+00:29:44 /ai stop (after)
+00:29:58 @Gemini one word (after, new-line fade)
+00:31:09 chat-settings heightScale 1.3 written
+00:32:02 12 host lines with heightScale 1.3, shot
+00:32:14 chat-settings back to default
+00:32:25 /ai off (after)
+00:33:36 game closed (after), Player-after.log saved
+00:34:04 restore verify 0; installed installed .cs 36, different from b2fa4cc: 0

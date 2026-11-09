@@ -1,0 +1,375 @@
+{
+  "id": "code:Tools/ai-bridge/preflight.mjs#health@3942",
+  "depthLimit": 4,
+  "edges": [
+    {
+      "depth": 1,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "kind": "call",
+      "line": 164,
+      "resolution": "factory-destructuring",
+      "to": "code:Tools/ai-bridge/preflight.mjs#health@3942",
+      "type": "reference"
+    },
+    {
+      "depth": 1,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health",
+      "kind": "call",
+      "line": 134,
+      "resolution": "factory-destructuring",
+      "to": "code:Tools/ai-bridge/preflight.mjs#health@3942",
+      "type": "reference"
+    },
+    {
+      "depth": 1,
+      "file": "Tools/ai-bridge/preflight.mjs",
+      "from": "code:Tools/ai-bridge/preflight.mjs#createPreflight@450",
+      "kind": "defines",
+      "line": 69,
+      "to": "code:Tools/ai-bridge/preflight.mjs#health@3942",
+      "type": "reference"
+    },
+    {
+      "depth": 1,
+      "from": "code:Tools/ai-bridge/preflight.mjs#createPreflight@450",
+      "to": "code:Tools/ai-bridge/preflight.mjs#health@3942",
+      "type": "포함"
+    },
+    {
+      "depth": 2,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "ai-bridge:startup:bridge.mjs.module",
+      "line": 1,
+      "to": "code:Tools/ai-bridge/bridge.mjs",
+      "type": "기능→코드"
+    },
+    {
+      "depth": 2,
+      "from": "code:component:Tools/ai-bridge",
+      "to": "code:Tools/ai-bridge/bridge.mjs",
+      "type": "포함"
+    },
+    {
+      "depth": 2,
+      "address": "http://127.0.0.1:8331/v1/health",
+      "feature": "ai-bridge:GET /v1/health",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe()",
+      "kind": "http",
+      "line": 414,
+      "method": "GET",
+      "to": "code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health",
+      "type": "reference"
+    },
+    {
+      "depth": 2,
+      "endLine": 134,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "ai-bridge:GET /v1/health",
+      "line": 134,
+      "to": "code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health",
+      "type": "기능→코드"
+    },
+    {
+      "depth": 2,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "code:Tools/ai-bridge/bridge.mjs#anonymous@9484",
+      "kind": "framework-invoked",
+      "line": 134,
+      "resolution": "HTTP-method-path-dispatch",
+      "to": "code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health",
+      "type": "reference"
+    },
+    {
+      "depth": 2,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "kind": "call",
+      "line": 127,
+      "resolution": "lexical-binding",
+      "to": "code:Tools/ai-bridge/preflight.mjs#createPreflight@450",
+      "type": "reference"
+    },
+    {
+      "depth": 2,
+      "from": "code:Tools/ai-bridge/preflight.mjs",
+      "to": "code:Tools/ai-bridge/preflight.mjs#createPreflight@450",
+      "type": "포함"
+    },
+    {
+      "depth": 3,
+      "from": "code:container:bridge",
+      "to": "code:component:Tools/ai-bridge",
+      "type": "포함"
+    },
+    {
+      "depth": 3,
+      "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "kind": "call",
+      "line": 381,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe()",
+      "type": "reference"
+    },
+    {
+      "depth": 3,
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "from": "ai-bridge:GET /v1/health",
+      "line": 414,
+      "role": "API caller",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe()",
+      "type": "기능→코드"
+    },
+    {
+      "depth": 3,
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe()",
+      "type": "포함"
+    },
+    {
+      "depth": 3,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "kind": "callback",
+      "line": 131,
+      "resolution": "inline-argument",
+      "to": "code:Tools/ai-bridge/bridge.mjs#anonymous@9484",
+      "type": "reference"
+    },
+    {
+      "depth": 3,
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "to": "code:Tools/ai-bridge/bridge.mjs#anonymous@9484",
+      "type": "포함"
+    },
+    {
+      "depth": 3,
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "from": "code:Tools/ai-bridge/bridge.mjs",
+      "kind": "type reference",
+      "line": 39,
+      "resolution": "static-import",
+      "to": "code:Tools/ai-bridge/preflight.mjs",
+      "type": "reference"
+    },
+    {
+      "depth": 3,
+      "from": "code:component:Tools/ai-bridge",
+      "to": "code:Tools/ai-bridge/preflight.mjs",
+      "type": "포함"
+    },
+    {
+      "depth": 4,
+      "from": "code:context:corekeeper-ai",
+      "to": "code:container:bridge",
+      "type": "포함"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "kind": "call",
+      "line": 548,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "type": "포함"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "kind": "type reference",
+      "line": 315,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "kind": "type reference",
+      "line": 381,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+      "kind": "type reference",
+      "line": 163,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.SelfDefence(World, Entity, float)",
+      "kind": "type reference",
+      "line": 456,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)",
+      "kind": "type reference",
+      "line": 392,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AICombat.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.Down(World, Entity, float, float3, int)",
+      "kind": "type reference",
+      "line": 321,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AICombat.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.Tick(World, Entity, float)",
+      "kind": "type reference",
+      "line": 287,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.EndGoal(World, Entity, float, GoalEnd, EndOrder, string, string, string, string, string)",
+      "kind": "type reference",
+      "line": 280,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.EndGoal(World, Entity, float, GoalEnd, EndOrder, string, string, string, string, string)",
+      "kind": "type reference",
+      "line": 284,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FreeTime(World, Entity, float)",
+      "kind": "type reference",
+      "line": 75,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FreeTime(World, Entity, float)",
+      "kind": "type reference",
+      "line": 89,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FreeTime(World, Entity, float)",
+      "kind": "type reference",
+      "line": 93,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FreeTime(World, Entity, float)",
+      "kind": "type reference",
+      "line": 95,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "kind": "type reference",
+      "line": 117,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "kind": "type reference",
+      "line": 135,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+      "kind": "type reference",
+      "line": 196,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanReport.cs#AIPlanReport.S",
+      "kind": "type reference",
+      "line": 14,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.ResetState()",
+      "kind": "type reference",
+      "line": 396,
+      "resolution": "semantic",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "reference"
+    },
+    {
+      "depth": 4,
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner",
+      "type": "포함"
+    }
+  ],
+  "notice": "역방향 4단계 후보 영향. 실제 변경 영향은 원문으로 판단.",
+  "legacy": "legacy impact <기존 ID>"
+}

@@ -1,0 +1,121 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 선택지 상한 제거",
+        "doc": "bagTree",
+        "end": 28,
+        "line": 24,
+        "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+        "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+        "start": 24
+      },
+      {
+        "anchor": "## 실행·모델 연결 조건",
+        "doc": "bagTree",
+        "end": 37,
+        "line": 30,
+        "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+        "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+        "start": 30
+      }
+    ],
+    "id": "P.bag-no-cut",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 28,
+        "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+        "start": 24
+      },
+      {
+        "end": 37,
+        "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+        "start": 30
+      }
+    ],
+    "status": "합의",
+    "summary": "일반 가방8·전체 비전투14와 같은 개수 기반 잘라내기를 제거한다. 분류/물품/조작/대상을 임의 목록 cut이나 페이지로 나누지 않는다. 관측·소유·실행 가능 조건과 로그/기억 보관량 및 기존 호출/비용 제한은 구별한다.",
+    "title": "후보 개수 상한을 없애고 현재 노드 전부 제공",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 8. HEAD 적용 판정",
+          "doc": "bagCapAudit",
+          "end": 147,
+          "line": 139,
+          "path": "../2026-11-07-가방장비구현/inventory-category-cap-audit.md",
+          "sha256": "28aacd933901811340ecd3382fdd0382e82367a4ac6b46dbc29e88769d3f23a0",
+          "start": 139
+        }
+      ],
+      "from": "P.bag-no-cut",
+      "id": "E114",
+      "kind": "참고: 소비 경로별 상한 적용 판정",
+      "to": "R.bag-cap-audit",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 검증과 전달",
+          "doc": "bagTree",
+          "end": 47,
+          "line": 39,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 39
+        }
+      ],
+      "from": "P.bag-no-cut",
+      "kind": "새 트리 승인 정책의 적용 위치",
+      "to": "pol.choice-no-cut",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 선택지 상한 제거",
+          "doc": "bagTree",
+          "end": 28,
+          "line": 24,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 24
+        }
+      ],
+      "from": "P.bag-item-first",
+      "id": "E102",
+      "kind": "분류로 나누고 실제 항목은 모두 제공",
+      "to": "P.bag-no-cut",
+      "type": "reference"
+    },
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 선택지 상한 제거",
+          "doc": "bagTree",
+          "end": 28,
+          "line": 24,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 24
+        }
+      ],
+      "from": "P.noncombat-choice",
+      "id": "E103",
+      "kind": "현장 후보 상한 제거의 요청 범위",
+      "to": "P.bag-no-cut",
+      "type": "reference"
+    }
+  ]
+}

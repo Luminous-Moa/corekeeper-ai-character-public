@@ -1,0 +1,72 @@
+{
+  "node": {
+    "class": "사용자 결정 요약",
+    "evidence": [
+      {
+        "anchor": "사용자는 모델이 완료를 선택했더라도",
+        "doc": "observationAgreement",
+        "end": 3,
+        "line": 3,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+        "sha256": "25af5dbc02be454caf1beda1ebf3cfdfb753b1fb73dcfdc05bd06638de069bde",
+        "start": 3
+      },
+      {
+        "anchor": "## 구현 기준",
+        "doc": "observationAgreement",
+        "end": 14,
+        "line": 7,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+        "sha256": "25af5dbc02be454caf1beda1ebf3cfdfb753b1fb73dcfdc05bd06638de069bde",
+        "start": 7
+      }
+    ],
+    "id": "pol.completion-observation-check",
+    "sourceLocations": [
+      {
+        "end": 3,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+        "start": 3
+      },
+      {
+        "end": 14,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+        "start": 7
+      }
+    ],
+    "status": "사용자 후속 결정",
+    "summary": "모델이 완료를 선택했어도 실제 부족·미확인이면 현재 사실을 알리고 판단모델을 다시 호출한다. 관측은 목표·단계·대상·실행 회차에 귀속하며 원래 부탁과 미완료 의무를 보존한다. 계속·중단·전환의 AI 선택권을 유지하고 실제 완료 사실과 미완료를 알고 중단하는 의사를 구별한다.",
+    "title": "완료 선택과 실제 관측의 대조·재판단",
+    "type": "정책"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "사용자는 모델이 완료를 선택했더라도",
+          "doc": "observationAgreement",
+          "end": 3,
+          "line": 3,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+          "sha256": "25af5dbc02be454caf1beda1ebf3cfdfb753b1fb73dcfdc05bd06638de069bde",
+          "start": 3
+        },
+        {
+          "anchor": "## 구현 기준",
+          "doc": "observationAgreement",
+          "end": 14,
+          "line": 7,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+          "sha256": "25af5dbc02be454caf1beda1ebf3cfdfb753b1fb73dcfdc05bd06638de069bde",
+          "start": 7
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "kind": "현재 후속 계약의 정책 요약",
+      "to": "pol.completion-observation-check",
+      "type": "reference"
+    }
+  ]
+}

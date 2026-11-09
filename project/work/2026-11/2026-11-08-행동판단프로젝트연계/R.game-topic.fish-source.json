@@ -1,0 +1,465 @@
+{
+  "origin": {
+    "normalizedValueSha256": "a84a9b1be45a42606f4a223f3f20d3f1658404260714b74f4b7fe373f679e106",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/fishing-v2-replay-1/cases.json",
+    "pointer": "/cases/0"
+  },
+  "value": {
+    "id": "completion:B:fishing-50-0",
+    "action": "start_fishing",
+    "build": "26332184",
+    "status": "static_path_research_awaits_independent_review",
+    "runtimeTested": false,
+    "scope": "정확 source 50:0의 낚시 입력과 전리품 소비 경로",
+    "roles": [
+      {
+        "role": "tool_for",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4481218627703392936",
+        "objectId": 50,
+        "variation": 0,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/39",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "a8f55e5728be5c9aa4729fc654bb60d5feff431fcc154f909685b03b7f5e5c61"
+        }
+      }
+    ],
+    "entry": {
+      "input": "장비 입력 secondInteractHeld",
+      "consumer": "Pug.Other/PlayerController.cs:4113-4114; Pug.Other/PlayerEquipment/EquipmentUpdateSystem.cs:180-181; Pug.Other/FishingRodSlot.cs:10-63"
+    },
+    "sourceValues": {
+      "objectType": 605,
+      "equippedConditionRaw": {
+        "id": 46,
+        "value": 21,
+        "valueMultiplier": 0.550000011920929
+      },
+      "heldInHand": 1,
+      "tileset3AllowedByObjectId": false
+    },
+    "conditions": [
+      "파손되지 않고 마우스에 아이템이 없으며 second interact 입력; cooldown 확인 후 비낚시 상태면 낚시 상태 push",
+      "물 top tile, 벽 차단 및 tileset 3 검사; 55/56만 해당 tileset 허용",
+      "입질·테이블·스킬·랜덤·미니게임 상태와 pull up 결과에 따라 전리품 선택",
+      "spawnOctopusBoss는 fishIsNibbling과 isFishingAtOctopusBoss이고 후자는 boss와 spawn 위치 entity가 모두 존재할 때"
+    ],
+    "transitions": [
+      {
+        "from": "input",
+        "to": "fishing state",
+        "text": "이미 낚시 중이면 당기기 또는 재투척 예약; 아니면 상태 push와 cooldown",
+        "refs": [
+          "Pug.Other/PlayerController.cs:4113-4114; Pug.Other/PlayerEquipment/EquipmentUpdateSystem.cs:180-181; Pug.Other/FishingRodSlot.cs:10-63"
+        ]
+      },
+      {
+        "from": "valid water",
+        "to": "loot choice",
+        "text": "기술치가 지형별 요구치를 통과하면 fish 또는 loot table을 난수로 선택",
+        "refs": [
+          "Pug.Other/PlayerState/Fishing.cs:158-310",
+          "Pug.Other/PlayerState/Fishing.cs:514-687",
+          "Pug.Other/FishingMiniGame.cs:51-209"
+        ]
+      },
+      {
+        "from": "pull up",
+        "to": "bait or delayed loot",
+        "text": "미끼가 소비 대상이면 수량 1 소비 요청 후 결과 성공시에 진행; 보존 또는 미끼 없음은 직접 생성 경로",
+        "refs": [
+          "Pug.Other/PlayerState/Fishing.cs:312-361",
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-382,797-848; Pug.Other/Inventory/InventoryUtility.cs:278-318",
+          "Pug.Other/FishingWithConsumedBaitEvaluationSystem.cs:168-189"
+        ]
+      },
+      {
+        "from": "delayed loot",
+        "to": "inventory or drop",
+        "text": "지연 컴포넌트가 CreateObject 요청으로 전환되고 유효 DB와 인벤토리 조건에서 공간에 수량을 더하거나 잔량을 드롭 예약",
+        "refs": [
+          "Pug.Other/PlayerState/Fishing.cs:364-418; Pug.Other/DelayedFishLootSystem.cs:135-144; InventoryUpdateSystem.cs:797-848; InventoryUtility.cs:394-449"
+        ]
+      },
+      {
+        "from": "biome and water",
+        "to": "selected loot",
+        "text": "Dirt면 biome 먼저, lootTable Empty면 water tileset, 여전히 Empty면 biome fallback. skillNeeded 이상에서 fish 여부는 보스 지점 제외 난수 < 0.4+(IncreasedChanceToGetFish-IncreasedChanceToGetFishLoot)/100 또는 shoal 강제. fish면 fishLootTable, 아니면 lootTable. minimum rarity는 기본 Poor, 보장 legendary 또는 확률적 Uncommon; GetRandomLoot 첫 항목 objectID를 사용한다.",
+        "refs": [
+          "Pug.ECS.Components/FishingTableCD.cs:8-28",
+          "Pug.Other/PlayerState/Fishing.cs:598-645",
+          "Pug.Other/PugDatabase.cs:648-755"
+        ]
+      },
+      {
+        "from": "boss bait consumption",
+        "to": "boss fight state",
+        "text": "BaitOctopusBoss는 spawnOctopusBoss일 때만 소비 대상; isFishingAtOctopusBoss이면 일반 CreateFishingLoot 호출 안 함. 소비 결과 성공 후 서버이고 기존 보스 및 lurking component와 spawn 위치가 있으면 보스 위치를 그 좌표로 설정하고 isFighting=true, canLeaveFightTimer=10으로 변경한다.",
+        "refs": [
+          "Pug.Other/PlayerState/Fishing.cs:184-193,325-338",
+          "Pug.ECS.Components/PlayerState/FishingStateCD.cs",
+          "Pug.Other/FishingWithConsumedBaitEvaluationSystem.cs:168-189"
+        ]
+      }
+    ],
+    "outcomes": [
+      "전리품 종류는 위치·테이블·조건·난수에 의존, 물고기면 확률적으로 수량 2, 그 외 1",
+      "유효한 슬롯에는 ContainedObjectsBuffer 양 증가, 공간 부족분은 first prediction에서 드롭 예약",
+      "미끼 소비 시 동일 objectID 확인 및 수량 1 감소가 실제 소비 성공의 조건",
+      "기본 loot table의 guaranteed 및 가중치 선택은 지정 표와 biome·rarity·중복 조건에 의존한다; 런타임 선정 결과는 고정하지 않는다."
+    ],
+    "negativeCases": [
+      "벽 또는 부적합 타일, tileset 3에 50–54, 미니게임 탈출·줄 끊김, 요구 스킬 미달은 성공 보장 없음",
+      "미끼 소비 실패 시 후속 CreateFishingLoot를 호출하지 않음",
+      "None 또는 DB 없는 결과는 CreateObject가 반환",
+      "read-only world에서 요청 player가 guest이고 adminPrivileges가 없으면 inventory 요청은 실행되지 않고 성공 결과도 설정되지 않는다."
+    ],
+    "boundaries": [
+      "실행 시 위치·수질·조건·랜덤·DB·인벤토리 및 ECB playback 미관측",
+      "조건 ID 46의 raw value와 multiplier는 원본값이며 최종 런타임 합산값으로 단정하지 않음",
+      "새 정적 경로는 독립 검수 전"
+    ],
+    "assetEvidence": [
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+        "line": 18023,
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4481218627703392936",
+        "pointer": "/data",
+        "rawByteSha256": "a8f55e5728be5c9aa4729fc654bb60d5feff431fcc154f909685b03b7f5e5c61"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+        "line": 3964,
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1748122166992161448",
+        "pointer": "/data",
+        "rawByteSha256": "ca3a27d49afc79eb2809fcb57929290bf58a7b2a2722a48e1f76c311dbe458db"
+      }
+    ],
+    "codeEvidence": [
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\FishingRodSlot.cs",
+        "sha256": "9eceba6048330532084435990bcaa125248ff0be58ea6e3eb8428d0373d2de81"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\Fishing.cs",
+        "sha256": "c76ef6742fc597a9f56169b954b10dab21650bc7fb0c74c55bf1724b77a53ff6"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\FishingWithConsumedBaitEvaluationSystem.cs",
+        "sha256": "90ec850054906c2bdebec4c2fdb49777efd1d5ee1de19f5162fecc9dd4bc117c"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\DelayedFishLootSystem.cs",
+        "sha256": "41994a1487e53140911c541d022adad3c642d5cc15132b7461f8456175b823f8"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+        "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+        "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+        "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\EquipmentUpdateSystem.cs",
+        "sha256": "ff5462481464b065f16ea1d84ee849bc03ef8b18e9bb3497ac1d93ec1c9654aa"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\FishingMiniGame.cs",
+        "sha256": "ae53b1aedc1766c5bbbfe5cde4195822aa038a47b36a78c0f2b9feceb352ab1f"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\ObjectID.cs",
+        "sha256": "9e8c46bf33b5030392aab2512acf4fe391d2986624b3754822c7403f91c91bc3"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\ObjectType.cs",
+        "sha256": "dd3dec8dcaa26e43941ac8f2e18fe8f2b48d16661379d6698209158206ccd88d"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\FishingTableCD.cs",
+        "sha256": "4d6fb5f51dc8b09fe12d4f48608240452762a8e5420a956b9ff850aca622748c"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\FishingTableConverter.cs",
+        "sha256": "371f484eb5c9143cc4995f2598ceef0cf99466ebcd3c8f3f0cfe3e54ca6f3c03"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PugDatabase.cs",
+        "sha256": "1f47ecec9e79e38a155579928f9230a97078455da7a76040aab1ca64873ca768"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\FishingTable.cs",
+        "sha256": "17df67e323bc6a2e3d5cd9f5fffb21d0e1af3293e651249b03403fdea0e03109"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\PlayerState\\FishingStateCD.cs",
+        "sha256": "c9784d4aa216c0ac5cb72fa7e043a04c7a8515f2ac07ec543cff55431572e87a"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\LootTableID.cs",
+        "sha256": "6085c373c8845354d20a9448d11af0f76d424dffed86935efaf9a44c082075d8"
+      }
+    ],
+    "priorClaimIds": [
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-4481218627703392936#0"
+    ],
+    "relationLinks": [
+      {
+        "from": "completion:B:fishing-50-0",
+        "relation": "completes_selected_target_path_of",
+        "to": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-4481218627703392936#0"
+      }
+    ],
+    "tableEvidence": {
+      "fishingTable": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-table-capture.json",
+        "pointer": "/data/fishingInfos",
+        "sha256": "e8ace5a38e304dc4f5e74a3b9110cbf4f596760d984d52a743091c01970ec8f1",
+        "rows": [
+          {
+            "biomes": [
+              0,
+              1
+            ],
+            "waterTilesets": [
+              0
+            ],
+            "lootTableID": 501,
+            "fishLootTableID": 500
+          },
+          {
+            "biomes": [
+              2
+            ],
+            "waterTilesets": [
+              6
+            ],
+            "lootTableID": 503,
+            "fishLootTableID": 502
+          },
+          {
+            "biomes": [
+              3
+            ],
+            "waterTilesets": [],
+            "lootTableID": 505,
+            "fishLootTableID": 504
+          },
+          {
+            "biomes": [
+              5
+            ],
+            "waterTilesets": [],
+            "lootTableID": 507,
+            "fishLootTableID": 506
+          },
+          {
+            "biomes": [],
+            "waterTilesets": [
+              9
+            ],
+            "lootTableID": 509,
+            "fishLootTableID": 508
+          },
+          {
+            "biomes": [
+              7
+            ],
+            "waterTilesets": [
+              10
+            ],
+            "lootTableID": 523,
+            "fishLootTableID": 522
+          },
+          {
+            "biomes": [
+              8
+            ],
+            "waterTilesets": [],
+            "lootTableID": 617,
+            "fishLootTableID": 616
+          },
+          {
+            "biomes": [],
+            "waterTilesets": [
+              3
+            ],
+            "lootTableID": 619,
+            "fishLootTableID": 618
+          },
+          {
+            "biomes": [
+              9
+            ],
+            "waterTilesets": [
+              55
+            ],
+            "lootTableID": 637,
+            "fishLootTableID": 636
+          },
+          {
+            "biomes": [
+              10
+            ],
+            "waterTilesets": [
+              60
+            ],
+            "lootTableID": 711,
+            "fishLootTableID": 710
+          }
+        ]
+      },
+      "defaultLootTables": [
+        {
+          "lootTableID": 636,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\CrystalFishes.json",
+          "sha256": "689cfeeb7fb48a663dda2a0051627980e435632bc3b7f432eb05a6d16bb6e98c",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 637,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\CrystalFishingLoot.json",
+          "sha256": "da7c384641ce28e9c66e9cbadccd7f1c0e99c54dc8e40f77803f2f9c2e75ffba",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 616,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\DesertFishes.json",
+          "sha256": "eb148daf6c467defd71960cc3003f674b71a413ef1348dd279c03a225e45af3e",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 617,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\DesertFishingLoot.json",
+          "sha256": "304ad5b845e3978c4a5325b22558bd150c64d59011d3dbc948d3822f3a4acb94",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 500,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\DirtFishes.json",
+          "sha256": "fe8d5daaee32b3731c7fb6c7599bca63dd1a1b2aa306684b0cc40d99c71af502",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 501,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\DirtFishingLoot.json",
+          "sha256": "18d167c8cb5cc7f83824a2f18ff19b6cb1948da518b5dd5417acd40f9db019e9",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 502,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\LarvaFishes.json",
+          "sha256": "632744c20c0759f09b5f467f45a492f1301a2c35525628ac8f1de7eecb393c91",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 503,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\LarvaFishingLoot.json",
+          "sha256": "78543420237459747fd74e220d4045c542ac5d27c9971d621326a6bd7aaf7c66",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 618,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\LavaFishes.json",
+          "sha256": "7b5917b4014b15e40676e9156113c23067c88ce4bc530dd54544754b1a709b0a",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 619,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\LavaFishingLoot.json",
+          "sha256": "47811fdbb0ad72c90beca412b6445db2ede7517f35e3c3ae33763b5f33bc262a",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 508,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\MoldFishes.json",
+          "sha256": "a61d1bc11882698a04b3dd7400ab5bcce4ee0d540499b6c1245b42fee34ce9b3",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 509,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\MoldFishingLoot.json",
+          "sha256": "ff1d837023b6ee36f8c2ef7bb959b233c05a7d5c86ed11347b1ff3201a9b65ed",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 506,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\NatureFishes.json",
+          "sha256": "e722cca2660f3022236e34a659186e4ffd75bcb01d8f1db314e7efb663baf751",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 507,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\NatureFishingLoot.json",
+          "sha256": "cd7517b1705710d630849bbfd96721669cc3e4bdc732e604339e11b42ebf3caa",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 710,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\PassageFishes.json",
+          "sha256": "a2851ea276b8230c306b09da8a499f39e2ab57ec8d1eb51d2b112a20bfa81320",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 711,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\PassageFishingLoot.json",
+          "sha256": "60d0c5e00f8efed4f70cd4c92147a3cfa3bdd8ca3a1f3cd6a25754c239467725",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 522,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\SeaFishes.json",
+          "sha256": "47016fccd1d72c4a3be7419ac691571c145b0977d68dd79f4ded78a45856ff11",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 523,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\SeaFishingLoot.json",
+          "sha256": "2a0aeb103e4bf08f4dfa2d6ed233d80eb56b8eb12ba98fd3ae653c8b905dbb04",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 504,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\StoneFishes.json",
+          "sha256": "60999fe65616c8c26638097bec1ca969fb61f0c1a84111e49c4e85569f9d3198",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        },
+        {
+          "lootTableID": 505,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\fishing-conf\\StoneFishingLoot.json",
+          "sha256": "db05b1470b9df428d000acd0e80f7724b720851d819fbe30fb699cdfd42c99ce",
+          "pointer": "/",
+          "matchesSameBuildArchive": true
+        }
+      ],
+      "condition": "기본 26332184 자료, Manager.mod 및 loot override가 없을 때; 런타임 blob은 별도"
+    }
+  },
+  "evidenceContext": null
+}

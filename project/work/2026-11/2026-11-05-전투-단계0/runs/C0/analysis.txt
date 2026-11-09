@@ -1,0 +1,74 @@
+charges 50 (aborted 1: 07:15:27.386 eof)
+06:49:26.232 74437:18 ant=10tk aimLast=null chg=16tk dist=3.90 peak=6.00 end=PendingCollided hit=AI:Claude@0.44 ent=none a1=[ground:0] vuln=72tk chargeState=98tk cdPrev=nulltk dmg=[-31] walls= td0=3.76
+06:49:33.539 74437:18 ant=10tk aimLast=2 chg=11tk dist=2.40 peak=5.98 end=PendingCollided hit=AI:Claude@0.83 ent=none a1=[ground:0 smallStones:0] vuln=72tk chargeState=93tk cdPrev=47tk dmg=[] walls= td0=6.03
+06:49:41.873 74437:18 ant=10tk aimLast=8 chg=8tk dist=1.51 peak=5.92 end=PendingCollided hit=AI:Claude@0.77 ent=none a1=[ground:0 smallStones:0] vuln=72tk chargeState=90tk cdPrev=74tk dmg=[] walls=(-28,39)@+2 td0=4.4
+06:50:36.640 70688:299 ant=10tk aimLast=null chg=27tk dist=7.20 peak=6.00 end=PendingCollided hit=AI:Claude@0.32 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=109tk cdPrev=nulltk dmg=[-30] walls=(-34,35)@+2 (-34,36)@+2 (-34,37)@+2 (-33,35)@+2 td0=6.09
+06:50:43.140 70688:299 ant=10tk aimLast=2 chg=13tk dist=3.00 peak=6.00 end=PendingCollided hit=AI:Claude@0.54 ent=none a1=[ground:0] vuln=72tk chargeState=95tk cdPrev=21tk dmg=[] walls= td0=5.06
+06:51:19.375 80234:160 ant=10tk aimLast=null chg=28tk dist=7.50 peak=6.00 end=PendingCollided hit=AI:Claude@0.48 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=110tk cdPrev=nulltk dmg=[-36,-30,-36] walls=(-35,35)@+2 (-35,36)@+2 (-35,37)@+2 td0=5.52
+06:51:25.959 80234:160 ant=10tk aimLast=null chg=18tk dist=4.50 peak=6.00 end=PendingCollided hit=AI:Claude@0.25 ent=none a1=[ground:0] vuln=72tk chargeState=100tk cdPrev=21tk dmg=[-1] walls= td0=6.23
+06:52:02.659 38941:96 ant=10tk aimLast=null chg=33tk dist=9.00 peak=6.00 end=PendingCollided hit=AI:Claude@0.64 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=115tk cdPrev=nulltk dmg=[-31,-31] walls=(-36,35)@+2 (-36,36)@+2 (-36,37)@+2 td0=6.07
+06:52:09.457 38941:96 ant=10tk aimLast=2 chg=23tk dist=6.00 peak=6.00 end=PendingCollided hit=AI:Claude@1.01 ent=none a1=[ground:0] vuln=72tk chargeState=105tk cdPrev=21tk dmg=[] walls=(-26,35)@+2 (-26,37)@+2 td0=6.15
+06:52:49.584 33470:16 ant=10tk aimLast=3 chg=35tk dist=9.60 peak=6.02 end=PendingCollided hit=AI:Claude@1.57 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=117tk cdPrev=nulltk dmg=[-32,-36,-30] walls=(-37,36)@+2 (-37,37)@+2 td0=5.84
+06:52:56.465 33470:16 ant=10tk aimLast=null chg=18tk dist=4.50 peak=6.00 end=PendingCollided hit=AI:Claude@0.58 ent=none a1=[ground:0] vuln=72tk chargeState=100tk cdPrev=21tk dmg=[] walls= td0=5.63
+06:53:31.434 51351:61 ant=10tk aimLast=null chg=38tk dist=10.50 peak=6.00 end=PendingCollided hit=AI:Claude@0.5 ent=none a1=[ground:0 wall:0 wallGrass:0] vuln=72tk chargeState=120tk cdPrev=nulltk dmg=[] walls=(-37,35)@+2 td0=6.09
+06:53:53.346 51351:61 ant=10tk aimLast=5 chg=7tk dist=1.21 peak=5.82 end=PendingCollided hit=AI:Claude@0.06 ent=none a1=[ground:0] vuln=72tk chargeState=89tk cdPrev=317tk dmg=[] walls=(-36,34)@+2 (-35,34)@+2 (-34,34)@+2 td0=2.63
+07:06:10.511 38339:132 ant=10tk aimLast=2 chg=19tk dist=4.80 peak=6.00 end=PendingCollided hit=player(28869)@2.53 ent=none a1=[ground:0 smallStones:0] vuln=72tk chargeState=101tk cdPrev=nulltk dmg=[] walls= td0=2.53
+07:06:16.681 38339:132 ant=10tk aimLast=2 chg=22tk dist=5.70 peak=6.01 end=PendingCollided hit=player(28869)@2.63 ent=none a1=[bigRoot:0 ground:1] vuln=72tk chargeState=104tk cdPrev=21tk dmg=[] walls= td0=3.09
+07:06:22.920 38339:132 ant=10tk aimLast=null chg=23tk dist=6.00 peak=6.02 end=PendingCollided hit=player(28869)@3.56 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=105tk cdPrev=21tk dmg=[] walls=(2,-3)@+2 (3,-3)@+2 (4,-3)@+2 (4,-2)@+2 td0=2.72
+07:06:29.282 38339:132 ant=10tk aimLast=2 chg=24tk dist=6.30 peak=6.01 end=PendingCollided hit=player(28869)@2.56 ent=none a1=[ground:1] vuln=72tk chargeState=106tk cdPrev=21tk dmg=[] walls= td0=3.95
+07:06:35.631 38339:132 ant=10tk aimLast=null chg=28tk dist=7.50 peak=6.01 end=PendingCollided hit=player(28869)@4.71 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=110tk cdPrev=21tk dmg=[] walls=(5,-3)@+2 (5,-2)@+2 td0=2.98
+07:06:42.164 38339:132 ant=10tk aimLast=3 chg=31tk dist=8.40 peak=6.01 end=PendingCollided hit=player(28869)@3.7 ent=none a1=[ground:1] vuln=72tk chargeState=113tk cdPrev=21tk dmg=[] walls= td0=4.98
+07:06:48.881 38339:132 ant=10tk aimLast=null chg=33tk dist=8.76 peak=6.01 end=PendingCollided hit=player(28869)@5.18 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=115tk cdPrev=21tk dmg=[] walls=(4,-4)@+2 (5,-4)@+2 td0=3.88
+07:06:55.682 38339:132 ant=10tk aimLast=3 chg=41tk dist=11.40 peak=6.01 end=PendingCollided hit=player(28869)@5.92 ent=none a1=[ground:0 bigRoot:0] vuln=72tk chargeState=123tk cdPrev=21tk dmg=[] walls= td0=5.54
+07:07:02.881 38339:132 ant=10tk aimLast=null chg=12tk dist=2.70 peak=6.00 end=PendingCollided hit=player(28869)@3.04 ent=none a1=[ground:1] vuln=72tk chargeState=94tk cdPrev=21tk dmg=[] walls= td0=6.01
+07:07:08.723 38339:132 ant=10tk aimLast=2 chg=32tk dist=8.70 peak=6.01 end=PendingCollided hit=player(28869)@6.4 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=114tk cdPrev=21tk dmg=[] walls=(4,-5)@+2 (5,-5)@+2 (6,-5)@+2 (6,-4)@+2 (6,-3)@+2 td0=2.43
+07:07:26.972 38339:132 ant=10tk aimLast=null chg=30tk dist=8.10 peak=6.01 end=PendingCollided hit=player(28869)@2.44 ent=none a1=[ground:1] vuln=72tk chargeState=112tk cdPrev=251tk dmg=[] walls= td0=5.95
+07:07:33.639 38339:132 ant=10tk aimLast=3 chg=32tk dist=8.70 peak=6.01 end=PendingCollided hit=player(28869)@5.61 ent=none a1=[ground:0] vuln=72tk chargeState=114tk cdPrev=21tk dmg=[] walls=(6,-2)@+2 td0=3.17
+07:07:40.385 38339:132 ant=10tk aimLast=null chg=56tk dist=15.90 peak=6.01 end=PendingCollided hit=player(28869)@10.33 ent=none a1=[ground:0] vuln=72tk chargeState=138tk cdPrev=21tk dmg=[] walls= td0=5.83
+07:13:03.419 60142:95 ant=10tk aimLast=3 chg=17tk dist=4.20 peak=6.01 end=PendingCollided hit=player(69825)@5.09 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=99tk cdPrev=nulltk dmg=[] walls=(0,-4)@+2 (1,-4)@+2 td0=2.49
+07:13:09.419 60142:95 ant=10tk aimLast=1 chg=24tk dist=6.30 peak=6.01 end=PendingCollided hit=player(69825)@6.73 ent=none a1=[ground:0 bigRoot:0] vuln=72tk chargeState=106tk cdPrev=21tk dmg=[] walls= td0=1.89
+07:13:28.186 60142:95 ant=10tk aimLast=3 chg=33tk dist=8.85 peak=6.02 end=PendingCollided hit=player(69825)@7.07 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=115tk cdPrev=269tk dmg=[] walls=(-2,-4)@+2 (-2,-3)@+2 (-1,-4)@+2 td0=4.46
+07:13:35.097 60142:95 ant=10tk aimLast=7 chg=21tk dist=5.40 peak=6.01 end=PendingCollided hit=player(69825)@0.95 ent=none a1=[ground:0] vuln=72tk chargeState=103tk cdPrev=21tk dmg=[] walls= td0=5.41
+07:13:41.264 60142:95 ant=10tk aimLast=3 chg=14tk dist=3.30 peak=6.01 end=PendingCollided hit=player(69825)@0.69 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=96tk cdPrev=21tk dmg=[] walls=(7,-2)@+2 (7,-1)@+2 td0=3.21
+07:13:50.765 60142:95 ant=10tk aimLast=2 chg=21tk dist=5.21 peak=6.00 end=PendingCollided hit=player(69825)@0.97 ent=none a1=[ground:0] vuln=72tk chargeState=103tk cdPrev=94tk dmg=[] walls= td0=1.43
+07:13:56.966 60142:95 ant=10tk aimLast=3 chg=11tk dist=2.03 peak=5.95 end=PendingCollided hit=player(69825)@0.91 ent=none a1=[ground:0] vuln=72tk chargeState=93tk cdPrev=21tk dmg=[] walls= td0=3.07
+07:14:04.721 60142:95 ant=10tk aimLast=2 chg=23tk dist=6.00 peak=6.00 end=PendingCollided hit=player(69825)@3.31 ent=none a1=[bigRoot:0 ground:1] vuln=72tk chargeState=105tk cdPrev=60tk dmg=[] walls= td0=2.85
+07:14:11.027 60142:95 ant=10tk aimLast=null chg=38tk dist=10.50 peak=6.00 end=PendingCollided hit=player(69825)@7.41 ent=none a1=[ground:0] vuln=72tk chargeState=120tk cdPrev=21tk dmg=[] walls=(8,-1)@+2 td0=3.31
+07:14:34.489 60142:95 ant=10tk aimLast=null chg=37tk dist=10.20 peak=6.01 end=PendingCollided hit=player(69825)@4.32 ent=none a1=[bigRoot:0 ground:1] vuln=72tk chargeState=119tk cdPrev=349tk dmg=[] walls= td0=6.21
+07:14:41.489 60142:95 ant=10tk aimLast=null chg=45tk dist=12.60 peak=6.01 end=PendingCollided hit=player(69825)@8.45 ent=none a1=[ground:0] vuln=72tk chargeState=127tk cdPrev=21tk dmg=[-35,-32,-36,-30] walls= td0=4.32
+07:14:48.873 60142:95 ant=10tk aimLast=4 chg=6tk dist=0.92 peak=5.61 end=PendingCollided hit=AI:Claude@0.84 ent=none a1=[ground:0] vuln=72tk chargeState=88tk cdPrev=21tk dmg=[] walls= td0=0.42
+07:15:06.824 60142:95 ant=10tk aimLast=8 chg=6tk dist=0.92 peak=5.63 end=PendingCollided hit=AI:Claude@0.38 ent=none a1=[ground:0] vuln=72tk chargeState=88tk cdPrev=271tk dmg=[] walls= td0=3.34
+07:15:14.235 60142:95 ant=10tk aimLast=8 chg=37tk dist=10.20 peak=6.01 end=PendingCollided hit=AI:Claude@2.28 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=119tk cdPrev=60tk dmg=[] walls=(-3,-4)@+2 (-3,-3)@+2 td0=4.68
+07:15:21.230 60142:95 ant=10tk aimLast=null chg=20tk dist=5.10 peak=6.01 end=PendingCollided hit=player(69825)@1.55 ent=none a1=[ground:56] vuln=72tk chargeState=102tk cdPrev=21tk dmg=[-31,-31,-30,-30,-34,-31,-32,-31] walls= td0=3.8
+07:16:30.182 72995:11 ant=10tk aimLast=3 chg=37tk dist=10.20 peak=6.00 end=PendingCollided hit=AI:Claude@0.76 ent=none a1=[ground:0] vuln=72tk chargeState=119tk cdPrev=nulltk dmg=[] walls= td0=5.25
+07:16:37.185 72995:11 ant=10tk aimLast=3 chg=27tk dist=7.20 peak=6.01 end=PendingCollided hit=AI:Claude@1.28 ent=none a1=[ground:0] vuln=72tk chargeState=109tk cdPrev=21tk dmg=[] walls= td0=5.33
+07:17:13.436 83801:9 ant=10tk aimLast=null chg=40tk dist=11.10 peak=6.00 end=PendingCollided hit=AI:Claude@1.18 ent=none a1=[ground:0 wall:0 wallGrass:0] vuln=72tk chargeState=122tk cdPrev=nulltk dmg=[-32,-33,-33,-31,-32,-36,-35,-34] walls=(-38,35)@+2 (-38,36)@+2 (-38,37)@+2 td0=6.09
+07:17:20.578 83801:9 ant=10tk aimLast=5 chg=8tk dist=1.35 peak=5.82 end=PendingCollided hit=AI:Claude@0.26 ent=none a1=[ground:0] vuln=72tk chargeState=90tk cdPrev=21tk dmg=[-36,-32,-31,-32,-31,-33,-36,-32] walls=(-37,34)@+2 td0=1.12
+07:17:26.138 83801:9 ant=10tk aimLast=null chg=7tk dist=1.21 peak=5.80 end=PendingCollided hit=AI:Claude@0.53 ent=none a1=[ground:0] vuln=72tk chargeState=89tk cdPrev=21tk dmg=[] walls= td0=0.97
+07:18:02.438 70564:277 ant=10tk aimLast=2 chg=42tk dist=11.70 peak=6.02 end=PendingCollided hit=AI:Claude@1.29 ent=none a1=[ground:0 wall:0] vuln=72tk chargeState=124tk cdPrev=nulltk dmg=[] walls=(-39,35)@+2 (-39,36)@+2 td0=5.71
+07:18:09.672 70564:277 ant=10tk aimLast=2 chg=6tk dist=0.92 peak=5.61 end=PendingCollided hit=AI:Claude@0.37 ent=none a1=[ground:0] vuln=72tk chargeState=88tk cdPrev=21tk dmg=[-31,-36] walls= td0=1.35
+07:18:17.203 70564:277 ant=10tk aimLast=null chg=24tk dist=6.30 peak=6.00 end=PendingCollided hit=AI:Claude@0.2 ent=none a1=[ground:0] vuln=72tk chargeState=106tk cdPrev=62tk dmg=[] walls= td0=6.18
+anticipation s n=49 min=0.500 p50=0.500 p95=0.500 max=0.500
+aim last change (s after first StartCharging sample) n=29 min=0.050 p50=0.150 p95=0.400 max=0.400 charges with no aim change 20
+charging s n=49 min=0.300 p50=1.200 p95=2.100 max=2.800 | dist n=49 min=0.918 p50=6.300 p95=11.700 max=15.899 | peak tiles/s n=49 min=5.609 p50=6.002 p95=6.017 max=6.019
+vulnerable s n=49 min=3.600 p50=3.600 p95=3.600 max=3.600
+charge state total s n=49 min=4.400 p50=5.300 p95=6.200 max=6.900
+cooldown (charge state left -> next StartCharging) s n=38 min=1.050 p50=1.050 p95=15.850 max=17.450
+ends {"PendingCollided/AI:Claude":24,"PendingCollided/player(28869)":13,"PendingCollided/player(69825)":12}
+hp changes |d|>=40 or positive:
+  06:49:54.539 74437:18 507->540 (33) state=RandomWalking phase=LeaveState maxDmg=1 near [player(28869) d=47.17 hp=100; AI:Claude d=47.03 hp=100 swingLeft=0.00]
+  06:50:56.041 70688:299 509->540 (31) state=RandomWalking phase=LeaveState maxDmg=1 near [player(28869) d=46.73 hp=100; AI:Claude d=46.61 hp=100 swingLeft=0.00]
+  06:51:39.093 80234:160 436->540 (104) state=RandomWalking phase=LeaveState maxDmg=1 near [player(28869) d=47.19 hp=100; AI:Claude d=47.07 hp=100 swingLeft=0.00]
+  06:52:22.877 38941:96 478->540 (62) state=RandomWalking phase=LeaveState maxDmg=1 near [player(28869) d=46.02 hp=100; AI:Claude d=45.90 hp=100 swingLeft=0.00]
+  06:53:09.632 33470:16 441->540 (99) state=RandomWalking phase=LeaveState maxDmg=1 near [player(28869) d=48.87 hp=100; AI:Claude d=48.74 hp=100 swingLeft=0.00]
+  06:54:05.980 51351:61 539->540 (1) state=RandomWalking phase=LeaveState maxDmg=1 near [player(28869) d=51.10 hp=100; AI:Claude d=50.98 hp=100 swingLeft=0.00]
+  07:15:01.438 60142:95 402->540 (138) state=RandomWalking phase=LeaveState maxDmg=1 near [player(69825) d=9.72 hp=100; AI:Claude d=8.32 hp=40 swingLeft=0.00]
+  07:17:38.738 83801:9 1->271 (270) state=RandomWalking phase=LeaveState maxDmg=1 near [player(69825) d=58.28 hp=100; AI:Claude d=53.20 hp=100 swingLeft=0.00]
+  07:18:30.636 70564:277 471->540 (69) state=RandomWalking phase=LeaveState maxDmg=1 near [player(69825) d=55.32 hp=100; AI:Claude d=50.27 hp=100 swingLeft=0.00]
+hp change sizes (negative) {"-31":11,"-1":28,"-30":6,"-36":8,"-32":8,"-35":2,"-34":2,"-33":3}
+MOVE-START 151: {"attack/moved":31,"eat/superseded b":2,"away/moved":40,"wait/superseded b":19,"attack/superseded b":2,"eat/moved":1,"wait/no move alon":44,"away/the new inpu":6,"retreat/moved":5,"attack/no move alon":1}
+  attack: input changed s n=30 min=0.067 p50=0.087 p95=0.140 max=0.334; first move any s n=31 min=0.067 p50=0.134 p95=0.173 max=0.867; first move along s n=31 min=0.067 p50=0.134 p95=0.567 max=0.867
+  away: input changed s n=38 min=0.034 p50=0.134 p95=0.179 max=0.262; first move any s n=40 min=0.034 p50=0.167 p95=0.225 max=0.234; first move along s n=40 min=0.034 p50=0.167 p95=0.234 max=0.262
+  all: input changed s n=69 min=0.034 p50=0.102 p95=0.168 max=0.334; first move any s n=77 min=0.034 p50=0.134 p95=0.225 max=0.867; first move along s n=77 min=0.034 p50=0.134 p95=0.234 max=0.867
+  swinging at apply (swingLeft>0): first move along n=4 min=0.042 p50=0.201 p95=0.212 max=0.212; not swinging n=73 min=0.034 p50=0.134 p95=0.234 max=0.867
+  swinging at apply, all outcomes: ["eat:42","away:207","away:201","away:212"]

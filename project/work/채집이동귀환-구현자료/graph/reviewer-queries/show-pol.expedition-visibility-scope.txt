@@ -1,0 +1,72 @@
+{
+  "node": {
+    "class": "사용자 결정 요약",
+    "evidence": [
+      {
+        "anchor": "사용자 결정:",
+        "doc": "expeditionLightDecision",
+        "end": 3,
+        "line": 3,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+        "sha256": "60183ff66401a2cbb03d7c765d8d27b95dfb516b4ff0acafa2478b50ad81089b",
+        "start": 3
+      },
+      {
+        "anchor": "- 이번 수용 범위는",
+        "doc": "expeditionLightDecision",
+        "end": 7,
+        "line": 7,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+        "sha256": "60183ff66401a2cbb03d7c765d8d27b95dfb516b4ff0acafa2478b50ad81089b",
+        "start": 7
+      }
+    ],
+    "id": "pol.expedition-visibility-scope",
+    "sourceLocations": [
+      {
+        "end": 3,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+        "start": 3
+      },
+      {
+        "end": 7,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+        "start": 7
+      }
+    ],
+    "status": "사용자 결정·현재 범위",
+    "summary": "이번7af8f91 채집·이동·귀환은 기존 화면범위 관측으로 수용한다. 사람과 같은 조명·어둠 시야 R1은 해결이 아닌 별도 후속이며 CPU근사/오프스크린 방식은 정하지 않았다. 설치·실게임·외부 모델 보류를 유지한다.",
+    "title": "이번 화면범위 시야 수용과 조명후속",
+    "type": "정책"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "사용자 결정:",
+          "doc": "expeditionLightDecision",
+          "end": 3,
+          "line": 3,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+          "sha256": "60183ff66401a2cbb03d7c765d8d27b95dfb516b4ff0acafa2478b50ad81089b",
+          "start": 3
+        },
+        {
+          "anchor": "- 이번 수용 범위는",
+          "doc": "expeditionLightDecision",
+          "end": 7,
+          "line": 7,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+          "sha256": "60183ff66401a2cbb03d7c765d8d27b95dfb516b4ff0acafa2478b50ad81089b",
+          "start": 7
+        }
+      ],
+      "from": "P.expedition-light-followup",
+      "kind": "현재 합의의 정책 요약",
+      "to": "pol.expedition-visibility-scope",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿{
+    "status":  "passed",
+    "document_nodes":  4,
+    "activity_count":  1,
+    "activity_step_count":  8,
+    "distinct_screen_element_references":  20,
+    "ia_screen_count":  5,
+    "missing_elements":  [
+
+                         ],
+    "missing_screens":  [
+
+                        ],
+    "missing_documents":  [
+
+                          ],
+    "limits":  "Reference validation only; not a product functionality or full-state coverage test."
+}

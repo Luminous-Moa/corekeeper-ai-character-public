@@ -1,0 +1,65 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 공식 병합",
+        "doc": "gapFixes",
+        "end": 344,
+        "line": 334,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 334
+      },
+      {
+        "anchor": "### 뺀 것",
+        "doc": "gapFixes",
+        "end": 358,
+        "line": 357,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 357
+      }
+    ],
+    "id": "R.gap-integration",
+    "layer": "참고",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "sourceLocations": [
+      {
+        "end": 344,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 334
+      },
+      {
+        "end": 358,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 357
+      }
+    ],
+    "status": "참고·공식 코드 통합·설치/실게임 미실시",
+    "summary": "gap-integrated-20261108을 공식 61aa67b(이동전달 개선·호출 계기·자유 시간 제거·지역 이동·토큰 절감)와 병합하고 검수 뒤 ai-character를 49bd748로 fast-forward했다. 자유 시간 제거에 따라 자유 시간 보관 후보를 뺐다. 게임 설치와 실게임·실제 모델 검증은 하지 않았다.",
+    "title": "공식 ai-character 49bd748 반영(공식 61aa67b 병합 포함)",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 공식 병합",
+          "doc": "gapFixes",
+          "end": 344,
+          "line": 334,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+          "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+          "start": 334
+        }
+      ],
+      "from": "P.choice-gaps",
+      "id": "E253",
+      "kind": "참고: 공식 반영",
+      "to": "R.gap-integration",
+      "type": "reference"
+    }
+  ]
+}

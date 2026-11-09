@@ -1,0 +1,734 @@
+{
+  "source": "B/inference.graph.json",
+  "allNodes": 91,
+  "mappings": [
+    {
+      "id": "BCH-01",
+      "type": "화면",
+      "source": "B/inference.md#BCH-01",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-01#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-01#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-01#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-01#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-02",
+      "type": "화면",
+      "source": "B/inference.md#BCH-02",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-02#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-02#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-02#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-02#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-03",
+      "type": "화면",
+      "source": "B/inference.md#BCH-03",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-03#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-03#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-03#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-03#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-03#3",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-03#3",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-04",
+      "type": "화면",
+      "source": "B/inference.md#BCH-04",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-04#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-04#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-04#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-04#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-05",
+      "type": "화면",
+      "source": "B/inference.md#BCH-05",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-05#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-05#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-05#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-05#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-06",
+      "type": "화면",
+      "source": "B/inference.md#BCH-06",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-06#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-06#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-06#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-06#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-07",
+      "type": "화면",
+      "source": "B/inference.md#BCH-07",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-07#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-07#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-07#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-07#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-07#3",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-07#3",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-08",
+      "type": "화면",
+      "source": "B/inference.md#BCH-08",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-08#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-08#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-08#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-08#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-08#3",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-08#3",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-08#4",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-08#4",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-09",
+      "type": "화면",
+      "source": "B/inference.md#BCH-09",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-09#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-09#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-09#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-09#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-10",
+      "type": "화면",
+      "source": "B/inference.md#BCH-10",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-10#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-10#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCH-10#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BCH-10#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-01",
+      "type": "화면",
+      "source": "B/inference.md#BAPI-01",
+      "matchingDocumentOrObservedOutput": "BRG-02",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-01#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-01#1",
+      "matchingDocumentOrObservedOutput": "BRG-02",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-01#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-01#2",
+      "matchingDocumentOrObservedOutput": "BRG-02",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-02",
+      "type": "화면",
+      "source": "B/inference.md#BAPI-02",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-02#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-02#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-02#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-02#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-02#3",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-02#3",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-03",
+      "type": "화면",
+      "source": "B/inference.md#BAPI-03",
+      "matchingDocumentOrObservedOutput": "BRG-03, BRG-04, BRG-05",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-03#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-03#1",
+      "matchingDocumentOrObservedOutput": "BRG-03, BRG-04, BRG-05",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BAPI-03#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BAPI-03#2",
+      "matchingDocumentOrObservedOutput": "BRG-03, BRG-04, BRG-05",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BLOG-01",
+      "type": "화면",
+      "source": "B/inference.md#BLOG-01",
+      "matchingDocumentOrObservedOutput": "BRG-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BLOG-01#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BLOG-01#1",
+      "matchingDocumentOrObservedOutput": "BRG-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BLOG-01#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BLOG-01#2",
+      "matchingDocumentOrObservedOutput": "BRG-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-01",
+      "type": "화면",
+      "source": "B/inference.md#BSDK-01",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-01#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BSDK-01#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-01#2",
+      "type": "화면요소",
+      "source": "B/inference.md#BSDK-01#2",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-02",
+      "type": "화면",
+      "source": "B/inference.md#BSDK-02",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-02#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BSDK-02#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-03",
+      "type": "화면",
+      "source": "B/inference.md#BSDK-03",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-03#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BSDK-03#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-04",
+      "type": "화면",
+      "source": "B/inference.md#BSDK-04",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-04#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BSDK-04#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-05",
+      "type": "화면",
+      "source": "B/inference.md#BSDK-05",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BSDK-05#1",
+      "type": "화면요소",
+      "source": "B/inference.md#BSDK-05#1",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-01",
+      "type": "정책",
+      "source": "B/inference.md#BP-01",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-02",
+      "type": "정책",
+      "source": "B/inference.md#BP-02",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-03",
+      "type": "정책",
+      "source": "B/inference.md#BP-03",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-04",
+      "type": "정책",
+      "source": "B/inference.md#BP-04",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-05",
+      "type": "정책",
+      "source": "B/inference.md#BP-05",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-06",
+      "type": "정책",
+      "source": "B/inference.md#BP-06",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-07",
+      "type": "정책",
+      "source": "B/inference.md#BP-07",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-08",
+      "type": "정책",
+      "source": "B/inference.md#BP-08",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-09",
+      "type": "정책",
+      "source": "B/inference.md#BP-09",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-10",
+      "type": "정책",
+      "source": "B/inference.md#BP-10",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-11",
+      "type": "정책",
+      "source": "B/inference.md#BP-11",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-12",
+      "type": "정책",
+      "source": "B/inference.md#BP-12",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-13",
+      "type": "정책",
+      "source": "B/inference.md#BP-13",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-14",
+      "type": "정책",
+      "source": "B/inference.md#BP-14",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-15",
+      "type": "정책",
+      "source": "B/inference.md#BP-15",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-16",
+      "type": "정책",
+      "source": "B/inference.md#BP-16",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-17",
+      "type": "정책",
+      "source": "B/inference.md#BP-17",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-18",
+      "type": "정책",
+      "source": "B/inference.md#BP-18",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-19",
+      "type": "정책",
+      "source": "B/inference.md#BP-19",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-20",
+      "type": "정책",
+      "source": "B/inference.md#BP-20",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BP-21",
+      "type": "정책",
+      "source": "B/inference.md#BP-21",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-01",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-01",
+      "matchingDocumentOrObservedOutput": "UA-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-02",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-02",
+      "matchingDocumentOrObservedOutput": "UA-02, UA-03",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-03",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-03",
+      "matchingDocumentOrObservedOutput": "UA-04",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-04",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-04",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-05",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-05",
+      "matchingDocumentOrObservedOutput": "UA-07",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-06",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-06",
+      "matchingDocumentOrObservedOutput": "ACT-A-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-07",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-07",
+      "matchingDocumentOrObservedOutput": "UA-08",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-08",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-08",
+      "matchingDocumentOrObservedOutput": "UA-08",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BA-09",
+      "type": "유저 활동",
+      "source": "B/inference.md#BA-09",
+      "matchingDocumentOrObservedOutput": null,
+      "status": "별도 코드 추정 보존; 사용자 기획·실제 관측으로 승격하지 않음",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BCORE-01",
+      "type": "제품코어",
+      "source": "B/inference.md#BCORE-01",
+      "matchingDocumentOrObservedOutput": "CORE-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BJOURNEY-01",
+      "type": "유저저니",
+      "source": "B/inference.md#BJOURNEY-01",
+      "matchingDocumentOrObservedOutput": "JOURNEY-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    },
+    {
+      "id": "BIA-01",
+      "type": "IA",
+      "source": "B/inference.md#BIA-01",
+      "matchingDocumentOrObservedOutput": "IA-01",
+      "status": "부분 대응; 실제 상태/요소와 동일시 금지",
+      "retainedAt": "B/inference.graph.json"
+    }
+  ]
+}

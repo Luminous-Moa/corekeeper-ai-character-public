@@ -1,0 +1,173 @@
+15:31:39 sent /ai gemini hostto ai
+15:31:40 (0.0s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto ai, filtered - Luminous: /ai gemini hostto ai.
+[AIPlayerSpike] t=228.3 chat command from host: '/ai gemini hostto ai'
+[AIPlayerSpike] t=228.3 @Gemini TEST-ONLY hostto: host teleport queued from (33.6,-11.0) to (0.0,3.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:32:07 sent /ai gemini placetile WallDirtBlock 0 1
+15:32:07 (4.7s) [AIPlayerSpike] t=255.6 @Gemini chat reply: [시험용] (0,1) 설치 거부(크리에이티브가 아니면 코어 주변·tileset 2 금지)
+MESSAGE: [시험용] (0,1) 설치 거부(크리에이티브가 아니면 코어 주변·tileset 2 금지)
+== S1 corridor build
+15:32:18 sent /ai gemini placetilearea WallDirtBlock 14 -10 26 0
+15:32:18 (5.6s) [AIPlayerSpike] t=267.0 @Gemini chat reply: [시험용] Dirt wall 설치 (14,-10)~(26,0) 143/143칸
+MESSAGE: [시험용] Dirt wall 설치 (14,-10)~(26,0) 143/143칸
+15:32:27 sent /ai gemini hostto 11 -5
+15:32:27 (3.3s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 11 -5, filtered - Luminous: /ai gemini hostto 11 -5.
+[AIPlayerSpike] t=275.8 chat command from host: '/ai gemini hostto 11 -5'
+[AIPlayerSpike] t=275.8 @Gemini TEST-ONLY hostto: host teleport queued from (0.0,3.0) to (11.0,-5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:32:53 sent /ai gemini removetilearea wall 14 -5 20 -5
+15:32:53 (4.9s) [AIPlayerSpike] t=301.4 @Gemini chat reply: [시험용] wall 제거 (14,-5)~(20,-5) 7칸
+MESSAGE: [시험용] wall 제거 (14,-5)~(20,-5) 7칸
+15:32:58 sent /ai gemini removetilearea wall 20 -4 20 -1
+15:32:58 (5.0s) [AIPlayerSpike] t=306.6 @Gemini chat reply: [시험용] wall 제거 (20,-4)~(20,-1) 4칸
+MESSAGE: [시험용] wall 제거 (20,-4)~(20,-1) 4칸
+15:33:03 sent /ai gemini removetilearea wall 21 -5 26 -5
+15:33:03 (4.9s) [AIPlayerSpike] t=311.7 @Gemini chat reply: [시험용] wall 제거 (21,-5)~(26,-5) 6칸
+MESSAGE: [시험용] wall 제거 (21,-5)~(26,-5) 6칸
+15:33:08 sent /ai gemini removetilearea wall 20 -9 20 -6
+15:33:08 (4.8s) [AIPlayerSpike] t=316.7 @Gemini chat reply: [시험용] wall 제거 (20,-9)~(20,-6) 4칸
+MESSAGE: [시험용] wall 제거 (20,-9)~(20,-6) 4칸
+15:33:20 sent /ai gemini hostto 20 -5
+15:33:20 (3.4s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 20 -5, filtered - Luminous: /ai gemini hostto 20 -5.
+[AIPlayerSpike] t=328.6 chat command from host: '/ai gemini hostto 20 -5'
+[AIPlayerSpike] t=328.6 @Gemini TEST-ONLY hostto: host teleport queued from (11.0,-5.0) to (20.0,-5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:33:42 sent /ai gemini goto 19 -5
+15:33:42 (3.3s) [AIPlayerSpike] t=350.8 @Gemini SKILL 걷기 START at (0.00,0.83)
+[AIPlayerSpike] t=350.8 @Gemini SKILL 걷기: pos=(0.00,0.83) target=(19,-5) dist=19.88 mode=mod-astar stuck=0
+15:34:17 sent /ai gemini stop
+15:34:29 (14.3s) TIMEOUT 판단 호출|목표 해제
+== S2 ore/dirt walls
+15:35:26 sent /ai gemini placetile Copper ore 15 -4
+15:35:26 (4.6s) [AIPlayerSpike] t=454.8 @Gemini chat reply: [시험용] Dirt ore 설치 (15,-4)
+MESSAGE: [시험용] Dirt ore 설치 (15,-4)
+15:35:30 sent /ai gemini placetile Tin ore 16 -4
+15:35:30 (4.3s) [AIPlayerSpike] t=459.2 @Gemini chat reply: [시험용] LarvaHive ore 설치 (16,-4)
+MESSAGE: [시험용] LarvaHive ore 설치 (16,-4)
+15:36:51 sent /ai gemini placetile CopperOre 17 -6
+15:36:51 (4.5s) [AIPlayerSpike] t=539.4 @Gemini chat reply: [시험용] Dirt ore 설치 (17,-6)
+MESSAGE: [시험용] Dirt ore 설치 (17,-6)
+15:36:54 sent /ai gemini hostto 16 -5
+15:36:54 (3.4s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 16 -5, filtered - Luminous: /ai gemini hostto 16 -5.
+[AIPlayerSpike] t=543.1 chat command from host: '/ai gemini hostto 16 -5'
+[AIPlayerSpike] t=543.1 @Gemini TEST-ONLY hostto: host teleport queued from (20.0,-5.0) to (16.0,-5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:37:16 sent /ai gemini mem
+15:37:16 (2.7s) [AIPlayerSpike] t=564.4 @Gemini chat reply: [Gemini] AI 탐색 기억: 본 구역 2255칸(4x4), 서 본 구역 658칸, 기억한 광석 137곳, 기억한 제작대 12곳
+[AIPlayerSpike] t=564.4 @Gemini MEMORY summary: 본 구역 2255칸(4x4), 서 본 구역 658칸, 기억한 광석 137곳, 기억한 제작대 12곳
+MESSAGE: [Gemini] AI 탐색 기억: 본 구역 2255칸(4x4), 서 본 구역 658칸, 기억한 광석 137곳, 기억한 제작대 12곳
+15:37:30 sent /ai gemini goto 15 -5
+15:37:32 (5.2s) [AIPlayerSpike] t=580.8 @Gemini SKILL 걷기 DONE after 1.4s: reason='도착 (15,-5), 길찾기 mod-astar' start=(13.64,1.09) end=(14.74,-4.97) facts=[target=좌표 (15,-5) basis=현재 관측; arrived dist=0.26 nav=mod-astar stuck=0 replans=1]
+15:37:35 sent /ai gemini look
+15:37:35 (2.8s) [AIPlayerSpike] t=584.2 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (14.7,-5.0) · 호스트 (16.0,-5.0) · 벽 202(광석 3) · 적 0 · 아이템 1 · 물체 34
+15:37:47 sent /ai gemini removetile ore 16 -4
+15:37:47 (4.0s) [AIPlayerSpike] t=595.8 @Gemini chat reply: [시험용] ore 제거 (16,-4)
+MESSAGE: [시험용] ore 제거 (16,-4)
+15:37:52 sent /ai gemini removetile WallDirtBlock 15 -6
+15:37:52 (4.9s) [AIPlayerSpike] t=600.9 @Gemini chat reply: [시험용] wall 제거 (15,-6)
+MESSAGE: [시험용] wall 제거 (15,-6)
+15:37:55 sent /ai gemini look
+15:37:55 (2.8s) [AIPlayerSpike] t=603.8 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (14.7,-5.0) · 호스트 (16.0,-5.0) · 벽 201(광석 2) · 적 1(가까운 SlimeBlob 15.5칸 105/105) · 아이템 1 · 물체 34
+MESSAGE: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (14.7,-5.0) · 호스트 (16.0,-5.0) · 벽 201(광석 2) · 적 1(가까운 SlimeBlob 15.5칸 105/105) · 아이템 1 · 물체 34
+15:38:57 NOT SENT: chat box did not open
+15:39:09 (13.5s) TIMEOUT \[시험용\]
+15:39:24 NOT SENT: chat box did not open
+15:39:36 (14.2s) TIMEOUT \[시험용\]
+15:39:57 sent /ai gemini hp 100
+15:39:57 (3.0s) [AIPlayerSpike] t=725.7 @Gemini chat reply: [시험용] Gemini 체력 24 > 100
+MESSAGE: [시험용] Gemini 체력 24 > 100
+== S3 stations
+15:40:09 sent /ai gemini spawn WoodenWorkBench 11 -3
+15:40:09 (4.8s) [AIPlayerSpike] t=737.6 @Gemini chat reply: [시험용] WoodenWorkBench 생성 (11,-3)
+MESSAGE: [시험용] WoodenWorkBench 생성 (11,-3)
+15:40:13 sent /ai gemini spawn Furnace 11 -7
+15:40:13 (4.1s) [AIPlayerSpike] t=741.9 @Gemini chat reply: [시험용] Furnace 생성 (11,-7)
+MESSAGE: [시험용] Furnace 생성 (11,-7)
+15:40:18 sent /ai gemini spawn InventoryChest 9 -5
+15:40:18 (4.6s) [AIPlayerSpike] t=746.6 @Gemini chat reply: [시험용] InventoryChest 생성 (9,-5)
+MESSAGE: [시험용] InventoryChest 생성 (9,-5)
+15:40:27 sent /ai gemini hostto 10 -5
+15:40:27 (3.5s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 10 -5, filtered - Luminous: /ai gemini hostto 10 -5.
+[AIPlayerSpike] t=756.2 chat command from host: '/ai gemini hostto 10 -5'
+[AIPlayerSpike] t=756.2 @Gemini TEST-ONLY hostto: host teleport queued from (16.0,-5.0) to (10.0,-5.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:41:02 note: right-click on chest ate 1 Mushroom from host hotbar (host state; restored by backup)
+15:41:19 sent /ai gemini hostto 11 -4
+15:41:19 (3.6s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 11 -4, filtered - Luminous: /ai gemini hostto 11 -4.
+[AIPlayerSpike] t=807.8 chat command from host: '/ai gemini hostto 11 -4'
+[AIPlayerSpike] t=807.8 @Gemini TEST-ONLY hostto: host teleport queued from (10.0,-5.0) to (11.0,-4.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:41:56 sent /ai gemini hostto 11 -6
+15:41:56 (3.7s) ParentalControlManager.RestrictInput: original - Luminous: /ai gemini hostto 11 -6, filtered - Luminous: /ai gemini hostto 11 -6.
+[AIPlayerSpike] t=844.9 chat command from host: '/ai gemini hostto 11 -6'
+[AIPlayerSpike] t=844.9 @Gemini TEST-ONLY hostto: host teleport queued from (11.0,-4.0) to (11.0,-6.0) via PlayerController.QueueInputAction(UIInputAction.Teleport)
+15:42:21 sent /ai gemini look
+15:42:21 (2.9s) [AIPlayerSpike] t=870.0 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (14.7,-5.0) · 호스트 (11.0,-6.0) · 벽 201(광석 2) · 적 1(가까운 SlimeBlob 15.3칸 105/105) · 아이템 1 · 물체 42
+MESSAGE: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (14.7,-5.0) · 호스트 (11.0,-6.0) · 벽 201(광석 2) · 적 1(가까운 SlimeBlob 15.3칸 105/105) · 아이템 1 · 물체 42
+15:42:24 sent /ai gemini mem
+15:42:24 (2.7s) [AIPlayerSpike] t=872.9 @Gemini chat reply: [Gemini] AI 탐색 기억: 본 구역 2255칸(4x4), 서 본 구역 658칸, 기억한 광석 136곳, 기억한 제작대 14곳
+MESSAGE: [Gemini] AI 탐색 기억: 본 구역 2255칸(4x4), 서 본 구역 658칸, 기억한 광석 136곳, 기억한 제작대 14곳
+== S4 enemies
+15:42:39 sent /ai gemini arena spawn 2 MushroomEnemy
+15:42:40 (4.9s) [AIPlayerSpike] t=888.4 @Gemini TEST-ONLY arena spawn: cleared 6 enemies within 25 tiles of (-32,32); spawned 2 MushroomEnemy at (-27,32) (-38,31)
+[AIPlayerSpike] t=888.4 @Gemini chat reply: [시험용] 경기장: 적 6 치움, MushroomEnemy 2마리
+MESSAGE: [시험용] 경기장: 적 6 치움, MushroomEnemy 2마리
+15:42:52 sent /ai gemini spawn MushroomEnemy 20 -8
+15:42:52 (4.8s) [AIPlayerSpike] t=901.1 @Gemini chat reply: [시험용] MushroomEnemy 생성 (20,-8)
+MESSAGE: [시험용] MushroomEnemy 생성 (20,-8)
+15:42:57 sent /ai gemini look
+15:42:58 (3.0s) [AIPlayerSpike] t=906.3 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (20.1,-6.0) · 호스트 (11.0,-6.0) · 벽 261(광석 2) · 적 0 · 아이템 2 · 물체 36
+MESSAGE: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (20.1,-6.0) · 호스트 (11.0,-6.0) · 벽 261(광석 2) · 적 0 · 아이템 2 · 물체 36
+15:43:17 sent /ai gemini stop
+15:43:25 (10.0s) TIMEOUT chat reply
+== S5 equipment setup
+15:43:28 sent /ai gemini give WoodHelm
+15:43:28 (3.6s) [AIPlayerSpike] t=937.1 @Gemini chat reply: [시험용] WoodHelm x45 > Gemini 가방 21번 칸
+MESSAGE: [시험용] WoodHelm x45 > Gemini 가방 21번 칸
+15:43:33 sent /ai gemini give WoodBreastArmor
+15:43:33 (4.5s) [AIPlayerSpike] t=941.8 @Gemini chat reply: [시험용] WoodBreastArmor x75 > Gemini 가방 22번 칸
+MESSAGE: [시험용] WoodBreastArmor x75 > Gemini 가방 22번 칸
+15:43:38 sent /ai gemini give WoodPantsArmor
+15:43:38 (4.5s) [AIPlayerSpike] t=946.4 @Gemini chat reply: [시험용] WoodPantsArmor x70 > Gemini 가방 23번 칸
+MESSAGE: [시험용] WoodPantsArmor x70 > Gemini 가방 23번 칸
+15:43:41 sent /ai gemini hunger 50
+15:43:41 (3.3s) [AIPlayerSpike] t=949.9 @Gemini chat reply: [시험용] Gemini 배고픔 58 > 50
+MESSAGE: [시험용] Gemini 배고픔 58 > 50
+15:43:44 sent /ai gemini hp 80
+15:43:44 (3.0s) [AIPlayerSpike] t=953.2 @Gemini chat reply: [시험용] Gemini 체력 73 > 80
+MESSAGE: [시험용] Gemini 체력 73 > 80
+15:43:47 sent /ai gemini inv
+15:43:47 (2.8s) [AIPlayerSpike] t=956.2 @Gemini chat reply: [Gemini] 가방: 0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx55, 7:WoodMiningPickx65, 8:BombPepperSeedx1, 9:WoodMiningPickx0, 10:Slimex2, 11:PlayerGravex3, 12:CopperOrex5, 13:WoodMiningPickx0, 14:PlayerGravex4, 15:WallSandBlockx2, 16:AncientGemstonex1, 17:WallDirtBlockx23, 18:Woodx5, 19:ApprenticeHelmx90, 20:Mushroomx1, 21:WoodHelmx45, 22:WoodBreastArmorx75, 23:WoodPantsArmorx70 · 든 것 6번 칸 WoodSword · 앞 40칸 중 빈 칸 16
+15:43:59 sent /ai gemini spawn Wood 12 -9
+15:43:59 (3.9s) [AIPlayerSpike] t=968.1 @Gemini chat reply: [시험용] Wood 아이템 떨굼 (12,-9)
+MESSAGE: [시험용] Wood 아이템 떨굼 (12,-9)
+15:44:06 sent /ai gemini inv
+15:44:06 (2.7s) [AIPlayerSpike] t=975.0 @Gemini chat reply: [Gemini] 가방: 0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx55, 7:WoodMiningPickx65, 8:BombPepperSeedx1, 9:WoodMiningPickx0, 10:Slimex2, 11:PlayerGravex3, 12:CopperOrex5, 13:WoodMiningPickx0, 14:PlayerGravex4, 15:WallSandBlockx2, 16:AncientGemstonex1, 17:WallDirtBlockx23, 18:Woodx5, 19:ApprenticeHelmx90, 20:Mushroomx1, 21:WoodHelmx45, 22:WoodBreastArmorx75, 23:WoodPantsArmorx70 · 든 것 6번 칸 WoodSword · 앞 40칸 중 빈 칸 16
+15:44:27 sent /ai gemini spawn Wood ~3 ~0
+15:44:28 (3.9s) [AIPlayerSpike] t=995.7 @Gemini TEST-ONLY spawn [Wood] from AI tile (33,-12): 사용법: /ai spawn <ObjectID> <x> <z> [variation] (좌표 ~N = AI 기준)
+[AIPlayerSpike] t=995.7 @Gemini chat reply: [시험용] 사용법: /ai spawn <ObjectID> <x> <z> [variation] (좌표 ~N = AI 기준)
+MESSAGE: [시험용] 사용법: /ai spawn <ObjectID> <x> <z> [variation] (좌표 ~N = AI 기준)
+15:44:35 sent /ai gemini inv
+15:44:36 (2.8s) [AIPlayerSpike] t=1004.3 @Gemini chat reply: [Gemini] 가방: 0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx55, 7:WoodMiningPickx65, 8:BombPepperSeedx1, 9:WoodMiningPickx0, 10:Slimex2, 11:PlayerGravex3, 12:CopperOrex5, 13:WoodMiningPickx0, 14:PlayerGravex4, 15:WallSandBlockx2, 16:AncientGemstonex1, 17:WallDirtBlockx23, 18:Woodx5, 19:ApprenticeHelmx90, 20:Mushroomx1, 21:WoodHelmx45, 22:WoodBreastArmorx75, 23:WoodPantsArmorx70 · 든 것 6번 칸 WoodSword · 앞 40칸 중 빈 칸 16
+15:44:39 sent /ai gemini look
+15:44:39 (3.0s) [AIPlayerSpike] t=1007.5 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (33.0,-12.0) · 호스트 (11.0,-6.0) · 벽 358(광석 0) · 적 1(가까운 MushroomBrute 11.1칸 540/540) · 아이템 0 · 물체 31
+MESSAGE: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (33.0,-12.0) · 호스트 (11.0,-6.0) · 벽 358(광석 0) · 적 1(가까운 MushroomBrute 11.1칸 540/540) · 아이템 0 · 물체 31
+15:45:00 NOT SENT: chat box did not open
+15:45:08 (12.4s) TIMEOUT \[시험용\]|사용법
+15:45:17 NOT SENT: chat box did not open
+15:45:25 (11.8s) TIMEOUT @Gemini chat reply
+15:45:29 NOT SENT: chat box did not open
+15:45:37 (11.9s) TIMEOUT 보기:
+15:46:02 sent /ai gemini spawn Wood ~3 ~0
+15:46:02 (3.6s) [AIPlayerSpike] t=1090.7 @Gemini chat reply: [시험용] Wood 아이템 떨굼 (36,-12)
+MESSAGE: [시험용] Wood 아이템 떨굼 (36,-12)
+15:46:16 sent /ai gemini inv
+15:46:16 (3.0s) [AIPlayerSpike] t=1105.3 @Gemini chat reply: [Gemini] 가방: 0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx55, 7:WoodMiningPickx65, 8:BombPepperSeedx1, 9:WoodMiningPickx0, 10:Slimex2, 11:PlayerGravex3, 12:CopperOrex5, 13:WoodMiningPickx0, 14:PlayerGravex4, 15:WallSandBlockx2, 16:AncientGemstonex1, 17:WallDirtBlockx23, 18:Woodx6, 19:ApprenticeHelmx90, 20:Mushroomx1, 21:WoodHelmx45, 22:WoodBreastArmorx75, 23:WoodPantsArmorx70 · 든 것 6번 칸 WoodSword · 앞 40칸 중 빈 칸 16
+15:46:20 sent /ai gemini look
+15:46:20 (3.0s) [AIPlayerSpike] t=1108.5 @Gemini chat reply: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (33.0,-12.0) · 호스트 (11.0,-6.0) · 벽 358(광석 0) · 적 2(가까운 MushroomEnemy 10.4칸 105/105) · 아이템 0 · 물체 31
+MESSAGE: [Gemini] 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Gemini (33.0,-12.0) · 호스트 (11.0,-6.0) · 벽 358(광석 0) · 적 2(가까운 MushroomEnemy 10.4칸 105/105) · 아이템 0 · 물체 31
+== load test
+15:46:39 sent /ai gemini placetilearea Dirt ground -30 -60 29 -1
+15:46:39 (6.0s) [AIPlayerSpike] t=1127.4 @Gemini chat reply: [시험용] Dirt ground 설치 (-30,-60)~(29,-1) 3600/3600칸
+MESSAGE: [시험용] Dirt ground 설치 (-30,-60)~(29,-1) 3600/3600칸
+15:47:23 sent /ai gemini placetile 2 wall 13 -12
+15:47:24 (4.6s) [AIPlayerSpike] t=1172.3 @Gemini chat reply: [시험용] (13,-12) 설치 거부(크리에이티브가 아니면 코어 주변·tileset 2 금지)
+MESSAGE: [시험용] (13,-12) 설치 거부(크리에이티브가 아니면 코어 주변·tileset 2 금지)
+15:47:28 sent /ai gemini placetile 2 ground 13 -12
+15:47:28 (4.5s) [AIPlayerSpike] t=1177.0 @Gemini chat reply: [시험용] (13,-12) 설치 거부(크리에이티브가 아니면 코어 주변·tileset 2 금지)
+MESSAGE: [시험용] (13,-12) 설치 거부(크리에이티브가 아니면 코어 주변·tileset 2 금지)
+15:47:53 end: save and exit

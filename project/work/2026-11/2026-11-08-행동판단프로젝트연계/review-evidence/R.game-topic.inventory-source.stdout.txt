@@ -1,0 +1,173 @@
+{
+  "origin": {
+    "normalizedValueSha256": "7faeadd6c61d3446db6e7471f9f727f87de52bbea78a63cfcd70d5b6ded97144",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/control-new-inputs-v2-replay-1/cases.json",
+    "pointer": "/cases/0"
+  },
+  "value": {
+    "build": "26332184",
+    "status": "static_path_research_awaits_independent_review",
+    "runtimeTested": false,
+    "priorClaimIds": [],
+    "codeEvidence": [
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\InventoryQuickActionsSystem.cs",
+        "sha256": "b644f31064a3f1e077d158fdc044ab94e9fda20d44cd9438783e86bc8c647eff"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\VehicleRiding.cs",
+        "sha256": "83a553516253b9cb267f4ae90571016582e52466be884014f4fd7d192d0e5a77"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\MountRiding.cs",
+        "sha256": "aaf1157791cba1b38475947d2f1e5151aa4fb36fdf471cad8fe11762bc066b93"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerMovementSystem.cs",
+        "sha256": "9a202041ebb6ccad42ebedc94b2c8dd343db6179d93618cc3ff8b0961f7329c8"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerAttackSystem.cs",
+        "sha256": "e48e346b4e4d6b1c800cb41116613443af29d78dad9370f0d700c6f905d45da1"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EffectEventExtensions.cs",
+        "sha256": "1a033cf134f0c3fbb11c4eec631bbecad4f438821aa599103af85012e13b3852"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\VehicleConverter.cs",
+        "sha256": "2c49e84c3fc1f761142aeca8e9767e2d20d5e9ae94704b4380c2a791a1a19a7e"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\ObjectID.cs",
+        "sha256": "9e8c46bf33b5030392aab2512acf4fe391d2986624b3754822c7403f91c91bc3"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+        "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+        "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+        "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+      }
+    ],
+    "id": "completion:B:new-quick-swap-torch:v2",
+    "action": "quick_swap_torch",
+    "roles": [
+      {
+        "role": "conditional_source",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2985491846008501542",
+        "objectId": 110,
+        "variation": 0,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/84",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "57ef4549e47d3917da125e7e81a2e3f12de5c329988860b04401ec6e4cf01b66"
+        }
+      },
+      {
+        "role": "conditional_source",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5080188240143519800",
+        "objectId": 110,
+        "variation": 1,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/85",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "1fdf13df488a5e9cad5e628fc9929dde546ad5aff8d808e2da14de312527adfa"
+        }
+      },
+      {
+        "role": "conditional_source",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1063132169922353172",
+        "objectId": 110,
+        "variation": 2,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/86",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "0a6dfff7bd76ef8969da8fe8252afa3e8ac54dee105a34d394ec6f783ae5581f"
+        }
+      },
+      {
+        "role": "conditional_source",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6428699024751908240",
+        "objectId": 110,
+        "variation": 3,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/87",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "6a8b3b7339dd893b696f6b7eea8b93149a7ba1c16e73c69b2367280adae1af63"
+        }
+      },
+      {
+        "role": "conditional_source",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5981053798037310959",
+        "objectId": 110,
+        "variation": 4,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/88",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "3979e8670c7059873f00e6f3333195c5475d83985e934c08705e26f327b7c4cd"
+        }
+      }
+    ],
+    "reusedConsumer": {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\gear-review-receipt.json",
+      "sha256": "0431a4a178ff17daa97707af1c7a8c7926aeb3b27606021cf9133c4925ac8e48"
+    },
+    "conditions": [
+      "관련 player query 및 QuickSwapTorchCD·입력·장착 슬롯·인벤토리 buffer가 존재",
+      "고정 ID 110의 DB primary objectInfo와 runtime source가 일치하는 조건"
+    ],
+    "transitions": [
+      {
+        "from": "held input",
+        "to": "saved indices and swap request",
+        "text": "누름 상태이고 이전 저장 인덱스가 -1이면 현재 장착 인덱스를 제외한 첫 비어 있지 않은 슬롯 중 DB 기본 objectInfo의 objectID가 Torch(110)인 슬롯을 찾는다. 발견하면 두 인덱스를 저장하고 playerEntity를 지정한 Swap 요청과 로컬 효과음을 보낸다. 발견하지 못하면 요청하지 않는다. variation은 FindFirstOccurenceOfObject 비교의 직접 인자가 아니다.",
+        "refs": [
+          "Pug.Base/ObjectID.cs:77",
+          "Pug.Other/PlayerEquipment/InventoryQuickActionsSystem.cs:164-184",
+          "Pug.Other/Inventory/InventoryUtility.cs:3194-3205"
+        ]
+      },
+      {
+        "from": "released input",
+        "to": "reverse swap request",
+        "text": "저장된 두 인덱스가 모두 유효하고 입력을 놓으면 그 인덱스로 역 Swap 요청, 두 저장 인덱스 -1, 로컬 효과음 요청을 별도로 기록한다. 원래 두 슬롯 내용이 그대로 유지됐거나 최초 요청이 성공했는지 재검증하지 않는다. 두 요청은 각 인벤토리 권한·유효성 gate를 지나야 Swap 소비자가 내용과 lock을 교환한다.",
+        "refs": [
+          "Pug.Other/PlayerEquipment/InventoryQuickActionsSystem.cs:185-216",
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:359-378,797-825,859-861",
+          "Pug.Other/Inventory/InventoryUtility.cs:668-691"
+        ]
+      }
+    ],
+    "boundaries": [
+      "5 source variation은 고정 후보이며 runtime DB/인벤토리 내용과 실제 교환은 미관측",
+      "기존 C 장비 450 claim에 추가하지 않는다",
+      "독립 검수 전"
+    ],
+    "priorCase": {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\control-new-inputs-v1-replay-1\\cases.json",
+      "sha256": "341e4707e09db9d6c937b281d65fc5cf098ff4d7a48068d242d411d62f5ae71f",
+      "id": "completion:B:new-quick-swap-torch"
+    }
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/control-new-inputs-v2-replay-1",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결"
+  }
+}

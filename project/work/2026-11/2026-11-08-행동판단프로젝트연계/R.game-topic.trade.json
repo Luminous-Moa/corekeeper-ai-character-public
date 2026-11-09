@@ -1,0 +1,80 @@
+{
+  "id": "R.game-topic.trade",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [],
+      "counts": {
+        "action_completion": 2,
+        "action_completion_rule": 4,
+        "claim": 22,
+        "verb": 8
+      },
+      "id": "R.game-topic.trade",
+      "labels": [
+        "open_shop",
+        "open_vendor",
+        "leave_vendor",
+        "use_seasonal_merchant",
+        "leave_seasonal_merchant",
+        "buy_af_vending_item",
+        "buy_vending_item",
+        "buy_merchant_item",
+        "merchant_sell",
+        "sale_restriction_configured",
+        "sale_restriction",
+        "vending",
+        "vendor_ui"
+      ],
+      "planning": [
+        "P.life"
+      ],
+      "title": "상점·거래",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item",
+        "game:completion:C:sale-restriction-v1",
+        "game:completion:C:valuable-sale-conditional-v1",
+        "game:completion:C:vending-v2",
+        "game:completion:C:vendor-ui-v2",
+        "game:completion:gap:ordinary-merchant-buy-v1",
+        "game:completion:terra:merchant-3900-sell-5013-0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1220579115386085198#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2831177465692810699#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-3174913864636159569#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-3404191817224693480#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-680182016349633220#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-680182016349633220#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-720289561866523512#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8703079338550963162#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106#1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:1235810729103776649#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222#1",
+        "game:supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:1235810729103776649#buy_af_vending_item",
+        "game:verb:buy_af_vending_item",
+        "game:verb:buy_vending_item",
+        "game:verb:leave_seasonal_merchant",
+        "game:verb:leave_vendor",
+        "game:verb:open_shop",
+        "game:verb:open_vendor",
+        "game:verb:sale_restriction_configured",
+        "game:verb:use_seasonal_merchant"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

@@ -1,0 +1,15 @@
+ M Assets/ModSDK/GameVersionRegistry.asset
+ M Assets/Resources/ConditionsTable.asset
+ M Assets/Resources/ConditionsTable.asset.meta
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+ M ProjectSettings/ProjectSettings.asset
+ M ProjectSettings/ShaderGraphSettings.asset
+?? .codex/
+?? .head/
+?? .vsconfig
+?? Assets/Plugins/CoreKeeper/
+?? Tools/ai-bridge/data/
+?? Tools/ai-bridge/logs-stderr.txt
+?? Tools/ai-bridge/logs-stdout.txt
+?? Tools/ai-bridge/logs/

@@ -1,0 +1,17 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIInventory.cs:216-231 sha256=6626277e063ff45d673d85b6720e00d6341b10c6809f035cc85c12ec82a0f7ba
+216:     public static List<AICandidate> CandidatesFor(World world, Entity player, AIObservation observation, string currentKey, AIGoal requestGoal, AIGoal progressGoal)
+217:     {
+218:         if (requestGoal == null || (requestGoal.kind != GoalKind.Store && requestGoal.kind != GoalKind.Take) || Gate(world, player) != null) return new List<AICandidate>();
+219:         AIGoal bound = ReferenceEquals(progressGoal, AIGoals.Goal) && ReferenceEquals(progressGoal, S.goal) ? progressGoal : null;
+220:         var result = ChestCandidates(world, player, observation, currentKey, requestGoal, bound);
+221:         if (bound != null)
+222:             foreach (var candidate in result)
+223:             {
+224:                 var binding = AILife.ForGoal(bound);
+225:                 binding.Mode = requestGoal.kind == GoalKind.Store ? "store" : "take"; binding.Where = requestGoal.where; binding.Slot = candidate.inventory?.from ?? -1;
+226:                 if (candidate.inventory != null && candidate.inventory.beforeFrom.objectID != ObjectID.None) binding.Item = candidate.inventory.beforeFrom.objectID + "#v" + candidate.inventory.beforeFrom.variation;
+227:                 binding.RequestedCount = requestGoal.count > 0 ? math.max(0, requestGoal.count - (ReferenceEquals(requestGoal, bound) ? MovedForGoal(bound) : 0)) : 0; binding.OfferedCount = candidate.itemCount;
+228:                 candidate.life = binding;
+229:             }
+230:         return result;
+231:     }

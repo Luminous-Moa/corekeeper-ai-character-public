@@ -1,0 +1,11 @@
+﻿[AIPlayerSpike] t=137.6 @Claude local player is in a hosted world (server world 'ServerWorld', client world 'ClientWorld0', world id=89e71385a43c34ab93ac3039963244e4). AI 'Claude' (claude) in this world: OFF (members [], setting C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\89e71385a43c34ab93ac3039963244e4\settings.json, absent = default off). Chat command patch installed.
+[AIPlayerSpike] t=137.6 @ChatGPT local player is in a hosted world (server world 'ServerWorld', client world 'ClientWorld0', world id=89e71385a43c34ab93ac3039963244e4). AI 'ChatGPT' (gpt) in this world: OFF (members [], setting C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\89e71385a43c34ab93ac3039963244e4\settings.json, absent = default off). Chat command patch installed.
+[AIPlayerSpike] t=137.6 @Gemini local player is in a hosted world (server world 'ServerWorld', client world 'ClientWorld0', world id=89e71385a43c34ab93ac3039963244e4). AI 'Gemini' (gemini) in this world: OFF (members [], setting C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\89e71385a43c34ab93ac3039963244e4\settings.json, absent = default off). Chat command patch installed.
+[AIPlayerSpike] t=137.6 @Grok local player is in a hosted world (server world 'ServerWorld', client world 'ClientWorld0', world id=89e71385a43c34ab93ac3039963244e4). AI 'Grok' (grok) in this world: OFF (members [], setting C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\89e71385a43c34ab93ac3039963244e4\settings.json, absent = default off). Chat command patch installed.
+[AIPlayerSpike] t=197.0 chat command from host: '/ai gemini goal explore'
+[AIPlayerSpike] t=197.0 @Gemini EXP: goal run c9df4050.3 started: explore x0 (host)
+[AIPlayerSpike] t=197.0 @Gemini GOAL set rev=1 source=host: 탐험 (start count 0)
+[AIPlayerSpike] t=199.1 @Gemini PLANNER: bridge not reachable (Cannot connect to destination host) after 2.1s
+[AIPlayerSpike] t=321.2 @Gemini PLANNER: bridge not reachable (Cannot connect to destination host) after 2.0s
+[AIPlayerSpike] t=378.3 @Gemini PLANNER: Gemini stopped by the host (/ai stop): 호스트가 멈춤(/ai stop, 열린 지시 1개 닫음)
+[AIPlayerSpike] t=407.4 @Gemini AI setting: world 89e71385a43c34ab93ac3039963244e4 members [] saved to C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\89e71385a43c34ab93ac3039963244e4\settings.json

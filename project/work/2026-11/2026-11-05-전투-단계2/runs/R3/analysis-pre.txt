@@ -1,0 +1,22 @@
+R1 MushroomBrute 1: timeout at +120.0s; brute end hp 540, damage 0 (1-damage 0, big 0 = 0)
+   AI hits: -
+   windows: #1: 0 big hits, 0
+   charge #1 -> AI:Claude: HIT, connected after 1.30s run 4.2, first move -, last pick - (0 picks in it)
+   decisions 57, latency p50 0.27 p95 0.47 max 1.73; candidates p50 12 p95 18 max 22; tokens p50 3859 p95 5104; urgent 1 (request dropped 1)
+   choices: step_away 24, step_backleft 12, away_near 5, attack 5, step_left 3, step_backright 2, eat_FoodRation 2, wait 2, step_frontright 2
+   short action ends: {"짧은 이동 DONE":20}; start failures 0; discards {"계속할 기술이 이미 끝남":14,"가장 가까운 적과 이미 5.3칸":1}; failed calls 0
+   step move-start along p50 0.10 p95 0.13 (n 20; prior standstill 20)
+R2 MushroomBrute 1: kill at +17.2s; brute end hp 0, damage 540 (1-damage 4, big 16 = 536)
+   AI hits: -
+   windows: #1: 6 big hits, 208; #2: 7 big hits, 240; #3: 3 big hits, 88
+   charge #1 -> AI:Claude: not hit, connected after 1.80s run 7.2, first move +0.43s, last pick step:backleft:1 miss2.5/wall4.3 (2 picks in it)
+   charge #2 -> AI:Claude: not hit, connected after 1.70s run 6.5, first move +0.07s, last pick attack:97639 miss1.5/wall4.8 (2 picks in it)
+   charge #3 -> AI:Claude: not hit, connected after 1.60s run 6, first move +0.03s, last pick attack:97639 miss1.0/wall5.0 (2 picks in it)
+   decisions 48, latency p50 0.30 p95 0.43 max 0.63; candidates p50 21 p95 22 max 22; tokens p50 5110 p95 7642; urgent 3 (request dropped 3)
+   choices: attack 10, hitnext 8, step_left 7, combo_approach-hit 4, combo_hit-left 4, hit 3, step_right 3, away_near 2, step_backleft 2, step_backright 2, combo_hit-right 1, combo_hit-away 1, hold 1
+   short action ends: {"짧은 이동 DONE":6,"복합 행동 CANCELLED":9,"한 번 치기 DONE":6,"한 번 치기 CANCELLED":2,"제자리 유지 CANCELLED":1}; start failures 0; discards {"계속할 기술이 이미 끝남":5,"계속하라던 행동이 이미 바뀜":1}; failed calls 0
+   composite picks: combo:approach-hit run #40, combo:hit-left:2 run #42, combo:approach-hit run #51, combo:hit-left:2 run #53, combo:hit-right:2 run #54, combo:hit-left:2 run #58, combo:hit-away:2 run #59, combo:approach-hit run #63, combo:hit-left:2 run #65
+   step move-start along p50 0.10 p95 0.13 (n 8; prior standstill 8)
+charges at the AI 4: hit 1, dodged 3; with a pick during the charge 3: {"predHit_actHit":0,"predHit_actMiss":0,"predMiss_actHit":0,"predMiss_actMiss":3}
+anticipation -> first move along a chosen move: n 3/4, p50 0.07 p95 0.43 max 0.43
+hit -> move transition (swing start -> first move along): composite n 2 p50 0.23 max 0.23; two single actions n 0 p50 - max -

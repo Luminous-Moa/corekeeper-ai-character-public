@@ -1,0 +1,8 @@
+{
+ "status": 503,
+ "body": {
+  "ok": false,
+  "error": "auth",
+  "detail": "codex: authMethod=apikey (refusing: not the subscription)"
+ }
+}

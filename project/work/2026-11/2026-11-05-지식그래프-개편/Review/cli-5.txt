@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "structuralErrors": [],
+  "stale": [],
+  "baselineDrift": {
+    "baseline": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0",
+    "workingTreeHead": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0",
+    "warning": null
+  },
+  "validation": {
+    "D1": {
+      "matches": [
+        {
+          "classification": "product-http",
+          "clientExitCode": 0,
+          "clientStatus": "200",
+          "featureId": "ai-bridge:GET /v1/health",
+          "match": "exact method/path",
+          "method": "GET",
+          "observationId": "OBS-04",
+          "outputId": "BRG-02",
+          "path": "/v1/health",
+          "rawBody": "A/raw/isolated-health.body.txt",
+          "rawHeaders": "A/raw/isolated-health.headers.txt",
+          "rawMeta": "A/raw/isolated-health.meta.json",
+          "runtimeTraceObserved": false,
+          "status": 200,
+          "url": "http://127.0.0.1:18331/v1/health"
+        },
+        {
+          "classification": "product-http",
+          "clientExitCode": 0,
+          "clientStatus": "400",
+          "featureId": "ai-bridge:POST /v1/plan",
+          "match": "exact method/path",
+          "method": "POST",
+          "observationId": "OBS-06",
+          "outputId": "BRG-04",
+          "path": "/v1/plan",
+          "rawBody": "A/raw/isolated-unknown-member.body.txt",
+          "rawHeaders": "A/raw/isolated-unknown-member.headers.txt",
+          "rawMeta": "A/raw/isolated-unknown-member.meta.json",
+          "requestBody": "A/requests/unknown-member.json",
+          "runtimeTraceObserved": false,
+          "status": 400,
+          "url": "http://127.0.0.1:18331/v1/plan"
+        },
+        {
+          "classification": "product-http",
+          "clientExitCode": 0,
+          "clientStatus": "500",
+          "featureId": "ai-bridge:POST /v1/plan",
+          "match": "exact method/path",
+          "method": "POST",
+          "observationId": "OBS-07",
+          "outputId": "BRG-05",
+          "path": "/v1/plan",
+          "rawBody": "A/raw/isolated-malformed.body.txt",
+          "rawHeaders": "A/raw/isolated-malformed.headers.txt",
+          "rawMeta": "A/raw/isolated-malformed.meta.json",
+          "requestBody": "A/requests/malformed.json",
+          "runtimeTraceObserved": false,
+          "status": 500,
+          "url": "http://127.0.0.1:18331/v1/plan"
+        }
+      ],
+      "mergeLog": [
+        {
+          "action": "preserve as inference evidence; exclude from authoritative product nodes",
+          "authoritativeId": "JOURNEY-01",
+          "inferredId": "JOURNEY-A-01"
+        },
+        {
+          "action": "preserve as inference evidence; exclude from authoritative product nodes",
+          "authoritativeId": "IA-01",
+          "inferredId": "IA-A-01"
+        },
+        {
+          "action": "preserve as inference evidence; exclude from authoritative product nodes",
+          "authoritativeId": "CORE-01",
+          "inferredId": "CORE-A-01"
+        }
+      ],
+      "structuralErrors": [],
+      "unmatched": [
+        {
+          "classification": "product-http",
+          "clientExitCode": 0,
+          "clientStatus": "404",
+          "method": "GET",
+          "observationId": "OBS-05",
+          "outputId": "BRG-03",
+          "path": "/",
+          "rawBody": "A/raw/isolated-not-found.body.txt",
+          "rawHeaders": "A/raw/isolated-not-found.headers.txt",
+          "rawMeta": "A/raw/isolated-not-found.meta.json",
+          "reason": "No exact declared endpoint. 404 is not a missing feature by itself.",
+          "status": 404,
+          "url": "http://127.0.0.1:18331/"
+        }
+      ]
+    },
+    "D2": {
+      "observedFeatures": [
+        "ai-bridge:GET /v1/health",
+        "ai-bridge:POST /v1/plan"
+      ],
+      "unobservedFeatures": [
+        "ai-bridge:startup:bridge.mjs.module",
+        "cli:HeadlessSdk.BuildAndInstall",
+        "cli:HeadlessSdk.CompileCheck",
+        "cli:HeadlessSdk.CreateMod",
+        "cli:HeadlessSdk.ImportGameFiles",
+        "hook:AIPlayerSpikeMod.CanBeUnloaded",
+        "hook:AIPlayerSpikeMod.EarlyInit",
+        "hook:AIPlayerSpikeMod.Init",
+        "hook:AIPlayerSpikeMod.ModObjectLoaded",
+        "hook:AIPlayerSpikeMod.Shutdown",
+        "hook:AIPlayerSpikeMod.Update",
+        "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+        "hook:AIPlayerSpikePatches.ChatSendPrefix",
+        "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+        "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+        "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+        "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+        "hook:ThinClientDriverConstructor.CreateClientDriver",
+        "hook:ThinClientDriverConstructor.CreateServerDriver",
+        "slash:ai"
+      ],
+      "verdict": "요청 메서드/경로의 정적 입구와 응답 관측을 대조. 실행 trace/게임 프론트 조작 연결은 미관측; 죽은 코드로 단정하지 않음"
+    },
+    "D4": {
+      "corePolicyReview": "C 원문 기반 판정 및 C 확인 목록 참조; 문자열 비교로 의미 충돌을 판정하지 않음",
+      "elementsWithFeatureButNoActivity": [],
+      "journey": "활동 다음 순서와 저니는 C 원문으로 대조; 실제 게임 동선 확인 유예",
+      "navigation": "HTTP 출력/게임 화면 미관측 범위는 navigate 동선 검증 대상 아님. 실화면 확인 유예.",
+      "screenPolicy": "C의 표시 정책 원문/노드 비교는 C 검사 보고와 함께 확인",
+      "screensWithoutActivity": [
+        "BRG-01",
+        "BRG-04",
+        "BRG-05"
+      ]
+    },
+    "D5": {
+      "correctionRule": "문서/추출 규칙 수정 → A/B/C 재적재 → D 재생성. 생성물 직접 수정 금지",
+      "userDeferred": [
+        "게임 화면 탐색/화면 원본·위치 매칭/실게임 처음 사용자 검증"
+      ]
+    }
+  }
+}

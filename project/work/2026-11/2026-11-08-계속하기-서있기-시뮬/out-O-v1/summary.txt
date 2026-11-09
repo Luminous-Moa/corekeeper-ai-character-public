@@ -1,0 +1,21 @@
+requests 17
+celeris (celeris-1.1-decision): answers 34/34, latency p50 281ms p95 836ms max 896ms, tokens/call 5428, est. $0.000738
+
+id	options	logged	celeris
+O-v1.jsonl:1	14	-	c9 2/2
+O-v1.jsonl:2	50	-	c13 2/2
+O-v1.jsonl:3	50	-	c13 2/2
+O-v1.jsonl:4	50	-	c3 2/2
+O-v1.jsonl:5	48	-	c24 2/2
+O-v1.jsonl:6	48	-	c28 2/2
+O-v1.jsonl:7	48	-	c1 1/2
+O-v1.jsonl:8	40	-	c24 2/2
+O-v1.jsonl:9	48	-	c28 2/2
+O-v1.jsonl:10	48	-	c30 1/2
+O-v1.jsonl:11	48	-	c28 2/2
+O-v1.jsonl:12	31	-	c16 2/2
+O-v1.jsonl:13	32	-	c16 2/2
+O-v1.jsonl:14	32	-	c16 1/2
+O-v1.jsonl:15	12	-	c8 2/2
+O-v1.jsonl:16	26	-	c15 2/2
+O-v1.jsonl:17	12	-	c7 1/2

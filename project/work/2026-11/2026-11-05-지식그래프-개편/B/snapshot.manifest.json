@@ -1,0 +1,1844 @@
+{
+  "commit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+  "creation": "git archive initially; then pin-snapshot.mjs materializes exact git cat-file blob bytes, avoiding Windows archive EOL filters; no checkout/worktree mutation",
+  "files": [
+    {
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asmdef",
+      "sha256": "0e93153ed9fc7eb93212b79f8779233ff6b78740adc41c977444124216f2a34e",
+      "bytes": 9178
+    },
+    {
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asmdef.meta",
+      "sha256": "f42bad6e19fbf636adbf9335569608c98eaac3d6abce2bc2f96a72dd08f77416",
+      "bytes": 166
+    },
+    {
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asset",
+      "sha256": "9e3e8b4639a8a39c55f7ac115528c5590dee8e7d27602f6d0d3979fc6e63d744",
+      "bytes": 810
+    },
+    {
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asset.meta",
+      "sha256": "2ee0a65133e726c8b854c404785706d2c7aebff6d1e5940fef11f87c94b21846",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Data/AIPlayerSpike.asset",
+      "sha256": "4449e67d6c9b07de2d65226be3b538d856a1c41facb8644655937c8df898cee1",
+      "bytes": 427
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Data/AIPlayerSpike.asset.meta",
+      "sha256": "3767d9556a04211b4b5f2601f6807d139fe4eb12d64ccb705b9d49d03e4b4b4b",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Data.meta",
+      "sha256": "21719f5b76ae615eea1c21169eba9116759db16e98ecf6882a986c0b835dff1f",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIActions.cs",
+      "sha256": "c5ca63e7d3bffbf5b0fd8b63f8a73c150f992fa45ec6cdfedb0e14c7060444fc",
+      "bytes": 13051
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIActions.cs.meta",
+      "sha256": "b0e510f1fa2d93a9a1c5991205313c5a1eb347aa02dae40c82bd06c8e01f4304",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "sha256": "34d33d3988aa823821b108cc25078c53f82e02f07b0cb5dde9f68ae4230e8361",
+      "bytes": 21736
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIAgents.cs.meta",
+      "sha256": "73a226a231fccb03cd2b0f69fa5e4821107d57fc5db1808c9a4337038fe353aa",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIApproach.cs",
+      "sha256": "8815459aaff211eb97a0fe7a16c11ae2ef71a1b30f7d5945142087f06b1691fc",
+      "bytes": 975
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIApproach.cs.meta",
+      "sha256": "7bbe76aaecbb9ac7c58f3a4a7698ca5593f737bc1e9c1d7567f88d79d8e68a3c",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs",
+      "sha256": "c8ae706250fc0d416bb85d4cb70e6a51977a7f1691c24c6e61b076f4ba282a0a",
+      "bytes": 13384
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs.meta",
+      "sha256": "12588247f90fd518a52f6439f6d5017facf33467ac7e642f5ab595baf9d7fb09",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "sha256": "b74592a5cd1d4a9355cb2b2fb05988e1cd09c2fe8c298e1860031c928a756e9c",
+      "bytes": 76799
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBase.cs.meta",
+      "sha256": "c06ae752a99c82e4152e9ca3dbdf669aceab2da637aad01e96dfe5b0fb2842f7",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBaseProbe.cs",
+      "sha256": "5e371708af5c0a9e48284c828e03d35c2f60504957a45dab0936a5819781bfd8",
+      "bytes": 16019
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBaseProbe.cs.meta",
+      "sha256": "8811b557a9619fdc8e03e163e1a637714e36cffaf794b843c7f8703060f7c5ad",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBed.cs",
+      "sha256": "f400d973febab55855043fe4d1a495d8d047f6961d0a7158f5d255ecd8abd6ac",
+      "bytes": 13273
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBed.cs.meta",
+      "sha256": "3d2481cf6dae7045682bf65f68875f2aabff75196a6f9389e3e11d8336c22caf",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "sha256": "781b7737f89015fff15d3dbeb2fa98fc4c1fe1c730c98c6540f5d2b7b2b5ad9c",
+      "bytes": 30140
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs.meta",
+      "sha256": "614a253c78aa00469567b7333fd19dfe80819b764c3669666b8d16159f386434",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.cs",
+      "sha256": "7bbd2f0948d1303f9b212be9af1159f3a1b7f0a79b87215881bd29d54d651213",
+      "bytes": 51383
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.cs.meta",
+      "sha256": "8fa901e92057411a7f40c5bb87b3db41f790e2244e489b3e176bef90acbb81f1",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs",
+      "sha256": "a465425ef624374df3d939d56478df5da48ce7732fb506f04ffa825f027e6da5",
+      "bytes": 104727
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs.meta",
+      "sha256": "a7cf6ccb22c26cebe710f023d84b9659c0578d70882eb467bead8d640cdc9544",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs",
+      "sha256": "183f76cf6a0b5aaf9efb5cdc3943321b4b3b3a52f5c4b74167194c5e001f30f5",
+      "bytes": 109691
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs.meta",
+      "sha256": "9ae82d61472107a0de30b8ef0c99da56dba73131d133eed60c99aa4dd2f93e47",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs",
+      "sha256": "5b95298e23c0e7f1ef3100f004448d0e1e77eba3a264d7493876332384c0683d",
+      "bytes": 16428
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs.meta",
+      "sha256": "5c6e84ed1283864c7c02b1d7863fa7fcad5f423d9d080f298179b07fbd555f61",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs",
+      "sha256": "72135546f5a1fda0f5998bf18c2c9cea7058943d11928bd8242097d661a91354",
+      "bytes": 14196
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs.meta",
+      "sha256": "f28beb0d98cad1dfa13d3c094c657a77bb1b692ab54c5b812e6f576e73ffea5d",
+      "bytes": 63
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "sha256": "2f49435698fb047bfefb667a2901de7e24287d2f4bedc6d4ed4bcc8a25bd4b1a",
+      "bytes": 31565
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.cs.meta",
+      "sha256": "624f4d178a6dd402fb9151b8bd2395cdaed315ea391eae92a70a36495c874bbe",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs",
+      "sha256": "d8ad5a04c8dd33ff0cf371ac6e989b4993825512b8e7df8fd06f092b03b231dc",
+      "bytes": 11650
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs.meta",
+      "sha256": "a97caaa194bb3190a96f357770833783d0efc3ec3952137bdb7798bd0e766743",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "sha256": "e9a6affce48727ab02d4db2ad0ea95f2fb2cda557fa32084c0651bfea1c7d8fe",
+      "bytes": 26333
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs.meta",
+      "sha256": "54eb9a90827c0ae3e14b759e0acdb2c6bf68dbf55bd2e6eacf7370bc146251a0",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChargeWatch.cs",
+      "sha256": "613ae6d653013c4b475c804f6fa784144320de266037ec2eb17130687eb6a3a4",
+      "bytes": 15465
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChargeWatch.cs.meta",
+      "sha256": "2b57e2c79c1dd1fa6cc09d7f1acf348a056df6ebd765a34dce3a3c2c278b3311",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatHint.cs",
+      "sha256": "b2c7d8891a1e539b665f873bd14087019f8da692948a94344bf9ed10d472cad7",
+      "bytes": 6538
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatHint.cs.meta",
+      "sha256": "33deea8950d0a4ef50fa71421afbe27f047a5df541b02cc8e9855ac37149e5be",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs",
+      "sha256": "ce3f87d960e585389a742d7d3eea257a21d1677e76a203da80d779e5ad50a5af",
+      "bytes": 11346
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs.meta",
+      "sha256": "a12f1e5e704566c2bb3596fa300f503b46f3cc33ffe7aba762660bd82ca7dfb7",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatWindow.cs",
+      "sha256": "1b812b6032f1d29f456b1a96598ee06dfb3afe1d596ccdce6aa1c7118db76958",
+      "bytes": 7473
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatWindow.cs.meta",
+      "sha256": "c938ed18c1e6542c2cc004773d63c0ee5988067e4145276c510cdc98679091a6",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestAreas.cs",
+      "sha256": "fb2a8706cb5b21d172dbb980da3278e24a589013ece7025996c6dd70d961108c",
+      "bytes": 4399
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestAreas.cs.meta",
+      "sha256": "29796f08beb553e7c0ddb3f7afd5fed37422731bcf201263b81f9a700970e156",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestMode.cs",
+      "sha256": "fc5ae0d844d022c311e92f311d4234c7151a4929a0d194923479f08a1af4b497",
+      "bytes": 3149
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestMode.cs.meta",
+      "sha256": "de2a770517b0f787a9962386cff4e26c8ea935cc7d18b00363df218feea10b04",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICombat.cs",
+      "sha256": "2a5c40a1c4ca9518351e94ceb7da55d02d9c7690410a40253a763f2ef7b7f62d",
+      "bytes": 60926
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICombat.cs.meta",
+      "sha256": "d29eebae2682f5d4c88bd35eac6f409810dede1307f55c1a1f6c84d0d9aec67a",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICombatOptions.cs",
+      "sha256": "fdd6bb732b01c3e63f5b4e0b6949018c5df484bfa1228b0a559da33020b78f67",
+      "bytes": 6866
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICombatOptions.cs.meta",
+      "sha256": "3862fc5012c0ad4c889646462040859bf5ee25d8d476e8be6adebf07ffe80d4a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFont.cs",
+      "sha256": "34fa7e840311eeb43ee2b0cb3badcf8f897e0975ad845c567454f0b886ad8386",
+      "bytes": 10333
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFont.cs.meta",
+      "sha256": "81f9f7ae2052d3a01c392f8404765b1bd96250bd57d756fb4c3d2fc351123b67",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFontData.cs",
+      "sha256": "33a807de099a08cdcb968043416306858e60ac8570d60ef5393a3b86b8e2b2ba",
+      "bytes": 100527
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFontData.cs.meta",
+      "sha256": "a4234d9ffdcac4af70297f349bc8713b2693a2d64319c72b51f20f0e23098096",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+      "sha256": "dd2ad02db00c75d86d8bf39b8dc789c6601d24da623d3a23543cdb52dc7d31b6",
+      "bytes": 67317
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICook.cs.meta",
+      "sha256": "6cfbc7a616944f42cdd48720cd3452d523c762c1f5477056fc80b681936deaf0",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICraft.cs",
+      "sha256": "53f8430321ddfb59812b726c7eb62b9bd7062453867041714d6e10d1407a1fb5",
+      "bytes": 58358
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AICraft.cs.meta",
+      "sha256": "a328c2beabfb7a415eb338ac739500d6e5bba7eb44f13c8f4dc9eaa2e4bfd88b",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs",
+      "sha256": "295f42fdc1d28e56376bd8245fd545e9ff31704263ad88ea14c75721cb846aa2",
+      "bytes": 13580
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs.meta",
+      "sha256": "9cf4e1f4163e11c790579b5013051f4349398fb541fb8fbfbc87de9465498833",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "sha256": "e17ff5f0a9dcd118a104e72523b2273a5139cfe1fcf50f37dec331e7d1556768",
+      "bytes": 10495
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs.meta",
+      "sha256": "3c32ec2093f4fd52c220b4f94fd179a48c510f66d45201406bd6057aff536a63",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDoorFacts.cs",
+      "sha256": "d91bcf4d36c5c8ad88ec055bc8d404138d61cbd15714e6f44637b3c8f32ed8c3",
+      "bytes": 3295
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDoorFacts.cs.meta",
+      "sha256": "daa2be030e673b361a52013b44e36f2d55b809a754fc9b14885479469bbe9819",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDrops.cs",
+      "sha256": "6b957ceca1f5eee5234e6653cd7593cdd26969853ce239a848e5352b05896bcc",
+      "bytes": 3906
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIDrops.cs.meta",
+      "sha256": "dbe969557aa95630d3c550111d279c852b6193ab870ef2d715cac4d3f3eaf906",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Guard.cs",
+      "sha256": "a6a1981221085ecc38e19fb979f9686ff080f26135298cc549406ac92f67292a",
+      "bytes": 49254
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Guard.cs.meta",
+      "sha256": "3b5256fb2b2ace0b844bf704cf2fbc9b06743a1674c36ead96a0138bca94a2da",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Place.cs",
+      "sha256": "c6f76fdeeb1356938d0134c43f1fa57f689e96124c1993e82f1b00a32731bd30",
+      "bytes": 8539
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Place.cs.meta",
+      "sha256": "dddb5e165cf2ee6fc6140642d0e0c54b8be6e9e4c0e5027e248fc10963b1337f",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Reach.cs",
+      "sha256": "7020b1a7038e3a8cfaf4737c3d7701baf159843c9d153c84e462e1a6b7d07748",
+      "bytes": 13837
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Reach.cs.meta",
+      "sha256": "a50b8d97b2fdcf6822a97751278213a4272729e704fc3e1f0bcac377637422db",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.cs",
+      "sha256": "212ba06ddc1b578f35af4d56e548630a7f3e9be89ff6115186df1a279cbc4597",
+      "bytes": 51096
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.cs.meta",
+      "sha256": "be079570af55fdedd6d23ab7297d14fd01915d11d4976d7e6b11c1abe15f0692",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdgeSkills.cs",
+      "sha256": "ffb6c0f4a3a456c2251f0cbb4f9d008c755d7619a87d51bc99fc2d0311536552",
+      "bytes": 9826
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdgeSkills.cs.meta",
+      "sha256": "737ee30a0cc9ce780713b422804a62e87afd02ee6e6ca37a8a13f6215ace1185",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "sha256": "3bf2c6a43dda7ba0e2bfc6588981062feab86d8510bbef12f7f7c89b25af3708",
+      "bytes": 48172
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs.meta",
+      "sha256": "1f0fd6b6c432f91bd5329dfc1e1dafae1984420a41c76bd6b188508997f60419",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpedition.cs",
+      "sha256": "612145dd4cda2741e118477a7331d513eed1e6a25c97121e2f380553679d06a1",
+      "bytes": 31506
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpedition.cs.meta",
+      "sha256": "51501a377a8b69be0b523afc426eb8d6dc9ac5d2223c3f78454d7cc49b305627",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIExperience.cs",
+      "sha256": "c3a05b6e4fbdb6fb5e60b35425a166d88f2db3bcf1e3d9123c6d3f19da41cb72",
+      "bytes": 31976
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIExperience.cs.meta",
+      "sha256": "b1bd6b6ae7ade4fb3c45c15c28d8b30568a757bade1d4be7e694cfdba3049435",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "sha256": "874c8f2b81aedd9252fa2232846fb4a10b2108aa653dd372ae3cc3c72664689d",
+      "bytes": 87455
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIFarm.cs.meta",
+      "sha256": "f2afd68cae2a6ff0442b36e7fdb93db0266f42769cce9ce1f8ff3d3b201e8d4a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGathering.cs",
+      "sha256": "aef7cacce580ed69b8144e2773840e4c97e86fe69026228e75e80587638c4bb4",
+      "bytes": 32183
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGathering.cs.meta",
+      "sha256": "241cb0ddb106c883d07dad7e6bfd0528e02fb7c944cc80c24930017bf6e5740a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalFeatures.cs",
+      "sha256": "d75dca3bba0f0f750cb723cced55f3f9f77762413f4c89b2d636cdf8d47acaf3",
+      "bytes": 5492
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalFeatures.cs.meta",
+      "sha256": "1e063b15181b3cb33858b143d7caadda97ccb6d201ca227c8962f607725b739a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalText.cs",
+      "sha256": "3672cb446805f90f92b56f34a251e6cffc51989cd1f6ca94a30b4ce867cc8418",
+      "bytes": 2722
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalText.cs.meta",
+      "sha256": "32ea8b5eba88a8c806ce7426bef85d69e199b6f4f5b57adeea4ab6d4dae310aa",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "sha256": "333ccbc00b9d84552c9b434003542a26ff605ed2ef14b1eb8f896e3b70bedfd8",
+      "bytes": 26985
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoals.cs.meta",
+      "sha256": "17721514eabedffbeb7c3a059cd1f09264323d924879854163cb01e402c329ab",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs",
+      "sha256": "6180e23d3e721227c12f01ad683f2faf98c07ca124a9e79b6105e9adce05128b",
+      "bytes": 3508
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs.meta",
+      "sha256": "d4bd0c37df76d0254b23ad6ed95ce2708e52a0f64fe7605ec6122cd8c6d1c78a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIHandLease.cs",
+      "sha256": "c6cd0e66b68ad092f43b03081bd1df890e8b100790580553399b6e5de0846bdb",
+      "bytes": 1899
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIHandLease.cs.meta",
+      "sha256": "81ad7902aec830239c2181fa1ab22dc890700db3cbb8009951d7d460352ea941",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoPanel.cs",
+      "sha256": "67b551c92299ce8097aed9c5ccae22a1d172fe47231c6553ba1936cbb4b59b9a",
+      "bytes": 8077
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoPanel.cs.meta",
+      "sha256": "b872c1098f6449fb4a81852678cfc681cc35579ba161ffe01dad7ed94db75ccf",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoSnapshot.cs",
+      "sha256": "9356504ee44e42b151092c7cd564825fbb3377f3e7cc23ec9757b0ea5e8bd5c5",
+      "bytes": 10178
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoSnapshot.cs.meta",
+      "sha256": "b53fec0fd6b2e1b5b8fb8a1edad1e25ec3a86d926986dfa5b3bf83210c36e0e8",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs",
+      "sha256": "7594f6600a2ef7bc2af8bf7415adbb65a2a6ddd1aefbf9fced1474b310467b6b",
+      "bytes": 4842
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs.meta",
+      "sha256": "5914570a08af0b45edd4d1dbd3b556076ea3c6e24ffd170030a9fc62407747f4",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+      "sha256": "549b5d8524abfe0669685ec6c1ea711a70f1885445a1c640f907d2242dbee9a3",
+      "bytes": 131746
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventory.cs.meta",
+      "sha256": "4484ed0575dc67492c47255b95c36125f15a349dee5e3665c901ce78bf290760",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs",
+      "sha256": "eec7debf480e74cd68f4693f2aa73d78a78f2b128ba8344beca3f6c2fb295808",
+      "bytes": 37964
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs.meta",
+      "sha256": "70656da9f1ed65db85376b7cd2ab9449a212f7db99ce06ab7edbb285ea3c02fd",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "sha256": "2cc553efe54f5671ab57551785b78a785b94b6a2a70c0dc1e1163e05d5a3bc61",
+      "bytes": 26666
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs.meta",
+      "sha256": "f4eda76791cc5ff9982d1e118fc957b296da9739db5bb4715713e6bc33f2a075",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AILife.cs",
+      "sha256": "5a8f189d2feb29df940572f4e9ec3937991aeb1318093bc572f1e8a1994a7dbc",
+      "bytes": 16651
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AILife.cs.meta",
+      "sha256": "d1252f0738a62f9a1f76fe2c0b98c3a6a2300b35c33e355b9201c4912a0d44f7",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMaintenance.cs",
+      "sha256": "1c31b8991fc99f7011b792fda677ca8fcc3cc5d21b2ef355649cb606bf164907",
+      "bytes": 82818
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMaintenance.cs.meta",
+      "sha256": "1e8f9b0c477312e59e7064e71d41398f0dc3589b6632175c88d09e16ae9bbdb6",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "sha256": "d1cd48bf9c055bfefd5f0a22eb7c742a544c7f6ad6d4890b9c7bb14752866ae5",
+      "bytes": 25001
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMemory.cs.meta",
+      "sha256": "0e562cb931cd96f2484ded005abbdf26f03f232394dbb8b55a40203e7813822e",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMineSkill.cs",
+      "sha256": "b4a9caa6b238b7575cdb01397f12991351331d72d5e7dfebcf4a7335be857791",
+      "bytes": 12753
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMineSkill.cs.meta",
+      "sha256": "63b9e973097fc08598b8ae9dddd9d3a91cbe48e3c3104da2e04f0f8976216d54",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs",
+      "sha256": "8957e81f02649fa3cdbc83ee8e7ce1a668b02baef8e0cb56c0f8cc0981c7aebf",
+      "bytes": 6198
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs.meta",
+      "sha256": "bf1323eb71d72025484358444f36b2acce2ec849524300b2a0cf3d2738d84ac8",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AINavigator.cs",
+      "sha256": "eb2903a4f77c9809427c2755d026ffebaee5d127fefddf94c8a27b235378e9e5",
+      "bytes": 37120
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AINavigator.cs.meta",
+      "sha256": "2f604c3fa4490c2afd10b1e64d581aa5eb3142325facf9be9893303c7cac2030",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIObjects.cs",
+      "sha256": "e266f0d14307f82bedcb18f3917e6e29cc0b4def1fae445633ec9bd2fbad3950",
+      "bytes": 14196
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIObjects.cs.meta",
+      "sha256": "52ee63bee56c3ff51f4ae7432daf00c2f7324be2b6e253d5b69fde8b513a84dd",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIObservation.cs",
+      "sha256": "de200870c4724a6f9c1e439019734579dca92fcdac710beee01eec850686eeb5",
+      "bytes": 6709
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIObservation.cs.meta",
+      "sha256": "c49386cbb5e9b1263c4a273dade704c73b64f59417696c7abb6eeccc9774358b",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPickupSkill.cs",
+      "sha256": "6cbd1d7ff98da813a763342342bb1f8d8ed15ee5f597cdcd6a63246eea217ec9",
+      "bytes": 6922
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPickupSkill.cs.meta",
+      "sha256": "c1dcaa5cf885de4b2fae2bb8506d54db3804fb2d34fca65623288aeed8a8fc1c",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlace.cs",
+      "sha256": "e40184f2e810885623fbdb79941ca9978f1bdab6ec7b67849ffa64b6f54bf334",
+      "bytes": 44542
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlace.cs.meta",
+      "sha256": "b8196d442ce98cee19834aba734287269497624e5460f679ac8082f347d74ab3",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlaces.cs",
+      "sha256": "156bce2dc91d137786e28c9fc7452737a2e02879f14e55ea85ef9afdf5540faa",
+      "bytes": 42142
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlaces.cs.meta",
+      "sha256": "a0fa0e329c5efb97a39ee60b206615fcddae800cd40d54a08a85409a8205f56a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs",
+      "sha256": "766bd8a79b9aea0d02e7fdd43dee6708c9b204308d351f1621f9b723316eb4ab",
+      "bytes": 14743
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs.meta",
+      "sha256": "a9121200714a0982dfa4e1352318cc053e9bd4f3c56f875a7727f4b71dc301f8",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "sha256": "1d5d1d43827098cb6377ac60eff236aa3bd03ce37bd0643e95f50cbad1ae43bb",
+      "bytes": 69530
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs.meta",
+      "sha256": "0e907d456b1dab7ae3b085226d6c2fcd70c74fa1110c45aae78a6b213185a853",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "sha256": "6c3bdc244b614571d3215bc5ead5a9c2ad0b28cc4c92d4922514a2f2852e7f34",
+      "bytes": 14617
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs.meta",
+      "sha256": "e48091efa90f7887e93d95ca45e52c60321dd483570f1c7eb2eae41015520d91",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "sha256": "164338212ff3fa5ac83ce47eb82acd64a8830d5a2a0752908ad9e29cddff5ec3",
+      "bytes": 59281
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs.meta",
+      "sha256": "31bb7b00cb21342aafa9e56f76935ba2124eeb51f6f699f95569b0202de58a75",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "sha256": "b0d36f023bb6b527089a1cb56266d8a9b105c1f6de2f9a6bfb3316ef6a1d88d2",
+      "bytes": 6049
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs.meta",
+      "sha256": "a752a6db66dee7ef1570017b7324c3d76af0e67582f96aa1cbee939ae6b01c44",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIShortSkills.cs",
+      "sha256": "45f1a8c46de771631e6e3abc5d2afdd9313785214c8e682970522e2684bc8a02",
+      "bytes": 19806
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIShortSkills.cs.meta",
+      "sha256": "0cc60d5dad7b3da33c00873056a32d086e4b207d0f6154c877e83667160d28d5",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AISkill.cs",
+      "sha256": "41fb2de09b53436cb290920ac1a105434917873d247f6f8f75c43ef3d2768f3e",
+      "bytes": 6128
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AISkill.cs.meta",
+      "sha256": "993c2d8565f017ab730f368fbcf50d3d71184af4283c35f390aa3d16c990e36b",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITestControl.cs",
+      "sha256": "e1313e9b54e5b3158401ae25f2ccf405c0c0fb2319f479fa994843d37f2fdbd3",
+      "bytes": 9996
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITestControl.cs.meta",
+      "sha256": "b4426649030b913f83feadb499f9a0c7bd01f9b881d774db9c389ae2feb79613",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITestWorldEdit.cs",
+      "sha256": "f3ccb0b542164b6c51d81f1aecbd8be5e8768d8d1aecd9a0d3e15db2f62cbba7",
+      "bytes": 17024
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITestWorldEdit.cs.meta",
+      "sha256": "0897c5b31d5fff9a47a67c8a41b1261dcfac37c807535af1232a0367de1c8547",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITileReader.cs",
+      "sha256": "5036ddbfb63a3593925af9a44d9511845734717c9b49f1f68464a09e009b2122",
+      "bytes": 8388
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITileReader.cs.meta",
+      "sha256": "1d9b3b3513f2a46280747345dfcf7dba1689345134a555fcf384908a6c6553bc",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITravel.cs",
+      "sha256": "faf6b665b9e83278648820faf3871490f1ee167b681a23883c234244638a01ba",
+      "bytes": 50801
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITravel.cs.meta",
+      "sha256": "44d7b3af3dd44ec30d1fb05b914f83871062f595be350ac9c6c77b23d8263b61",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITunnel.cs",
+      "sha256": "66a3c4bf4dc09e03b2be60e8b3f3846469e9093fdb32414e798386820615b1e5",
+      "bytes": 61890
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AITunnel.cs.meta",
+      "sha256": "db9360d2ea26a14c1a4ac0d64d2d799eb69b3f6115a314bdaff025c17c394f17",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIVision.cs",
+      "sha256": "bb61dd58461f9db59ecec40f4e1b534f1d9eae5c4e9637ed7694ec8a2041de28",
+      "bytes": 3169
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIVision.cs.meta",
+      "sha256": "feb649dc35398197902fa916aa80729d7b7212853ae0e65042c6a918c4cd90ab",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIWeaponInput.cs",
+      "sha256": "96a7c78664eb2a9845ff269329d4de8fd78baafeb0e942cb094f1bb597429d7b",
+      "bytes": 820
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIWeaponInput.cs.meta",
+      "sha256": "302ea19cac1ab38bf5d792b2a9def34ce006165603670324844716ae83a41fe7",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldFacts.cs",
+      "sha256": "b3e8270bf31e13b54c572b427554e8c2916a50903a38b7888bfc48ac434faa47",
+      "bytes": 869
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldFacts.cs.meta",
+      "sha256": "9835283e7b9e7ce3a23b1e16233f1b0e6852f4aab1d689078fb028bb513ee159",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "sha256": "3d2ef0feebdef835ead69848dfa4beb21841b3553eb59ee7c3788043160e91ac",
+      "bytes": 3286
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs.meta",
+      "sha256": "43e61a5467892a0a03856da60a370848fe87cd6e7a42f256b2a3227101a27206",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIApproachSearch.cs",
+      "sha256": "d3eb857f142154e4f72e40b566721ec3a707af5755de769d5245656f445031a5",
+      "bytes": 627
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIApproachSearch.cs.meta",
+      "sha256": "0c3bc7414a0e2ac0adc68831a3de7846c0b9f88102d2ce781387c36ec41772a0",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseEdge.cs",
+      "sha256": "2c16fe11ea5c203985f3cb7cdf1a71c651d6b30aa186e44af130a0c0b167d66d",
+      "bytes": 39975
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseEdge.cs.meta",
+      "sha256": "ebd8191013e0449b158e2abd570fc36297f42298dffcf20c3f3343ad2a5e706c",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseGuard.cs",
+      "sha256": "d38238ef344fefbbd00b15a3b9303131d66a6b023433d995d558655add0e6ab9",
+      "bytes": 97453
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseGuard.cs.meta",
+      "sha256": "92e2d92ca4b2b9d1d0162036137ee2e7acbc296c9188aa82c0046a9ec5d8ac2d",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseMap.cs",
+      "sha256": "efb32ee2a91ab8c5049c52862023167744b59164bd3f99bdacfe37956ccff51f",
+      "bytes": 10288
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseMap.cs.meta",
+      "sha256": "7e00dd297bb6cc0ba56603a1d927c1271ace283ff5844b0b302d542d760acc44",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs",
+      "sha256": "63f060d438efe61107ddc2b9c67630c581474c9bf6ed24ebb58bd3aaff91cbce",
+      "bytes": 17938
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs.meta",
+      "sha256": "1979394f399f1b2954e78e435ef518a8217a8d1f0ad4f08ca132bfccb64e12b1",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChargeMath.cs",
+      "sha256": "92f3784d8ffb12b1bc41609510d2165348d0362e5a9677684312d22929cc526b",
+      "bytes": 20214
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChargeMath.cs.meta",
+      "sha256": "28db7c1a06d6214e8b9c62e582963402fc529c9c318a76bed7347acfea7ab3d2",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatFade.cs",
+      "sha256": "7985cb70f5cee00dd51360ff4299a0357a49a09b5eb28024bb6bceebdc7b7945",
+      "bytes": 1907
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatFade.cs.meta",
+      "sha256": "9637bf8d52cdcd515b1657a88df6f3894d2f71640471557694f77a18d9f57f69",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatLog.cs",
+      "sha256": "ca68cf999eeaf884bc4048a66f6c7927def0954c238367a4c1eeddccadc2b3e2",
+      "bytes": 5642
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatLog.cs.meta",
+      "sha256": "574bca62fc68a219e5e3c855dacc9b8ba740afb446d5ff68b1ed6bd855613841",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatScreenMath.cs",
+      "sha256": "dbcc0d4d176d3a3e7272caeeb561bfe1429419d713f17164bfd779d81d03aec1",
+      "bytes": 1485
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatScreenMath.cs.meta",
+      "sha256": "0faf110f9a44d04a0e414616cb75b8368ce630ce706344c5a47fd10358c2ee86",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIContinueText.cs",
+      "sha256": "df71322d145c943c16ff2c0b6239ec272c2954d4a33860d59db00398a1d244b8",
+      "bytes": 4248
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIContinueText.cs.meta",
+      "sha256": "2953f19ce31b5be8ff67e6c4ddf50a64d994fb9da543d205f695743cc4b9b619",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIDoorPass.cs",
+      "sha256": "f0d98be462d349a7db8c91c94226698d9cff26c56ee3eb00403ba8f350911871",
+      "bytes": 24844
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIDoorPass.cs.meta",
+      "sha256": "80bb970c91fd6416ab10ebf2c5c5fe66fa7d501c80a5b3a20326c735d2ccaa26",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIExpeditionRules.cs",
+      "sha256": "5347c72e3c157b7399a4b14148b87777c4b04b93086d22ba9b5bc389d614c49f",
+      "bytes": 22263
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIExpeditionRules.cs.meta",
+      "sha256": "7c498fc22c1e0c8b00deb816b46ec8830126e28757b633f7aa87fabfaa49a205",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIFightLog.cs",
+      "sha256": "a44c27b092d3a35d016324f2a39c88d036c473e71aeae733f9f9bd23816267c8",
+      "bytes": 4033
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIFightLog.cs.meta",
+      "sha256": "0bc986a2b30dd3ea6a1ef76ea1b3688f2f590bf65e7404323e086875133acc48",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGatheringRules.cs",
+      "sha256": "66935c57836e95f08e89be38967ebd9995a494e7f5c3b3970ec74abb839f7c85",
+      "bytes": 5090
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGatheringRules.cs.meta",
+      "sha256": "759d7b0ef6b20863057edc5e202cc74df56d68049b6c5d6d0660824bb351f0bf",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs",
+      "sha256": "e768d105cdefc5fea75a9237bf2fbc3034e3a5b1effa61d3c6fce5a2230050c8",
+      "bytes": 6362
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs.meta",
+      "sha256": "b6328a86fff802575b556f84682a07f462a7b52009f557fb1d5c914e137bbd17",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs",
+      "sha256": "a8f98ffab01b9e26fe056fa30a2c6bf908685910aea952f01bc7314e4f0b94d5",
+      "bytes": 682
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs.meta",
+      "sha256": "4c62ac956c82c2dd92758048e2a3207488c49d28047b693a2b9cef5810fd1f31",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHeldChoice.cs",
+      "sha256": "99540e3df51fa386a5e668b0c08b4f86a7ff742917d8d5f7cb953976787ba7a4",
+      "bytes": 730
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHeldChoice.cs.meta",
+      "sha256": "5c4efba99db5bce6e0043b05e6363e12ab5f8d9bf3d29f0bc10abb054571c16a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs",
+      "sha256": "7e9cd70835ded9273fbf3df55e5c1e8691f133e3144efec03cc205a4f014a55f",
+      "bytes": 9783
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs.meta",
+      "sha256": "f4819513a6d41652e9688f7f3cbacd19c36dc1fc11ecfa54467b7f2aad3ecdcb",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryGoalForm.cs",
+      "sha256": "556071edd92334f8b99428d81f8b4b553dd9eac9f44c58426233b26cde36c36b",
+      "bytes": 1641
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryGoalForm.cs.meta",
+      "sha256": "043ff5ec50b2d9b51a19a87c6d7f95083e53126caac895799e31231718b2b486",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs",
+      "sha256": "9976f68c5e67c6e52f09c318fe8612a023648e714d6e2f912518818fd12231ec",
+      "bytes": 3364
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs.meta",
+      "sha256": "7fe55ceabbf9388629de36e8816c3c3a7ad5c0686b9d69d5465f8eee7d86c4b5",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs",
+      "sha256": "74d235c478067f4193bdc5a27b83b3e738aa2985b83cf8713de6461bbe6d963d",
+      "bytes": 11440
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs.meta",
+      "sha256": "fab5682bb57cd3a1649161667bbe65e735be6e18618adcdc2e70e55e8390d3b9",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs",
+      "sha256": "ed96d3daffd33821246ec4fb7c9cb2cdb40b066df677726c9317d34d81e0d9b9",
+      "bytes": 2404
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs.meta",
+      "sha256": "172618d3d833b43931305584b9c086dba71c92a93eef1b792ca55d0553ddbd1b",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMention.cs",
+      "sha256": "4f50281c4216f6476ae892c4daa7e9abcc6817d4527ab45cc3505ed9c3eca036",
+      "bytes": 8083
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMention.cs.meta",
+      "sha256": "76e5b2cf6b0051714658c7e66c5c18cf4b285a0c9787c29b8201a7e63d528f7b",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs",
+      "sha256": "8ce2b340b76bb11120cac134f8b32ded204b9c702eaf00adc8473c4f8d2d8812",
+      "bytes": 384
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs.meta",
+      "sha256": "5b95c20ce89bb2115d00dfca11a60088bc9a0ab82e4bf8f02a528daf67962da6",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs",
+      "sha256": "47dcf4cdf98fd9a69bd94519bd1b2e99b241deaee66641b83b8176a6bfad60cc",
+      "bytes": 4934
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs.meta",
+      "sha256": "87abb2c83c904bf14e4f839e27d7a4565f52f067bd9ad41a6bbc93c70ee45fc1",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs",
+      "sha256": "3dde8f6703f44385444f10e3671a5535dc989c9b4076567dedcbfce6c3c34800",
+      "bytes": 1295
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs.meta",
+      "sha256": "f868995ec5716b98c001fcb4cf23b2d25c0fa80fa53e8bc4be7a5a2cb1d80247",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaceGrid.cs",
+      "sha256": "16015ecd56fe1531a38cfb3b39e44cc200c64910870d73060fb2129023c09f10",
+      "bytes": 31498
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaceGrid.cs.meta",
+      "sha256": "76dbff87a13f5d981ddd5aa7c0abb88703188470d902a531805b8d4cb8e3a6ba",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaces.cs",
+      "sha256": "b7fef840a9023551de1f5fe9c799a8c43dee82a89ae01a7ef9126f28db85c096",
+      "bytes": 24712
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaces.cs.meta",
+      "sha256": "3ccc93d94fb4b2e9b8215e204fbdb778ef4a2b3670d1ffc1d6d96e6c465ca5c2",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs",
+      "sha256": "0035522bff69d599cdcd64e6e920c1e0aa6168a4e4d40dcb998e9e463aa8dcc3",
+      "bytes": 2521
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs.meta",
+      "sha256": "b273675b1d0b234d52c413e5fb06957971786506ea7c1384b199a59a9e033f92",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs",
+      "sha256": "303b507b8a1e203179ebbc0e6e1aa7d358894a445f976f5b0c4b700191084e3d",
+      "bytes": 9399
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs.meta",
+      "sha256": "ebd73a469a2fb9bd1d9b7d3bc4fba942eae5ba4059d93bbeb37ad8a67b9e423a",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs",
+      "sha256": "51c5c8e72b262be7424dd2819725033414e3c1735e7cdda64faf134b7601e8dd",
+      "bytes": 13454
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs.meta",
+      "sha256": "83b128b6a1fa6df97d912a86e36c3e665ca74a12b5dfa370dca423d91fb17731",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPressQueue.cs",
+      "sha256": "db831a0f4caac0cddd708eb2be0c182101c0dec0dc263a4ac39cfb3fe2cb68cb",
+      "bytes": 3139
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPressQueue.cs.meta",
+      "sha256": "99435d030e66cca8c5de1ea18cff87bff9834ed98430548a942b80b8aca68c6e",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs",
+      "sha256": "6a83fd1b2e2d26a17fa6aca28b511afec9ca02d6e8971015d4251b732870a197",
+      "bytes": 20915
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs.meta",
+      "sha256": "61e39067858e322804569c457552bf1542e9b68ce7a7f24441bfc187fd9c0531",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AISettle.cs",
+      "sha256": "bdd05a30432f984e88185ff9853f513cce37805344daf29c710eb479a321ccf2",
+      "bytes": 13898
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AISettle.cs.meta",
+      "sha256": "782baba2cf1328c5690b4c8ed5056101c8a7572b7725ab68dd72f7e80a32e32f",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIThreatHistory.cs",
+      "sha256": "914470f5cfc0584c3063911a95b8d46a2ef4fe0fd76950de298666e52b956e39",
+      "bytes": 519
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIThreatHistory.cs.meta",
+      "sha256": "8c29c092bab5e602c6f04f102df23a7873366e7f323e19603259abf602203b58",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITravelRules.cs",
+      "sha256": "7f2a014f8d66650aef4349368e48ecc892584fb37be50228898895cab0677785",
+      "bytes": 39098
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITravelRules.cs.meta",
+      "sha256": "9b67bec4e9d88311641fb1ff36bb3bfc4d3230f22c7a5afc713a14708483879d",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITunnelSearch.cs",
+      "sha256": "7861837fe5c9a6886c8986064f14b03923bc6eff06eae09a4d596c479c2393c9",
+      "bytes": 29247
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITunnelSearch.cs.meta",
+      "sha256": "4f6d1fa4c8742d3a7711e09b2ccdda9d72a9b8058770f46d6f356757bdce2e26",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiLayout.cs",
+      "sha256": "76f945f4405c1f45ef50067194f041da133f104b128d845cef8615fde6410691",
+      "bytes": 844
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiLayout.cs.meta",
+      "sha256": "732cff3d8241a236e71f4edd786995e679d1287dffef4fa28ca13181e70fd20a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiPointerCapture.cs",
+      "sha256": "44213d5757f13bbd40f95e6a480dfbc5c1a7e42586fbbe646d8e9fbb2cbccfc5",
+      "bytes": 802
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiPointerCapture.cs.meta",
+      "sha256": "1f011da7b07d08ea5c01e185906922b6433ea5147c610af3a1eb004b443323cd",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs",
+      "sha256": "105470681e39213c194239a58d1438aa985f52aa4f09b8bedfad7056a9e6b64b",
+      "bytes": 1060
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs.meta",
+      "sha256": "fb356ec0c562d32c9806bae8d6a84e8cb98268632ac757ef9b3a0392a25ce154",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWeaponUseControl.cs",
+      "sha256": "9080088b8dd23a4e9e6039155fe08e16cc7e35a0b51ba76c08178a781812fcf9",
+      "bytes": 1360
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWeaponUseControl.cs.meta",
+      "sha256": "032453bec4934673db2f697c41533211e88fd27340a02ac3892312850a80a907",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts/Core.meta",
+      "sha256": "4ecce99215cedf49c3f9bc0121caeba27348ffb017d4c8935cdc968f05efa73a",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/AIPlayerSpike/Scripts.meta",
+      "sha256": "805133242ae36c77fabb02d9213aa0e34490dfd3b9796b4b05e4253ab6d3fb1c",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "sha256": "7a5b25156f21534895beb854931e2034d5eeb0786c507e5dfb177d50c2624ff2",
+      "bytes": 7238
+    },
+    {
+      "path": "Assets/HeadlessTools/Editor/HeadlessSdk.cs.meta",
+      "sha256": "1cc2f931877afeb549a65c173c7467256a269a0c4e9af3ace3219100404fc63b",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/HeadlessTools/Editor/HeadlessTools.Editor.asmdef",
+      "sha256": "9230829ee4a75451d6d55e0ced9327bd5cbc4c0375baee391a2c6951a629f484",
+      "bytes": 376
+    },
+    {
+      "path": "Assets/HeadlessTools/Editor/HeadlessTools.Editor.asmdef.meta",
+      "sha256": "1702572b58bdb3c49a866b1005c52e7b3836f91a2d194d50e6225d47b2f773b6",
+      "bytes": 166
+    },
+    {
+      "path": "Assets/HeadlessTools/Editor.meta",
+      "sha256": "858fc224fb58e1f1dca25e7c1da4b52ca8c41eaa1d741019827460c3647412d6",
+      "bytes": 172
+    },
+    {
+      "path": "Tools/ai-bridge/bridge.mjs",
+      "sha256": "1e4a559030ff52e94d2da0f7875661f4f4cc38e77eb4f7bacd52cc16175caa6f",
+      "bytes": 11734
+    },
+    {
+      "path": "Tools/ai-bridge/brief.md",
+      "sha256": "64f7dfe7cbb00e2ab9e4deeefa9b4ee864ab0febc8a7ce16416b2f03819157f7",
+      "bytes": 32963
+    },
+    {
+      "path": "Tools/ai-bridge/memgraph.mjs",
+      "sha256": "44127aa5f8e4f3dc63e3e5e91423d33d2c9901a52ed054aa16e09193e059d92a",
+      "bytes": 44391
+    },
+    {
+      "path": "Tools/ai-bridge/plan.mjs",
+      "sha256": "99d054db053c028c10538be59f5a3bb06191938c740f90d6127ff7264ce1d240",
+      "bytes": 8575
+    },
+    {
+      "path": "Tools/ai-bridge/preflight.mjs",
+      "sha256": "0a3ce65ad3e4638527dcb7d3da9c036d30bcc781b63bbcc4c3fd28022e9d0bc0",
+      "bytes": 4698
+    },
+    {
+      "path": "Tools/ai-bridge/protocol.mjs",
+      "sha256": "d7fcaaf60449ce1d53bb0b24c9a76084d5cd82ceb3684d6b62a90cc711564905",
+      "bytes": 11148
+    },
+    {
+      "path": "Tools/ai-bridge/recall-loop.mjs",
+      "sha256": "7fc359e6fd6b79e2f4d3ac73dcfc1baec154adbb29d10df8bfa663c927853788",
+      "bytes": 9015
+    },
+    {
+      "path": "Tools/ai-bridge/replay.mjs",
+      "sha256": "5df73ccf42f084fa43b33bfbb8241781d8a1479be71e975c459e3acb448b7d44",
+      "bytes": 17814
+    },
+    {
+      "path": "Tools/ai-bridge/test/bridge-wiring.test.mjs",
+      "sha256": "5ef7f1685539a1d2dda23b12d3313a141f2317e01869e0864199f6e5cff73ec7",
+      "bytes": 11358
+    },
+    {
+      "path": "Tools/ai-bridge/test/fake-bridge.mjs",
+      "sha256": "6b4b1bd4beb9583edcf6561592317ed104d13ea0c3435c92d080c19a113abd50",
+      "bytes": 7491
+    },
+    {
+      "path": "Tools/ai-bridge/test/fake-seq/l0.json",
+      "sha256": "4ba98f548d945616e1d574ee556d2b546c4ca93d9005c28b0eca6438c3c9f078",
+      "bytes": 3750
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/goal-contract.json",
+      "sha256": "7ccb78c738254dc3cf1f6e144a4aeb2e53da4bb9a98e723ef96f9c8c98052348",
+      "bytes": 10732
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/life-contract.json",
+      "sha256": "c9fbd1581cb353eaec5d88446d9c90b61b30f39973f9ec3c050452aabb973ab1",
+      "bytes": 3895
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/maintenance-contract.json",
+      "sha256": "81a36c3fbdd6346b812c6e68be4b1d51a91c7890440470c0f93e4d0c1e4cd598",
+      "bytes": 3698
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/cases.expect.json",
+      "sha256": "92e5c3436c69aa21fb2f4fa962681ac6584541fad10fb729d5d0cd96e6941ce7",
+      "bytes": 25564
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-float.json",
+      "sha256": "c72442e16aa79adb69235b2ff62f09fa95484506dd7003c25ed9dbbd4627f774",
+      "bytes": 644
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-out-of-range.json",
+      "sha256": "6763d80674792c9119f4de195e2ad27983a8139272fbc8245f8e4ac0ff3c17f7",
+      "bytes": 654
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/cut-body.json",
+      "sha256": "c802253cdd44ae50b91a3926a31bfdec4f952bd20a10e6de80f2209d20af9a9e",
+      "bytes": 46
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/decision-number.json",
+      "sha256": "bb42bd4ebd7fc469b317315006a068caeaaae1b7c8e86e93df47e6cdcbb9ae32",
+      "bytes": 566
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/dup-key.json",
+      "sha256": "373b0e7a322d77896018951f75067daa668d0a23e5f51f4edc87632f0d7d0199",
+      "bytes": 570
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/empty-body.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-aborted.json",
+      "sha256": "74aa96634b336b15c19ed23dad2ff70925304a079ba753c62cf8f2249e4215e4",
+      "bytes": 525
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-error-detail-null.json",
+      "sha256": "dc4186d4c20e5fa0c9f335623347b34f30a21a8878f1c07fb3543816f67d2272",
+      "bytes": 499
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-parse.json",
+      "sha256": "c49f7cd61c7b5c8839c00f0a30d37d048b4e535905426aa2af97d3f161b8e8b2",
+      "bytes": 509
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-timeout.json",
+      "sha256": "a2950fde29275c045337fe1b7fffbd56e0f0624ace63716edf00f8f7f2d709e7",
+      "bytes": 553
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-auth.json",
+      "sha256": "da0e4812dfa57fbc1b47fc1c7363b59fbf51d955a60eaa1636c7cd4f6496c057",
+      "bytes": 140
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-bridge.json",
+      "sha256": "be5a1e7a2a1dd04b9b7b16feb1d4a4ad62309e759651af91a0f321b9ca911bac",
+      "bytes": 113
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-busy.json",
+      "sha256": "4e50341f94527226f909dec8d3c95f5701bfddff7241e2e205e4eb1ff6776998",
+      "bytes": 67
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit-float-retry.json",
+      "sha256": "074d8f627cb86866c9ef22b4c98d2d7a5798aedb2d68159d1d904c344e3969d4",
+      "bytes": 112
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit.json",
+      "sha256": "66823e8092ce8c814bfbe7b164599549282bc51b7e0007d99a241f98bfe9f174",
+      "bytes": 124
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-login.json",
+      "sha256": "eaae47953ab83060fdaca5d952625d4da68644aec7a9f0bb327935a594dea39f",
+      "bytes": 109
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-spawn.json",
+      "sha256": "661b1825fba77caefef4680f7b3748c4601771b7dd0c78ed167838d63af211e4",
+      "bytes": 101
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-unknown-member.json",
+      "sha256": "febf43a50795d5e1454d46a775f48a6f0ba2bca71938f9d1f9aa183434b97f8f",
+      "bytes": 127
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/esc-say.json",
+      "sha256": "b79b706d4dbc074e26285c2b0be19c586dd0466a689864dbfc415b589ee170aa",
+      "bytes": 690
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-missing.json",
+      "sha256": "3d5682c8f34058cb458a27cd720de4c5faa415e9457cef8cbf45bad108c051df",
+      "bytes": 556
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-null.json",
+      "sha256": "99ad49ce65b08b0be61a720cfc7fc9334c5e20191e4c9f2dbe9a785720f5827e",
+      "bytes": 572
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-string-number.json",
+      "sha256": "b1e0b4daaf83e1ce94db7919298f824a4027d08e75b0519c0674ba85be073b19",
+      "bytes": 575
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/html-body.json",
+      "sha256": "22bd4aeed1bcf338063715cc5205f284a8c4c4e04385f9631e68781d117cf86f",
+      "bytes": 41
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/make-cases.mjs",
+      "sha256": "c60b4f052ab11fdc15d0dddc9223e3828ddd3e9585f987cc2b265a509092d33c",
+      "bytes": 12160
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-error-in-answer.json",
+      "sha256": "76c22d32bab8e71b189af2a8bbfaadd9f3e75a51f939b468a95b644145f146fe",
+      "bytes": 599
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-memo-first.json",
+      "sha256": "fafa486d54bc89c9c535e205474d85c17356e00e1c5fb7d67ed6f4cb9cc794dd",
+      "bytes": 773
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-ask.json",
+      "sha256": "f91ccd9a2aa662ffcea5d017417280fa1546c260ca6c27321d07f1404640f5dd",
+      "bytes": 614
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-hold.json",
+      "sha256": "0628ee7e7393e6db37c9a8dd0f4eda6a063521b73e23d10a80d9aae708a00e7e",
+      "bytes": 628
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-craft.json",
+      "sha256": "6c0ea5360db3644b075ef27e4774f55912b155cb34fd252742ab412fdb3e630e",
+      "bytes": 677
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-explore-quoted-why.json",
+      "sha256": "aa886fe5967d925398e1c5a0c4c389dae994a10508c52a43547d7cc9c13d952b",
+      "bytes": 659
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-gather.json",
+      "sha256": "30f5dfbc181491df1f098af8120a0532d6a1e5c1a278eb8cd90e94765b8f074f",
+      "bytes": 734
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-item.json",
+      "sha256": "5a0c0cf472f4a968b77f549926391f14d57a6d7c4abb105e2ce097ae4a2272eb",
+      "bytes": 656
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-null-item.json",
+      "sha256": "90815017047e4df5c4b1e5f707273b45c9e96cd97c7dedd3572bdc89acd57634",
+      "bytes": 625
+    },
+    {
+      "path": "Tools/ai-bridge/test/gather-limit.test.mjs",
+      "sha256": "088cfd66a830b343bae50d5a7405fcc98949760eb7eeb119177883b3d78c3ae9",
+      "bytes": 1114
+    },
+    {
+      "path": "Tools/ai-bridge/test/memgraph.test.mjs",
+      "sha256": "b958c1e12094b197cf33f3e8dd945a049d7f49f64b225fe30dcf71065931f631",
+      "bytes": 25165
+    },
+    {
+      "path": "Tools/ai-bridge/test/protocol.test.mjs",
+      "sha256": "bcf9cfde779a47ca8e166363da954535672ce1752470e0f76514df5ecf3de712",
+      "bytes": 22362
+    },
+    {
+      "path": "Tools/ai-bridge/test/real-data.mjs",
+      "sha256": "53c0128e555123634befddd3d07294776afe406f3a117b1c87adf2dc7f2c33b7",
+      "bytes": 2064
+    },
+    {
+      "path": "Tools/ai-bridge/test/recall-loop.test.mjs",
+      "sha256": "1238b40f7576c85727a2e3fb905ed26991a48e97acee9932cef1e8f87e08563d",
+      "bytes": 12135
+    }
+  ],
+  "runtimePackage": [
+    {
+      "path": "Tools/ai-bridge/bridge.mjs",
+      "sha256": "1e4a559030ff52e94d2da0f7875661f4f4cc38e77eb4f7bacd52cc16175caa6f",
+      "bytes": 11734
+    },
+    {
+      "path": "Tools/ai-bridge/brief.md",
+      "sha256": "64f7dfe7cbb00e2ab9e4deeefa9b4ee864ab0febc8a7ce16416b2f03819157f7",
+      "bytes": 32963
+    },
+    {
+      "path": "Tools/ai-bridge/memgraph.mjs",
+      "sha256": "44127aa5f8e4f3dc63e3e5e91423d33d2c9901a52ed054aa16e09193e059d92a",
+      "bytes": 44391
+    },
+    {
+      "path": "Tools/ai-bridge/plan.mjs",
+      "sha256": "99d054db053c028c10538be59f5a3bb06191938c740f90d6127ff7264ce1d240",
+      "bytes": 8575
+    },
+    {
+      "path": "Tools/ai-bridge/preflight.mjs",
+      "sha256": "0a3ce65ad3e4638527dcb7d3da9c036d30bcc781b63bbcc4c3fd28022e9d0bc0",
+      "bytes": 4698
+    },
+    {
+      "path": "Tools/ai-bridge/protocol.mjs",
+      "sha256": "d7fcaaf60449ce1d53bb0b24c9a76084d5cd82ceb3684d6b62a90cc711564905",
+      "bytes": 11148
+    },
+    {
+      "path": "Tools/ai-bridge/recall-loop.mjs",
+      "sha256": "7fc359e6fd6b79e2f4d3ac73dcfc1baec154adbb29d10df8bfa663c927853788",
+      "bytes": 9015
+    },
+    {
+      "path": "Tools/ai-bridge/replay.mjs",
+      "sha256": "5df73ccf42f084fa43b33bfbb8241781d8a1479be71e975c459e3acb448b7d44",
+      "bytes": 17814
+    },
+    {
+      "path": "Tools/ai-bridge/test/bridge-wiring.test.mjs",
+      "sha256": "5ef7f1685539a1d2dda23b12d3313a141f2317e01869e0864199f6e5cff73ec7",
+      "bytes": 11358
+    },
+    {
+      "path": "Tools/ai-bridge/test/fake-bridge.mjs",
+      "sha256": "6b4b1bd4beb9583edcf6561592317ed104d13ea0c3435c92d080c19a113abd50",
+      "bytes": 7491
+    },
+    {
+      "path": "Tools/ai-bridge/test/fake-seq/l0.json",
+      "sha256": "4ba98f548d945616e1d574ee556d2b546c4ca93d9005c28b0eca6438c3c9f078",
+      "bytes": 3750
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/goal-contract.json",
+      "sha256": "7ccb78c738254dc3cf1f6e144a4aeb2e53da4bb9a98e723ef96f9c8c98052348",
+      "bytes": 10732
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/life-contract.json",
+      "sha256": "c9fbd1581cb353eaec5d88446d9c90b61b30f39973f9ec3c050452aabb973ab1",
+      "bytes": 3895
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/maintenance-contract.json",
+      "sha256": "81a36c3fbdd6346b812c6e68be4b1d51a91c7890440470c0f93e4d0c1e4cd598",
+      "bytes": 3698
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/cases.expect.json",
+      "sha256": "92e5c3436c69aa21fb2f4fa962681ac6584541fad10fb729d5d0cd96e6941ce7",
+      "bytes": 25564
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-float.json",
+      "sha256": "c72442e16aa79adb69235b2ff62f09fa95484506dd7003c25ed9dbbd4627f774",
+      "bytes": 644
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-out-of-range.json",
+      "sha256": "6763d80674792c9119f4de195e2ad27983a8139272fbc8245f8e4ac0ff3c17f7",
+      "bytes": 654
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/cut-body.json",
+      "sha256": "c802253cdd44ae50b91a3926a31bfdec4f952bd20a10e6de80f2209d20af9a9e",
+      "bytes": 46
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/decision-number.json",
+      "sha256": "bb42bd4ebd7fc469b317315006a068caeaaae1b7c8e86e93df47e6cdcbb9ae32",
+      "bytes": 566
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/dup-key.json",
+      "sha256": "373b0e7a322d77896018951f75067daa668d0a23e5f51f4edc87632f0d7d0199",
+      "bytes": 570
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/empty-body.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-aborted.json",
+      "sha256": "74aa96634b336b15c19ed23dad2ff70925304a079ba753c62cf8f2249e4215e4",
+      "bytes": 525
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-error-detail-null.json",
+      "sha256": "dc4186d4c20e5fa0c9f335623347b34f30a21a8878f1c07fb3543816f67d2272",
+      "bytes": 499
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-parse.json",
+      "sha256": "c49f7cd61c7b5c8839c00f0a30d37d048b4e535905426aa2af97d3f161b8e8b2",
+      "bytes": 509
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-timeout.json",
+      "sha256": "a2950fde29275c045337fe1b7fffbd56e0f0624ace63716edf00f8f7f2d709e7",
+      "bytes": 553
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-auth.json",
+      "sha256": "da0e4812dfa57fbc1b47fc1c7363b59fbf51d955a60eaa1636c7cd4f6496c057",
+      "bytes": 140
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-bridge.json",
+      "sha256": "be5a1e7a2a1dd04b9b7b16feb1d4a4ad62309e759651af91a0f321b9ca911bac",
+      "bytes": 113
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-busy.json",
+      "sha256": "4e50341f94527226f909dec8d3c95f5701bfddff7241e2e205e4eb1ff6776998",
+      "bytes": 67
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit-float-retry.json",
+      "sha256": "074d8f627cb86866c9ef22b4c98d2d7a5798aedb2d68159d1d904c344e3969d4",
+      "bytes": 112
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit.json",
+      "sha256": "66823e8092ce8c814bfbe7b164599549282bc51b7e0007d99a241f98bfe9f174",
+      "bytes": 124
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-login.json",
+      "sha256": "eaae47953ab83060fdaca5d952625d4da68644aec7a9f0bb327935a594dea39f",
+      "bytes": 109
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-spawn.json",
+      "sha256": "661b1825fba77caefef4680f7b3748c4601771b7dd0c78ed167838d63af211e4",
+      "bytes": 101
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-unknown-member.json",
+      "sha256": "febf43a50795d5e1454d46a775f48a6f0ba2bca71938f9d1f9aa183434b97f8f",
+      "bytes": 127
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/esc-say.json",
+      "sha256": "b79b706d4dbc074e26285c2b0be19c586dd0466a689864dbfc415b589ee170aa",
+      "bytes": 690
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-missing.json",
+      "sha256": "3d5682c8f34058cb458a27cd720de4c5faa415e9457cef8cbf45bad108c051df",
+      "bytes": 556
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-null.json",
+      "sha256": "99ad49ce65b08b0be61a720cfc7fc9334c5e20191e4c9f2dbe9a785720f5827e",
+      "bytes": 572
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-string-number.json",
+      "sha256": "b1e0b4daaf83e1ce94db7919298f824a4027d08e75b0519c0674ba85be073b19",
+      "bytes": 575
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/html-body.json",
+      "sha256": "22bd4aeed1bcf338063715cc5205f284a8c4c4e04385f9631e68781d117cf86f",
+      "bytes": 41
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/make-cases.mjs",
+      "sha256": "c60b4f052ab11fdc15d0dddc9223e3828ddd3e9585f987cc2b265a509092d33c",
+      "bytes": 12160
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-error-in-answer.json",
+      "sha256": "76c22d32bab8e71b189af2a8bbfaadd9f3e75a51f939b468a95b644145f146fe",
+      "bytes": 599
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-memo-first.json",
+      "sha256": "fafa486d54bc89c9c535e205474d85c17356e00e1c5fb7d67ed6f4cb9cc794dd",
+      "bytes": 773
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-ask.json",
+      "sha256": "f91ccd9a2aa662ffcea5d017417280fa1546c260ca6c27321d07f1404640f5dd",
+      "bytes": 614
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-hold.json",
+      "sha256": "0628ee7e7393e6db37c9a8dd0f4eda6a063521b73e23d10a80d9aae708a00e7e",
+      "bytes": 628
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-craft.json",
+      "sha256": "6c0ea5360db3644b075ef27e4774f55912b155cb34fd252742ab412fdb3e630e",
+      "bytes": 677
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-explore-quoted-why.json",
+      "sha256": "aa886fe5967d925398e1c5a0c4c389dae994a10508c52a43547d7cc9c13d952b",
+      "bytes": 659
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-gather.json",
+      "sha256": "30f5dfbc181491df1f098af8120a0532d6a1e5c1a278eb8cd90e94765b8f074f",
+      "bytes": 734
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-item.json",
+      "sha256": "5a0c0cf472f4a968b77f549926391f14d57a6d7c4abb105e2ce097ae4a2272eb",
+      "bytes": 656
+    },
+    {
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-null-item.json",
+      "sha256": "90815017047e4df5c4b1e5f707273b45c9e96cd97c7dedd3572bdc89acd57634",
+      "bytes": 625
+    },
+    {
+      "path": "Tools/ai-bridge/test/gather-limit.test.mjs",
+      "sha256": "088cfd66a830b343bae50d5a7405fcc98949760eb7eeb119177883b3d78c3ae9",
+      "bytes": 1114
+    },
+    {
+      "path": "Tools/ai-bridge/test/memgraph.test.mjs",
+      "sha256": "b958c1e12094b197cf33f3e8dd945a049d7f49f64b225fe30dcf71065931f631",
+      "bytes": 25165
+    },
+    {
+      "path": "Tools/ai-bridge/test/protocol.test.mjs",
+      "sha256": "bcf9cfde779a47ca8e166363da954535672ce1752470e0f76514df5ecf3de712",
+      "bytes": 22362
+    },
+    {
+      "path": "Tools/ai-bridge/test/real-data.mjs",
+      "sha256": "53c0128e555123634befddd3d07294776afe406f3a117b1c87adf2dc7f2c33b7",
+      "bytes": 2064
+    },
+    {
+      "path": "Tools/ai-bridge/test/recall-loop.test.mjs",
+      "sha256": "1238b40f7576c85727a2e3fb905ed26991a48e97acee9932cef1e8f87e08563d",
+      "bytes": 12135
+    },
+    {
+      "path": "Tools/knowledge/.gitignore",
+      "sha256": "c5049c183f87267ff36ee98b52517e1f78670639f3a060baa89d4093a555f59b",
+      "bytes": 6
+    },
+    {
+      "path": "Tools/knowledge/README.md",
+      "sha256": "623b6ccfeeeefeb5a247b21e0984e9606d94ffc754e4d317af228195fb3861d5",
+      "bytes": 1422
+    },
+    {
+      "path": "Tools/knowledge/build.mjs",
+      "sha256": "8cffacc6e5a8434006aa3315a6f762bd224ad82a33c652794a5eda0b33712364",
+      "bytes": 11873
+    },
+    {
+      "path": "Tools/knowledge/kg.mjs",
+      "sha256": "e4ce3ff5ddb4d382374db933ca608818e7258dd4438b57bdffc9e3a12725a453",
+      "bytes": 19087
+    },
+    {
+      "path": "Tools/knowledge/rules.json",
+      "sha256": "4ccc6d99109677d4cf113fabc69634e579dd1c462e8f5f397d6bf2261804a942",
+      "bytes": 20965
+    }
+  ],
+  "excluded": "runtime-package Tools/knowledge is deployment dependency, not source of product graph nodes"
+}

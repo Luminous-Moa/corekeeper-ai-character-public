@@ -1,0 +1,67 @@
+990:     private BodyInput DropTick(World world, Entity player, float now)
+991:     {
+992:         var em = world.EntityManager;
+993:         if (!_sent)
+994:         {
+995:             string stale = AIInventory.Stale(world, player, _move); if (stale != null) return Finish(SkillStatus.Failed, stale);
+996:             if (_move.mode == "give")
+997:             {
+998:                 if (now - StartTime > 30f) ObserveOnce("inventory-recipient-approach", "수령자 접근 30초 경과, 아직 내려놓지 않음. 접근 가능 여부를 관측하며 AI 재판단");
+999:                 var navigation = Navigate(world, player, _move.recipient, 1.0f, now); if (navigation.HasValue) return navigation.Value;
+1000:                 var targetPosition = em.GetComponentData<LocalTransform>(_move.recipient).Position;
+1001:                 if (!AIVision.CanSee(AIBody.Pos(world, player), targetPosition.xz)) return Finish(SkillStatus.Failed, "수령자가 현재 보이지 않아 내려놓지 않음");
+1002:                 _recipientBefore = AIInventory.MatchingCount(world, _move.recipient, _move.beforeFrom);
+1003:             }
+1004:             _dropPosition = AIBody.Pos(world, player); _floorBefore = new HashSet<Entity>(Floor(world, _dropPosition).Keys);
+1005:             if (!AICraft.QueueInventoryChange(world, player, Create.DropItem(player, _move.from, _move.count, _dropPosition, player))) return Finish(SkillStatus.Failed, "내려놓기 요청 큐에 넣지 못함");
+1006:             _sent = true; _sentAt = now;
+1007:             Facts.Add($"DropItem queued at self position, dropper pickup blocked; source {_move.from}, units {_move.count}; recipient inventory never written");
+1008:         }
+1009:         int removed = 0, floorRemoved = -1, gained = 0;
+1010:         if (AIInventory.Read(world, player, _move.from, out var from))
+1011:         {
+1012:             int left = from.objectID == ObjectID.None ? 0 : AIInventory.Identity(from, _move.beforeFrom) ? AIInventory.Quantity(from) : -1;
+1013:             if (left >= 0) removed = AIInventory.Quantity(_move.beforeFrom) - left;
+1014:         }
+1015:         if (_floor == Entity.Null)
+1016:         {
+1017:             Entity match = Entity.Null; int matches = 0;
+1018:             foreach (var floor in Floor(world, _dropPosition))
+1019:                 if (!_floorBefore.Contains(floor.Key) && AIInventory.Identity(floor.Value, _move.beforeFrom) && AIInventory.Quantity(floor.Value) == _move.count && (AIInventory.Info(_move.beforeFrom)?.isStackable == true || floor.Value.amount == _move.beforeFrom.amount)) { match = floor.Key; matches++; }
+1020:             if (matches > 1) return Finish(SkillStatus.Failed, "동시에 같은 바닥 물품이 여러 개 생겨 이번 내려놓기에 귀속하지 못함(재전송 없음)");
+1021:             if (matches == 1 && AIInventory.Read(world, match, 0, out var initial)) { _floor = match; _floorInitial = initial; Facts.Add("new floor entity observed " + match); }
+1022:         }
+1023:         if (_floor != Entity.Null && removed == _move.count)
+1024:         {
+1025:             if (_move.mode == "drop")
+1026:             {
+1027:                 string result = $"출발 슬롯 {_move.from} 감소와 새 바닥 물품 {_floor} {_move.count}개 생성 확인";
+1028:                 AIInventory.Completed(world, player, _move, result, _move.count); return Finish(SkillStatus.Done, result);
+1029:             }
+1030:             if (em.Exists(_floor) && em.HasComponent<PickUpItemCD>(_floor))
+1031:             {
+1032:                 var pickup = em.GetComponentData<PickUpItemCD>(_floor);
+1033:                 if (pickup.targetEntity == _move.recipient && (pickup.state == PickUpItemState.IsBeingPickedUp || pickup.state == PickUpItemState.ForcePickUp || pickup.state == PickUpItemState.HasBeenPickedUp)) _sawRecipient = true;
+1034:                 if (pickup.targetEntity == _move.recipient && pickup.state == PickUpItemState.HasBeenPickedUp) _pickupReceipt = true;
+1035:                 else if (pickup.targetEntity != Entity.Null && pickup.targetEntity != _move.recipient && (pickup.state == PickUpItemState.IsBeingPickedUp || pickup.state == PickUpItemState.ForcePickUp || pickup.state == PickUpItemState.HasBeenPickedUp)) return Finish(SkillStatus.Failed, "내려놓은 물건을 지정 수령자 이외의 플레이어가 가져감(재전송 없음)");
+1036:             }
+1037:             if (!em.Exists(_floor)) floorRemoved = AIInventory.Quantity(_floorInitial);
+1038:             else if (AIInventory.Read(world, _floor, 0, out var remainingFloor))
+1039:             {
+1040:                 if (remainingFloor.objectID == ObjectID.None) floorRemoved = AIInventory.Quantity(_floorInitial);
+1041:                 else if (AIInventory.Identity(remainingFloor, _floorInitial) && (AIInventory.Info(_floorInitial)?.isStackable == true || remainingFloor.amount == _floorInitial.amount)) floorRemoved = AIInventory.Quantity(_floorInitial) - AIInventory.Quantity(remainingFloor);
+1042:             }
+1043:             gained = AIInventory.MatchingCount(world, _move.recipient, _move.beforeFrom) - _recipientBefore;
+1044:             int received = AIInventoryRules.ObservedDelivery(removed, _move.count, _floor != Entity.Null, _pickupReceipt, floorRemoved, gained);
+1045:             if (received > 0)
+1046:             {
+1047:                 string result = $"바닥 물품 {_floor}의 지정 수령 요청 관측 + 실제 바닥 감소 {floorRemoved}개 = {_move.recipientName} 가방 증가 {gained}개, {received}/{_move.count}개 수령 확인";
+1048:                 AIInventory.Completed(world, player, _move, result, received); return Finish(SkillStatus.Done, result);
+1049:             }
+1050:         }
+1051:         if (now - _sentAt > 6f) ObserveOnce($"inventory-drop-pending:{removed}:{floorRemoved}:{gained}", $"내려놓기 후 지정 수령 미확인: 출발 감소 {removed}/{_move.count}, 바닥 {_floor} 실제 감소 {floorRemoved}, 수령자 가방 증가 {gained}, 대상 관측 {_sawRecipient}, 지정 pickup 요청 관측 {_pickupReceipt}(재전송 없이 AI 재판단)");
+1052:         return BodyInput.Idle;
+1053:     }
+1054:     public override void Cleanup(World world) { _nav.Dispose(world); }
+1055:     public override string Progress(World world, Entity player) => _sent ? "정상 인벤토리 요청의 실제 양 슬롯/손 상태를 관측 중" : _move?.label ?? "선택 없음";
+1056: }

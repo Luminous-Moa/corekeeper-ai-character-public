@@ -1,0 +1,152 @@
+﻿[
+    {
+        "member":  "gemini",
+        "field":  "characterGuid",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "inventory",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "inventoryObjectNames",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "inventoryAuxData",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "skills",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "seen",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "visited",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "oreXY",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "oreId",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "stationId",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "stationXY",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "stationPlaced",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "edgeMyDoors",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "edgeDoors",
+        "same":  true
+    },
+    {
+        "member":  "gemini",
+        "field":  "drops",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "characterGuid",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "inventory",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "inventoryObjectNames",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "inventoryAuxData",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "skills",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "seen",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "visited",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "oreXY",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "oreId",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "stationId",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "stationXY",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "stationPlaced",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "edgeMyDoors",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "edgeDoors",
+        "same":  true
+    },
+    {
+        "member":  "gpt",
+        "field":  "drops",
+        "same":  true
+    }
+]

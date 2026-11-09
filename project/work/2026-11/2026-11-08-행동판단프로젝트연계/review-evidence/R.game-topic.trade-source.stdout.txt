@@ -1,0 +1,1933 @@
+{
+  "origin": {
+    "normalizedValueSha256": "4f1453ebff76e829daa0685657aea5ddaa6f774e9ef16219d07c9711d1d9ac38",
+    "path": "../2026-11/2026-11-07-행동그래프공백보완/merchant/cases.json",
+    "pointer": "/cases/0"
+  },
+  "value": {
+    "schemaVersion": 1,
+    "id": "completion:gap:ordinary-merchant-buy-v1",
+    "action": "buy_merchant_item",
+    "build": "26332184",
+    "status": "static_path_traced_pending_independent_review",
+    "runtimeTested": false,
+    "scope": "All five ordinary NPC MerchantAuthoring sources linked in the fixed raw objects input; 38 non-None configured stock rows. Seasonal crafting merchant and vending branch excluded.",
+    "roles": [
+      {
+        "role": "conditional_target_of",
+        "objectId": 3900,
+        "variation": 0,
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "pointer": "/752",
+          "sourceRawByteSha256": "c55c508dfcc515c4e232d370d66fe7bef04639f67219bd9fb04dbb9b71c722e1"
+        }
+      },
+      {
+        "role": "conditional_target_of",
+        "objectId": 3902,
+        "variation": 0,
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "pointer": "/754",
+          "sourceRawByteSha256": "1bc9936364b40068f438520bc91fce16b7e768ad54c93f8f5f17d1626adfd69d"
+        }
+      },
+      {
+        "role": "conditional_target_of",
+        "objectId": 3903,
+        "variation": 0,
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "pointer": "/755",
+          "sourceRawByteSha256": "cf9a260c943d02abdaf7c51fa0fb70a7cc5622f7984bc6e19b88f41ce1cc3029"
+        }
+      },
+      {
+        "role": "conditional_target_of",
+        "objectId": 3906,
+        "variation": 0,
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "pointer": "/758",
+          "sourceRawByteSha256": "86fca1138ac73fade1065eb72e6f9e1b12ada10c816851c6dcf6eeecfe55febd"
+        }
+      },
+      {
+        "role": "conditional_target_of",
+        "objectId": 3936,
+        "variation": 0,
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628",
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "pointer": "/768",
+          "sourceRawByteSha256": "30ceac2e84d23e2d4a64f49e46df8dd61eba7886f03de45c928ea594c736808e"
+        }
+      }
+    ],
+    "productRelations": [
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 9600,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9600,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1505909080418044600",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2934",
+              "sourceRawByteSha256": "eba12b24fa8536e7af9798366edfaa1512f0422e7af86264ccfd0bfb536c984a"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/0",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 2503,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 2503,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3012828426882697517",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/603",
+              "sourceRawByteSha256": "97b33a295c89e80f97f42d5b492b26df13550ffda9d49eb1a7b86aa4715d7213"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 40,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/1",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 2504,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 2504,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5864620071736513129",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/604",
+              "sourceRawByteSha256": "dfdbbf139368693dd18197fe096132b0e067a862a27431cf63e9d8f474641931"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 40,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/2",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 2505,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 2505,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1194647592997260701",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/605",
+              "sourceRawByteSha256": "774a97859057989c81d284051b002e2774c1a7f148babc4618293664ae27c730"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 40,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/3",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 1647,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1647,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2478670454818034119",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/478",
+              "sourceRawByteSha256": "725a099099a95076847a2c39698265837755d7e33c6ff70debcaa90b801de046"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/4",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "CoreActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 1600,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1600,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7654181479570847483",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/461",
+              "sourceRawByteSha256": "0502fe5e6a2888d7ec6b745a3a07e3300c3bb9c43321c8a3f86fcd16bf42780f"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/5",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "CoreActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 8250,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8250,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4259935202372184539",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2238",
+              "sourceRawByteSha256": "37c717188fa9256e3bf10256aff71e26e06c541ee2e354126eb4d0bbd5da55f0"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 400,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 5,
+                  "objectID": 1600
+                },
+                {
+                  "amount": 5,
+                  "objectID": 1647
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/6",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "CoreActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 8252,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8252,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:957485600308387163",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2240",
+              "sourceRawByteSha256": "dccfcfafbedbc1013503ee3659841969dbe8f2e1d1104e634cdb1da5101ad067"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 600,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 5,
+                  "objectID": 1600
+                },
+                {
+                  "amount": 5,
+                  "objectID": 1647
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/7",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "CoreActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8881191158473362106",
+        "productObjectId": 2510,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 2510,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8610847413007357244",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/610",
+              "sourceRawByteSha256": "9d481017e251ef3b45bc56ad627074f232e1862777fb9faec047561e499a6d89"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 100,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 8440,
+          "pointerWithinLine": "/data/items/8",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2608155586571012794",
+          "rawByteSha256": "f34372367e131fa3776501e1cd1d1241b5c27006164ba29238bd4ab539ef9e50"
+        },
+        "condition": "CoreBossDefeated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 4052,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 4052,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4046495117835404664",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/823",
+              "sourceRawByteSha256": "e460ab2d07bcb6510e972a27218d531d2e507492021e4cca7f13b4a89ce0635e"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 20,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 4,
+                  "objectID": 1610
+                },
+                {
+                  "amount": 4,
+                  "objectID": 1001
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/0",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 4026,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 4026,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2141492873573933759",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/797",
+              "sourceRawByteSha256": "cccdf2a8ea0ce427c29127a822f63cf461a5a0e21a02536ff8ba42231a2861bb"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 20,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 5,
+                  "objectID": 1610
+                },
+                {
+                  "amount": 5,
+                  "objectID": 1630
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/1",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1223,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1223,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8954058908006184342",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/373",
+              "sourceRawByteSha256": "51ed3cef7fc5527baa8d8df852f3a41196675496525de338cefcbadc83d6c0eb"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 75,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/2",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1648,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1648,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6238694699287532881",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/479",
+              "sourceRawByteSha256": "4910ac01f763acc68c60a53fe83de94d682c4b031b6807f05e699331715c0110"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/3",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1640,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1640,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:883188158366509582",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/473",
+              "sourceRawByteSha256": "30fe244383327816aa819b94668dd777414cf83156a5cffb06718ca085db4a6b"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.5,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/4",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1500,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1500,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-634181686474946979",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/451",
+              "sourceRawByteSha256": "992c37c349db3d2a516997d7f89b1a38cc364c13bbae6c21da1363f6004ae018"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.5,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/5",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1505,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1505,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7829850362475983233",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/452",
+              "sourceRawByteSha256": "6ff58127acd94019491939191643461d884a0fb6a5e00380810db8b0e6088a22"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 3.0,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/6",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "LarvaBossStatueActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1510,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1510,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4688668105199531499",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/453",
+              "sourceRawByteSha256": "43ebc08a68f73427e348d72e9a70b19213a61c032cd82d711ea001c0d5342610"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/7",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "HiveBossStatueActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7183271930848187631",
+        "productObjectId": 1520,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 1520,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3802642303143003798",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/454",
+              "sourceRawByteSha256": "4659cf13d2667169f97197d2261b29e361c57f299c9fa3ebcbc85893952f1f39"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 17570,
+          "pointerWithinLine": "/data/items/8",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4392104055871083759",
+          "rawByteSha256": "515ec51fdc5f4e2effcd35a1adcce19a7f66b5618db61e1b962a1fbd0b74344f"
+        },
+        "condition": "HiveBossStatueActivated"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 9700,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9700,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7333287457513023227",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2957",
+              "sourceRawByteSha256": "6b3ee3a3547dd89e2383732bb68dce942660f771da2a285ef989246d4ca38519"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 10,
+              "buyValueMultiplier": 1.0,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/0",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 9704,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9704,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5423796765794479823",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2961",
+              "sourceRawByteSha256": "7e4b53c998a5ed4e31a26806b81c15098247d08fd831b7e1ca7370c4a31636c0"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 10,
+              "buyValueMultiplier": 1.0,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/1",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 9715,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9715,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:682188089699002648",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2972",
+              "sourceRawByteSha256": "8565c7fbb0cc29a40b40cf11ee53fc417ee492044352e3a59cec7501d747d7bc"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 10,
+              "buyValueMultiplier": 1.0,
+              "rarity": 0,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/2",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 8386,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8386,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3700266229335235014",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2300",
+              "sourceRawByteSha256": "afd55819b5ebf5ea9fcf355e20fe092f4d58c8bb9f320694ad89e10a38e21163"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 8009
+                },
+                {
+                  "amount": 1,
+                  "objectID": 8003
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/3",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 8387,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8387,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4968161290935786503",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2301",
+              "sourceRawByteSha256": "87522a633bf596b545b4a6437ca0fa169ff224ba12ffe19190daf3d6268f0878"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 8009
+                },
+                {
+                  "amount": 1,
+                  "objectID": 1645
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/4",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 8385,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8385,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-171911422947656510",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2299",
+              "sourceRawByteSha256": "936430550265c13d5318d7969c1aceb9c219893d6b8d109bea9f4af3a0133e9f"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 2,
+              "buyValueMultiplier": 1.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/5",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 8864,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8864,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-310436345731154005",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2603",
+              "sourceRawByteSha256": "e3644fcc5becb61cbeaebc2fb263b3c4c2721745d291542a8bc0b066681ad67b"
+            },
+            "objectInfo": {
+              "isStackable": 0,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 3.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 6,
+                  "objectID": 1004
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/6",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:737928915021114222",
+        "productObjectId": 8819,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8819,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-736711349330137107",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2559",
+              "sourceRawByteSha256": "8ac4d56e3ecb16965bd3add1de947e897975b6b89d1f63b8d2ab6bd8d87d9450"
+            },
+            "objectInfo": {
+              "isStackable": 0,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 6.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 10,
+                  "objectID": 1002
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 33633,
+          "pointerWithinLine": "/data/items/7",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7519070485301056658",
+          "rawByteSha256": "4d097c65260988190ef53ebcac9f4ea38f9c09fb4381266d4b4580ea618a9af7"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 8558,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8558,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8878424067386274522",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2383",
+              "sourceRawByteSha256": "b84ac423e08ec76d5dc941e727743558ab7ca4d71f618e7c19a7ca30293c4487"
+            },
+            "objectInfo": {
+              "isStackable": 0,
+              "initialAmount": 90,
+              "sellValue": -1,
+              "buyValueMultiplier": 2.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 25,
+                  "objectID": 1008
+                },
+                {
+                  "amount": 20,
+                  "objectID": 1640
+                },
+                {
+                  "amount": 3,
+                  "objectID": 1003
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/0",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 8653,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8653,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1868508436955389001",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2457",
+              "sourceRawByteSha256": "75fc1cf4423fa4189b21d80c268af3ddb697581671026896d7fa9313fbe998b2"
+            },
+            "objectInfo": {
+              "isStackable": 0,
+              "initialAmount": 100,
+              "sellValue": -1,
+              "buyValueMultiplier": 2.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 27,
+                  "objectID": 1008
+                },
+                {
+                  "amount": 23,
+                  "objectID": 1640
+                },
+                {
+                  "amount": 5,
+                  "objectID": 1003
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/1",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 8739,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8739,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1858527496244008642",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2517",
+              "sourceRawByteSha256": "c4433de53c1a59f1ef6146783bd95db841717a84ad19d6779e706ba58cdee7c5"
+            },
+            "objectInfo": {
+              "isStackable": 0,
+              "initialAmount": 95,
+              "sellValue": -1,
+              "buyValueMultiplier": 2.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 26,
+                  "objectID": 1008
+                },
+                {
+                  "amount": 22,
+                  "objectID": 1640
+                },
+                {
+                  "amount": 4,
+                  "objectID": 1003
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/2",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 5954,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 5954,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7070141776937156565",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/1752",
+              "sourceRawByteSha256": "1bfe0d04e90e6cfb98811cde3a783a4202cbdca7746db436d18fa06cc0539917"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 10,
+              "buyValueMultiplier": 1.0,
+              "rarity": 0,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 5,
+                  "objectID": 1008
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/3",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 9410,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9410,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7076998808133189934",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2881",
+              "sourceRawByteSha256": "196ca4940c01091eb397cf1b53928f24faa04430bc5599af01ad8f3e9a1a0853"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 16,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 3,
+                  "objectID": 1631
+                },
+                {
+                  "amount": 1,
+                  "objectID": 9715
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/4",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 9620,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9620,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3289521159141540264",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2954",
+              "sourceRawByteSha256": "136bc3dbc28e2cf30c2405ca43b49e4e9da7ce457bd28a69ac1a03acb3232017"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 2.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": []
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/5",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4519603678055452346",
+        "productObjectId": 152,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 152,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5195109741714238074",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/119",
+              "sourceRawByteSha256": "c946094719ab382d1a89c0acc6bdb8a27e3d61ff2e5518aea917084c862ada05"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 20,
+                  "objectID": 1640
+                },
+                {
+                  "amount": 15,
+                  "objectID": 9734
+                },
+                {
+                  "amount": 5,
+                  "objectID": 9737
+                },
+                {
+                  "amount": 35,
+                  "objectID": 1008
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 35301,
+          "pointerWithinLine": "/data/items/6",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7842728143410843322",
+          "rawByteSha256": "a78806909c577781a89c5d41fdbfab8eabf05247be68cb7a18093caf8a095202"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628",
+        "productObjectId": 4056,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 4056,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6058703406788414723",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/827",
+              "sourceRawByteSha256": "c3a6deab682a4ef45dd8435a3cade22531902b6fe3266c7294f719fab476fad3"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 200,
+              "buyValueMultiplier": 1.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 25,
+                  "objectID": 1010
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 42305,
+          "pointerWithinLine": "/data/items/0",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-9182079576039597508",
+          "rawByteSha256": "2dc36f429aafa2e145bc1ff3093b950da641eaf4fed60837f5c0206a17a464b8"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628",
+        "productObjectId": 4060,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 4060,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7185073656894925503",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/833",
+              "sourceRawByteSha256": "f9918dcb99f86e8656fd7925fcd03f017f40773d7115b7b6e8c67caf91157c7e"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 200,
+              "buyValueMultiplier": 1.0,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 20,
+                  "objectID": 1010
+                },
+                {
+                  "amount": 10,
+                  "objectID": 1009
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 42305,
+          "pointerWithinLine": "/data/items/1",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-9182079576039597508",
+          "rawByteSha256": "2dc36f429aafa2e145bc1ff3093b950da641eaf4fed60837f5c0206a17a464b8"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628",
+        "productObjectId": 8259,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8259,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7474362609292098971",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2245",
+              "sourceRawByteSha256": "29713a7b57f158fe1a07e84535af7318bc46780f623ed51934b0f7cadf1be397"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 100,
+              "buyValueMultiplier": 1.0,
+              "rarity": 2,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 45,
+                  "objectID": 1600
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 42305,
+          "pointerWithinLine": "/data/items/2",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-9182079576039597508",
+          "rawByteSha256": "2dc36f429aafa2e145bc1ff3093b950da641eaf4fed60837f5c0206a17a464b8"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628",
+        "productObjectId": 9415,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 9415,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3244992275280292004",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2886",
+              "sourceRawByteSha256": "103782dd543551561bba72558fc5f6626d17b64d20f7e573195540c42944e820"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": -1,
+              "buyValueMultiplier": 0.800000011920929,
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 5,
+                  "objectID": 1600
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 42305,
+          "pointerWithinLine": "/data/items/3",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-9182079576039597508",
+          "rawByteSha256": "2dc36f429aafa2e145bc1ff3093b950da641eaf4fed60837f5c0206a17a464b8"
+        },
+        "condition": "None"
+      },
+      {
+        "role": "conditional_product_of",
+        "merchantSourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8504675721653298628",
+        "productObjectId": 8257,
+        "productVariation": 0,
+        "productSources": [
+          {
+            "objectId": 8257,
+            "variation": 0,
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3336513765635014236",
+            "origin": {
+              "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+              "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+              "pointer": "/2244",
+              "sourceRawByteSha256": "8ed349886f5f0200dd5873503e5da5ce0ac4c288942b88835d307f2dbe8f9134"
+            },
+            "objectInfo": {
+              "isStackable": 1,
+              "initialAmount": 1,
+              "sellValue": 1000,
+              "buyValueMultiplier": 1.0,
+              "rarity": 3,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 9916
+                },
+                {
+                  "amount": 1,
+                  "objectID": 9917
+                },
+                {
+                  "amount": 1,
+                  "objectID": 9918
+                }
+              ]
+            },
+            "authoringComponentKeys": []
+          }
+        ],
+        "stockOrigin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "line": 42305,
+          "pointerWithinLine": "/data/items/4",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-9182079576039597508",
+          "rawByteSha256": "2dc36f429aafa2e145bc1ff3093b950da641eaf4fed60837f5c0206a17a464b8"
+        },
+        "condition": "None"
+      }
+    ],
+    "conditions": [
+      {
+        "text": "Live NPC/active vendor UI; valid player crafting/mouse output handler; live entities/buffers/indices and DB; applicable network/prediction ticks. UI affordability range and runtime InventoryBuffer coin total need not be the same observation."
+      },
+      {
+        "text": "Serialized MerchantAuthoring rows become MerchantItemInfoBuffer. Refresh consumes nonzero amount and ItemIsAvailable in order, packs into 9 slots; amount==1 uses DB initialAmount. None/DB missing becomes empty. Timer updates every4s; refill timer sampled [1500,2100). Applicable world flag and current inventory availability remain conditional. This new static stock trace is pending review, not an inherited D acceptance."
+      }
+    ],
+    "entry": {
+      "from": "selected_live_merchant_interaction",
+      "to": "vendor_ui_active",
+      "text": "Serialized onUseActions[0] resolves Interact on each of the five graphical NPC subclasses. InteractableObject.Use requires activeInHierarchy and invokes the selected event; NPC.OnSpawn creates its buy InventoryHandler. Subclass overrides call base.Interact (Void inherits it). NPC.Interact selects sell slots separately, then activeBuyInventoryHandler and opens vendor UI. Runtime player, entity and valid world required.",
+      "refs": [
+        "Pug.Other/InteractableObject.cs:109-132",
+        "Pug.Objects/NPC.cs:16-45",
+        "evidence/applicability.json#/merchants"
+      ]
+    },
+    "transitions": [
+      {
+        "from": "selected_live_merchant_interaction",
+        "to": "vendor_ui_active",
+        "text": "Serialized onUseActions[0] resolves Interact on each of the five graphical NPC subclasses. InteractableObject.Use requires activeInHierarchy and invokes the selected event; NPC.OnSpawn creates its buy InventoryHandler. Subclass overrides call base.Interact (Void inherits it). NPC.Interact selects sell slots separately, then activeBuyInventoryHandler and opens vendor UI. Runtime player, entity and valid world required.",
+        "refs": [
+          "Pug.Other/InteractableObject.cs:109-132",
+          "Pug.Objects/NPC.cs:16-45",
+          "evidence/applicability.json#/merchants"
+        ]
+      },
+      {
+        "from": "enabled_buy_slot_click_or_hold",
+        "to": "queued_buy_request",
+        "text": "After the earlier select/use branch, enabled left/right BuySlot clicks attempt buying. Empty object produces no request. UI checks buy price <= AncientCoin in playerInventoryHandler range. Insufficient funds emits error only when playErrorOnFail; held left retries suppress that error. Hold starts at 0.35 seconds and subsequent interval is 0.1 seconds; every successful enqueue requests one purchase, not a fixed bulk amount. Output handler is mouseInventoryHandler, when player crafting output exists. Create.Buy carries seller entity/current absolute slot and buyer entity/start/size only; no objectID or quoted price.",
+        "refs": [
+          "Pug.Other/InventorySlotUI.cs:204-212,419-455,845-866,920-934,953-979,1164-1168",
+          "Pug.Other/InventoryHandler.cs:315-327,409-437",
+          "Pug.Other/CraftingHandler.cs:61-71",
+          "Pug.Other/PlayerController.cs:901-907,1008-1011",
+          "Pug.Other/Inventory/Create.cs:318-328"
+        ]
+      },
+      {
+        "from": "queued_buy_request",
+        "to": "inventory_change_eligible",
+        "text": "FIFO pop occurs at a newer fetch tick with a live player, assigns serverTick+1 to local buffer and RPC request. Receive adds only if SourceConnection has CommandTarget and target UIActionBuffer. Trigger takes oldest not-applied tick <= currentTick and queues InventoryChange with the triggering player entity. These source conditions do not prove network delivery or execution.",
+        "refs": [
+          "Pug.Other/PlayerController.cs:980-991",
+          "Pug.Other/SendClientInputSystem.cs:208-235",
+          "Pug.Other/ReceiveUIInputActionsRPCSystem.cs:136-147",
+          "Pug.Other/TriggerUIActionsSystem.cs:199-217,273-294"
+        ]
+      },
+      {
+        "from": "inventory_change_eligible",
+        "to": "buy_dispatched_or_gate_rejected",
+        "text": "worldIsReadOnly is WorldInfoCD.guestMode. Buy is permitted when guest mode is false OR playerGhost lookup fails OR adminPrivileges>0; its action is not the MoveOrDropItemIgnoreGuestMode exception. A known non-admin guest is skipped and result stays cleared. Process rejects null seller, missing ordinary inventory/contained buffers, or enabled destroyed seller. Buy is not in the secondary-inventory validation switch: valid buyer buffers/transform and valid indices remain preconditions, not a demonstrated graceful refusal. Dispatch calls void Buy; result initialized true is not a purchase receipt.",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-383,732-743,797-829,958-960,1004-1023"
+        ]
+      },
+      {
+        "from": "buy_dispatched",
+        "to": "current_stock_price_and_space",
+        "text": "Ordinary inventory branch reads current seller slot at processing, computes current price using DB and variation. None, absent DB object, CantBeSold prefab or Legendary gives zero. Otherwise explicit sellValue or rarity/material/cooked/upgrade fallback applies; fallback gets deterministic objectID +/-10% random adjustment, then buy price round(max(1,base)*5*buyValueMultiplier). Only coinValue>0 enters Buy. It checks space for containedObject.amount (the current full stock payload, not just the one unit being purchased). If insufficient it calls MoveAllToOrDrop(buyer,start,buyer,0,-1,position). Its default hint=-1 disables the hinted move and both loops 0<-1 are empty, so nonempty preexisting destination object is dropped. This occurs before currency/stock validation and can therefore accompany later refusal.",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:1092-1176,2487-2512,3206-3244,3266-3300"
+        ]
+      },
+      {
+        "from": "positive_price_and_post_space_state",
+        "to": "sale_gate_or_no_transfer",
+        "text": "SellObject ordinary buyer path recalculates AncientCoin total over current InventoryBuffer ranges and subtracts price. Current seller objectID must match the just-read objectID, stackable stock amount must be >=1, and balance-price>=0. Only then calls MoveOrDrop and ConsumeObject. If these checks fail, neither product transfer nor coin ConsumeObject is called (the earlier destination drop may already have occurred). Same-entity/null generic SellObject branches are not the ordinary NPC buyer case.",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:222-258,1180-1202,3296-3300"
+        ]
+      },
+      {
+        "from": "sale_gate_passed",
+        "to": "buffers_updated_or_product_drop_and_currency_consumed",
+        "text": "TryMoveAll/TryMove selects a permissible empty or same ID+variation stack slot under inventory requirements/cantAdd and 9999 cap. Stackable purchase requests amount1 and updates seller/buyer buffers by actual moved quantity. Nonstack amount carries the whole object payload, not one durability point. If TryMoveAll cannot find a destination, MoveOrDrop calls DropItem on seller at buyer position; source amount changes and first fully predicting tick queues drop entity creation. ConsumeObject then walks matching AncientCoin across contained slots, TryConsume subtracts and clears empty slots. Its returned amount is not checked here; no transaction rollback is present in this slice. A dispatcher true flag or local coin sound is not proof of material delivery/pickup.",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:247-258,293-318,505-646,695-735,837-843,2368-2455,2539-2564,3306-3318"
+        ]
+      }
+    ],
+    "negativeCases": [
+      {
+        "input": "empty UI slot",
+        "expected": "no Buy request",
+        "refs": [
+          "Pug.Other/InventorySlotUI.cs:920-934"
+        ]
+      },
+      {
+        "input": "UI coins below displayed price",
+        "expected": "no Buy request; optional error; held-left retry suppresses error",
+        "refs": [
+          "Pug.Other/InventorySlotUI.cs:209-212,419-431,920-934"
+        ]
+      },
+      {
+        "input": "known non-admin PlayerGhost and guestMode=true",
+        "expected": "inventory change skipped; no Buy dispatch",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-383"
+        ]
+      },
+      {
+        "input": "seller null / missing inventory+contained buffers / destroyed",
+        "expected": "ProcessInventoryChange returns false before Buy",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-807"
+        ]
+      },
+      {
+        "input": "current item None / invalid DB / CantBeSold / Legendary / final price<=0",
+        "expected": "no Buy body; no pre-space drop or SellObject",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:1092-1104,1165-1169,3284-3286"
+        ]
+      },
+      {
+        "input": "coins spent after UI check; positive current price but current total < price",
+        "expected": "SellObject does not transfer or consume coins; earlier destination drop is possible",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:1180-1202,3292-3300"
+        ]
+      },
+      {
+        "input": "stackable current stock amount<1",
+        "expected": "SellObject does not transfer/consume; earlier space side effect is possible",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:1189-1195"
+        ]
+      },
+      {
+        "input": "incompatible destination, no eligible delivery slot",
+        "expected": "preexisting destination may drop first; if sale gate passes, product may drop and coins are consumed; no simple full-inventory rejection",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUtility.cs:837-843,3206-3244,3292-3300"
+        ]
+      },
+      {
+        "input": "stale click; current slot now contains another item",
+        "expected": "Buy resolves new current item and its current price, not original click quote; current balance/space/stock gates apply",
+        "refs": [
+          "Pug.Other/Inventory/Create.cs:318-328",
+          "Pug.Other/Inventory/InventoryUtility.cs:3266-3300"
+        ]
+      },
+      {
+        "input": "missing buyer buffer/transform or invalid indices",
+        "expected": "not proven graceful rejection; direct indexed accesses require valid runtime state",
+        "refs": [
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:808-823",
+          "Pug.Other/Inventory/InventoryUtility.cs:3271,3288-3292"
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "conditional_inventory_change",
+        "text": "Gate-passing ordinary purchase moves one stack unit or one nonstack object payload from current seller stock; requested coin price is consumed after MoveOrDrop."
+      },
+      {
+        "kind": "conditional_world_drop_request",
+        "text": "Existing mouse item may drop before sale validation; purchased product may drop if destination transfer fails. First fully predicting tick and ECB playback govern world materialization; pickup is separate."
+      }
+    ],
+    "boundaries": [
+      {
+        "kind": "runtime_unobserved",
+        "text": "No actual game run, transaction, RPC delivery, prediction correction, ECB playback or pickup observed. No AI/mod execution interface is implemented."
+      },
+      {
+        "kind": "authorization",
+        "text": "Observed guest/admin gate and source-connection command-target binding only. No stronger ownership/range/permission guarantee is inferred from this Buy slice."
+      },
+      {
+        "kind": "scope",
+        "text": "Fixed input source closure, not all runtime mods/overrides or all installation sources. Product source records are enumerated at variation0; current DB selection is runtime-dependent."
+      }
+    ],
+    "sourcePins": "evidence/input-pins.json",
+    "codeEvidence": "evidence/code-snippets.json",
+    "applicability": "evidence/applicability.json",
+    "priorCoverage": {
+      "ledger": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\coverage.json",
+        "sha256": "6f87da9d9325b277b4eaf6458199beca5ba3ea7e978f0bdb86e40ff06f0cb864"
+      },
+      "checkedLabels": [
+        "activate_portal_or_waypoint",
+        "buy_af_vending_item",
+        "buy_vending_item",
+        "cooking",
+        "cooking_ingredient",
+        "drop_inventory",
+        "drop_inventory_entry",
+        "equip_gear_swap",
+        "inventory_transfer",
+        "inventory_transfer_extended",
+        "leave_cattle_window",
+        "leave_seasonal_merchant",
+        "leave_vendor",
+        "map_exchange",
+        "missing_recipe_product_boundary",
+        "none_recipe_semantics",
+        "open_cattle_window",
+        "open_crafting",
+        "open_crafting_with_sound",
+        "open_filter",
+        "open_inventory",
+        "open_mirror",
+        "open_portal_map",
+        "open_repair",
+        "open_shop",
+        "open_sign",
+        "open_upgrade",
+        "open_vanity",
+        "open_vendor",
+        "persistent_event_binding",
+        "player_owned_inventory",
+        "process_recipe_selection",
+        "recipe_configuration",
+        "recipe_ingredient_reference",
+        "recipe_requirements_observed",
+        "recipe_ui_craft",
+        "recipe_ui_extended",
+        "repair",
+        "sale_restriction_configured",
+        "show_sealed_message",
+        "special_ui_entry",
+        "teleport_from_af_portal",
+        "teleport_from_portal",
+        "unlock_by_contained_object",
+        "upgrade_equipment",
+        "use_cartography",
+        "use_seasonal_merchant",
+        "use_upgrade_forge"
+      ],
+      "meaning": "Exact fixed C label comparison only; no named ordinary merchant label among checked names. Does not prove absence elsewhere."
+    },
+    "priorEvidence": [
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\merchant_buy_and_stats.py",
+        "sha256": "32be64e040c1da05170821cb7fe76c17e656e349c1f9c1417e3d685a20264a98"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\current-purpose-handoff.md",
+        "sha256": "75c4615a404b85754989953285cd885bb50b5dd9cb6e6babdc4cc19c8bdf5f25"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\judging\\10-판매농사중간수용.md",
+        "sha256": "bfa51d944d1c887905e7b4823e26f2453b1c27aa1c81a0a098da95239ee54850"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\judging\\55-동물도구인벤토리자판기12수용.md",
+        "sha256": "34e58feccf8ff2b89bcc35ce9b559c1354ddee2ab52aaded1c8b97ffc8b4b52b"
+      }
+    ],
+    "relationLinks": [
+      {
+        "relation": "completes_pending_flow_of",
+        "to": "full/C/current-purpose-handoff.md#상인-구매"
+      },
+      {
+        "relation": "distinct_from",
+        "to": "sell_item / buy_vending_item / buy_af_vending_item"
+      }
+    ]
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "recordDirectory": "../2026-11/2026-11-07-행동그래프공백보완/merchant",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결"
+  }
+}

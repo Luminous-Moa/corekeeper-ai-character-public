@@ -1,0 +1,30 @@
+﻿{
+    "screens":  5,
+    "elements":  57,
+    "evidence":  14,
+    "errors":  [
+
+               ],
+    "checks":  [
+                   "unique canonical IDs",
+                   "evidence ID resolution",
+                   "original/HTML/PNG existence",
+                   "bounds within 1600x1001"
+               ],
+    "visual_samples":  [
+                           "E02",
+                           "E04",
+                           "E14"
+                       ],
+    "visual_result":  "Bounding boxes enclose visible elements. Parent label collisions corrected and E04 re-viewed. Occluded regions remain explicitly limited.",
+    "limitation":  "Original 14 PNGs viewed directly. Annotation visual QA sampled; all files/IDs/bounds checked.",
+    "followup_review":  "CKAI-03 #7/#12 and flow now distinguish A1 non-execution from A3 click+SPACE navigation to CKAI-04. /ai argument name re-viewed in 3x nearest-neighbor crop; transcription changed to uncertain across canonical element and 7 evidence samples. JSON parse/counts checked; IDs/boxes unchanged.",
+    "parent_containment_review":  {
+                                      "checked":  94,
+                                      "failures":  [
+
+                                                   ],
+                                      "change":  "Chat parent #2 now has 4px outer margin in canonical CKAI-02 and E02-E10. Original E04-E10 coordinates already reached y844; coincident child/parent borders obscured visual ownership. New parent is [24,309,495,539], reaching y848.",
+                                      "ids_text_flow_unchanged":  true
+                                  }
+}

@@ -1,0 +1,42 @@
+== ../2026-11-07-가방장비-조사.md:17-25 sha256=46e6167758c16ecc208956c557e041b7d5aaf594210e486ae1d7194e81e9a4ec
+17: ### 장착 대표
+18: 
+19: - 대상 `8549:0`, 이름 HiveBoneHelm, source `CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066`.
+20: - 적용 ID `completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066`.
+21: - `target`은 장착/수리/업그레이드 조건부 적용 세 개를 `independent_pass`로 반환한다. `show`는 장착 슬롯 `helmSlotIndex`, 원본별 predicate, `applies_rule → completion:C:equip-gear-swap-v1`, `accepted_by → acceptance:C-gear-v2`, 장비 역링크 증거로 이어진다.
+22: - `source .../evidence/destination`은 `full/C/gear-sources.json` `/sources/0/destination`의 실제 값 `helmSlotIndex`와 정규화 해시 `e7e3981f0c054f16dfe6def95c7833dede2c1ae7c43e2c4e41e5e97aae8b2f93`를 반환했다.
+23: - 공통 규칙 `show completion:C:equip-gear-swap-v1`도 조회했다. `status=independent_pass`, 생산 당시 `producerStatus=static_completion_pending_independent_review`, `runtimeTested=false`가 함께 유지된다. 생산 당시 pending을 현재 미검수로 읽지 않는다.
+24: - 조건: 유효 상태·입력·쿨다운, 고장 아님, 커서 물품 없음, prefab/ObjectData/DB 선택·지원 슬롯·유효 인벤토리. Ring/Pouch의 자동 대상 선택은 별도 분기다. 요청 소비와 두 슬롯 교환, 잠금 재계산, 장비 조건/세트 보너스 재요약까지 규칙에 있다. 특정 장비의 효과를 모두 같은 값으로 단정하지 않는다.
+25: - **해제는 독립 검수된 별도 행동으로 이번 조회에서 확인하지 않았다.** 일반 인벤토리 이동/Swap 소비자는 있지만, 장착 규칙만으로 임의 장비 해제·특정 반지 슬롯 교체·가방 축소를 모두 보장하지 않는다. 첫 구현에서 일반 장비 슬롯→일반 가방 슬롯의 정상 입력 경로와 요구조건을 따로 확인한다.
+== ../2026-11-07-가방장비-조사.md:27-34 sha256=46e6167758c16ecc208956c557e041b7d5aaf594210e486ae1d7194e81e9a4ec
+27: ### 상자 대표
+28: 
+29: - 대상 `100:0`, InventoryChest, source `CAB-2ebcba97367158c9b08f790c25d642c9:-7625700015621503986`.
+30: - 적용 ID `completion:C:container-inventory-transfer-v2/application/CAB-2ebcba97367158c9b08f790c25d642c9:-7625700015621503986`.
+31: - `target/show`에서 `independent_pass`, `accepted_by → acceptance:C-container-v2`, 공통 규칙 `completion:C:container-inventory-transfer-v2`, 원본별 슬롯/권한 조건으로 이어짐을 확인했다.
+32: - `source .../condition/sourceSpecificTransferConditions`는 `/sources/88/sourceSpecificTransferConditions`의 세 값 `objectsGetLockedInPlace=false`, `cantAddObjectsToInventory=false`, `canOnlyContainOneItemPerSlot=false`와 정규화 해시 `6611684662c05ab9d8ccc7484d172c08b888296c92c4bc8bf1106f6ba112f75a`를 반환했다. 원본 설정은 6×3, slotRequirements=[]다. 실제 runtime 내용·용량은 별도 관측한다.
+33: - 규칙 `show` 결과: 활성 객체·플레이어/handler/UI·양 inventory/버퍼·slot 요구조건·용량·권한을 충족해야 한다. 일반 입력에서 guest 비관리자 차단, stackable 실제 이동량은 요청량/원본량/용량에 제한, 비중첩 물품은 whole source amount 의미가 있다. `MoveAmount` 요청 처리가 내부 `TryMove` 성공을 보증하지 않으므로 **양쪽 실제 물품/수량 변화로 완료를 판정**해야 한다.
+34: - 수용 범위는 205 source의 이동205+열기180 주장이다. 합산한 서로 다른 물품 수가 아니다. 규칙은 정적 검수이며 `runtimeTested=false`다.
+== ../2026-11-07-가방장비구현/transfer-rules.md:11-22 sha256=f2075a13fe751471b70bab296e2584c857450c247365427bddfa0d26691fc6bf
+11: ## 요청 API와 실제 소비
+12: 
+13: 아래 줄은 `C:/Dev/_ref/corekeeper-decomp/Pug.Other/` 기준이다.
+14: 
+15: - `Inventory/Create.cs:100`: `DropItem(Entity inventory, int index, int amount, float3 position, Entity blockImmediatePickFor=default)`는 `InventoryAction.DropItem`, inventory1, index1, amount, position1, entityOrInventory2를 채운다.
+16: - `InventoryHandler.cs:254–259`: 정상 UI는 이 데이터를 `UIInputAction.InventoryChange`로 큐에 넣는다. 전량은 `:245–250`의 `DropAllItemsAt`이다.
+17: - `UIMouse.cs:1121–1126`: 선택 슬롯 내려놓기는 자기 현재 월드 위치와 자기 entity를 blockImmediatePickFor로 사용한다. 잠긴 인벤토리(`objectsGetLockedInPlace`)와 구매 인벤토리는 이 UI 경로에서 제외한다.
+18: - `UIMouse.cs:1130–1145`: 커서 물건 내려놓기는 자기 방향 또는 포인터 방향으로 0.4칸 위치, 자기 entity 차단을 사용한다. 우클릭 한 개와 좌클릭 전량이 구분된다.
+19: - `TriggerUIActionsSystem.cs:207–213`: 정상 큐를 actor playerEntity와 함께 InventoryChangeBuffer로 옮긴다.
+20: - `Inventory/InventoryUpdateSystem.cs:365–367`: guest/read-only에서는 actor가 관리자 권한이 없을 때 정상 변경을 차단한다. IgnoreGuest 변형을 이 기능에서 쓰지 않는다.
+21: - `Inventory/InventoryUpdateSystem.cs:797–829`: 출발 인벤토리·버퍼·파괴 상태를 검사하며, 이동 종류는 도착 인벤토리·버퍼·파괴 상태도 검사한다. 플레이어 간 거리와 인벤토리 소유 관계를 여기서 검사하지는 않는다.
+22: - `Inventory/InventoryUpdateSystem.cs:862–864`: DropItem을 InventoryUtility.DropItem에 전달한다. 요청 처리가 실제 슬롯 변화나 수령 완료를 뜻하지 않는다.
+== ../2026-11-07-가방장비구현/transfer-rules.md:31-39 sha256=f2075a13fe751471b70bab296e2584c857450c247365427bddfa0d26691fc6bf
+31: ## 즉시 재습득 차단과 수령 규칙
+32: 
+33: - `Inventory/InventoryUtility.cs:717–725`: blockImmediatePickFor가 있으면 바닥 물건에 `PickUpItemCD { state=BlockPickupUntilReEnterStart, targetEntity=dropper }`를 설정한다. 이 차단은 지정된 **버린 사람**에 적용되고 수령자 독점권은 아니다.
+34: - `PickUpItemSystem.cs:150`: 기본 자동 줍기 반경은 `1.4*(1+pickup bonus)`다. 구현의 근접 이동은 기본 반경 내에서 정상 시야를 확보하고 현재 위치에서 내려놓는 것으로 시작할 수 있다. 이 수치는 전달 거리 정책을 새로 만드는 근거가 아니라 기본 게임 수령 가능성이다.
+35: - `:554–567`: 죽거나 파괴된 수령자는 받을 수 없고, guest mode의 비관리자도 차단된다.
+36: - `:569–588`: dropper는 1.5칸 내에 있으면 처음 재습득할 수 없다. 멀어졌다가 재진입하는 상태 변화를 처리한다.
+37: - `:589–610`: 물건 유형과 슬롯 요구조건에 맞는 공간, 거리, 시야를 검사한다. `:613–619`에서 대상 entity와 pickup 시작 상태를 기록한다.
+38: - `:1263–1314`: 이동 중에도 수령 대상·공간을 재확인하고, 도착했을 때 바닥 인벤토리에서 수령 인벤토리로 정상 `MoveOrDropAllItems`를 큐에 넣는다. `HasBeenPickedUp`는 이 큐 요청 상태이므로 수령자 슬롯 증가 관측이 여전히 필요하다.
+39: - 수령 결과 검사는 장비 자동 전용 슬롯 이동을 포함한 전체 유효 슬롯을 읽되, 결과에는 전달 대상 물품의 변화만 공개한다. 상대의 전체 가방 내용을 모델에 공개할 필요는 없다.

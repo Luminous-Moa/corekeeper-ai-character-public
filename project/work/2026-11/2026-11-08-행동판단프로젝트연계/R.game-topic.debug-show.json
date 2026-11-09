@@ -1,0 +1,330 @@
+{
+  "node": {
+    "action": "debug_noclip",
+    "conditional": true,
+    "evidenceContext": {
+      "fixedCodeRoot": "../게임원본-상호작용/code",
+      "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1",
+      "researchRoot": "../2026-11/2026-11-07-행동결과완결"
+    },
+    "id": "completion:B:debug-noclip",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "75b2ac51469bc1d01c34da54ce6b5966c3785120888915e45f0991a38e570495",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+      "pointer": "/cases/0"
+    },
+    "producerStatus": "static_path_research_awaits_independent_review",
+    "recordFormat": "scoped_additional_record",
+    "roleBindings": [],
+    "runtimeTested": false,
+    "scope": "Debug/dev NoClip affects state requests, position and physics, so debug naming alone does not exclude it. Its server privilege gates, map-local changes versus rejected RPC and independent physics blockers are accepted; renderer blinking is contextual presentation, not a new action.",
+    "selectionContext": {
+      "origin": {
+        "normalizedValueSha256": "f68e6737b8f5cb61801ecd73837c7dae9fef32cbade8ccd3432107ddd88e89c9",
+        "path": "../2026-11/2026-11-08-행동그래프추가기록/selection.json",
+        "pointer": "/groups/48/artifacts/0/items/0"
+      },
+      "sourceBindings": []
+    },
+    "sourceComplete": false,
+    "status": "independent_pass"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "completion:B:debug-noclip/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "760736b84b9891e98efd0a123661665588b3487cc97b4e6bf2f852ed36046cb4",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/conditions"
+      },
+      "value": [
+        "로컬 플레이어·scene 준비·시간 정지 아님·state lock 아님·검은 로딩 화면 아님",
+        "입력 토글은 Manager.DEBUG_MODE, local, debug action ID 7, PlayerInputBlocked false가 필요; dev scene 최초 설정 경로는 별도",
+        "서버 구성·명령 전달·component 및 예측 tick이 유효해야 후속 상태와 위치 반영"
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "action",
+      "id": "completion:B:debug-noclip/evidence/action",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "b3eea6633270cb6d803b40fbbc4b55f9acf4881c0cf515375e19461f8b9a8141",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/action"
+      },
+      "value": "debug_noclip"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "build",
+      "id": "completion:B:debug-noclip/evidence/build",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "3323ae33cc165f66e9e0a76bea5a6be0a1eb4ab79765c9f45e8721afea4d5c56",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/build"
+      },
+      "value": "26332184"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "completion:B:debug-noclip/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "5ffc9a951f4dc0950b03af88399bca77f6071362a2d0c4d7630a7ec7e6f38a46",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/codeEvidence"
+      },
+      "value": [
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\InputManager.cs",
+          "sha256": "0c320a74e2686d4dc00e1e0579f7d8d31ba672b003b35371e5adf6d6319e5dfb"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SendClientInputSystem.cs",
+          "sha256": "139f98acb3c9e53abecd7911421be5f642f6769282590b30a70e577431e04146"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ServerSystem.cs",
+          "sha256": "395e746b689a65fdf276f647af93aeb15f90c008ec7e7e4326958548849eca26"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\NoClip.cs",
+          "sha256": "c5ae6db94c374d53831b0d61e66a54cf1441b2465a53414e863cff14b00f5e19"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\UpdatePlayerStateAfterPhysicsSystem.cs",
+          "sha256": "be606e5f16e4f4db55b064911f3d3d554609c3413f0be812e922e052d74e45ba"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerVelocityCalculationSystem.cs",
+          "sha256": "550f48d95dfefe1c262bb3bfad6d25f8be45bccf31291b89f08eca082bd663ce"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\MapUI.cs",
+          "sha256": "c7ed918589f0910e8676ff4eed3cd710ef03fb51448337b9c831e7682206ee65"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\PlayerState\\PlayerStateCD.cs",
+          "sha256": "6d10da87b059b80b7b82cdcb9687e2b020fce3da46d049464e36b6a380a28b04"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\ChangePlayerStateSystem.cs",
+          "sha256": "42f8e4a59b7c6f9d5e57868399ebace97e092a94aee409d84d043afc1c160dbb"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\DisablePhysicsSystem.cs",
+          "sha256": "79952d76c117206e0db7dd096e3ef8c058d99a1fa33b66862c3edc7b16038627"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "id",
+      "id": "completion:B:debug-noclip/evidence/id",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "9998268b91d35ddb2da9f3f336742b4615e62f78a17374b72236fdc843ee488e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/id"
+      },
+      "value": "completion:B:debug-noclip"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "priorClaimIds",
+      "id": "completion:B:debug-noclip/evidence/priorClaimIds",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/priorClaimIds"
+      },
+      "value": []
+    },
+    {
+      "relation": "has_evidence",
+      "field": "reusedMovement",
+      "id": "completion:B:debug-noclip/evidence/reusedMovement",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "004c61240b340d4604b89b17c6406398492499bec046229b6689f8caefda8a1b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/reusedMovement"
+      },
+      "value": {
+        "caseId": "completion:B:new-move-player",
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\player-movement-inputs-v3-replay-1\\cases.json",
+        "review": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\review\\movement-wall\\delta-report.md",
+          "sha256": "91a28886bcb8691b82912506de3112f4aac49de210a134f92f15d6aed618611c"
+        },
+        "sha256": "41483d3e92ac7f6a0e2471df7f22c58bb07a5d178c39facac1720a2f59ce167f"
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "roles",
+      "id": "completion:B:debug-noclip/evidence/roles",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/roles"
+      },
+      "value": []
+    },
+    {
+      "relation": "has_evidence",
+      "field": "runtimeTested",
+      "id": "completion:B:debug-noclip/evidence/runtimeTested",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "2ed27c1421e6928dbe13dbfdb5c59e1045b30341fe7ebe05700006bc5ac572c0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/runtimeTested"
+      },
+      "value": false
+    },
+    {
+      "relation": "has_evidence",
+      "field": "status",
+      "id": "completion:B:debug-noclip/evidence/status",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "6c72807e097d5a6f7e7b28cadb851bf9fae661549d1f7c560348f0029d5c917e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/status"
+      },
+      "value": "static_path_research_awaits_independent_review"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "typedEndpoints",
+      "id": "completion:B:debug-noclip/evidence/typedEndpoints",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "3722f35aa330c363327c1b5711c85dd078dad649c646c21e7553a7d9b008797c",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/typedEndpoints"
+      },
+      "value": [
+        {
+          "id": "runtime:player",
+          "role": "actor",
+          "type": "runtime_entity"
+        },
+        {
+          "id": "runtime:world-position",
+          "role": "conditional_output",
+          "type": "runtime_transform"
+        }
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "completion:B:debug-noclip/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "145e159ac9b3810831a505e802ac076f9f7b310b2662bd5936a694c11e5c995c",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/transitions"
+      },
+      "value": [
+        {
+          "from": "developer input or dev scene initialization",
+          "refs": [
+            "Pug.Other/InputManager.cs:171-179",
+            "Pug.Other/PlayerController.cs:1073-1081,1360-1378,1638-1661,2769-2772",
+            "Pug.Other/PlayerCommand/ClientSystem.cs:754-763,1069-1078",
+            "Pug.Other/PlayerCommand/ServerSystem.cs:467-480,705-710,899-906,1121-1125"
+          ],
+          "text": "debug 입력은 큰 지도가 열려 있으면 지도 커서 좌표로 디버그 위치 요청과 NoClip 상태 요청을 한다. 지도가 닫혀 있으면 악기 연주 중이 아닐 때 NoClip 활성 여부를 읽어 Walk 또는 NoClip 상태를 요청한다. 로컬 초기화에서 sceneHandler.isDev이면 별도로 NoClip을 요청한다. 일반 SetPlayerState RPC는 guest gate의 예외이나 PlayerStateCD가 있어야 SetNextState를 쓴다. 위치 요청은 별도 DebugRpc이며 서버 enableConsole과 admin level>0이 필요하고 LocalTransform이 있을 때 위치를 설정한다.",
+          "to": "state/position requests"
+        },
+        {
+          "from": "large-map debug input",
+          "refs": [
+            "Pug.Other/PlayerController.cs:1648-1656",
+            "Pug.Other/MapUI.cs:827-835,1070-1075,1616-1619"
+          ],
+          "text": "먼저 지도 커서의 화면→월드 좌표를 계산한 다음 CenterMapOnLocalPlayer()를 인자 없이 호출하여 local map offset을 0으로 쓰고 ToggleMap으로 큰 지도를 닫으며 paper2 UI SFX를 요청한다. 이어지는 NoClip/위치 RPC의 서버 수락 여부와 이 로컬 지도 변화는 별개다.",
+          "to": "local map changes"
+        },
+        {
+          "from": "server SetNextState",
+          "refs": [
+            "Pug.ECS.Components/PlayerState/PlayerStateCD.cs:54-62",
+            "Pug.Other/PlayerState/ChangePlayerStateSystem.cs:130-146,168-172,224-226,323-325"
+          ],
+          "text": "PlayerStateCD.nextStateLocked가 이미 true면 SetNextState는 아무것도 쓰지 않는다. 상태 시스템은 popped mask가 없고 다음 상태가 현재와 같거나 isStateLocked면 nextStateLocked를 해제하고 반환한다. 그 외 상태 변경 시 기존 상태를 종료하고 다음 상태를 기록·진입한다. NoClip과 IgnoreAllInput은 같은 NoClip.EnterState/ExitState로 dispatch된다.",
+          "to": "conditional enter/exit"
+        },
+        {
+          "from": "NoClip state",
+          "refs": [
+            "Pug.Other/PlayerState/NoClip.cs:10-43",
+            "Pug.Other/PlayerState/UpdatePlayerStateAfterPhysicsSystem.cs:210-220",
+            "Pug.Other/SendClientInputSystem.cs:245-258,297,335-356",
+            "Pug.Other/PlayerVelocityCalculationSystem.cs:363-382"
+          ],
+          "text": "상태 진입 시 애니메이션 trigger와 disablePhysics 활성화를 요청하고 종료 시 disablePhysics를 끈다. 후물리 상태 dispatch에서 targetMovementVelocity × noClipMovementSpeedMultipler × deltaTime을 LocalTransform.Position에 더하며 SpeedupNoClip held면 3배다. 최종 prediction tick이면 graphical smoothing을 끈다. presentation은 시간에 따라 HidePlayer를 깜빡이고 종료 시 false로 둔다. 수평/수직 축과 차단은 기존 move_player의 SendClientInput/ProcessMovementInput을 재사용하며 실제 위치와 물리 상태는 관측하지 않았다.",
+          "to": "conditional position and physics/presentation"
+        },
+        {
+          "from": "disable physics and HidePlayer",
+          "refs": [
+            "Pug.Other/DisablePhysicsSystem.cs:19-29,40-50,169-199",
+            "Pug.Other/PlayerController.cs:960-968,4505-4518"
+          ],
+          "text": "DisablePhysicsSystem은 해당 query의 DisablePhysicsCD·EntityDestroyedCD·GhostWaitingSpawnCD·GodModeCD 중 하나가 활성이고 DisablePhysicsCollider가 비활성인 경우 이를 활성화한다. 네 조건이 모두 없고 collider가 활성인 경우에만 이를 비활성화한다. 그러므로 NoClip 종료 자체가 다른 상태의 physics 복원을 보장하지 않는다. HidePlayer 변화는 RefreshCustomization을 부르고 true이면 신체·머리·눈·의복 등의 renderer를 끈다.",
+          "to": "conditional collider and renderers"
+        }
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "completion:B:debug-noclip/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "5ba3816c2850aace01b58d88e9b5a1eef6e8101d561b21428f2bef54652bb2a2",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0/boundaries"
+      },
+      "value": [
+        "debug/dev 조건부 경로이며 정상 보행과 구분",
+        "키 action ID 7의 실제 물리 키 바인딩은 이 코드만으로 확정하지 않음",
+        "12.5는 PlayerController 선언 기본값이므로 runtime component 값을 고정하지 않음",
+        "guest 예외는 일반 상태명령에 한정하고 debug 위치 RPC gate와 구분",
+        "독립 검수 전",
+        "지도 UI 변경과 디버그 위치 RPC의 서버 거부는 별도이며 다른 physics 차단 조건에 따라 collider가 유지될 수 있다"
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:recording:B-U065",
+      "kind": "review_acceptance",
+      "action": null
+    }
+  ],
+  "incoming": []
+}

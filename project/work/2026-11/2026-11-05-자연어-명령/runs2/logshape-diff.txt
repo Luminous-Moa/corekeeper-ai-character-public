@@ -1,0 +1,9 @@
+NEW    34  PLANNER | trigger decision plan order why | PLANNER APPLY
+NEW    10  PLANNER | trigger decision order why | PLANNER APPLY
+NEW     8  DECISION ## HTTP # | net error | DECISION HTTP
+NEW     1  GOAL cleared | rev | GOAL LLM
+NEW     4  PLANNER |  | PLANNER LLM
+NEW     1  TEST-ONLY arena go |  | TEST-ONLY
+NEW     1  TEST-ONLY arena spawn |  | TEST-ONLY
+NEW    56  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set players | DECISION SEND
+8 new shape(s): find each one's code site, then allow it with a reason or treat it as a difference

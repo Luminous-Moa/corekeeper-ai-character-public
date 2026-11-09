@@ -1,0 +1,459 @@
+{
+  "node": {
+    "action": "critter_damage_after_dig",
+    "id": "completion:full-d:critter-after-pilot-dig",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "97fa8140c705e76ad44bddf0c8e39e247be4017df398f7d3238240e8ad14c05b",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+      "pointer": "/cases/1"
+    },
+    "roleBindings": [
+      {
+        "conditional": true,
+        "endpointType": "runtime_critter_collider",
+        "role": "conditional_target"
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "Shovel critter request, shared damage consumer",
+    "status": "investigated_pending_independent_review"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "completion:full-d:critter-after-pilot-dig/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "c20e18f0d2ade15b41ef27714275ae7cc586d26752680119379d05ed4c04bb9f",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/conditions"
+      },
+      "value": [
+        "PlayerAttackSystem clears queued attacks on death. A collider must match the critter property and must not have flying property for this call.",
+        "The shared GetDamageInfo path requires its runtime component assumptions and applies immunity, damage calculation and reduction; base 1 is not guaranteed final damage.",
+        "PlayerController passes the attacker god-mode lookup as the positional isExplosive argument after showDamageNumber=false; ClientSystem godMode stays its default false. That isExplosive value also reaches the downstream damage/pull-loot parameters.",
+        "PlayerGhost target follows RegisterPlayerHit and returns before the non-player EntityUtility.DealDamage path; do not infer component composition from the critter property."
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "assetEvidence",
+      "id": "completion:full-d:critter-after-pilot-dig/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "4cd3a1ecd6281e99c1b2190790741cc8ba7c83b38a6993d003d1c81b80aea42f",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/assetEvidence"
+      },
+      "value": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\pilot\\case.json",
+        "sha256": "6a657947984f8b30ca05c471bfb619240d56041c856631908606f36e1c072eb9"
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "completion:full-d:critter-after-pilot-dig/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "21649ba2b58e712a3f15f46821962208c078730e21b25d381a8cbe0a4c69b54f",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/codeEvidence"
+      },
+      "value": {
+        "Pug.Other/EntityUtility.cs:1491-1567": {
+          "end": 1567,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "start": 1491
+        },
+        "Pug.Other/EntityUtility.cs:324-367": {
+          "end": 367,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "start": 324
+        },
+        "Pug.Other/EntityUtility.cs:835-878": {
+          "end": 878,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "start": 835
+        },
+        "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-823": {
+          "end": 823,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "start": 797
+        },
+        "Pug.Other/Inventory/InventoryUpdateSystem.cs:874-875": {
+          "end": 875,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "start": 874
+        },
+        "Pug.Other/Inventory/InventoryUtility.cs:590-646": {
+          "end": 646,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+          "start": 590
+        },
+        "Pug.Other/Inventory/InventoryUtility.cs:846-856": {
+          "end": 856,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+          "start": 846
+        },
+        "Pug.Other/PickUpItemSystem.cs:1263-1325": {
+          "end": 1325,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PickUpItemSystem.cs",
+          "sha256": "030b363faacfe0756f0c793ebd93d0557c0d03adb7cf59b0a3f37b70d3f6c480",
+          "start": 1263
+        },
+        "Pug.Other/PickUpItemSystem.cs:515-620": {
+          "end": 620,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PickUpItemSystem.cs",
+          "sha256": "030b363faacfe0756f0c793ebd93d0557c0d03adb7cf59b0a3f37b70d3f6c480",
+          "start": 515
+        },
+        "Pug.Other/PlayerAttackSystem.cs:429-456": {
+          "end": 456,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerAttackSystem.cs",
+          "sha256": "e48e346b4e4d6b1c800cb41116613443af29d78dad9370f0d700c6f905d45da1",
+          "start": 429
+        },
+        "Pug.Other/PlayerCommand/ClientSystem.cs:279-287": {
+          "end": 287,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab",
+          "start": 279
+        },
+        "Pug.Other/PlayerCommand/ClientSystem.cs:292-368": {
+          "end": 368,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab",
+          "start": 292
+        },
+        "Pug.Other/PlayerCommand/ClientSystem.cs:477-478": {
+          "end": 478,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab",
+          "start": 477
+        },
+        "Pug.Other/PlayerController.cs:6649-6669": {
+          "end": 6669,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba",
+          "start": 6649
+        },
+        "Pug.Other/ShovelSlot.cs:161-175": {
+          "end": 175,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ShovelSlot.cs",
+          "sha256": "edb62c04586eb07271c187e179743ef5b2f6fdeca4c798f65161812c0470bfcf",
+          "start": 161
+        },
+        "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302": {
+          "end": 302,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateHealthFromBufferSystem.cs",
+          "sha256": "5fe7f275753316f5b212bd46f5335f6a8b27b0a1db14e6bec7b29188e7d0f668",
+          "start": 194
+        },
+        "Pug.Other/UpdateHealthFromBufferSystem.cs:384-435": {
+          "end": 435,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateHealthFromBufferSystem.cs",
+          "sha256": "5fe7f275753316f5b212bd46f5335f6a8b27b0a1db14e6bec7b29188e7d0f668",
+          "start": 384
+        },
+        "Pug.Other/UpdateHealthFromBufferSystem.cs:558-560": {
+          "end": 560,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateHealthFromBufferSystem.cs",
+          "sha256": "5fe7f275753316f5b212bd46f5335f6a8b27b0a1db14e6bec7b29188e7d0f668",
+          "start": 558
+        }
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "schemaVersion",
+      "id": "completion:full-d:critter-after-pilot-dig/evidence/schemaVersion",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/schemaVersion"
+      },
+      "value": 1
+    },
+    {
+      "relation": "has_failure",
+      "field": "negativeCases",
+      "id": "completion:full-d:critter-after-pilot-dig/failure/negativeCases",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "19e6d2c3e4811dfe9c8101c81f68f622e0195eae25ad71743bcc3f1fecd82c0d",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/negativeCases"
+      },
+      "value": [
+        {
+          "expected": "this request does not reach a qualifying target",
+          "input": "player dead, no eligible collision, or flying critter"
+        },
+        {
+          "expected": "zero calculation alone does not prove unchanged health: a positive minDamagePerHit can make it negative later",
+          "input": "immune-zone calculation yields zero"
+        },
+        {
+          "expected": "the cited healthLookup write is skipped under the respective code conditions",
+          "input": "non-predicted target with disabled Simulate or qualifying protective armor"
+        }
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "entry",
+      "id": "completion:full-d:critter-after-pilot-dig/flow/entry",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "e67ef1520c1e59bd784ac774ed2dc176bf9e673e4804a024783c51ca462d32e7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/entry"
+      },
+      "value": {
+        "input": "ShovelSlot emits CritterDamage for each dug position; flying=false, killEvenIfSquashBugsIsOff=true"
+      }
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "completion:full-d:critter-after-pilot-dig/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "1bea88343612edb1e5ecbefb34e0ad2f8d078575d98da92c7afd0dcf87cef61b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/transitions"
+      },
+      "value": [
+        {
+          "from": "request",
+          "refs": [
+            "Pug.Other/ShovelSlot.cs:161-175",
+            "Pug.Other/PlayerAttackSystem.cs:429-456",
+            "Pug.Other/PlayerController.cs:6649-6669"
+          ],
+          "text": "PlayerAttackSystem dispatches to DealCritterDamage, which casts the shovel-size box and calls ClientSystem.DealDamageToEntity with base 1.",
+          "to": "damage_call"
+        },
+        {
+          "from": "damage_call",
+          "refs": [
+            "Pug.Other/PlayerCommand/ClientSystem.cs:279-287",
+            "Pug.Other/PlayerCommand/ClientSystem.cs:292-368",
+            "Pug.Other/PlayerCommand/ClientSystem.cs:477-478",
+            "Pug.Other/EntityUtility.cs:835-878",
+            "Pug.Other/EntityUtility.cs:1491-1567"
+          ],
+          "text": "GetDamageInfo calculates damage and immunity, then for a non-PlayerGhost target EntityUtility.DealDamage queues a negative pre-reduction amount when the target has HealthCD. GetDamageInfo indexes target health earlier; do not assume missing HealthCD is safely ignored. A PlayerGhost branches to RegisterPlayerHit and returns.",
+          "to": "health_buffer"
+        },
+        {
+          "from": "health_buffer",
+          "refs": [
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:384-435",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:558-560"
+          ],
+          "text": "The buffer applies reduction, positive minDamagePerHit even when calculated amount is zero, maxDamagePerHit, and IgnoreDamageFromSelfOrPlayerSource. For applyToNonPredicted=false and disabled Simulate, local processing continues without the final healthLookup write. Otherwise amount is accumulated; wasKilled overrides it to negative current health. ProtectiveArmor can set the accumulated change to zero and skip the health write. Other eligible paths clamp and write HealthCD; the buffer is cleared.",
+          "to": "health_write"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "outcomes",
+      "id": "completion:full-d:critter-after-pilot-dig/result/outcomes",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "5b398950c51e72001371f249a0476426346adb65590ae03fb7cc1650e6f02cf7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/outcomes"
+      },
+      "value": [
+        {
+          "kind": "conditional",
+          "text": "Eligible non-player target can receive a calculated health change after all applicable buffer gates; the critter call does not enable the GetDamageInfo godMode argument. No unconditional 1 damage or kill."
+        }
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "completion:full-d:critter-after-pilot-dig/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "50dc13ac9fc5239c059e4a7dbdc7d39b68cdd5978ff2f92eee1392f6f2571e01",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1/boundaries"
+      },
+      "value": [
+        "Runtime collision, components, faction/status, random state, health and resulting death are unobserved. The PlayerGhost branch is separate and its terminal effects are not investigated here. Corrected C1 is awaiting independent review."
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:D-followups-v2",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "follows",
+      "target": "completion:pilot:shovel-digging-spot-dirt-graveyard-1",
+      "kind": "action_completion",
+      "action": "dig_up_entity"
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "completion:full-d:critter-after-pilot-dig/role/0",
+      "kind": "participation_role",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:block-fire-mortar-9305-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:cave-in-9311-rock-5526-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:cave-in-9312-rock-5527-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:cicada-buzz-mortar-9322-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-beam-mortar-9313-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-ice-shard-mortar-9316-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-lava-mortar-9317-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-nilipede-mortar-9318-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-shockwave-9315-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-stalactite-9314-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:hydra-void-mortar-6613-spawn-6612-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:larva-hive-mortar-9300-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:mummy-mortar-9310-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:poison-slime-mortar-9301-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:robot-fire-mortar-9333-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:robot-fire-mortar-9333-variant1-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:robot-patroller-fire-9340-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:robot-patroller-oil-9339-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:robot-void-mortar-9332-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:robot-void-mortar-9332-variant1-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:scarab-mortar-9303-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:scarab-mortar-9304-spawn-3130-1-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:shaman-mortar-9302-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:stream-mortar-9326-bomb-9001-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:stream-mortar-9327-bomb-9002-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:stream-mortar-9328-bomb-9003-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:stream-mortar-9329-bomb-9010-v1/shared-consumer/2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "completion:A:stream-mortar-9330-bomb-9018-v1/shared-consumer/2"
+    ],
+    [
+      "has_followup_completion",
+      "completion:pilot:shovel-digging-spot-dirt-graveyard-1"
+    ],
+    [
+      "investigated_as",
+      "followup-resolution:D-followups-v2:1"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "gap-reviewed-reuse:soul-mask-projectile-three-v5:13"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "gap-reviewed-reuse:soul-mask-projectile-three-v5:2"
+    ],
+    [
+      "resolves_to_reviewed_evidence",
+      "gap-reviewed-reuse:soul-mask-projectile-three-v5:8"
+    ]
+  ]
+}

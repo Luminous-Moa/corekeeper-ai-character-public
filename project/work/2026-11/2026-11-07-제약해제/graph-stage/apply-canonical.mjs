@@ -1,0 +1,20 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),result=path.dirname(stage),work=path.resolve(result,'../..');
+const target=process.argv[2];if(!/^[0-9a-f]{40}$/.test(target??''))throw Error('exact final SHA required');
+const old='5a05b80c4fe1ea764caa62ee83d06ac7fb3177ef',repo='C:/Dev/CoreKeeperModSDK';
+if(execFileSync('git',['-C',repo,'rev-parse',target],{encoding:'utf8'}).trim()!==target)throw Error('candidate SHA absent');
+const graph=path.join(work,'지식그래프'),plan=path.join(work,'2026-11/2026-11-07-기획연결'),B=path.join(work,'2026-11/2026-11-05-지식그래프-개편/B'),C=path.join(work,'2026-11/2026-11-05-지식그래프-개편/C'),live=path.join(work,'2026-11/2026-11-05-지식그래프-실화면');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),json=o=>JSON.stringify(o,null,2)+'\n';
+const m=JSON.parse(fs.readFileSync(path.join(stage,'stage-manifest.json'),'utf8')),source=path.join(plan,'source.mjs');
+if(sha(fs.readFileSync(source))!==m.canonicalSourceSha256)throw Error('canonical changed after staging; rebase delta first');
+const backup=path.join(stage,'before-final-graph');if(fs.existsSync(backup))throw Error('backup already exists: inspect checkpoint instead of rerun');
+fs.mkdirSync(backup,{recursive:true});for(const [name,p] of [['지식그래프',graph],['기획연결',plan],['B',B],['C',C],['live-B',path.join(live,'B')],['live-C',path.join(live,'C')],['live-D',path.join(live,'D')]])fs.cpSync(p,path.join(backup,name),{recursive:true,filter:p=>!/[\\/](node_modules|bin|obj)([\\/]|$)/.test(p)});
+const deleted=execFileSync('git',['-C',repo,'diff','--name-only','--diff-filter=D',old,target,'--','Assets/AIPlayerSpike','Assets/HeadlessTools','Tools/ai-bridge','Tools/knowledge'],{encoding:'utf8'}).trim();if(deleted)throw Error('deleted files need explicit pin cleanup '+deleted);
+for(const name of ['pin-snapshot.mjs','build.mjs','verify.mjs']){const p=path.join(B,'extractor',name),s=fs.readFileSync(p,'utf8');if(!s.includes(old))throw Error('unexpected B commit '+name);fs.writeFileSync(p,s.replaceAll(old,target));}
+fs.appendFileSync(source,fs.readFileSync(path.join(stage,'canonical-addition.mjs.txt'),'utf8'));
+const cfgFile=path.join(graph,'tools/config.json'),cfg=JSON.parse(fs.readFileSync(cfgFile,'utf8')),files=execFileSync('git',['-C',repo,'ls-tree','-r','--name-only',target,'Assets/AIPlayerSpike/Scripts'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(p=>p.endsWith('.cs'));
+for(const p of files)if(!cfg.codeFiles.some(f=>f.path===p))cfg.codeFiles.push({container:'모드(게임 안에서 실행)',path:p});
+fs.writeFileSync(cfgFile,json(cfg));
+const overlayFile=path.join(live,'C/overlay-source.json'),overlay=JSON.parse(fs.readFileSync(overlayFile,'utf8').replace(/^\uFEFF/,''));overlay.baseCommit=target;fs.writeFileSync(overlayFile,json(overlay));
+fs.writeFileSync(path.join(stage,'applied-canonical.json'),json({sourceCommit:target,previous:old,backup,canonicalSourceBeforeSha256:m.canonicalSourceSha256,canonicalSourceAfterSha256:sha(fs.readFileSync(source)),codeFiles:files.length,codeExtractionCountPlanned:1,accepted:false,officialAtApply:execFileSync('git',['-C',repo,'rev-parse','HEAD'],{encoding:'utf8'}).trim(),liveGame:false,installed:false}));
+console.log('backup+planning delta+final pin configured '+target);

@@ -1,0 +1,8 @@
+requests 4
+celeris (celeris-1.1-decision): answers 8/8, latency p50 297ms p95 682ms max 682ms, tokens/call 5186, est. $0.000166
+
+id	options	logged	celeris
+sent.jsonl:1	7	-	c7 2/2
+sent.jsonl:2	9	-	c6 2/2
+sent.jsonl:3	4	-	c2 2/2
+sent.jsonl:4	15	-	c4 2/2

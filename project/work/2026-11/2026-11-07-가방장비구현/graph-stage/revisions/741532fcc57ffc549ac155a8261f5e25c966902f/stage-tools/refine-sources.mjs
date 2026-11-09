@@ -1,0 +1,12 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),G='work/지식그래프',L='work/2026-11/2026-11-05-지식그래프-실화면';
+const read=p=>fs.readFileSync(path.join(stage,p),'utf8'),write=(p,s)=>fs.writeFileSync(path.join(stage,p),s);
+let f=read(G+'/기획/기능.md').replace('AIBody.PickTool, AIBody.PickWeapon','AIBody.HandSlot, AIBody.WeaponSlotForAttack');
+const sites={equip:['Pug.Other/Inventory/Create.cs:223 Swap','Pug.Other/Inventory/InventoryUtility.cs:668 Swap'],hold:['Pug.Other/Inventory/Create.cs:223 Swap'],store:['Pug.Other/Inventory/Create.cs:125 MoveAmount','Pug.Other/Inventory/InventoryUtility.cs:831 MoveAmount'],take:['Pug.Other/Inventory/Create.cs:125 MoveAmount','Pug.Other/Inventory/InventoryUtility.cs:2539 GetAmountToMoveFromInventory'],drop:['Pug.Other/Inventory/Create.cs:100 DropItem','Pug.Other/Inventory/InventoryUtility.cs:695 DropItem'],give:['Pug.Other/Inventory/Create.cs:100 DropItem','Pug.Other/PickUpItemSystem.cs:554 CheckIfCanPickup']};
+for(const [id,rows] of Object.entries(sites))f=f.replace(new RegExp('(### F\\.bag-'+id+' [\\s\\S]*?)(?=\\n### |$)'),(_,block)=>block+'\n'+rows.map(s=>'- 게임 지점: '+s).join('\n')+'\n');
+write(G+'/기획/기능.md',f);
+const ps='work/2026-11/2026-11-07-기획연결/source.mjs';
+write(ps,read(ps)+`\nnodes.push(n('R.bag-rules','가방 이동·드롭·수령의 게임 정적 규칙','참고·게임 소비자 정적 조사','정상 UI DropItem과 게임 자동 줍기 소비 경로, 수량/권한/경쟁·상관관계 한계다. 실게임 성공 근거가 아니다.','bagRules','## 요청 API와 실제 소비'));\nedges.push(e('P.bag-equipment','R.bag-rules','참고: 정상 게임 입력·소비자 조사','bagRules','## 요청 API와 실제 소비'));\n`);
+const bs=L+'/D/bag-source.mjs';
+write(bs,read(bs).replace("add(id,'R.bag-validation','검증 범위·미관측',[loc]);","add(id,'R.bag-validation','검증 범위·미관측',[loc]);\n  add(id,'R.bag-rules','정상 게임 소비 규칙·경계',[{path:root+'transfer-rules.md',start:11}]);").replace("'AIPlanner.TryNextStep'","'AIPlanner.SetGoalFrom'"));
+console.log('Added verified static game consumer sites and preserved game-rule reference.');

@@ -1,0 +1,15 @@
+exec(open(__file__.replace('finaledit.py','edit.py'),encoding='utf8').read().split("edit(S+'Core/AIGoalKinds.cs'")[0])
+edit('Tools/ai-bridge/test/protocol.test.mjs',lambda s:s.replace("'plan must be a list of 1..10 goals'","'plan must be a nonempty list of goals'").replace("[{ decision: 'set', plan: Array(11).fill({ do: 'explore' }) }, 'plan must be a nonempty list of goals']","[{ decision: 'set', plan: Array(11).fill({ do: 'explore' }) }, null]"))
+edit('Tools/ai-bridge/test/fixtures/goal-contract.json',lambda s:s.replace('integer in 0..9999','integer in 0..2147483647'))
+def tunnel(s):
+ s=s.replace('Dictionary<string, (int2 t, int nov, int cost)> _best = new Dictionary<string, (int2, int, int)>()','Dictionary<int2, (int2 t, string dir, int nov, int cost)> _best = new Dictionary<int2, (int2, string, int, int)>()')
+ s=s.replace(' && _best.Count < 4','')
+ s=s.replace('if (math.cmax(math.abs(v)) >= 3 && ((c.x ^ c.y) & 1) == 0 && !_skip(c))','if (!_skip(c))')
+ s=s.replace('if (!_best.ContainsKey(dir))','if (!_best.ContainsKey(c))').replace('_best[dir] = (c, nov, f);','_best[c] = (c, dir, nov, f);')
+ s=s.replace('                    if (math.cmax(math.abs(nb - Start)) > 120) continue;\n','')
+ s=s.replace('Result.Add((kv.Value.t, kv.Key, kv.Value.nov, kv.Value.cost))','Result.Add((kv.Value.t, kv.Value.dir, kv.Value.nov, kv.Value.cost))')
+ s=s.replace('int2 lo = math.min(start, target) - 40, hi = math.max(start, target) + 40;','int2 lo = new int2(int.MinValue, int.MinValue), hi = new int2(int.MaxValue, int.MaxValue); // cost() still admits only observed/remembered tiles')
+ return s
+edit(S+'AITunnel.cs',tunnel)
+edit(S+'AIBrain.Candidates.cs',lambda s:s.replace('if (wantExplore && lExplore.Count == 0 && lDigExplore.Count == 0 && !(cur is TunnelSkill) && !walkingToNew)','if (wantExplore && !(cur is TunnelSkill) && !walkingToNew)'))
+edit(S+'AIPlaces.cs',lambda s:s.replace('g.note = Join(AIPlaces.ShortFact(g.item.ToString(), g.startCount, todo.Count, true), AIPlaces.SkippedText(SkipList(s)));','g.note = Join(AIPlaces.ShortFact(g.item.ToString(), g.startCount, g.count, true) + $" · 전체 {g.count}칸 중 현재 검사묶음 {todo.Count}칸", AIPlaces.SkippedText(SkipList(s)));'))

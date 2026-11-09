@@ -1,0 +1,12 @@
+stuck-F0 (132): finish_goal 132
+stuck-F1 (132): expedition_nav 125, request_plan 7
+stuck-F3 (132): finish_goal 128, expedition_nav 3, explore 1
+stuck-F13 (132): expedition_nav 132
+stuck-F1b (132): request_plan 81, expedition_nav 51
+stuck-F13b (132): expedition_nav 112, request_plan 11, explore 9
+acc-F0 (26): finish_goal 15, attack 11
+acc-F1 (26): attack 14, finish_goal 8, wait 2, expedition_nav 2
+acc-F3 (26): finish_goal 15, attack 11
+acc-F13 (26): attack 14, finish_goal 8, wait 2, expedition_nav 2
+acc-F1b (26): finish_goal 12, attack 12, wait 2
+acc-F13b (26): finish_goal 12, attack 12, wait 2

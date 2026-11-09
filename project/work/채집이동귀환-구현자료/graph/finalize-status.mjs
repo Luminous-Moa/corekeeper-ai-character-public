@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),work=path.resolve(stage,'../..'),canonical=path.join(work,'2026-11/2026-11-07-기획연결/source.mjs');
+const deltaPath=path.join(stage,'final-delta.json'),delta=JSON.parse(fs.readFileSync(deltaPath,'utf8'));
+Object.assign(delta.nodes.find(n=>n.id==='R.expedition-behavior-graph'),{title:'구현 준비 당시 조회한126판 행동 판단 그래프',status:'참고·당시126 게시본·개발용 정적 근거',summary:'구현 준비 당시 검수된126묶음·2460사례에서 대상→행위/처리→조건·결과·실패→원문을 조회했다. 후속 게시본 전체를 이번 구현의 검증으로 승계하지 않는다. 실제 사용한 조회는 R.expedition-game-evidence를 따른다. 게임 행동 전수완료·런타임 연결·실게임 성공의 뜻이 아니다.'});
+Object.assign(delta.nodes.find(n=>n.id==='R.expedition-direction'),{status:'참고·HEAD 수용 방향·구현결과 별도 참고',summary:'AIGathering 고정묶음, AITravel 탐색/목적지, AIExpedition 관측/맥락/선택의 책임을 기존 후보·AIActions·AISkill·AIPlanner에 연결하는 방향을 HEAD가 수용했다. 실제7af8f91 결과는 구현·오프라인·최종검수 참고를 따르며 조명시야는 후속 분리다.'});
+const old=fs.readFileSync(path.join(stage,'final-canonical-addition.mjs.txt'),'utf8');
+const addition='\n// 채집·이동·귀환 최종 합의/사용자 조명후속 결정과7af8f91의 정적·오프라인 근거.\nObject.assign(documents,'+JSON.stringify(delta.documents,null,2)+');\nnodes.push(...'+JSON.stringify(delta.nodes,null,2)+');\nedges.push(...'+JSON.stringify(delta.edges,null,2)+');\n';
+const source=fs.readFileSync(canonical,'utf8');if(!source.includes(old))throw Error('canonical delta changed; inspect before edit');
+fs.writeFileSync(canonical,source.replace(old,addition));fs.writeFileSync(deltaPath,JSON.stringify(delta,null,2)+'\n');fs.writeFileSync(path.join(stage,'final-canonical-addition.mjs.txt'),addition);
+console.log('Final current-versus-historical status aligned; no code extraction.');

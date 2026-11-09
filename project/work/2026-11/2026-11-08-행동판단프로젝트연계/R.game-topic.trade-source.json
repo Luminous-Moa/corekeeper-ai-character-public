@@ -1,0 +1,422 @@
+{
+  "origin": {
+    "normalizedValueSha256": "f99faf1f77694369241f7787077109d117f1c6c1826aedd8a8d64a531c22a4a8",
+    "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "pointer": "/groups/2/payload/extraction.json/records/50"
+  },
+  "value": {
+    "action": "buy_vending_item",
+    "assetEvidence": [
+      {
+        "data": {
+          "items": [
+            {
+              "amount": 0,
+              "objectID": 9603,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 9604,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 9605,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 9407,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 9408,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 9409,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 8875,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 5124,
+              "variation": 0
+            },
+            {
+              "amount": 0,
+              "objectID": 5122,
+              "variation": 0
+            }
+          ],
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "5562304862304203425"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "2967508877889240413"
+          },
+          "sizeX": 3,
+          "sizeY": 3
+        },
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8140779137854147935",
+        "rawByteSha256": "0a345c3050288c5ffb47a5ba98438b85ddd67ce86e7aa19995b9bb162635d7a0"
+      }
+    ],
+    "conditions": {
+      "UI": "nonempty product and coins >= calculated price",
+      "products": [
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 9603,
+          "consumerVariation": 0,
+          "index": 0,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 9603,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 3.1500000953674316,
+              "candidateConditionalPrice": 94,
+              "ingredientSources": [],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8480432100032941478"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 9604,
+          "consumerVariation": 0,
+          "index": 1,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 9604,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 2.75,
+              "candidateConditionalPrice": 82,
+              "ingredientSources": [],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2250625602572987246"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 9605,
+          "consumerVariation": 0,
+          "index": 2,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 9605,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 3.1700000762939453,
+              "candidateConditionalPrice": 95,
+              "ingredientSources": [],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6431392252953927506"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 9407,
+          "consumerVariation": 0,
+          "index": 3,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 9407,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 1.2000000476837158,
+              "candidateConditionalPrice": 108,
+              "ingredientSources": [
+                {
+                  "item": {
+                    "amount": 15,
+                    "objectID": 1632
+                  },
+                  "sources": [
+                    {
+                      "rarity": 0,
+                      "sellValue": -1,
+                      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:614923026990120542"
+                    }
+                  ]
+                }
+              ],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 15,
+                  "objectID": 1632
+                }
+              ],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:556345098491878841"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 9408,
+          "consumerVariation": 0,
+          "index": 4,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 9408,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 1.100000023841858,
+              "candidateConditionalPrice": 99,
+              "ingredientSources": [
+                {
+                  "item": {
+                    "amount": 15,
+                    "objectID": 1632
+                  },
+                  "sources": [
+                    {
+                      "rarity": 0,
+                      "sellValue": -1,
+                      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:614923026990120542"
+                    }
+                  ]
+                }
+              ],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 15,
+                  "objectID": 1632
+                }
+              ],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5401472201186765148"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 9409,
+          "consumerVariation": 0,
+          "index": 5,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 9409,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 1.0800000429153442,
+              "candidateConditionalPrice": 86,
+              "ingredientSources": [
+                {
+                  "item": {
+                    "amount": 15,
+                    "objectID": 1632
+                  },
+                  "sources": [
+                    {
+                      "rarity": 0,
+                      "sellValue": -1,
+                      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:614923026990120542"
+                    }
+                  ]
+                }
+              ],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 15,
+                  "objectID": 1632
+                }
+              ],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2614512721927292962"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 8875,
+          "consumerVariation": 0,
+          "index": 6,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 8875,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 7.5,
+              "candidateConditionalPrice": 2138,
+              "ingredientSources": [
+                {
+                  "item": {
+                    "amount": 5,
+                    "objectID": 1522
+                  },
+                  "sources": [
+                    {
+                      "rarity": 2,
+                      "sellValue": -1,
+                      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6105651072437799997"
+                    }
+                  ]
+                }
+              ],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 1,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 5,
+                  "objectID": 1522
+                }
+              ],
+              "sellValue": -1,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8326089344721494419"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 5124,
+          "consumerVariation": 0,
+          "index": 7,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 5124,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 5.300000190734863,
+              "candidateConditionalPrice": 3975,
+              "ingredientSources": [],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 3,
+              "requiredObjectsToCraft": [],
+              "sellValue": 150,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7172153351325046039"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        },
+        {
+          "consumerAmount": 1,
+          "consumerObjectId": 5122,
+          "consumerVariation": 0,
+          "index": 8,
+          "serializedItem": {
+            "amount": 0,
+            "objectID": 5122,
+            "variation": 0
+          },
+          "sourceVariants": [
+            {
+              "buyValueMultiplier": 3.190000057220459,
+              "candidateConditionalPrice": 3988,
+              "ingredientSources": [],
+              "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+              "priceFormulaRef": "vending_price",
+              "rarity": 2,
+              "requiredObjectsToCraft": [],
+              "sellValue": 250,
+              "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-353066696053816455"
+            }
+          ],
+          "unresolved": "runtime DB selection and exception components; formula retained if price null"
+        }
+      ]
+    },
+    "evidenceLevel": "code_linked",
+    "failureBranches": [
+      "UI balance insufficient: no request",
+      "read-only nonadmin and invalid/destroyed seller reject",
+      "invalid DB item or price <=0 no normal creation"
+    ],
+    "id": "CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item",
+    "inputProcessingConsumer": "VendingMachine UI -> Buy request -> tick -> InventoryUpdateSystem -> InventoryUtility.Buy",
+    "objectId": 5834,
+    "result": {
+      "result": "price >0: consume up to coin price then CreateObject(item ID, amount 1, variation 0); no stock decrement",
+      "space": "if no slot, drop may be scheduled"
+    },
+    "ruleRef": "vending",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817",
+    "unknown": [
+      "consumer does not check short coin-consumption return",
+      "consumption and creation not atomic",
+      "runtime DB, slots and drop existence"
+    ],
+    "variation": 0
+  },
+  "evidenceContext": {
+    "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+    "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+    "originalReferenceContext": {
+      "codeRoot": "../../../게임원본-상호작용/code",
+      "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+      "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+      "rawRoot": "../../../게임원본-상호작용"
+    },
+    "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+    "resolvedReferenceContext": {
+      "codeRoot": "../게임원본-상호작용/code",
+      "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+      "rawRoot": "../게임원본-상호작용"
+    },
+    "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+  }
+}

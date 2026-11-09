@@ -1,0 +1,6 @@
+﻿same mod (47 files)
+same aiplayers (43 files)
+same localsteam (200 files)
+same remote (52 files)
+same registry
+verify: 0 difference group(s)

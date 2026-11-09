@@ -1,0 +1,3 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AILife.cs:42-43 sha256=33486377d5983e7e00459f2a663696a4b384239f0fef6295ca3680ef81b9dc2d
+42:     public static bool BlocksInventoryView(World world, Entity player)
+43:     { var s = Sync(); return s.Cursor.Open && !s.ViewSuspended; }

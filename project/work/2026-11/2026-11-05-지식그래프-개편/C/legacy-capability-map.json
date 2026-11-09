@@ -1,0 +1,2702 @@
+{
+  "meta": {
+    "stage": "C-2",
+    "notStandardFunctions": true,
+    "notGraphEdges": true,
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "sourceGraphHash": "2c2a423b2119748f6d3a28e048de288b6aef25eabb0c72d70eb88bc1f66ee2c3",
+    "note": "codeAnchorMappings는 이름/서명 대응이며 call 추출 또는 현재 실게임 검증이 아니다."
+  },
+  "mappings": [
+    {
+      "legacyId": "F.thin-connect",
+      "title": "두 번째 플레이어로 접속",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:25",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-01"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIPlayerSpikeMod.Step1_CreateThinWorld, AIPlayerSpikeMod.Step1b_TrackHandshake, ThinClientDriverConstructor.CreateClientDriver, AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+      "oldPolicies": "pol.body-thinclient, pol.body-visible, pol.multi-ai, pol.join-toggle",
+      "observability": "Player.log \"STEP 1 OK\"; 화면에 두 번째 캐릭터",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Step1_CreateThinWorld",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step1_CreateThinWorld(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Step1b_TrackHandshake",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step1b_TrackHandshake(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "ThinClientDriverConstructor.CreateClientDriver",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#ThinClientDriverConstructor.CreateClientDriver(World, ref NetworkDriverStore, NetDebug)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ServerNetworkUpdatePrefix()"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.naming",
+      "title": "이름 'Claude'",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:40",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-01"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIPlayerSpikeMod.Step2_NameAndPrepareInput",
+      "oldPolicies": "pol.body-visible, pol.multi-ai",
+      "observability": "Player.log \"STEP 2 OK\"; 화면 이름표 'Claude'",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Step2_NameAndPrepareInput",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step2_NameAndPrepareInput(World)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.move-input",
+      "title": "입력 실행부(한 입력, 기본 정지)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:52",
+      "classification": "내부 처리 능력(활동/표준 기능 자동 승격 금지)",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIPlayerSpikeMod.Step2_NameAndPrepareInput, AIPlayerSpikeMod.Step3_Drive, AIPlayerSpikeMod.SetRoute, AIBody.Tick, WalkTestSkill.Start, WalkTestSkill.Tick",
+      "oldPolicies": "pol.realtime-by-program, pol.behavior-roles, pol.idle-stand",
+      "observability": "Player.log \"STEP 3 OK (walktest)\", \"SKILL <이름> START|DONE|FAILED|CANCELLED\"; 화면에서 기술이 없을 때 서 있음",
+      "contextActivityIds": [
+        "UA-02",
+        "UA-03",
+        "UA-04",
+        "UA-05"
+      ],
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Step2_NameAndPrepareInput",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step2_NameAndPrepareInput(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Step3_Drive",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.SetRoute",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.SetRoute(bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "WalkTestSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs#WalkTestSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "WalkTestSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs#WalkTestSkill.Tick(World, Entity, float)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.skill-look",
+      "title": "보기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:70",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "LookSkill.Start, LookSkill.Tick, AIObservation.Take, AIVision.HalfExtents, AIVision.CanSee, AITileReader.AITileReader, AITileReader.Layers, AITileReader.Top, AITileReader.Walkable, AITileReader.HasWall, AIWallData.TryGet, AIBody.HostPosition",
+      "oldPolicies": "pol.vision-human-view",
+      "observability": "채팅 \"보기: 범위 …\"; Player.log \"SKILL 보기 DONE … facts=[rule=…]\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "LookSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs#LookSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "LookSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs#LookSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIObservation.Take",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIObservation.cs#AIObservation.Take(World, Entity, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVision.HalfExtents",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIVision.cs#AIVision.HalfExtents()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVision.CanSee",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIVision.cs#AIVision.CanSee(float3, float2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITileReader.AITileReader",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AITileReader.AITileReader(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITileReader.Layers",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AITileReader.Layers(int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITileReader.Top",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AITileReader.Top(int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITileReader.Walkable",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AITileReader.Walkable(int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITileReader.HasWall",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AITileReader.HasWall(int2, out TileCD, out bool, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIWallData.TryGet",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AIWallData.TryGet(World, int, out int, out int, out ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.HostPosition",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.HostPosition(World, Entity)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.skill-inv",
+      "title": "가방 확인",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:83",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "InvSkill.Start, InvSkill.Tick",
+      "oldPolicies": "pol.body-progress",
+      "observability": "채팅 \"가방: …\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "InvSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs#InvSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "InvSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs#InvSkill.Tick(World, Entity, float)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.skill-goto",
+      "title": "지정한 곳까지 걷기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:93",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "GotoSkill.Start, GotoSkill.Tick, GotoSkill.Cleanup, GotoSkill.Progress, GotoSkill.EtaSeconds, AINavigator.Start, AINavigator.Tick, AINavigator.Retarget, AINavigator.Dispose, AINavigator.CreateHelper, AINavigator.SwitchToAStar, AINavigator.AStar, AIObjects.StuckAt",
+      "oldPolicies": "pol.realtime-by-program",
+      "observability": "채팅 \"AI 걷기 완료: 도착 (x,z), 길찾기 game-bfs\"; Player.log \"SKILL 걷기\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "GotoSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "GotoSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "GotoSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "GotoSkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.Progress(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "GotoSkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.Start(World, Entity, int2, float, float, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.Tick(World, Entity, float, out float2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.Retarget",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.Retarget(World, int2, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.Dispose",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.Dispose(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.CreateHelper",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.CreateHelper(World, Entity, int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.SwitchToAStar",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.SwitchToAStar(World, Entity, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AINavigator.AStar",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AINavigator.cs#AINavigator.AStar(AITileReader, int2, int2, System.Func<int2, bool>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIObjects.StuckAt",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIObjects.cs#AIObjects.StuckAt(Entity, int2, float)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.skill-mine",
+      "title": "벽·광석 캐기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:113",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "MineSkill.Start, MineSkill.Tick, MineSkill.Done, MineSkill.TryStandFor, MineSkill.Cleanup, MineSkill.Progress, MineSkill.EtaSeconds, AIWallData.EstimateMiningDamage, AIWallData.TileEntityHealth, AIBody.ChooseSlot, AIBody.InventoryCounts, AIBody.InventoryDiff, AIBody.DirTo, AIBody.TileOf",
+      "oldPolicies": "pol.body-progress, pol.realtime-by-program, pol.test-tools-ok",
+      "observability": "채팅 \"AI 캐기 완료: 벽 (x,z) 부숨 · 가방 …\"; Player.log \"SKILL 캐기\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "MineSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "MineSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "MineSkill.Done",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Done(World, Entity, float, AITileReader)"
+          ]
+        },
+        {
+          "legacyAnchor": "MineSkill.TryStandFor",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.TryStandFor(AITileReader, int2, float3, System.Collections.Generic.HashSet<int2>, System.Collections.Generic.HashSet<int2>, out int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "MineSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "MineSkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Progress(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "MineSkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIWallData.EstimateMiningDamage",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AIWallData.EstimateMiningDamage(World, Entity, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIWallData.TileEntityHealth",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITileReader.cs#AIWallData.TileEntityHealth(World, int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.ChooseSlot",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.ChooseSlot(World, Entity, bool, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.InventoryCounts",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryCounts(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.InventoryDiff",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryDiff(System.Collections.Generic.Dictionary<ObjectID, int>, System.Collections.Generic.Dictionary<ObjectID, int>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.DirTo",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.DirTo(float3, float2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.TileOf",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.TileOf(float3)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.skill-attack",
+      "title": "적 공격",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:132",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-05"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AttackSkill.Start, AttackSkill.Tick, AttackSkill.Alive, AttackSkill.Cleanup",
+      "oldPolicies": "pol.body-fight, pol.realtime-by-program",
+      "observability": "채팅 \"AI 공격 완료: <적> 처치\"; Player.log \"SKILL 공격: … hp a->b\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AttackSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AttackSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AttackSkill.Alive",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.Alive(EntityManager, out float3, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AttackSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.Cleanup(World)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.ai-char-load",
+      "title": "AI 전용 캐릭터로 들어오기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:146",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-01",
+        "UA-07"
+      ],
+      "standardFunctionIds": [
+        "hook:AIPlayerSpikePatches.CharacterDataPostfix"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AICharacterStore.Prepare, AIPlayerSpikePatches.CharacterDataPostfix, AIPlayerSpikePatches.SpawnLambdaPrefix, AIPlayerSpikePatches.SpawnLambdaPostfix",
+      "oldPolicies": "pol.ai-own-character, pol.ai-start-new, pol.ai-look-distinct, pol.multi-ai, pol.ai-per-world, pol.start-kit-role-only",
+      "observability": "Player.log \"AI character: server received character data for the AI's playerGuid\"; 화면에서 호스트와 다른 외형",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AICharacterStore.Prepare",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.CharacterDataPostfix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.SpawnLambdaPrefix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.SpawnLambdaPrefix(object[])"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.SpawnLambdaPostfix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.SpawnLambdaPostfix()"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.ai-char-save",
+      "title": "AI 캐릭터 저장과 이어하기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:161",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-07"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AICharacterStore.SaveFromServer",
+      "oldPolicies": "pol.ai-own-character, pol.body-progress, pol.ai-per-world, cand.save-timing",
+      "observability": "Player.log \"AI character: saved\"; 재접속 때 아이템 유지",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AICharacterStore.SaveFromServer",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.SaveFromServer(World, Entity, string)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.leave",
+      "title": "AI가 떠날 때 정리",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:174",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-07"
+      ],
+      "standardFunctionIds": [
+        "slash:ai",
+        "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+        "hook:AIPlayerSpikeMod.Shutdown"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIPlayerSpikeMod.DisposeThinWorld, AIPlayerSpikePatches.UnloadWorldsPrefix, AIPlayerSpikeMod.RequestServerDisconnect",
+      "oldPolicies": "pol.join-toggle, pol.ai-own-character",
+      "observability": "Player.log \"thin world disposed\"; 채팅 \"Claude 님이 접속을 종료했습니다.\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.DisposeThinWorld",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.DisposeThinWorld(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.UnloadWorldsPrefix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.UnloadWorldsPrefix()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.RequestServerDisconnect",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.RequestServerDisconnect(World)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.ai-toggle",
+      "title": "월드마다 AI 참여 켜기·끄기(기본 꺼짐)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:186",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-01"
+      ],
+      "standardFunctionIds": [
+        "slash:ai"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIPlayerSpikePatches.ChatSendPrefix, AIPlayerSpikeMod.FlushReplies, AIWorldSettings.Members, AIWorldSettings.Exists, AIWorldSettings.SetMember",
+      "oldPolicies": "pol.join-toggle, cand.toggle-chat",
+      "observability": "Player.log \"AI 'Claude' in this world: ON|OFF\", \"chat command from host\"; 채팅 \"AI Claude: 이 월드에서 …\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.ChatSendPrefix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.FlushReplies",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.FlushReplies()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIWorldSettings.Members",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIWorldSettings.Exists",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Exists(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIWorldSettings.SetMember",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.SetMember(string, string, bool)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.dev-build",
+      "title": "헤드리스 빌드·설치",
+      "legacyClass": "해석",
+      "legacyStatus": "사용 확인",
+      "source": "preserved/legacy/기획/기능.md:203",
+      "classification": "개발 도구 활동 관련 능력",
+      "activityIds": [
+        "UA-08"
+      ],
+      "standardFunctionIds": [
+        "cli:HeadlessSdk.BuildAndInstall",
+        "cli:HeadlessSdk.CompileCheck",
+        "cli:HeadlessSdk.ImportGameFiles",
+        "cli:HeadlessSdk.CreateMod"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "HeadlessSdk.ImportGameFiles, HeadlessSdk.CreateMod, HeadlessSdk.BuildAndInstall, HeadlessSdk.CompileCheck",
+      "oldPolicies": "pol.modsdk, pol.mod-source-no-dll",
+      "observability": "Logs\\headless-*.log \"[HeadlessSdk]\"; 게임 폴더 Mods\\AIPlayerSpike",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "HeadlessSdk.ImportGameFiles",
+          "codeIds": [
+            "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.ImportGameFiles()"
+          ]
+        },
+        {
+          "legacyAnchor": "HeadlessSdk.CreateMod",
+          "codeIds": [
+            "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.CreateMod()"
+          ]
+        },
+        {
+          "legacyAnchor": "HeadlessSdk.BuildAndInstall",
+          "codeIds": [
+            "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.BuildAndInstall()"
+          ]
+        },
+        {
+          "legacyAnchor": "HeadlessSdk.CompileCheck",
+          "codeIds": [
+            "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.CompileCheck()"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.goal-cmd",
+      "title": "호스트 채팅으로 목표 주기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:214",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02",
+        "UA-03"
+      ],
+      "standardFunctionIds": [
+        "slash:ai"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIGoals.HandleGoalCommand, AIGoals.SetGoal, AIGoals.ClearGoal, AIGoals.CheckDone, AIGoals.EndGoal, GoalSource.IsHost, AIBrain.StatusText",
+      "oldPolicies": "pol.selector-openai, pol.fewer-calls, pol.idle-stand, cand.goal-end-order-kept",
+      "observability": "Player.log \"GOAL set|done|cleared\"; 채팅 \"AI 목표: …\", \"AI 목표 완료: …\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIGoals.HandleGoalCommand",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])"
+          ]
+        },
+        {
+          "legacyAnchor": "AIGoals.SetGoal",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string, string)",
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string, string, int, int, string, string, int, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIGoals.ClearGoal",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.ClearGoal(GoalEnd)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIGoals.CheckDone",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.CheckDone(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIGoals.EndGoal",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.EndGoal(World, Entity, float, GoalEnd, EndOrder, string, string, string, string, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "GoalSource.IsHost",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#GoalSource.IsHost(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.StatusText",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.candidates",
+      "title": "실행 가능한 행동 후보 만들기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:227",
+      "classification": "내부 처리 능력(활동/표준 기능 자동 승격 금지)",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIBrain.BuildCandidates, AIBrain.ExploreTargets, AIBrain.ReachableInView, AIBrain.TryOreObject, AIBrain.BuildInput, AIBrain.PlanC, AIBrain.FrontierJobDone, AICandidateAssembler.Select, AICandidateAssembler.KeyLabel, AICandidateAssembler.EntityOrder, AICandidateAssembler.CombatOrder, AIBrain.CandBuild.Prep, AIBrain.CandBuild.Continue, AIBrain.CandBuild.Enemies, AIBrain.CandBuild.CombatOptions, AIBrain.CandBuild.Food, AIBrain.CandBuild.Walls, AIBrain.CandBuild.DigOre, AIBrain.CandBuild.Breakables, AIBrain.CandBuild.Roots, AIBrain.CandBuild.RememberedOres, AIBrain.CandBuild.Items, AIBrain.CandBuild.Follow, AIBrain.CandBuild.Help, AIBrain.CandBuild.Explore, AIBrain.CandBuild.Assemble, AIBrain.FightNote, AIBrain.KillSeconds, AITunnel.FrontierJob.FrontierJob, AITunnel.FrontierJob.Step, AITunnel.FrontierJob.Cost",
+      "oldPolicies": "pol.behavior-roles, pol.combat-options, pol.vision-human-view, pol.explore-dig-by-model, pol.explore-end-when-nothing, cand.v2-design, cand.fail-memory",
+      "observability": "Player.log \"DECISION #n SEND … candidates=k | c1 … | c2 …\", \"BRAIN: left out after repeated failures\"",
+      "contextActivityIds": [
+        "UA-02",
+        "UA-03",
+        "UA-04",
+        "UA-05"
+      ],
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIBrain.BuildCandidates",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.BuildCandidates(World, Entity, AIObservation, bool, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.ExploreTargets",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.ExploreTargets(System.Collections.Generic.HashSet<int2>, AIObservation, int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.ReachableInView",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.ReachableInView(AITileReader, AIObservation, int2, System.Collections.Generic.HashSet<int2>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.TryOreObject",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.TryOreObject(World, int, out ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.BuildInput",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.BuildInput(World, Entity, AIObservation, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.PlanC",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs#AIBrain.PlanC(World, Entity, int2, out string, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.FrontierJobDone",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.FrontierJobDone(AIBrain.State, float, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICandidateAssembler.Select",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs#AICandidateAssembler.Select(AsmInput, System.Func<AsmCand, bool>, System.Func<AsmCand, bool>, out string, out bool, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICandidateAssembler.KeyLabel",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs#AICandidateAssembler.KeyLabel(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICandidateAssembler.EntityOrder",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs#AICandidateAssembler.EntityOrder(AsmCand)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICandidateAssembler.CombatOrder",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs#AICandidateAssembler.CombatOrder(AsmCand)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Prep",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Prep()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Continue",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Continue()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Enemies",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Enemies()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.CombatOptions",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.CombatOptions()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Food",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Food()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Walls",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Walls()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.DigOre",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Breakables",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Roots",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Roots()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.RememberedOres",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Items",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Follow",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Help",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Help()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Explore",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Assemble",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.FightNote",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.FightNote(ObjectID, SeenEnemy, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.KillSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.KillSeconds(ObjectID, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.FrontierJob.FrontierJob",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.FrontierJob.FrontierJob(World, Entity, System.Func<int2, bool>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.FrontierJob.Step",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.FrontierJob.Step(int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.FrontierJob.Cost",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.FrontierJob.Cost(int2)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.action-select",
+      "title": "현장 행동 고르기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:258",
+      "classification": "내부 처리 능력(활동/표준 기능 자동 승격 금지)",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIBrain.Tick, AIBrain.Send, AIBrain.HandleResponse, AISkill.EtaSeconds, AIDecisionsApi.Post, AIDecisionsApi.Read, AIDecisionsApi.ParseAnswerFallback, AIBrain.StaleReason, AIBrain.Apply, AIActions.Make, AIActions.Stale, AIActions.MineStale, AIActions.AttackStale, AIActions.PickupStale, AIActions.AwayStale, AIActions.EatStale, AIActions.DigStale, AIActions.ContinueStale, AIBrain.CallFailed, AIBrain.OnSkillEnded, AIBrain.Reset, AIBrain.BuildJson, AIDecisionsApi.ApiKey, AIDecisionsApi.Settings, AIDecisionsApi.AddUsage, WaitSkill.Start, WaitSkill.Tick",
+      "oldPolicies": "pol.selector-openai, pol.behavior-roles, pol.fewer-calls, pol.call-interval, pol.cost-ceiling, pol.cost-cap-200, pol.decision-chat-off, pol.combat-options, cand.score-first, cand.v2-design, cand.cost-cap-70",
+      "observability": "Player.log \"DECISION #n SEND|RESULT … APPLY|DISCARD\", \"DECISION #n SEND (prefetch)\", \"… QUEUED\", \"DECISION #n queued answer APPLY at skill end\", \"COST cap reached\", \"BRAIN: AI is down|back up\"; AIPlayers/decisions-usage.json",
+      "contextActivityIds": [
+        "UA-02",
+        "UA-03",
+        "UA-04",
+        "UA-05"
+      ],
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIBrain.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.Send",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Send(World, Entity, float, string, bool, bool, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.HandleResponse",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.HandleResponse(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AISkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AISkill.cs#AISkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIDecisionsApi.Post",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Post(string, string, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIDecisionsApi.Read",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Read(UnityWebRequest)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIDecisionsApi.ParseAnswerFallback",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.ParseAnswerFallback(string, out int, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.StaleReason",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.StaleReason(World, Entity, float, AICandidate, float, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.Apply",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Apply(World, Entity, float, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.Make",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.Make(AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.Stale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.Stale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.MineStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.MineStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.AttackStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.AttackStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.PickupStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.PickupStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.AwayStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.AwayStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.EatStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.EatStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.DigStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.DigStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIActions.ContinueStale",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.ContinueStale(World, Entity, AICandidate)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CallFailed",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.CallFailed(World, Entity, float, string, FailKind)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.OnSkillEnded",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.OnSkillEnded(AISkill, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.Reset",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.Reset()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.BuildJson",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.BuildJson(string, System.Collections.Generic.List<AICandidate>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIDecisionsApi.ApiKey",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.ApiKey()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIDecisionsApi.Settings",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIDecisionsApi.AddUsage",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.AddUsage(int, double)"
+          ]
+        },
+        {
+          "legacyAnchor": "WaitSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#WaitSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "WaitSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#WaitSkill.Tick(World, Entity, float)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.skill-dig",
+      "title": "막힌 대상 쪽으로 파 들어가기",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:283",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "TunnelSkill.Start, TunnelSkill.Tick, TunnelSkill.Cleanup, TunnelSkill.Progress, TunnelSkill.EtaSeconds, AITunnel.Plan, AITunnel.PlannedDamage, AITunnel.RecordHeld, AITunnel.Heap.Push, TunnelPlan.WallSummary",
+      "oldPolicies": "pol.dig-and-explore-first, pol.body-progress, pol.vision-human-view, pol.realtime-by-program",
+      "observability": "채팅 \"AI 파들어가기 완료|실패: …\"; Player.log \"SKILL 파들어가기: plan|step|child\", \"SKILL 파들어가기 DONE|FAILED\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "TunnelSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "TunnelSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "TunnelSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "TunnelSkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.Progress(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "TunnelSkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.Plan",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.Plan(World, Entity, int2, out string, int, bool, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.PlannedDamage",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.PlannedDamage(World, Entity, out int, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.RecordHeld",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.RecordHeld(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITunnel.Heap.Push",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.Heap.Push(int, int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "TunnelPlan.WallSummary",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelPlan.WallSummary()"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.explore-memory",
+      "title": "탐색 기억(본 곳·서 본 곳·본 광석·제작대·배운 떨굼)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:298",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-02"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIMemory.Observe, AIMemory.Save, AIMemory.Novelty, AIMemory.RememberedOres, AIMemory.CountOres, AIMemory.Summary, AIMemory.Ago, AIMemory.SeenTile, AIBrain.ExploreTargets, AIBrain.ReachableInView, AIBrain.CandBuild.Explore, AIBrain.CandBuild.RememberedOres",
+      "oldPolicies": "pol.dig-and-explore-first, pol.vision-human-view, pol.ai-per-world",
+      "observability": "Player.log \"MEMORY loaded|summary|… seen gone\", \"BRAIN: no path to … left out\"; 판단 입력의 \"탐색 기억(이 월드): …\"; `AIPlayers/<월드>/memory.json`",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIMemory.Observe",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Observe(World, Entity, float, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.Save",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Save(bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.Novelty",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Novelty(int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.RememberedOres",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.RememberedOres(float3, ObjectID, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.CountOres",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.CountOres(ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.Summary",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Summary()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.Ago",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ago(long)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.SeenTile",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.SeenTile(int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.ExploreTargets",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.ExploreTargets(System.Collections.Generic.HashSet<int2>, AIObservation, int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.ReachableInView",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.ReachableInView(AITileReader, AIObservation, int2, System.Collections.Generic.HashSet<int2>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Explore",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.RememberedOres",
+          "codeIds": []
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.ai-weapon",
+      "title": "기본 무기를 갖고 무기를 들고 싸운다",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:312",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-05"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AICharacterStore.ChooseStarterWeapon, AICharacterStore.EnsureWeaponOnce, AICharacterStore.CraftableAt, AIBody.WeaponSlotForAttack, AIBody.FindWeapon/2, AIBody.FindWeapon/3, AIBody.SlotBroken, AIVitals.HitKey",
+      "oldPolicies": "pol.weapon-default, pol.body-fight, pol.start-kit-role-only",
+      "observability": "Player.log \"AI character: starter weapon choice|granted starter weapon|has a weapon already\", \"SKILL 공격: swapped …\"; 채팅 \"AI: 기본 무기 …\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AICharacterStore.ChooseStarterWeapon",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.ChooseStarterWeapon(out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICharacterStore.EnsureWeaponOnce",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.EnsureWeaponOnce(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICharacterStore.CraftableAt",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.CraftableAt(World, ObjectID, ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.WeaponSlotForAttack",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.WeaponSlotForAttack(World, Entity, out string, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.FindWeapon",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.FindWeapon(World, Entity)",
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.FindWeapon(World, Entity, out bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.FindWeapon",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.FindWeapon(World, Entity)",
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.FindWeapon(World, Entity, out bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBody.SlotBroken",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.SlotBroken(World, Entity, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.HitKey",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.HitKey(ObjectID, bool)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.combat-options",
+      "title": "전투 선택지(거리 벌리기·물러나기·먹기)와 전투 중 다시 판단",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:328",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-05"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIBrain.SelfDefence, AIBrain.CandBuild.CombatOptions, AIBrain.CandBuild.Food, EatSkill.Start, EatSkill.Tick, EatSkill.Count, EatSkill.EatSkill, KeepAwaySkill.Start, KeepAwaySkill.Tick, KeepAwaySkill.Cleanup, KeepAwaySkill.Progress, KeepAwaySkill.KeepAwaySkill, KeepAwaySkill.EtaSeconds, AttackSkill.EtaSeconds, EatSkill.EtaSeconds, RetreatSkill.EtaSeconds, RetreatSkill.Start, RetreatSkill.Tick, RetreatSkill.NextLeg, RetreatSkill.Cleanup, RetreatSkill.RetreatSkill, AIItems.ToHotbar, AISkill.Progress, AttackSkill.Progress",
+      "oldPolicies": "pol.combat-options, pol.behavior-roles, pol.reflex-minimal-now, pol.vision-human-view, pol.self-defence, pol.combat-rate-max, pol.combat-choice-design, cand.v2-design",
+      "observability": "Player.log \"DECISION #n SEND … 거리 벌리기|물러나기|먹기 …\", \"SKILL 거리 벌리기|물러나기|먹기 DONE|FAILED\", \"BRAIN: chose the running action again\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIBrain.SelfDefence",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.SelfDefence(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.CombatOptions",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.CombatOptions()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Food",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Food()"
+          ]
+        },
+        {
+          "legacyAnchor": "EatSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#EatSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "EatSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#EatSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "EatSkill.Count",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#EatSkill.Count(World, Entity, ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "EatSkill.EatSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#EatSkill.EatSkill(ObjectID, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "KeepAwaySkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#KeepAwaySkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "KeepAwaySkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#KeepAwaySkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "KeepAwaySkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#KeepAwaySkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "KeepAwaySkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#KeepAwaySkill.Progress(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "KeepAwaySkill.KeepAwaySkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#KeepAwaySkill.KeepAwaySkill(float, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "KeepAwaySkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#KeepAwaySkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AttackSkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "EatSkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#EatSkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "RetreatSkill.EtaSeconds",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#RetreatSkill.EtaSeconds(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "RetreatSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#RetreatSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "RetreatSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#RetreatSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "RetreatSkill.NextLeg",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#RetreatSkill.NextLeg(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "RetreatSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#RetreatSkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "RetreatSkill.RetreatSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#RetreatSkill.RetreatSkill(int2, string, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIItems.ToHotbar",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIItems.ToHotbar(World, Entity, ObjectID, int, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AISkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AISkill.cs#AISkill.Progress(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AttackSkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.Progress(World, Entity)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.vitals",
+      "title": "쓰러짐 기록과 전투 관찰값",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:355",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-05"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIVitals.Tick, AIVitals.RecordHit, AIVitals.HitStats, AIVitals.TakenStats, AIVitals.HpChange, AIVitals.NoteChoice, AIVitals.NoteAte, AIVitals.NoteAway, AIVitals.ExportLearned, AIVitals.ImportLearned, AIVitals.Reset, AIItems.HealInfo, AIItems.HealingInInventory",
+      "oldPolicies": "pol.combat-options, pol.vision-human-view",
+      "observability": "Player.log \"VITALS: DOWN #n …\", \"VITALS: stood up again\"; 채팅 \"AI 쓰러짐 #n\"; `AIPlayers/<월드>/deaths.log`",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIVitals.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.RecordHit",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.RecordHit(ObjectID, int, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.HitStats",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.HitStats(ObjectID, out float, out float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.TakenStats",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.TakenStats(ObjectID, out float, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.HpChange",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.HpChange(float, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.NoteChoice",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.NoteChoice(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.NoteAte",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.NoteAte(ObjectID, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.NoteAway",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.NoteAway(ObjectID, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.ExportLearned",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.ExportLearned()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.ImportLearned",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.ImportLearned(int[])"
+          ]
+        },
+        {
+          "legacyAnchor": "AIVitals.Reset",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIVitals.Reset()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIItems.HealInfo",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIItems.HealInfo(World, ObjectID, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIItems.HealingInInventory",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIItems.HealingInInventory(World, Entity)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.llm-goal",
+      "title": "위쪽 LLM(구독 CLI)이 다음 목표를 정함(첫 조각)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:367",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-04"
+      ],
+      "standardFunctionIds": [
+        "slash:ai",
+        "ai-bridge:POST /v1/plan"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIPlanner.Enable, AIPlanner.Disable, AIPlanner.Tick, AIPlanner.Apply, AIPlanner.Check, AIPlanProtocol.Read, AIPlanReport.ReportJson, AIPlanReport.Esc, AIPlanner.OnGoalEnded, AIPlanner.OnBackUp, AIPlanner.OnHostGoal, AIPlanner.AddEvent, AIPlanner.StatusText, AIPlanner.HealthProbe, AIPlanner.Post, PlanInbox.Put, PlanInbox.TryTake, PlanInbox.Clear, AIGoals.SetGoal, AIGoals.EndGoal, GoalSource.IsHost, GoalSource.IsLlm",
+      "oldPolicies": "pol.llm-subscription, pol.behavior-roles, pol.vision-human-view, pol.fewer-calls, pol.refactor-json-fix-accepted, cand.refactor-head-accepted-diffs, cand.goal-end-order-kept",
+      "observability": "Player.log \"PLANNER: report #n sent|answer|APPLY|DROPPED\", \"bridge not reachable\"; 채팅 \"[Claude] …\", \"AI 목표(위쪽 LLM): …\"; 브리지 `Tools/ai-bridge/logs/plan.jsonl`",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlanner.Enable",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Enable(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Disable",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Disable(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Apply",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Check",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIPlanProtocol.Read",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs#AIPlanProtocol.Read(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanReport.ReportJson",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanReport.cs#AIPlanReport.ReportJson(World, Entity, string, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanReport.Esc",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanReport.cs#AIPlanReport.Esc(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.OnGoalEnded",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnGoalEnded(World, Entity, string, string, string, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.OnBackUp",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnBackUp(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.OnHostGoal",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(World, Entity, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.AddEvent",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.AddEvent(string, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.StatusText",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.StatusText()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.HealthProbe",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Post",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Post(AIAgent, PlanTrigger)"
+          ]
+        },
+        {
+          "legacyAnchor": "PlanInbox.Put",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs#PlanInbox.Put(PlanTrigger)"
+          ]
+        },
+        {
+          "legacyAnchor": "PlanInbox.TryTake",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs#PlanInbox.TryTake(out PlanTrigger)"
+          ]
+        },
+        {
+          "legacyAnchor": "PlanInbox.Clear",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs#PlanInbox.Clear()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIGoals.SetGoal",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string, string)",
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string, string, int, int, string, string, int, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIGoals.EndGoal",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.EndGoal(World, Entity, float, GoalEnd, EndOrder, string, string, string, string, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "GoalSource.IsHost",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#GoalSource.IsHost(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "GoalSource.IsLlm",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#GoalSource.IsLlm(string)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.free-time",
+      "title": "위쪽 LLM을 지금 못 쓸 때의 자유 시간",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:390",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-04"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIGoals.FreeTime, AIPlanner.FreeTimeReason, AIPlanner.Down, AIBase.FreeStoreCandidates",
+      "oldPolicies": "pol.behavior-roles, pol.llm-subscription",
+      "observability": "Player.log \"GOAL free time rev=…\", \"GOAL free time ends after …\", \"PLANNER: upper LLM unavailable (…); auto stays on, asking again in …s\", \"PLANNER: report '…' kept for the retry\"; 판단 기록 \"set=free-time\"; 채팅 \"[이름] 위쪽 LLM을 지금 쓸 수 없음(…)\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIGoals.FreeTime",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIPlanner.FreeTimeReason",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIPlanner.Down",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Down(float, string, float, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBase.FreeStoreCandidates",
+          "codeIds": []
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.multi-ai",
+      "title": "AI 캐릭터 여럿(단톡방 멤버마다 하나)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:403",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-01"
+      ],
+      "standardFunctionIds": [
+        "slash:ai",
+        "hook:AIPlayerSpikeMod.Update"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIAgent.Enter, AIAgent.Find, AIAgent.ById, AIAgent.Get, AIAgent.Outside, AIPlayerSpikeMod.Update, AIPlayerSpikeMod.DisposeAll, AIPlayerSpikeMod.IsAiPlayer, AIPlayerSpikeMod.Pump, AIPlayerSpikeMod.TryHandleChatCommand, AIPlayerSpikeMod.DefaultAgent, AIPlayerSpikePatches.CharacterDataPostfix, AIMemory.CharDir",
+      "oldPolicies": "pol.ai-own-character, pol.ai-per-world, pol.ai-look-distinct, pol.vision-human-view, pol.body-thinclient, pol.multi-ai, cand.memory-per-character",
+      "observability": "Player.log 줄마다 \"@이름\"; \"STEP 1 OK: … thinEndpoint=127.0.0.1:778x\", \"playerIndex=n\"; 채팅 \"[이름] …\", \"/ai\" 한 줄 상태; `AIPlayers/<월드>/<id>/memory.json`·`deaths.log`; `decisions-usage.json`의 who 배열; \"PERF 30s: AIs in world n\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIAgent.Enter",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.Enter(AIAgent)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIAgent.Find",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.Find(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIAgent.ById",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.ById(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIAgent.Get",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIAgent.Outside",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.Outside()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Update",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.DisposeAll",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.DisposeAll(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.IsAiPlayer",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.IsAiPlayer(Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Pump",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Pump()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.TryHandleChatCommand",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.DefaultAgent",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.DefaultAgent()"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikePatches.CharacterDataPostfix",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMemory.CharDir",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.CharDir(string)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.motion-boundary",
+      "title": "바꾸기는 동작 경계에서(판단은 최대 속도 그대로)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:423",
+      "classification": "내부 처리 능력(활동/표준 기능 자동 승격 금지)",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIMotion.Frame, AIMotion.Swing, AIMotion.TickRate, AIMotion.ServerTick, AIMotion.IntervalNote, AIMotion.SpeedStats, AIMotion.CooldownOf, AIMotion.StateOf, AIBrain.ApplyOrHold, AIBrain.TryApplyHeld, AIBrain.Switch, AIBrain.EmergencyNow, AIBrain.EnemiesWithin, AIBrain.IsEmergencyTrigger, AIBrain.SwitchHistory, AIBrain.CombatTrack",
+      "oldPolicies": "pol.combat-rate-max, pol.combat-choice-design, pol.motion-real-speed, cand.motion-boundary",
+      "observability": "Player.log \"DECISION #n RESULT … HOLD until the motion boundary\", \"held switch APPLY (boundary|idle|timeout)\", \"SWITCH … at boundary|emergency|idle\", \"REVERSAL\", \"MID-MOTION\", \"MOTION swing #n item=… game cooldown timer …s … observed interval median …\", \"COMBAT #n result: switches …\"",
+      "contextActivityIds": [
+        "UA-02",
+        "UA-03",
+        "UA-04",
+        "UA-05"
+      ],
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIMotion.Frame",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.Frame(World, Entity, AISkill, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.Swing",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.Swing(World, Entity, out float, out float, out uint)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.TickRate",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.TickRate(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.ServerTick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.ServerTick(World, out Unity.NetCode.NetworkTick)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.IntervalNote",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.IntervalNote(ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.SpeedStats",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.SpeedStats(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.CooldownOf",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.CooldownOf(ObjectID)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIMotion.StateOf",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#AIMotion.StateOf(AIAgent)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.ApplyOrHold",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.ApplyOrHold(World, Entity, float, AICandidate, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.TryApplyHeld",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.TryApplyHeld(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.Switch",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Switch(World, Entity, float, AICandidate, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.EmergencyNow",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.EmergencyNow(World, Entity, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.EnemiesWithin",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.EnemiesWithin(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.IsEmergencyTrigger",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.IsEmergencyTrigger(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.SwitchHistory",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.SwitchHistory(float, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CombatTrack",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.CombatTrack(float, bool, string)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.teammates",
+      "title": "화면에 보이는 동료(호스트·다른 AI)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:443",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-05"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AITeammates.Visible, AIBrain.CandBuild.Follow, AIBrain.CandBuild.Help, AITeammates.NearEnemyNote, AITeammates.Summary, AITeammates.StateOf, FollowSkill.FollowSkill, FollowSkill.Start, FollowSkill.Tick, FollowSkill.Where, FollowSkill.Cleanup, FollowSkill.Progress",
+      "oldPolicies": "pol.multi-ai, pol.vision-human-view, cand.teammates-on-screen, cand.memory-per-character",
+      "observability": "Player.log \"DECISION #n SEND … players=[…]\", \"| follow_n 동료 따라가기 —\", \"| attack_n 동료 돕기(공격) —\", \"SKILL 따라가기 DONE|FAILED\"; 위쪽 LLM 보고 \"visible_players\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AITeammates.Visible",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AITeammates.Visible(Unity.Entities.World, Unity.Entities.Entity, System.Collections.Generic.List<SeenEnemy>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Follow",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIBrain.CandBuild.Help",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Help()"
+          ]
+        },
+        {
+          "legacyAnchor": "AITeammates.NearEnemyNote",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AITeammates.NearEnemyNote(Unity.Mathematics.float3)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITeammates.Summary",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AITeammates.Summary(System.Collections.Generic.List<SeenPlayer>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITeammates.StateOf",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AITeammates.StateOf(AIAgent)"
+          ]
+        },
+        {
+          "legacyAnchor": "FollowSkill.FollowSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#FollowSkill.FollowSkill(Unity.Entities.Entity, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "FollowSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#FollowSkill.Start(Unity.Entities.World, Unity.Entities.Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "FollowSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#FollowSkill.Tick(Unity.Entities.World, Unity.Entities.Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "FollowSkill.Where",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#FollowSkill.Where(Unity.Entities.World, out Unity.Mathematics.float3)"
+          ]
+        },
+        {
+          "legacyAnchor": "FollowSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#FollowSkill.Cleanup(Unity.Entities.World)"
+          ]
+        },
+        {
+          "legacyAnchor": "FollowSkill.Progress",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#FollowSkill.Progress(Unity.Entities.World, Unity.Entities.Entity)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.test-switch",
+      "title": "시험 전용 명령은 스위치 파일 뒤에",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:460",
+      "classification": "개발 도구 활동 관련 능력",
+      "activityIds": [
+        "UA-08"
+      ],
+      "standardFunctionIds": [
+        "slash:ai"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIBody.IsTestCommand, AIPlayerSpikeMod.Dispatch, AITestSwitches.Refresh, AITestSwitches.Write",
+      "oldPolicies": "pol.behavior-roles",
+      "observability": "Player.log \"chat command '/ai …' refused: test-only commands are off\"; 채팅 \"…은(는) 시험용 명령이라 꺼져 있습니다\"; Player.log \"TEST-ONLY close-fight candidate set: OFF|ON\", \"TEST-ONLY decisionlog: ON|OFF\", SEND 줄 \"set=close-fight|set=all(close-fight off)\"; `AIPlayers/decisions-*.log` \"DECISION #n INPUT|ANSWER\"",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIBody.IsTestCommand",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.IsTestCommand(string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlayerSpikeMod.Dispatch",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITestSwitches.Refresh",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.Refresh(float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AITestSwitches.Write",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.Write(string)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.craft",
+      "title": "기본 제작과 준비 경로(모으기 → 만들기 → 놓기 → 계속)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:475",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-03"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AICraft.QueueCraft, AICraft.CraftBufferEntity, AICraft.CursorItem, AICraft.HotbarSlotFor, CraftSkill.CraftSkill, CraftSkill.Start, CraftSkill.Tick, CraftSkill.Cleanup, PlaceSkill.PlaceSkill, PlaceSkill.Start, PlaceSkill.Tick, RootSkill.RootSkill, RootSkill.Start, RootSkill.Tick, RootSkill.Cleanup, BreakSkill.BreakSkill, BreakSkill.Start, BreakSkill.Tick, BreakSkill.Alive, BreakSkill.Cleanup",
+      "oldPolicies": "pol.behavior-roles, pol.vision-human-view, cand.v2-design",
+      "observability": "Player.log \"BRAIN: preparation:\", \"SKILL 만들기|놓기|뿌리 캐기|부수기 DONE|FAILED\", \"SKILL 만들기: craft request … (via UIActionBuffer…)\", \"BODY: item on the cursor\"; 채팅 `/ai craftinfo`(시험용)",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AICraft.QueueCraft",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#AICraft.QueueCraft(World, Entity, Entity, ObjectID, int, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICraft.CraftBufferEntity",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#AICraft.CraftBufferEntity(World, out Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICraft.CursorItem",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#AICraft.CursorItem(World, Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "AICraft.HotbarSlotFor",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#AICraft.HotbarSlotFor(World, Entity, ObjectID, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "CraftSkill.CraftSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#CraftSkill.CraftSkill(AICraftSelection)",
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#CraftSkill.CraftSkill(ObjectID, int, Entity, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "CraftSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#CraftSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "CraftSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#CraftSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "CraftSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#CraftSkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "PlaceSkill.PlaceSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlace.cs#PlaceSkill.PlaceSkill(ObjectID)",
+            "code:Assets/AIPlayerSpike/Scripts/AIPlace.cs#PlaceSkill.PlaceSkill(ObjectID, int2, bool, int2?, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "PlaceSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlace.cs#PlaceSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "PlaceSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlace.cs#PlaceSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "RootSkill.RootSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#RootSkill.RootSkill(int2)"
+          ]
+        },
+        {
+          "legacyAnchor": "RootSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#RootSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "RootSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#RootSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "RootSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#RootSkill.Cleanup(World)"
+          ]
+        },
+        {
+          "legacyAnchor": "BreakSkill.BreakSkill",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#BreakSkill.BreakSkill(Entity)"
+          ]
+        },
+        {
+          "legacyAnchor": "BreakSkill.Start",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#BreakSkill.Start(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "BreakSkill.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#BreakSkill.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "BreakSkill.Alive",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#BreakSkill.Alive(EntityManager, out float3, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "BreakSkill.Cleanup",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs#BreakSkill.Cleanup(World)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.exp-memory",
+      "title": "위쪽 LLM의 경험 기억(목표 시도·결과·까닭별 막힘 판정)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인",
+      "source": "preserved/legacy/기획/기능.md:501",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-06"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIExperience.GoalStarting, AIExperience.GoalEnding, AIExperience.Tick, AIExperience.ReportPart, AIExperience.PlanResult, AIExperience.BaseSet, AIExperience.OnReset, ExpRecorder.ExpRecorder, ExpRecorder.Load, ExpRecorder.GoalStart, ExpRecorder.GoalEnd/5, ExpRecorder.GoalEnd/8, ExpRun.Classify, ExpRecorder.Down, ExpRecorder.Event, ExpRecorder.Report, ExpRecorder.SaveState",
+      "oldPolicies": "pol.exp-no-repeat-misfit, pol.exp-retry-allowed, pol.exp-no-extra-calls, pol.exp-keep-world-memory, pol.exp-link-by-id, pol.combat-fit-criterion, pol.llm-subscription, cand.exp-cause-rules, cand.exp-wait-backoff, cand.memory-per-character",
+      "observability": "Player.log \"EXP: goal run … ended\", \"EXP: report part\"; `AIPlayers/<월드>/<id>/events.jsonl`·`goals.jsonl`·`exp_state.json`; 브리지 `plan.jsonl`의 보고 `experience` 칸; 오프라인 시험 `Tools/exp-sim`(`dotnet run -c Release`)",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIExperience.GoalStarting",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.GoalStarting(World, Entity, AIGoal, AIGoal)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.GoalEnding",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.GoalEnding(AIGoal, GoalEnd)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.ReportPart",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.ReportPart(World, Entity, System.Collections.Generic.IList<string>)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.PlanResult",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.PlanResult(string, int, string, string, string, string, string, string, float, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.BaseSet",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.BaseSet(World, Entity, int2, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.OnReset",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.OnReset()"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.ExpRecorder",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.ExpRecorder(string, string, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.Load",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.GoalStart",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.GoalStart(object, object, string, string, string, int, string, ExpCond, int)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.GoalEnd",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.GoalEnd(object, string, int, ExpCond, string)",
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.GoalEnd(object, string, string, string, int, ExpCond, string, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.GoalEnd",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.GoalEnd(object, string, int, ExpCond, string)",
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.GoalEnd(object, string, string, string, int, ExpCond, string, bool)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRun.Classify",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRun.Classify(string, out string, out string, out string)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.Down",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Down(System.Collections.Generic.IList<string>, string, ExpCond)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.Event",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Event(string, string, System.Collections.Generic.IEnumerable<string>, string, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.Report",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Report(ExpCond, string, System.Collections.Generic.IList<string>, System.Func<string, int>, System.Func<string, (int, int)>)"
+          ]
+        },
+        {
+          "legacyAnchor": "ExpRecorder.SaveState",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.SaveState()"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.memory-recall",
+      "title": "위쪽 LLM의 기억 그래프 검색(목차 + 필요할 때 질의)",
+      "legacyClass": "해석",
+      "legacyStatus": "실게임 확인(기반 동작) · 모델의 자발적 검색은 미확인",
+      "source": "preserved/legacy/기획/기능.md:517",
+      "classification": "유저/AI 활동 관련 능력",
+      "activityIds": [
+        "UA-06"
+      ],
+      "standardFunctionIds": [
+        "ai-bridge:POST /v1/plan"
+      ],
+      "mappingStatus": "근거 있는 입구 연관; 능력과 입구는 동일 단위 아님",
+      "oldCodeAnchors": "AIPlanReport.ReportJson, AIPlanner.Report, AIPlanner.Tick, AIPlanner.Apply, AIPlanner.Check, AIExperience.PlanResult, AIExperience.Tick",
+      "oldPolicies": "pol.recall-on-demand, pol.recall-index-then-query, pol.recall-in-bridge, pol.recall-budget, pol.recall-game-by-query, pol.recall-facts-only, pol.recall-prompt-cost, pol.exp-link-by-id, pol.llm-subscription, cand.recall-timing",
+      "observability": "브리지 `logs/plan.jsonl`(rounds·recall·calls·index_chars·deadline_hit·cap_hit), `logs/recall.jsonl`(질의·결과 전문); 브리지 시작 줄의 게임 그래프 위치; Player.log \"answer DROPPED: 오래된 답: 기다리는 동안 쓰러짐\"; 시험 `node Tools/ai-bridge/test/{memgraph,recall-loop,bridge-wiring}.test.mjs`, 실제 CLI 재생 `Tools/ai-bridge/replay.mjs`",
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIPlanReport.ReportJson",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanReport.cs#AIPlanReport.ReportJson(World, Entity, string, out int)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Report",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Report(World, Entity, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Apply",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIPlanner.Check",
+          "codeIds": []
+        },
+        {
+          "legacyAnchor": "AIExperience.PlanResult",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.PlanResult(string, int, string, string, string, string, string, string, float, string)"
+          ]
+        },
+        {
+          "legacyAnchor": "AIExperience.Tick",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIExperience.cs#AIExperience.Tick(World, Entity, float)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [
+        {
+          "file": "Tools/ai-bridge/plan.mjs",
+          "codeIds": [
+            "code:Tools/ai-bridge/plan.mjs#plan@1665",
+            "code:Tools/ai-bridge/plan.mjs#runQueries@5554"
+          ]
+        },
+        {
+          "file": "Tools/ai-bridge/recall-loop.mjs",
+          "codeIds": [
+            "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3061"
+          ]
+        },
+        {
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "codeIds": [
+            "code:Tools/ai-bridge/memgraph.mjs#memoryIndex@21560",
+            "code:Tools/ai-bridge/memgraph.mjs#runQueries@38589",
+            "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066"
+          ]
+        }
+      ],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.goal-plan",
+      "title": "LLM 목표와 준비 단계",
+      "legacyClass": "해석",
+      "legacyStatus": "설계만",
+      "source": "preserved/legacy/기획/기능.md:538",
+      "classification": "설계 범위와 구현된 부분 분리 보존",
+      "activityIds": [
+        "UA-04"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": null,
+      "oldPolicies": "pol.behavior-roles, pol.llm-can-retreat, cand.v2-design",
+      "observability": null,
+      "codeAnchorMappings": [],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.executor",
+      "title": "단일 실행부와 결과 판정",
+      "legacyClass": "해석",
+      "legacyStatus": "설계만",
+      "source": "preserved/legacy/기획/기능.md:546",
+      "classification": "내부 처리 능력(활동/표준 기능 자동 승격 금지)",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": null,
+      "oldPolicies": "pol.realtime-by-program, pol.body-fight, pol.body-progress, cand.two-layer, cand.v2-design",
+      "observability": null,
+      "contextActivityIds": [
+        "UA-02",
+        "UA-03",
+        "UA-04",
+        "UA-05"
+      ],
+      "codeAnchorMappings": [],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.llm-report",
+      "title": "구간 보고와 LLM 재판단",
+      "legacyClass": "해석",
+      "legacyStatus": "설계만",
+      "source": "preserved/legacy/기획/기능.md:554",
+      "classification": "설계 범위와 구현된 부분 분리 보존",
+      "activityIds": [
+        "UA-04"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": null,
+      "oldPolicies": "pol.llm-can-retreat, pol.fewer-calls, cand.v2-design",
+      "observability": null,
+      "codeAnchorMappings": [],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.reflex",
+      "title": "응답이 늦을 때 반사 행동",
+      "legacyClass": "해석",
+      "legacyStatus": "구현됨·미확인",
+      "source": "preserved/legacy/기획/기능.md:561",
+      "classification": "내부 처리 능력(활동/표준 기능 자동 승격 금지)",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": "AIBrain.SetReflex",
+      "oldPolicies": "pol.reflex-while-late, pol.reflex-minimal-now, cand.min-reflex",
+      "observability": "Player.log \"REFLEX ON|OFF\"",
+      "contextActivityIds": [
+        "UA-02",
+        "UA-03",
+        "UA-04",
+        "UA-05"
+      ],
+      "codeAnchorMappings": [
+        {
+          "legacyAnchor": "AIBrain.SetReflex",
+          "codeIds": [
+            "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.SetReflex(bool, string)"
+          ]
+        }
+      ],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.memory",
+      "title": "기억과 지식 전달",
+      "legacyClass": "해석",
+      "legacyStatus": "설계만",
+      "source": "preserved/legacy/기획/기능.md:573",
+      "classification": "설계 범위와 구현된 부분 분리 보존",
+      "activityIds": [
+        "UA-06"
+      ],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": null,
+      "oldPolicies": "pol.llm-can-retreat, cand.v2-design",
+      "observability": null,
+      "codeAnchorMappings": [],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    },
+    {
+      "legacyId": "F.chatroom-link",
+      "title": "단톡방 멤버와 게임 몸 잇기",
+      "legacyClass": "해석",
+      "legacyStatus": "미설계",
+      "source": "preserved/legacy/기획/기능.md:581",
+      "classification": "미설계 연결 범위 보존",
+      "activityIds": [],
+      "standardFunctionIds": [],
+      "mappingStatus": "코드 앵커 대응/별도 설계 보존; 독립 요청 입구 자동 생성 안 함",
+      "oldCodeAnchors": null,
+      "oldPolicies": "pol.scope-chatroom, cand.chatroom-attach, cand.file-queue",
+      "observability": null,
+      "codeAnchorMappings": [],
+      "additionalCodeEvidence": [],
+      "mappingClass": "C 통합 해석"
+    }
+  ]
+}

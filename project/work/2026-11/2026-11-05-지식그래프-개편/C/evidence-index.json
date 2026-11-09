@@ -1,0 +1,3410 @@
+{
+  "meta": {
+    "stage": "C-1",
+    "scope": "보존 사본 인용 위치 및 해시 대조. 제품 실행 검증 아님"
+  },
+  "checks": [
+    {
+      "id": "core",
+      "source": "context.md",
+      "quote": "AI 단톡방(C:\\Dev\\ai-chatroom) 멤버들이 Core Keeper 게임 안에서 캐릭터로 움직이며 플레이하게 만든다.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 2,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "core",
+      "source": "context.md",
+      "quote": "방향: 채팅 연결만이 아니라, AI가 게임 속 캐릭터(몸)를 갖고 움직이는 것이 목표.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 4,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "core",
+      "source": "context.md",
+      "quote": "전제: Core Keeper 공식 ModSDK(Unity, C# 스크립트) 사용.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 5,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "core",
+      "source": "context.md",
+      "quote": "외부 통신에는 \"Skip Safety Checks\" 옵션이 필요.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 5,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "core",
+      "source": "context.md",
+      "quote": "경계: 단톡방 자체 개조(월드·프롬프트·기억)는 'AI단톡방-개조' 주제에서 한다.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 6,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.modsdk",
+      "source": "context.md",
+      "quote": "전제: Core Keeper 공식 ModSDK(Unity, C# 스크립트) 사용.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 5,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.scope-chatroom",
+      "source": "context.md",
+      "quote": "경계: 단톡방 자체 개조(월드·프롬프트·기억)는 'AI단톡방-개조' 주제에서 한다.",
+      "snapshot": "preserved/evidence/e8048417e26cf4dd.md",
+      "sourceLine": 6,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.body-visible",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "꼭 필요한 것: 보이는 것(사람 모습·이름표·말풍선)",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 45,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.body-fight",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "싸우는 것(적이 노리고 AI도 싸움)",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 45,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.body-progress",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "가방·장비·제작(흉내 방식 허용).",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 45,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.body-thinclient",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "1. 몸 방식: thin client로 만든 진짜 플레이어 몸으로 확정. 10-21의 '모드가 조종하는 NPC' 기록을 이것으로 대체(플레이어처럼 보이고 싸우고 가방·장비·제작으로 진행한다는 목표는 그대로).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 130,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.body-npc",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "몸: 모드로 조종하는 NPC. 게임이 진짜 플레이어로 인식할 필요는 없음",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 44,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.body-npc",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "접속 없는 플레이어 개체 소환 가능 여부(되면 최선)",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 47,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.ai-own-character",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "AI 전용 캐릭터 합의: 호스트 복사본 대신 AI 자기 캐릭터 정보(새 캐릭터와 동일 시작·구분되는 외형)를 쓰고 따로 저장",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 16,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.ai-own-character",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "호스트 아이템 복제 없음.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 32,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.ai-start-new",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "1. 시작 상태는 새 캐릭터와 동일.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 28,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.ai-look-distinct",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "2. 외형은 HEAD가 호스트와 구분되게 정함.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 29,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.ai-look-distinct",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "한계: 외형은 캐릭터 만들기 선택지 범위 안에서만.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 25,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.ai-per-world",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "사용자 결정: AI 캐릭터(가방·외형·스킬 등)는 월드마다 따로 가진다. 이유: 나중에 모드 배포를 고려 중.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 96,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.join-toggle",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "2. AI가 들어오는 월드: 월드마다 켜고 끌 수 있게 하고, 처음에는 꺼 둔다(HEAD 권장안 수락).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 131,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.start-kit-role-only",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "3. 시작 지급품: 지금대로(직업 기본 지급품·스킬만).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 132,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.start-kit-role-only",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "DLC 추가 아이템은 계정이 해당 DLC·앱을 가졌을 때만 주는 것이고, 이름 이스터에그는 캐릭터 이름이 'Greggy'일 때만 흙벽 10개를 주는 것이라 기본 지급이 아님.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 132,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.single-ai-first",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "3. 시험은 Claude 하나로. 멤버 여러 명은 나중에.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 30,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.multi-ai",
+      "source": "work/멤버넷-캐릭터/history.md",
+      "quote": "사용자가 HEAD 진행 순서(멤버 넷 포함)를 '네 제안대로'로 확정했으므로 해제된 것으로 기록한다.",
+      "snapshot": "preserved/evidence/3585d403243dd389.md",
+      "sourceLine": 96,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.multi-ai",
+      "source": "work/전투안정-동료인식/history.md",
+      "quote": "정책 반영: pol.single-ai-first는 해제됐다고 기록한다.",
+      "snapshot": "preserved/evidence/2968e385bac6d1f2.md",
+      "sourceLine": 25,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.vision-human-view",
+      "source": "work/몸-기본-기술/history.md",
+      "quote": "일단 jev(=판단 모델, 지금은 OpenAI Decisions)가 보는 화면은 사람 시야랑 완전히 동일하게 만들려고 한다.",
+      "snapshot": "preserved/evidence/1a8e673eee03ef80.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.vision-human-view",
+      "source": "work/몸-기본-기술/history.md",
+      "quote": "HEAD 판단: 방향은 '사람 시야와 동일'. 첫 구현은 사람 화면 크기만큼의 범위(벽 너머 포함, 화면처럼), 어둠 반영은 그다음 단계.",
+      "snapshot": "preserved/evidence/1a8e673eee03ef80.md",
+      "sourceLine": 55,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.idle-stand",
+      "source": "work/몸-기본-기술/history.md",
+      "quote": "2. 기본 정지: 할 일 없으면 제자리, 걷기 패턴은 /ai walktest로만(사용자 수락).",
+      "snapshot": "preserved/evidence/1a8e673eee03ef80.md",
+      "sourceLine": 56,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.test-tools-ok",
+      "source": "work/몸-기본-기술/history.md",
+      "quote": "3. 시험 도구: 시험 월드에서 .testgive로 나무 곡괭이 지급 허용(배포 전 제거).",
+      "snapshot": "preserved/evidence/1a8e673eee03ef80.md",
+      "sourceLine": 57,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.realtime-by-program",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "설계 원칙(사용자): AI는 실시간 처리 불가 → 실시간 행동은 프로그램으로 구현하는 게 핵심",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.realtime-by-program",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "사용자(마인크래프트 봇 경험): AI가 실시간 처리를 전혀 못 하니 프로그램 구현이 매우 중요, Core Keeper는 더 그럴 것.",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 127,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.behavior-roles",
+      "source": "work/2026-11/2026-11-03-jev-행동설계.md",
+      "quote": "전체 방향과 목표는 LLM이 정한다.",
+      "snapshot": "preserved/evidence/0267922038f26797.md",
+      "sourceLine": 13,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.behavior-roles",
+      "source": "work/2026-11/2026-11-03-jev-행동설계.md",
+      "quote": "프로그램으로 구현하려던 세부 행동 판단을 Jev에 맡기는 구상을 검토한다.",
+      "snapshot": "preserved/evidence/0267922038f26797.md",
+      "sourceLine": 14,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.behavior-roles",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "사용자가 제시한 방향은 LLM이 전체 목표를 잡고, Jev가 상황에 따른 행동을 선택하며, 프로그램이 캐릭터를 실제로 움직이는 것이다.",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 9,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.selector-openai",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "사용자 결정: 행동 판단 모델은 OpenAI Decisions(크레딧 약 200달러 예상)",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 168,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.selector-openai",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "행동 판단(설계 v2에서 Jev가 맡던 '현장 행동 선택' 자리)은 OpenAI Decisions로 한다.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 170,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.selector-openai",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "설계 v2의 선택 담당 Jev → OpenAI Decisions. 후보 생성·관찰·실행·결과 보고는 공통 구조 그대로(선택 담당 교체 가능 구조 유지).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 172,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.fewer-calls",
+      "source": "work/2026-11/2026-11-03-jev-행동설계.md",
+      "quote": "같은 행동을 수행하고 변화가 없을 때 호출을 줄인다. 선택지가 늘거나 사건이 발생하면 새 판단을 요청한다.",
+      "snapshot": "preserved/evidence/0267922038f26797.md",
+      "sourceLine": 15,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-options",
+      "source": "work/2026-11/2026-11-03-jev-행동설계.md",
+      "quote": "전투에서는 상황에 맞는 선택지를 계속 갱신하고 Jev가 행동을 판단한다.",
+      "snapshot": "preserved/evidence/0267922038f26797.md",
+      "sourceLine": 16,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-rate-max",
+      "source": "work/멤버넷-캐릭터/history.md",
+      "quote": "사용자가 최대 속도를 원했다. 캐릭터마다 요청 하나만 보내고, 답이 오면 바로 다음 요청을 보낸다",
+      "snapshot": "preserved/evidence/3585d403243dd389.md",
+      "sourceLine": 61,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-rate-max",
+      "source": "work/전투안정-동료인식/history.md",
+      "quote": "전투 최대 속도는 사용자 결정 정책으로 올린다.",
+      "snapshot": "preserved/evidence/2968e385bac6d1f2.md",
+      "sourceLine": 25,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-choice-design",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "모델의 빠른 판단을 최대한 살리면서 선택지를 주는 것. 갈팡질팡할 일을 줄여서 최적화.",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 13,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-fit-criterion",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "아예 죽지 않는 것을 목표로 하지 않는다.",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 10,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-kill-brute",
+      "source": "history.md",
+      "quote": "정상 장비로 버섯 야수 1:1 처치를 성공 기준에 더함(판단 적합성·실행 일치는 유지)",
+      "snapshot": "preserved/evidence/a7cf234b5b0bf0aa.md",
+      "sourceLine": 2067,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-no-auto-dodge",
+      "source": "history.md",
+      "quote": "무조건적 회피가 될 수 있는 코드는 지양",
+      "snapshot": "preserved/evidence/a7cf234b5b0bf0aa.md",
+      "sourceLine": 2081,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-no-auto-dodge",
+      "source": "history.md",
+      "quote": "모델 응답 약 0.3초는 사람 반응 수준이라 충분하다고 봄. 도저히 안 되면 그때 방향을 다시 정한다.",
+      "snapshot": "preserved/evidence/a7cf234b5b0bf0aa.md",
+      "sourceLine": 2081,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.combat-composite",
+      "source": "work/전투-단계2/history.md",
+      "quote": "복합행동을 무조건 넣어야 할 것 같아",
+      "snapshot": "preserved/evidence/1e736a41dab7117a.md",
+      "sourceLine": 76,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.motion-real-speed",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "공격 속도는 무기·장비 능력치·버프·음식·세트 효과로 달라지므로 경계는 그 캐릭터의 지금 실제 속도를 따라야 한다.",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 12,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.llm-can-retreat",
+      "source": "work/2026-11/2026-11-03-jev-행동설계.md",
+      "quote": "LLM이 관련 지식을 선별해 줄 수 있고, 전투 중에도 철수 같은 목표 변경을 할 수 있어야 한다.",
+      "snapshot": "preserved/evidence/0267922038f26797.md",
+      "sourceLine": 17,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.reflex-while-late",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "1. 반사 행동: Jev 응답이 늦을 때는 프로그램 반사 행동을 넣는다. 호출 응답이 도착하면 반사는 바로 끈다.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.call-interval",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "2. 호출 간격: 평소 2~3초 정도면 괜찮아 보이나 시험하며 정한다(잠정).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 47,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.cost-ceiling",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "3. 비용: 월 10만원까지 생각 중(확정 한도가 아니라 검토 중인 상한).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 48,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.cost-cap-200",
+      "source": "work/행동판단-연결/history.md",
+      "quote": "2. Decisions 월 비용 상한: 200달러. 사용자: 11월 13일에 크레딧 200달러가 들어올 예정.",
+      "snapshot": "preserved/evidence/0ba4b59d2a573956.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.reflex-minimal-now",
+      "source": "work/행동판단-연결/history.md",
+      "quote": "1. 반사 행동: 지금대로(하던 유효 행동 계속 / 멈춤). 후퇴·회피·먹기·반격 같은 전술 반사는 실제 전투 시험 뒤 다시 검토.",
+      "snapshot": "preserved/evidence/0ba4b59d2a573956.md",
+      "sourceLine": 52,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.decision-chat-off",
+      "source": "work/행동판단-연결/history.md",
+      "quote": "3. 채팅 표시: 기본 끔, '/ai goal 자세히'로 켬(지금 구현 유지).",
+      "snapshot": "preserved/evidence/0ba4b59d2a573956.md",
+      "sourceLine": 54,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.dig-and-explore-first",
+      "source": "work/행동판단-연결/history.md",
+      "quote": "4. 다음 순서: 막힌 대상 쪽으로 파 들어가기 행동과 탐색 기억(간 곳)을 먼저, 그다음 LLM 목표층.",
+      "snapshot": "preserved/evidence/0ba4b59d2a573956.md",
+      "sourceLine": 55,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.explore-dig-by-model",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "(c) 파 들어가며 탐험을 판단 모델에 맡긴다: 열린 탐험 길이 있을 때 파기를 숨기는 프로그램 규칙을 없애고",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 184,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.no-self-workaround",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "우회책(호스트 근처만, 호스트가 따라감, 먼 후보 빼기)은 혼자 고르지 않는다.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 184,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.explore-end-when-nothing",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "(1) 탐험할 곳이 없으면 \"다른 벽 캐기\"를 내지 말고 탐험 목표를 끝내고 채팅으로 짧게 알린다.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 266,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.weapon-default",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "(2) 실제 게임처럼 Claude는 늘 무기 하나를 갖는다.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 266,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.path-leak-watch",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "길찾기 누출은 \"지켜보기만\"으로 정해졌다.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 266,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.self-defence",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "목표가 없어도 Claude가 맞거나 적이 다가오면 같은 전투 기준으로 판단을 부른다.",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.llm-subscription",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-구독CLI-설계.md",
+      "quote": "사용자 결정(2026-11-03): 위쪽 LLM은 API 키가 아니라 구독을 쓴다.",
+      "snapshot": "preserved/evidence/3df70f22b6b8243c.md",
+      "sourceLine": 5,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.exp-no-repeat-misfit",
+      "source": "work/LLM-기억/history.md",
+      "quote": "판단 기준(사용자): 죽지 않기가 목적이 아니라 상황에 맞지 않는 판단을 반복하지 않는 것.",
+      "snapshot": "preserved/evidence/22114da65c9f210b.md",
+      "sourceLine": 38,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.exp-retry-allowed",
+      "source": "work/LLM-기억/history.md",
+      "quote": "실패 횟수만으로 영구 회피시키지 않고 준비·새 관측 뒤 재도전 허용.",
+      "snapshot": "preserved/evidence/22114da65c9f210b.md",
+      "sourceLine": 35,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.exp-no-extra-calls",
+      "source": "work/LLM-기억/history.md",
+      "quote": "LLM 호출 수는 늘리지 않는다(보고 길이만큼 비용·지연은 조금 는다).",
+      "snapshot": "preserved/evidence/22114da65c9f210b.md",
+      "sourceLine": 39,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.exp-keep-world-memory",
+      "source": "work/LLM-기억/history.md",
+      "quote": "조건: 아래쪽 memory.json은 그대로.",
+      "snapshot": "preserved/evidence/22114da65c9f210b.md",
+      "sourceLine": 39,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.exp-link-by-id",
+      "source": "work/게임-지식그래프/history.md",
+      "quote": "기억(사건 기록)은 이 브랜치에서 하지 않고 나중에 하며, 둘은 게임 ID로만 연결한다.",
+      "snapshot": "preserved/evidence/304015eb84386b75.md",
+      "sourceLine": 18,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-on-demand",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "기억을 지식그래프로 저장하자고 한 이유도 그것이다(사용자 확인).",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 37,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-index-then-query",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "그래프의 최저한도 저해상도 정보(목차)를 보고에 넣고, 필요한 것만 바로 질의하게 한다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 60,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-in-bridge",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "사용자가 작업용으로 쓰는 Claude Code·Codex 설정에는 아무것도 붙지 않는다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 42,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-in-bridge",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "그래서 검색은 브리지 안에 두고 추가 설치를 없앤다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 45,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-budget",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "한 판단에 검색 최대 2번",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 43,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-budget",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "전투 판단(아래쪽)은 검색하지 않는다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 43,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-game-by-query",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "게임 지식은 늘 넣는 약 2,000자 칸 대신 game 질의로 찾는다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 64,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-facts-only",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "LLM이 memo로 쓰는 교훈·장 요약은 할 일로 남겼다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 59,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.recall-prompt-cost",
+      "source": "work/기억-그래프-검색/history.md",
+      "quote": "프롬프트 +약 3,400자(입력 약 +3,000토큰·+45%, 호출 빈도가 낮아 시간당 3만~6만 토큰)는 그대로 넣는다.",
+      "snapshot": "preserved/evidence/b6e49b7c142e1575.md",
+      "sourceLine": 106,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.refactor-option-c",
+      "source": "work/리팩토링/history.md",
+      "quote": "사용자 결정: C안 전체(S0~S8)로 진행, 정식 JSON 파서로 바뀌는 결과는 버그 수정으로 받음, 시험 도구 추가 허용.",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 48,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.refactor-option-c",
+      "source": "work/리팩토링/history.md",
+      "quote": "중간안 C(계약을 타입으로 + 예정 변경이 닿는 선으로 분리) 선택",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 12,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.refactor-json-fix-accepted",
+      "source": "work/리팩토링/history.md",
+      "quote": "정식 JSON 파서로 바뀌는 결과는 버그 수정으로 받음",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 48,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.refactor-json-fix-accepted",
+      "source": "work/리팩토링/history.md",
+      "quote": "JSON 파서 교체를 버그 수정으로",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 50,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.mod-source-no-dll",
+      "source": "work/리팩토링/history.md",
+      "quote": "굳이 그렇게 할 필요 없어. 직접 컴파일해서 실행이 잘 된다면 굳이 어렵게 돌아갈 필요는 없으니까",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 51,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "pol.mod-source-no-dll",
+      "source": "work/리팩토링/history.md",
+      "quote": "dll 분리는 하지 않는다.",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 51,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.toggle-chat",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "남은 설계: 켜고 끄는 방법(예: 게임 채팅 명령)은 월드별 작업이 끝난 뒤 정해 구현.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 133,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.toggle-chat",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "관리자(admin) 권한 플레이어 허용은 넣지 않았다.",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 32,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.motion-boundary",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "**동작 경계에서 바꾼다.** 묻기는 최대 속도 그대로, 바꾸기는 휘두르기·곡괭이 타격·한 칸 걸음·먹기 같은 동작이 끝나는 때에만.",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 11,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.teammates-on-screen",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "AI 캐릭터는 자기 사람 화면 안의 다른 플레이어만 본다",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 112,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.min-reflex",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-설계.md",
+      "quote": "첫 반사는 최소한만: **진행 중 기술이 유효하면 계속, 없으면 제자리**.",
+      "snapshot": "preserved/evidence/4c16f6349acc2e72.md",
+      "sourceLine": 56,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.fail-memory",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "30초 안에 두 번 실패하면 30초 동안 후보에서 빼고",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 70,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.cost-cap-70",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-설계.md",
+      "quote": "월 상한 기본 **$70**: 사용자 검토 상한 월 10만원을 1달러=1,430원 정도로 환산(가정, 환율에 따라 다름).",
+      "snapshot": "preserved/evidence/4c16f6349acc2e72.md",
+      "sourceLine": 62,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.save-timing",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "HEAD 판단: 저장 주기(60초+나갈 때)는 기술 판단이라 HEAD가 정함.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 119,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.two-layer",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "HEAD 제안(설계 기준 후보): 두 층",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 128,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.score-first",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "시작: 선택지마다 점수(성향값 반영) 매기는 단순 방식.",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 142,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.v2-design",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "다음은 이번 문서의 설계 제안이며 사용자에게 이미 확정받은 계약으로 기록하지 않는다.",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 13,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.chatroom-attach",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "제가 덧붙인 것(사용자 이의 없음, 2장에서 확인): 단톡방은 그대로 돌고 Core Keeper는 또 하나의 월드로 붙음",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.file-queue",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "첫 연결은 JSONL 파일 대기열 권장",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 26,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.memory-per-character",
+      "source": "work/멤버넷-캐릭터/history.md",
+      "quote": "각자 자기 화면만큼만 본다. HEAD 권장은 탐색 기억을 캐릭터별로 두는 것.",
+      "snapshot": "preserved/evidence/3585d403243dd389.md",
+      "sourceLine": 27,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.memory-per-character",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "남이 본 것을 알면 사람 플레이어보다 많이 안다.",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 240,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.exp-cause-rules",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "그 품목 광석을 더 많은 곳에서 기억함",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 188,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.exp-cause-rules",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "이름이 `…Ore`인 품목만 광석으로 본다.",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 384,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.recall-timing",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/1-설계.md",
+      "quote": "브리지가 요청을 받은 때부터 센다. 인증·LoginGate·사용량 확인 시간도 마감 안에 든다.",
+      "snapshot": "preserved/evidence/b2422d8c6cd9d25c.md",
+      "sourceLine": 210,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.exp-wait-backoff",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "기다리는 시간은 연속 횟수에 따라 30분 → 1시간 → 2시간 → 4시간 → 8시간(상한)으로 는다.",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 289,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.exp-wait-backoff",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "30분부터 두 배로, 상한 8시간, 새 구역 4칸은 실게임으로 맞추지 않은 값이다.",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 338,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.refactor-head-accepted-diffs",
+      "source": "work/리팩토링/history.md",
+      "quote": "HEAD가 받아들인 것(S1 도달 불가 3·거절 문장 숫자 1, down·kill 값 판정, '기다리기뿐' 문구의 제작 막힘 분류, 보고 제어 문자 공백화)뿐.",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 12,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.goal-end-order-kept",
+      "source": "work/리팩토링/history.md",
+      "quote": "목표 끝내기 7곳의 순서 차이는 그대로 두고 통일은 따로(HEAD 결정).",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.refactor-behaviour-kept",
+      "source": "work/리팩토링/history.md",
+      "quote": "조건(HEAD 제안): 동작은 바꾸지 않는다(후보 순서·개수·전투 전환·재시도·응답 계약 유지 — 동작 변경은 별도 작업).",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 21,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "cand.refactor-behaviour-kept",
+      "source": "work/리팩토링/history.md",
+      "quote": "질문 2(끝내기 순서)는 합의 조건 '동작 유지'로 HEAD가 정함",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 39,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.thin-connect",
+      "source": "work/spike-실게임시험/history.md",
+      "quote": "STEP 1 OK: thin 월드 생성 → 127.0.0.1:7777 접속",
+      "snapshot": "preserved/evidence/72da28b18e589a67.md",
+      "sourceLine": 41,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.thin-connect",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "월드 ai(c48cf4bb…) 재접속 2·3번 모두 'Enabling player entity'(같은 엔티티)",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 151,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.thin-connect",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "t=227.2 AI identity: spawned AI player guid=c7ddd1ca7a22e19f36af22ac2bfadd72 expected=c7ddd1ca7a22e19f36af22ac2bfadd72 match=True",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.thin-connect",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`AI identity: spawned AI player guid=4bc3c25898bea1cd862846508390a3f1 expected=4bc3c25898bea1cd862846508390a3f1 match=True`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 73,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.thin-connect",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "STEP 1 OK: SECOND PLAYER SPAWNED on server ... playerIndex=2",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 106,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.naming",
+      "source": "work/spike-실게임시험/history.md",
+      "quote": "STEP 2 OK: 서버 플레이어 이름 'Claude', onlineName 'Claude'.",
+      "snapshot": "preserved/evidence/72da28b18e589a67.md",
+      "sourceLine": 42,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.naming",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "`2-켜기-들어옴.png`: `/ai on` 뒤 'Claude'가 보임",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 40,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.naming",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`STEP 2 OK: server player name='Claude' onlineName='Claude'`. 다시 들어온 자리",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 73,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.move-input",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "server PlayerGhost.cameraPosition ai=float2(-101.0003f, 46.57286f) host=float2(0f, -0.138f)",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 202,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.move-input",
+      "source": "work/spike-실게임시험/history.md",
+      "quote": "STEP 3 OK: route A(thin 클라 입력 명령을 Netcode로 보냄)로 2.8초 만에 2.34칸 이동.",
+      "snapshot": "preserved/evidence/72da28b18e589a67.md",
+      "sourceLine": 43,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.move-input",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`STEP 3 OK (walktest): player moved 0.93 units after 2.8s via route A (thin-client input commands over Netcode)`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 67,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.move-input",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "정지 뒤 두 번의 `look`(4초 간격)에서 `ai=(-2.00,-1.16)` 같음.",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 68,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.move-input",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| 목표 없음이면 호출 없음 | 통과. 입장 후 12초 동안 `DECISION` 0줄. `/ai on`으로 다시 들어온 뒤에도 0. |",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 9,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.move-input",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "| 서버가 실제로 쓴 입력(ClientInput) | 같은 모양: 뒤집힘 347번(6.0/초). 입력이 틱마다 고르게 전달됨 — 가설 (b) 아님 |",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 31,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-look",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`chat reply: 보기: 범위 30x24칸(사람 화면, 빛 미반영) · Claude (2.3,0.3) · 호스트 (0.0,-0.3) · 벽 431(광석 8) · 적 0 · 아이템 0`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 47,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-look",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "이 PC(3840x2160, 16:9)에서 **30.0 x 23.9칸**",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 32,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-inv",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`chat reply: 가방: 1:SmallLanternx1, 2:FoodRationx3, 3:Woodx7 · 든 것 0번 칸 빈손 · 앞 40칸 중 빈 칸 37`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 49,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "nav: switching to mod A* (game pathfinding found no path; retrying with tile A* on known tiles only)",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 319,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "LEAK-CHECK walk to (-103,48) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=23 unseenAtStartWalked=0",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 240,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`SKILL 걷기 DONE after 2.8s: reason='도착 (-4,-3), 길찾기 game-bfs'`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "최종 빌드: `SKILL 걷기 DONE after 0.9s: reason='도착 (-14,-4), 길찾기 game-bfs' ... target=호스트`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "| 후: 탐험 (`jitter4`, 최종) | 143초 | 46.8초 | 0.73 | 0.00 | 0.00 | 0.13 | 5.74 | 0% |",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 73,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "게임 길 프레임 3945 중 **1347(34%)이 `nodes[0]`(길을 계산했던 칸 = 방금 떠난 칸)을 향함**",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 34,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-goto",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "멈춘 칸 막힘이 그 진짜 장애물을 막아 준 것",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 263,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "SKILL 캐기 DONE after 2.4s: reason='벽 (-100,49) 부숨 · 가방 WallDirtBlock +1'",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 155,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "tool=맨손 slot=0; precheck: est damage 20 (20 + Mining effect 0) vs reduction 1; holding None; tile gone after 2.9s of swinging",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 57,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "tool=WoodMiningPick slot=4; precheck: est damage 35 (20 + Mining effect 15) vs reduction 1; holding WoodMiningPick; tile gone after 1.3s of swinging",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 58,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`SKILL 캐기 DONE after 4.2s: reason='벽 (1,-4) 부숨 · 가방 WallDirtBlock +1' ... tool=맨손 slot=0",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 79,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "tool=WoodMiningPick slot=4; precheck: est damage 36 (20 + Mining effect 16)",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 77,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "SKILL 캐기 DONE after 2.6s: reason='벽 (-4,-3) 부숨 · 가방 WallDirtBlock +1'",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 108,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-mine",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "| 모으기 | `GOAL done rev=1: 구리 광석(CopperOre) 5개 모으기 (5/5) after 20.4s, calls this session 8`(파들어가기 4번·캐기 2번).",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 93,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-attack",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "#29,#30 -> 계속하기 — 지금 하는 '공격'(attack:63129)을 2초째 진행 중 (대상 MushroomEnemy 체력 75/105, …)",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 59,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-attack",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "SKILL 공격 DONE after 5.4s: reason='MushroomEnemy 처치 (체력 105→0)'",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 298,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-attack",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`SKILL 공격 DONE after 17.5s: reason='MushroomEnemy 처치 (체력 33→0)'`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 64,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-attack",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`SKILL 공격 DONE after 4.6s: reason='MushroomEnemy 처치 (체력 105→0)'`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 82,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-attack",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`SKILL 공격 FAILED after 7.0s: reason='대상에게 갈 길 없음 (길 없음(게임 길찾기: 타일·물체 고려), 체력 105→105)'`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 81,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-char-load",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "AI 전용 캐릭터 구현·실게임 확인 통과: 새 캐릭터 시작(탐험가 기본 지급품), 호스트와 다른 외형, 전용 파일 저장·재접속 유지, 호스트 아이템 복제 없음",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 71,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-char-load",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "새 월드 ai2(b39072f4…)는 새 캐릭터로 시작.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 151,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-char-load",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "t=322.6 AI character: server deserialised character data for playerGuid 8021eed84fc52ef81041b0a127a89663 (not the AI's); left untouched",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 59,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-char-save",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "사람 플레이어는 화면 쪽 게임이 자기 가방을 읽어 저장(PlayerController.cs:2832 → SaveManager.SetInventory).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 24,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-char-save",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "Player.log에 교체(호스트 guid 0812… → AI c1a0…a001), 나갈 때 저장, 재접속 시 AI 가방 [랜턴, 식량x3, 나무x7]·호스트 가방 [랜턴, 식량x3] 기록 확인.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 77,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-char-save",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "t=249.3 AI character: saved (leaving (turned off by host (/ai off))) to ...\\b39072f4...\\Claude.json",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 56,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.leave",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "MESSAGE: Claude 님이 접속을 종료했습니다.",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 58,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.leave",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`AI character: saved (leaving (turned off by host (/ai off)))` → `thin world disposed`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 71,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.leave",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| `/ai off` | 통과. 목표가 있는 중에 끄자 진행 요청을 버리고 나감, 10초 동안 새 호출 0. `/ai on`으로 다시 들어오면 목표 없음·호출 없음. |",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 18,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-toggle",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "chat command from host: '/ai goal dirt 15'      ← 멤버 없이 → 기본 캐릭터(Claude)",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 117,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-toggle",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "| 월드에 들어가면 Claude가 들어오지 않는다(기본 꺼짐) | 통과 |",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 9,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-toggle",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "| 나갔다 다시 들어와도 마지막 설정 유지(켜짐) | 통과 |",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 14,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-toggle",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "`/ai` → `AI Claude: 이 월드에서 꺼짐 · 지금 들어와 있지 않음`",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 72,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-toggle",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| `/ai off` | 통과. 목표가 있는 중에 끄자 진행 요청을 버리고 나감, 10초 동안 새 호출 0. `/ai on`으로 다시 들어오면 목표 없음·호출 없음. |",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 18,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.dev-build",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "실험1 모드 AIPlayerSpike 빌드·설치 완료(헤드리스 SDK, thin client 경로)",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 110,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.dev-build",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "`HeadlessSdk.BuildAndInstall`로 설치, 설치본 해시 일치",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 23,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.goal-cmd",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "GOAL done rev=1: 흙벽 블록(WallDirtBlock) 5개 모으기 (5/5) after 20.1s, calls this session 7",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 48,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.goal-cmd",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| 목표 없음이면 호출 없음 | 통과. 입장 후 12초 동안 `DECISION` 0줄. `/ai on`으로 다시 들어온 뒤에도 0. |",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 9,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.goal-cmd",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "GOAL set rev=4 source=host: WallDirtBlock(WallDirtBlock) 2개 모으기",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 60,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "#1 -> 먹기 — HealingPotion(즉시 체력 +30%), 가방에 2개. …        먹기 DONE 1.4s HealingPotion 먹음 · 체력 2→31",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 45,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "chat reply: AI 탐험 끝: 걷거나 파서 새 구역이 보일 곳이 없음 (본 구역 522칸). 제자리에 섭니다.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 277,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "objects 10 (+35 trigger-only, 1 under the AI), blocked tiles 42, large: SlimeBossStatue 3x3 at (-1,9); TheCore 5x5 at (-2,2)",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 318,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "c4 탐험 이동(파 들어가기) — 동쪽 화면 끝 (13,0). 길 17칸, 부술 벽 5개(WallDirtBlock 5), 추정 타격 25회, 예상 약 20초.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 223,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "GOAL done rev=1: 구리 광석(CopperOre) 1개 모으기 (1/1) after 19.2s, calls this session 4",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 141,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "`BRAIN: left out after repeated failures (for 30s): mine:-30,-14(다가가기 실패: 길 없음…)`",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 70,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "DECISION #9 SEND rev=3 trigger='새 적 보임(MushroomBrute 11.0칸)' ... | c1 계속하기 — 지금 하는 '캐기'(mine:-13,-25)을 3초째 진행 중. 그대로 계속.",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 56,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "#2 -> 계속하기 — 지금 하는 '파들어가기'(dig:-80,24)을 2초째 진행 중. 그대로 계속.",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 85,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "고친 뒤 `jitter2`~`jitter4` 20번 중 19번 계속하기",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 80,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "t=155.1 BRAIN: nothing new within one screen; frontier search: expanded 3073 tiles in 42 ms",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 65,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "결과: 전 2번 중 2번 고르고 버려짐. 후(robust5 빌드) 날아오는 아이템이 후보에 보인 판단 3번 모두 고르지 않음",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 99,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "같은 움직임의 다른 키 11 → 최종 0",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 68,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "캐기·파기 8개 뺌: 곡괭이가 없고 손 칸 10칸이 모두 차 있으며 가방에도 빈 칸이 없어 맨손으로도 캘 수 없음(가방이나 손 칸을 비우면 됨)",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 259,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "`줍기 — 떨어진 CopperMiningPick` **0번**",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 275,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.candidates",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "**줍기 0**, 목표 아닌 채우기 캐기 0",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 256,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "GOAL done rev=3: 구리 광석(CopperOre) 3개 모으기 (4/3) after 41.4s, calls this session 45",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 64,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "DECISION #1 RESULT choice=c3 (캐기 — 벽 WallDirtBlock (0,-18) 1.3칸 ...) top=[c3=0.93, c4=0.03, c5=0.02] confidence=0.92 latency=0.27s tokens=1085 cached=0 cost=$0.000109 APPLY",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 36,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| 지연 | 중앙값 **0.22초**, p95 0.27초(1차, 74회) · 0.63초(2차, 49회), 최대 0.81초. 첫 빌드에서 첫 호출 하나 2.04초. |",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 11,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "SKILL 캐기 DONE after 12.8s: reason='벽 (-13,-25) 부숨 · 가방 CopperOre +1 · 땅에 남은 것 WallDirtBlockx1 d=0.6'",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 110,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "상태: 이번 접속 호출 16(적용 16, 버림 0, 실패 0) · 지연 중앙값 0.22초 p95 0.34초 · 이달 298회 $0.0257 / 상한 $200",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 93,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "미리 묻기: 최종 빌드 탐험에서 15번 모두 사용(`DECISION #13 queued answer APPLY at skill end (0.51s after asking)` 등)",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 79,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "| 후(robust4·robust5 빌드 합) | 29 | 0.2초 | 0.21초 |",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 88,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/2-측정-원인-동료.md",
+      "quote": "목표 → 첫 판단 0.1초·0초",
+      "snapshot": "preserved/evidence/95f3af1369aaf13a.md",
+      "sourceLine": 116,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/2-측정-원인-동료.md",
+      "quote": "goal@1127.4 DOWN before any SEND @1139.4",
+      "snapshot": "preserved/evidence/95f3af1369aaf13a.md",
+      "sourceLine": 29,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "frontier search: expanded 0 tiles in 1 ms, found 0",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 59,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "굴 계획 하나 약 16 ms, 한 번에 8~10개.",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 65,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.action-select",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "trigger='탐색 끝 찾기 끝남(기억한 탐색 끝 후보가 생김)'",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 155,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-dig",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "SKILL 파들어가기 DONE after 10.6s: reason='목표 벽 (-26,-21) 부숨 · 벽 5개 뚫음 · 가방 WallDirtBlock +5, CopperOre +1'",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 58,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-dig",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "GOAL done rev=1: 구리 광석(CopperOre) 2개 모으기 (2/2) after 16.0s, calls this session 3",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 61,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-dig",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "다음 휘두르기 전 서 있음 127번 평균 0.11초",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 78,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.skill-dig",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "(-61,52)에 서서 (-35,50) 쪽으로 가다가 같은 곳에서 두 번 실패",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 48,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.explore-memory",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "MEMORY loaded for world b39072f4c49d28bf6ab43b7b6a702d7f: seen cells 192, visited cells 35, remembered ores 6",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 77,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.explore-memory",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "c1 기억한 목표 광석 쪽으로 — CopperOre (4,-16) 16.4칸, 1분 전에 봄(지금은 화면 밖이라 지금 상태는 모름).",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 69,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.explore-memory",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "t=702.1 MEMORY: station WoodenWorkBench at (2,-4) seen gone; forgotten (last seen 15초 전, placed by the AI)",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 42,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.explore-memory",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "다시 켠 뒤 `MEMORY loaded … learned drops [bigRoot: 관찰 5번: Wood 5번(합 8개)]`",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 54,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-weapon",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "starter weapon choice WoodSword (WoodSword: type=MeleeWeapon level=0 rarity=Common recipe=[Woodx5];",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 286,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-weapon",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "granted starter weapon WoodSword (amount 88) into slot 10 (one time; marker …\\Claude.weapon-granted)",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 293,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-weapon",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "`/ai attack`(기술 직접, 판단 모델이 그때 공격 대신 탐험을 골라서): `swapped WoodSword from bag slot 10 into hotbar slot 9 (moved Mushroom to slot 10)`",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 298,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.ai-weapon",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "관찰한 WoodSword(부서진 상태) 피해 약 9/타, 타격 간격 약 0.4초 → 약 12타",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 147,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "거리 벌리기 여러 번(최종 빌드)",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 97,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "#3 -> 먹기 — HealingPotion(즉시 체력 +30%), 가방에 1개. …        먹기 DONE 1.5s HealingPotion 먹음 · 체력 31→60",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 47,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "#2 -> 거리 벌리기 — 적 SlimeBlob(1.0칸)에게서 5칸 이상 …          거리 벌리기 DONE 3.0s 3초 끝, SlimeBlob와 3.7칸",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "SELF-DEFENCE #1 end: no enemy within 8 tiles and no damage for 3s; 6.5s, calls 4, hp 60->46, downs 0",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 143,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "실게임: 네 기술 모두 미리 묻기가 나감",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 82,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "@Claude COMBAT #2 end (적이 범위 밖): 2.1s, calls 6 (172/min), answers 6, latency p50 0.30s p95 0.65s max 0.65s, tokens 6208 ($0.00062, $0.01776/min)",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 203,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "보이는 적 모두에게서 5칸 이상 떨어지는 칸으로. 3초 동안 거리를 유지하며 적이 다시 다가오면 다른 칸을 고른다",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 40,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/1-정리-계속불일치.md",
+      "quote": "| 켬(t≈165~215) | 45 | 26 | 0 | 1 |",
+      "snapshot": "preserved/evidence/17f5248c6f53c4b3.md",
+      "sourceLine": 61,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/2-측정-원인-동료.md",
+      "quote": "| 켬 | 12 | 38 | 239s | 6.6 |",
+      "snapshot": "preserved/evidence/95f3af1369aaf13a.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "저절로 들어오는 줍기(날아오는 중·자동 줍기 거리 안)는 0개.",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 132,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.combat-options",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "| 싸움을 끊는 하나에 저절로 들어오는 줍기 | 0/1152 | 0/1035 |",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 151,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.vitals",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "VITALS: DOWN #1 at (-4.6,-19.1) hunger 11; health [12s ago 52, … 1s ago 49]; cause: 적 근처(마지막으로 본 적: MushroomEnemy 0.8 hp105, MushroomEnemy 0.8 hp105, SlimeBlob 9.0 hp105)",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 50,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.vitals",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "VITALS: DOWN #1 at (-77.0,47.1) … cause: 적 근처(마지막으로 본 적: CavelingSkirmisher 4.3 hp243, …)",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 54,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "PLANNER: report #3 answer DROPPED: 오래된 답: 목표 수정 번호가 바뀜(3→4)",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 61,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "PLANNER: report #2 APPLY decision=set goal=follow  -1 why='주석 쪽(-77~-92,47~56)에서 강한 Caveling에게 3연속 쓰러짐. 호스트가 바로 옆이니 따라가며 안전 확보' after 4.3s",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 56,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "PLANNER: bridge not reachable (Cannot connect to destination host) after 2.0s; auto off",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 70,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "@Gemini GOAL set rev=7 source=llm:gemini#3: CopperOre(CopperOre) 5개 모으기 (start count 0)",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 146,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "앞 시험의 hold 9번 되풀이는 다시 나오지 않았다.",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 128,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "Gemini 19번 중 6, Claude 13번 중 2",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 118,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "Gemini 13번 보냄·13번 적용·버림 0",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 156,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "판 수: 두 세션에서 GPT 답 7번, **모두 적용, 버림 0**",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 282,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-goal",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "GOAL free time ends after 130s: a goal came (llm:gpt#6)",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 254,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.free-time",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "GOAL free time rev=2: 위쪽 LLM을 지금 쓸 수 없음(limit: usage 99% > 85%; 1800초 뒤 다시 물음)",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 247,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.free-time",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "t=214~287 판단 82번, 간격 평균 0.66초·최대 8초(서 있는 시간 없음)",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 247,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.free-time",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "상자에 넣기 DONE: 넣을 것을 모두 넣음 · 가방 WallDirtBlock -22, Wood -10",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 260,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.multi-ai",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "@Gemini AI identity: spawned AI player guid=3d1415c35a9774b67bec4596469f8b74 expected=3d1415c35a9774b67bec4596469f8b74 match=True",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 105,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.multi-ai",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "@Claude GOAL done rev=1: 구리 광석(CopperOre) 3개 모으기 (4/3) after 22.3s, calls this session 6",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 115,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.multi-ai",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "@Grok STEP 1 OK: SECOND PLAYER SPAWNED on server: entity=Entity(99388:153) … playerIndex=5 playerGuid=375e1b74c8ed8d179fb490083b4b6074 name='Grok'",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 165,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.multi-ai",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "판단 입력 3172개 모든 공격 후보의 대상 개체 번호를",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 100,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.multi-ai",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "0번(입력 6658개 모든 공격 후보를 플레이어 개체 번호와 대조)",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 11,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.motion-boundary",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "MOTION swing #1 item=WoodSword: game cooldown timer 0.250s (5 ticks) (new value)",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 52,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.motion-boundary",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "동작 중간 바꾸기는 모든 빌드·모든 전투",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 66,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.motion-boundary",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "긴급 바꾸기(20초당): 처음 2.2(새 적 26·체력 6) → swarm1 0.0, swarm2 0.5, swarm3 0.7, swarm4 0.1(새 적 0·체력 2).",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 63,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.motion-boundary",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/1-정리-계속불일치.md",
+      "quote": "DISCARD: 계속하라던 행동이 이미 바뀜(attack:98284→attack:89540)",
+      "snapshot": "preserved/evidence/17f5248c6f53c4b3.md",
+      "sourceLine": 44,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.teammates",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "players=[Luminous(호스트) 동쪽 1.0칸, 체력 바 100/100, 서 있음; Claude(AI 동료) 동쪽 2.6칸, 체력 바 100/100, 서 있음]",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 120,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.teammates",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "그때 Gemini는 Claude 화면 밖이라 들어가지 않았다(맞음).",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 122,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.teammates",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "동료 돕기(공격) — 호스트 Luminous(16.6칸, 체력 바 100/100) 옆 2.8칸의 적 MushroomEnemy, 나와 14.7칸, 적 체력 105/105.",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 130,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.teammates",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "동료 돕기(공격) — AI 동료 Gemini(7.0칸, 체력 바 77/100) 옆 1.1칸의 적",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 111,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.teammates",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "| 돕기 정보 / 따로 돕기(고름) / 돕는 셈 공격 고름 / 동료 따라가기(고름) | 241 / 63(3) / 40 / 105(6) | 97 / 21(1) / 9 / 126(2) |",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 150,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.test-switch",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "refused: test-only commands are off",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 169,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.test-switch",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/1-정리-계속불일치.md",
+      "quote": "| 끔(t≈253~316, `closefight.off`) | 36 | 0 | 15 | 0 |",
+      "snapshot": "preserved/evidence/17f5248c6f53c4b3.md",
+      "sourceLine": 62,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.test-switch",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/1-정리-계속불일치.md",
+      "quote": "켬 판 SEND 45 = INPUT 45, 두 판 합 INPUT 81·ANSWER 79",
+      "snapshot": "preserved/evidence/17f5248c6f53c4b3.md",
+      "sourceLine": 55,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.test-switch",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/2-측정-원인-동료.md",
+      "quote": "같은 136.9에",
+      "snapshot": "preserved/evidence/95f3af1369aaf13a.md",
+      "sourceLine": 36,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "`GOAL done rev=5: Torch(Torch) 2개 만들기 (2/2) after 5.5s`",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 98,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-기본-제작.md",
+      "quote": "SKILL 만들기 DONE after 0.1s: reason='Torch 1개 만듦 · 가방 Torch +1, Wood -1'",
+      "snapshot": "preserved/evidence/ba79d4f14a213e31.md",
+      "sourceLine": 55,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-기본-제작.md",
+      "quote": "GOAL done rev=1: Furnace(Furnace) 1개 만들기 (1/1) after 11.7s, calls this session 9",
+      "snapshot": "preserved/evidence/ba79d4f14a213e31.md",
+      "sourceLine": 70,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-기본-제작.md",
+      "quote": "GOAL done rev=1: CopperMiningPick(CopperMiningPick) 1개 만들기 (1/1) after 27.3s, calls this session 15",
+      "snapshot": "preserved/evidence/ba79d4f14a213e31.md",
+      "sourceLine": 83,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-기본-제작.md",
+      "quote": "PLANNER: report #2 APPLY decision=set goal=craft CopperBar 4",
+      "snapshot": "preserved/evidence/ba79d4f14a213e31.md",
+      "sourceLine": 89,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "t=808.5 GOAL done rev=19: WallStoneBricksBlock(WallStoneBricksBlock) 1개 모으기 (1/1) after 13.7s, calls this session 64",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "t=668.4 GOAL done rev=15: Furnace(Furnace) 1개 만들기 (1/1) after 9.9s, calls this session 55",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 36,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.craft",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "만들 방법이 없음 — 되풀이 실패로 30초 동안 뺀 행동",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 48,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.exp-memory",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "두 craft는 \"풀리지 않음\"이라 되풀이하지 않았다",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 42,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.exp-memory",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "**8초 만에 완료했고**, 다음 보고 note는 \"막힘 1번 뒤에 완료함\"",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 44,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.exp-memory",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "보고 조각(모드 로그 `EXP: report part`, n38): 중앙값 960자, 최대 1,469자.",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 59,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.exp-memory",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "목표 시도 id는 `\"<sess>.<goal_start 사건 id>\"`다. rev와 무관하다(review 1).",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 40,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.exp-memory",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "기다리는 시간은 연속 횟수에 따라 30분 → 1시간 → 2시간 → 4시간 → 8시간(상한)으로 는다.",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 289,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.exp-memory",
+      "source": "work/2026-11/2026-11-04-LLM-기억/2-검수.md",
+      "quote": "N2: 같은 실패를 고른 횟수가 20번에서 5번으로 줄었다",
+      "snapshot": "preserved/evidence/fd4f3d4bf82977ea.md",
+      "sourceLine": 298,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/1-설계.md",
+      "quote": "질의 7개, 필요할 때 검색, 한 판단 검색 최대 2번.",
+      "snapshot": "preserved/evidence/b2422d8c6cd9d25c.md",
+      "sourceLine": 8,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/4-구현검수.md",
+      "quote": "가장 늦은 끝은 116.8초(< 120)였다.",
+      "snapshot": "preserved/evidence/63e97aa01932f988.md",
+      "sourceLine": 170,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/7-실게임.md",
+      "quote": "목차(memory_index)는 판단 42번 모두 붙었다. 중앙값 973~985자, 최대 1,000자로 상한 안이다.",
+      "snapshot": "preserved/evidence/6cffe0697f116639.md",
+      "sourceLine": 37,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/7-실게임.md",
+      "quote": "쓰러짐 뒤 늦은 답 버리기가 실제로 동작했다.",
+      "snapshot": "preserved/evidence/6cffe0697f116639.md",
+      "sourceLine": 88,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/7-실게임.md",
+      "quote": "브리지가 그 멤버 호출을 멈췄다(12.4초 뒤). 의도한 끊김 처리다.",
+      "snapshot": "preserved/evidence/6cffe0697f116639.md",
+      "sourceLine": 87,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/7-실게임.md",
+      "quote": "recall 0번 / 42 판단.",
+      "snapshot": "preserved/evidence/6cffe0697f116639.md",
+      "sourceLine": 41,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/8-질문시험.md",
+      "quote": "recall은 35번 판단에서 0번이었다.",
+      "snapshot": "preserved/evidence/21036392e5a2d2b3.md",
+      "sourceLine": 37,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory-recall",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/9-검색안한이유.md",
+      "quote": "강도가 높아져도 나아지지 않았다.",
+      "snapshot": "preserved/evidence/9ef454d334549204.md",
+      "sourceLine": 86,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.goal-plan",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "## 3. 목표와 준비 단계: 지금 못 한다고 계획에서도 사라지지 않게",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 52,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.executor",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "## 6. 명령 수락과 행동 결과를 구분한다",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 120,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.llm-report",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "## 8. 전투 중 LLM 개입과 늦은 응답",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 170,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.reflex",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "'늦음'의 마감 값과 반사 행동의 내용은 아직 미정(시험으로 정함).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.reflex",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| 반사(늦을 때만) | 첫 빌드에서 자연 발생 1회: `REFLEX ON (no response after 1.5s)` → `REFLEX OFF (response arrived after 2.04s)`. 최종 빌드에서는 1.5초 넘는 응답이 없어 다시 보지 못함. |",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 14,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.reflex",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "판단: 늦은 응답 반사는 지금대로 \"하던 유효한 행동을 계속하거나 멈춤\"으로 둔다.",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 88,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.memory",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "## 9. 기억과 지식: 필요한 정보는 매번 전달하되 선별을 매번 LLM에 맡기지 않는다",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 190,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "F.chatroom-link",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "첫 연결은 JSONL 파일 대기열 권장",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 26,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.move-stall",
+      "source": "work/spike-실게임시험/history.md",
+      "quote": "해석(미확인): 입력을 주는데 위치가 멈추는 구간과",
+      "snapshot": "preserved/evidence/72da28b18e589a67.md",
+      "sourceLine": 44,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.toggle-admin",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "관리자 권한 플레이어의 `/ai`는 지원하지 않는다(호스트만).",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 78,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.multiplayer-untested",
+      "source": "work/2026-11/2026-11-03-ai-참여-켜기끄기.md",
+      "quote": "다른 플레이어가 있는 상태(명령 비공개, 동시 접속 판정)는 실게임으로 못 봤다.",
+      "snapshot": "preserved/evidence/f1517cefa7077772.md",
+      "sourceLine": 79,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.multiplayer-untested",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "미시험: 같은 순간 사람 접속(혼자라 불가).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 152,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.speech-bubble",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "말풍선 없음, 채팅 NetworkChatServerSystem.",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 66,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.test-give",
+      "source": "C:/Dev/CoreKeeperModSDK/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "quote": "TEST ONLY (verification aid, not gameplay)",
+      "snapshot": "preserved/evidence/a429342d94e77c9d.cs",
+      "sourceLine": 2050,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.test-give",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "시험 전용 삽입 코드(Claude.testgive)는 개발 중엔 두고, 배포 전에 뺀다.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 100,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.test-give",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "**시험 전용**(배포 전 제거 대상):",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 38,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.old-ai-entities",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "월드 ai에 수정 전 시험으로 생긴 꺼진 AI 엔티티 3개가 남음(새로 쌓이지는 않음, 정리 기능 없음).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 155,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.ai-file-outside-world",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "AI 파일이 월드 저장과 따로 있어 월드를 다른 PC·서버로 옮기면 위치는 따라가고 가방은 안 따라감 → 배포 전에 월드 저장 안에 넣을지 결정 필요.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 156,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.vision-darkness",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "화면은 코어 방 밖이 어둡다. 사람은 그 벽들을 못 본다.",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 50,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.astar-objects",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "타일만 보는 모드 A*는 길이 있다고 했고, 게임 길찾기(물체도 봄)는 길이 없다고 했다.",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 63,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.object-interact",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "물체(나무 문 등)를 부수거나 여는 기술이 없다",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 96,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.mine-toolshort-untested",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "사전 실패, 적이 벽 뒤로 사라질 때",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 88,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.ore-layer-meaning",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "광석 겹침 층의 타일셋이 `Dirt`로 읽혀 무엇인지 확실하지 않다(미결).",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 60,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.hand-slot",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "다음 맨손 행동은 다른 빈 칸을 고른다. 손 칸이 다 차면",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 99,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.reflex-content",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "'늦음'의 마감 값과 반사 행동의 내용은 아직 미정(시험으로 정함).",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.thresholds",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "호출 마감·행동 유지 범위·LLM 정기 점검 간격·정체 문턱.",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 261,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.thresholds",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "미정으로 남은 것: 반사 행동 목록과 마감 값, 정체 문턱·LLM 정기 점검 간격, 사용할 API, 한도 도달 시 처리, 확률 샘플링 여부.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 50,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.openai-credit",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "실제 잔액·만료일은 미확인.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 171,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.openai-credit",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "미정으로 남은 것: 반사 행동 목록과 마감 값, 정체 문턱·LLM 정기 점검 간격, 사용할 API, 한도 도달 시 처리, 확률 샘플링 여부.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 50,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.decisions-unseen",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "6. **실게임 미확인:** 오래된 응답 버림, 최종 빌드의 반사, 쓰러진 동안 호출 멈춤, 비용 상한 멈춤.",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 98,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.json-fallback",
+      "source": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "지금 모든 호출이 대체 리더로 읽힌다(로그 `parsed with fallback reader`).",
+      "snapshot": "preserved/evidence/a52a49ce91a34148.md",
+      "sourceLine": 68,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.weapon-damage-data",
+      "source": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "나무 검 프리팹에서 `WeaponDamageCD`를 못 읽었다",
+      "snapshot": "preserved/evidence/9eddbfc32f538c00.md",
+      "sourceLine": 115,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.llm-persona",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "단톡방과 같은 인물로 할지(초안 3.7 A/B/C). 지금은 A.",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 121,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.llm-quota-tos",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "구독 CLI를 자동 반복 호출에 쓰는 약관 위험을 알고 계속할지(초안 5장). 이번 시험은 약 20분에 11번.",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 123,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.llm-danger-memory",
+      "source": "work/2026-11/2026-11-04-위쪽LLM-첫단계.md",
+      "quote": "LLM이 기억한 주석(사막 신전 쪽)을 거듭 고른다.",
+      "snapshot": "preserved/evidence/01743ab4c4850f6e.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.memory-tiles-live",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "전에 본 구역의 칸은 계획할 때 서버에서 지금 상태를 다시 읽는다",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 21,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.tunnel-objects",
+      "source": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "코어 옆에서는 게임 길찾기가 거의 모든 탐험 목표에 길이 없다고 했다",
+      "snapshot": "preserved/evidence/b2d4b660eca71797.md",
+      "sourceLine": 72,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.tunnel-objects",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "**Claude의 CookingPot 칸인데 \"open on the tile map and in the object list\"**",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 263,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.tunnel-objects",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "타일 지도에 없는 무엇(물체로 보임, 입력 `1 under the AI`)이 막았다",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.sampling",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "확률 샘플링을 행동 다양성에 사용할지. 기본안에는 넣지 않는다.",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 263,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.action-list",
+      "source": "work/2026-11/2026-11-03-jev-행동설계-v2.md",
+      "quote": "실제 몸의 기능과 알려진 게임 규칙에 맞춘 행동 목록.",
+      "snapshot": "preserved/evidence/e4046c26897d1747.md",
+      "sourceLine": 260,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.action-list",
+      "source": "work/2026-11/2026-11-03-몸-기본-기술-구현.md",
+      "quote": "**thin client 입력으로 서버가 실제로 휘두른다**",
+      "snapshot": "preserved/evidence/886e5753115aa197.md",
+      "sourceLine": 19,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.v2-not-updated",
+      "source": "work/AI-전용-캐릭터/history.md",
+      "quote": "v2 문서 본문은 아직 고치지 않음.",
+      "snapshot": "preserved/evidence/7dd4032e727303cc.md",
+      "sourceLine": 50,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.chatroom-link",
+      "source": "work/branch-20261021T092745-5c346ae4/history.md",
+      "quote": "첫 연결은 JSONL 파일 대기열 권장",
+      "snapshot": "preserved/evidence/98d60caf29d2f0d7.md",
+      "sourceLine": 26,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.prefetch-rule",
+      "source": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "0.4초 이하가 되면(판단 지연 중앙값 0.22~0.25초)",
+      "snapshot": "preserved/evidence/058bc18c2fb0bfe8.md",
+      "sourceLine": 60,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.crate-drops-unseen",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "미확인: 상자 부수기 떨굼(같은 `AIDrops.Note` 경로)과 안 부서진 물체 기록은 이번 시험에서 일어나지 않았다.",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 55,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.nonore-goal-walls",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "비광석 벽(돌벽돌 등)을 모으는 목표는 그 벽이 화면 밖이면 기억하지 않는다(광석만 기억).",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 165,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.known-stations-llm-unseen",
+      "source": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "위쪽 LLM 보고의 `known_stations`는 브리지를 켜지 않아 실제 보고로는 못 봤다(코드·컴파일만).",
+      "snapshot": "preserved/evidence/5e3b337e434c6813.md",
+      "sourceLine": 169,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.no-fact-waver",
+      "source": "work/2026-11/2026-11-04-다수적-긴급전환.md",
+      "quote": "남은 것은 거의 다 새 사실 없이 비슷한 확률(0.3 안팎)인 움직임 행동",
+      "snapshot": "preserved/evidence/80f48c555067f7ad.md",
+      "sourceLine": 69,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.no-fact-waver",
+      "source": "work/2026-11/2026-11-04-전투-다듬기/2-측정-원인-동료.md",
+      "quote": "거리 벌리기를 시작한 지 0.3~0.6초, 가장 가까운 적이 아직 1~2칸",
+      "snapshot": "preserved/evidence/95f3af1369aaf13a.md",
+      "sourceLine": 86,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.heard-from-teammates",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "화면 밖 동료, 동료의 목표·기억·생각은 모른다.",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 112,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.gpt-grok-llm-unseen",
+      "source": "work/2026-11/2026-11-04-멤버넷-캐릭터.md",
+      "quote": "그래서 **GPT·Grok는 Decisions만으로** 시험했다(아래 3.4).",
+      "snapshot": "preserved/evidence/18fb1dda6e2f8666.md",
+      "sourceLine": 158,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.gpt-grok-llm-unseen",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "판 수: 두 세션에서 GPT 답 7번, **모두 적용, 버림 0**",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 282,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.backup-report-stale",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "t=236.0 첫 답의 목표를 놓은 0.1초 뒤 밀려 있던 `back_up` 보고 #2가 나갔고",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 249,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.farm-fill-loop",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "물을 채우러 간 자리에서",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 289,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.frame-stall-8s",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "한 프레임 약 8초",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 265,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.prep-long-routes",
+      "source": "work/2026-11/2026-11-04-막힘-멈춤-정리.md",
+      "quote": "12개가 Claude",
+      "snapshot": "preserved/evidence/5001d10aba126708.md",
+      "sourceLine": 265,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.prep-long-routes",
+      "source": "work/2026-11/2026-11-04-전투안정-동료인식.md",
+      "quote": "GPT 96%, Grok 99%로 85%를 넘어 **이번에는 부르지 않았다**",
+      "snapshot": "preserved/evidence/bcb6bd109a5c453b.md",
+      "sourceLine": 165,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.prep-long-routes",
+      "source": "work/2026-11/2026-11-04-넷이-함께-플레이.md",
+      "quote": "gpt(codex) 주간 97% SKIP, grok 주간 99% SKIP",
+      "snapshot": "preserved/evidence/40729cabda70bd4d.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-toolweak-live",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "그래서 실게임에서 tool_weak 판정 경로는 확인하지 못했다.",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 47,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-boss-live",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "보스는 만나지 못해 boss_seen·boss_kill은 확인하지 못했다",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 35,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-wait-values",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "30분부터 두 배로, 상한 8시간, 새 구역 4칸은 실게임으로 맞추지 않은 값이다.",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 338,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-work-area",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "Larva에서 주석을 캔 run이 \"Slime에서\"로 적혔다.",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 75,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-together",
+      "source": "work/2026-11/2026-11-04-LLM-기억/3-실게임.md",
+      "quote": "10칸 안에 호스트가 서 있기만 해도 together다.",
+      "snapshot": "preserved/evidence/7779e3f318e0e997.md",
+      "sourceLine": 76,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-ore-name",
+      "source": "work/2026-11/2026-11-04-LLM-기억/1-구현.md",
+      "quote": "이름이 다른 광석류가 있으면 새 구역으로 풀리는 쪽(앞의 동작)이 된다.",
+      "snapshot": "preserved/evidence/50be2585dbe980fe.md",
+      "sourceLine": 384,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-unused",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/8-질문시험.md",
+      "quote": "recall은 35번 판단에서 0번이었다.",
+      "snapshot": "preserved/evidence/21036392e5a2d2b3.md",
+      "sourceLine": 37,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-unused",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/9-검색안한이유.md",
+      "quote": "여덟 건 모두 recall이 있고 쓸 수 있다는 것을 알았다고 답했다.",
+      "snapshot": "preserved/evidence/9ef454d334549204.md",
+      "sourceLine": 54,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-unused",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/9-검색안한이유.md",
+      "quote": "강도가 높아져도 나아지지 않았다.",
+      "snapshot": "preserved/evidence/9ef454d334549204.md",
+      "sourceLine": 86,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-host-goal",
+      "source": "C:/Dev/CoreKeeperModSDK/Tools/ai-bridge/brief.md",
+      "quote": "호스트가 직접 준 목표·명령은 바꾸지 못한다(그런 때는 너에게 묻지 않는다).",
+      "snapshot": "preserved/evidence/f3214333dd403194.md",
+      "sourceLine": 46,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-loop-live",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/9-검색안한이유.md",
+      "quote": "실제 CLI에서 recall 형식과 고리 완주는 여전히 확인하지 못했다.",
+      "snapshot": "preserved/evidence/9ef454d334549204.md",
+      "sourceLine": 112,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-unity-timeout",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/7-실게임.md",
+      "quote": "그래서 Unity 시간 초과 문구는 여전히 확인하지 못했다.",
+      "snapshot": "preserved/evidence/6cffe0697f116639.md",
+      "sourceLine": 86,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.recall-biome-ko",
+      "source": "work/2026-11/2026-11-04-기억-그래프-검색/3-구현.md",
+      "quote": "는 게임 자료가 아니라 내가 쓴 이름이다",
+      "snapshot": "preserved/evidence/1405660f18263ce0.md",
+      "sourceLine": 65,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.goal-one-slot",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "`AIGoal`은 여전히 한 칸이다.",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.planner-policy-scattered",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "플래너 정책이 한 함수가 아니라 `AIPlanner` 안 다섯 자리에 흩어져 있다",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.goal-system-ends",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "아직 `EndGoal`을 거치지 않는다(보고 없음)",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.goal-system-ends",
+      "source": "work/리팩토링/history.md",
+      "quote": "비용 상한 무통보·경험 기록 집계·채팅 전달 범위는 해당 기능 작업에서 정한다.",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 53,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-schema-duplicated",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "`AIExpCore`가 출처를 따로 해석한다",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 125,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.exp-schema-duplicated",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "events.jsonl 스키마를 C# `ExpRecorder`와 memgraph `add`가 따로 안다",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 128,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.combat-rules-outside-table",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "가 아직 설명 문장 앞부분으로 이동 종류를 가른다",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 126,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.inbox-last-wins",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "받은편지함은 한 칸이고",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 127,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.decision-kinds-three",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "결정 종류 표가 아직 세 곳이다",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 127,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.transition-code",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "R1 전환기 코드가 남아 있다(HEAD가 정할 것, 9-L2 §7과 같음).",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 89,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.transition-code",
+      "source": "work/리팩토링/history.md",
+      "quote": "검증된 상태를 반영하려고 이번에는 문장 판정 그대로 두고 값 전환은 할 일로 남긴다.",
+      "snapshot": "preserved/evidence/24fe9def0c1efe8e.md",
+      "sourceLine": 179,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.partial-forwarders",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "AIBrain partial의 같은 이름 전달 속성",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 132,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.refactor-leftovers",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "에는 이제 형식과 `AITestSwitches`만 남았다. 이름과 내용이 어긋난다.",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 97,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    },
+    {
+      "id": "U.refactor-leftovers",
+      "source": "work/2026-11/2026-11-04-리팩토링/10-최종검수.md",
+      "quote": "그래서 `BC => _building ?? _ctx`(`AIBrain.cs:246`)는 언제나 같은 객체다.",
+      "snapshot": "preserved/evidence/0fe0e0781470b7f1.md",
+      "sourceLine": 94,
+      "quoteFound": true,
+      "authority": "인용 원문 존재 확인; 문장의 결정 주체·적용 범위는 별도 해석"
+    }
+  ],
+  "hashChecks": [
+    {
+      "snapshot": "legacy/graph/graph.json",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/graph/요약.md",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/README.md",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/tools/build.mjs",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/tools/config.json",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/tools/lib.mjs",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/tools/query.mjs",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/기획/기능.md",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/기획/미결.md",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/기획/정책.md",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/기획/제품코어.md",
+      "ok": true
+    },
+    {
+      "snapshot": "legacy/점검.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/a429342d94e77c9d.cs",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/f3214333dd403194.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/e8048417e26cf4dd.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/a7cf234b5b0bf0aa.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/f1517cefa7077772.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/e4046c26897d1747.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/0267922038f26797.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/886e5753115aa197.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/b2d4b660eca71797.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/a52a49ce91a34148.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/4c16f6349acc2e72.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/50be2585dbe980fe.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/fd4f3d4bf82977ea.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/7779e3f318e0e997.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/5e3b337e434c6813.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/ba79d4f14a213e31.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/b2422d8c6cd9d25c.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/1405660f18263ce0.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/63e97aa01932f988.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/6cffe0697f116639.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/21036392e5a2d2b3.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/9ef454d334549204.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/40729cabda70bd4d.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/80f48c555067f7ad.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/0fe0e0781470b7f1.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/5001d10aba126708.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/18fb1dda6e2f8666.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/3df70f22b6b8243c.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/01743ab4c4850f6e.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/058bc18c2fb0bfe8.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/17f5248c6f53c4b3.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/95f3af1369aaf13a.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/9eddbfc32f538c00.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/bcb6bd109a5c453b.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/7dd4032e727303cc.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/22114da65c9f210b.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/98d60caf29d2f0d7.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/72da28b18e589a67.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/304015eb84386b75.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/b6e49b7c142e1575.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/24fe9def0c1efe8e.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/3585d403243dd389.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/1a8e673eee03ef80.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/1e736a41dab7117a.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/2968e385bac6d1f2.md",
+      "ok": true
+    },
+    {
+      "snapshot": "evidence/0ba4b59d2a573956.md",
+      "ok": true
+    }
+  ]
+}

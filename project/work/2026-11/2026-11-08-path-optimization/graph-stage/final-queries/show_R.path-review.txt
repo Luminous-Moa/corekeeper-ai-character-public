@@ -1,0 +1,64 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 2차 통합 코드 검수 판정",
+        "doc": "pathSharedReview",
+        "end": 58,
+        "line": 50,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+        "start": 50
+      },
+      {
+        "anchor": "## 후속 발견과 처리",
+        "doc": "pathSharedReview",
+        "end": 32,
+        "line": 29,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+        "start": 29
+      }
+    ],
+    "id": "R.path-review",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 58,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "start": 50
+      },
+      {
+        "end": 32,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "start": 29
+      }
+    ],
+    "status": "참고·독립 코드 수용·대표 실기는 별도 근거",
+    "summary": "공유 검색의 동기 예열과 상한 오판, 직접 후보 key 충돌을 수정·재검수했다. 코드·오프라인·Unity 범위를 수용했으며 대표 실기는 R.path-live의 정확 관측을 따른다. 원자 epoch 미보장, 직접 대응만255 초과 시 전송 중단, 동률 경로와 진단 범위 변화가 남는다.",
+    "title": "43c3817 코드·오프라인·Unity 후속 독립 수용",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 2차 통합 코드 검수 판정",
+          "doc": "pathSharedReview",
+          "end": 58,
+          "line": 50,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+          "start": 50
+        }
+      ],
+      "from": "P.path-optimization",
+      "id": "E213",
+      "kind": "참고: 후속 독립 수용 범위",
+      "to": "R.path-review",
+      "type": "reference"
+    }
+  ]
+}

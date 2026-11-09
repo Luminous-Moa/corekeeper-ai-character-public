@@ -1,0 +1,14 @@
+P.release-goal — Core Keeper 모드로 만들어 배포 [합의]
+  모드가 제공할 플레이 경험 [합의]
+P.experience — 동료·친구와 협력하고 생활하는 경험 [합의]
+  생활 경험으로 구체화 [해석]
+P.life — 자율 생활과 사용자 도움을 함께 이어감 [합의]
+  생활 행동의 선택 탐색으로 구체화 [합의]
+P.life-tree — 생활 선택지를 필요한 단계로 좁혀 탐색 [합의]
+  숫자 조합을 만들지 않는 구현 기준 [HEAD 승인]
+P.life-tree-count — 수량은 상위 작업량으로 전달 [HEAD 승인·구현 기준]
+상위 count/범위를 현장에 전달하고 수량별 후보를 나열하지 않는다. 현장 자유 정수 생성 지원을 가정하지 않으며 수량 변경은 request_plan으로 연결한다. 원래 부탁 수량·단계 요청량·이번 실제 실행량을 구별한다.
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-가방장비구현\graph-stage\work\2026-11\2026-11-07-생활트리구현\02-direction-decision.md:3
+  c4a0f5e 생활 구현 입구 [코드 대응] → code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Remaining(LifeSelection) — Remaining
+  c4a0f5e 생활 구현 입구 [코드 대응] → code:Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs#AIPlanProtocol.Read(string) — Read
+  참고: 작업 수량은 후보 개수 상한과 별개 [해석] → R.bag-life-consumers — 생활·가방의 별도 소비자 계약 통합 [참고·HEAD 통합 판단, 새 사용자 원문 아님]

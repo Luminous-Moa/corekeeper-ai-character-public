@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const dir = import.meta.dirname;
+const p=fs.readFileSync(dir+'/Player.snapshot.log','utf8').split(/\r?\n/);
+const d=fs.readFileSync(dir+'/decisions.snapshot.log','utf8').split(/\r?\n/);
+const rows=(ls,a,b,who)=>ls.map((s,i)=>({s,n:i+1,t:+(s.match(/t=([\d.]+)/)?.[1]??-1)})).filter(x=>x.t>=a&&x.t<=b&&(!who||x.s.includes('@'+who+' ')));
+const all=rows(p,280.3,1633.4), calls=all.filter(x=>/ RESULT /.test(x.s));
+const lat=calls.map(x=>+(x.s.match(/latency=([\d.]+)/)?.[1]??NaN)).filter(Number.isFinite).sort((a,b)=>a-b);
+const prep=all.filter(x=>/ SEND /.test(x.s)).map(x=>+(x.s.match(/prep=([\d.]+)/)?.[1]??NaN)).filter(Number.isFinite).sort((a,b)=>a-b);
+const pct=(x,f)=>x[Math.ceil(x.length*f)-1];
+const summary={range:[280.3,1633.4],results:calls.length,latency:{p50:pct(lat,.5),p95:pct(lat,.95),max:lat.at(-1),over1_5:lat.filter(x=>x>1.5).length},prepMs:{n:prep.length,p50:pct(prep,.5),p95:pct(prep,.95),max:prep.at(-1)},staleContinue:all.filter(x=>x.s.includes('DISCARD: 계속하라던 행동이 이미 바뀜')).length,downs:all.filter(x=>x.s.includes('VITALS: DOWN')).map(x=>({line:x.n,t:x.t,who:x.s.match(/@(\S+)/)?.[1],nearest:x.s.match(/마지막으로 본 적: (\w+)/)?.[1]})),hashes:Object.fromEntries(['Player.snapshot.log','decisions.snapshot.log'].map(n=>[n,crypto.createHash('sha256').update(fs.readFileSync(dir+'/'+n)).digest('hex')]))};
+fs.writeFileSync(dir+'/summary.json',JSON.stringify(summary,null,2));
+for(const [name,ls,a,b,who] of [['grok-last-fight',p,1610,1633.4,'Grok'],['grok-attack',p,1378,1384,'Grok'],['grok-last-inputs',d,1611,1616.2,'Grok'],['grok-attack-inputs',d,1378,1384,'Grok']]) fs.writeFileSync(dir+'/'+name+'.txt',rows(ls,a,b,who).map(x=>`${x.n}: ${x.s}`).join('\n'));
+console.log(JSON.stringify(summary,null,2));

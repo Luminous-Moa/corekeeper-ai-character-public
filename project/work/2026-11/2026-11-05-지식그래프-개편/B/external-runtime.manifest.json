@@ -1,0 +1,63 @@
+{
+  "root": "C:/Dev/ai-chatroom",
+  "authority": "Outside pinned SDK commit; boundary only. Hash at verification time, not runtime attestations.",
+  "gitHead": "bdd6ad62b535c201bcd0b87b52b164ae1eada459",
+  "workingTreeStatus": "M lib/agents/cli/agy.mjs",
+  "files": [
+    {
+      "path": "lib/agents/adapters.mjs",
+      "sha256": "2669aba1f9d1cedbf69dcd0b10b7ab7ab35a32e34a31b02d712771b3d5f182a5",
+      "bytes": 9021
+    },
+    {
+      "path": "lib/agents/cli/agy.mjs",
+      "sha256": "322efe568123c104d7d65279fd4c43ee7ce2b8729e787daa7d64460167d1c018",
+      "bytes": 9032
+    },
+    {
+      "path": "lib/agents/cli/claude.mjs",
+      "sha256": "f0f296054d5e7ad57f86409125b7fe95949a91c8498f38308b1417bda5b49ea5",
+      "bytes": 8116
+    },
+    {
+      "path": "lib/agents/cli/codex.mjs",
+      "sha256": "cf1ed2b7ce2b63e4f244a69e120b808d23db3c77fa2b6d37d1dd3524c0b4203d",
+      "bytes": 7254
+    },
+    {
+      "path": "lib/agents/cli/grok.mjs",
+      "sha256": "9e421d49d511eadda6380357381a68e3fcbdd19c728b8bed315c5d4b8d0db239",
+      "bytes": 9722
+    },
+    {
+      "path": "lib/agents/cli/index.mjs",
+      "sha256": "23a910cda2acc2ebc554f07a92c90812e4ade9bc6981598c71d67bd9b4cf30ff",
+      "bytes": 2090
+    },
+    {
+      "path": "lib/agents/cli/shared.mjs",
+      "sha256": "79878b04175d8ff2d92ecea05fcc1b8b13f7a566c87b42642f8e92a3f848d521",
+      "bytes": 1159
+    },
+    {
+      "path": "lib/agents/logins.mjs",
+      "sha256": "d6fadb962ca723aaf6bfde3ec0b61b23ae9550a33aad4a16546eed5b5834f986",
+      "bytes": 3532
+    },
+    {
+      "path": "lib/agents/run.mjs",
+      "sha256": "445364617ea511fdde822eca5829ba4a2fe3aa04e5ee17209d6ba4c9fd46f04a",
+      "bytes": 5326
+    },
+    {
+      "path": "lib/members.mjs",
+      "sha256": "cf777df1d7369b66360b9951e09d90132a1fa858d1504d45002c15de247e8b3b",
+      "bytes": 11566
+    },
+    {
+      "path": "lib/templates.mjs",
+      "sha256": "0b3ddbb64647b340350228c0c50f57efce344a792d40a595c8aec8ba99f63e99",
+      "bytes": 33100
+    }
+  ]
+}

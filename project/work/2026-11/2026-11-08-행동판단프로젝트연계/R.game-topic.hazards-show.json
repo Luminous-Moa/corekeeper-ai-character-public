@@ -1,0 +1,564 @@
+{
+  "node": {
+    "action": "block_fire_aoe",
+    "completionLevel": "named_caller_path_only",
+    "evidenceContext": {
+      "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1",
+      "researchRoot": "../2026-11/2026-11-07-행동결과완결"
+    },
+    "id": "completion:A:block-fire-mortar-9305-v1",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "41a1732c48fffb35c0350be4fae0ba072fe37ca349b3dfa5ccbc2ef05bdbeab9",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+      "pointer": "/cases/0"
+    },
+    "producerStatus": "static_research_awaiting_independent_review",
+    "recordFormat": "reviewed_named_caller_case",
+    "roleBindings": [
+      {
+        "conditional": true,
+        "objectId": 9305,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/2839",
+          "rawByteSha256": "ca5382773b9a6e4e4dabffff191169b0683333e7c2fd83004920d36d40dc6dcd",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+        },
+        "role": "conditional_projectile",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4699292518661052611",
+        "variation": 0
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "A specific player shield block producer of 9305:0; other producers unclosed.",
+    "sourceComplete": false,
+    "status": "independent_pass"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "completion:A:block-fire-mortar-9305-v1/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "c77f44badcc891701b48dce49c994bdb73965f996056ae7555e3edbabe6428bc",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/conditions"
+      },
+      "value": [
+        "Exact 9305:0 must match runtime DB primary.",
+        "The hit must pass early hit/faction/visibility gates and enter shielded branch. Positive condition value and first fully predicting tick are separate required gates."
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "assetEvidence",
+      "id": "completion:A:block-fire-mortar-9305-v1/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "58ff0ebfd0a0b574d9738f59a29af4c67831a5f14b79f3c8311a8688a72bdf40",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/assetEvidence"
+      },
+      "value": [
+        {
+          "class": "DontDropSelfAuthoring",
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5562938749153421117"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "4669620127795779927"
+            }
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8434704461162456893",
+          "line": 38444,
+          "objectId": 9305,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "449310a1df3bcd6b7620468ee63b787ae92776e2a3165b08d1774b40761c0a24"
+        },
+        {
+          "class": "HealthAuthoring",
+          "data": {
+            "dontCalculateHealthFromLevel": 0,
+            "hasHealthRegeneration": 0,
+            "healDelayAfterLeavingCombat": 5.0,
+            "healInCombatAsWell": 0,
+            "healthIncreasePercentPerFiveSeconds": 100,
+            "level": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5562938749153421117"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "8684237468152111645"
+            },
+            "maxHealth": 10,
+            "maxHealthMultiplier": 1.0,
+            "normalizedOverrideStartHealth": 1.0,
+            "overrideStartHealth": 0,
+            "startHealth": 10
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7895490736136345795",
+          "line": 78541,
+          "objectId": 9305,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "f8da4890811f4003ea2b5fc7b28420e491ce513fc9b0a6fcb96692c3c4d7aa31"
+        },
+        {
+          "class": "MortarProjectileAuthoring",
+          "data": {
+            "airTime": 0.0,
+            "bypassMaxDamagePerHit": 0,
+            "canSpawnTilesOnWaterOrPits": 0,
+            "checkVisibility": 0,
+            "explodeTime": 0.0,
+            "goDownTime": 0.0,
+            "goUpTime": 0.0,
+            "hitTiles": 0,
+            "isMagic": 0,
+            "isPredicted": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5562938749153421117"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-1778501184282892084"
+            },
+            "pushback": 0.0,
+            "radius": 1.5,
+            "randomizeEdgeForTilesToSpawn": 0,
+            "removeTilesOnLand": 0,
+            "skipWallAndRootsLootDropOnDestroy": 1,
+            "spawnNapalmObjectID": 0,
+            "spawnNapalmVariation": 0,
+            "spawnTilesOnGoingDown": 0,
+            "spawnTilesOnGoingDownExtraRadius": 0.0,
+            "spawnTilesOnLand": 0,
+            "tileTypeToRemove": 0,
+            "tileTypeToSpawn": 132,
+            "tileTypeToSpawnOnGoingDown": 0,
+            "tilesetToRemove": 0,
+            "tilesetToSpawn": 6,
+            "tilesetToSpawnOnGoingDown": 0,
+            "useDefaultTimings": 0
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:876959186904111299",
+          "line": 83048,
+          "objectId": 9305,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "10f1047704aea993a05d30241d32a7a85ff5a2eb3984e55633ff121f668ecf00"
+        },
+        {
+          "class": "FactionAuthoring",
+          "data": {
+            "faction": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-5562938749153421117"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "113154184469520911"
+            }
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8936513853398603971",
+          "line": 83830,
+          "objectId": 9305,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "da9954ea248e2fa683c8314455385514cd9d15ec6f6dc7a1a279173e42579320"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "completion:A:block-fire-mortar-9305-v1/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "d18588bf8d43bd039c17f05cec0ba1809d732b6d7bae6ddf7409a1d6f10ff8f2",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/codeEvidence"
+      },
+      "value": [
+        {
+          "fileLineCount": 133,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ShootMortarStateRequest.cs",
+          "ranges": "12-133",
+          "ref": "Pug.Other/ShootMortarStateRequest.cs:12-133",
+          "sha256": "811d239826710d3037c92d58c5ae6b82ba1c3a031038eff6dff4349c8f30d220"
+        },
+        {
+          "fileLineCount": 927,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ShootMortarProjectileStateSystem.cs",
+          "ranges": "81-94,204-235,242-388",
+          "ref": "Pug.Other/ShootMortarProjectileStateSystem.cs:81-94,204-235,242-388",
+          "sha256": "8c08e237a53baded9e4cc976b0a6ee0ddf40bfa888bd137aacfee98103fd414f"
+        },
+        {
+          "fileLineCount": 66,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\ShootMortarProjectileStateConverter.cs",
+          "ranges": "5-66",
+          "ref": "Pug.ECS.Conversion/ShootMortarProjectileStateConverter.cs:5-66",
+          "sha256": "4004ad008b8d070ca43561300fb12c7a036f5e12d6ebc94a860eecc55bda1605"
+        },
+        {
+          "fileLineCount": 3397,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "ranges": "2490-2527,2740-2772",
+          "ref": "Pug.Other/EntityUtility.cs:2490-2527,2740-2772",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b"
+        },
+        {
+          "fileLineCount": 1526,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\MortarProjectileSystem.cs",
+          "ranges": "174-208,210-284,657-802",
+          "ref": "Pug.Other/MortarProjectileSystem.cs:174-208,210-284,657-802",
+          "sha256": "630b20675d454f7c042a68039bcda80ed5ddc408d25c95e690fbe3740ac1320b"
+        },
+        {
+          "fileLineCount": 50,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\MortarProjectileConverter.cs",
+          "ranges": "5-50",
+          "ref": "Pug.ECS.Conversion/MortarProjectileConverter.cs:5-50",
+          "sha256": "3883ce9dccf27611875f39c382af8afb2979d07747727530a6556443cf8a3b61"
+        },
+        {
+          "fileLineCount": 583,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SetEntitiesDestroyedSystem.cs",
+          "ranges": "14-19,126-146",
+          "ref": "Pug.Other/SetEntitiesDestroyedSystem.cs:14-19,126-146",
+          "sha256": "9994c6f8005abed56ab614064ff4e4839abedde03a2f6477d09f518ba46c1778"
+        },
+        {
+          "fileLineCount": 43,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\PugTilemap\\TileType.cs",
+          "ranges": "1-43",
+          "ref": "Pug.Base/PugTilemap/TileType.cs:1-43",
+          "sha256": "32de4ac44ebfeb859523b28c023bdfc7392c516251ceb9cfcf00e9de23ed7f73"
+        },
+        {
+          "fileLineCount": 2034,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AttackPlayerSystem.cs",
+          "ranges": "1469-1545,1560-1580,1614-1649",
+          "ref": "Pug.Other/AttackPlayerSystem.cs:1469-1545,1560-1580,1614-1649",
+          "sha256": "7b44354da8d11617fe426a70d699310521db734667a04875751f2f1d89f295ec"
+        },
+        {
+          "fileLineCount": 1220,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "ranges": "878-881",
+          "ref": "Pug.Other/PlayerCommand/ClientSystem.cs:878-881",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab"
+        },
+        {
+          "fileLineCount": 3397,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "ranges": "2449-2488,2807-2836,2972-2979",
+          "ref": "Pug.Other/EntityUtility.cs:2449-2488,2807-2836,2972-2979",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b"
+        },
+        {
+          "fileLineCount": 572,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\Create.cs",
+          "ranges": "64-74",
+          "ref": "Pug.Other/Inventory/Create.cs:64-74",
+          "sha256": "eb1062460a0af763b8850cc3046787939bf4599ef5988ef8c4bb35549cb09b27"
+        },
+        {
+          "fileLineCount": 1168,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+          "ranges": "357-374,797-807,828-855",
+          "ref": "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-374,797-807,828-855",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+        },
+        {
+          "fileLineCount": 3814,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+          "ranges": "464-473",
+          "ref": "Pug.Other/Inventory/InventoryUtility.cs:464-473",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "sharedConsumers",
+      "id": "completion:A:block-fire-mortar-9305-v1/evidence/sharedConsumers",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "cb01aee5c0c60e067c73731fe2be0da6dd48d617cfa037134f8126b801c83e75",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/sharedConsumers"
+      },
+      "value": [
+        {
+          "allowedReuseScope": "Shared RegisterPlayerHit and subsequent player barrier/mana/HP/CheatDeath only; projectile 9100/9200 values and ownership are source-specific.",
+          "artifact": {
+            "path": "full/B/evidence/range-9100-v2-replay-1/cases.json",
+            "sha256": "5e71a240df009fc6fb98ff251d776e71e66605259a05021d4c08540a1154b011"
+          },
+          "artifactPointer": "/cases/0",
+          "decision": {
+            "path": "judging/29-원거리9100과장비역링크수용.md",
+            "sha256": "7d470f2172f6e242375b06177b02f6c4e8963322676b20847e104fc0ac5d0835"
+          },
+          "review": {
+            "path": "review/full-B-range-9100/report.md",
+            "sha256": "2d99c12b01401d3d3951741ac2b8a92d81ac13bca805462c30a0040982994993"
+          }
+        },
+        {
+          "allowedReuseScope": "AttackInternal gates, predicted direct player hit versus server RPC receiver, and HCB consumer references only. New source caller parameters remain to be checked.",
+          "artifact": {
+            "path": "full/A/affix-damage-consumers-v5/affix-damage-consumers.json",
+            "sha256": "c8da3287bde6c7507a400d415e287482c5da20be4bc02118ab0d0e24ee09c516"
+          },
+          "artifactPointer": "/codeEvidence",
+          "decision": {
+            "path": "judging/57-A추가역할18묶음부분수용.md",
+            "sha256": "f0193ed3202ccb40a690644aba4610f9c3eb549dd80e502c944a1123e850707e"
+          },
+          "review": {
+            "path": "review/resumed-A-roles-next8b/report-final.md",
+            "sha256": "caf93de30fe5e8bd73639eaf836862a957b04c21387485bccb6d8220a1c2c3ed"
+          }
+        },
+        {
+          "allowedReuseScope": "Shared health-change and destruction/pickup consumer only. Exact source/call flags are not inherited.",
+          "artifact": {
+            "path": "full/D/followups-v2/cases.json",
+            "sha256": "74bf7b17c9578c4dd090b386a334e1a3db0153a1315bcda4cc941c8dfe70d64a"
+          },
+          "artifactPointer": "/cases/1",
+          "decision": {
+            "path": "judging/15-소환v2와파기후속수용.md",
+            "sha256": "d12ae50f8b9a14f446db6f705c81d7378eb22de5084f513b6a2732fd21aa0237"
+          },
+          "review": {
+            "path": "review/full-D-followups/report-v2.md",
+            "sha256": "63811510f385f8f38432ce77690347f52654548406369c0bfedd4bac9567a90a"
+          }
+        },
+        {
+          "allowedReuseScope": "Shared zero-health destruction only.",
+          "artifact": {
+            "path": "full/B/evidence/combat-followups-v2-replay-1/cases.json",
+            "pointer": "/cases/28/transitions/1",
+            "sha256": "d404bfa493321e8a02724b1add3449a24dcacd230ca308c7a3949e0d31dab317"
+          },
+          "decision": {
+            "path": "judging/53-B전투후속97수용.md",
+            "sha256": "96af7aa38da6c3d82426124e5ac55c2eef23165a86280ef6ca5b18048203b7cc"
+          },
+          "review": {
+            "path": "review/full-B-combat/followups-report.md",
+            "sha256": "54bbbe978d5621e82fcf1b0d6376572404427b351380f071ba20a5d8f977692e"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "typedEndpoints",
+      "id": "completion:A:block-fire-mortar-9305-v1/evidence/typedEndpoints",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "b511ef1950f1cbcd443eb824fe32d41bf928a7eac90bc21e8b72e83bd7d272ff",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/typedEndpoints"
+      },
+      "value": [
+        {
+          "id": "dynamic:shielding-player",
+          "role": "conditional_actor",
+          "type": "runtime_player_entity"
+        },
+        {
+          "id": "dynamic:incoming-attacker",
+          "role": "conditional_trigger",
+          "type": "runtime_entity"
+        },
+        {
+          "id": "dynamic:aoe-target",
+          "role": "conditional_target",
+          "type": "runtime_entity"
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "field": "negativeCases",
+      "id": "completion:A:block-fire-mortar-9305-v1/failure/negativeCases",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "2fd071636c830f3459d81be43abad420df9b43aaa2d4216aea0a816a2df1e5b3",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/negativeCases"
+      },
+      "value": [
+        "Failed hit, no shield, nonpositive condition, non-first tick, DB mismatch, owner/faction/target or immunity gates can prevent the path.",
+        "Absence of secondary authoring is limited to this exact authoringRef."
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "entry",
+      "id": "completion:A:block-fire-mortar-9305-v1/flow/entry",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "a01514097302527f9fac112199ab225e7776a4865ccc33a9a1cb5cafdea65a75",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/entry"
+      },
+      "value": "RegisterPlayerHit proceeds through the shielded branch; DealAoeFireDamageOnBlock condition is positive and tick is first fully predicted."
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "completion:A:block-fire-mortar-9305-v1/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "2cf921ed39d92bb816d575d0e6a73944c50ae514491cf6b8ebe979a955d3e873",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/transitions"
+      },
+      "value": [
+        {
+          "from": "shield block",
+          "refs": [
+            "Pug.Other/AttackPlayerSystem.cs:1469-1545,1560-1580,1614-1649",
+            "Pug.Other/PlayerCommand/ClientSystem.cs:878-881",
+            "Pug.Other/EntityUtility.cs:2449-2488,2807-2836,2972-2979"
+          ],
+          "text": "After hit calculation and shield gate, condition value is read; positive value on first fully predicted tick calls ClientSystem.SpawnMortar with owner player, position/target player position, damage=condition value, level 0. First overload overrides timings to 0/0/0/0 and damage, sets owner and source level, conditionally copies owner tags/inheritable conditions and faction when prefab has it. Shield branch also requests offhand inventory amount decrement; its actual inventory update has separate gates.",
+          "to": "9305"
+        },
+        {
+          "from": "mortar effect",
+          "refs": [
+            "Pug.ECS.Conversion/MortarProjectileConverter.cs:5-50",
+            "Pug.Other/MortarProjectileSystem.cs:174-208,210-284,657-802"
+          ],
+          "text": "9305 authored radius 1.5, checkVisibility false, no tile hit/spawn/removal or napalm. PlayerGhost owner allows predicted-side effect; all three flight times zero makes attacker the player rather than projectile, and p.isPredicted=true. AttackSystem target/faction/health gates lead to shared player RegisterPlayerHit or nonplayer HCB path. Same owner and inherited conditions remain dynamic; fire wording alone does not assert an applied burning condition.",
+          "to": "target health"
+        },
+        {
+          "from": "projectile HP zero",
+          "refs": [
+            "Pug.Other/MortarProjectileSystem.cs:174-208,210-284,657-802",
+            "Pug.Other/SetEntitiesDestroyedSystem.cs:14-19,126-146"
+          ],
+          "text": "Explode timer writes own HP=0. Nonplayer projectile health-zero query marks EntityDestroyed unless protected. Exact 9305 authoringRef lacks SpawnOnDeath, SpawnTileOnDeath and Explosive authoring; runtime additions remain possible.",
+          "to": "conditional destruction"
+        },
+        {
+          "from": "shield block inventory request",
+          "refs": [
+            "Pug.Other/AttackPlayerSystem.cs:1469-1545,1560-1580,1614-1649",
+            "Pug.Other/Inventory/Create.cs:64-74",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-374,797-807,828-855",
+            "Pug.Other/Inventory/InventoryUtility.cs:464-473"
+          ],
+          "text": "The shield branch queues SetAmount for the same player inventory and offhand slot with expected object ID and max(original amount-1,0). InventoryChange job respects read-only/admin gate, rejects null, missing or destroyed inventory, and SetAmount writes the requested amount only if the current slot object ID still matches. The queue and actual buffer update are distinct; no actual cost is observed.",
+          "to": "conditional offhand amount"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "outcomes",
+      "id": "completion:A:block-fire-mortar-9305-v1/result/outcomes",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "2a1435d555b538e20922ebabd2b51e899545b6ade532b7f657b11954ae8b2268",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/outcomes"
+      },
+      "value": [
+        "Conditional area hit and health update; no specific hit, damage or item cost observed."
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "completion:A:block-fire-mortar-9305-v1/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "29a38e766dcd449fa77e9feb75694d1629be8dd9054ee4b136a76c4097ac72e2",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0/boundaries"
+      },
+      "value": [
+        "Runtime equipment providing the condition, state, target, DB primary, ECB playback and game execution are not observed.",
+        "Only this block producer is investigated.",
+        "Independent review pending."
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:A-projectile-helper-9305-v2",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "completion:A:block-fire-mortar-9305-v1/role/0",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "reuses_reviewed_consumer",
+      "target": "completion:A:block-fire-mortar-9305-v1/shared-consumer/0",
+      "kind": "reviewed_consumer_reference",
+      "action": null
+    },
+    {
+      "relation": "reuses_reviewed_consumer",
+      "target": "completion:A:block-fire-mortar-9305-v1/shared-consumer/1",
+      "kind": "reviewed_consumer_reference",
+      "action": null
+    },
+    {
+      "relation": "reuses_reviewed_consumer",
+      "target": "completion:A:block-fire-mortar-9305-v1/shared-consumer/2",
+      "kind": "reviewed_consumer_reference",
+      "action": null
+    },
+    {
+      "relation": "reuses_reviewed_consumer",
+      "target": "completion:A:block-fire-mortar-9305-v1/shared-consumer/3",
+      "kind": "reviewed_consumer_reference",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "conditional_projectile",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4699292518661052611"
+    ]
+  ]
+}

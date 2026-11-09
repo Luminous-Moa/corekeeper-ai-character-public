@@ -1,0 +1,1840 @@
+{
+  "node": {
+    "action": "board",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "code_linked",
+    "facts": {
+      "sourceSettings": {
+        "components": {
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-1385361024976944842": {
+            "data": {
+              "initialDirection": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3072919461383213294"
+              },
+              "rotatePhysics": 0,
+              "rotationIconOffset": 0
+            },
+            "rawByteSha256": "a1a74bbe88603b54e1b6ef84058f319308b44f93418812b21335591eccbe19f2",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "RotationAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-1852088308638547658": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7136367106876791332"
+              },
+              "overrideTimeBeforeDestroy": 0,
+              "skipDeathAnimation": 0,
+              "timeBeforeDestroy": 0.0,
+              "timeBeforeLootDrop": 0.0
+            },
+            "rawByteSha256": "eb52742df60a8d71e5dcc946a6f4300dacff7d5069cf6fa6268bc8e2ed1b1b2d",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "DeathStateAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-2190400328624832202": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3328761155053187388"
+              }
+            },
+            "rawByteSha256": "8fb2869d1472accbe6d4d09b91ec91574a71e074d7f42d6a2c60243c065d9f65",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "CanBeControlledByOtherEntityAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6118287244658929394"
+              },
+              "objectInfo": {
+                "additionalSprites": [],
+                "appearInMapUI": 0,
+                "buyValueMultiplier": 1.0,
+                "centerIsAtEntityPosition": 0,
+                "craftingSettings": {
+                  "canOnlyUseAnyMaterialsWithTag": 0,
+                  "iconType": 0
+                },
+                "craftingTime": 2.0,
+                "icon": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6031073012093014418"
+                },
+                "iconOffset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "iconSkinAssetRef": {
+                  "m_address": {
+                    "m_high": "0",
+                    "m_low": "0"
+                  }
+                },
+                "initialAmount": 1,
+                "isCustomScenePrefab": 0,
+                "isStackable": 1,
+                "languageGenders": [],
+                "level": 0,
+                "mapColor": {
+                  "a": 0.0,
+                  "b": 0.0,
+                  "g": 0.0,
+                  "r": 0.0
+                },
+                "objectID": 6580,
+                "objectType": 800,
+                "prefabCornerOffset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "prefabInfo": {
+                  "authoring": {
+                    "m_FileID": 0,
+                    "m_PathID": "0"
+                  },
+                  "authoringRef": {
+                    "m_address": {
+                      "m_high": "-2615028540837439733",
+                      "m_low": "4234536006954619855"
+                    }
+                  },
+                  "graphicalRef": {
+                    "m_address": {
+                      "m_high": "-1042517426658929192",
+                      "m_low": "9066887022387205133"
+                    }
+                  },
+                  "prefab": {
+                    "m_FileID": 0,
+                    "m_PathID": "0"
+                  }
+                },
+                "prefabTileSize": {
+                  "x": 1,
+                  "y": 1
+                },
+                "rarity": 0,
+                "requiredObjectsToCraft": [
+                  {
+                    "amount": 50,
+                    "objectID": 1030
+                  },
+                  {
+                    "amount": 20,
+                    "objectID": 1004
+                  },
+                  {
+                    "amount": 8,
+                    "objectID": 1647
+                  }
+                ],
+                "salvageMultiplier": 1.0,
+                "sellValue": -1,
+                "smallIcon": {
+                  "m_FileID": 0,
+                  "m_PathID": "7421721951782317678"
+                },
+                "tags": [
+                  25
+                ],
+                "tileType": 0,
+                "tileset": 0,
+                "variation": 0,
+                "variationIsDynamic": 0,
+                "variationToToggleTo": 0
+              },
+              "optionalPreviewPrefab": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              }
+            },
+            "rawByteSha256": "b12d50d24be4f308f14af321fb827c03c0d0f68c0491e52349516ce5d54266d6",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "EntityMonoBehaviourData",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-4809085866608033482": {
+            "data": {
+              "duration": 0.0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "492835651308636983"
+              },
+              "refreshStateOnNewDamageTaken": 0
+            },
+            "rawByteSha256": "c040789f3898a326a52709afe9bd0b805a0a6efd78a2b7b513257254a7e29612",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "TookDamageStateAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-4864833146221821809": {
+            "data": {
+              "m_Component": [
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "-4986132594264309617"
+                  }
+                },
+                {
+                  "component": {
+                    "m_FileID": 0,
+                    "m_PathID": "3792364744201666703"
+                  }
+                }
+              ],
+              "m_IsActive": true,
+              "m_Layer": 0,
+              "m_Name": "Interactable",
+              "m_Tag": 0
+            },
+            "rawByteSha256": "ef6b1a6c9df582926e90008f2d403144c972c9664745f5d787a1214a3bca14f3",
+            "script": null,
+            "type": "GameObject"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-6361140386282208970": {
+            "data": {
+              "calculateReductionFromLevel": 0,
+              "ignoreReductionWhenDamagedByDrill": 0,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "5836994010237960502"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-375258212975122451"
+              },
+              "maxDamagePerHit": 1,
+              "minDamagePerHit": 0,
+              "reduction": 0,
+              "reductionMultiplier": 1.0
+            },
+            "rawByteSha256": "2ac3438c606c837ceb538c1d3118848635e10a7a5c663c4079203e1c3529da0e",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "DamageReductionAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-6642362250417864394": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3152224696030317505"
+              },
+              "playFailedEffectOnZeroDamage": 0
+            },
+            "rawByteSha256": "c6f00eef3e3a061c781b31d46863a6294a84b13f466cf0654f4ad664d87b295c",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "MineableAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-6878101271940169418": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8757468363828915058"
+              }
+            },
+            "rawByteSha256": "95e98a0335932ffd45496ec7d9f57d5ee5781829137e6f15141654451eb1ab29",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "IgnoreTransferInventoryWhenPlayerKilledAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:-7336161312254262986": {
+            "data": {
+              "m_Capsule": {
+                "Axis": 1,
+                "Height": 1.0,
+                "Radius": 0.004999999888241291
+              },
+              "m_ConvexHullGenerationParameters": {
+                "m_BevelRadius": 0.0,
+                "m_MinimumAngle": 2.500000238418579,
+                "m_SimplificationTolerance": 0.014999999664723873
+              },
+              "m_CustomMesh": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_Cylinder": {
+                "Axis": 1,
+                "Height": 1.0,
+                "Radius": 0.004999999888241291
+              },
+              "m_CylinderSideCount": 20,
+              "m_Enabled": 1,
+              "m_ForceUnique": 0,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Material": {
+                "m_BelongsToCategories": {
+                  "m_Override": 0,
+                  "m_Value": {
+                    "Category00": 0,
+                    "Category01": 0,
+                    "Category02": 0,
+                    "Category03": 0,
+                    "Category04": 0,
+                    "Category05": 0,
+                    "Category06": 1,
+                    "Category07": 0,
+                    "Category08": 0,
+                    "Category09": 0,
+                    "Category10": 0,
+                    "Category11": 0,
+                    "Category12": 0,
+                    "Category13": 0,
+                    "Category14": 0,
+                    "Category15": 0,
+                    "Category16": 0,
+                    "Category17": 0,
+                    "Category18": 0,
+                    "Category19": 0,
+                    "Category20": 0,
+                    "Category21": 0,
+                    "Category22": 0,
+                    "Category23": 0,
+                    "Category24": 0,
+                    "Category25": 0,
+                    "Category26": 0,
+                    "Category27": 0,
+                    "Category28": 0,
+                    "Category29": 0,
+                    "Category30": 0,
+                    "Category31": 0
+                  }
+                },
+                "m_CollidesWithCategories": {
+                  "m_Override": 0,
+                  "m_Value": {
+                    "Category00": 1,
+                    "Category01": 0,
+                    "Category02": 1,
+                    "Category03": 0,
+                    "Category04": 1,
+                    "Category05": 0,
+                    "Category06": 0,
+                    "Category07": 0,
+                    "Category08": 0,
+                    "Category09": 0,
+                    "Category10": 0,
+                    "Category11": 0,
+                    "Category12": 0,
+                    "Category13": 0,
+                    "Category14": 0,
+                    "Category15": 0,
+                    "Category16": 0,
+                    "Category17": 0,
+                    "Category18": 0,
+                    "Category19": 0,
+                    "Category20": 0,
+                    "Category21": 0,
+                    "Category22": 0,
+                    "Category23": 0,
+                    "Category24": 0,
+                    "Category25": 0,
+                    "Category26": 0,
+                    "Category27": 0,
+                    "Category28": 0,
+                    "Category29": 0,
+                    "Category30": 0,
+                    "Category31": 0
+                  }
+                },
+                "m_CollisionResponse": {
+                  "m_Override": 0,
+                  "m_Value": 0
+                },
+                "m_CustomMaterialTags": {
+                  "m_Override": 0,
+                  "m_Value": {
+                    "Tag00": 0,
+                    "Tag01": 0,
+                    "Tag02": 0,
+                    "Tag03": 0,
+                    "Tag04": 0,
+                    "Tag05": 0,
+                    "Tag06": 0,
+                    "Tag07": 0
+                  }
+                },
+                "m_Friction": {
+                  "m_Override": 0,
+                  "m_Value": {
+                    "CombineMode": 0,
+                    "Value": 0.5
+                  }
+                },
+                "m_Restitution": {
+                  "m_Override": 0,
+                  "m_Value": {
+                    "CombineMode": 2,
+                    "Value": 0.0
+                  }
+                },
+                "m_SerializedVersion": 1,
+                "m_SupportsTemplate": 1,
+                "m_Template": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                }
+              },
+              "m_MinimumSkinnedVertexWeight": 0.10000000149011612,
+              "m_Name": "",
+              "m_PrimitiveCenter": {
+                "x": 0.0,
+                "y": 0.5,
+                "z": 0.125
+              },
+              "m_PrimitiveOrientation": {
+                "RotationOrder": 4,
+                "Value": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "m_PrimitiveSize": {
+                "x": 0.009999999776482582,
+                "y": 1.0,
+                "z": 0.009999999776482582
+              },
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "1550093908393624849"
+              },
+              "m_SerializedVersion": 1,
+              "m_ShapeType": 0,
+              "m_SphereRadius": 0.5
+            },
+            "rawByteSha256": "18db91f9749f0598726bd13dd7cf2c92f602bad7f35bfa768672d288f7891b75",
+            "script": {
+              "assembly": "Unity.Physics.Custom",
+              "class": "PhysicsShapeAuthoring",
+              "namespace": "Unity.Physics.Authoring"
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:1573361327431156022": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3634153730015137814"
+              },
+              "speedMultiplier": 1.0
+            },
+            "rawByteSha256": "c1684bfd3f72bf69efd59b765e13aa5dd6ebdd6b4ecbcd2fe90b75d3a8f7235a",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "BoatAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:1827347413728297270": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6386596311749776998"
+              },
+              "playIdleAnimation": 1
+            },
+            "rawByteSha256": "551d643650a3f85edf39b43e73898da1ebb8ea4b4ae536334bd6cca6fb195b0c",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "IdleStateAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:2145993380331830": {
+            "data": {
+              "alignWithPlayerDirection": 0,
+              "appearInMapUI": 0,
+              "blocksHangingWallObjects": 0,
+              "canBePlacedOnAnyWalkableTile": 0,
+              "canBePlacedOnBlockingObjects": 0,
+              "canBePlacedOnImmuneTiles": 0,
+              "canBePlacedOnLava": 0,
+              "canBePlacedOnLowColliders": 0,
+              "canBePlacedOnObjects": [
+                232
+              ],
+              "canBePlacedOnPit": 0,
+              "canBePlacedOnPlayer": 0,
+              "canBePlacedOnWater": 0,
+              "canNotBePlacedOnObjects": [],
+              "canPlaceOnSideOfWall": 0,
+              "centerIsAtEntityPosition": 0,
+              "displayPlaceableType": 0,
+              "dontBlockRoots": 0,
+              "dontDestroyObjectIfInvalidPlacement": 0,
+              "hasVariationsThatCanBePlacedOnWalls": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6521028669070963198"
+              },
+              "mapColor": {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              },
+              "objectCanBeToggledToNewNonRotationOption": 0,
+              "prefabCornerOffset": {
+                "x": 0,
+                "y": 0
+              },
+              "prefabTileSize": {
+                "x": 1,
+                "y": 1
+              },
+              "toggledToNewNonRotationOptions": 0,
+              "variationToPlace": 0,
+              "wallSideVariationStartsOnIndex1": 0
+            },
+            "rawByteSha256": "c7bdec96893191ec0ff99084b833f3184a9f896a6d3c8a260a803ff9b9978a7a",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "PlaceableObjectAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:2864374740015776054": {
+            "data": {
+              "dontCalculateHealthFromLevel": 1,
+              "hasHealthRegeneration": 1,
+              "healDelayAfterLeavingCombat": 5.0,
+              "healInCombatAsWell": 0,
+              "healthIncreasePercentPerFiveSeconds": 100,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "5836994010237960502"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8684237468152111645"
+              },
+              "maxHealth": 2,
+              "maxHealthMultiplier": 1.0,
+              "normalizedOverrideStartHealth": 1.0,
+              "overrideStartHealth": 0,
+              "startHealth": 2
+            },
+            "rawByteSha256": "5edcf83bf1830dd6d30122370892e41c66d759d490d431c92ca2ddfe645a5a31",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "HealthAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:3792364744201666703": {
+            "data": {
+              "allowToUseOnlyWhenClaimed": 0,
+              "ignorePlayerDirection": 1,
+              "ignorePlayerDirectionRadiusPercentage": 0.30000001192092896,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4864833146221821809"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "5851019413773715447"
+              },
+              "onTriggerExitActions": [],
+              "onUseActions": [],
+              "optionalIcon": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalOutlineController": {
+                "m_FileID": 0,
+                "m_PathID": "4777487698164121743"
+              },
+              "radius": 1.5,
+              "requireLineOfSight": 1,
+              "requiredFactionToInteract": 0,
+              "subInteractingData": [
+                {
+                  "optionalOutlineControllers": [
+                    {
+                      "m_FileID": 0,
+                      "m_PathID": "-6865260111332638577"
+                    }
+                  ],
+                  "optionalSpriteObjectOutlines": [],
+                  "overrideRadius": 0.0,
+                  "points": [],
+                  "subIndex": 0
+                }
+              ],
+              "useDiscreteOutlineColor": 0,
+              "weightMultiplier": 1.0
+            },
+            "rawByteSha256": "1f028a27861e6fea0fc5570705bb42d50fac79cada7fe674fa7c9b02fbceeb4d",
+            "script": {
+              "assembly": "Pug.Other",
+              "class": "InteractableObject",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:4769597735104872758": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-9086801831208836850"
+              }
+            },
+            "rawByteSha256": "6cfec017270e2bb50c29e2b4c81166b601e36b5a7a35e842e6249d5ad2d77984",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "StateAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:5271366972840345910": {
+            "data": {
+              "largeAnimationHistorySupport": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3835051519099528520"
+              },
+              "orientationSupport": 3
+            },
+            "rawByteSha256": "44810770b041b766c9795b30e437d7d978d83585c4dd1dc8a1bcc800bd1caf4b",
+            "script": {
+              "assembly": "Animation.Authoring",
+              "class": "AnimationAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:5816120845883342991": {
+            "data": {
+              "XScaler": {
+                "m_FileID": 0,
+                "m_PathID": "-393196985564528497"
+              },
+              "animator": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "boatSkins": [
+                {
+                  "boatID": 6580,
+                  "textureBack": {
+                    "m_FileID": 0,
+                    "m_PathID": "3833812404376448622"
+                  },
+                  "textureFront": {
+                    "m_FileID": 0,
+                    "m_PathID": "-7214091178105176257"
+                  }
+                },
+                {
+                  "boatID": 6581,
+                  "textureBack": {
+                    "m_FileID": 0,
+                    "m_PathID": "-1634427761143770919"
+                  },
+                  "textureFront": {
+                    "m_FileID": 0,
+                    "m_PathID": "6410162019202181632"
+                  }
+                }
+              ],
+              "conditionEffectsHandler": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "conditionsEffectsSettings": {
+                "stunEffectOffset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "gameObjectsToRandomlyFlip": [],
+              "hasDisableableParticles": 0,
+              "indirectLightEmitters": [],
+              "interactable": {
+                "m_FileID": 0,
+                "m_PathID": "3792364744201666703"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8613413857714962289"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4352831986364962449"
+              },
+              "m_spriteObjectOrientationHash": 0,
+              "objectVariants": [],
+              "optionalHealthBar": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalLightOptimizer": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "outlineControllers": [],
+              "paintableOptions": {
+                "spriteColorTints": [],
+                "spriteRenderers": [],
+                "spriteSheetSkins": []
+              },
+              "particleOptions": {
+                "particleSpawnLocations": [],
+                "particlesToDisableOnLowQuality": [],
+                "particlesToSpawn": []
+              },
+              "prevSpeed": 0.0,
+              "previousHealth": 0,
+              "reskinOptions": [],
+              "shadow": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "soundOptions": {
+                "deathSfx": {
+                  "value": 1045606711
+                },
+                "soundsToPlay": [],
+                "takeDamageSfx": {
+                  "value": 926580047
+                }
+              },
+              "spriteObjects": [],
+              "spriteSheetSkinBack": {
+                "m_FileID": 0,
+                "m_PathID": "2613741683593838735"
+              },
+              "spriteSheetSkinFront": {
+                "m_FileID": 0,
+                "m_PathID": "-3979669760915210097"
+              },
+              "spritesToRandomlyFlip": [],
+              "useSharedTransformAnimations": 1,
+              "visualSitPosition": {
+                "m_FileID": 0,
+                "m_PathID": "5524132622944895119"
+              },
+              "waterParticles": {
+                "m_FileID": 0,
+                "m_PathID": "-2812431262895308657"
+              },
+              "waterParticlesEmissionRate": 40.0,
+              "waterSimAffector": {
+                "m_FileID": 0,
+                "m_PathID": "4974561029680529551"
+              }
+            },
+            "rawByteSha256": "8de291c1dceec57f0eca32a9d7fe459a607831307ace8e30ec132de070e1bedb",
+            "script": {
+              "assembly": "Pug.Other",
+              "class": "Boat",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:5836994010237960502": {
+            "data": {
+              "areaLevel": 40,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "-3981483068804300490"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 8,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "rawByteSha256": "d1efa1a40e253b9dad5a90d6f291373bfbfe795cf9abc2d498986bfaa3d95e92",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "AreaLevelAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:6828544465740890422": {
+            "data": {
+              "DefaultGhostMode": 0,
+              "DontUsePredictionBackup": 0,
+              "GhostGroup": 0,
+              "HasOwner": 0,
+              "Importance": 15,
+              "OptimizationMode": 0,
+              "SupportAutoCommandTarget": 0,
+              "SupportedGhostModes": 3,
+              "TrackInterpolationDelay": 0,
+              "UsePreSerialization": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7187583088765432342"
+              },
+              "prefabId": "34b07855c241ef046bc2fead0574ec1d"
+            },
+            "rawByteSha256": "ba58b9c11b0271aa1ede4fd67dc4d865dff58716612eaa86174639db2983f667",
+            "script": {
+              "assembly": "Unity.NetCode.Authoring.Hybrid",
+              "class": "GhostAuthoringComponent",
+              "namespace": "Unity.NetCode"
+            },
+            "type": "MonoBehaviour"
+          },
+          "CAB-2ebcba97367158c9b08f790c25d642c9:7869389152651378998": {
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4111754316327763027"
+              }
+            },
+            "rawByteSha256": "f2eaa96d403f482a607b976aed70389c67cb2b37467ac558b9354e218dde0182",
+            "script": {
+              "assembly": "Unity.Entities.Hybrid",
+              "class": "LinkedEntityGroupAuthoring",
+              "namespace": "Unity.Entities.Hybrid.Baking"
+            },
+            "type": "MonoBehaviour"
+          }
+        },
+        "graphicalClass": "Boat",
+        "targetVariationSourceKeys": [],
+        "variationToToggleTo": 0
+      }
+    },
+    "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board",
+    "kind": "claim",
+    "label": "board",
+    "origin": {
+      "normalizedValueSha256": "2cc08845566c8679406627a41af98bd2439fd5061c579bf58c80561115e17ada",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/0/payload/extraction.json/records/39"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "ruleLabelWithoutLocalObject": "boat",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "1678d5cb5e5365bbfa9313db087b067e55c5a72e06d67faeaabb55f5e50978ad",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/conditions"
+      },
+      "value": "정상 변환·필수 ECS 성분·시뮬레이션과 사례 코드의 선택/상태/점유 조건이 성립할 때에 한정"
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "codeEvidence",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "537c7cebf31bb25dda89a90fd23b4b3cd7e2e99728d93c22e2f38a048f5d4be5",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/codeEvidence"
+      },
+      "value": [
+        "evidence/rules.md"
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "sourceLinks",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/evidence/sourceLinks",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "5d14fde3d1610705056132c49d59fe0e355276840f4d232818c0fcb9b7b1c97b",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/sourceLinks"
+      },
+      "value": [
+        {
+          "address": [
+            "9066887022387205133",
+            "-1042517426658929192"
+          ],
+          "kind": "graphicalRef",
+          "matchCount": 1,
+          "matches": [
+            {
+              "components": [
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8613413857714962289",
+                  "gameObjectName": "Boat",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8722440104592277647",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3262419669422899343",
+                  "gameObjectName": "XScaler",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-393196985564528497",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-591730337807335281",
+                  "gameObjectName": "AnimPositionRotation",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-978048446573903729",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3102390720730497167",
+                  "gameObjectName": "AnimScale",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:967044260746428559",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6859584554107666575",
+                  "gameObjectName": "SRPivot",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4520848956439592817",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6813404301698531471",
+                  "gameObjectName": "SR",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-9749889559363441",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6813404301698531471",
+                  "gameObjectName": "SR",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8763027962985578639",
+                  "script": null,
+                  "type": "SpriteRenderer"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6813404301698531471",
+                  "gameObjectName": "SR",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4777487698164121743",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "OutlineController",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6813404301698531471",
+                  "gameObjectName": "SR",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3979669760915210097",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "SpriteSheetSkin",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6813404301698531471",
+                  "gameObjectName": "SR",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5732444410439270257",
+                  "script": {
+                    "assembly": "PugRP",
+                    "class": "PugSprite",
+                    "namespace": "Pug.RP"
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4415882546251693937",
+                  "gameObjectName": "SRBack",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4786711971064381297",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4415882546251693937",
+                  "gameObjectName": "SRBack",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4377769110893363057",
+                  "script": null,
+                  "type": "SpriteRenderer"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4415882546251693937",
+                  "gameObjectName": "SRBack",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6865260111332638577",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "OutlineController",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4415882546251693937",
+                  "gameObjectName": "SRBack",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2613741683593838735",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "SpriteSheetSkin",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4415882546251693937",
+                  "gameObjectName": "SRBack",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8236825738688462705",
+                  "script": {
+                    "assembly": "PugRP",
+                    "class": "PugSprite",
+                    "namespace": "Pug.RP"
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6613422865017012367",
+                  "gameObjectName": "engineParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2699745727674122383",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8983956728821055631",
+                  "gameObjectName": "WaterParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2200108766286905487",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8983956728821055631",
+                  "gameObjectName": "WaterParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2812431262895308657",
+                  "script": null,
+                  "type": "ParticleSystem"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8983956728821055631",
+                  "gameObjectName": "WaterParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1461804801436942479",
+                  "script": null,
+                  "type": "ParticleSystemRenderer"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8983956728821055631",
+                  "gameObjectName": "WaterParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8744501145423052657",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "ParticleWorldSimulationSpace",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6613422865017012367",
+                  "gameObjectName": "engineParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1537700249262030705",
+                  "script": null,
+                  "type": "ParticleSystem"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6613422865017012367",
+                  "gameObjectName": "engineParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4438083563655790449",
+                  "script": null,
+                  "type": "ParticleSystemRenderer"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6613422865017012367",
+                  "gameObjectName": "engineParticles",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:6061670205373874319",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "ParticleWorldSimulationSpace",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4864833146221821809",
+                  "gameObjectName": "Interactable",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4986132594264309617",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4864833146221821809",
+                  "gameObjectName": "Interactable",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3792364744201666703",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "InteractableObject",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4184742828085411697",
+                  "gameObjectName": "visualSitPosition",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5524132622944895119",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4610044879316516721",
+                  "gameObjectName": "WaterSimAffector",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3156686812722299023",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4610044879316516721",
+                  "gameObjectName": "WaterSimAffector",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4974561029680529551",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "WaterSimAffector",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8613413857714962289",
+                  "gameObjectName": "Boat",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5816120845883342991",
+                  "script": {
+                    "assembly": "Pug.Other",
+                    "class": "Boat",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8613413857714962289",
+                  "gameObjectName": "Boat",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-9135020833589034865",
+                  "script": null,
+                  "type": "Animator"
+                }
+              ],
+              "dataBlockKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2276175727651622207",
+              "dataBlockPathId": "-2276175727651622207",
+              "dataBlockRaw": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "m_Name": "Boat",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8189160215083356855"
+                },
+                "m_address": {
+                  "m_high": "-1042517426658929192",
+                  "m_low": "9066887022387205133"
+                },
+                "m_dynamicCollections": {
+                  "m_list": []
+                },
+                "m_overload": {
+                  "m_address": {
+                    "m_high": "0",
+                    "m_low": "0"
+                  }
+                },
+                "poolParams": {
+                  "m_address": {
+                    "m_high": "-4924425506434116102",
+                    "m_low": "8927380387929206228"
+                  }
+                },
+                "prefab": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8613413857714962289"
+                },
+                "references": {
+                  "RefIds": [],
+                  "version": 2
+                }
+              },
+              "errors": [],
+              "events": [],
+              "prefabError": null,
+              "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8613413857714962289",
+              "prefabPointer": {
+                "m_FileID": 0,
+                "m_PathID": "-8613413857714962289"
+              }
+            }
+          ],
+          "reference": {
+            "m_address": {
+              "m_high": "-1042517426658929192",
+              "m_low": "9066887022387205133"
+            }
+          }
+        },
+        {
+          "address": [
+            "4234536006954619855",
+            "-2615028540837439733"
+          ],
+          "kind": "authoringRef",
+          "matchCount": 1,
+          "matches": [
+            {
+              "components": [
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3120585478998786358",
+                  "script": null,
+                  "type": "Transform"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "EntityMonoBehaviourData",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7336161312254262986",
+                  "script": {
+                    "assembly": "Unity.Physics.Custom",
+                    "class": "PhysicsShapeAuthoring",
+                    "namespace": "Unity.Physics.Authoring"
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6642362250417864394",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "MineableAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2864374740015776054",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "HealthAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2145993380331830",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "PlaceableObjectAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5271366972840345910",
+                  "script": {
+                    "assembly": "Animation.Authoring",
+                    "class": "AnimationAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:6828544465740890422",
+                  "script": {
+                    "assembly": "Unity.NetCode.Authoring.Hybrid",
+                    "class": "GhostAuthoringComponent",
+                    "namespace": "Unity.NetCode"
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4769597735104872758",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "StateAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1827347413728297270",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "IdleStateAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4809085866608033482",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "TookDamageStateAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1852088308638547658",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "DeathStateAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6361140386282208970",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "DamageReductionAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2190400328624832202",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "CanBeControlledByOtherEntityAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5836994010237960502",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "AreaLevelAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1385361024976944842",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "RotationAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7869389152651378998",
+                  "script": {
+                    "assembly": "Unity.Entities.Hybrid",
+                    "class": "LinkedEntityGroupAuthoring",
+                    "namespace": "Unity.Entities.Hybrid.Baking"
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1573361327431156022",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "BoatAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                },
+                {
+                  "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+                  "gameObjectName": "BoatEntity",
+                  "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6878101271940169418",
+                  "script": {
+                    "assembly": "Pug.ECS.Authoring",
+                    "class": "IgnoreTransferInventoryWhenPlayerKilledAuthoring",
+                    "namespace": ""
+                  },
+                  "type": "MonoBehaviour"
+                }
+              ],
+              "dataBlockKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6058521036032202703",
+              "dataBlockPathId": "-6058521036032202703",
+              "dataBlockRaw": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "m_Name": "BoatEntity",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "6519176324599240182"
+                },
+                "m_address": {
+                  "m_high": "-2615028540837439733",
+                  "m_low": "4234536006954619855"
+                },
+                "m_dynamicCollections": {
+                  "m_list": []
+                },
+                "m_overload": {
+                  "m_address": {
+                    "m_high": "0",
+                    "m_low": "0"
+                  }
+                },
+                "prefab": {
+                  "m_FileID": 0,
+                  "m_PathID": "8501545785753600310"
+                },
+                "references": {
+                  "RefIds": [],
+                  "version": 2
+                }
+              },
+              "errors": [],
+              "events": [],
+              "prefabError": null,
+              "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8501545785753600310",
+              "prefabPointer": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              }
+            }
+          ],
+          "reference": {
+            "m_address": {
+              "m_high": "-2615028540837439733",
+              "m_low": "4234536006954619855"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failureBranches",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/failure/failureBranches",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "476af808fea2a5ceb72f570de21bc943a9c9b5e14f3cd5da41309e815fd9a7ac",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/failureBranches"
+      },
+      "value": "선택·사용·제어 조건 미충족 또는 대상 무효 시 탑승 불가"
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputProcessingConsumer",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/flow/inputProcessingConsumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "22aee07e3179201a9d9fb015ff925e665e8ce3a18130debeedb962fc2edc2902",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/inputProcessingConsumer"
+      },
+      "value": "선택·사용 버퍼 → TriggerUseControllableSystem → BoatRiding 제어 및 탑승 좌표"
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "c7a82c5d177fef0736678865d43c46087a98f0704cc8573cb096f5824ff25b93",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/result"
+      },
+      "value": "제어 획득과 탑승 위치 연결"
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unresolved",
+      "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board/unknown/unresolved",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "aca1e6ba28b1becbf07b6b9d897ddd23323397dfea50baadaaeb0b979380a79f",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39/unresolved"
+      },
+      "value": "물 이동·안전 하선 전체"
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "has_completion",
+      "target": "boat",
+      "kind": "action_completion",
+      "action": "board_steer_leave"
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:board",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "supplements_claim",
+      "boat"
+    ],
+    [
+      "related_claim",
+      "catalog-binding:B-world-tools122:14"
+    ],
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490"
+    ],
+    [
+      "supplements",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#leave_boat"
+    ],
+    [
+      "supplements_distinct_stage",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#leave_boat"
+    ],
+    [
+      "supplements",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#steer_boat"
+    ],
+    [
+      "supplements_distinct_stage",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#steer_boat"
+    ]
+  ]
+}

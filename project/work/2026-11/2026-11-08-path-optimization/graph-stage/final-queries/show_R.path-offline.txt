@@ -1,0 +1,78 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 직접 실행",
+        "doc": "pathSharedReview",
+        "end": 27,
+        "line": 17,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+        "start": 17
+      },
+      {
+        "anchor": "## 선택 트리 연결 이후 checkpoint",
+        "doc": "pathSharedReview",
+        "end": 48,
+        "line": 38,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+        "start": 38
+      },
+      {
+        "anchor": "## 검증",
+        "doc": "pathSharedIntegration",
+        "end": 58,
+        "line": 32,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+        "sha256": "28a721abd979837a8ab05a2ff866731888e37dc0a9c7b50d3d2f8cc9ecd7cdc0",
+        "start": 32
+      }
+    ],
+    "id": "R.path-offline",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 27,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "start": 17
+      },
+      {
+        "end": 48,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "start": 38
+      },
+      {
+        "end": 58,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+        "start": 32
+      }
+    ],
+    "status": "참고·오프라인·Unity 컴파일 확인",
+    "summary": "공유검색8640 목적지 조합·Core1571·scheduler25·execution118·restriction47을 확인했다. 실제258요청fixture의208개mine/dig와합성452/7526leaf를Compose/Nav/JSON에서전수방문했다. 각노드는제어·직접후보포함255이하,선택leaf만준비했다. 생산AITunnel통합대역72084 검사는 별도 구현 보고를 따른다. CandBuild/Unity 세계 대역과 합성 측정 경계가 있다.",
+    "title": "공유 검색과 기존 트리 전수 leaf 오프라인 검증",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 직접 실행",
+          "doc": "pathSharedReview",
+          "end": 27,
+          "line": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+          "start": 17
+        }
+      ],
+      "from": "R.path-implementation",
+      "id": "E214",
+      "kind": "참고: 생산 경로와 회귀 검증",
+      "to": "R.path-offline",
+      "type": "reference"
+    }
+  ]
+}

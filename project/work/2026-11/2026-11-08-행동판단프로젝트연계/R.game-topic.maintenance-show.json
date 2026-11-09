@@ -1,0 +1,777 @@
+{
+  "node": {
+    "action": "repair",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "code_linked",
+    "facts": {
+      "defaultPrimaryCandidates": [
+        {
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066",
+          "variation": 0
+        }
+      ]
+    },
+    "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair",
+    "kind": "claim",
+    "label": "repair",
+    "origin": {
+      "normalizedValueSha256": "a22943ed43f3d1e10a465ccc6b4e78ce233a20bc7e7afc4876b8fd544747b1f0",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/1/payload/extraction.json/records/154"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "34539a65016249f98988a7a70171597ca63dcc3998d7b7da68e9c0805104c022",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/conditions"
+      },
+      "value": "general repair requires LevelEntitiesBuffer and DurabilityCD on selected prefab, matching slot ID, amount below max, availability and permission"
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "sourceEvidence",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/evidence/sourceEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "2f4db0f536c0964b91c649619dde1c452e472ec85e44d15f531e291f85dd6f9e",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/sourceEvidence"
+      },
+      "value": {
+        "components": [
+          {
+            "class": "EntityMonoBehaviourData",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4588255306010211226"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6118287244658929394"
+              },
+              "objectInfo": {
+                "additionalSprites": [],
+                "appearInMapUI": 0,
+                "buyValueMultiplier": 1.0,
+                "centerIsAtEntityPosition": 0,
+                "craftingSettings": {
+                  "canOnlyUseAnyMaterialsWithTag": 0,
+                  "iconType": 0
+                },
+                "craftingTime": 1.0,
+                "icon": {
+                  "m_FileID": 0,
+                  "m_PathID": "6582930401436733746"
+                },
+                "iconOffset": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "iconSkinAssetRef": {
+                  "m_address": {
+                    "m_high": "0",
+                    "m_low": "0"
+                  }
+                },
+                "initialAmount": 90,
+                "isCustomScenePrefab": 0,
+                "isStackable": 0,
+                "languageGenders": [],
+                "level": 0,
+                "mapColor": {
+                  "a": 0.0,
+                  "b": 0.0,
+                  "g": 0.0,
+                  "r": 0.0
+                },
+                "objectID": 8549,
+                "objectType": 100,
+                "prefabCornerOffset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "prefabInfo": {
+                  "authoring": {
+                    "m_FileID": 0,
+                    "m_PathID": "0"
+                  },
+                  "authoringRef": {
+                    "m_address": {
+                      "m_high": "-3443809794702857941",
+                      "m_low": "-935598980496333481"
+                    }
+                  },
+                  "graphicalRef": {
+                    "m_address": {
+                      "m_high": "0",
+                      "m_low": "0"
+                    }
+                  },
+                  "prefab": {
+                    "m_FileID": 0,
+                    "m_PathID": "0"
+                  }
+                },
+                "prefabTileSize": {
+                  "x": 1,
+                  "y": 1
+                },
+                "rarity": 3,
+                "requiredObjectsToCraft": [
+                  {
+                    "amount": 10,
+                    "objectID": 1002
+                  },
+                  {
+                    "amount": 10,
+                    "objectID": 1640
+                  }
+                ],
+                "salvageMultiplier": 1.0,
+                "sellValue": -1,
+                "smallIcon": {
+                  "m_FileID": 0,
+                  "m_PathID": "996873225089356082"
+                },
+                "tags": [
+                  19,
+                  25,
+                  34
+                ],
+                "tileType": 0,
+                "tileset": 0,
+                "variation": 0,
+                "variationIsDynamic": 1,
+                "variationToToggleTo": 0
+              },
+              "optionalPreviewPrefab": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              }
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066",
+            "sha256": "25ac3137b99c1ad9bc49f794f342fe5eab99a768192dd7f753d402ebaacca116"
+          },
+          {
+            "class": "DurabilityAuthoring",
+            "data": {
+              "durability": 90,
+              "durabilityMultiplier": 1.0,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "-1017010194669319066"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4588255306010211226"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4321641655394159069"
+              },
+              "maxDurability": 90,
+              "reinforceCostMultiplier": 1.0,
+              "repairMultiplier": 0.800000011920929
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2096126589765995622",
+            "sha256": "cb052e2af5186592bc3ba8c43797cf83afb27076cbd264cea0bea6afd8ce9532"
+          },
+          {
+            "class": "AreaLevelAuthoring",
+            "data": {
+              "areaLevel": 20,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "-1017010194669319066"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 9,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4588255306010211226"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4768995094754440090",
+            "sha256": "b0f7e43d30b458ce51de713686f80d38af5c28f1292ea6b1a6ca626ba339bfbd"
+          },
+          {
+            "class": "GivesConditionsWhenEquippedAuthoring",
+            "data": {
+              "dontCalculateValuesFromLevel": 0,
+              "givesConditionsWhenEquipped": [
+                {
+                  "id": 6,
+                  "value": 20,
+                  "valueMultiplier": 0.800000011920929
+                },
+                {
+                  "id": 11,
+                  "value": 12,
+                  "valueMultiplier": 0.800000011920929
+                },
+                {
+                  "id": 173,
+                  "value": 36,
+                  "valueMultiplier": 0.800000011920929
+                },
+                {
+                  "id": 21,
+                  "value": 12,
+                  "valueMultiplier": 1.7999999523162842
+                }
+              ],
+              "givesConditionsWhenHeldInHand": 0,
+              "isArmor": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4588255306010211226"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8988269692984011909"
+              }
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3064085521003262874",
+            "sha256": "62674d1fcb504a9a321e0c589e25fba5cd2fcdfb148a15eebff16c16bebeb400"
+          }
+        ],
+        "dataBlockKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1845059000299022054",
+        "objectInfo": {
+          "additionalSprites": [],
+          "appearInMapUI": 0,
+          "buyValueMultiplier": 1.0,
+          "centerIsAtEntityPosition": 0,
+          "craftingSettings": {
+            "canOnlyUseAnyMaterialsWithTag": 0,
+            "iconType": 0
+          },
+          "craftingTime": 1.0,
+          "icon": {
+            "m_FileID": 0,
+            "m_PathID": "6582930401436733746"
+          },
+          "iconOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "iconSkinAssetRef": {
+            "m_address": {
+              "m_high": "0",
+              "m_low": "0"
+            }
+          },
+          "initialAmount": 90,
+          "isCustomScenePrefab": 0,
+          "isStackable": 0,
+          "languageGenders": [],
+          "level": 0,
+          "mapColor": {
+            "a": 0.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "objectID": 8549,
+          "objectType": 100,
+          "prefabCornerOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "prefabInfo": {
+            "authoring": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "authoringRef": {
+              "m_address": {
+                "m_high": "-3443809794702857941",
+                "m_low": "-935598980496333481"
+              }
+            },
+            "graphicalRef": {
+              "m_address": {
+                "m_high": "0",
+                "m_low": "0"
+              }
+            },
+            "prefab": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            }
+          },
+          "prefabTileSize": {
+            "x": 1,
+            "y": 1
+          },
+          "rarity": 3,
+          "requiredObjectsToCraft": [
+            {
+              "amount": 10,
+              "objectID": 1002
+            },
+            {
+              "amount": 10,
+              "objectID": 1640
+            }
+          ],
+          "salvageMultiplier": 1.0,
+          "sellValue": -1,
+          "smallIcon": {
+            "m_FileID": 0,
+            "m_PathID": "996873225089356082"
+          },
+          "tags": [
+            19,
+            25,
+            34
+          ],
+          "tileType": 0,
+          "tileset": 0,
+          "variation": 0,
+          "variationIsDynamic": 1,
+          "variationToToggleTo": 0
+        },
+        "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4588255306010211226",
+        "sourceRawByteSha256": "25ac3137b99c1ad9bc49f794f342fe5eab99a768192dd7f753d402ebaacca116"
+      }
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failure",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/failure/failure",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "457d41a9f2ae1ad27fa626517ac92dacc22069e7f894f407d476a66ce1069cb8",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/failure"
+      },
+      "value": "insufficient availability rejects; actual consumption shortfall logs but does not prevent later write; no atomicity guarantee"
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "consumer",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/flow/consumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "2d1a948392494e2d6f38def386bb4f49af88cda6b31cea3599a7030da1c0b200",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/consumer"
+      },
+      "value": [
+        "Pug.ECS.Conversion/LevelEntitiesBufferConverter.cs",
+        "Pug.Other/Inventory/InventoryUtility.cs",
+        "Pug.ECS.Conversion/DurabilityConverter.cs",
+        "Pug.ECS.Conversion/AreaLevelConverter.cs",
+        "Pug.Other/Inventory/InventoryUpdateSystem.cs",
+        "Pug.Other/PugDatabase.cs"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputs",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/flow/inputs",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "a3837dd607fbd6e5d358871e6e03617b464634ee06940eab8df82cbaee22fe55",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/inputs"
+      },
+      "value": "see toolCandidates and rule"
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "8cfc15bf5f153e795001d2c0f365b535c555d836d86dc6e044fcfeac3bc252c0",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/result"
+      },
+      "value": "cost uses ScrapPart 1648, computed from selected level, repair multiplier, cost effects and missing durability; successful branch writes selected prefab max durability"
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unresolved",
+      "id": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair/unknown/unresolved",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "bbf5c150cc6d838f2b5d017faafe5931186b289337763de912c95b1e40132aee",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154/unresolved"
+      },
+      "value": [
+        "static path conditional on conversion, selected prefab and runtime state",
+        "other loaders, mod changes and dynamic runtime variation selection not exhaustively checked",
+        "selected level, actual primary prefab and final runtime repairability remain conditional; actual cost depends on runtime"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "relation": "governed_by",
+      "node": {
+        "dataset": "base",
+        "evidenceContext": {
+          "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+          "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+          "originalReferenceContext": {
+            "codeRoot": "../../../게임원본-상호작용/code",
+            "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+            "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+            "rawRoot": "../../../게임원본-상호작용"
+          },
+          "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+          "resolvedReferenceContext": {
+            "codeRoot": "../게임원본-상호작용/code",
+            "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+            "rawRoot": "../게임원본-상호작용"
+          },
+          "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+        },
+        "facts": {
+          "materialRule": "General repair clears crafting materials. GetScrapPartsValue uses recipe ID default variation (constructed ObjectData contains ID only): if DurabilityCD or LevelCD missing base=1, otherwise max(1, round(level*2*repairCostMultiplier)). GetMaterialInfos computes max(1, round(base*runtimeCostMultiplier)). ScrapPart needed is ceil(that*(1-currentAmount/default-primary maxDurability)), removing nonpositive amounts. Cost-free flags and other branches are conditional. Do not substitute dynamic variation values for selected primary.",
+          "selector": "active DurabilityAuthoring on linked prefab"
+        },
+        "group": "B",
+        "id": "rule:base:B:repair",
+        "kind": "rule",
+        "name": "repair",
+        "origin": {
+          "normalizedValueSha256": "8e47be83d7fe21afe83b77c063acc3dc4b6f4798aad10e173ff5d5f13a10a241",
+          "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "pointer": "/groups/1/payload/extraction.json/rules/repair"
+        }
+      },
+      "fields": [
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "condition",
+          "id": "rule:base:B:repair/condition/condition",
+          "kind": "condition",
+          "origin": {
+            "normalizedValueSha256": "34539a65016249f98988a7a70171597ca63dcc3998d7b7da68e9c0805104c022",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/1/payload/extraction.json/rules/repair/condition"
+          },
+          "value": "general repair requires LevelEntitiesBuffer and DurabilityCD on selected prefab, matching slot ID, amount below max, availability and permission"
+        },
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "code",
+          "id": "rule:base:B:repair/evidence/code",
+          "kind": "evidence",
+          "origin": {
+            "normalizedValueSha256": "2d1a948392494e2d6f38def386bb4f49af88cda6b31cea3599a7030da1c0b200",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/1/payload/extraction.json/rules/repair/code"
+          },
+          "value": [
+            "Pug.ECS.Conversion/LevelEntitiesBufferConverter.cs",
+            "Pug.Other/Inventory/InventoryUtility.cs",
+            "Pug.ECS.Conversion/DurabilityConverter.cs",
+            "Pug.ECS.Conversion/AreaLevelConverter.cs",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs",
+            "Pug.Other/PugDatabase.cs"
+          ]
+        },
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "failure",
+          "id": "rule:base:B:repair/failure/failure",
+          "kind": "failure",
+          "origin": {
+            "normalizedValueSha256": "457d41a9f2ae1ad27fa626517ac92dacc22069e7f894f407d476a66ce1069cb8",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/1/payload/extraction.json/rules/repair/failure"
+          },
+          "value": "insufficient availability rejects; actual consumption shortfall logs but does not prevent later write; no atomicity guarantee"
+        },
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/B-targets",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/B-targets",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "result",
+          "id": "rule:base:B:repair/result/result",
+          "kind": "result",
+          "origin": {
+            "normalizedValueSha256": "8cfc15bf5f153e795001d2c0f365b535c555d836d86dc6e044fcfeac3bc252c0",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/1/payload/extraction.json/rules/repair/result"
+          },
+          "value": "cost uses ScrapPart 1648, computed from selected level, repair multiplier, cost effects and missing durability; successful branch writes selected prefab max durability"
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation": "has_completion",
+      "target": "completion:C:repair-item-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066",
+      "kind": "conditional_application",
+      "action": "repair"
+    },
+    {
+      "relation": "has_completion_review",
+      "target": "claim-review:C-repair-v2:base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair",
+      "kind": "claim_completion_review",
+      "action": null
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:repair",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "supplements_claim",
+      "completion:C:repair-item-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066"
+    ],
+    [
+      "corroborates_claim",
+      "role-evidence:A-C-equipment-links:0"
+    ],
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066"
+    ],
+    [
+      "supplements",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair"
+    ]
+  ]
+}

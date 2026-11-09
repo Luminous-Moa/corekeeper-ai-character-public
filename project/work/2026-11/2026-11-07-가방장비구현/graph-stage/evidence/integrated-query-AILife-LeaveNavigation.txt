@@ -1,0 +1,5 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AILife.cs:45-48 sha256=33486377d5983e7e00459f2a663696a4b384239f0fef6295ca3680ef81b9dc2d
+45:     public static void LeaveNavigation()
+46:     {
+47:         var s = Sync(); s.Cursor.Reset(AIAgent.Cur.Id, AIGoals.GoalRevision); s.Offered.Clear(); s.Facts = ""; s.ViewSuspended = false;
+48:     }

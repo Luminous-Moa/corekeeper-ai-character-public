@@ -1,0 +1,307 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 실행 관측",
+        "doc": "observationImplementation",
+        "end": 13,
+        "line": 7,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+        "sha256": "4a20c60dfe407daabb3292f49353ed8c1a17926cf2dd660622581dddc04d3a73",
+        "start": 7
+      },
+      {
+        "anchor": "## 단계 완료",
+        "doc": "observationImplementation",
+        "end": 19,
+        "line": 15,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+        "sha256": "4a20c60dfe407daabb3292f49353ed8c1a17926cf2dd660622581dddc04d3a73",
+        "start": 15
+      },
+      {
+        "anchor": "## 수용 근거",
+        "doc": "observationReview",
+        "end": 36,
+        "line": 25,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "sha256": "984ca55262e8f724a2a453eaff5a0bd5b9943afceb1facdd1f1a88a76827eccf",
+        "start": 25
+      }
+    ],
+    "id": "R.observation-implementation",
+    "layer": "참고",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "sourceLocations": [
+      {
+        "end": 13,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+        "start": 7
+      },
+      {
+        "end": 19,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+        "start": 15
+      },
+      {
+        "end": 36,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "start": 25
+      }
+    ],
+    "status": "참고·공식 구현·코드/오프라인/Unity 수용",
+    "summary": "현재 몸 Tick에서 다시 확인된 대기 사실을 다음 Brain에서 읽고 같은 pending은5초 간격으로 재검토한다. 진행 중 요청·준비·미소비 사건은 중복 알림을 막고 새 사실은 즉시 전달한다. 목표 세대·이름·run을 입력과 상위 보고에 유지한다. finish_goal은 현재 수량·도착·수령을 다시 읽어 부족·미확인이면 단계 advance를 보류한다. 측정 완료 조건 없는 탐색·따르기의 종료와 stop_action/request_plan은 유지한다.",
+    "title": "20b1aced의 관측 소속·완료 사실 검사·지속 대기 재검토",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.ObserveIncompleteCompletion(string, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.OnGoalObservationChanged()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FinishChosen(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.RefreshCompletion(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanReport.cs#AIPlanReport.ReportJson(World, Entity, string, out int)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AISkill.cs#AISkill.BeginObservationTick()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AISkill.cs#AISkill.BindObservationGoal()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 7
+        },
+        {
+          "end": 19,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "start": 15
+        },
+        {
+          "end": 36,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-implementation",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AISkill.cs#AISkill.RefreshPendingObservation(float)",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 변경한 관측",
+          "doc": "observationReceipt",
+          "end": 24,
+          "line": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "sha256": "f61022e66707ae61471e273548d690de34808b8fb866283bb338ecda6328ae8c",
+          "start": 15
+        }
+      ],
+      "from": "R.observation-implementation",
+      "id": "E224",
+      "kind": "참고: 완료 사실의 전달 관측 소비",
+      "to": "R.observation-delivery",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 단계 완료",
+          "doc": "observationImplementation",
+          "end": 19,
+          "line": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+          "sha256": "4a20c60dfe407daabb3292f49353ed8c1a17926cf2dd660622581dddc04d3a73",
+          "start": 15
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "id": "E221",
+      "kind": "참고: 실제 관측과 재판단 구현",
+      "to": "R.observation-implementation",
+      "type": "reference"
+    }
+  ]
+}

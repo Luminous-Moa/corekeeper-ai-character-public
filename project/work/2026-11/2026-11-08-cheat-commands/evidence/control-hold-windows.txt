@@ -1,0 +1,15 @@
+120.6 TEST-ONLY hold ON
+  (held) 479.2 PLANNER: report 'host_said' held
+  (held) 491.1 PLANNER: report 'host_goal' held
+  window 120.6-521.5: SEND 0, report 0
+521.5 TEST-ONLY hold OFF
+557.0 TEST-ONLY hold ON
+  window 557.0-573.7: SEND 0, report 0
+573.7 TEST-ONLY hold OFF
+594.3 TEST-ONLY hold ON
+  window 594.3-619.4: SEND 0, report 0
+619.4 TEST-ONLY hold OFF
+638.1 TEST-ONLY hold ON
+  window 638.1-729.6: SEND 0, report 0
+729.6 TEST-ONLY hold OFF
+743.0 TEST-ONLY hold ON

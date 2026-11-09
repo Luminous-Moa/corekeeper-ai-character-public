@@ -1,0 +1,123 @@
+08:09:49 S2 build 4f416c4 installed (30 .cs diff 0), switches testcmds+decisionlog, lowgfx 30, game launched
+08:12:09 new world rftest seed 917121490949 일반 default slot 7: create clicked
+08:16:15 world created then deleted again (watch log spam fix needed + HEAD review items); game closed before any round
+08:25:13 S2b build 6195c80 installed (30 .cs diff 0) after restore; switches testcmds+decisionlog, lowgfx 30, game launched
+08:26:49 composite-action decision arrived before world creation; game closed (no world created this time)
+08:32:46 S2c build 93ad7d8 installed (30 .cs diff 0); launching
+08:34:10 new world rftest seed 917121490949 일반 default slot 7: create clicked
+08:34:44 in world rftest id e5176d9a5400d6dc8e8362da9da4025d
+sent /ai on
+[AIPlayerSpike] t=122.9 @Claude stage PlayerSpawned -> Walking
+[AIPlayerSpike] t=123.0 @Claude KNOWN loaded for claude in world e5176d9a5400d6dc8e8362da9da4025d: seen 0, held 0, tiles 0, drops 0 (C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\e517
+[AIPlayerSpike] t=123.0 @Claude EXP: loaded for world e5176d9a5400d6dc8e8362da9da4025d (claude): goal runs 0, next event id 2, play 0.0h, session e317d69e, 8 ms (C:/Users/<USER>/AppData/LocalLow/Pugsto
+08:35:02 R1 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=133.5 @Claude TEST-ONLY arena go: cleared 4 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=144.3 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=146.3 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=37; items=[1:SmallLanternx1, 2:FoodRationx3, 10:WoodSwordx88] equipped=0번 칸 빈손]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=151.6 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+08:35:33 R1 end: down (wall 8s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=162.3 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-31.82,37.25) end=(-31.82,37.25) facts=[slots=130 emptyInFirst40=38; items=[1:SmallLanternx1, 2:FoodRationx2] equipped=2번 칸 FoodRation]
+[AIPlayerSpike] t=165.2 @Claude VITALS: stood up again after 5.0s at (0.0,-0.1) health 105/100 hunger 70
+sent /ai look
+[AIPlayerSpike] t=170.0 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(0.00,-0.14) end=(0.00,-0.14) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x23.9
+08:35:44 R1 done
+08:36:02 R2 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=193.5 @Claude TEST-ONLY arena go: cleared 1 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 0 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=204.3 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=206.7 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=37; items=[1:SmallLanternx1, 2:FoodRationx2, 10:WoodSwordx88] equipped=2번 칸 FoodRation]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=213.1 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+08:36:50 R2 end: kill (wall 24s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=239.3 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-32.23,38.10) end=(-32.23,38.10) facts=[slots=130 emptyInFirst40=33; items=[0:WoodSwordx71, 1:SmallLanternx1, 2:FoodRationx1, 3:PlayerGravex1, 4:Mushroomx3, 5:GiantMushroom2x1, 10:WoodSwordx88] equipped=2번 칸 FoodRatio
+sent /ai look
+[AIPlayerSpike] t=241.5 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-32.23,38.10) end=(-32.23,38.10) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+08:36:54 R2 done
+08:36:54 R3 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=245.8 @Claude TEST-ONLY arena go: cleared 0 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 2 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=256.8 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=258.9 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=35; items=[1:SmallLanternx1, 3:PlayerGravex1, 4:Mushroomx3, 5:GiantMushroom2x1, 10:WoodSwordx88] equipped=2번 칸 빈손]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=264.1 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+08:37:52 R3 end: kill (wall 35s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=302.4 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-23.67,49.73) end=(-23.67,49.73) facts=[slots=130 emptyInFirst40=33; items=[0:WoodSwordx70, 1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx6, 5:GiantMushroom2x1, 6:StoneskinPotionx1] equipped=0번 칸 WoodSword]
+sent /ai look
+[AIPlayerSpike] t=304.7 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-23.67,49.73) end=(-23.67,49.73) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+08:37:57 R3 done
+08:38:10 R4 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=322.0 @Claude TEST-ONLY arena go: cleared 0 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=332.8 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=336.0 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=33; items=[1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx6, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 10:WoodSwordx88] equipped=0번 칸 빈손]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=341.2 @Claude TEST-ONLY arena spawn: cleared 1 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+08:38:52 R4 end: down (wall 18s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=362.2 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-28.86,40.26) end=(-28.86,40.26) facts=[slots=130 emptyInFirst40=33; items=[0:WoodSwordx77, 1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx6, 5:GiantMushroom2x1, 6:StoneskinPotionx1] equipped=0번 칸 WoodSword]
+[AIPlayerSpike] t=364.4 @Claude VITALS: stood up again after 5.1s at (0.0,-0.1) health 105/100 hunger 70
+sent /ai look
+[AIPlayerSpike] t=368.8 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(0.00,-0.14) end=(0.00,-0.14) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x23.9
+08:39:02 R4 done
+08:39:02 R5 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=374.4 @Claude TEST-ONLY arena go: cleared 1 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=385.0 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=388.2 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=33; items=[1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx6, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 10:WoodSwordx88] equipped=0번 칸 빈손]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=393.4 @Claude TEST-ONLY arena spawn: cleared 1 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+08:39:51 R5 end: kill (wall 25s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=421.3 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.42,43.27) end=(-30.42,43.27) facts=[slots=130 emptyInFirst40=31; items=[0:WoodSwordx68, 1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx15, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 7:WallDirtBlockx11, 8:WallSa
+sent /ai look
+[AIPlayerSpike] t=423.5 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.42,43.27) end=(-30.42,43.27) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+08:39:57 R5 done
+08:39:57 R6 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=428.8 @Claude TEST-ONLY arena go: cleared 0 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=439.7 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=442.9 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=31; items=[1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx15, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 7:WallDirtBlockx11, 8:WallSandBlockx1, 10:Wo
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=448.5 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+08:42:23 R6 end: timeout (wall 120s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=572.4 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-26.54,44.75) end=(-26.54,44.75) facts=[slots=130 emptyInFirst40=31; items=[0:WoodSwordx76, 1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx13, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 7:WallDirtBlockx11, 8:WallSa
+sent /ai look
+[AIPlayerSpike] t=574.6 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-26.54,44.75) end=(-26.54,44.75) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+08:42:28 R6 done
+08:42:40 R7 begin: arena go -30 36, spawn ''
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=592.3 @Claude TEST-ONLY arena go: cleared 1 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=603.0 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=606.2 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=31; items=[1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx13, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 7:WallDirtBlockx11, 8:WallSandBlockx1, 10:Wo
+sent /ai arena spawn 
+[AIPlayerSpike] t=609.4 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 4 MushroomEnemy at (-26,35) (-30,41) (-35,36) (-31,32)
+08:44:00 R7 end: fightover (wall 57s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=670.1 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-32.11,36.14) end=(-32.11,36.14) facts=[slots=130 emptyInFirst40=29; items=[0:WoodSwordx74, 1:SmallLanternx1, 2:Woodx1, 3:PlayerGravex1, 4:Mushroomx10, 5:GiantMushroom2x1, 6:StoneskinPotionx1, 7:WallDirtBlockx11, 8:WallSa
+sent /ai look
+[AIPlayerSpike] t=672.2 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-32.11,36.14) end=(-32.11,36.14) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+08:44:05 R7 done
+sent /ai off
+08:44:32 /ai off; AI world folder collected
+08:45:12 save and exit; AI world folder collected again
+08:46:03 rftest deleted in game (long press), game quit

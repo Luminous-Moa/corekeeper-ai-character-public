@@ -1,0 +1,2 @@
+builds 2406: complete 2406, incomplete 0, recursed 0
+covers: goalNone 581, closeFight 344, closeFightKeep 277, free 159, follow 356, fails 1993, left 2071, over14 130, recursed 0, prefetch 229, noBody 51

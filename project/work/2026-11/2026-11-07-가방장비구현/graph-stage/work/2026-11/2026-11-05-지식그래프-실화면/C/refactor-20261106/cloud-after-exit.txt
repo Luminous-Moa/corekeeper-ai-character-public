@@ -1,0 +1,34 @@
+﻿[2026-11-06 17:10:49] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:10:49] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:10:49] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:10:49] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:10:49] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:20:38] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:20:38] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:20:42] [AppID 1621690] Starting sync (up,AC Exit,)
+[2026-11-06 17:20:42] [AppID 1621690] Running AutoCloud on exit. Looking for new and updated files
+[2026-11-06 17:20:42] [AppID 1621690] AutoCloud complete
+[2026-11-06 17:20:43] [AppID 1621690] Currently already synced to global change number '195', should be nothing to download
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file Admins.json
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file PlayerBans.json
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file saves/3.json
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file maps/3/2.mapparts.gzip
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file worldinfos/6.worldinfo
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file worlds/6.world.gzip
+[2026-11-06 17:20:43] [AppID 1621690] Need to upload file worldgenparams/6.json
+[2026-11-06 17:20:43] [AppID 1621690] Upload batch initiated, ID: 9162307512797307277, ChangeNumber: 196, App Build ID: 26332184
+[2026-11-06 17:20:43] [AppID 1621690] Upload OK for file PlayerBans.json
+[2026-11-06 17:20:43] [AppID 1621690] HTTP upload for file 'maps/3/2.mapparts.gzip' beginning . . .
+[2026-11-06 17:20:43] [AppID 1621690] Upload OK for file worldinfos/6.worldinfo
+[2026-11-06 17:20:43] [AppID 1621690] Upload OK for file Admins.json
+[2026-11-06 17:20:43] [AppID 1621690] Upload OK for file worldgenparams/6.json
+[2026-11-06 17:20:43] [AppID 1621690] HTTP upload for file 'saves/3.json' beginning . . .
+[2026-11-06 17:20:43] [AppID 1621690] HTTP upload for file 'worlds/6.world.gzip' beginning . . .
+[2026-11-06 17:20:43] [AppID 1621690] HTTP upload for file 'maps/3/2.mapparts.gzip' (offset=0, length=2218) to (34.128.9.187 / 34.128.9.187, host: steamcloud-seoul.storage.googleapis.com), path /41/09/F9/19/1621690/3A2_C_0602328D_C7E8B_51.dat - success.
+[2026-11-06 17:20:43] [AppID 1621690] HTTP upload for file 'worlds/6.world.gzip' (offset=0, length=738547) to (20.150.5.193 / 20.150.5.193, host: steamcloudseoul2.blob.core.windows.net), path /cloud/41/09/F9/19/1621690/289_6_30BFE404_E8DF5_2.dat - success.
+[2026-11-06 17:20:43] [AppID 1621690] HTTP upload for file 'saves/3.json' (offset=0, length=1691) to (34.128.9.187 / 34.128.9.187, host: steamcloud-seoul.storage.googleapis.com), path /41/09/F9/19/1621690/246_E_147E0289_90B13_159.dat - success.
+[2026-11-06 17:20:44] [AppID 1621690] Upload OK for file maps/3/2.mapparts.gzip
+[2026-11-06 17:20:44] [AppID 1621690] Upload OK for file saves/3.json
+[2026-11-06 17:20:44] [AppID 1621690] Upload OK for file worlds/6.world.gzip
+[2026-11-06 17:20:44] [AppID 1621690] Upload complete, result OK
+[2026-11-06 17:20:44] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'

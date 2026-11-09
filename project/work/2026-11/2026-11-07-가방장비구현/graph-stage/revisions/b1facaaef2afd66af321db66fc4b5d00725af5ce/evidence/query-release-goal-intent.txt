@@ -1,0 +1,6 @@
+P.release-goal — Core Keeper 모드로 만들어 배포 [합의]
+AI 단톡방 멤버들과 게임 안에서 자연어로 협력하고 함께 생활하는 경험을 Core Keeper 모드로 만들어 배포하는 것이 제작자의 최종 목표다.
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-가방장비구현\graph-stage\work\2026-11\2026-11-07-모드배포-최종목표.md:3
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-가방장비구현\graph-stage\work\2026-11\2026-11-07-모드배포-최종목표.md:5
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-가방장비구현\graph-stage\work\2026-11\2026-11-07-플레이경험과-기획큰그림.md:5
+  모드가 제공할 플레이 경험 [합의] → P.experience — 동료·친구와 협력하고 생활하는 경험 [합의]

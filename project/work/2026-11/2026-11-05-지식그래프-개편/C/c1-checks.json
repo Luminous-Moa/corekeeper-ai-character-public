@@ -1,0 +1,33 @@
+{
+  "stage": "C-1",
+  "counts": {
+    "legacyNodes": 1551,
+    "legacyEdges": 10416,
+    "features": 36,
+    "policies": 60,
+    "candidates": 19,
+    "documentUnknowns": 60,
+    "graphUnknowns": 137,
+    "gameNodes": 312,
+    "gameIncidentEdges": 3381,
+    "quotes": 352,
+    "quoteFailures": 0,
+    "hashFailures": 0,
+    "unresolvedDocumentRefs": 6
+  },
+  "checks": {
+    "featuresExactly36": true,
+    "allFeaturesMapped": true,
+    "allPolicyBlocksPreserved": true,
+    "allCandidateBlocksPreserved": true,
+    "allUnknownBlocksPreserved": true,
+    "noStandardFunctionIdsClaimed": true,
+    "hashes": true,
+    "quotes": true
+  },
+  "limitations": [
+    "문서·사본 무결성 점검만 수행. 제품 실행 또는 코드 추출 확인이 아니다.",
+    "C-2~C-5 미진행. 화면과 기능 연결 없음.",
+    "새 사용자 결정 없음."
+  ]
+}

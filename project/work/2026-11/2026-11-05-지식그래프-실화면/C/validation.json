@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "errors": [],
+  "nodes": 7,
+  "edges": 31,
+  "activityElements": 23,
+  "functionMappings": 8,
+  "overlaySha256": "e099b4392f8193eaea1217f804a8ba260cdcbb2f8617e20e2aef5f506624a192",
+  "limit": "Reference validation only; not runtime trace. C3 actual result and B version boundaries remain separate."
+}

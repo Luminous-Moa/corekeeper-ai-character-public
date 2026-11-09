@@ -1,0 +1,1858 @@
+{
+  "records": [
+    {
+      "action": "process_recipe_activation",
+      "group": "process_resources",
+      "id": "completion:process-resources:recipe-activation-v1",
+      "kind": "action_completion",
+      "links": [
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#process_recipe_selection"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#process_recipe_selection"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#process_recipe_selection"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#process_recipe_selection"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#process_recipe_selection"
+        },
+        {
+          "relation": "excludes_source_claim",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#process_recipe_selection"
+        },
+        {
+          "relation": "refines",
+          "to": "rule:supp:D:process_recipe_selection/condition/conditions"
+        },
+        {
+          "relation": "refines",
+          "to": "rule:supp:D:process_recipe_selection/failure/failureBranches"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "objectId": 3905,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835",
+          "variation": 0
+        },
+        {
+          "objectId": 4004,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700",
+          "variation": 0
+        },
+        {
+          "objectId": 4009,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155",
+          "variation": 0
+        },
+        {
+          "objectId": 4015,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034",
+          "variation": 0
+        },
+        {
+          "objectId": 4032,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791",
+          "variation": 0
+        }
+      ],
+      "value": {
+        "boundary": [
+          "실게임에서 이 사슬의 성공(재료가 입력 칸에 들어가고, 시간이 지나 출력 칸에 제품이 생기는 것)은 아직 관측하지 않았다. 정적 코드·원본 authoring 근거다.",
+          "실제 DB 내용, 화면 visibleSlotIndex와 서버 buffer index의 일치, 네트워크 수용, anyMaterialCostMultiplier의 실제 값은 관측하지 않았다.",
+          "음수 recipeIndex에 대한 하한 방어가 GetRecipeInfo(InventoryUtility.cs:2218)에 없다. 비정상 요청이 음수 index를 보낼 때의 결과(예외 여부 등)는 확인하지 않았고, 그런 요청을 무해한 거절로 보지 않는다."
+        ],
+        "codeReferences": [
+          {
+            "endLine": 2434,
+            "id": "storage-place",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationSystem.cs",
+            "sha256": "fe2d79b1c69c5a18bf9be25caa837316e00fe18bba8cc0c86a60d60b0dfeef8c",
+            "startLine": 2398
+          },
+          {
+            "endLine": 29253,
+            "id": "raw-storage-4044",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 29253
+          },
+          {
+            "endLine": 36,
+            "id": "recipe-info",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/CraftingHandler.cs",
+            "sha256": "8f9511fc8adf346b765a465fb4690322f23ba21c2772151a6c2d288a90da3cc4",
+            "startLine": 14
+          },
+          {
+            "endLine": 69335,
+            "id": "raw-crafting-4044",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 69335
+          },
+          {
+            "id": "obj-1025",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/358",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "endLine": 3244,
+            "id": "move-all-or-drop",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3206
+          },
+          {
+            "endLine": 2455,
+            "id": "object-valid",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2368
+          },
+          {
+            "endLine": 28914,
+            "id": "raw-crafting-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 28914
+          },
+          {
+            "endLine": 436,
+            "id": "raw-inventory-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 436
+          },
+          {
+            "id": "obj-10200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3095",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-10206",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3116",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-5192",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/1245",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "endLine": 809,
+            "id": "ui-manager",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/UIManager.cs",
+            "sha256": "5a854c6afbc6879521255f0eca25a0ce57314333f3053e494296bd4cf87a5a27",
+            "startLine": 799
+          },
+          {
+            "endLine": 14,
+            "id": "crafting-type",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/CraftingType.cs",
+            "sha256": "cd464ecac5822b48b4fc76d3949277b55623c696a1f16d1022b3350189440a31",
+            "startLine": 1
+          },
+          {
+            "endLine": 38,
+            "id": "crafting-cd",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Components/CraftingCD.cs",
+            "sha256": "110147d37f5e332ae9dbeb75f1aabf500c90dc8fb70acda32c96679a444cd1e6",
+            "startLine": 22
+          },
+          {
+            "endLine": 83,
+            "id": "pr-ui-show",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+            "sha256": "9cd9d5b07cdc987a595cf7d435012fdb67f0fdfb85a6a123eccb5cbeffcb80f9",
+            "startLine": 35
+          },
+          {
+            "endLine": 131,
+            "id": "recipe-slot-ui",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RecipeSlotUI.cs",
+            "sha256": "bfb6d41595801fae9666f74267f2381098ba36a824cbf74725c1dbf9a031c21e",
+            "startLine": 91
+          },
+          {
+            "endLine": 109,
+            "id": "pr-ui-activate",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+            "sha256": "9cd9d5b07cdc987a595cf7d435012fdb67f0fdfb85a6a123eccb5cbeffcb80f9",
+            "startLine": 93
+          },
+          {
+            "endLine": 450,
+            "id": "create-action",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/Create.cs",
+            "sha256": "eb1062460a0af763b8850cc3046787939bf4599ef5988ef8c4bb35549cb09b27",
+            "startLine": 438
+          },
+          {
+            "endLine": 436,
+            "id": "craft-job-inputs",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+            "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+            "startLine": 409
+          },
+          {
+            "endLine": 464,
+            "id": "craft-job-dispatch",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+            "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+            "startLine": 462
+          },
+          {
+            "endLine": 3433,
+            "id": "nearby-chests",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3389
+          },
+          {
+            "endLine": 3799,
+            "id": "nearby-chests-crafting",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3796
+          },
+          {
+            "endLine": 202,
+            "id": "converter-auto-transfer",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/InventoryConverter.cs",
+            "sha256": "372fe0868b59dba23eb498c6989e6ff9fda9d5a640a9463f1d716c2a87056205",
+            "startLine": 199
+          },
+          {
+            "endLine": 67869,
+            "id": "raw-inventory-4004",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 67869
+          },
+          {
+            "endLine": 3102,
+            "id": "server-activate",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3063
+          },
+          {
+            "endLine": 2235,
+            "id": "get-recipe-info",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2214
+          },
+          {
+            "endLine": 2764,
+            "id": "has-materials",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2743
+          },
+          {
+            "endLine": 226,
+            "id": "start-craft",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationStartCraftSystem.cs",
+            "sha256": "29fed82705141d5af76cbfcb8ad8d5ad2ba9a12da27cab778c0ce1eee5a19fac",
+            "startLine": 180
+          }
+        ],
+        "conditions": [
+          {
+            "refs": [
+              "ui-manager",
+              "crafting-type",
+              "crafting-cd"
+            ],
+            "rule": "열린 crafting handler의 craftingType이 ProcessResources(=1)이면 UIManager가 processResourcesCraftingUI를 연다. Simple 타입의 즉시 제작 화면(simpleCraftingUIContainer)이 아니다. CraftingCD.IsProcessAutoCrafter도 ProcessResources를 자동 가공 타입으로 분류한다."
+          },
+          {
+            "refs": [
+              "pr-ui-show"
+            ],
+            "rule": "레시피 칸은 시설 표시 컴포넌트의 hideRecipes가 false일 때만 보인다. 6개 원본은 보이고, 같은 ProcessResources인 1200 EggIncubator는 hideRecipes=true라 이 경로가 없다(기존 판정 hidden_recipe_ui_container_only)."
+          },
+          {
+            "refs": [
+              "recipe-info",
+              "pr-ui-activate",
+              "server-activate",
+              "raw-crafting-4044",
+              "obj-1025",
+              "storage-place",
+              "raw-storage-4044"
+            ],
+            "rule": "원본별 레시피 재료: 3905·4004·4009·4015·4032의 모든 레시피는 DB requiredObjectsToCraft가 1종이다. 4044 GlassSmelter의 유일한 레시피 1025 Glass는 requiredObjectsToCraft가 비어 있고 canOnlyUseAnyMaterialsWithTag=29인 태그 레시피라, 레시피 칸은 보여도 클라이언트 관문(RecipeInfo.requiredObjectsToCraft.Count==1)과 서버 관문(Length==1)이 모두 거짓이다. 4044의 입력은 플레이어 행동으로는 손으로 넣기(인벤토리 이동)이고, 그 밖에 자동 이동기 투입 경로가 있다(craft-timer-v1 입력 경로 조건)."
+          },
+          {
+            "refs": [
+              "recipe-slot-ui",
+              "pr-ui-activate",
+              "create-action"
+            ],
+            "rule": "클라이언트: RecipeSlotUI 클릭(canActivateCrafting일 때; 누르고 있으면 둘째부터 0.1초 간격 반복)이 ProcessResourcesCraftingUI.ActivateRecipeSlot(visibleSlotIndex, mod1)을 부른다. 레시피 재료가 정확히 1종이고 HasMaterialsInCraftingInventoryToCraftRecipe(가방 포함, 근처 상자 포함)가 참일 때만 UIInputAction.Craft와 CraftActionData(ActivateRecipeSlot, multiplier=1, bool0=mod1, int1=visibleSlotIndex)를 큐에 넣는다."
+          },
+          {
+            "refs": [
+              "craft-job-inputs",
+              "craft-job-dispatch",
+              "nearby-chests",
+              "nearby-chests-crafting",
+              "converter-auto-transfer",
+              "raw-inventory-4004"
+            ],
+            "rule": "서버 수용: InventoryUpdateSystem의 처리에서 읽기 전용 월드이고 요청 플레이어의 adminPrivileges<=0이면 건너뛴다. 재료를 찾을 inventories는 [요청 플레이어] 다음에 시설 위치 반경 10 안의 InventoryAutoTransferEnabledCD 보관함을 거리순 최대 20개 붙인 목록이다. 7개 ProcessResources 시설의 InventoryAuthoring.autoTransferEnabled는 0이라 시설 자신은 이 목록 대상이 아니다."
+          },
+          {
+            "refs": [
+              "server-activate",
+              "get-recipe-info",
+              "has-materials"
+            ],
+            "rule": "서버 판정: GetRecipeInfo는 시설 CanCraftObjectsBuffer[recipeIndex]의 제품을 읽는다. 시설에 buffer가 없거나 index>=buffer 길이이거나 제품이 DB에 없으면 None이라 종료한다. 이 helper는 상한(bufferData.Length > index)만 검사하고 index>=0 하한 검사는 없다. 정상 UI는 보이는 레시피 칸 번호(0 이상)를 보낸다는 전제 위의 판정이다. DB requiredObjectsToCraft가 정확히 1종이고 HasMaterials(inventories, multiplier=1)가 참이어야 다음 단계로 간다. HasMaterials는 재료마다 max(1, round(amount×anyMaterialCostMultiplier))×multiplier를 inventories 합계와 비교한다."
+          }
+        ],
+        "decisionImpact": "레시피 클릭을 제작 완료로 보지 않는다. 플레이어가 레시피 클릭으로 재료를 넣을 수 있는 시설(4004·4009·4015·4032)과 플레이어 행동으로는 손으로 넣어야 하는 시설(3905·4044·1200)을 구별한다. 자동 이동기 공급은 별도 경로다. 클릭이 받아들여지는 조건(레시피 표시, 재료 1종, 가방·근처 상자 합계로 충분한 재료)과 실패하면 아무 변화가 없다는 점을 구별한다.",
+        "existingReuse": [
+          "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#process_recipe_selection",
+          "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#process_recipe_selection",
+          "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#process_recipe_selection",
+          "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#process_recipe_selection",
+          "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#process_recipe_selection",
+          "rule:supp:D:process_recipe_selection"
+        ],
+        "failures": [
+          {
+            "refs": [
+              "pr-ui-show",
+              "pr-ui-activate",
+              "craft-job-inputs",
+              "server-activate",
+              "get-recipe-info",
+              "has-materials"
+            ],
+            "rule": "hideRecipes 원본(1200)과 0종 재료 태그 레시피 원본(4044)은 클릭 경로가 없다. 재료가 1종이 아닌 레시피, 재료 부족(클라이언트나 서버 판정), buffer 없음·index>=buffer 길이·DB에 없는 제품, 읽기 전용 월드의 비관리자 요청, 플레이어 없음이면 아무것도 바뀌지 않는다. 이 경로에는 실패를 알리는 별도 응답 코드가 없다."
+          }
+        ],
+        "flow": [
+          {
+            "refs": [
+              "recipe-slot-ui",
+              "pr-ui-activate",
+              "create-action",
+              "craft-job-dispatch",
+              "server-activate"
+            ],
+            "rule": "RecipeSlotUI → ProcessResourcesCraftingUI.ActivateRecipeSlot → Create.ActivateRecipeSlot → UIInputAction.Craft → InventoryUpdateSystem.ProcessCraftingJob(case ActivateRecipeSlot) → InventoryUtility.ActivateRecipeSlot. 판정을 통과하면 같은 함수 안에서 재료 이동 단계(material-move-v1)가 이어진다."
+          }
+        ],
+        "results": [
+          {
+            "refs": [
+              "server-activate",
+              "start-craft"
+            ],
+            "rule": "이 단계가 하는 일은 재료 이동 단계를 실행하게 하는 것뿐이다. 제품을 만들거나 타이머를 직접 시작하지 않고, 누른 레시피를 시설에 기록하는 필드 쓰기도 없다. 누른 레시피 index는 옮길 재료의 종류와 양, 출력 칸 정리 기준(제품 ID)을 정하는 데만 쓰인다. 실제로 만들어질 레시피는 타이머 단계에서 시설 인벤토리로 다시 고른다."
+          },
+          {
+            "refs": [
+              "server-activate",
+              "move-all-or-drop",
+              "object-valid",
+              "raw-crafting-3905",
+              "raw-inventory-3905",
+              "obj-10200",
+              "obj-10206",
+              "obj-5192"
+            ],
+            "rule": "원본별 결과: 4004·4009·4015·4032는 다음 재료 이동 단계에서 재료가 입력 칸 0에 들어간다. 3905 SantasLittleHelper는 레시피 10200/10206의 DB 재료가 LumpOfCoal(5192, 태그 38)인데 입력 칸은 태그 17/18(조리 음식)만 받는다. 석탄이 충분하면 클릭은 받아들여지지만, 재료 이동 단계는 입력 칸의 다른 물건(넣어 둔 음식)과 출력 칸의 다른 물건을 플레이어 위치에 떨어뜨리기만 하고 석탄은 옮기지 못한다."
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "5e46341def5503cf534cff4be877edecba01e44569a1ceb630bb262b0b2280cb",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/47"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "9f78c8faa436074d172ec22a93a55be72b74d45201d5f7fda66954944fb96c51",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/54"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "1c33c5d9d610c19328f38565a018587013d35fbcfd20947dd250d539bd8d83a3",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/58"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "64e0977172377fd94756f37fea54f0c02bd77b57ed55c92d2516a2beefcb4e2c",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/61"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "9ffb32e6566b0c4d8c1eef3591fac38c6fa9006baa57331eb436f62e71a4ea86",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/69"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "55fa518f4c01f63a3a78f2704394570733acfcfddb5a42eea70a88477d7b9d68",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/77"
+            }
+          },
+          {
+            "nodeId": "rule:supp:D:process_recipe_selection/condition/conditions",
+            "origin": {
+              "normalizedValueSha256": "2673afcde3fadc8aebfb37bf05b7c8eb7d70d7893faccac614da36f54e2ac21b",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/rules/process_recipe_selection/conditions"
+            }
+          },
+          {
+            "nodeId": "disposition:D:recipe_ui_craft:CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890",
+            "origin": {
+              "normalizedValueSha256": "f79607da84915f59a6425051971686139e0a454026ca98889f74cfb2fdbdf167",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/gap-index.json",
+              "pointer": "/previousUnknownLedger/1631"
+            }
+          }
+        ],
+        "summary": "ProcessResources 시설 중 레시피 클릭 요청이 성립하는 3905·4004·4009·4015·4032에서 레시피 칸을 눌렀을 때 서버의 재료 준비 요청이 받아들여지기까지의 조건. 제품을 만들지 않는다. 4044·1200에는 클릭 경로가 없다."
+      }
+    },
+    {
+      "action": "process_material_move",
+      "group": "process_resources",
+      "id": "completion:process-resources:material-move-v1",
+      "kind": "action_completion",
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "completion:process-resources:recipe-activation-v1"
+        },
+        {
+          "relation": "excludes_source_claim",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#process_recipe_selection"
+        },
+        {
+          "relation": "refines",
+          "to": "rule:supp:D:process_recipe_selection/result/result"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "objectId": 4004,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700",
+          "variation": 0
+        },
+        {
+          "objectId": 4009,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155",
+          "variation": 0
+        },
+        {
+          "objectId": 4015,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034",
+          "variation": 0
+        },
+        {
+          "objectId": 4032,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791",
+          "variation": 0
+        }
+      ],
+      "value": {
+        "boundary": [
+          "실게임에서 이 사슬의 성공(재료가 입력 칸에 들어가고, 시간이 지나 출력 칸에 제품이 생기는 것)은 아직 관측하지 않았다. 정적 코드·원본 authoring 근거다.",
+          "떨어진 물건의 생성은 isFirstTimeFullyPredictingTick일 때 ECB로 예약된다. 실제 떨어짐·다시 줍기, 잠금 칸, 네트워크 예측은 관측하지 않았다. craft-diagnosis의 '다른 광석은 가방으로 돌려준다'는 설명과 달리 정적 코드는 떨어뜨림으로 읽힌다. 실게임으로 확인해야 한다."
+        ],
+        "codeReferences": [
+          {
+            "endLine": 2455,
+            "id": "object-valid",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2368
+          },
+          {
+            "endLine": 436,
+            "id": "raw-inventory-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 436
+          },
+          {
+            "id": "obj-10200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3095",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-10206",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3116",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-5192",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/1245",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "endLine": 32429,
+            "id": "raw-inventory-4009",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 32429
+          },
+          {
+            "endLine": 28963,
+            "id": "raw-inventory-4015",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 28963
+          },
+          {
+            "endLine": 33476,
+            "id": "raw-inventory-4032",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 33476
+          },
+          {
+            "endLine": 3102,
+            "id": "server-activate",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3063
+          },
+          {
+            "endLine": 3244,
+            "id": "move-all-or-drop",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3206
+          },
+          {
+            "endLine": 735,
+            "id": "drop-item",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 695
+          },
+          {
+            "endLine": 2794,
+            "id": "find-and-move",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2766
+          },
+          {
+            "endLine": 647,
+            "id": "try-move",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 607
+          },
+          {
+            "endLine": 588,
+            "id": "try-find-slot",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 509
+          },
+          {
+            "endLine": 2564,
+            "id": "move-amount-cap",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2549
+          },
+          {
+            "endLine": 328,
+            "id": "converter-output-slot",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/InventoryConverter.cs",
+            "sha256": "372fe0868b59dba23eb498c6989e6ff9fda9d5a640a9463f1d716c2a87056205",
+            "startLine": 278
+          },
+          {
+            "endLine": 67869,
+            "id": "raw-inventory-4004",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 67869
+          },
+          {
+            "endLine": 52,
+            "id": "trigger-changed",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/TriggerCrafterChangedSystem.cs",
+            "sha256": "92a9d837dee120320333c12054a6222b8c3e98a05575742883ccc83eb4efc093",
+            "startLine": 37
+          },
+          {
+            "endLine": 2764,
+            "id": "has-materials",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 2743
+          }
+        ],
+        "conditions": [
+          {
+            "refs": [
+              "server-activate"
+            ],
+            "rule": "recipe-activation-v1의 서버 판정을 통과했다. 옮길 양은 레시피 재료 amount이고 mod1이면 amount×10이다. 비용 배수와 multiplier는 옮길 양에 쓰이지 않는다."
+          }
+        ],
+        "decisionImpact": "넣기 성공을 입력 칸 0의 재료 수량으로 확인하고, 부분 이동·다른 물건이 떨어지는 부작용·9999 상한을 구별한다.",
+        "existingReuse": [
+          "rule:supp:D:process_recipe_selection",
+          "completion:process-resources:recipe-activation-v1"
+        ],
+        "failures": [
+          {
+            "refs": [
+              "server-activate",
+              "has-materials"
+            ],
+            "rule": "mod1(10회분)이어도 서버는 1회분 재료만 확인한다. 10회분이 없으면 있는 만큼만 옮긴다(부분 이동)."
+          },
+          {
+            "refs": [
+              "find-and-move",
+              "try-find-slot",
+              "try-move"
+            ],
+            "rule": "입력 칸 0이 9999에 찼거나 slotRequirements가 그 재료를 받지 않으면 TryFindSlotToAddTo가 -1을 돌려 그 출처 칸은 옮기지 않는다. FindAndMoveTo는 옮김 성공과 상관없이 남은 요청량을 먼저 줄이므로, 실패한 몫을 다른 보관함에서 다시 채우지 않는다."
+          },
+          {
+            "refs": [
+              "server-activate",
+              "move-all-or-drop",
+              "object-valid",
+              "try-find-slot",
+              "raw-inventory-3905",
+              "obj-10200",
+              "obj-10206",
+              "obj-5192"
+            ],
+            "rule": "3905(이 기록에 묶지 않음): 클릭이 받아들여져도 DB 재료 LumpOfCoal(태그 38)이 입력 칸 태그 요구 17/18을 만족하지 못해 ObjectIsValidToPutInInventory가 FailedRequirement다. 석탄은 옮겨지지 않고, 입력 칸에 있던 음식과 출력 칸의 다른 물건만 플레이어 위치에 떨어진다."
+          },
+          {
+            "refs": [
+              "server-activate",
+              "find-and-move",
+              "has-materials"
+            ],
+            "rule": "variation이 0이 아닌 같은 objectID 재료는 옮기지 않는다(ObjectDataCD variation 기본값 0으로 찾음). 서버가 확인한 양에는 비용 배수가 들어가지만 옮기는 양에는 들어가지 않는다."
+          }
+        ],
+        "flow": [
+          {
+            "refs": [
+              "server-activate",
+              "move-all-or-drop",
+              "drop-item"
+            ],
+            "rule": "입력 칸 0에 레시피 재료가 아닌 물건이 있으면 MoveAllToOrDrop(시설, 0, 플레이어, 0, -1, 플레이어 위치)를 부른다. otherEndIndex가 -1이라 두 반복문은 돌지 않고 indexToHint도 기본 -1이므로, 정적 읽기로는 그 물건을 가방에 넣지 않고 플레이어 위치에 DropItem으로 모두 떨어뜨린다."
+          },
+          {
+            "refs": [
+              "server-activate",
+              "move-all-or-drop"
+            ],
+            "rule": "출력 칸(CraftingCD.outputSlotIndex)에 레시피 제품이 아닌 물건이 있으면 같은 방식으로 떨어뜨린다. 같은 제품이면 그대로 둔다."
+          },
+          {
+            "refs": [
+              "find-and-move",
+              "try-move"
+            ],
+            "rule": "FindAndMoveTo(재료 objectID, variation 0, 시설, 시작 0, 크기 -1, inventories, 양, hint 0): inventories 순서(플레이어 → 가까운 보관함)대로 각 InventoryBuffer 구간의 칸을 앞에서부터 보고, objectID와 variation이 같은 칸에서 min(남은 요청량, 칸 수량)을 MoveAmount→TryMove로 시설에 보낸다."
+          },
+          {
+            "refs": [
+              "try-find-slot",
+              "try-move",
+              "move-amount-cap",
+              "converter-output-slot",
+              "raw-inventory-4004"
+            ],
+            "rule": "TryMove의 목적지는 TryFindSlotToAddTo(시설, hint 0, end -1)이다. 7개 시설의 InventoryAuthoring은 1×1이고, 출력 칸은 InventoryConverter가 InventoryBuffer 구간 밖에 덧붙인 칸이라 대상은 입력 칸 0뿐이다. 칸 0이 slotRequirements를 만족하고, 비었거나 같은 물건·variation으로 9999 미만이어야 한다. 실제 옮기는 양은 min(출처 칸 수량, 요청량, 9999-칸 0 수량)이다."
+          }
+        ],
+        "results": [
+          {
+            "refs": [
+              "server-activate",
+              "find-and-move",
+              "move-all-or-drop",
+              "trigger-changed"
+            ],
+            "rule": "4004·4009·4015·4032는 모든 레시피 재료가 입력 칸 slotRequirements(acceptsObjectIds)에 들어 있다. 입력 칸 0에 재료가 레시피 1회분(mod1이면 10회분)까지 쌓이고 출처 칸은 그만큼 줄어든다. 이 인벤토리 버퍼 변경이 자동화 타이머 단계(craft-timer-v1)를 다시 평가하게 한다. 이 단계에서 제품은 생기지 않는다. 다른 물건이 있던 입력·출력 칸은 비워지고 그 물건은 플레이어 위치에 떨어진다(정적 읽기)."
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "rule:supp:D:process_recipe_selection/result/result",
+            "origin": {
+              "normalizedValueSha256": "becf032c27592b7643daa6b826eaa6e94ba2ad5e350393540491e925b97f4558",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/rules/process_recipe_selection/result"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "9f78c8faa436074d172ec22a93a55be72b74d45201d5f7fda66954944fb96c51",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/54"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "1c33c5d9d610c19328f38565a018587013d35fbcfd20947dd250d539bd8d83a3",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/58"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "64e0977172377fd94756f37fea54f0c02bd77b57ed55c92d2516a2beefcb4e2c",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/61"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "9ffb32e6566b0c4d8c1eef3591fac38c6fa9006baa57331eb436f62e71a4ea86",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/69"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#process_recipe_selection",
+            "origin": {
+              "normalizedValueSha256": "5e46341def5503cf534cff4be877edecba01e44569a1ceb630bb262b0b2280cb",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/47"
+            }
+          }
+        ],
+        "summary": "4004·4009·4015·4032에서 레시피 활성 판정을 통과한 뒤 서버가 입력 칸 0과 출력 칸을 정리하고 재료를 가방·근처 보관함에서 입력 칸 0으로 옮기는 단계."
+      }
+    },
+    {
+      "action": "process_craft_timer",
+      "group": "process_resources",
+      "id": "completion:process-resources:craft-timer-v1",
+      "kind": "action_completion",
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "completion:process-resources:material-move-v1"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result"
+        },
+        {
+          "relation": "refines",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#inventory_transfer_extended"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#inventory_transfer_extended"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "objectId": 3905,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835",
+          "variation": 0
+        },
+        {
+          "objectId": 4004,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700",
+          "variation": 0
+        },
+        {
+          "objectId": 4009,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155",
+          "variation": 0
+        },
+        {
+          "objectId": 4015,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034",
+          "variation": 0
+        },
+        {
+          "objectId": 4032,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791",
+          "variation": 0
+        },
+        {
+          "objectId": 4044,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667",
+          "variation": 0
+        },
+        {
+          "objectId": 1200,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890",
+          "variation": 0
+        }
+      ],
+      "value": {
+        "boundary": [
+          "실게임에서 이 사슬의 성공(재료가 입력 칸에 들어가고, 시간이 지나 출력 칸에 제품이 생기는 것)은 아직 관측하지 않았다. 정적 코드·원본 authoring 근거다.",
+          "tick rate 환산, ECB 지연, 자동화 재구성 때 남은 시간 보존 여부, 실제 회로 전력은 관측하지 않았다. 실제 경과 시간은 재지 않았다."
+        ],
+        "codeReferences": [
+          {
+            "endLine": 208,
+            "id": "mover-placed",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationSystem.cs",
+            "sha256": "fe2d79b1c69c5a18bf9be25caa837316e00fe18bba8cc0c86a60d60b0dfeef8c",
+            "startLine": 192
+          },
+          {
+            "endLine": 2434,
+            "id": "storage-place",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationSystem.cs",
+            "sha256": "fe2d79b1c69c5a18bf9be25caa837316e00fe18bba8cc0c86a60d60b0dfeef8c",
+            "startLine": 2398
+          },
+          {
+            "endLine": 55461,
+            "id": "raw-storage-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 55461
+          },
+          {
+            "endLine": 48899,
+            "id": "raw-storage-4004",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 48899
+          },
+          {
+            "endLine": 45220,
+            "id": "raw-storage-4009",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 45220
+          },
+          {
+            "endLine": 20781,
+            "id": "raw-storage-4015",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 20781
+          },
+          {
+            "endLine": 16140,
+            "id": "raw-storage-4032",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 16140
+          },
+          {
+            "endLine": 29253,
+            "id": "raw-storage-4044",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 29253
+          },
+          {
+            "endLine": 658,
+            "id": "raw-storage-1200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 658
+          },
+          {
+            "id": "obj-1025",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/358",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-10200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3095",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "endLine": 1365,
+            "id": "automation-crafter",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationInstantiateSystem.cs",
+            "sha256": "b4cb0108e6e72538428cdcc844dd441ee6c212b0d59ec597e61aaa2ad7d67f5a",
+            "startLine": 1294
+          },
+          {
+            "endLine": 1125,
+            "id": "automation-active",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationInstantiateSystem.cs",
+            "sha256": "b4cb0108e6e72538428cdcc844dd441ee6c212b0d59ec597e61aaa2ad7d67f5a",
+            "startLine": 1125
+          },
+          {
+            "endLine": 142,
+            "id": "pr-ui-electricity",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+            "sha256": "9cd9d5b07cdc987a595cf7d435012fdb67f0fdfb85a6a123eccb5cbeffcb80f9",
+            "startLine": 125
+          },
+          {
+            "endLine": 62223,
+            "id": "raw-electricity-4009",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 62223
+          },
+          {
+            "endLine": 82374,
+            "id": "raw-electricity-1200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 82374
+          },
+          {
+            "endLine": 75121,
+            "id": "raw-crafting-4004",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 75121
+          },
+          {
+            "endLine": 83,
+            "id": "start-craft-query",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationStartCraftSystem.cs",
+            "sha256": "29fed82705141d5af76cbfcb8ad8d5ad2ba9a12da27cab778c0ce1eee5a19fac",
+            "startLine": 68
+          },
+          {
+            "endLine": 52,
+            "id": "trigger-changed",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/TriggerCrafterChangedSystem.cs",
+            "sha256": "92a9d837dee120320333c12054a6222b8c3e98a05575742883ccc83eb4efc093",
+            "startLine": 37
+          },
+          {
+            "endLine": 226,
+            "id": "start-craft",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationStartCraftSystem.cs",
+            "sha256": "29fed82705141d5af76cbfcb8ad8d5ad2ba9a12da27cab778c0ce1eee5a19fac",
+            "startLine": 180
+          },
+          {
+            "endLine": 1706,
+            "id": "can-craft",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 1611
+          },
+          {
+            "endLine": 222,
+            "id": "craft-finish",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationCraftingSystem.cs",
+            "sha256": "c9551235a29e84a0a5e42f134f9789cb7078ef67e2142b9e1c4b4b2826f9262c",
+            "startLine": 162
+          },
+          {
+            "endLine": 28914,
+            "id": "raw-crafting-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 28914
+          },
+          {
+            "endLine": 32584,
+            "id": "raw-crafting-4009",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 32584
+          },
+          {
+            "endLine": 43743,
+            "id": "raw-crafting-4015",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 43743
+          },
+          {
+            "endLine": 74095,
+            "id": "raw-crafting-4032",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 74095
+          },
+          {
+            "endLine": 69335,
+            "id": "raw-crafting-4044",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 69335
+          },
+          {
+            "endLine": 69100,
+            "id": "raw-crafting-1200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 69100
+          }
+        ],
+        "conditions": [
+          {
+            "refs": [
+              "automation-crafter"
+            ],
+            "rule": "시설에 AutomatedCrafterAuthoring이 있고 PugAutomationCD.type에 Crafter가 있으며 isActive이면 PugAutomationInstantiateSystem이 CraftingTimerSlotBuffer 칸마다 crafter 엔티티(CrafterForSlotCD.slotIndex, CraftingTimerTriggerCD)를 만든다. ProcessResources는 Simple·Cooking과 같은 crafterArchetype이다."
+          },
+          {
+            "refs": [
+              "automation-active",
+              "pr-ui-electricity",
+              "raw-electricity-4009",
+              "raw-electricity-1200",
+              "raw-crafting-4004"
+            ],
+            "rule": "isActive = ElectricityCD가 없거나 hasEnoughElectricityToPowerStuff. authoring으로는 4009 TableSaw와 1200 EggIncubator에 ElectricityAuthoring이 있고(전력 필요), 3905·4004·4015·4032·4044에는 없다. 전기 변환과 충분 기준은 기존 production 완결 기록을 따른다."
+          },
+          {
+            "refs": [
+              "can-craft",
+              "raw-crafting-3905",
+              "raw-crafting-4044",
+              "obj-1025",
+              "obj-10200"
+            ],
+            "rule": "입력 경로(플레이어 행동): 4004·4009·4015·4032는 레시피 클릭(앞 단계) 또는 손으로 넣기, 3905·4044·1200은 손으로 넣기(인벤토리 이동)로 입력 칸을 채운다. 3905·4044는 태그 레시피라 CanCraft가 태그 물건 하나 이상으로 판정한다."
+          },
+          {
+            "refs": [
+              "mover-placed",
+              "storage-place",
+              "raw-storage-3905",
+              "raw-storage-4004",
+              "raw-storage-4009",
+              "raw-storage-4015",
+              "raw-storage-4032",
+              "raw-storage-4044",
+              "raw-storage-1200"
+            ],
+            "rule": "입력 경로(자동 이동기): 7개 원본 모두 AutomatedStorageAuthoring이 있다. 이동기가 이동을 마치면 도착 위치에 PlacedAtPosition으로 등록되고, 그 위치의 StorageCD에 대해 PlaceInStorageJob이 물건이 slotRequirements를 만족하면 MoveOrDropAmount로 시설 인벤토리에 넣고, 만족하지 않으면 그 자리에 떨어뜨리는 요청을 만든다. 이 경로의 조건(이동기 배치·방향·전력)과 결과는 이 기록에서 판정하지 않았고 실게임으로 관측하지 않았다. 어느 경로로 입력 칸이 바뀌어도 아래 평가 계기는 같다."
+          },
+          {
+            "refs": [
+              "start-craft-query",
+              "trigger-changed"
+            ],
+            "rule": "평가 계기: PugAutomationStartCraftSystem은 BigEntityCraftingDataChangedTriggerCD 변경 필터로만 실행된다. TriggerCrafterChangedSystem은 시설의 PugAutomationCD·ContainedObjectsBuffer·ObjectDataCD chunk가 바뀌거나 순서가 바뀌면 그 trigger를 건드린다. 재료 이동 단계나 손으로 넣기·꺼내기가 이 계기가 된다."
+          }
+        ],
+        "decisionImpact": "넣은 뒤 바로 제품이 생긴다고 보지 않고 기다림이 필요하다고 판단한다. 기다리는 동안 재료를 빼거나 바꿔 첫 가능 레시피가 없어지거나 달라지면 진행이 초기화되고(같은 레시피가 유지되면 보존), 전력 필요 시설은 전력이 있어야 진행된다.",
+        "existingReuse": [
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result",
+          "rule:supp:D:automatic_recipe_result"
+        ],
+        "failures": [
+          {
+            "refs": [
+              "start-craft",
+              "can-craft"
+            ],
+            "rule": "CanCraft가 참인 레시피가 없으면(재료 부족·다른 재료, 출력 칸이 막힘) 타이머를 시작하지 않고 진행을 0/-1로 되돌린다."
+          },
+          {
+            "refs": [
+              "start-craft",
+              "craft-finish"
+            ],
+            "rule": "진행 중 재료를 빼거나 바꿔서 첫 CanCraft 레시피가 없어지면 0/-1로, 다른 레시피로 바뀌면 새 레시피 시간으로 초기화된다(진행 손실). 재료를 일부 빼도 같은 첫 레시피가 계속 선택되면 남은 시간은 보존된다. 이미 걸린 타이머가 끝나도 index가 0보다 작으면 아무것도 만들지 않는다."
+          },
+          {
+            "refs": [
+              "automation-active",
+              "start-craft",
+              "craft-finish"
+            ],
+            "rule": "전력이 필요한 시설(4009·1200)에서 전력이 모자라면 isActive=false라 타이머를 시작하지도 줄이지도 않는다."
+          }
+        ],
+        "flow": [
+          {
+            "refs": [
+              "start-craft",
+              "can-craft"
+            ],
+            "rule": "레시피 선택: CanCraftObjectsBuffer를 앞에서부터 보며 시설 자신의 인벤토리(inventoryEntities=[시설])만으로 CanCraft가 참인 첫 레시피 i를 고른다. 플레이어가 누른 레시피가 아니라 이 순서와 시설에 든 것이 정한다."
+          },
+          {
+            "refs": [
+              "start-craft"
+            ],
+            "rule": "고를 레시피가 없으면 timeLeftToCraft=0, currentlyCraftingIndex=-1. i가 이전과 다르면 먼저 timeLeftToCraft를 InstantCrafting이면 0, 아니면 제품 DB craftingTime으로 정하고, 그 뒤 레시피 craftingTimeOverride가 양수이면 그 값으로 덮어쓴다(InstantCrafting이어도 양수 override가 이긴다). 그리고 currentlyCraftingIndex=i. i가 이전과 같으면 남은 시간을 유지한다."
+          },
+          {
+            "refs": [
+              "start-craft",
+              "craft-finish"
+            ],
+            "rule": "i≠-1, 진행 중인 타이머 없음, isActive이면 StartTimer(min(1초, 남은 시간)). 타이머가 끝날 때마다 PugAutomationCraftingSystem은 비활성이면 감소 없이 끝내고, 아니면 timeLeftToCraft를 1 줄여 0보다 크면 1초 타이머를 다시 건다. 0 이하가 되면 출력 단계(output-v1)를 실행한다."
+          }
+        ],
+        "results": [
+          {
+            "refs": [
+              "start-craft",
+              "craft-finish"
+            ],
+            "rule": "재료가 있고 출력 칸이 받을 수 있는 동안 남은 시간이 1초씩 줄고, 약 craftingTime번의 만료 뒤 출력 단계가 실행된다. 원본별 레시피와 craftingTime은 기존 production 완결의 resolvedRecipeInputs에 있다(예: 4004의 제품 1001은 7)."
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "e7cfff07152cef9379f68849d75d916f64bfd766f48faf4ba9feee66ad0eefff",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/13"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "247b640a26ea56817c8e72e212e04cb3b4f18094c416336af3e72f974ca08dae",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/24"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "a2bce42c1e19063dbe2b36bca5437c0e782a7496b5f1afc9d8ba019460fe8ecb",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/25"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "abae449cdf6702ce82569ba5f28c1f1d89d38d86ee5ec267b56f726bd5e5e445",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/7"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "946654a8b581e37dcc4a7de797233bdbb24d93f8b5c511a19a67dc4acbd26ebf",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/11"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "fe112651acf2202d4db5b7edfcb109ebaa7b56330fe851b9bd299f65031e001a",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/23"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "2d2b48b6f2a57b7d654cfcf21bd06467ed3adca1638ccf8e9115e37969fea9ec",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/8"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "3d1e82ee221e801b4dc1bb30192ae09c9c5e578b2efc72dd238a708796bdbeac",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/45"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "b1884cd7855c97b6cb2716e7f05486098e2a7fa241d818005a96d9e70bdf1703",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/53"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "1d6241324f45b505acf185b80989280a53c0ab66b70375fba6ec67270ddaf082",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/57"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "1d743a135c6e374b489764b4986949b0b53e72489b19a9e1fdf294512566d444",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/60"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "fd0e18ebb8ff000c66e4b2923fdf4d0f72f94bd484e0046ce1f671b52053cc1f",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/68"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "5030a5e320f8647d9d844aeb9d3cbbfaea027975793ca9a768264ea01ebe0707",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/76"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "b9a77184a4f66e43a142efca78b2d71cfdb4d3b8ef459f53a313bf583877804f",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/0"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#inventory_transfer_extended",
+            "origin": {
+              "normalizedValueSha256": "1e4535aa61bbb4df88c45c8bacf00c488e273e21095791a7b21b578babc19410",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/46"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "8dcef81b4c69ae53a383c4acb78bc9c3afc89ddd6f40b9efbb09704b1f9ba710",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/151"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "630cfdb7314e51b31fb83832f895c1adf00f953ed5a4f37bbc31ce77c2eba12f",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/161"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "46a79db41bbb060a63b7ac03d5f95e7351e9cf22cf17425ede36a08f88d45f28",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/175"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "6461bf856770139f83a9b6149cc19aa21e293090cc8be6f6bb8531adee149479",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/205"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "3b16e7daa32fa20994e27a1aec69b7ed3dc79203687ac4f042cb47b4b68345e4",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/226"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#inventory_transfer_extended",
+            "origin": {
+              "normalizedValueSha256": "96317f404e1d27dc130cde071bbc7e8b3aad45beae295edf1540cdadcfaca3f1",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/1"
+            }
+          }
+        ],
+        "summary": "입력 칸이 바뀐 ProcessResources 시설(7개)이 시설 인벤토리만으로 만들 레시피를 고르고 1초 단위 타이머로 가공 시간을 세는 단계."
+      }
+    },
+    {
+      "action": "process_craft_output",
+      "group": "process_resources",
+      "id": "completion:process-resources:output-v1",
+      "kind": "action_completion",
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "completion:process-resources:craft-timer-v1"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#inventory_transfer_extended"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#inventory_transfer"
+        },
+        {
+          "relation": "clarifies_open_statement",
+          "to": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#inventory_transfer_extended"
+        }
+      ],
+      "sourceBindings": [
+        {
+          "objectId": 3905,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835",
+          "variation": 0
+        },
+        {
+          "objectId": 4004,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700",
+          "variation": 0
+        },
+        {
+          "objectId": 4009,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155",
+          "variation": 0
+        },
+        {
+          "objectId": 4015,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034",
+          "variation": 0
+        },
+        {
+          "objectId": 4032,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791",
+          "variation": 0
+        },
+        {
+          "objectId": 4044,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667",
+          "variation": 0
+        },
+        {
+          "objectId": 1200,
+          "role": "has_completion",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890",
+          "variation": 0
+        }
+      ],
+      "value": {
+        "boundary": [
+          "실게임에서 이 사슬의 성공(재료가 입력 칸에 들어가고, 시간이 지나 출력 칸에 제품이 생기는 것)은 아직 관측하지 않았다. 정적 코드·원본 authoring 근거다.",
+          "실제 DB 제품·수량, ECB, 네트워크 동기화는 관측하지 않았다. 표시 효과(출력 수량 변화에 따른 소리·빛)는 이 기록 범위 밖이다."
+        ],
+        "codeReferences": [
+          {
+            "endLine": 222,
+            "id": "craft-finish",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationCraftingSystem.cs",
+            "sha256": "c9551235a29e84a0a5e42f134f9789cb7078ef67e2142b9e1c4b4b2826f9262c",
+            "startLine": 162
+          },
+          {
+            "endLine": 1854,
+            "id": "craft",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 1709
+          },
+          {
+            "endLine": 1706,
+            "id": "can-craft",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 1611
+          },
+          {
+            "endLine": 226,
+            "id": "start-craft",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationStartCraftSystem.cs",
+            "sha256": "29fed82705141d5af76cbfcb8ad8d5ad2ba9a12da27cab778c0ce1eee5a19fac",
+            "startLine": 180
+          },
+          {
+            "endLine": 328,
+            "id": "converter-output-slot",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/InventoryConverter.cs",
+            "sha256": "372fe0868b59dba23eb498c6989e6ff9fda9d5a640a9463f1d716c2a87056205",
+            "startLine": 278
+          },
+          {
+            "endLine": 1574,
+            "id": "can-pickup",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 1562
+          },
+          {
+            "endLine": 2434,
+            "id": "storage-place",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationSystem.cs",
+            "sha256": "fe2d79b1c69c5a18bf9be25caa837316e00fe18bba8cc0c86a60d60b0dfeef8c",
+            "startLine": 2398
+          },
+          {
+            "endLine": 109,
+            "id": "pr-ui-activate",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+            "sha256": "9cd9d5b07cdc987a595cf7d435012fdb67f0fdfb85a6a123eccb5cbeffcb80f9",
+            "startLine": 93
+          },
+          {
+            "endLine": 3102,
+            "id": "server-activate",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+            "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+            "startLine": 3063
+          },
+          {
+            "endLine": 28914,
+            "id": "raw-crafting-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 28914
+          },
+          {
+            "endLine": 436,
+            "id": "raw-inventory-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 436
+          },
+          {
+            "endLine": 55461,
+            "id": "raw-storage-3905",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 55461
+          },
+          {
+            "id": "obj-10200",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3095",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-10206",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/3116",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          },
+          {
+            "id": "obj-5192",
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/objects.json",
+            "pointer": "/1245",
+            "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+          }
+        ],
+        "conditions": [
+          {
+            "refs": [
+              "craft-finish"
+            ],
+            "rule": "craft-timer-v1에서 timeLeftToCraft가 0 이하가 되었고 currentlyCraftingIndex가 CanCraftObjectsBuffer 범위 안이며 시설이 활성이다."
+          }
+        ],
+        "decisionImpact": "제품 수령은 출력 칸 수량으로 확인하고 꺼내기를 따로 해야 한다고 판단한다. 출력 칸이 막히면 가공이 멈춘다는 실패를 구별한다.",
+        "existingReuse": [
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result",
+          "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result",
+          "rule:supp:D:automatic_recipe_result"
+        ],
+        "failures": [
+          {
+            "refs": [
+              "can-craft",
+              "craft-finish",
+              "start-craft"
+            ],
+            "rule": "출력 칸에 다른 물건이 있거나, 같은 제품이 9999 이상이거나, 제품이 stackable이 아닌데 출력 칸이 차 있으면 CanCraft가 거짓이다. 제품은 생기지 않고 재료는 남으며 진행은 -1로 멈춘다. 출력 칸을 비우는 등 버퍼가 바뀌면 타이머 단계에서 다시 평가한다."
+          },
+          {
+            "refs": [
+              "craft",
+              "craft-finish"
+            ],
+            "rule": "타이머 도중 재료가 모자라게 되면 Craft가 거짓이라 제품이 없다."
+          },
+          {
+            "refs": [
+              "can-craft",
+              "craft"
+            ],
+            "rule": "출력 칸 9999 검사는 더하기 전 수량만 본다. 더한 결과가 9999를 넘는지는 검사하지 않는다."
+          }
+        ],
+        "flow": [
+          {
+            "refs": [
+              "craft-finish",
+              "craft"
+            ],
+            "rule": "InventoryUtility.Craft(시설, inventoryEntities=[시설], CanCraftObjectsBuffer[current], additionalFreeAmount=0, useCraftingCostMultiplier=false, playerEntity 없음)를 부른다."
+          },
+          {
+            "refs": [
+              "can-craft"
+            ],
+            "rule": "Craft는 먼저 CanCraft(배수 1)를 다시 본다. 출력 칸은 비었거나, 같은 제품이며 제품이 stackable이고 수량이 9999 미만이어야 한다. canOnlyUseAnyMaterialsWithTag가 있으면 그 태그 재료가 하나 이상, 없으면 requiredObjectsToCraft의 각 재료가 시설 인벤토리 전체에 round(amount)×레시피 amount만큼 있어야 한다."
+          },
+          {
+            "refs": [
+              "craft"
+            ],
+            "rule": "통과하면 소비 분기가 둘로 갈린다. 제품 DB의 canOnlyUseAnyMaterialsWithTag가 없으면 requiredObjectsToCraft의 각 재료를 round(amount×1)×레시피 amount만큼 시설 인벤토리에서 ConsumeObject로 소비한다(4004·4009·4015·4032·1200). 태그가 있으면 required 목록은 쓰지 않고 그 태그의 물건을 round(1×1)×레시피 amount, 곧 레시피 amount 1인 이 원본들에서는 1개를 ConsumeObjectWithTag로 소비한다(3905·4044). 그다음 출력 칸에 제품을 새로 쓰거나 더한다. stackable이면 initialAmount×레시피 amount, 아니면 initialAmount다. playerEntity가 없으므로 Crafting 스킬은 오르지 않는다."
+          },
+          {
+            "refs": [
+              "can-craft",
+              "craft",
+              "pr-ui-activate",
+              "server-activate",
+              "converter-output-slot",
+              "storage-place",
+              "raw-crafting-3905",
+              "raw-inventory-3905",
+              "raw-storage-3905",
+              "obj-10200",
+              "obj-10206",
+              "obj-5192"
+            ],
+            "rule": "3905 SantasLittleHelper: 같은 제품 DB(10200/10206)에 requiredObjectsToCraft=[LumpOfCoal×1]/[×2]와 canOnlyUseAnyMaterialsWithTag=17/18이 함께 있다. 레시피 칸 표시와 클릭 관문은 석탄 required 목록을 쓰지만, 자동 CanCraft와 Craft는 태그를 먼저 보고 시설 안의 조리 음식(태그 17/18) 1개를 소비한다. 그래서 UI에 보이는 석탄 비용은 자동 가공의 실제 소비가 아니다. 음식은 플레이어 손 이동이나 자동 이동기로 입력 칸 0에 들어갈 수 있다. 출력 칸은 입력 0 뒤에 붙은 1번 칸이다."
+          },
+          {
+            "refs": [
+              "craft-finish"
+            ],
+            "rule": "만든 뒤 같은 레시피로 CanCraft가 다시 참이면 남은 시간을 InstantCrafting이면 0, 아니면 DB craftingTime으로 정한 뒤 양수 override로 덮어쓰고, 타이머를 다시 건다(연속 가공). 아니면 0/-1로 멈춘다."
+          }
+        ],
+        "results": [
+          {
+            "refs": [
+              "craft",
+              "converter-output-slot",
+              "can-pickup",
+              "storage-place"
+            ],
+            "rule": "출력 칸의 제품 수량이 늘고 시설에 든 재료가 1회분 줄어든다. 제품은 출력 칸에 남고 이 단계는 그것을 가방이나 보관함으로 옮기지 않는다. 플레이어 행동으로는 인벤토리 이동으로 꺼낸다(기존 inventory_transfer 계열 기록). 이와 별도로 자동 이동기 경로가 있다: CanPickup은 출력 칸이 있는 crafting 시설에서 출력 칸이 비어 있지 않을 때 참이고, 그때 PlaceInStorageJob이 그 위치를 집어 갈 수 있는 저장소로 등록한다. 이동기의 실제 집기 조건과 결과는 이 기록에서 판정하지 않았고 실게임으로 관측하지 않았다."
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "e7cfff07152cef9379f68849d75d916f64bfd766f48faf4ba9feee66ad0eefff",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/13"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "247b640a26ea56817c8e72e212e04cb3b4f18094c416336af3e72f974ca08dae",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/24"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "a2bce42c1e19063dbe2b36bca5437c0e782a7496b5f1afc9d8ba019460fe8ecb",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/25"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "abae449cdf6702ce82569ba5f28c1f1d89d38d86ee5ec267b56f726bd5e5e445",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/7"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "946654a8b581e37dcc4a7de797233bdbb24d93f8b5c511a19a67dc4acbd26ebf",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/11"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "fe112651acf2202d4db5b7edfcb109ebaa7b56330fe851b9bd299f65031e001a",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/23"
+            }
+          },
+          {
+            "nodeId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#automatic_recipe_result",
+            "origin": {
+              "normalizedValueSha256": "2d2b48b6f2a57b7d654cfcf21bd06467ed3adca1638ccf8e9115e37969fea9ec",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/production-v2/cases.json",
+              "pointer": "/cases/8"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:1851371803100069835#inventory_transfer_extended",
+            "origin": {
+              "normalizedValueSha256": "1e4535aa61bbb4df88c45c8bacf00c488e273e21095791a7b21b578babc19410",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/46"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7493579351412767700#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "8dcef81b4c69ae53a383c4acb78bc9c3afc89ddd6f40b9efbb09704b1f9ba710",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/151"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:8084277474615349155#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "630cfdb7314e51b31fb83832f895c1adf00f953ed5a4f37bbc31ce77c2eba12f",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/161"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-4282708749011488034#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "46a79db41bbb060a63b7ac03d5f95e7351e9cf22cf17425ede36a08f88d45f28",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/175"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-7713936278173450791#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "6461bf856770139f83a9b6149cc19aa21e293090cc8be6f6bb8531adee149479",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/205"
+            }
+          },
+          {
+            "nodeId": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:7364225312847973667#inventory_transfer",
+            "origin": {
+              "normalizedValueSha256": "3b16e7daa32fa20994e27a1aec69b7ed3dc79203687ac4f042cb47b4b68345e4",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/226"
+            }
+          },
+          {
+            "nodeId": "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-5362974161099365890#inventory_transfer_extended",
+            "origin": {
+              "normalizedValueSha256": "96317f404e1d27dc130cde071bbc7e8b3aad45beae295edf1540cdadcfaca3f1",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/3/payload/extraction.json/records/1"
+            }
+          }
+        ],
+        "summary": "타이머가 끝난 ProcessResources 시설이 시설 인벤토리의 재료를 소비해 출력 칸에 제품을 쓰는 단계와 그 실패 분기."
+      }
+    }
+  ],
+  "runtimeTested": false,
+  "wholeScopeComplete": false
+}

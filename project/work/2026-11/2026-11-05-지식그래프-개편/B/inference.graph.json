@@ -1,0 +1,5108 @@
+{
+  "meta": {
+    "stage": "B-7",
+    "commit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0",
+    "confidence": "code-only-inference",
+    "runtimeObserved": false,
+    "inputs": [
+      "B/code.graph.json",
+      "B/meanings.json",
+      "B/snapshot (source only)"
+    ],
+    "limitations": [
+      "No actual screen/command/HTTP/CLI execution observed.",
+      "One accidental out-of-snapshot rg search was stopped; no outside result used as evidence; see inference.md.",
+      "No inferred input-widget or navigation edges.",
+      "Representative output kinds; not exhaustive per diagnostic subcommand."
+    ],
+    "currentCodeAssociations": {
+      "commit": "b25099f6fd31e4c4c3618357eb9e8101e0e17124",
+      "basis": "Same qualified code identities; original historical inference and runtime limits preserved. New choice helpers are statically extracted, not retroactively observed."
+    }
+  },
+  "nodes": [
+    {
+      "id": "BCH-01",
+      "type": "화면",
+      "name": "멤버 상태 출력",
+      "doc": "B/inference.md#BCH-01",
+      "summary": "호스트가 참여 멤버와 현재 목표를 확인하고 대상 멤버 명령을 선택하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai 또는 /ai <멤버> status",
+      "state": "호스트 월드 정보가 준비된 상태",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-01#1",
+      "type": "화면요소",
+      "name": "멤버별 활성화·참가 상태",
+      "doc": "B/inference.md#BCH-01#1",
+      "summary": "이름·멤버 ID·월드 켜짐/꺼짐·입장 단계가 조합된다.",
+      "confidence": "code-only-inference",
+      "condition": "호스트 월드 정보가 준비된 상태",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-01#2",
+      "type": "화면요소",
+      "name": "현재 목표와 명령 안내",
+      "doc": "B/inference.md#BCH-01#2",
+      "summary": "Walking 상태에서 목표가 붙고 on/off/goal 안내가 붙는다.",
+      "confidence": "code-only-inference",
+      "condition": "호스트 월드 정보가 준비된 상태",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-02",
+      "type": "화면",
+      "name": "참가 설정 결과 출력",
+      "doc": "B/inference.md#BCH-02",
+      "summary": "호스트가 멤버를 켜거나 끈 결과와 월드 저장 여부를 확인한다. 서로 다른 분기 문구가 하나의 참가 설정 결과 종류를 이룬다는 추정이다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai on|off [멤버]",
+      "state": "참가 예약·이미 켜짐·퇴장·꺼짐의 분기",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-02#1",
+      "type": "화면요소",
+      "name": "참가 예약 또는 기존 활성 상태",
+      "doc": "B/inference.md#BCH-02#1",
+      "summary": "켜짐 요청은 대기 시간 또는 이미 켜짐을 알린다.",
+      "confidence": "code-only-inference",
+      "condition": "참가 예약·이미 켜짐·퇴장·꺼짐의 분기",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "AI {이름} 켜짐: {초}초 뒤 들어옵니다. 이 월드에 저장됨.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-02#2",
+      "type": "화면요소",
+      "name": "퇴장·설정 저장 결과",
+      "doc": "B/inference.md#BCH-02#2",
+      "summary": "꺼짐 요청은 연결이 있으면 저장하고 나갔음을, 없으면 꺼짐을 알린다. 이미 꺼진 멤버는 무응답일 수 있다.",
+      "confidence": "code-only-inference",
+      "condition": "참가 예약·이미 켜짐·퇴장·꺼짐의 분기",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-03",
+      "type": "화면",
+      "name": "목표 설정·진행·해제 출력",
+      "doc": "B/inference.md#BCH-03",
+      "summary": "호스트가 채집·제작·탐험·따라오기·보관·귀환·농사·요리 목표를 주고 진행을 조회하거나 중단하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai <멤버> goal … 또는 stop",
+      "state": "목표 조회·설정·해제 응답",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-03#1",
+      "type": "화면요소",
+      "name": "목표와 진행 내용",
+      "doc": "B/inference.md#BCH-03#1",
+      "summary": "인수 없는 goal은 StatusText 결과를 보낸다. 구체 목표 입력은 목표와 판단 경로를 알린다.",
+      "confidence": "code-only-inference",
+      "condition": "목표 조회·설정·해제 응답",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-03#2",
+      "type": "화면요소",
+      "name": "해제·판단 알림 설정",
+      "doc": "B/inference.md#BCH-03#2",
+      "summary": "goal 없음은 목표와 자동 모드를 끄며, 자세히는 알림 상세 여부를 토글한다.",
+      "confidence": "code-only-inference",
+      "condition": "목표 조회·설정·해제 응답",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "AI 목표 해제: 제자리에 섭니다. 판단 호출 없음.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-03#3",
+      "type": "화면요소",
+      "name": "사용법·키 누락 안내",
+      "doc": "B/inference.md#BCH-03#3",
+      "summary": "품목 또는 문법이 맞지 않거나 행동 판단 키가 없으면 안내한다.",
+      "confidence": "code-only-inference",
+      "condition": "목표 조회·설정·해제 응답",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "AI: OPENAI_API_KEY 를 찾지 못했습니다. 키를 저장한 뒤 게임을 다시 켜 주세요.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-04",
+      "type": "화면",
+      "name": "기지 조회·변경 출력",
+      "doc": "B/inference.md#BCH-04",
+      "summary": "기지 위치와 거리·상자·보관 가능 물품을 읽거나 호스트 위치/코어로 기지를 바꾸는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai <멤버> base [여기|코어]",
+      "state": "AI가 Walking이며 서버 플레이어 존재",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-04#1",
+      "type": "화면요소",
+      "name": "기지 위치·거리·보관 요약",
+      "doc": "B/inference.md#BCH-04#1",
+      "summary": "기지, 현재 거리, 기지 상자와 가방에서 넣을 물품의 요약.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-04#2",
+      "type": "화면요소",
+      "name": "변경 결과·명령 안내",
+      "doc": "B/inference.md#BCH-04#2",
+      "summary": "여기 또는 코어 설정 결과와 변경 구문.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-05",
+      "type": "화면",
+      "name": "밭 상태 출력",
+      "doc": "B/inference.md#BCH-05",
+      "summary": "호스트가 밭·물·작물 성장 정보를 읽고 농사 목표를 결정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai <멤버> farm",
+      "state": "AI가 Walking이며 서버 플레이어 존재",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-05#1",
+      "type": "화면요소",
+      "name": "밭·물 요약",
+      "doc": "B/inference.md#BCH-05#1",
+      "summary": "Take/SnapText 결과와 기억한 물 좌표.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-05#2",
+      "type": "화면요소",
+      "name": "각 밭의 관측 상태",
+      "doc": "B/inference.md#BCH-05#2",
+      "summary": "시야 밖·빈 칸·물 줌·작물 단계·성장 시간 등의 조건부 텍스트.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-06",
+      "type": "화면",
+      "name": "요리 상태 출력",
+      "doc": "B/inference.md#BCH-06",
+      "summary": "호스트가 솥·재료·조합 예측·가방 요리를 읽고 요리 목표를 결정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai <멤버> cook",
+      "state": "AI가 Walking이며 서버 플레이어 존재",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-06#1",
+      "type": "화면요소",
+      "name": "솥·재료 요약",
+      "doc": "B/inference.md#BCH-06#1",
+      "summary": "내 솥/남의 솥, 시야 밖 기억 상태, 현재 재료.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-06#2",
+      "type": "화면요소",
+      "name": "조합 예측·보유 요리",
+      "doc": "B/inference.md#BCH-06#2",
+      "summary": "최대 8개 조합 예측과 가방 요리를 조합한 출력. 전체 채팅 문자열은 길이에 따라 잘린다.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-07",
+      "type": "화면",
+      "name": "명령 거절·도움말 출력",
+      "doc": "B/inference.md#BCH-07",
+      "summary": "명령을 처리할 수 없는 이유 또는 사용 가능한 구문을 읽고 수정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai …",
+      "state": "월드 준비 중·시험 명령 차단·미입장·알 수 없는 명령",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-07#1",
+      "type": "화면요소",
+      "name": "준비·미입장 안내",
+      "doc": "B/inference.md#BCH-07#1",
+      "summary": "월드 정보 미확정 또는 AI 미입장 시 안내.",
+      "confidence": "code-only-inference",
+      "condition": "월드 준비 중·시험 명령 차단·미입장·알 수 없는 명령",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "AI: 아직 월드 정보를 읽는 중입니다. 잠시 뒤 다시 입력하세요.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-07#2",
+      "type": "화면요소",
+      "name": "시험 명령 차단",
+      "doc": "B/inference.md#BCH-07#2",
+      "summary": "시험 스위치가 없을 때 해당 명령이 꺼져 있음을 알린다.",
+      "confidence": "code-only-inference",
+      "condition": "월드 준비 중·시험 명령 차단·미입장·알 수 없는 명령",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-07#3",
+      "type": "화면요소",
+      "name": "일반 도움말",
+      "doc": "B/inference.md#BCH-07#3",
+      "summary": "멤버 선택·on/off·goal·stop·base를 설명하며 시험 스위치가 있으면 시험 목록도 붙인다.",
+      "confidence": "code-only-inference",
+      "condition": "월드 준비 중·시험 명령 차단·미입장·알 수 없는 명령",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-08",
+      "type": "화면",
+      "name": "자동 판단·목표 완료 알림",
+      "doc": "B/inference.md#BCH-08",
+      "summary": "호스트가 자동 모드 진행과 대기·사용 불가·발화·목표 완료를 받는 것으로 추정한다. 이 알림은 실제 실행 관측이 아니다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 비동기 Reply 출력",
+      "state": "자동 모드·판단 대기·수락·실패 또는 목표 완료",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-08#1",
+      "type": "화면요소",
+      "name": "자동 모드 시작·대기",
+      "doc": "B/inference.md#BCH-08#1",
+      "summary": "구독 CLI가 목표를 정한다는 안내와 생각 중 문구.",
+      "confidence": "code-only-inference",
+      "condition": "자동 모드·판단 대기·수락·실패 또는 목표 완료",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-08#2",
+      "type": "화면요소",
+      "name": "수락된 발화·목표",
+      "doc": "B/inference.md#BCH-08#2",
+      "summary": "검증에 통과한 say를 제한 길이로 표시하고 적용 목표를 알린다.",
+      "confidence": "code-only-inference",
+      "condition": "자동 모드·판단 대기·수락·실패 또는 목표 완료",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-08#3",
+      "type": "화면요소",
+      "name": "사용 불가·다시 묻기",
+      "doc": "B/inference.md#BCH-08#3",
+      "summary": "상위 LLM 사용 불가 이유, 재시도 시간, 목표가 없을 때 자유 시간 동작 안내.",
+      "confidence": "code-only-inference",
+      "condition": "자동 모드·판단 대기·수락·실패 또는 목표 완료",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-08#4",
+      "type": "화면요소",
+      "name": "목표 완료 결과",
+      "doc": "B/inference.md#BCH-08#4",
+      "summary": "관측 기반 완료 시 목표·횟수·시간 등의 메시지. 근거는 AIGoals.cs:238-261.",
+      "confidence": "code-only-inference",
+      "condition": "자동 모드·판단 대기·수락·실패 또는 목표 완료",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 238,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-09",
+      "type": "화면",
+      "name": "시험 명령 진단 결과",
+      "doc": "B/inference.md#BCH-09",
+      "summary": "개발자 또는 시험자가 가방·시야·이동·전투·기억·경로·브리지 등 직접 진단 결과를 받는 종류다. 모든 하위 명령의 결과를 관측하거나 개별 화면으로 복원한 것은 아니다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "시험·개발 출력",
+      "address": "게임 채팅 /ai <시험 명령>",
+      "state": "testcmds.on 존재 및 해당 명령 전제조건 충족",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-09#1",
+      "type": "화면요소",
+      "name": "진단 상태·결과 텍스트",
+      "doc": "B/inference.md#BCH-09#1",
+      "summary": "look/inv/mem/plan/bridge 등의 결과 또는 사용법.",
+      "confidence": "code-only-inference",
+      "condition": "testcmds.on 존재 및 해당 명령 전제조건 충족",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-09#2",
+      "type": "화면요소",
+      "name": "시험 상태 변경 확인",
+      "doc": "B/inference.md#BCH-09#2",
+      "summary": "give/take/hp/hostto/buff/arena 등 시험 조작의 결과. 실행하지 않았다.",
+      "confidence": "code-only-inference",
+      "condition": "testcmds.on 존재 및 해당 명령 전제조건 충족",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-10",
+      "type": "화면",
+      "name": "생활 기억 삭제 결과",
+      "doc": "B/inference.md#BCH-10",
+      "summary": "호스트가 밭 또는 솥 기억을 지운 뒤 삭제 수량을 확인하는 것으로 추정한다. 시험 주석은 있으나 일반 시험 목록 게이트의 보호를 추정하지 않는다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "게임 채팅",
+      "address": "게임 채팅 /ai farm 잊기 또는 /ai cook 잊기",
+      "state": "AI가 Walking이며 서버 플레이어 존재",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 822
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-10#1",
+      "type": "화면요소",
+      "name": "밭 기억 삭제 수량",
+      "doc": "B/inference.md#BCH-10#1",
+      "summary": "밭 및 성장 기록을 지우고 저장한 뒤 칸 수를 알린다.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "{이름} 밭 기억 {n}칸을 지웠습니다.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 822
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCH-10#2",
+      "type": "화면요소",
+      "name": "솥 기억 삭제 수량",
+      "doc": "B/inference.md#BCH-10#2",
+      "summary": "솥 및 관찰 기록을 지우고 저장한 뒤 개수를 알린다.",
+      "confidence": "code-only-inference",
+      "condition": "AI가 Walking이며 서버 플레이어 존재",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "{이름} 요리 솥 기억 {n}개를 지웠습니다.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-01",
+      "type": "화면",
+      "name": "브리지 상태 JSON",
+      "doc": "B/inference.md#BAPI-01",
+      "summary": "운영자나 모드가 저장된 멤버 사전 점검 상태와 처리 중 멤버를 읽는 것으로 추정한다. 브라우저 UI가 아니다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "브리지 HTTP 출력",
+      "address": "GET http://127.0.0.1:<AI_BRIDGE_PORT 기본 8331>/v1/health",
+      "state": "HTTP 200 JSON 생성 경로",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-01#1",
+      "type": "화면요소",
+      "name": "전체 ok·busy",
+      "doc": "B/inference.md#BAPI-01#1",
+      "summary": "사용 가능 멤버가 하나라도 있으면 ok, busy는 현재 예약된 멤버.",
+      "confidence": "code-only-inference",
+      "condition": "HTTP 200 JSON 생성 경로",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-01#2",
+      "type": "화면요소",
+      "name": "멤버별 준비·사용량",
+      "doc": "B/inference.md#BAPI-01#2",
+      "summary": "CLI 존재·로그인·구독·사용량·skip 이유를 반환한다. 조회 자체의 실시간 재검사를 의미하지 않는다.",
+      "confidence": "code-only-inference",
+      "condition": "HTTP 200 JSON 생성 경로",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-02",
+      "type": "화면",
+      "name": "계획 판단 응답 JSON",
+      "doc": "B/inference.md#BAPI-02",
+      "summary": "게임 모드가 보고에 대한 판단 또는 처리 실패와 진단 요약을 받는 것으로 추정한다. HTTP 200만으로 성공을 단정할 수 없다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "브리지 HTTP 출력",
+      "address": "POST http://127.0.0.1:<PORT>/v1/plan",
+      "state": "계획 처리 뒤 HTTP 200 envelope; ok true/false 가능",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-02#1",
+      "type": "화면요소",
+      "name": "판단·상관 정보",
+      "doc": "B/inference.md#BAPI-02#1",
+      "summary": "ok/member/cli/model/effort/ms/report_id/goal_rev, answer 또는 null.",
+      "confidence": "code-only-inference",
+      "condition": "계획 처리 뒤 HTTP 200 envelope; ok true/false 가능",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-02#2",
+      "type": "화면요소",
+      "name": "오류·원문·비용 진단",
+      "doc": "B/inference.md#BAPI-02#2",
+      "summary": "error/detail/raw 길이 제한, usage·문자수·호출수 등의 진단 값.",
+      "confidence": "code-only-inference",
+      "condition": "계획 처리 뒤 HTTP 200 envelope; ok true/false 가능",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-02#3",
+      "type": "화면요소",
+      "name": "기억 검색 요약",
+      "doc": "B/inference.md#BAPI-02#3",
+      "summary": "searches/index_chars/prefetch_used/recall_summary. recall 자체는 최종 행동 목표로 전달하지 않는다.",
+      "confidence": "code-only-inference",
+      "condition": "계획 처리 뒤 HTTP 200 envelope; ok true/false 가능",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-03",
+      "type": "화면",
+      "name": "브리지 거절·서버 오류 JSON",
+      "doc": "B/inference.md#BAPI-03",
+      "summary": "호출자에게 멤버 오류·중복 요청·CLI/로그인/구독/한도·경로/서버 오류를 알려주는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "브리지 HTTP 출력",
+      "address": "/v1/plan 또는 미등록 경로",
+      "state": "400/409/503/429/404/500 응답 생성 경로",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-03#1",
+      "type": "화면요소",
+      "name": "상태·error·detail",
+      "doc": "B/inference.md#BAPI-03#1",
+      "summary": "unknown member, busy, spawn, login, auth, limit, not found, bridge 중 분기별 값.",
+      "confidence": "code-only-inference",
+      "condition": "400/409/503/429/404/500 응답 생성 경로",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BAPI-03#2",
+      "type": "화면요소",
+      "name": "한도 재시도 안내",
+      "doc": "B/inference.md#BAPI-03#2",
+      "summary": "limit에서 retry_after_s:1800. 모든 오류에 있는 필드가 아니다.",
+      "confidence": "code-only-inference",
+      "condition": "400/409/503/429/404/500 응답 생성 경로",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BLOG-01",
+      "type": "화면",
+      "name": "브리지 시작 콘솔 출력",
+      "doc": "B/inference.md#BLOG-01",
+      "summary": "운영자가 게임 자료 발견 여부와 CLI 점검 결과, 수신 주소를 확인하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "운영 로그",
+      "address": "node Tools/ai-bridge/bridge.mjs 콘솔",
+      "state": "자료 탐색·시작 점검·listen 로그 생성 경로",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BLOG-01#1",
+      "type": "화면요소",
+      "name": "게임 자료 발견·누락",
+      "doc": "B/inference.md#BLOG-01#1",
+      "summary": "그래프 경로·노드수 또는 탐색 실패 문구.",
+      "confidence": "code-only-inference",
+      "condition": "자료 탐색·시작 점검·listen 로그 생성 경로",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BLOG-01#2",
+      "type": "화면요소",
+      "name": "멤버 사전 점검·주소",
+      "doc": "B/inference.md#BLOG-01#2",
+      "summary": "found/login/auth/subscription/usage/SKIP 및 localhost listen 메시지.",
+      "confidence": "code-only-inference",
+      "condition": "자료 탐색·시작 점검·listen 로그 생성 경로",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-01",
+      "type": "화면",
+      "name": "게임 어셈블리 가져오기 로그",
+      "doc": "B/inference.md#BSDK-01",
+      "summary": "개발자나 개발 에이전트가 게임 어셈블리 가져오기 로그를 읽고 다음 작업 여부를 정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "SDK 개발 출력",
+      "address": "Unity -executeMethod HeadlessSdk.ImportGameFiles",
+      "state": "명령별 성공·기존 상태·컴파일 결과",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-01#1",
+      "type": "화면요소",
+      "name": "가져온 수·목록",
+      "doc": "B/inference.md#BSDK-01#1",
+      "summary": "추가된 게임 어셈블리 수와 이름.",
+      "confidence": "code-only-inference",
+      "condition": "명령별 성공·기존 상태·컴파일 결과",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-01#2",
+      "type": "화면요소",
+      "name": "완료",
+      "doc": "B/inference.md#BSDK-01#2",
+      "summary": "[HeadlessSdk] ImportGameFiles done",
+      "confidence": "code-only-inference",
+      "condition": "명령별 성공·기존 상태·컴파일 결과",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-02",
+      "type": "화면",
+      "name": "모드 생성 로그",
+      "doc": "B/inference.md#BSDK-02",
+      "summary": "개발자나 개발 에이전트가 모드 생성 로그를 읽고 다음 작업 여부를 정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "SDK 개발 출력",
+      "address": "Unity -executeMethod HeadlessSdk.CreateMod",
+      "state": "명령별 성공·기존 상태·컴파일 결과",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 67,
+          "endLine": 90
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-02#1",
+      "type": "화면요소",
+      "name": "생성 또는 기존 모드",
+      "doc": "B/inference.md#BSDK-02#1",
+      "summary": "CreateMod done 또는 Mod already exists. 버전 태그 등록 경고가 선행할 수 있다.",
+      "confidence": "code-only-inference",
+      "condition": "명령별 성공·기존 상태·컴파일 결과",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 67,
+          "endLine": 90
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-03",
+      "type": "화면",
+      "name": "빌드·설치 로그",
+      "doc": "B/inference.md#BSDK-03",
+      "summary": "개발자나 개발 에이전트가 빌드·설치 로그를 읽고 다음 작업 여부를 정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "SDK 개발 출력",
+      "address": "Unity -executeMethod HeadlessSdk.BuildAndInstall",
+      "state": "명령별 성공·기존 상태·컴파일 결과",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 107,
+          "endLine": 142
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-03#1",
+      "type": "화면요소",
+      "name": "설치 결과",
+      "doc": "B/inference.md#BSDK-03#1",
+      "summary": "완료 시 설치된 ModManifest.json 경로와 파일 내용.",
+      "confidence": "code-only-inference",
+      "condition": "명령별 성공·기존 상태·컴파일 결과",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 107,
+          "endLine": 142
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-04",
+      "type": "화면",
+      "name": "컴파일 검사 로그",
+      "doc": "B/inference.md#BSDK-04",
+      "summary": "개발자나 개발 에이전트가 컴파일 검사 로그를 읽고 다음 작업 여부를 정하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "SDK 개발 출력",
+      "address": "Unity -executeMethod HeadlessSdk.CompileCheck",
+      "state": "명령별 성공·기존 상태·컴파일 결과",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-04#1",
+      "type": "화면요소",
+      "name": "컴파일 결과·종료 코드",
+      "doc": "B/inference.md#BSDK-04#1",
+      "summary": "CompileCheck: ok 또는 FAILED; 코드 0/1로 종료. 컴파일 실패로 메서드 자체가 실행되지 않을 수도 있다.",
+      "confidence": "code-only-inference",
+      "condition": "명령별 성공·기존 상태·컴파일 결과",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-05",
+      "type": "화면",
+      "name": "SDK 명령 예외 로그",
+      "doc": "B/inference.md#BSDK-05",
+      "summary": "개발자가 실패 예외와 비정상 종료를 확인하는 것으로 추정한다.",
+      "confidence": "code-only-inference",
+      "IA 묶음": "SDK 개발 출력",
+      "address": "Unity HeadlessSdk 명령 공통 Fail",
+      "state": "명령 내부 예외가 Fail로 전달됨",
+      "outputKind": true,
+      "observed": false,
+      "artifact": null,
+      "commonRegions": [],
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BSDK-05#1",
+      "type": "화면요소",
+      "name": "실패 예외·종료",
+      "doc": "B/inference.md#BSDK-05#1",
+      "summary": "[HeadlessSdk] FAILED: 예외, EditorApplication.Exit(1)",
+      "confidence": "code-only-inference",
+      "condition": "명령 내부 예외가 Fail로 전달됨",
+      "interaction": "출력 읽기. 이 출력 자체의 클릭·입력 조작은 코드에서 확인하지 못함.",
+      "copy": "동적 값; 본문은 코드 필드/구성 설명",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-01",
+      "type": "정책",
+      "name": "호스트 월드 명령 범위",
+      "doc": "B/inference.md#BP-01",
+      "summary": "호스트 월드가 아닌 경우 / /ai 명령 처리기 / 메시지를 처리하지 않고 원래 채팅 경로에 둔다.",
+      "confidence": "code-only-inference",
+      "condition": "호스트 월드가 아닌 경우",
+      "subject": "/ai 명령 처리기",
+      "action": "메시지를 처리하지 않고 원래 채팅 경로에 둔다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 425
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-02",
+      "type": "정책",
+      "name": "대상 생략 규칙",
+      "doc": "B/inference.md#BP-02",
+      "summary": "멤버 없이 명령을 요청한 경우 / 명령 처리기 / 상태는 모두, off는 모두, 나머지는 참가 Claude 우선·그다음 참가 멤버·없으면 Claude로 정한다.",
+      "confidence": "code-only-inference",
+      "condition": "멤버 없이 명령을 요청한 경우",
+      "subject": "명령 처리기",
+      "action": "상태는 모두, off는 모두, 나머지는 참가 Claude 우선·그다음 참가 멤버·없으면 Claude로 정한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 433,
+          "endLine": 485
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-03",
+      "type": "정책",
+      "name": "월드별 참여 저장",
+      "doc": "B/inference.md#BP-03",
+      "summary": "멤버 on/off가 요청된 경우 / 모드 / 월드 참여 설정을 저장하고 켜면 입장 예약, 끄면 연결 정리 및 비활성화한다.",
+      "confidence": "code-only-inference",
+      "condition": "멤버 on/off가 요청된 경우",
+      "subject": "모드",
+      "action": "월드 참여 설정을 저장하고 켜면 입장 예약, 끄면 연결 정리 및 비활성화한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-04",
+      "type": "정책",
+      "name": "재입장 시 기본 비활성",
+      "doc": "B/inference.md#BP-04",
+      "summary": "호스트 월드 참가 설정에 해당 멤버가 없는 경우 / 모드 갱신 / 멤버를 Disabled로 유지한다.",
+      "confidence": "code-only-inference",
+      "condition": "호스트 월드 참가 설정에 해당 멤버가 없는 경우",
+      "subject": "모드 갱신",
+      "action": "멤버를 Disabled로 유지한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 309,
+          "endLine": 337
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-05",
+      "type": "정책",
+      "name": "시험 명령 차단",
+      "doc": "B/inference.md#BP-05",
+      "summary": "TestCommands 목록의 명령이고 testcmds.on이 없는 경우 / 명령 처리기 / 명령을 수행하지 않고 시험용 차단 메시지를 낸다.",
+      "confidence": "code-only-inference",
+      "condition": "TestCommands 목록의 명령이고 testcmds.on이 없는 경우",
+      "subject": "명령 처리기",
+      "action": "명령을 수행하지 않고 시험용 차단 메시지를 낸다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 496
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-06",
+      "type": "정책",
+      "name": "AI 입장 전 작업 차단",
+      "doc": "B/inference.md#BP-06",
+      "summary": "base/farm/cook 또는 skill 명령이고 Walking/서버 플레이어 전제가 충족되지 않는 경우 / 명령 처리기 / 미입장 메시지를 반환하며 작업 실행을 생략한다.",
+      "confidence": "code-only-inference",
+      "condition": "base/farm/cook 또는 skill 명령이고 Walking/서버 플레이어 전제가 충족되지 않는 경우",
+      "subject": "명령 처리기",
+      "action": "미입장 메시지를 반환하며 작업 실행을 생략한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 511,
+          "endLine": 549
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-07",
+      "type": "정책",
+      "name": "목표 중단",
+      "doc": "B/inference.md#BP-07",
+      "summary": "stop 또는 goal 없음이 요청된 경우 / 모드 / 자동 계획을 끄고 목표를 해제하며 진행 기술을 중단한다.",
+      "confidence": "code-only-inference",
+      "condition": "stop 또는 goal 없음이 요청된 경우",
+      "subject": "모드",
+      "action": "자동 계획을 끄고 목표를 해제하며 진행 기술을 중단한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 114,
+          "endLine": 120
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-08",
+      "type": "정책",
+      "name": "행동 판단 키 필요",
+      "doc": "B/inference.md#BP-08",
+      "summary": "조회·해제·자세히 이외 goal 처리에서 KeyMissing이 참인 경우 / 목표 처리기 / 새 목표 및 자동 모드 설정에 앞서 키 누락 안내를 반환한다.",
+      "confidence": "code-only-inference",
+      "condition": "조회·해제·자세히 이외 goal 처리에서 KeyMissing이 참인 경우",
+      "subject": "목표 처리기",
+      "action": "새 목표 및 자동 모드 설정에 앞서 키 누락 안내를 반환한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 135
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-09",
+      "type": "정책",
+      "name": "브리지 구독 검사",
+      "doc": "B/inference.md#BP-09",
+      "summary": "CLI 부재·로그인 실패·구독 조건 불충족인 계획 요청 / 브리지 / 모델 판단을 시작하지 않고 spawn/login/auth 오류로 거절한다.",
+      "confidence": "code-only-inference",
+      "condition": "CLI 부재·로그인 실패·구독 조건 불충족인 계획 요청",
+      "subject": "브리지",
+      "action": "모델 판단을 시작하지 않고 spawn/login/auth 오류로 거절한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/plan.mjs",
+          "line": 23,
+          "endLine": 31
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-10",
+      "type": "정책",
+      "name": "사용량 제한",
+      "doc": "B/inference.md#BP-10",
+      "summary": "주 사용량 최대치가 85%를 초과하거나 Claude 외 CLI 사용량이 불명인 경우 / 브리지 / 해당 멤버를 skip으로 보고 계획을 limit로 거절한다. 85%와 같을 때는 초과 조건이 아니다.",
+      "confidence": "code-only-inference",
+      "condition": "주 사용량 최대치가 85%를 초과하거나 Claude 외 CLI 사용량이 불명인 경우",
+      "subject": "브리지",
+      "action": "해당 멤버를 skip으로 보고 계획을 limit로 거절한다. 85%와 같을 때는 초과 조건이 아니다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 65
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-11",
+      "type": "정책",
+      "name": "멤버당 단일 계획",
+      "doc": "B/inference.md#BP-11",
+      "summary": "같은 멤버의 계획 처리가 이미 진행 중인 경우 / 브리지 / 추가 요청을 HTTP 409 busy로 거절한다.",
+      "confidence": "code-only-inference",
+      "condition": "같은 멤버의 계획 처리가 이미 진행 중인 경우",
+      "subject": "브리지",
+      "action": "추가 요청을 HTTP 409 busy로 거절한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/plan.mjs",
+          "line": 19,
+          "endLine": 23
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-12",
+      "type": "정책",
+      "name": "브리지 응답 형태 검사",
+      "doc": "B/inference.md#BP-12",
+      "summary": "최종 판단이 허용 decision/goal 형태를 만족하지 않는 경우 / 브리지 / parse 실패로 취급하고 answer를 null로 반환한다.",
+      "confidence": "code-only-inference",
+      "condition": "최종 판단이 허용 decision/goal 형태를 만족하지 않는 경우",
+      "subject": "브리지",
+      "action": "parse 실패로 취급하고 answer를 null로 반환한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 10,
+          "endLine": 37
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-13",
+      "type": "정책",
+      "name": "낡은 상위 판단 거절",
+      "doc": "B/inference.md#BP-13",
+      "summary": "목표 수정·호스트 목표·대기 중 쓰러짐·180초 초과로 현재 상태와 어긋나는 경우 / 게임 계획 수신기 / 상위 판단을 적용하지 않는다.",
+      "confidence": "code-only-inference",
+      "condition": "목표 수정·호스트 목표·대기 중 쓰러짐·180초 초과로 현재 상태와 어긋나는 경우",
+      "subject": "게임 계획 수신기",
+      "action": "상위 판단을 적용하지 않는다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 367,
+          "endLine": 376
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-14",
+      "type": "정책",
+      "name": "상위 목표 적용 전 가능 여부",
+      "doc": "B/inference.md#BP-14",
+      "summary": "상위 set 판단을 받은 경우 / 게임 계획 수신기 / 보고 허용 채집 품목·1~30개, 알려진 제작법·1~10개 및 보관·기지·농사·요리 조건 등을 검사한다.",
+      "confidence": "code-only-inference",
+      "condition": "상위 set 판단을 받은 경우",
+      "subject": "게임 계획 수신기",
+      "action": "보고 허용 채집 품목·1~30개, 알려진 제작법·1~10개 및 보관·기지·농사·요리 조건 등을 검사한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 379,
+          "endLine": 405
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-15",
+      "type": "정책",
+      "name": "호스트 채팅 출력 범위",
+      "doc": "B/inference.md#BP-15",
+      "summary": "Reply 큐에 응답이 있고 호스트 월드인 경우 / 모드 / 다음 갱신에서 호스트 chatWindow.RenderText를 호출한다. 창/메서드가 없으면 표시 실패를 로그로 남긴다.",
+      "confidence": "code-only-inference",
+      "condition": "Reply 큐에 응답이 있고 호스트 월드인 경우",
+      "subject": "모드",
+      "action": "다음 갱신에서 호스트 chatWindow.RenderText를 호출한다. 창/메서드가 없으면 표시 실패를 로그로 남긴다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 672,
+          "endLine": 702
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-16",
+      "type": "정책",
+      "name": "멤버 발화 접두사",
+      "doc": "B/inference.md#BP-16",
+      "summary": "멤버 스코프가 있고 메시지가 [로 시작하지 않으며 기본 멤버가 아니거나 여러 명이 참가한 경우 / 채팅 출력 / [이름] 접두사를 붙인다.",
+      "confidence": "code-only-inference",
+      "condition": "멤버 스코프가 있고 메시지가 [로 시작하지 않으며 기본 멤버가 아니거나 여러 명이 참가한 경우",
+      "subject": "채팅 출력",
+      "action": "[이름] 접두사를 붙인다.",
+      "kind": "표시 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-17",
+      "type": "정책",
+      "name": "요리 문자열 길이",
+      "doc": "B/inference.md#BP-17",
+      "summary": "요리 상태 문자열이 900자를 초과한 경우 / 요리 상태 출력 / 앞 900자와 …를 채팅에 보낸다.",
+      "confidence": "code-only-inference",
+      "condition": "요리 상태 문자열이 900자를 초과한 경우",
+      "subject": "요리 상태 출력",
+      "action": "앞 900자와 …를 채팅에 보낸다.",
+      "kind": "표시 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 551,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-18",
+      "type": "정책",
+      "name": "전체 health 의미",
+      "doc": "B/inference.md#BP-18",
+      "summary": "health 응답을 구성하는 경우 / 브리지 상태 출력 / 사용 가능한 멤버가 하나 이상이면 전체 ok를 true로 한다.",
+      "confidence": "code-only-inference",
+      "condition": "health 응답을 구성하는 경우",
+      "subject": "브리지 상태 출력",
+      "action": "사용 가능한 멤버가 하나 이상이면 전체 ok를 true로 한다.",
+      "kind": "표시 정책",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 68,
+          "endLine": 71
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-19",
+      "type": "정책",
+      "name": "실패 envelope 표시",
+      "doc": "B/inference.md#BP-19",
+      "summary": "판단 처리의 error가 존재하는 경우 / 계획 JSON 출력 / ok=false, answer=null, error/detail을 포함한다. 완료 envelope의 HTTP 상태는 200일 수 있다.",
+      "confidence": "code-only-inference",
+      "condition": "판단 처리의 error가 존재하는 경우",
+      "subject": "계획 JSON 출력",
+      "action": "ok=false, answer=null, error/detail을 포함한다. 완료 envelope의 HTTP 상태는 200일 수 있다.",
+      "kind": "표시 정책",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 27,
+          "endLine": 37
+        },
+        {
+          "file": "Tools/ai-bridge/plan.mjs",
+          "line": 102,
+          "endLine": 102
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-20",
+      "type": "정책",
+      "name": "생활 기억 삭제",
+      "doc": "B/inference.md#BP-20",
+      "summary": "farm 잊기 또는 cook 잊기를 요청한 경우 / 생활 명령 처리기 / 해당 밭/솥 기억과 보조 상태를 비우고 저장한다. 주석의 test라는 말만으로 스위치 제한을 추가 추정하지 않는다.",
+      "confidence": "code-only-inference",
+      "condition": "farm 잊기 또는 cook 잊기를 요청한 경우",
+      "subject": "생활 명령 처리기",
+      "action": "해당 밭/솥 기억과 보조 상태를 비우고 저장한다. 주석의 test라는 말만으로 스위치 제한을 추가 추정하지 않는다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 817,
+          "endLine": 822
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 529,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BP-21",
+      "type": "정책",
+      "name": "컴파일 검사 종료",
+      "doc": "B/inference.md#BP-21",
+      "summary": "CompileCheck가 실행된 경우 / SDK 검사 명령 / scriptCompilationFailed에 따라 결과를 기록하고 실패 1·성공 0으로 종료한다.",
+      "confidence": "code-only-inference",
+      "condition": "CompileCheck가 실행된 경우",
+      "subject": "SDK 검사 명령",
+      "action": "scriptCompilationFailed에 따라 결과를 기록하고 실패 1·성공 0으로 종료한다.",
+      "kind": "처리 정책",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 155
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-01",
+      "type": "유저 활동",
+      "name": "함께할 멤버 켜고 확인하기",
+      "doc": "B/inference.md#BA-01",
+      "summary": "선택한 멤버의 참가 설정과 상태를 확인한다.",
+      "confidence": "code-only-inference",
+      "problem": "월드에 AI 멤버가 없거나 참가 여부를 모른다.",
+      "goal": "선택한 멤버의 참가 설정과 상태를 확인한다.",
+      "steps": [
+        {
+          "text": "호스트 월드에서 /ai로 전체 상태를 요청한다.",
+          "elements": [
+            "BCH-01#1",
+            "BCH-01#2"
+          ]
+        },
+        {
+          "text": "/ai on <멤버>로 참가를 예약하고 다시 상태를 읽는다. 준비/입장 전이면 안내 후 기다린다.",
+          "elements": [
+            "BCH-02#1",
+            "BCH-07#1"
+          ]
+        }
+      ],
+      "result": "참가 설정과 예약/현재 상태. 실제 캐릭터 입장 성공은 미관측.",
+      "nextActivities": [
+        "BA-02",
+        "BA-03",
+        "BA-04",
+        "BA-05"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-02",
+      "type": "유저 활동",
+      "name": "직접 목표를 주고 진행 확인하기",
+      "doc": "B/inference.md#BA-02",
+      "summary": "멤버에게 목표를 주고 결과를 확인한다.",
+      "confidence": "code-only-inference",
+      "problem": "원하는 자원 확보나 생활 작업을 AI에게 맡기고 싶다.",
+      "goal": "멤버에게 목표를 주고 결과를 확인한다.",
+      "steps": [
+        {
+          "text": "goal <품목> <수량>, 만들기, 탐험, 따라와, 보관, 기지로, 농사, 요리 중 입력한다.",
+          "elements": [
+            "BCH-03#1",
+            "BCH-03#3"
+          ]
+        },
+        {
+          "text": "goal로 진행을 읽거나 완료 알림을 받는다. 오류이면 안내를 읽고 조건을 고친다.",
+          "elements": [
+            "BCH-03#1",
+            "BCH-08#4",
+            "BCH-07#1"
+          ]
+        }
+      ],
+      "result": "설정·진행·완료 안내. 실제 아이템 증가나 이동은 미관측.",
+      "nextActivities": [
+        "BA-02",
+        "BA-04",
+        "BA-05"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-03",
+      "type": "유저 활동",
+      "name": "다음 목표를 자동 판단에 맡기기",
+      "doc": "B/inference.md#BA-03",
+      "summary": "자동 모드를 켜고 판단과 지연·실패 안내를 확인한다.",
+      "confidence": "code-only-inference",
+      "problem": "매번 목표를 직접 정하지 않고 멤버가 다음 일을 고르길 원한다.",
+      "goal": "자동 모드를 켜고 판단과 지연·실패 안내를 확인한다.",
+      "steps": [
+        {
+          "text": "goal 알아서를 입력한다. 키 누락이면 설정 안내 분기로 끝난다.",
+          "elements": [
+            "BCH-03#3",
+            "BCH-08#1"
+          ]
+        },
+        {
+          "text": "대기·수락 발화·새 목표·사용 불가 알림을 읽고 필요하면 직접 목표 또는 stop으로 전환한다.",
+          "elements": [
+            "BCH-08#1",
+            "BCH-08#2",
+            "BCH-08#3",
+            "BCH-08#4"
+          ]
+        }
+      ],
+      "result": "자동 판단 상태와 알림. 구독 인증·실제 호출·자율 작업 성공은 미관측.",
+      "nextActivities": [
+        "BA-02",
+        "BA-05"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-04",
+      "type": "유저 활동",
+      "name": "기지와 식량 준비 상태 살피기",
+      "doc": "B/inference.md#BA-04",
+      "summary": "기지·밭·솥 정보를 읽고 생활 작업 또는 기지 위치를 정한다.",
+      "confidence": "code-only-inference",
+      "problem": "AI의 보관·농사·요리 준비 상태를 모른다.",
+      "goal": "기지·밭·솥 정보를 읽고 생활 작업 또는 기지 위치를 정한다.",
+      "steps": [
+        {
+          "text": "base로 상태를 보고 필요하면 base 여기/코어로 바꾼다.",
+          "elements": [
+            "BCH-04#1",
+            "BCH-04#2"
+          ]
+        },
+        {
+          "text": "farm/cook으로 밭·물·성장·솥·재료·예측을 읽고 goal 농사/요리/보관/기지로를 선택한다.",
+          "elements": [
+            "BCH-05#1",
+            "BCH-05#2",
+            "BCH-06#1",
+            "BCH-06#2",
+            "BCH-03#1"
+          ]
+        }
+      ],
+      "result": "생활 상태 텍스트. 세계 전체의 실시간 상태라는 보장은 없다.",
+      "nextActivities": [
+        "BA-02",
+        "BA-05"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-05",
+      "type": "유저 활동",
+      "name": "목표를 멈추거나 멤버를 내보내기",
+      "doc": "B/inference.md#BA-05",
+      "summary": "목표 중단과 멤버 퇴장을 구분해 제어한다.",
+      "confidence": "code-only-inference",
+      "problem": "AI 행동을 중단하거나 월드 참가를 끄고 싶다.",
+      "goal": "목표 중단과 멤버 퇴장을 구분해 제어한다.",
+      "steps": [
+        {
+          "text": "stop 또는 goal 없음으로 목표·자동 모드를 중단한다.",
+          "elements": [
+            "BCH-03#2"
+          ]
+        },
+        {
+          "text": "멤버를 내보내려면 off를 요청하고 결과·상태를 읽는다. 이미 꺼진 멤버는 결과가 없을 수 있다.",
+          "elements": [
+            "BCH-02#2",
+            "BCH-01#1"
+          ]
+        }
+      ],
+      "result": "중단 또는 월드별 참가 해제. 종료 후 실제 저장 파일/재입장 보존은 미관측.",
+      "nextActivities": [
+        "BA-01"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 599,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-06",
+      "type": "유저 활동",
+      "name": "브리지 준비·실패 확인하기",
+      "doc": "B/inference.md#BA-06",
+      "summary": "운영 로그와 health/plan JSON으로 원인을 구분한다.",
+      "confidence": "code-only-inference",
+      "problem": "자동 판단이 준비됐는지 또는 왜 응답하지 않는지 알고 싶다.",
+      "goal": "운영 로그와 health/plan JSON으로 원인을 구분한다.",
+      "steps": [
+        {
+          "text": "브리지 시작 로그의 자료·로그인·사용량 상태를 읽고 health를 요청한다.",
+          "elements": [
+            "BLOG-01#1",
+            "BLOG-01#2",
+            "BAPI-01#1",
+            "BAPI-01#2"
+          ]
+        },
+        {
+          "text": "모드가 받은 plan 응답에서 ok/answer/error와 한도 재시도·검색 요약을 읽는다. 실제 사용자용 대시보드는 확인하지 못했다.",
+          "elements": [
+            "BAPI-02#1",
+            "BAPI-02#2",
+            "BAPI-02#3",
+            "BAPI-03#1",
+            "BAPI-03#2"
+          ]
+        }
+      ],
+      "result": "저장된 점검 결과와 오류 분류. 인증 변경·외부 CLI 내부 UI는 범위 밖.",
+      "nextActivities": [
+        "BA-03"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-07",
+      "type": "유저 활동",
+      "name": "SDK 빌드 결과 확인하기",
+      "doc": "B/inference.md#BA-07",
+      "summary": "SDK 명령 출력과 종료 코드로 다음 단계를 판단한다.",
+      "confidence": "code-only-inference",
+      "problem": "개발자가 모드를 준비하거나 설치본을 갱신해야 한다.",
+      "goal": "SDK 명령 출력과 종료 코드로 다음 단계를 판단한다.",
+      "steps": [
+        {
+          "text": "ImportGameFiles 뒤 CreateMod 결과를 읽는다.",
+          "elements": [
+            "BSDK-01#1",
+            "BSDK-01#2",
+            "BSDK-02#1"
+          ]
+        },
+        {
+          "text": "CompileCheck 결과를 읽고 BuildAndInstall 설치 결과를 확인한다. 예외면 실패 로그로 끝난다.",
+          "elements": [
+            "BSDK-04#1",
+            "BSDK-03#1",
+            "BSDK-05#1"
+          ]
+        }
+      ],
+      "result": "빌드·설치 가능 경로의 추정. 이 B-7에서 명령·설치·컴파일은 수행하지 않았다.",
+      "nextActivities": [
+        "BA-01"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-08",
+      "type": "유저 활동",
+      "name": "시험 명령으로 상태 진단하기",
+      "doc": "B/inference.md#BA-08",
+      "summary": "시험 스위치가 켜진 환경에서 진단 또는 시험 조작 결과를 읽는다.",
+      "confidence": "code-only-inference",
+      "problem": "개발자가 특정 게임 상태와 입력 경로를 확인하고 싶다.",
+      "goal": "시험 스위치가 켜진 환경에서 진단 또는 시험 조작 결과를 읽는다.",
+      "steps": [
+        {
+          "text": "시험 명령을 요청하고 차단이면 스위치 안내를 읽는다.",
+          "elements": [
+            "BCH-07#2",
+            "BCH-07#3"
+          ]
+        },
+        {
+          "text": "허용된 경우 시험 명령 결과를 읽는다. 상세 조작별 성공 여부는 미관측이다.",
+          "elements": [
+            "BCH-09#1",
+            "BCH-09#2"
+          ]
+        }
+      ],
+      "result": "진단 결과 종류 목록. 일반 사용자의 상시 기능으로 추정하지 않는다.",
+      "nextActivities": [
+        "BA-01",
+        "BA-06"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BA-09",
+      "type": "유저 활동",
+      "name": "생활 기억을 초기화하기",
+      "doc": "B/inference.md#BA-09",
+      "summary": "farm/cook 잊기로 해당 기억을 지운다.",
+      "confidence": "code-only-inference",
+      "problem": "기억한 밭 또는 솥 위치를 잊게 하고 싶다.",
+      "goal": "farm/cook 잊기로 해당 기억을 지운다.",
+      "steps": [
+        {
+          "text": "farm 잊기 또는 cook 잊기 결과의 삭제 수량을 읽는다.",
+          "elements": [
+            "BCH-10#1",
+            "BCH-10#2"
+          ]
+        },
+        {
+          "text": "필요하면 farm/cook을 다시 조회한다.",
+          "elements": [
+            "BCH-05#1",
+            "BCH-06#1"
+          ]
+        }
+      ],
+      "result": "기억 삭제 안내. 시험 게이트 없는 구현 경로이므로 정책 의도는 C에서 확인할 사항.",
+      "nextActivities": [
+        "BA-04"
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BCORE-01",
+      "type": "제품코어",
+      "name": "코어키퍼 월드의 AI 동료 제어 모드(추정)",
+      "doc": "B/inference.md#BCORE-01",
+      "summary": "호스트가 여러 AI 멤버를 월드에 참가시키고 직접 목표 또는 자동 목표 판단으로 게임 작업을 맡기며 채팅으로 상태를 받는 모드로 추정한다.",
+      "confidence": "code-only-inference",
+      "identity": "게임 모드와 로컬 계획 브리지",
+      "targetUsers": "자신의 월드를 호스트하는 플레이어; 부수적으로 운영자·개발자·개발 에이전트",
+      "value": "멤버별 참가·목표·생활 상태 제어와 자동 계획 결과 피드백",
+      "branding": "코드의 AI Player Spike/AIPlayerSpike 및 Claude·ChatGPT·Gemini·Grok 이름만 확인. 공식 제품명·브랜드 약속·시장 포지셔닝은 추정 불가.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 162,
+          "endLine": 167
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BJOURNEY-01",
+      "type": "유저저니",
+      "name": "호스트의 AI 동료 사용 여정(추정)",
+      "doc": "B/inference.md#BJOURNEY-01",
+      "summary": "준비 → 참가 확인 → 직접/자동 목표 → 생활 상태 확인 → 중단·퇴장 → 같은 월드 복귀의 순서를 코드에서 추정한다.",
+      "confidence": "code-only-inference",
+      "stages": [
+        "발견: 유입 경로와 설치 안내 실제 경험은 코드만으로 알 수 없음.",
+        "준비: 개발/운영자는 BA-07·BA-06, 플레이어는 호스트 월드 준비.",
+        "시작: BA-01로 멤버 참가를 켜고 상태 확인.",
+        "사용: BA-02 또는 BA-03, 필요하면 BA-04. 개발 시험은 BA-08, 기억 초기화는 BA-09.",
+        "종료: BA-05로 중단/퇴장하거나 월드를 떠남.",
+        "복귀: 같은 월드의 저장된 멤버 설정을 읽어 재참가하는 경로가 있음. 실제 보존·복귀 동기·이탈 사유는 미확인."
+      ],
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 309,
+          "endLine": 337
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "id": "BIA-01",
+      "type": "IA",
+      "name": "출력 채널별 정보 구조(추정)",
+      "doc": "B/inference.md#BIA-01",
+      "summary": "게임 채팅, 브리지 HTTP, 운영 로그, SDK 개발 출력, 시험 출력으로 묶는다. 웹 내비게이션이나 공통 메뉴는 확인하지 못했다.",
+      "confidence": "code-only-inference",
+      "screenIds": [
+        "BCH-01",
+        "BCH-02",
+        "BCH-03",
+        "BCH-04",
+        "BCH-05",
+        "BCH-06",
+        "BCH-07",
+        "BCH-08",
+        "BCH-09",
+        "BCH-10",
+        "BAPI-01",
+        "BAPI-02",
+        "BAPI-03",
+        "BLOG-01",
+        "BSDK-01",
+        "BSDK-02",
+        "BSDK-03",
+        "BSDK-04",
+        "BSDK-05"
+      ],
+      "entry": "플레이어 /ai 상태 출력 BCH-01; 운영자 BLOG-01/BAPI-01; 개발자 SDK 명령 로그",
+      "globalNavigation": "확인되지 않음. 채팅 명령을 다시 입력하는 흐름이며 navigate 간선을 만들지 않음.",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 552
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    }
+  ],
+  "edges": [
+    {
+      "from": "BCH-01",
+      "type": "화면→화면요소",
+      "to": "BCH-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-01",
+      "type": "화면→화면요소",
+      "to": "BCH-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-01",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 637,
+          "endLine": 669
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-02",
+      "type": "화면→화면요소",
+      "to": "BCH-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-02",
+      "type": "화면→화면요소",
+      "to": "BCH-02#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-02#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-02",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-03",
+      "type": "화면→화면요소",
+      "to": "BCH-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-03",
+      "type": "화면→화면요소",
+      "to": "BCH-03#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-03#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-03",
+      "type": "화면→화면요소",
+      "to": "BCH-03#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-03#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-03",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-04",
+      "type": "화면→화면요소",
+      "to": "BCH-04#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-04#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-04",
+      "type": "화면→화면요소",
+      "to": "BCH-04#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-04#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-04",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-05",
+      "type": "화면→화면요소",
+      "to": "BCH-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-05",
+      "type": "화면→화면요소",
+      "to": "BCH-05#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-05#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-05",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-06",
+      "type": "화면→화면요소",
+      "to": "BCH-06#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-06#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-06",
+      "type": "화면→화면요소",
+      "to": "BCH-06#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-06#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-06",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICook.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-07",
+      "type": "화면→화면요소",
+      "to": "BCH-07#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-07#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-07",
+      "type": "화면→화면요소",
+      "to": "BCH-07#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-07#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-07",
+      "type": "화면→화면요소",
+      "to": "BCH-07#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-07#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-07",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-08",
+      "type": "화면→화면요소",
+      "to": "BCH-08#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "hook:AIPlayerSpikeMod.Update",
+      "type": "기능→화면요소",
+      "to": "BCH-08#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-08",
+      "type": "화면→화면요소",
+      "to": "BCH-08#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "hook:AIPlayerSpikeMod.Update",
+      "type": "기능→화면요소",
+      "to": "BCH-08#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-08",
+      "type": "화면→화면요소",
+      "to": "BCH-08#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "hook:AIPlayerSpikeMod.Update",
+      "type": "기능→화면요소",
+      "to": "BCH-08#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-08",
+      "type": "화면→화면요소",
+      "to": "BCH-08#4",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 238,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "hook:AIPlayerSpikeMod.Update",
+      "type": "기능→화면요소",
+      "to": "BCH-08#4",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 238,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-08",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-09",
+      "type": "화면→화면요소",
+      "to": "BCH-09#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-09#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-09",
+      "type": "화면→화면요소",
+      "to": "BCH-09#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-09#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-09",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-10",
+      "type": "화면→화면요소",
+      "to": "BCH-10#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 822
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-10#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 822
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-10",
+      "type": "화면→화면요소",
+      "to": "BCH-10#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→화면요소",
+      "to": "BCH-10#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-10",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 822
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-01",
+      "type": "화면→화면요소",
+      "to": "BAPI-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:GET /v1/health",
+      "type": "기능→화면요소",
+      "to": "BAPI-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-01",
+      "type": "화면→화면요소",
+      "to": "BAPI-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:GET /v1/health",
+      "type": "기능→화면요소",
+      "to": "BAPI-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-01",
+      "type": "화면→코드",
+      "to": "code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 73
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-02",
+      "type": "화면→화면요소",
+      "to": "BAPI-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:POST /v1/plan",
+      "type": "기능→화면요소",
+      "to": "BAPI-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-02",
+      "type": "화면→화면요소",
+      "to": "BAPI-02#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:POST /v1/plan",
+      "type": "기능→화면요소",
+      "to": "BAPI-02#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-02",
+      "type": "화면→화면요소",
+      "to": "BAPI-02#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:POST /v1/plan",
+      "type": "기능→화면요소",
+      "to": "BAPI-02#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-02",
+      "type": "화면→코드",
+      "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 38
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-03",
+      "type": "화면→화면요소",
+      "to": "BAPI-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-03",
+      "type": "화면→화면요소",
+      "to": "BAPI-03#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-03",
+      "type": "화면→코드",
+      "to": "code:Tools/ai-bridge/protocol.mjs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:POST /v1/plan",
+      "type": "기능→화면요소",
+      "to": "BAPI-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 39,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:POST /v1/plan",
+      "type": "기능→화면요소",
+      "to": "BAPI-03#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 44,
+          "endLine": 44
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BLOG-01",
+      "type": "화면→화면요소",
+      "to": "BLOG-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:startup:bridge.mjs.module",
+      "type": "기능→화면요소",
+      "to": "BLOG-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BLOG-01",
+      "type": "화면→화면요소",
+      "to": "BLOG-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "ai-bridge:startup:bridge.mjs.module",
+      "type": "기능→화면요소",
+      "to": "BLOG-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BLOG-01",
+      "type": "화면→코드",
+      "to": "code:Tools/ai-bridge/bridge.mjs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-01",
+      "type": "화면→화면요소",
+      "to": "BSDK-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.ImportGameFiles",
+      "type": "기능→화면요소",
+      "to": "BSDK-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-01",
+      "type": "화면→화면요소",
+      "to": "BSDK-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.ImportGameFiles",
+      "type": "기능→화면요소",
+      "to": "BSDK-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-01",
+      "type": "화면→코드",
+      "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 38,
+          "endLine": 63
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-02",
+      "type": "화면→화면요소",
+      "to": "BSDK-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 67,
+          "endLine": 90
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.CreateMod",
+      "type": "기능→화면요소",
+      "to": "BSDK-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 67,
+          "endLine": 90
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-02",
+      "type": "화면→코드",
+      "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 67,
+          "endLine": 90
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-03",
+      "type": "화면→화면요소",
+      "to": "BSDK-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 107,
+          "endLine": 142
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.BuildAndInstall",
+      "type": "기능→화면요소",
+      "to": "BSDK-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 107,
+          "endLine": 142
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-03",
+      "type": "화면→코드",
+      "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 107,
+          "endLine": 142
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-04",
+      "type": "화면→화면요소",
+      "to": "BSDK-04#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.CompileCheck",
+      "type": "기능→화면요소",
+      "to": "BSDK-04#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-04",
+      "type": "화면→코드",
+      "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-05",
+      "type": "화면→화면요소",
+      "to": "BSDK-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BSDK-05",
+      "type": "화면→코드",
+      "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.ImportGameFiles",
+      "type": "기능→화면요소",
+      "to": "BSDK-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.CreateMod",
+      "type": "기능→화면요소",
+      "to": "BSDK-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.BuildAndInstall",
+      "type": "기능→화면요소",
+      "to": "BSDK-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "cli:HeadlessSdk.CompileCheck",
+      "type": "기능→화면요소",
+      "to": "BSDK-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 35
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-01",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 425
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-02",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 433,
+          "endLine": 485
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-03",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 579,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-04",
+      "type": "정책→기능",
+      "to": "hook:AIPlayerSpikeMod.Update",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 309,
+          "endLine": 337
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-05",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 496
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-06",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 511,
+          "endLine": 549
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-07",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-08",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 135
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-09",
+      "type": "정책→기능",
+      "to": "ai-bridge:POST /v1/plan",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/plan.mjs",
+          "line": 23,
+          "endLine": 31
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-10",
+      "type": "정책→기능",
+      "to": "ai-bridge:POST /v1/plan",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 65
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-10",
+      "type": "정책→기능",
+      "to": "ai-bridge:GET /v1/health",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 56,
+          "endLine": 65
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-11",
+      "type": "정책→기능",
+      "to": "ai-bridge:POST /v1/plan",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/plan.mjs",
+          "line": 19,
+          "endLine": 23
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-12",
+      "type": "정책→기능",
+      "to": "ai-bridge:POST /v1/plan",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 10,
+          "endLine": 37
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-13",
+      "type": "정책→기능",
+      "to": "hook:AIPlayerSpikeMod.Update",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 367,
+          "endLine": 376
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-14",
+      "type": "정책→기능",
+      "to": "hook:AIPlayerSpikeMod.Update",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 379,
+          "endLine": 405
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-15",
+      "type": "정책→기능",
+      "to": "hook:AIPlayerSpikeMod.Update",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 672,
+          "endLine": 702
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-01",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-02",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-03",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-04",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-05",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-06",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-07",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-08",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-09",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-10",
+      "type": "화면→정책",
+      "to": "BP-16",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 674,
+          "endLine": 679
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-06",
+      "type": "화면→정책",
+      "to": "BP-17",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 551,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-01",
+      "type": "화면→정책",
+      "to": "BP-18",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/preflight.mjs",
+          "line": 68,
+          "endLine": 71
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BAPI-02",
+      "type": "화면→정책",
+      "to": "BP-19",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 27,
+          "endLine": 37
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-20",
+      "type": "정책→기능",
+      "to": "slash:ai",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 817,
+          "endLine": 822
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 529,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BP-21",
+      "type": "정책→기능",
+      "to": "cli:HeadlessSdk.CompileCheck",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 146,
+          "endLine": 155
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-07#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-02",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-03",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-04",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-01",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-05",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 412,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-03#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-08#4",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 238,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-07#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-02",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-04",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-02",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-05",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 105,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-03#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-08#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-08#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-08#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-08#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-08#4",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+          "line": 238,
+          "endLine": 261
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-02",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-03",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-05",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+          "line": 139,
+          "endLine": 356
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-04#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-04#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-05#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-06#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-06#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-02",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-04",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-05",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+          "line": 608,
+          "endLine": 633
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 824,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 536,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-05",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-03#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 599,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-05",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-02#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 599,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-05",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 599,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-05",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-01",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 311,
+          "endLine": 319
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 599,
+          "endLine": 614
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BLOG-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BLOG-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-02#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-02#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→화면요소",
+      "to": "BAPI-03#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-06",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-03",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Tools/ai-bridge/bridge.mjs",
+          "line": 106,
+          "endLine": 169
+        },
+        {
+          "file": "Tools/ai-bridge/protocol.mjs",
+          "line": 25,
+          "endLine": 46
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→화면요소",
+      "to": "BSDK-01#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→화면요소",
+      "to": "BSDK-01#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→화면요소",
+      "to": "BSDK-02#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→화면요소",
+      "to": "BSDK-04#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→화면요소",
+      "to": "BSDK-03#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→화면요소",
+      "to": "BSDK-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-07",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-01",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 31,
+          "endLine": 156
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-08",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-07#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-08",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-07#3",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-08",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-09#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-08",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-09#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-08",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-01",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-08",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-06",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 489,
+          "endLine": 552
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+          "line": 262,
+          "endLine": 706
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-09",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-10#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-09",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-10#2",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-09",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-05#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-09",
+      "type": "유저 활동→화면요소",
+      "to": "BCH-06#1",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BA-09",
+      "type": "유저 활동→유저 활동",
+      "to": "BA-04",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+          "line": 813,
+          "endLine": 837
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 553
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    },
+    {
+      "from": "BCH-10",
+      "type": "화면→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICook.cs",
+      "confidence": "code-only-inference",
+      "historicalEvidence": [
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+          "line": 526,
+          "endLine": 534
+        }
+      ],
+      "historicalEvidenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0"
+    }
+  ]
+}

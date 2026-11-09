@@ -1,0 +1,13 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {fileURLToPath} from 'node:url';import {isDeepStrictEqual} from 'node:util';
+const root=path.dirname(fileURLToPath(import.meta.url)),stage=path.join(root,'graph-stage'),L=path.join(stage,'work/2026-11/2026-11-05-지식그래프-실화면');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const obs=read(path.join(L,'C/refactor-20261106/observations.json')),g=read(path.join(L,'D/graph.json')),v=read(path.join(L,'D/validation.json'));
+for(const p of ['C/refactor-20261106/observations.json','C/refactor-20261106/15-unity-and-live.md','C/refactor-20261106/18-review-live-observation.md','D/graph.json','D/validation.json'])console.log('sha256',p,hash(path.join(L,p)));
+console.log('inputs',JSON.stringify({count:obs.inputs.length,badStage:obs.inputs.filter(x=>hash(path.join(L,x.stagedPath))!==x.sha256).map(x=>x.stagedPath),changedOriginal:obs.inputs.filter(x=>hash(x.originalPath)!==x.sha256).map(x=>x.originalPath)}));
+const {sourceDocument,...actual}=g.supplementalRuntimeObservations;console.log('supplement exact payload',isDeepStrictEqual(actual,obs));
+console.log('boundaries',JSON.stringify({source:g.meta.sourceCommit,installed:g.meta.installedSourceCommit,status:actual.status,functionTrace:v.supplementalRuntime.functionTraceObserved,counts:obs.observations.map(x=>[x.id,x.status]),traceEdges:g.edges.filter(x=>/RF902/.test(JSON.stringify(x))).length,featureIds:g.nodes.filter(x=>x.supplementalObservationIds).map(x=>({id:x.id,observations:x.supplementalObservationIds}))}));
+const cmp=read(path.join(L,'C/refactor-20261106/persistence-comparison.json'));console.log('persistence',JSON.stringify({count:cmp.length,false:cmp.filter(x=>!x.same),members:[...new Set(cmp.map(x=>x.member))]}));
+const before=read(path.join(stage,'canonical-before.json'));console.log('canonical',JSON.stringify({checked:before.length,changed:before.filter(x=>hash(x.path)!==x.sha256).map(x=>x.path)}));
+const first=fs.readFileSync(path.join(L,'C/refactor-20261106/Player-first.log'),'utf8').split(/\r?\n/),second=fs.readFileSync(path.join(L,'C/refactor-20261106/Player-second.log'),'utf8').split(/\r?\n/);
+console.log('allStopSendAfter',first.filter(x=>Number(x.match(/\bt=([\d.]+)/)?.[1])>=659.4&&/DECISION #\d+ SEND/.test(x)).length);
+for(const [label,lines,min,max] of [['first',first,659.3,659.5],['rejoinDoor',second,238,243]])for(const line of lines.filter(x=>{const t=Number(x.match(/\bt=([\d.]+)/)?.[1]);return t>=min&&t<=max&&/GOAL|SKILL|DOOR|door|all stop/.test(x);}))console.log(label,line.slice(0,420));

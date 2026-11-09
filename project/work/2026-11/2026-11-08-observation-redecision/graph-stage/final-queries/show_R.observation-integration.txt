@@ -1,0 +1,93 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "최종 코드20b1aced",
+        "doc": "observationAcceptance",
+        "end": 5,
+        "line": 5,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/head-acceptance.md",
+        "sha256": "6ad0c86f189f468fb990c941255a79288cf1863215d1b53e1fd740de211efe0f",
+        "start": 5
+      },
+      {
+        "anchor": "코드 수용과 정본 반영을 승인했다.",
+        "doc": "observationAcceptance",
+        "end": 9,
+        "line": 9,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/head-acceptance.md",
+        "sha256": "6ad0c86f189f468fb990c941255a79288cf1863215d1b53e1fd740de211efe0f",
+        "start": 9
+      },
+      {
+        "anchor": "\"Unchanged\": true",
+        "doc": "observationDirtyAfter",
+        "end": 4,
+        "line": 4,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/main-dirty-after.json",
+        "sha256": "1d1bae92dcdf895a61c63e003a4efd638a51ef7ff65ccb43eeb275c71047c3da",
+        "start": 4
+      },
+      {
+        "anchor": "## 사용자 개입 의심과 종료 대기",
+        "doc": "observationLive",
+        "end": 72,
+        "line": 70,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/live-validation.md",
+        "sha256": "ca534fdfaa19c5033714a14ae8b395154322c1776eb1dacbd022992f9d09d0b9",
+        "start": 70
+      }
+    ],
+    "id": "R.observation-integration",
+    "layer": "참고",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "sourceLocations": [
+      {
+        "end": 5,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/head-acceptance.md",
+        "start": 5
+      },
+      {
+        "end": 9,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/head-acceptance.md",
+        "start": 9
+      },
+      {
+        "end": 4,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/main-dirty-after.json",
+        "start": 4
+      },
+      {
+        "end": 72,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/live-validation.md",
+        "start": 70
+      }
+    ],
+    "status": "참고·공식 코드 통합·최종 설치/복원 대기",
+    "summary": "HEAD가20b1aced를 공식 ai-character에 fast-forward 통합하고 기존 dirty 내용을 보존했다. 현재 사용자는09e418a 시험 설치 상태에서 게임을 직접 조작 중이며 정상 종료·시험 자료 복원·최종20b1aced 설치 승인을 기다린다.20b1aced 추가 경계는 코드181검사·독립·Unity 수용 범위다.",
+    "title": "공식20b1aced 통합·설치09e418a·사용자 종료 승인 대기",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "최종 코드20b1aced",
+          "doc": "observationAcceptance",
+          "end": 5,
+          "line": 5,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/head-acceptance.md",
+          "sha256": "6ad0c86f189f468fb990c941255a79288cf1863215d1b53e1fd740de211efe0f",
+          "start": 5
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "id": "E227",
+      "kind": "참고: 공식 통합과 설치 대기",
+      "to": "R.observation-integration",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "finish_goal은 현재 작업 단계를 AI가 완료 처리한다.",
+        "doc": "commonContract",
+        "end": 10,
+        "line": 10,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+        "start": 10
+      },
+      {
+        "anchor": "현재 요청에 따라 완료 선언과 실제 사실이 어긋날 때의 재판단 흐름을 보완한다.",
+        "doc": "observationAgreement",
+        "end": 20,
+        "line": 20,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+        "sha256": "25af5dbc02be454caf1beda1ebf3cfdfb753b1fb73dcfdc05bd06638de069bde",
+        "start": 20
+      }
+    ],
+    "id": "R.finish-goal",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 10,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "start": 10
+      },
+      {
+        "end": 20,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+        "start": 20
+      }
+    ],
+    "status": "참고·기존 계약과 후속 완료 확인",
+    "summary": "685dde4에서 현재 단계의 명시 완료와 다음 단계·상위 보고를 연결했다.2026-11-08 후속 요청에 따라 측정 완료 조건이 있는 단계는 적용 직전 사실을 다시 읽고 부족·미확인이면 단계·원래 부탁을 유지하며 재판단한다. 확인된 완료와 비계량 목표의 판단 종료, AI의 중단·전환 권한은 보존한다.",
+    "title": "finish_goal — 현재 사실을 확인한 명시 단계 완료",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 10
+        },
+        {
+          "end": 20,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+          "start": 20
+        }
+      ],
+      "from": "R.finish-goal",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FinishChosen(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 10
+        },
+        {
+          "end": 20,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+          "start": 20
+        }
+      ],
+      "from": "R.finish-goal",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs#AIHostOrders.GoalEnded(string, bool, string, OrderChanged)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 10
+        },
+        {
+          "end": 20,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+          "start": 20
+        }
+      ],
+      "from": "pol.original-request-completion",
+      "kind": "구현 계약",
+      "to": "R.finish-goal",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "finish_goal은 현재 작업 단계를 AI가 완료 처리한다.",
+          "doc": "commonContract",
+          "end": 10,
+          "line": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+          "start": 10
+        }
+      ],
+      "from": "P.original-request",
+      "id": "E002",
+      "kind": "참고: 단계와 부탁 종료의 구현",
+      "to": "R.finish-goal",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "현재 요청에 따라 완료 선언과 실제 사실이 어긋날 때의 재판단 흐름을 보완한다.",
+          "doc": "observationAgreement",
+          "end": 20,
+          "line": 20,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+          "sha256": "25af5dbc02be454caf1beda1ebf3cfdfb753b1fb73dcfdc05bd06638de069bde",
+          "start": 20
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "id": "E220",
+      "kind": "참고: 기존 명시 단계 완료 계약의 후속 보완",
+      "to": "R.finish-goal",
+      "type": "reference"
+    }
+  ]
+}

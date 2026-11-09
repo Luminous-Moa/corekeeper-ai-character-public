@@ -1,0 +1,432 @@
+
+$ node tools/product.mjs intent P.original-request
+P.release-goal — Core Keeper 모드로 만들어 배포 [합의]
+  모드가 제공할 플레이 경험 [합의]
+P.experience — 동료·친구와 협력하고 생활하는 경험 [합의]
+  생활 경험으로 구체화 [해석]
+P.life — 자율 생활과 사용자 도움을 함께 이어감 [합의]
+  지속 방향과 일을 연결 [합의]
+P.hierarchy — 생활 방향 → 프로젝트 → 작업 → 행동 [합의]
+  단계와 원래 부탁의 완료 구분 [합의]
+P.original-request — 중간 단계가 끝나도 원래 부탁을 유지 [합의]
+현장 행동의 중단·전환은 Decisions가 고르고, 원래 부탁의 종료와 중요한 계획 변경은 위쪽 LLM이 결정한다. 구리 10/10은 재료 수량을 달성했다는 관측이다.
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-행동취소-판단주체.md:3
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-행동취소-판단주체.md:5
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-공통실행-합의.md:11
+  원래 부탁과 현재 행동의 판단 주체 구분 [합의] → P.valid-action — AI가 선택한 실행 가능한 행동을 판단 대기 중에도 지속 [합의]
+  정책으로 구체화 [합의] → pol.original-request-completion — 중간 진척과 원래 부탁 완료를 구분 [2026-11-07 합의]
+  참고: 단계와 부탁 종료의 구현 [해석] → R.finish-goal — finish_goal — 현재 계획 단계 완료 [참고·구현 계약]
+  참고: 과거 중간 완료 관측 [해석] → R.copper — 구리 10개 뒤 갑옷 부탁이 완료로 기록된 장면 [참고·기존 실게임 관측]
+  기존 기획 참고 [해석] → UA-03 — 필요한 물건 제작을 맡기기 [게임/정상 AI 흐름 미관측; 문서화 완료]
+
+$ node tools/product.mjs show R.stop-action
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "stop_action은 현재 몸 동작만 AI가 중단한다.",
+        "doc": "commonContract",
+        "end": 8,
+        "line": 8,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+        "start": 8
+      }
+    ],
+    "id": "R.stop-action",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 8,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "start": 8
+      }
+    ],
+    "status": "참고·구현 계약",
+    "summary": "AI가 관측한 실행 회차를 명시 중단한다. 목표와 원래 부탁을 유지하고 이전 예약·보류·다음 타격을 해제하여 과거 선택이 부활하지 않게 한다.",
+    "title": "stop_action — 현재 몸 동작만 중단",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 8,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 8
+        }
+      ],
+      "from": "R.stop-action",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIActions.cs#AIActions.Stale(World, Entity, AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 8,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 8
+        }
+      ],
+      "from": "R.stop-action",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Apply(World, Entity, float, AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 8,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 8
+        }
+      ],
+      "from": "R.stop-action",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.CancelPendingChoices(string)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 8,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 8
+        }
+      ],
+      "from": "pol.ai-action-control",
+      "kind": "구현 계약",
+      "to": "R.stop-action",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "stop_action은 현재 몸 동작만 AI가 중단한다.",
+          "doc": "commonContract",
+          "end": 8,
+          "line": 8,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+          "start": 8
+        }
+      ],
+      "from": "P.valid-action",
+      "id": "E003",
+      "kind": "참고: 명시 중단 구현",
+      "to": "R.stop-action",
+      "type": "reference"
+    }
+  ]
+}
+
+$ node tools/product.mjs show R.finish-goal
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "finish_goal은 현재 작업 단계를 AI가 완료 처리한다.",
+        "doc": "commonContract",
+        "end": 10,
+        "line": 10,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+        "start": 10
+      }
+    ],
+    "id": "R.finish-goal",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 10,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "start": 10
+      }
+    ],
+    "status": "참고·구현 계약",
+    "summary": "AI가 현재 단계를 완료한다. 기존 다음 단계가 있으면 이어지고 마지막 단계면 상위에 보고한다. 원래 부탁의 완료는 상위 order=done이 결정한다.",
+    "title": "finish_goal — 현재 계획 단계 완료",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 10
+        }
+      ],
+      "from": "R.finish-goal",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.FinishChosen(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 10
+        }
+      ],
+      "from": "R.finish-goal",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "to": "code:Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs#AIHostOrders.GoalEnded(string, bool, string, OrderChanged)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 10
+        }
+      ],
+      "from": "pol.original-request-completion",
+      "kind": "구현 계약",
+      "to": "R.finish-goal",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "finish_goal은 현재 작업 단계를 AI가 완료 처리한다.",
+          "doc": "commonContract",
+          "end": 10,
+          "line": 10,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+          "start": 10
+        }
+      ],
+      "from": "P.original-request",
+      "id": "E002",
+      "kind": "참고: 단계와 부탁 종료의 구현",
+      "to": "R.finish-goal",
+      "type": "reference"
+    }
+  ]
+}
+
+$ node tools/product.mjs show R.request-plan
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "request_plan은 현재 관측과 실행 이유를 상위 LLM에게 전달한다.",
+        "doc": "commonContract",
+        "end": 11,
+        "line": 11,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+        "start": 11
+      }
+    ],
+    "id": "R.request-plan",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 11,
+        "path": "../2026-11-07-공통실행자료/contract.md",
+        "start": 11
+      }
+    ],
+    "status": "참고·구현 계약",
+    "summary": "현재 관측과 이유를 상위에 전달하고 응답을 기다리는 동안 실행 가능한 몸 동작을 유지한다. 요청이 진행 중이면 후속 사실을 합친다.",
+    "title": "request_plan — 행동을 유지하며 상위 재계획 요청",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 11,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 11
+        }
+      ],
+      "from": "R.request-plan",
+      "kind": "685dde4 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.RequestReplan(World, Entity, string)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "request_plan은 현재 관측과 실행 이유를 상위 LLM에게 전달한다.",
+          "doc": "commonContract",
+          "end": 11,
+          "line": 11,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "sha256": "e77345161898cf918dcb3570357dace41658ceae39cd9da732dfc320693bed0f",
+          "start": 11
+        }
+      ],
+      "from": "P.valid-action",
+      "id": "E004",
+      "kind": "참고: 재계획 요청 구현",
+      "to": "R.request-plan",
+      "type": "reference"
+    }
+  ]
+}
+
+$ node tools/product.mjs source R.common-offline
+== ../2026-11-07-공통실행자료/offline-execution.md:5-11 sha256=5b886cd8549f1a5ba8b8496492f5f7466960a47dfbed6b9b0f2b73270bd7ed6f
+5: ## 확인 결과
+6: 
+7: 기준 커밋 11eb461의 실제 `AIGoals.cs`와 `AIHostOrders.cs`로 구리 10/10 장면을 재현했다. 목표량 도달이 목표를 지우고 이미 고른 다음 채굴을 취소했으며, 같은 source를 가진 갑옷 부탁도 완료 처리했다. 세 확인이 모두 통과했다. 이 기대 결과는 보존 실게임 `Player.log` 750·755·759행의 문제와 대응한다. [기준 실행 로그](offline-baseline.log)
+8: 
+9: 수정한 소스에서는 31개 확인이 통과했다. 실제 `AIGoals.CheckDone`의 수량 충족·feature 도착과 `CheckAfterBuild`의 무진척이 선택한 몸 동작과 목표 revision을 유지한다. 실제 `Apply` 분기로 재계획 요청, 몸만 중지, 다른 행동 시작, 현재 단계 완료를 실행했다. 현재 단계 완료 뒤 원래 갑옷 부탁은 열려 있으며 실제 `AIHostOrders.ApplyAnswer`의 `order=done`이 와야 닫혔다. 실제 `AISkill.ObserveOnce`와 `ObserveExecution`을 통해 조건을 한 번 보고하며, API retry가 일시적 호출 이유를 바꿔도 몸의 실행 관측 목록과 최근 관측·revision이 보존됐다. 사용자 직접 목표 해제는 몸 동작을 중단한다. [수정본 실행 로그](offline-changed.log)
+10: 
+11: 추가 회귀에서 실제 `AIActions.Stale`와 `AIRunGate`가 관측한 실행41의 stop은 같은 실행에서 수락하고 실행42가 시작됐으면 거부했다. idle 당시의 stop도 새 실행을 중단하지 않는다. 실제 `Apply → AIBody.Stop → AIBaseGuard.OnStop → AIBody.EndSkill` 경로에서 AI 명시 stop, 단계 완료, 사용자 직접 해제는 문 닫기 tail을 즉시 끝냈다. TailAbort는 호출되고 새 tail은 시작하지 않으며, 실행 결과에는 문이 열린 채일 수 있다는 이유가 전달됐다.
+== ../2026-11-07-공통실행자료/offline-execution.md:13-21 sha256=5b886cd8549f1a5ba8b8496492f5f7466960a47dfbed6b9b0f2b73270bd7ed6f
+13: ## 실제 실행한 소스와 경계
+14: 
+15: 최종 검수에서 문 닫기 tail의 원래 완료 상태가 복구되면서 과거 예약 선택이 다시 시작될 수 있는 경합을 추가 검증했다. 실제 `AIBrain.OnSkillEnded`와 `CancelPendingChoices`, `AbortRequest`, `DropQueued`, `SetReflex`, 판정 helper도 원문 추출해 실행한다. ordinary 완료 때는 기존에 선택한 다음 행동이 정상 예약되고, 명시 stop 때는 old queued·held·nextHit와 재실행 flag가 모두 사라진다. Goal.None 자기방어 중에도 사용자 해제는 tail과 과거 선택을 정리한다. 이 경로에서 OnSkillEnded는 stub을 사용하지 않는다.
+16: 
+17: 프로젝트는 production `AIGoals.cs`, `AISkill.cs`, `AIGoalText.cs`와 Core 목표·원부탁·계획·실행회차 규칙을 직접 링크한다. runner는 production `AIBrain.Loop.cs`의 `Apply` 및 `ObserveExecution`, `AIActions.Stale`, `AIBody.Stop`와 `EndSkill` 전체 메서드, `AIBaseGuard.OnStop`과 enum, `AIDecisions.cs`의 데이터 클래스를 원문 그대로 뽑아 컴파일한다. 실행 정책을 검증 코드에서 다시 구현하지 않았다. [연결한 소스의 실행 시점 SHA-256](offline-source-hashes.json)
+18: 
+19: Unity 월드·가방 관측·물리 입력·네트워크/상위 planner 경계는 stub이다. 몸 동작에는 primary 입력을 내는 ProbeSkill을 사용했다. planner adapter는 실제 host-order 규칙에 source·완료 통지를 전달한다. tail 상태는 fixture에서 구성하며 실제 stop/end 로직이 읽고 갱신한다. 전체 `Tick` scheduling, candidate 생성·응답 parsing, stop 이외의 stale 판정, 실제 경로 탐색·채굴 타격·문 상호작용·인벤토리 트랜잭션·원격 모델 선택은 이 harness의 검증 범위 밖이다. 이 자료는 공통 정책과 명시 제어의 source-level 연결 검증이며 실게임 재실행을 대신하지 않는다.
+20: 
+21: 빌드는 오류 0이었다. 테스트 경계 stub의 소문자 math 형식명과 쓰이지 않은 필드에 대한 컴파일 경고가 있었다. main 담당의 전체 제품 compile-check 결과와 별도로 취급한다.
+
+$ node tools/product.mjs policy pol.ai-action-control
+[
+  {
+    "node": {
+      "class": "사용자 결정 요약",
+      "evidence": [
+        {
+          "anchor": "대상 소실로 실행할 수 없어진 경우에는",
+          "doc": "cancel",
+          "end": 7,
+          "line": 7,
+          "path": "../2026-11-07-행동취소-판단주체.md",
+          "sha256": "ca61d145994daad38418e54424420605a7265126f7078f473326bf0a8001e2d0",
+          "start": 7
+        },
+        {
+          "anchor": "AI가 명시적으로 계속·중단·전환할 수 있게 한다.",
+          "doc": "common",
+          "end": 10,
+          "line": 10,
+          "path": "../2026-11-07-공통실행-합의.md",
+          "sha256": "2866a7305147d95bd2f9b96b2cbe6635c51cd93266584726d6a8b3d9b1eb96a4",
+          "start": 10
+        },
+        {
+          "anchor": "새 응답을 기다리는 동안 실행 가능한 선택을 이어 간다.",
+          "doc": "common",
+          "end": 13,
+          "line": 13,
+          "path": "../2026-11-07-공통실행-합의.md",
+          "sha256": "2866a7305147d95bd2f9b96b2cbe6635c51cd93266584726d6a8b3d9b1eb96a4",
+          "start": 13
+        }
+      ],
+      "id": "pol.ai-action-control",
+      "sourceLocations": [
+        {
+          "end": 7,
+          "path": "../2026-11-07-행동취소-판단주체.md",
+          "start": 7
+        },
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행-합의.md",
+          "start": 10
+        },
+        {
+          "end": 13,
+          "path": "../2026-11-07-공통실행-합의.md",
+          "start": 13
+        }
+      ],
+      "status": "2026-11-07 합의",
+      "summary": "수량·시간·진척·호출 실패를 관측으로 넘긴다. 대상이 사라지면 이유를 보고하며 새 AI 선택과 사용자의 직접 중지를 따른다.",
+      "title": "AI가 행동의 계속·중단·전환을 선택",
+      "type": "정책"
+    },
+    "applications": [
+      {
+        "class": "코드 대응",
+        "evidence": [
+          {
+            "end": 8,
+            "path": "../2026-11-07-공통실행자료/contract.md",
+            "start": 8
+          }
+        ],
+        "from": "pol.ai-action-control",
+        "kind": "구현 계약",
+        "to": "R.stop-action",
+        "type": "reference"
+      }
+    ],
+    "sources": [
+      {
+        "path": "../2026-11-07-행동취소-판단주체.md",
+        "start": 7,
+        "end": 7,
+        "sha256": "ca61d145994daad38418e54424420605a7265126f7078f473326bf0a8001e2d0",
+        "text": "7: 정비 때는 목표 달성, 막힘, 시간 경과, 판단 호출 실패, 예약 응답 폐기 등에서 무엇이 실제로 끝났는지와 누가 취소를 결정했는지 확인한다. 대상 소실로 실행할 수 없어진 경우에는 사실과 이유를 보고해 AI가 다음 행동을 선택하게 한다. 뒤늦은 응답은 현재 대상·선택과 대조하며 이미 내린 새 AI 결정이나 사용자의 직접 중지 명령을 존중한다."
+      },
+      {
+        "path": "../2026-11-07-공통실행-합의.md",
+        "start": 10,
+        "end": 10,
+        "sha256": "2866a7305147d95bd2f9b96b2cbe6635c51cd93266584726d6a8b3d9b1eb96a4",
+        "text": "10: - AI가 명시적으로 계속·중단·전환할 수 있게 한다. 새로운 AI 선택과 사용자 직접 중지는 실행한다."
+      },
+      {
+        "path": "../2026-11-07-공통실행-합의.md",
+        "start": 13,
+        "end": 13,
+        "sha256": "2866a7305147d95bd2f9b96b2cbe6635c51cd93266584726d6a8b3d9b1eb96a4",
+        "text": "13: - 새 응답을 기다리는 동안 실행 가능한 선택을 이어 간다. 응답이 늦었다는 이유만으로 유효한 선택을 무조건 버리는 경로도 검토한다. 대상과 실행 회차 및 후속 AI 결정에 맞춰 적용한다."
+      }
+    ]
+  }
+]
+
+$ node tools/query.mjs why F.common-execution
+기능 F.common-execution [구현됨·미확인] — AI의 명시 중단·단계 완료·재계획
+  stop_action은 몸만 중단하고 목표와 부탁을 유지한다. finish_goal은 현재 단계만 완료한다. request_plan은 유효한 몸 동작을 유지하며 상위에 현재 사실을 전달한다.
+  근거: work/2026-11/2026-11-07-공통실행자료/contract.md "stop_action은 현재 몸 동작만 AI가 중단한다."
+  근거: work/2026-11/2026-11-07-공통실행자료/implementation.md "AISkill.ObserveOnce는 실행 회차에 조건을 보존하고 재판단을 요청한다."
+  정책 pol.ai-action-control [사용자 결정·확정] 현재 행동이 실행 가능하면 / 코드는 / 수량·시간·진척·호출 실패를 관측으로 전달하고 계속·중단·전환을 AI가 선택하게 한다.
+    근거: work/2026-11/2026-11-07-행동취소-판단주체.md "현재 행동을 계속할지, 스스로 취소할지, 다른 행동으로 전환할지는 AI가 선택한다."
+  정책 pol.original-request-completion [사용자 결정·확정] 현재 단계의 수량·조건이 충족되면 / 코드는 / 관측 사실을 전달하고 원래 부탁의 종료는 위쪽 LLM이 판단하게 한다.
+    근거: work/2026-11/2026-11-07-공통실행-합의.md "중간 단계 진척과 사용자 원래 부탁을 보존한다."

@@ -1,0 +1,8 @@
+{
+ "status": 503,
+ "body": {
+  "ok": false,
+  "error": "spawn",
+  "detail": "agy CLI not found"
+ }
+}

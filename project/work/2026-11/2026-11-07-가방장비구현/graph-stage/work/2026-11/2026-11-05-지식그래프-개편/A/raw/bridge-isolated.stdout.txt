@@ -1,0 +1,2 @@
+ai-bridge: game graph NOT FOUND (looked in C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-개편/A/isolated/no-kg ; C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-05-지식그래프-개편\A\isolated\runtime\Tools\knowledge\data ; C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-05-지식그래프-개편\A\isolated\CoreKeeperModSDK-kg\Tools\knowledge\data): no game queries, object names only. Set kgData in config.json
+ai-bridge listening on http://127.0.0.1:18331

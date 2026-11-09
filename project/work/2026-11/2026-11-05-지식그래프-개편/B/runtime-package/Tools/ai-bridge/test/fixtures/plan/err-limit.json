@@ -1,0 +1,9 @@
+{
+ "status": 429,
+ "body": {
+  "ok": false,
+  "error": "limit",
+  "detail": "usage 99% > 85%",
+  "retry_after_s": 1800
+ }
+}

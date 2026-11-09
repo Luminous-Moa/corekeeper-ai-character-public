@@ -1,0 +1,838 @@
+{
+  "runtimeTested": false,
+  "wholeScopeComplete": false,
+  "records": [
+    {
+      "id": "completion:movement-sleep:grapple-pull-end-v1",
+      "group": "grapple",
+      "kind": "action_completion",
+      "action": "grapple_pull_movement_end",
+      "sourceBindings": [
+        {
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+          "objectId": 8373,
+          "variation": 0,
+          "role": "has_completion"
+        },
+        {
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+          "objectId": 8374,
+          "variation": 0,
+          "role": "has_completion"
+        }
+      ],
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "completion:essential:grapple-input-aim-v1"
+        },
+        {
+          "relation": "continues_after",
+          "to": "completion:essential:grapple-input-aim-v1/result/results"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:B:new-move-player"
+        }
+      ],
+      "value": {
+        "summary": "8373/8374 발동 요청 뒤 activeRoutine=Grappling의 timer·거리 종료와 hook curve 차이에 의한 당김 속도 가산.",
+        "conditions": [
+          {
+            "rule": "이 Execute는 activeRoutine==Grappling일 때만 진행한다. 앞선 입력·aim·cooldown·hit 및 timer/위치/거리 기록은 기존 grapple-input-aim-v1을 재사용한다.",
+            "refs": [
+              "pull-end"
+            ]
+          },
+          {
+            "rule": "당김 분기는 저장된 grapplingHookObjectID와 grapplingHookVariation으로 primary prefab을 찾아 OffHandCD를 얻어야 한다. 두 정확 원본의 OffHandAuthoring(mechanic7)와 mechanicCurve는 authoringRef로 검증했고 OffHandConverter가 비어 있지 않은 mechanicCurve를 BlobCurve로 생성해 OffHandCD.curve에 둔다.",
+            "refs": [
+              "hook8373",
+              "hook8374",
+              "curve-converter",
+              "pull-end"
+            ]
+          }
+        ],
+        "flow": [
+          {
+            "rule": "먼저 grapplingTimer.IsTimerElapsed(currentTick)이면 activeRoutine=Inactive, SetNextState(Walk), return. timer가 남아 있어도 hookPosition-playerPosition의 길이가 0.5 미만이면 동일하게 종료한다. 거리 등호0.5는 이 종료 분기에 포함되지 않는다.",
+            "refs": [
+              "pull-end"
+            ]
+          },
+          {
+            "rule": "종료하지 않은 경우 현재 tick의 GetElapsedRatio와 Increment한 다음 tick의 GetElapsedRatio를 각각 curve에 평가한다. deltaDistance=(curve(nextRatio)-curve(currentRatio))*grapplingHookDistance를 계산하고 PlayerMovementForceCD.Value=0으로 쓴 뒤 PhysicsVelocity.Linear에 normalizesafe(hookPosition-playerPosition)*deltaDistance/physicsTimeStep를 가산한다.",
+            "refs": [
+              "pull-end"
+            ]
+          }
+        ],
+        "results": [
+          {
+            "rule": "timer 만료 또는 거리<0.5는 Inactive/Walk 전환 요청으로 끝난다. 그 외 유효 OffHandCD에서는 curve 차이를 사용한 선형 속도 가산이 발생한다. 목표 지점으로 위치를 직접 대입하거나 도착을 보장하는 코드가 아니다.",
+            "refs": [
+              "pull-end"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "rule": "activeRoutine이 Grappling이 아니면 즉시 반환한다. 정확 prefab에서 OffHandCD를 얻지 못하면 이 당김 분기의 force0/velocity 가산은 수행하지 않으며, 종료 검사 자체는 그보다 먼저다.",
+            "refs": [
+              "pull-end"
+            ]
+          }
+        ],
+        "boundary": [
+          "정적 코드의 조건부 상태/필드 쓰기다. runtime prefab·DB·query·tick·권한·시뮬레이션·충돌 및 네트워크의 실제 결과를 검증하지 않았다.",
+          "전체 hit/충돌 helper, 물리 도착, 다른 offhand 및 모든 Grapple 경로의 전수 완료를 주장하지 않는다. 기존 쿨다운 비용을 재사용하며 이 Execute의 새 아이템·마나 소모를 만들어 넣지 않는다."
+        ],
+        "codeReferences": [
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/PlayerGrapplingRoutineSystem.cs",
+            "sha256": "c95dfae4b1f7c60c687f7ea306adb3308466baa4cf5099c77836d1ce3db6c7c4",
+            "startLine": 186,
+            "endLine": 217,
+            "id": "pull-end"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/OffHandConverter.cs",
+            "sha256": "a55966f4dc84ef00fc42b3cc0e93aac0810ce65830fdc24eafaaafa3e95263fa",
+            "startLine": 6,
+            "endLine": 22,
+            "id": "curve-converter"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 79520,
+            "endLine": 79520,
+            "id": "hook8373"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 81520,
+            "endLine": 81520,
+            "id": "hook8374"
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "completion:essential:grapple-input-aim-v1",
+            "origin": {
+              "normalizedValueSha256": "46889fb09e7b822f0b5a90600a8eddfc04cb36809d9ca89b0a1f7e52feadf8dc",
+              "path": "../2026-11/2026-11-08-행동판단필수보완/six/supplement.json",
+              "pointer": "/records/0/value"
+            }
+          },
+          {
+            "nodeId": "completion:essential:grapple-input-aim-v1/result/results",
+            "origin": {
+              "normalizedValueSha256": "7ead7996f9202f450df4f122c731dbd102c9b8def84208ba5b62489ced672b57",
+              "path": "../2026-11/2026-11-08-행동판단필수보완/six/supplement.json",
+              "pointer": "/records/0/value/results"
+            }
+          },
+          {
+            "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+            "origin": {
+              "normalizedValueSha256": "46c4cb8cb1355e3583c490a66fca4a836ff3f5a70123fa0c02b5d95fc591ddd8",
+              "path": "../게임원본-상호작용/final/collection.json",
+              "pointer": "/records/1449"
+            }
+          },
+          {
+            "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+            "origin": {
+              "normalizedValueSha256": "b8f7d7ab34ec5558c6c1f5e3a14e6c075162aa41960db823ed51bf69d13a3a1d",
+              "path": "../게임원본-상호작용/final/collection.json",
+              "pointer": "/records/1450"
+            }
+          }
+        ],
+        "existingReuse": [
+          "completion:essential:grapple-input-aim-v1",
+          "completion:B:new-move-player"
+        ],
+        "decisionImpact": "발동 성공을 실제 도착이나 무기한 당김으로 오판하지 않고, timer·거리 종료 뒤 Walk 재개와 당김 중 속도 요청을 구별한다."
+      }
+    },
+    {
+      "id": "completion:movement-sleep:mount-safe-dismount-v1",
+      "group": "mount",
+      "kind": "action_completion",
+      "action": "mount_safe_dismount",
+      "sourceBindings": [],
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:9022154055506081267|saddle"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "animal-saddle"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:B:new-move-player"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "rule:supp:A:boat_exit"
+        }
+      ],
+      "value": {
+        "summary": "MountRiding의 하차 후보·지면/충돌 검사, 최초 실패 시 탑승 유지, ExitState의 별도 재검사. 종별 원본 귀속 없는 공통 상태 소비자.",
+        "conditions": [
+          {
+            "rule": "MountRiding.UpdateStateAfterPhysics에서 CanConsumeInteract()일 때만 후보를 검사한다. 선행 안장 변환/교체와 mount/saddle 속도 배율은 기존 기록을 재사용한다. 이 레코드는 정확3750 또는 모든 종의 mount authoring을 새로 검증한 source binding을 갖지 않는다.",
+            "refs": [
+              "mount-candidates"
+            ]
+          },
+          {
+            "rule": "후보마다 top tile의 IsWalkableTile()이 true이며 기본 playerCollider의 CollisionFilter로 position+(0,0.5,0), 반지름0.17999999의 CheckSphere 충돌이 없어야 한다. BoatRiding의 속도 gate를 이 메서드에 대입하지 않는다.",
+            "refs": [
+              "mount-candidates"
+            ]
+          }
+        ],
+        "flow": [
+          {
+            "rule": "첫 후보는 position+(0,0,-0.3)이다. facing이 forward/back이면 이를 random NextBool에 따른 x=-0.3 또는+0.3, y=0,z=0.2 오프셋으로 바꾼다. 첫 후보가 유효하면 즉시 선택한다.",
+            "refs": [
+              "mount-candidates"
+            ]
+          },
+          {
+            "rule": "첫 후보 실패 시 round(position) 주변 allFourClockwise의 네 후보 round(round(position)+direction.f3)를 실제 position과의 거리로 정렬하여, 같은 지면/충돌 검사를 통과하는 첫 후보를 고른다. 전부 실패하면 false다.",
+            "refs": [
+              "mount-candidates"
+            ]
+          },
+          {
+            "rule": "최초 AttemptToLeaveMount 성공 때만 TryConsumeInteract() 후 SetNextState(Walk), return한다. 실패 때는 Emote16 이벤트를 넣고 해당 분기에서 interact를 소비하거나 Walk를 요청하지 않는다.",
+            "refs": [
+              "mount-candidates"
+            ]
+          },
+          {
+            "rule": "ExitState는 dying-next drop 처리와 ReleaseControlledEntity를 먼저 실행한다. currentTick을 Decrement하여 이전 tick collision world를 얻고 AttemptToLeaveMount를 다시 호출하여 그 재검사가 성공할 때만 player Position=leavePosition으로 쓴다. final full prediction tick이면 smoothing도0으로 쓴다. 뒤이어 force0, canConsumeHunger=true, reorientationBlocked=false를 복원한다.",
+            "refs": [
+              "mount-exit-recheck"
+            ]
+          }
+        ],
+        "results": [
+          {
+            "rule": "최초 후보 성공은 Walk 요청을 허용한다. 실제 ExitState 위치 쓰기는 최초 위치를 재사용하지 않고 별도 후보 검사 결과에 따른다. 최초와 ExitState는 collision world/호출·랜덤 선택이 달라 같은 후보를 보장하지 않는다.",
+            "refs": [
+              "mount-candidates",
+              "mount-exit-recheck"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "rule": "최초 후보 전부 실패하면 이 하차 입력 경로는 탑승 상태를 유지하고 Emote16만 요청한다. ExitState 재검사 실패는 이미 수행한 제어 해제를 되돌리지 않고, 이 메서드에서 Position을 하차 후보로 옮기는 쓰기만 생략한다.",
+            "refs": [
+              "mount-candidates",
+              "mount-exit-recheck"
+            ]
+          }
+        ],
+        "boundary": [
+          "정적 코드의 조건부 상태/필드 쓰기다. runtime prefab·DB·query·tick·권한·시뮬레이션·충돌 및 네트워크의 실제 결과를 검증하지 않았다.",
+          "sourceBindings=[]인 typed MountRiding consumer다. 기존 안장 노드에서 도달하도록 연결하지만 대표3750이나 모든 종에 대한 새 직접 source/authoring 귀속은 만들지 않는다. 후보가 실제 월드에서 항상 존재하거나 안전 하차가 보장된다는 주장은 없다."
+        ],
+        "codeReferences": [
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/MountRiding.cs",
+            "sha256": "aaf1157791cba1b38475947d2f1e5151aa4fb36fdf471cad8fe11762bc066b93",
+            "startLine": 170,
+            "endLine": 247,
+            "id": "mount-candidates"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/MountRiding.cs",
+            "sha256": "aaf1157791cba1b38475947d2f1e5151aa4fb36fdf471cad8fe11762bc066b93",
+            "startLine": 60,
+            "endLine": 79,
+            "id": "mount-exit-recheck"
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:9022154055506081267|saddle",
+            "origin": {
+              "normalizedValueSha256": "ec857805037fb2172dabcd1c12e3487ec1a476ddcb1a35e6e3571b0655792061",
+              "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+              "pointer": "/groups/1/payload/extraction.json/records/89"
+            }
+          },
+          {
+            "nodeId": "animal-saddle",
+            "origin": {
+              "normalizedValueSha256": "9f854653ee41f6759e78ee4beef58546c4c48510b5c93af2683c8347bbdf2ba1",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated/cases.json",
+              "pointer": "/cases/0"
+            }
+          },
+          {
+            "nodeId": "completion:B:new-move-player",
+            "origin": {
+              "normalizedValueSha256": "4000418672885d12ead705a3a641a59f2d026c403560bc851c5cab312d5f7061",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+              "pointer": "/cases/2"
+            }
+          },
+          {
+            "nodeId": "rule:supp:A:boat_exit",
+            "origin": {
+              "normalizedValueSha256": "de6e8d85bea2de031efa21bc0b937811253aab462b9fde421def1b15ffa1d705",
+              "path": "../2026-11/2026-11-07-상호작용미결보강/package/collection.json",
+              "pointer": "/groups/0/payload/extraction.json/rules/boat_exit"
+            }
+          }
+        ],
+        "existingReuse": [
+          "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:9022154055506081267|saddle",
+          "animal-saddle",
+          "completion:B:new-move-player",
+          "rule:supp:A:boat_exit"
+        ],
+        "decisionImpact": "상호작용을 누르면 항상 내린다고 판단하는 오류와 최초 성공을 ExitState의 실제 위치 확정으로 간주하는 오류를 막는다."
+      }
+    },
+    {
+      "id": "completion:movement-sleep:minecart-rail-brake-dismount-v1",
+      "group": "minecart",
+      "kind": "action_completion",
+      "action": "minecart_rail_brake_dismount",
+      "sourceBindings": [
+        {
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7937923918425634137",
+          "objectId": 6551,
+          "variation": 0,
+          "role": "has_completion"
+        }
+      ],
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-7937923918425634137"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:B:moving-exit-feedback"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:B:new-move-player"
+        }
+      ],
+      "value": {
+        "summary": "정확6551 authoring→MinecartCD 귀속 조건 아래 MinecartRiding의 선로 후보·역입력 제동·timer/마찰·force와 감속보다 먼저 평가하는 실제 하차 gate.",
+        "conditions": [
+          {
+            "rule": "6551:0 source의 objects.json /1920 authoringRef가 MinecartEntity의 정확 MinecartAuthoring component1088015966352951975로 연결된다. components.jsonl:43429의 currentSpeed=0,isBreaking=0,maxSpeed=800을 MinecartConverter가 MinecartCD에 복사한다. runtime에서 동일 prefab/변환이 선택된다는 조건이며 모든 광차의 maxSpeed=800으로 일반화하지 않는다.",
+            "refs": [
+              "cart6551-authoring",
+              "cart-converter"
+            ]
+          },
+          {
+            "rule": "현재 제어 대상이 파괴되지 않고 제어 시작 gate를 통과해야 riding 연산이 진행된다. 계산 위치의 top tile이 rail이 아니면 movement force를0으로 쓰고 반환한다.",
+            "refs": [
+              "cart-exit-first",
+              "rail-input"
+            ]
+          },
+          {
+            "rule": "정규화한 activeVelocity의 반올림 방향 int5와 allFourClockwise를 사용한다. 각 방향으로 0.5+Margin만큼 이웃 top tile을 보고 rail이며 수직방향일 경우 canTurn도 허용해야 후보에 넣는다. 각 후보에 맞는 adjustedMovementVelocity 성분 중 길이가 큰 것을 입력방향 x로 선택한다. Margin=0.1+0.35*clamp(speed*0.001,0,1).",
+            "refs": [
+              "rail-input",
+              "cart-exit-speed"
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "rule": "역입력 감속량은 해당 분기의1000*deltaTime이며 실제 active speed 이내로 clamp된다. 기본 마찰은 speed>0.9*runtimeMaxSpeed AND (!brakingTimer.isRunning OR timerElapsed)일 때만0, 나머지는600*deltaTime이다. 이 수치는 아이템·마나 비용이 아니라 속도 감소량이다.",
+            "refs": [
+              "braking-force"
+            ]
+          }
+        ],
+        "flow": [
+          {
+            "rule": "UpdateState의 순서는 먼저 파괴 대상 탈출, 이어 TryConsumeInteract() && !IsMovingAboveExitSpeed 검사다. 좌항이 먼저 평가되므로 초과속에서도 interact는 소비될 수 있다. IsMovingAboveExitSpeed는 lengthsq(activeVelocity)>250000이며 등호250000은 허용한다. 두 조건을 만족하면 Walk를 요청하고 return하므로 아래 감속은 그 tick에 실행하지 않는다.",
+            "refs": [
+              "cart-exit-first",
+              "cart-exit-speed"
+            ]
+          },
+          {
+            "rule": "선로 후보 선택 뒤 x를 normalizesafe/반올림한 int7이 비영이고 int7+int5==0이면 flag3(역입력)를 정하고 timeSinceBreakingTimer.Start(currentTick)를 호출한다. speed<80의 선로 정렬 보정과 수직 회전 위치 gate가 뒤에서 입력방향/역입력 flag를 바꿀 수 있으므로 raw 반대키가 언제나 제동이 되는 것은 아니다.",
+            "refs": [
+              "rail-input",
+              "braking-force"
+            ]
+          },
+          {
+            "rule": "입력없음(flag2) 또는 유효 역방향(flag3)이면서 speed>0이면 현재 진행 방향이 rail 후보에 있는지 찾고, 없으면 유일한 수직 rail 후보를 선택한다. 유효 후보를 못 얻으면 방향0이다. 역방향이면 감속량1000*dt,isBreaking=true. 현재 진행방향 또는 유일한 수직 rail 후보를 얻은 flag7=true 경로에서 !flag3 && speed>200이면 가속량=1000*length(adjustedInput)*dt를 더한다.",
+            "refs": [
+              "braking-force"
+            ]
+          },
+          {
+            "rule": "그 외 유효 입력 분기는 int11=반올림한 x, 가속량=1000*length(adjustedInput)*dt다. simulate가 활성인 제어 대상에 isBreaking을 복사하고 수직 방향 변경 시 canTurn=false,lastTurnedTile을 쓴다. 감속량을0..기존speed로 제한한 뒤 activeVelocity=int11*clamp(기존speed+가속량-감속량,0,maxSpeed), force=(activeVelocity.x,0,activeVelocity.y)로 쓴다.",
+            "refs": [
+              "braking-force"
+            ]
+          }
+        ],
+        "results": [
+          {
+            "rule": "앞선 update에서 속도가 줄어든 결과가 나중의 별도 interact 시도를 하차 허용 속도로 만들 수 있다. 같은 tick에서 먼저 제동해 하차 gate를 통과한다고 설명할 수 없다. 선로/방향/상태 조건을 통과한 결과는 activeVelocity·isBreaking·PlayerMovementForceCD 쓰기다.",
+            "refs": [
+              "cart-exit-first",
+              "braking-force"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "rule": "초과속은 해당 interact에 따른 Walk 요청을 막지만 입력 소비를 막는다고 보장하지 않는다. rail 부재는 force0 반환, 제어 gate 실패는 조기 반환한다. moving-exit-feedback은 표시 요청으로 재사용하며 실제 상태 gate를 대신하지 않는다.",
+            "refs": [
+              "cart-exit-first",
+              "rail-input"
+            ]
+          }
+        ],
+        "boundary": [
+          "정적 코드의 조건부 상태/필드 쓰기다. runtime prefab·DB·query·tick·권한·시뮬레이션·충돌 및 네트워크의 실제 결과를 검증하지 않았다.",
+          "이 레코드는 선로 후보·정렬의 제동 관련 최소 부분만 다룬다. 전체 minecart planned-turn 경로/충돌/실제 정지·하차 성공과 정확한 도착을 보장하지 않는다. 배치·재고·생성 예약은 기존6551 배치 기록을 재사용한다."
+        ],
+        "codeReferences": [
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/MinecartRiding.cs",
+            "sha256": "347096c4403877a4cb012ad473b847e7dfb59eb9b5b0e25803184e97ba035b3a",
+            "startLine": 65,
+            "endLine": 80,
+            "id": "cart-exit-first"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/MinecartRiding.cs",
+            "sha256": "347096c4403877a4cb012ad473b847e7dfb59eb9b5b0e25803184e97ba035b3a",
+            "startLine": 81,
+            "endLine": 150,
+            "id": "rail-input"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/MinecartRiding.cs",
+            "sha256": "347096c4403877a4cb012ad473b847e7dfb59eb9b5b0e25803184e97ba035b3a",
+            "startLine": 152,
+            "endLine": 270,
+            "id": "braking-force"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Components/PlayerState/MinecartRidingStateCD.cs",
+            "sha256": "4702dc5be30c62cdbeecd899727af1875fac2a8b6ede761953e7d414b442d6cb",
+            "startLine": 19,
+            "endLine": 35,
+            "id": "cart-exit-speed"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/MinecartConverter.cs",
+            "sha256": "bb32c41155d3c6be10981f69428ec282d16c2a9e63f5b3dcef2c7b99853b2723",
+            "startLine": 4,
+            "endLine": 14,
+            "id": "cart-converter"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 43429,
+            "endLine": 43429,
+            "id": "cart6551-authoring"
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7937923918425634137",
+            "origin": {
+              "normalizedValueSha256": "3a8cd9809a0cde355f597184e2d7d301b6be082a2ee1e4a1ef9ee466265c4d09",
+              "path": "../게임원본-상호작용/final/collection.json",
+              "pointer": "/records/1078"
+            }
+          },
+          {
+            "nodeId": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-7937923918425634137",
+            "origin": {
+              "normalizedValueSha256": "0edccc426fe5383fe38d48f7a7af7239e424bc99b82b5b59ed0d17a71b75c9ec",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+              "pointer": "/cases/427"
+            }
+          },
+          {
+            "nodeId": "completion:B:moving-exit-feedback",
+            "origin": {
+              "normalizedValueSha256": "c1c3397a8040743ee4d22d72255bf4b8ea0d9910ebc77b5bae8bc2fbab30ddf8",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/moving-exit-feedback-v2-replay-1/cases.json",
+              "pointer": "/cases/0"
+            }
+          }
+        ],
+        "existingReuse": [
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-7937923918425634137",
+          "completion:B:moving-exit-feedback",
+          "completion:B:new-move-player"
+        ],
+        "decisionImpact": "배치 가능이나 너무 빠르다는 문구만으로 제동·하차를 추정하지 않고, rail이 허용한 역입력과 이전 update의 감속 뒤 별도 하차 입력이 필요할 수 있음을 판단한다."
+      }
+    },
+    {
+      "id": "completion:movement-sleep:condition-sleep210-v1",
+      "group": "condition_sleep",
+      "kind": "condition_consumer",
+      "action": "condition_sleep210",
+      "sourceBindings": [
+        {
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758",
+          "objectId": 9609,
+          "variation": 0,
+          "role": "conditional_sleep210_source"
+        }
+      ],
+      "links": [
+        {
+          "relation": "continues_after",
+          "to": "completion:B:eatable:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758"
+        },
+        {
+          "relation": "uses_condition",
+          "to": "completion:B:eatable:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758/condition/sourceValues"
+        },
+        {
+          "relation": "continues_after",
+          "to": "completion:B:eatable:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758/flow/transitions"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "common:new-conditions-buffer-consumer"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "bed-sleep"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:B:new-move-player"
+        }
+      ],
+      "value": {
+        "summary": "정확9609의 기존210 조건 공급 뒤 summarized Sleeping210의 Sleep 진입·회복 gate·이동0·조건 소실 시 PopState 소비.322 공급 귀속은 없다.",
+        "conditions": [
+          {
+            "rule": "9609 source의 objects.json /2943 authoringRef→GivesConditionsWhenConsumedAuthoring component-799469916712369826를 components.jsonl:36118에서 재검증했다. authored210의 duration5,value1,valueMultiplier1 및 cooked entry duration5,value2,valueMultiplier1은 기존 sourceValues/변환·섭취 gate를 재사용한다. 해당 레코드는 cookedFoodAuthoring=false이며 cooked 공급을 새로 주장하지 않는다.",
+            "refs": [
+              "food9609-authoring"
+            ]
+          },
+          {
+            "rule": "ForceSleepByConditionSystem은 summarized[210].value!=0 또는[322].value!=0이고 Sleep|Teleporting 어느 상태도 없을 때 PushState(Sleep)한다. 이 record의 정확 source9609 귀속은210에만 해당한다. summary 가시성·일정 및 실제 조건 잔존은 기존 공통 lifecycle의 조건이다.",
+            "refs": [
+              "condition-push"
+            ]
+          }
+        ],
+        "flow": [
+          {
+            "rule": "Sleep.EnterState에서 Sleeping210 비영을 wasPreviouslyForcedSleep에,322 비영을 wasPreviouslyAsleepFromBeingStill에 저장한다. minSleepTimer는0.3초,qualitySleepTimer는2초로 시작한다. HealOverTimePercentage 추가/갱신은 !Sleeping210 OR ExtraHealFromSleepPercentage!=0일 때만 허용하며 값은 int(20+20*ExtraHealFromSleepPercentage/100)이다. 따라서 강제210만 있고 extra=0이면 이 진입 회복 요청은 없다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          },
+          {
+            "rule": "PlayerVelocityCalculationSystem의 입력 소비는 Sleep 상태 AND Sleeping210 비영일 때 targetMovementVelocity=float2.zero로 쓴다. 원문에는 죽음·낚시캐스팅·생성/악기/IgnoreAllInput·비god 배치의 별도 차단도 있다.210 부재만으로 반드시 움직일 수 있다고 단정하지 않는다.",
+            "refs": [
+              "sleep210-zero-movement"
+            ]
+          },
+          {
+            "rule": "Sleep.UpdateState에서 이전 wasPreviouslyForcedSleep=true이고 현재210이0이면 강제수면 해제 flag를 세우고 wasPreviouslyForcedSleep을 현재값으로 갱신한다. 이 flag 또는 다른 일반수면/322 해제 flag가 true면 PopState(Sleep)한다. 강제210 자체의 해제는 이동 입력만으로 이루어진다고 적지 않는다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          },
+          {
+            "rule": "Sleep.ExitState는 HealOverTimePercentage를 제거한다. qualitySleepTimer 이후의 양수 BuffsFromQualitySleep→30초 IncreasedManaRegenEffectiveness와 실제 회복/마나 소비는 기존 bed-sleep 소비자를 재사용한다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          }
+        ],
+        "results": [
+          {
+            "rule": "실제 summarized210과 상태 gate가 성립하면 Sleep push, 이후 Sleep+210의 목표 이동0, 진입 회복 조건부 추가 및210 소실의 Sleep pop 요청으로 이어진다. PopState가 항상 Walk로 바뀐다는 보장은 없으며 이전 상태/상태스택에 달린다.",
+            "refs": [
+              "condition-push",
+              "sleep-consumer",
+              "sleep210-zero-movement"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "rule": "Sleep 또는 Teleporting이 이미 있으면 이 ForceSleep job은 새 Push를 하지 않는다.210이 추가/summary로 관측되지 않거나 상태/query가 성립하지 않으면 이 경로가 보장되지 않는다. authored duration5는 무조건 관측5초 이동불가 약속이 아니다.",
+            "refs": [
+              "condition-push",
+              "sleep210-zero-movement"
+            ]
+          }
+        ],
+        "boundary": [
+          "정적 코드의 조건부 상태/필드 쓰기다. runtime prefab·DB·query·tick·권한·시뮬레이션·충돌 및 네트워크의 실제 결과를 검증하지 않았다.",
+          "9609→210만 직접 source binding한다.322의 공급자 전수나9609→322를 주장하지 않는다. 침대 소유/근접 gate를 강제210 진입에 붙이지 않으며 회복량·실HP 증가·해제 시각을 runtime 검증한 것은 아니다."
+        ],
+        "codeReferences": [
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ForceSleepByConditionSystem.cs",
+            "sha256": "6d5a07488c522c9adbdfcceb7000e22b775be4de6337f501557756403c085e07",
+            "startLine": 122,
+            "endLine": 128,
+            "id": "condition-push"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/Sleep.cs",
+            "sha256": "bb83bc74bc31ec338ef6aabc4afb5f41f3a0f5592c6ab3b66929ed7c5ab0813d",
+            "startLine": 11,
+            "endLine": 85,
+            "id": "sleep-consumer"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerVelocityCalculationSystem.cs",
+            "sha256": "550f48d95dfefe1c262bb3bfad6d25f8be45bccf31291b89f08eca082bd663ce",
+            "startLine": 365,
+            "endLine": 383,
+            "id": "sleep210-zero-movement"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/ConditionID.cs",
+            "sha256": "f5b47f158b3d48e8bb7a8d934857d3e7116da08920ae9eb58ec5d2c6d439e7f6",
+            "startLine": 203,
+            "endLine": 338,
+            "id": "condition-identities"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+            "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+            "startLine": 36118,
+            "endLine": 36118,
+            "id": "food9609-authoring"
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758",
+            "origin": {
+              "normalizedValueSha256": "d3cc2265a7f87c4912994eae3f1c56d096b77e0c9a95f3ce61c3bc9dd6ab9e27",
+              "path": "../게임원본-상호작용/final/collection.json",
+              "pointer": "/records/3140"
+            }
+          },
+          {
+            "nodeId": "completion:B:eatable:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758/condition/sourceValues",
+            "origin": {
+              "normalizedValueSha256": "0d6aebc72cb1412ec53d7b400aef124f5b8ac42f429c41f0f5a5daa262cb5406",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/eatable-v4-replay-1/cases.json",
+              "pointer": "/cases/122/sourceValues"
+            }
+          },
+          {
+            "nodeId": "completion:B:eatable:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758/flow/transitions",
+            "origin": {
+              "normalizedValueSha256": "621bb350004198245465e89ce01d6c566dc685126087d9766f34a354bb86697f",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/eatable-v4-replay-1/cases.json",
+              "pointer": "/cases/122/transitions"
+            }
+          },
+          {
+            "nodeId": "common:new-conditions-buffer-consumer",
+            "origin": {
+              "normalizedValueSha256": "0181390c10896208afc405443737daeedf452e94c4168eb835b6723ff8e2b55a",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/condition-buffer-consumer/flow.json",
+              "pointer": ""
+            }
+          },
+          {
+            "nodeId": "bed-sleep",
+            "origin": {
+              "normalizedValueSha256": "f23893ced41c61da10aac8d913953385e255545f93827d23c2201e7d227666bb",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+              "pointer": "/cases/17"
+            }
+          }
+        ],
+        "existingReuse": [
+          "completion:B:eatable:CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758",
+          "common:new-conditions-buffer-consumer",
+          "bed-sleep",
+          "completion:B:new-move-player"
+        ],
+        "decisionImpact": "9609 섭취 뒤 effectNone을 무효과로 오판하거나, 강제210을 일반 침대수면처럼 무조건 회복·이동 입력으로 해제된다고 오판하는 것을 막는다."
+      }
+    },
+    {
+      "id": "completion:movement-sleep:condition-sleep322-v1",
+      "group": "condition_sleep",
+      "kind": "condition_consumer",
+      "action": "condition_sleep322",
+      "sourceBindings": [],
+      "links": [
+        {
+          "relation": "uses_condition",
+          "to": "common:new-conditions-buffer-consumer"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "bed-sleep"
+        },
+        {
+          "relation": "reuses_consumer",
+          "to": "completion:B:new-move-player"
+        }
+      ],
+      "value": {
+        "summary": "SleepingFromStandingStill322의 source-free typed 소비자: Sleep 진입과 조건 소실/이동입력 해제,210과 다른 이동 차단·회복 조건.",
+        "conditions": [
+          {
+            "rule": "summarized[322].value!=0 또는210 비영이고 Sleep|Teleporting 어느 상태도 없을 때 Sleep push가 가능하다.322 공급 원본/아이템/기간은 이 consumer에서 결정하지 않는다.9609의210 source binding을322에 대입하지 않는다.",
+            "refs": [
+              "condition-push"
+            ]
+          },
+          {
+            "rule": "Sleep.EnterState가322 비영을 wasPreviouslyAsleepFromBeingStill에 저장한다.210이 함께 있으면 wasPreviouslyForcedSleep도 true이므로 회복 및 이동0의210 gate가 동시에 작동할 수 있다.322만 있다고210 부재를 가정하지 않는다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          }
+        ],
+        "flow": [
+          {
+            "rule": "진입 시 minSleepTimer0.3초와qualitySleepTimer2초를 시작한다. 회복 조건은 공통 !Sleeping210 OR extra!=0이며 값은 int(20+20*extra/100)이다. 따라서322만 있고210이 없으면 진입 회복 요청 gate를 통과하고, 둘이 있으면 extra!=0이 필요하다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          },
+          {
+            "rule": "Sleep.UpdateState는 이전 wasPreviouslyAsleepFromBeingStill=true인 경우 현재322가0 OR targetMovementVelocity 길이>0.1이면 해제 flag8을 세운다. 이것과210 소실 또는 일반수면 해제 flag 중 하나가 true면 PopState(Sleep)한다. 이322 해제 분기에는 minSleepTimer 만료를 요구하지 않는다. wasPreviouslyAsleepFromBeingStill은 이 Update에서 현재322로 덮어쓰지 않는다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          },
+          {
+            "rule": "PlayerVelocityCalculationSystem의 이 수면 이동0 predicate는 Sleep AND210이며322 자체를 읽지 않는다.322만 있는 Sleep에서는 이 predicate로 입력0을 강제하지 않아 movement target 길이>0.1을 해제 신호로 볼 수 있다. 다른 죽음·상태별 입력 차단은 그대로 적용된다.",
+            "refs": [
+              "sleep210-zero-movement"
+            ]
+          },
+          {
+            "rule": "ExitState의 HealOverTimePercentage 제거,quality timer 이후 조건부 mana buff와 그 후속 소비는 기존 bed-sleep/common condition lifecycle을 재사용한다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          }
+        ],
+        "results": [
+          {
+            "rule": "322가 Sleep 진입 시 관측되었다면 조건 소실 또는 유효 이동 target 길이>0.1이 Sleep pop 요청의 원인이 된다. 공통 상태스택·210 동시존재와 다른 해제 분기가 있으므로 단일원인 또는 즉시 재이동 보장은 없다.",
+            "refs": [
+              "sleep-consumer"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "rule": "322 없이 들어간 Sleep에 대해 이후322 비영만으로 wasPreviouslyAsleepFromBeingStill이 새로 true가 된다고 이 Update가 기록하지 않는다. Sleep/Teleporting 중에는 ForceSleep의 새 push가 없고, 입력 차단 때문에 target 길이가0이면 이동에 의한322 해제 predicate를 만족하지 않을 수 있다.",
+            "refs": [
+              "condition-push",
+              "sleep-consumer",
+              "sleep210-zero-movement"
+            ]
+          }
+        ],
+        "boundary": [
+          "정적 코드의 조건부 상태/필드 쓰기다. runtime prefab·DB·query·tick·권한·시뮬레이션·충돌 및 네트워크의 실제 결과를 검증하지 않았다.",
+          "sourceBindings=[]이며322 공급자·authoring duration·실제 상태 유지시간을 새로 특정하지 않는다.322를210과 같은 이동 봉쇄나 무조건5초 수면으로 확대하지 않는다. 전체 공급자/수면기능 전수 완료를 주장하지 않는다."
+        ],
+        "codeReferences": [
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ForceSleepByConditionSystem.cs",
+            "sha256": "6d5a07488c522c9adbdfcceb7000e22b775be4de6337f501557756403c085e07",
+            "startLine": 122,
+            "endLine": 128,
+            "id": "condition-push"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/Sleep.cs",
+            "sha256": "bb83bc74bc31ec338ef6aabc4afb5f41f3a0f5592c6ab3b66929ed7c5ab0813d",
+            "startLine": 11,
+            "endLine": 85,
+            "id": "sleep-consumer"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerVelocityCalculationSystem.cs",
+            "sha256": "550f48d95dfefe1c262bb3bfad6d25f8be45bccf31291b89f08eca082bd663ce",
+            "startLine": 365,
+            "endLine": 383,
+            "id": "sleep210-zero-movement"
+          },
+          {
+            "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/ConditionID.cs",
+            "sha256": "f5b47f158b3d48e8bb7a8d934857d3e7116da08920ae9eb58ec5d2c6d439e7f6",
+            "startLine": 203,
+            "endLine": 338,
+            "id": "condition-identities"
+          }
+        ],
+        "sourceEvidence": [
+          {
+            "nodeId": "common:new-conditions-buffer-consumer",
+            "origin": {
+              "normalizedValueSha256": "0181390c10896208afc405443737daeedf452e94c4168eb835b6723ff8e2b55a",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/D/condition-buffer-consumer/flow.json",
+              "pointer": ""
+            }
+          },
+          {
+            "nodeId": "bed-sleep",
+            "origin": {
+              "normalizedValueSha256": "f23893ced41c61da10aac8d913953385e255545f93827d23c2201e7d227666bb",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+              "pointer": "/cases/17"
+            }
+          },
+          {
+            "nodeId": "completion:B:new-move-player",
+            "origin": {
+              "normalizedValueSha256": "4000418672885d12ead705a3a641a59f2d026c403560bc851c5cab312d5f7061",
+              "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+              "pointer": "/cases/2"
+            }
+          }
+        ],
+        "existingReuse": [
+          "common:new-conditions-buffer-consumer",
+          "bed-sleep",
+          "completion:B:new-move-player"
+        ],
+        "decisionImpact": "322를210과 동일한 강제 이동봉쇄로 취급하거나9609가322도 공급한다고 잘못 연결하는 판단을 막는다."
+      }
+    }
+  ]
+}

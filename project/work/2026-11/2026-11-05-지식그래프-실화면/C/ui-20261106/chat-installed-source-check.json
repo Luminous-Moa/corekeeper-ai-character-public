@@ -1,0 +1,382 @@
+[
+    {
+        "name":  "\\Scripts\\AIActions.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIAgents.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIApproach.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIAttackSkill.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBase.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBaseProbe.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBody.Commands.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBody.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBrain.Candidates.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBrain.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBrain.Loop.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBrain.Prep.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIBreakSkills.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AICharacterStore.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIChargeWatch.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIChatHint.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIChatScreenLayer.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIChatWindow.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AICombat.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AICompactFont.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AICompactFontData.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AICook.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AICraft.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIDecisions.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIDecisionsApi.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIDoorFacts.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIDrops.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIEdge.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIEdge.Guard.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIEdge.Place.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIEdge.Reach.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIEdgeSkills.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIExpCore.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIExperience.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIFarm.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIGoalFeatures.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIGoals.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIGoalText.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIGotoSkill.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIInfoPanel.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIInfoSnapshot.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIInspectSkills.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIKnowledge.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIMemory.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIMineSkill.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIMoveTrace.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AINavigator.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIObjects.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIObservation.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPickupSkill.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlace.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlaces.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlanner.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlanReport.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlayerSpikeMod.Chat.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlayerSpikeMod.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIPlayerSpikePatches.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIShortSkills.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AISkill.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AITileReader.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AITunnel.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIVision.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIWorldFacts.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\AIWorldSettings.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIApproachSearch.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIBaseEdge.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIBaseGuard.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIBaseMap.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AICandidateAssembler.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIChargeMath.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIChatFade.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIChatLog.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIChatScreenMath.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIContinueText.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIDoorPass.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIFightLog.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIGoalKinds.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIHostOrders.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIMention.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIMoveEstimate.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIOutcomes.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPickupOptions.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPlaceGrid.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPlaces.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPlanInbox.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPlanProtocol.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPlanRules.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIPressQueue.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIRunGate.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AISettle.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIThreatHistory.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AITunnelSearch.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIUiLayout.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIUiPointerCapture.cs",
+        "same":  true
+    },
+    {
+        "name":  "\\Scripts\\Core\\AIWallRisk.cs",
+        "same":  true
+    }
+]

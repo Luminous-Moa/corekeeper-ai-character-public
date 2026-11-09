@@ -1,0 +1,1 @@
+{"status":"pass","errors":[],"nodes":7,"edges":31,"activityElements":23,"functionMappings":8,"overlaySha256":"b80835c3f9b88173bf04ee37b2943dc9d5e6feee48f56d099d2abf0354c8f7bb","limit":"Reference validation only; not runtime trace. C3 actual result and B version boundaries remain separate."}

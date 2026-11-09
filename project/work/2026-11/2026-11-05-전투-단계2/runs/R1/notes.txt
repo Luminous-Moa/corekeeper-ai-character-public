@@ -1,0 +1,37 @@
+15:05:19 R1 build fc8161b installed (30 .cs diff 0); backup R1/backup verify 0; switches on, lowgfx 30
+15:07:41 new world rftest seed 917121490949 일반 default slot 7: create clicked
+15:08:39 in world rftest id d2c05007540c9fa1017cfba9f0a3cd88, /ai on
+15:08:39 R1 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=177.2 @Claude TEST-ONLY arena go: cleared 3 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=188.2 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=191.4 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=37; items=[1:SmallLanternx1, 2:FoodRationx3, 10:WoodSwordx88] equipped=0번 칸 빈손]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=196.7 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+15:09:13 R1 end: down (wall 10s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=209.0 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.57,39.50) end=(-30.57,39.50) facts=[slots=130 emptyInFirst40=36; items=[0:WoodSwordx86, 1:SmallLanternx1, 2:FoodRationx3, 3:Woodx1] equipped=2번 칸 FoodRation]
+[AIPlayerSpike] t=210.5 @Claude VITALS: stood up again after 5.1s at (0.0,-0.1) health 100/100 hunger 70
+sent /ai look
+[AIPlayerSpike] t=215.9 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(0.00,-0.14) end=(0.00,-0.14) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x23.9
+15:09:23 R1 done
+15:09:23 R2 begin: arena go -30 36, spawn '1 MushroomBrute 4'
+sent /ai claude arena go -30 36
+[AIPlayerSpike] t=221.3 @Claude TEST-ONLY arena go: cleared 1 enemies; teleport to (-30,36) (spot -30,36); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 10
+sent /ai look
+[AIPlayerSpike] t=232.2 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+sent /ai inv
+[AIPlayerSpike] t=235.4 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-30.00,36.00) end=(-30.00,36.00) facts=[slots=130 emptyInFirst40=36; items=[1:SmallLanternx1, 2:FoodRationx3, 3:Woodx1, 10:WoodSwordx88] equipped=2번 칸 FoodRation]
+sent /ai arena spawn 1 MushroomBrute 4
+[AIPlayerSpike] t=240.2 @Claude TEST-ONLY arena spawn: cleared 0 enemies within 25 tiles of (-30,36); spawned 1 MushroomBrute at (-26,36)
+15:10:06 R2 end: kill (wall 19s after spawn)
+sent /ai inv
+[AIPlayerSpike] t=261.4 @Claude SKILL 가방 DONE after 0.0s: reason='' start=(-32.25,35.40) end=(-32.25,35.40) facts=[slots=130 emptyInFirst40=34; items=[0:WoodSwordx70, 1:SmallLanternx1, 2:FoodRationx3, 3:Woodx1, 4:GiantMushroom2x1, 5:Mushroomx4] equipped=0번 칸 WoodSword]
+sent /ai look
+[AIPlayerSpike] t=263.7 @Claude SKILL 보기 DONE after 0.0s: reason='' start=(-32.25,35.40) end=(-32.25,35.40) facts=[rule='사람 화면 크기(호스트 카메라 실측), 벽 너머 포함, 빛·어둠 미반영' half=(15.0,11.9) host camera ortho=8.44 aspect=1.778 px=2800x1752 ground rect 30.0x
+15:10:11 R2 done
+15:10:36 /ai off confirmed in log (t=273.4 Walking->Stopped->Disabled); AI folder collected
+15:11:43 rftest deleted in game
+15:14:01 restore, relaunch check (compiled 1, localExists=False 0), reg import, final verify

@@ -1,0 +1,16 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const W='C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work',T=W+'/리팩토링-20261106',S=T+'/graph-stage',B=T+'/canonical-graph-before-apply',sha='902721ec505df42d74d0b2d245ed34a049faadad';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'')),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const head=execFileSync('git',['-C','C:/Dev/CoreKeeperModSDK','rev-parse','HEAD'],{encoding:'utf8'}).trim();if(head!==sha)throw Error('Main HEAD not approved final SHA');
+const before=read(S+'/canonical-before.json');for(const f of before)if(hash(f.path)!==f.sha256)throw Error('Concurrent canonical modification '+f.path);
+const P='2026-11/2026-11-05-지식그래프-개편',L='2026-11/2026-11-05-지식그래프-실화면';
+const files=['지식그래프/README.md','지식그래프/제품그래프-사용법.md','지식그래프/tools/config.json','지식그래프/기획/기능.md','지식그래프/기획/미결.md',...['extractor/build.mjs','extractor/pin-snapshot.mjs','extractor/verify.mjs','inference.graph.json','validation-review.json','README.md'].map(p=>P+'/B/'+p),...['B/code-version-mapping.md','B/remap-base.mjs','C/overlay-source.json','D/integrate.mjs','D/questions.mjs'].map(p=>L+'/'+p)];
+const evidence=S+'/work/'+L+'/C/refactor-20261106';for(const n of fs.readdirSync(evidence))files.push(L+'/C/refactor-20261106/'+n);
+const changes=[];
+for(const rel of files){const from=S+'/work/'+rel,to=W+'/'+rel;fs.mkdirSync(path.dirname(to),{recursive:true});if(fs.existsSync(to)&&!before.some(f=>f.path.replaceAll('\\','/')===to))throw Error('New destination already exists '+to);fs.copyFileSync(from,to);changes.push({path:rel,stageSha256:hash(from)});}
+const config=read(W+'/지식그래프/tools/config.json');config.codeRoot='C:/Dev/CoreKeeperModSDK';config.sessionRoot='../..';delete config.stagedDocumentRoot;fs.writeFileSync(W+'/지식그래프/tools/config.json',JSON.stringify(config,null,2)+'\n');
+for(const rel of ['지식그래프/README.md','지식그래프/제품그래프-사용법.md',P+'/B/README.md']){const p=W+'/'+rel;let s=fs.readFileSync(p,'utf8');s=s.replace(/^> 현재 문서는[^\n]*\r?\n\r?\n/,'');s='> 공식 코드 기준: `902721ec505df42d74d0b2d245ed34a049faadad` (2026-11-06 사용자 병합 승인 후 적용). 본 저장소 ai-character와 기준이 같다. 아래 과거·격리 후보 기록은 당시 검증 이력이며, 공식 적용 결과는 work/리팩토링-20261106/21-canonical-graph-apply.md를 따른다. 과거76563bf/e82eb87 증거와902721e 능력별 추가 관측은 구별한다.\n\n'+s;fs.writeFileSync(p,s);}
+const mapdoc=W+'/'+L+'/B/code-version-mapping.md';fs.writeFileSync(mapdoc,fs.readFileSync(mapdoc,'utf8').replace('현재 격리 코드 기준은','현재 공식 코드 기준은'));
+// Canonical tools keep their original resolution rules; no staged path override is installed.
+for(const rel of ['지식그래프/tools/lib.mjs','지식그래프/tools/query.mjs']){const b=before.find(f=>f.path.replaceAll('\\','/')===W+'/'+rel);if(hash(W+'/'+rel)!==b.sha256)throw Error('Canonical resolver changed unexpectedly');}
+fs.writeFileSync(T+'/canonical-applied-sources.json',JSON.stringify({sourceCommit:sha,sourceCount:files.length,files:changes.map(x=>({...x,canonicalSha256:hash(W+'/'+x.path)})),canonicalResolverUnchanged:true,stagedOverrideRemoved:true},null,2)+'\n');console.log(JSON.stringify({mainHead:head,sourceFilesApplied:files.length,authoredFiles:files.length-fs.readdirSync(evidence).length,evidenceFiles:fs.readdirSync(evidence).length,codeFiles:config.codeFiles.length,resolver:'original canonical unchanged'}));

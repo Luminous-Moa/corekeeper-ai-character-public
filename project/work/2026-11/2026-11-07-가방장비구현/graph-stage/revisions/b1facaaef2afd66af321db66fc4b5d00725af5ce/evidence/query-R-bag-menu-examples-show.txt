@@ -1,0 +1,69 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "# 현재 메뉴 노드 표본",
+        "doc": "bagMenuSamples",
+        "end": 117,
+        "line": 1,
+        "path": "../2026-11-07-가방장비구현/menu-examples.md",
+        "sha256": "6533714e22a3abce459e822961a39b058e6a58ae0df5bfea78dd28be7cd69dec",
+        "start": 1
+      }
+    ],
+    "id": "R.bag-menu-examples",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 117,
+        "path": "../2026-11-07-가방장비구현/menu-examples.md",
+        "start": 1
+      }
+    ],
+    "status": "참고·단독 메뉴 어댑터, 미외부모델·미실게임",
+    "summary": "실제 menu/inventory 소스에 대역 World/수동 결과를 공급한 현재 노드 자식 예시다. 연결된 실제 Loop 전송·실제 외부 모델·게임 소비자 성공과 구별한다.",
+    "title": "현재 메뉴 노드 payload 표본",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 현재 메뉴 노드 표본",
+          "doc": "bagMenuSamples",
+          "end": 117,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/menu-examples.md",
+          "sha256": "6533714e22a3abce459e822961a39b058e6a58ae0df5bfea78dd28be7cd69dec",
+          "start": 1
+        }
+      ],
+      "from": "P.bag-item-first",
+      "id": "E115",
+      "kind": "참고: 현재 보유 노드 표본",
+      "to": "R.bag-menu-examples",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 현재 메뉴 노드 표본",
+          "doc": "bagMenuSamples",
+          "end": 117,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/menu-examples.md",
+          "sha256": "6533714e22a3abce459e822961a39b058e6a58ae0df5bfea78dd28be7cd69dec",
+          "start": 1
+        }
+      ],
+      "from": "R.bag-navigation",
+      "id": "E116",
+      "kind": "참고: 현재 노드 자식·선택 경로 예시",
+      "to": "R.bag-menu-examples",
+      "type": "reference"
+    }
+  ]
+}

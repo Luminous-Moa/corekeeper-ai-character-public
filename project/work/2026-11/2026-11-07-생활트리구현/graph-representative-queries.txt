@@ -1,0 +1,464 @@
+> node tools/product.mjs "intent"
+P.release-goal — Core Keeper 모드로 만들어 배포 [합의]
+AI 단톡방 멤버들과 게임 안에서 자연어로 협력하고 함께 생활하는 경험을 Core Keeper 모드로 만들어 배포하는 것이 제작자의 최종 목표다.
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-모드배포-최종목표.md:3
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-모드배포-최종목표.md:5
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-플레이경험과-기획큰그림.md:5
+  모드가 제공할 플레이 경험 [합의] → P.experience — 동료·친구와 협력하고 생활하는 경험 [합의]
+
+> node tools/product.mjs "intent" "P.life-tree-first-scope"
+P.release-goal — Core Keeper 모드로 만들어 배포 [합의]
+  모드가 제공할 플레이 경험 [합의]
+P.experience — 동료·친구와 협력하고 생활하는 경험 [합의]
+  생활 경험으로 구체화 [해석]
+P.life — 자율 생활과 사용자 도움을 함께 이어감 [합의]
+  생활 행동의 선택 탐색으로 구체화 [합의]
+P.life-tree — 생활 선택지를 필요한 단계로 좁혀 탐색 [합의]
+  첫 구현 단위로 구체화 [HEAD 승인]
+P.life-tree-first-scope — 첫 단위는 제작·요리·농사·보관/꺼내기 [HEAD 승인·구현 범위]
+공통 탐색과 기존 네 갈래의 실제 선택·실행·결과를 연결한다. 승인된 범위이며 아직 구현 완료나 정상 AI 실게임 관측을 뜻하지 않는다. 가방장비 실행을 별도로 복제하지 않는다.
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-생활트리구현\02-direction-decision.md:5
+  전체 시설 생활의 남은 단위 [HEAD 승인] → Q.life-tree-followup — 수리·자동 가공·강화·거래·낚시는 후속 실행 단위 [후속 범위·이번 단위 미구현]
+  실제 결과와 진척의 구현 기준 [HEAD 승인] → P.life-tree-result — 실행량·확보량과 원래 부탁의 완료를 구분 [HEAD 승인·구현 기준]
+  참고: 승인된 구체 구현 명세 [해석] → R.life-tree-spec — 생활 트리 첫 단위의 승인 명세 [참고·승인된 구현 명세]
+  참고: 수용된 본 코드 구현 [해석] → R.life-tree-implementation — 생활 트리c4a0f5e 구현과 본 코드 통합 [참고·구현 및 본 코드 통합]
+
+> node tools/product.mjs "source" "P.life-tree-count"
+== ../2026-11-07-생활트리구현/02-direction-decision.md:3-3 sha256=7284fbb44f74e66daa839c8e47b6df3066d3b4b6f45e53e24d3144bfc6a946ef
+3: [개발 방향](01-direction.md)을 승인한다. 수량 조합을 열거하지 않고 상위 계획의 작업량을 쓰며, 현장은 트리에서 대상·재료·시설을 좁혀 실행한다. 탐색은 읽기 전용으로 현재 행동과 대기 선택을 보존하고 직접 실행과 같은 실행/재검증 입구로 연결한다.
+
+> node tools/product.mjs "show" "P.life-tree-readonly"
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "- 탐색 도중 돌아가기와 다른 작업 선택이 가능하다.",
+        "doc": "lifeTreeAgreement",
+        "end": 12,
+        "line": 12,
+        "path": "../2026-11-07-생활트리구현/00-agreement.md",
+        "sha256": "a11f2508a8ce3caf37819d986871ada9fb96db2bc5804c4ca78f74a9a8d3e2a9",
+        "start": 12
+      }
+    ],
+    "id": "P.life-tree-readonly",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 12,
+        "path": "../2026-11-07-생활트리구현/00-agreement.md",
+        "start": 12
+      }
+    ],
+    "status": "합의",
+    "summary": "뒤로·루트·다른 갈래로 탐색하고 닫을 수 있다. 탐색만으로 유효한 몸 행동·대기 선택·목표·원래 부탁을 취소하거나 완료하지 않는다.",
+    "title": "탐색은 현재 몸 행동을 바꾸지 않는 조회",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 12,
+          "path": "../2026-11-07-생활트리구현/00-agreement.md",
+          "start": 12
+        }
+      ],
+      "from": "P.life-tree-readonly",
+      "kind": "c4a0f5e 생활 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "c4a0f5e38016c79567f880bbaea5e56e0eeae347",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.HandleResponse(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 12,
+          "path": "../2026-11-07-생활트리구현/00-agreement.md",
+          "start": 12
+        }
+      ],
+      "from": "P.life-tree-readonly",
+      "kind": "c4a0f5e 생활 구현 입구",
+      "runtimeTrace": false,
+      "sourceCommit": "c4a0f5e38016c79567f880bbaea5e56e0eeae347",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Navigate(LifeNav)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "- 탐색 도중 돌아가기와 다른 작업 선택이 가능하다.",
+          "doc": "lifeTreeAgreement",
+          "end": 12,
+          "line": 12,
+          "path": "../2026-11-07-생활트리구현/00-agreement.md",
+          "sha256": "a11f2508a8ce3caf37819d986871ada9fb96db2bc5804c4ca78f74a9a8d3e2a9",
+          "start": 12
+        }
+      ],
+      "from": "P.life-tree",
+      "id": "E078",
+      "kind": "몸 실행과 조회를 구별",
+      "to": "P.life-tree-readonly",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "- 탐색 도중 돌아가기와 다른 작업 선택이 가능하다.",
+          "doc": "lifeTreeAgreement",
+          "end": 12,
+          "line": 12,
+          "path": "../2026-11-07-생활트리구현/00-agreement.md",
+          "sha256": "a11f2508a8ce3caf37819d986871ada9fb96db2bc5804c4ca78f74a9a8d3e2a9",
+          "start": 12
+        }
+      ],
+      "from": "P.valid-action",
+      "id": "E084",
+      "kind": "조회 중 유효한 행동 보존",
+      "to": "P.life-tree-readonly",
+      "type": "reference"
+    }
+  ]
+}
+
+> node tools/product.mjs "show" "Q.life-tree-followup"
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "수리·자동 가공·강화·거래·낚시의 새 몸 실행은 개발 방향의 후속 단위로 유지한다.",
+        "doc": "lifeTreeDirection",
+        "end": 5,
+        "line": 5,
+        "path": "../2026-11-07-생활트리구현/02-direction-decision.md",
+        "sha256": "7284fbb44f74e66daa839c8e47b6df3066d3b4b6f45e53e24d3144bfc6a946ef",
+        "start": 5
+      }
+    ],
+    "id": "Q.life-tree-followup",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 5,
+        "path": "../2026-11-07-생활트리구현/02-direction-decision.md",
+        "start": 5
+      }
+    ],
+    "status": "후속 범위·이번 단위 미구현",
+    "summary": "첫 네 갈래 이후의 새 몸 실행 단위다. 탐색 갈래나 실행 가능한 말단으로 이름만 올려 지원 능력으로 표시하지 않는다. 전체 시설 생활 완료로 보고하지 않는다.",
+    "title": "수리·자동 가공·강화·거래·낚시는 후속 실행 단위",
+    "type": "기획 항목"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "HEAD 승인",
+      "evidence": [
+        {
+          "anchor": "수리·자동 가공·강화·거래·낚시의 새 몸 실행은 개발 방향의 후속 단위로 유지한다.",
+          "doc": "lifeTreeDirection",
+          "end": 5,
+          "line": 5,
+          "path": "../2026-11-07-생활트리구현/02-direction-decision.md",
+          "sha256": "7284fbb44f74e66daa839c8e47b6df3066d3b4b6f45e53e24d3144bfc6a946ef",
+          "start": 5
+        }
+      ],
+      "from": "P.life-tree-first-scope",
+      "id": "E085",
+      "kind": "전체 시설 생활의 남은 단위",
+      "to": "Q.life-tree-followup",
+      "type": "reference"
+    }
+  ]
+}
+
+> node tools/product.mjs "source" "R.life-tree-implementation"
+== ../2026-11-07-생활트리구현/08-integration.md:3-3 sha256=b92422712bd53dc0ff797032de657fec034eb58df1648771592fe6a51cd190be
+3: 공식 C:/Dev/CoreKeeperModSDK의 ai-character를 685dde4에서 c4a0f5e38016c79567f880bbaea5e56e0eeae347로 fast-forward 반영했다. 이 판은 공통 실행 및 정확한 가방장비 실행을 포함하며 생활 트리의 제작·요리·농사·보관/꺼내기를 연결한다.
+
+> node tools/product.mjs "source" "R.life-tree-review"
+== ../2026-11-07-생활트리구현/07-review.md:63-75 sha256=7988c35075877fd408dd6f73265aa324a764fea96a28f71726d39619f774887c
+63: ## 수정 후 검수 — c4a0f5e
+64: 
+65: 후속 고정 후보는 `c4a0f5e38016c79567f880bbaea5e56e0eeae347`이다. `24c61c2..c4a0f5e`의 제품·검증 diff와 작업트리 status를 직접 확인했다. 제품/Tools 미커밋은 없고 Unity 환경 사본만 남는다. 이 절은 수정 전 R1~R3의 근거를 덮지 않는다.
+66: 
+67: R1: `ProgressKey`가 Mode/Item/Second/Where를 모두 원래 목표의 지정값 또는 빈 wildcard로 정규화한다. 같은 상위 목표에서 현장 종자·재료·출력 종류를 좁혀도 count를 공유하고, 명시 selector 충돌의 MatchesGoal=false는 Record 보호를 유지한다. 주 검수자가 최종판 `Tools/life-tests/run.ps1`을 직접 실행해 **96/0, exit0**을 확인했다([독립 최종 생활 로그](review-final-life.log)). 실제 Protocol→SetGoalFrom/Goal→트리→HandleResponse/Apply→FarmSkill의 A4+B2 결과와 양쪽 종자의 추가 leaf 차단, 명시 SeedA와 다른 SeedB1 진척 미합산을 확인한다. cook의 미지정 second/출력별 공유는 실제 AILife에 구조화 결과를 전달하는 경계 표본이며 CookSkill 자체를 이 harness에서 실행하지 않는다.
+68: 
+69: CostAllows: 기존 Tick의 `usage.usd >= monthlyCapUsd` 분기를 같은 위치의 `if (!CostAllows(now)) return`으로 추출한 정적 동등성을 확인했다. 원래 log/reply/retryAt+30은 유지하고 return은 false로, 통과는 true로 반환한다. 새 비용 정책은 없다. 위 독립 96건에는 상한 직전 허용, 상한에서 새 호출 보류와 retry30, 현재 probe·held/queued·목표·실행 카운터 불변 검사가 들어 있다. 전체 Tick 스케줄러 실행 증거로 확대하지 않는다.
+70: 
+71: R2: 실제 열린 자기 상자의 source 슬롯을 먼저 읽고 그 ID/variation/slot을 Resolve에 전달해 일치 여부·요청량·progressGoal를 다시 판정한다. 미지정/base 목적지는 기존 BaseRadius 계약과 같은 거리식을 사용한다. 다른 품목을 숨기지 않고 별도1개로 노출하며 원래 keep/count/진척을 다른 품목에 적용하지 않는다. 하위 독립 재검수는 최종 고정 생산 InventorySkill과 AILife의 Sync/Matches/Bind/Resolve/Remaining 원문 prefix를 직접 컴파일해 **18개 검사 통과, exit0**을 확인했다. 중간 표본의 수동 MatchesGoal 주입 한계는 이 최종 표본에서 해소됐다. take/store 양쪽에서 Ore1→Wood 진척0/미완료→Wood3→진척3을 확인하고 take 확보3/store 확보0도 구분했다. 주 검수자가 수정 diff·최종 표본/보고서와 구현자 91/0 로그를 대조했다([독립 보관 최종 로그](review-farm-inventory-boundary-final/boundary.log)).
+72: 
+73: R3: 전체 생산 WantedItems가 실제 ExactCandidate를 먼저 호출하고 실행 후보가 있으면 legacy 준비 추정을 건너뛴다. 재료 부족으로 실행 불가인 실제 runtime recipe의 비용/출력 메타데이터는 준비 부족량 설명에 재사용하되, 실행 가능은 ReadRecipe bool 성공을 계속 요구한다. 전체 AIBrain.Prep.cs를 직접 컴파일한 독립 최소 표본 **2/0, exit0**에서 Wood2/요청3/출력2의 직접·트리 key/station/2회/예상4/비용2가 같고 불필요 준비가 없는 것, Wood1일 때 실행 불가·부족1인 것을 확인했다. 이는 수정 전의 생산 함수+Prep 정적 대조보다 강한 **전체 WantedItems 실행** 근거다([독립 제작 최종 로그](review-cook-craft-boundary-c4a0f5e/craft/run.log)).
+74: 
+75: 추가 직접 영향: 요리의 같은 재료 1+1 분리 스택을 두 정확 source로 고정해 투입1/음식 확보0을 확인하고, 2+2+2+2 스택에서 전체가능4/이번 고정묶음2/부족0을 구별한 독립 **4/0, exit0** 표본을 대조했다([독립 요리 최종 로그](review-cook-craft-boundary-c4a0f5e/cook/run.log)). 농사 소수 diff는 명시 mode의 도구 준비·실제 dug ground·상위 where의 6칸 전체제한 방지·확인된 종자 기억/유지관리 준비 복원에 한정된다. 명시 mode는 앞의 ExactCandidate 반환을 유지해 다른 종자/야생 수집으로 대체하지 않는다. 화면 밖 기억과 현재 관측·소유 권한 경계를 확장하는 새 중요 오류는 확인하지 않았다.
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Compose(World, Entity, AIObservation, string, bool, System.Collections.Generic.List<AICandidate>, AICandidate)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AILife.cs:136-180 sha256=0080f00ff8c9e65a25e27bd8cf852a4a2388c759a662503679c6c915b3fea750
+136:     public static List<AICandidate> Compose(World world, Entity player, AIObservation observation, string currentKey, bool combat, List<AICandidate> actual, AICandidate direct = null)
+137:     {
+138:         var s = Sync(); s.Offered.Clear(); s.Facts = "";
+139:         actual.RemoveAll(c => c.life != null && RequestSatisfied(c.life));
+140:         if (combat) { actual.RemoveAll(c => c.life != null || c.lifeNav != null); return actual; }
+141:         if (AIGoals.Goal.kind == GoalKind.None) return actual;
+142:         if (!s.Cursor.Open) { actual.Add(Nav(s, "open", "", "생활 선택지 열기", true)); return actual; }
+143:         var result = actual.FindAll(c => c.kind == "continue" || c.kind == "eat" || c.kind == "doorclose");
+144:         // A fully specified goal remains executable without traversing the cursor.
+145:         direct = direct ?? actual.Find(c => c.life != null && c.life.MatchesGoal && c.kind != "continue");
+146:         if (direct != null && RequestSatisfied(direct.life)) direct = null;
+147:         if (direct != null && string.IsNullOrEmpty(direct.value)) direct.value = "life_exec:" + direct.key;
+148:         if (direct != null && !result.Exists(c => c.key == direct.key)) result.Add(direct);
+149:         var all = Entries(world, player, observation, currentKey) ?? new List<Entry>();
+150:         var selectable = new List<Entry>(); var facts = new List<string>();
+151:         foreach (var e in all)
+152:         {
+153:             if (e.Candidate == null && string.IsNullOrEmpty(e.Op)) { if (!string.IsNullOrEmpty(e.Text)) facts.Add(e.Text); continue; }
+154:             selectable.Add(e);
+155:         }
+156:         selectable.Sort((a, b) => StringComparer.Ordinal.Compare(a.Id ?? a.Candidate?.key, b.Id ?? b.Candidate?.key));
+157:         // Never change revision merely because observations redraw a depth. A vanished page is shown as empty with prev.
+158:         int start = s.Cursor.Page * 5;
+159:         for (int i = start; i < selectable.Count && i < start + 5; i++)
+160:         {
+161:             var e = selectable[i]; e = e.Observe?.Invoke() ?? e;
+162:             if (e.Candidate == null && string.IsNullOrEmpty(e.Op)) { if (!string.IsNullOrEmpty(e.Text)) facts.Add(e.Text); continue; }
+163:             if (e.Candidate != null)
+164:             {
+165:                 var candidate = e.Candidate;
+166:                 if (candidate.life == null) candidate.life = ForCursor();
+167:                 if (candidate.life.MatchesGoal && AIGoals.Goal.count > 0 && Remaining(candidate.life) == 0) { facts.Add("명시 요청량의 확인된 작업 충족; finish_goal 여부를 직접 선택"); continue; }
+168:                 if (!candidate.life.MatchesGoal) candidate.desc += " · 원래 단계 밖의 별도 행동; 목표 진척에 합산하지 않음";
+169:                 if (!result.Exists(c => c.key == candidate.key)) { candidate.value = "life_exec:" + candidate.key; result.Add(candidate); }
+170:             }
+171:             else result.Add(Nav(s, e.Op, e.Id, e.Text));
+172:         }
+173:         if (s.Cursor.Branch != "") result.Add(Nav(s, "back", "", "뒤로 가기"));
+174:         result.Add(Nav(s, "root", "", "생활 루트로"));
+175:         result.Add(Nav(s, "close", "", "생활 목록 닫기"));
+176:         if (s.Cursor.Page > 0) result.Add(Nav(s, "page", (s.Cursor.Page - 1).ToString(), "이전 페이지"));
+177:         if ((long)start + 5 < selectable.Count) result.Add(Nav(s, "page", (s.Cursor.Page + 1).ToString(), "다음 페이지"));
+178:         s.Facts = string.Join(" / ", facts);
+179:         return result;
+180:     }
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Navigate(LifeNav)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AILife.cs:187-193 sha256=0080f00ff8c9e65a25e27bd8cf852a4a2388c759a662503679c6c915b3fea750
+187:     public static string Navigate(LifeNav nav)
+188:     {
+189:         string why = NavStale(nav); if (why != null) return why;
+190:         var s = Sync(); why = s.Cursor.Apply(nav, AIAgent.Cur.Id, AIGoals.GoalRevision);
+191:         if (why == null) s.Offered.Clear();
+192:         return why;
+193:     }
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Resolve(LifeSelection)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AILife.cs:76-76 sha256=0080f00ff8c9e65a25e27bd8cf852a4a2388c759a662503679c6c915b3fea750
+76:     public static LifeSelection Resolve(LifeSelection selection) => Bind(selection.Copy());
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs#AIFarm.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIFarm.cs:690-740 sha256=360ac6fa37859cbb323aa875e2dc68622218c9a6aab2682193f1426835a3ae73
+690:     public static AICandidate ExactCandidate(World w, Entity p, AIObservation o, string curKey, LifeSelection request)
+691:     {
+692:         if (AILife.RequestSatisfied(request)) return null;
+693:         if (request == null || string.IsNullOrEmpty(request.Mode) || request.Mode == "plant" && string.IsNullOrEmpty(request.Item)) return null;
+694:         if (Coordinates(request.Where, "tile:", 2, out var xy))
+695:         {
+696:             var tile = new int2(xy[0], xy[1]);
+697:             if (!AIVision.CanSee(o.pos, tile) && (IsOwnPlot(tile) || request.Mode == "fill" && S.water.ContainsKey(tile)))
+698:             {
+699:                 if (GoOption(w, p, o.pos, tile, request.Mode == "fill" ? "기억한 물" : "기억한 자기밭", "화면 밖·현재 상태 모름, 도착 후 재관측", curKey, out var go)) return go;
+700:                 return null;
+701:             }
+702:         }
+703:         var snap = Take(w, p, o.pos); var targets = Eligible(w, p, o, request, snap);
+704:         if (targets.Count == 0)
+705:         {
+706:             if (snap.plots > 0 && snap.inView == 0 && GoOption(w, p, o.pos, FieldCentre(), "내 밭", "화면 밖·현재 상태 모름, 도착 후 재관측", curKey, out var go)) return go;
+707:             return null;
+708:         }
+709:         int source = -1; ContainedObjectsBuffer selected = default;
+710:         for (int i = AIInventory.MainStart(w, p); i < AIInventory.MainEnd(w, p); i++)
+711:         {
+712:             if (!AIInventory.Read(w, p, i, out var x) || x.objectID == ObjectID.None) continue;
+713:             var info = PugDatabase.GetObjectInfo(x.objectID, x.variation); if (info == null) continue;
+714:             bool usable = request.Mode == "plant" ? ItemFilter(request.Item, x.objectID, x.variation) && x.amount > 0 && SeedConfirmed(w, x.objectID, x.variation, out _) : request.Mode == "hoe" || request.Mode == "harvest" ? info.objectType == ObjectType.Hoe && !PlayerController.ItemIsBroken(x.objectData) : info.objectType == ObjectType.WaterCan && !PlayerController.ItemIsBroken(x.objectData);
+715:             if (usable && (source < 0 || request.Mode == "plant" && x.amount > selected.amount)) { source = i; selected = x; }
+716:         }
+717:         if (source < 0) return null;
+718:         var sources = new List<int>(); var sourceItems = new List<ContainedObjectsBuffer>();
+719:         sources.Add(source); sourceItems.Add(selected);
+720:         int seedCount = selected.amount;
+721:         if (request.Mode == "plant")
+722:             for (int i = AIInventory.MainStart(w, p); i < AIInventory.MainEnd(w, p); i++)
+723:                 if (i != source && AIInventory.Read(w, p, i, out var x) && x.objectID == selected.objectID && x.variation == selected.variation && x.amount > 0)
+724:                 { sources.Add(i); sourceItems.Add(x); seedCount += x.amount; }
+725:         int available = targets.Count;
+726:         if (request.Mode == "plant") available = math.min(available, seedCount);
+727:         if (request.Mode == "water") available = math.min(available, selected.amount / WaterPerUse);
+728:         if (request.Mode == "fill") available = CanCapacity(w, selected.objectID) > selected.amount ? math.min(1, available) : 0;
+729:         int requested = request.RequestedCount > 0 ? request.RequestedCount : math.min(6, available);
+730:         int offered = math.min(6, math.min(requested, available)); if (offered <= 0) return null;
+731:         var payload = new Selection { Mode = request.Mode, SourceSlot = source, Item = selected, Offered = offered, Requested = requested };
+732:         payload.SourceSlots.AddRange(sources); payload.SourceItems.AddRange(sourceItems);
+733:         payload.Tiles.AddRange(Nearest(targets, o.pos, offered));
+734:         foreach (var tile in payload.Tiles) payload.Before.Add(ReadTile(w, tile, snap.crops));
+735:         payload.Key = $"farm:{request.Mode}:{selected.objectID}#v{selected.variation}:s{source}:a{selected.auxDataIndex}:v{selected.variationUpdateCount}:n{offered}:" + string.Join(";", payload.Tiles.ConvertAll(t => $"{t.x},{t.y}"));
+736:         for (int i = 0; i < sources.Count; i++) payload.Key += $":src{sources[i]}={sourceItems[i].auxDataIndex},{sourceItems[i].amount},{sourceItems[i].variationUpdateCount}";
+737:         var binding = request.Copy(); binding.OfferedCount = offered;
+738:         return new AICandidate { kind = "farm", key = payload.Key, actionMode = request.Mode, tiles = new List<int2>(payload.Tiles), tile = payload.Tiles[0], itemId = selected.objectID, itemVariation = selected.variation, itemCount = offered, progress = binding.MatchesGoal, farm = payload, life = binding,
+739:             desc = $"{request.Mode} — {selected.objectID}(변형 {selected.variation}, 선택 슬롯 {source})로 [{string.Join(" ", payload.Tiles.ConvertAll(t => $"({t.x},{t.y})"))}]. 요청 {requested}칸 / 이번 시도 {offered}칸 / 현재 가능 {available}칸 / 잔량 {math.max(0, requested - offered)}칸 / 현재 부족 {math.max(0, requested - available)}칸. 작업 확인과 실제 가방 확보는 따로 관측." };
+740:     }
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AICook.cs#AICook.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AICook.cs:613-680 sha256=1b54548fae8835bff05cc8e94ef6074e4ad7ea838d1d56361b5c22dc11512201
+613:     public static AICandidate ExactCandidate(World w, Entity p, AIObservation o, string currentKey, LifeSelection s)
+614:     {
+615:         if (s == null || AILife.RequestSatisfied(s) || string.IsNullOrEmpty(s.Mode) || string.IsNullOrEmpty(s.Where)) return null;
+616:         var own = PotsInView(w, p).Find(v => Own(v) != null && PotKey(v) == s.Where);
+617:         if (own == null)
+618:         {
+619:             var memory = OwnPots().Find(m => PotKey(m) == s.Where);
+620:             if (memory == null || AIVision.CanSee(o.pos, memory.tile)) return null;
+621:             var stands = AICraft.StandTilesFor(w, p, new AIMemory.Station { id = memory.id, tile = memory.tile });
+622:             var plan = AIApproach.FirstCached(w, p, stands, out int2 st, out _);
+623:             if (plan == null) return null;
+624:             var move = AIApproach.WalkCandidate(st, "내 요리 솥", false, $"내 솥 ({memory.tile.x},{memory.tile.y})으로 가서 확인 — 화면 밖, {AIMemory.Ago(memory.seenUnix)} 마지막 관측 {memory.last}; 현재 상태 모름. 도착 뒤 다시 선택.");
+625:             move.life = s.Copy(); return move;
+626:         }
+627:         if (s.Mode == "wait")
+628:         {
+629:             if (!own.Cooking) return null;
+630:             int sec = math.clamp((int)math.ceil(math.max(0f, own.timeLeft)), 1, 5);
+631:             string key = $"cookwait:{own.entity.Index}:{own.entity.Version}";
+632:             return new AICandidate { kind = "cookwait", key = key, entity = own.entity, tile = own.tile, waitSeconds = sec, life = s.Copy(), desc = $"솥 {own.Text} 옆에서 {sec}초 기다리기(투입·가방 확보 아님)" };
+633:         }
+634:         if (s.Mode != "put" && s.Mode != "fill" && s.Mode != "take") return null;
+635:         var x = new Selection { Pot = own.entity, Mode = s.Mode, Where = PotKey(own), OutputSlot = own.outIdx };
+636:         if (!AIInventory.Read(w, own.entity, 0, out x.InputA) || !AIInventory.Read(w, own.entity, 1, out x.InputB) || !AIInventory.Read(w, own.entity, own.outIdx, out x.BeforeOutput)) return null;
+637:         int requested = s.RequestedCount, available, sourceAvailable;
+638:         Pair pair = null;
+639:         if (s.Mode == "take")
+640:         {
+641:             if (own.outN <= 0 || !IngredientMatches(s.Item, own.outId, own.outVar)) return null;
+642:             x.Output = own.outId; x.OutputVariation = own.outVar;
+643:             available = math.min(own.outN, MainRoom(w, p, x.BeforeOutput));
+644:             sourceAvailable = available;
+645:             x.Amount = math.min(requested > 0 ? requested : own.outN, available);
+646:         }
+647:         else
+648:         {
+649:             if (string.IsNullOrEmpty(s.Item) || s.Mode == "put" && (string.IsNullOrEmpty(s.Second) || !own.Empty) || s.Mode == "fill" && !(own.nA > 0 && own.nB == 0)) return null;
+650:             var a = Source(w, p, s.Item); if (a.slot < 0) return null;
+651:             x.A = a.item.objectID; x.VarA = a.item.variation; x.SourceA = a.item; x.SlotA = a.slot;
+652:             if (s.Mode == "put")
+653:             {
+654:                 var b = Partner(w, p, a, s.Second); if (b.slot < 0) return null;
+655:                 x.B = b.item.objectID; x.VarB = b.item.variation; x.SourceB = b.item; x.SlotB = b.slot;
+656:                 pair = Predict(w, x.A, x.B); if (pair == null) return null;
+657:                 sourceAvailable = x.SlotA == x.SlotB ? a.item.amount / 2 : math.min(a.item.amount, b.item.amount);
+658:                 available = x.A == x.B && x.VarA == x.VarB ? MainCount(w, p, x.A, x.VarA) / 2
+659:                     : math.min(MainCount(w, p, x.A, x.VarA), MainCount(w, p, x.B, x.VarB));
+660:                 available = math.min(available, math.min(SlotRoom(w, own.entity, 0, a.item), SlotRoom(w, own.entity, 1, b.item)));
+661:             }
+662:             else
+663:             {
+664:                 pair = Predict(w, own.inA, x.A); if (pair == null) return null;
+665:                 sourceAvailable = a.item.amount;
+666:                 available = math.min(own.nA, math.min(MainCount(w, p, x.A, x.VarA), SlotRoom(w, own.entity, 1, a.item)));
+667:             }
+668:             if (own.outN > 0 && (own.outId != pair.dish || own.outVar != pair.variation)) return null;
+669:             available = math.min(available, 9999 - own.outN);
+670:             pair.n = available;
+671:             x.Amount = math.min(requested > 0 ? requested : MaxPairs, math.min(MaxPairs, math.min(available, sourceAvailable)));
+672:             x.Output = pair.dish; x.OutputVariation = pair.variation;
+673:         }
+674:         if (x.Amount <= 0) return null;
+675:         x.Key = $"cook:{x.Mode}:{x.Pot.Index}:{x.Pot.Version}:{x.A}:{x.VarA}:{x.SlotA}:{x.B}:{x.VarB}:{x.SlotB}:{x.Output}:{x.OutputVariation}:n{x.Amount}";
+676:         var binding = s.Copy(); binding.OfferedCount = x.Amount;
+677:         int shortage = requested > 0 ? math.max(0, requested - available) : 0;
+678:         return new AICandidate { kind = "cook", key = x.Key, entity = own.entity, tile = own.tile, actionMode = x.Mode, itemId = x.Mode == "take" ? x.Output : x.A, itemVariation = x.Mode == "take" ? x.OutputVariation : x.VarA, secondItemId = x.B, itemCount = x.Amount, progress = s.MatchesGoal, life = binding, cook = x,
+679:             desc = $"요리 {x.Mode} — {own.Text}. {(pair == null ? $"출력 {x.Output} 변형 {x.OutputVariation}" : pair.Text + " · " + pair.why)}. 요청 {requested} / 이번 시도 {x.Amount} / 전체 재고·시설 기준 가능 {available} / 이번 고정 출발 슬롯 묶음 가능 {sourceAvailable} / 부족 {shortage}. {(x.Mode == "take" ? "정확한 출력의 main inventory 증가로 수령 확인" : "투입 단계이며 음식 확보 아님; 실제 두 입력 확인량만 보고")}." };
+680:     }
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#AICraft.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AICraft.cs:89-124 sha256=771147611f7efb1cede64d64a83879f4220ab9c6f48336d0788a396fe536cfeb
+89:     public static AICandidate ExactCandidate(World world, Entity player, AIObservation observation, string currentKey, LifeSelection selection)
+90:     {
+91:         if (AILife.RequestSatisfied(selection)) return null;
+92:         if (!ParseItem(selection.Item, out ObjectID item) || string.IsNullOrEmpty(selection.Where)) return null;
+93:         if (observation == null) observation = AIObservation.Take(world, player, false);
+94:         Entity at = Entity.Null; string label = selection.Where;
+95:         if (selection.Where != "hand")
+96:         {
+97:             var station = StationsInView(world, player).Find(s => StationId(s) == selection.Where);
+98:             if (station == null)
+99:             {
+100:                 foreach (var memory in AIMemory.RememberedStations(observation.pos))
+101:                 {
+102:                     if (AIPlaces.ObjectId("station", memory.id.ToString(), memory.tile.x, memory.tile.y) != selection.Where || !PrefabRecipes(world, memory.id).Contains(item)) continue;
+103:                     var route = AIApproach.FirstCached(world, player, StandTilesFor(world, player, memory), out int2 stand, out _);
+104:                     if (route == null) return null;
+105:                     var walk = AIApproach.WalkCandidate(stand, $"기억한 제작대 {memory.id}", false, $"{selection.Where}로 가서 확인 — {AIMemory.Ago(memory.seenUnix)}에 마지막 관측, 현재 레시피/재료/출력 상태 모름. 도착 뒤 다시 선택(제작 아님)");
+106:                     walk.life = selection.Copy(); return walk;
+107:                 }
+108:                 return null;
+109:             }
+110:             at = station.entity;
+111:         }
+112:         int requested = selection.RequestedCount > 0 ? selection.RequestedCount : 1;
+113:         if (selection.MatchesGoal && selection.Goal is AIGoal goal && ReferenceEquals(goal, AIGoals.Goal) && goal.kind == GoalKind.Craft && goal.count > 0)
+114:         {
+115:             int mainRemaining = math.max(0, goal.count - math.max(0, MainCount(world, player, item) - goal.startCount));
+116:             if (mainRemaining == 0) return null;
+117:             requested = math.min(requested, mainRemaining);
+118:         }
+119:         if (!ReadRecipe(world, player, at, item, requested, out var recipe, out _)) return null;
+120:         string key = recipe.Key;
+121:         var binding = selection.Copy(); binding.RequestedCount = requested; binding.OfferedCount = recipe.ExpectedOutput;
+122:         return new AICandidate { kind = "craft", key = key, itemId = item, itemCount = recipe.CraftAmount, entity = at, targetLabel = label, craft = recipe, life = binding, progress = selection.MatchesGoal,
+123:             desc = $"만들기 — {item}, {label}. 요청 품목 {requested}개 / 1회 기본 출력 {recipe.BaseOutput}개 / 요청 {recipe.Calls}회(게임 amount={recipe.CraftAmount}), 예상 {recipe.ExpectedOutput}개·초과 {math.max(0, recipe.ExpectedOutput - requested)}개. 실제 비용 {string.Join(", ", recipe.Costs.ConvertAll(x => x.id + " " + x.need))}. 생산과 main 가방 수령은 따로 확인" };
+124:     }
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.CandidatesFor(World, Entity, AIObservation, string, AIGoal, AIGoal)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIInventory.cs:217-232 sha256=b0538714cb4d19de72d9b9600e603d00dc9c99adbf7b807fd86c59c41223637e
+217:     public static List<AICandidate> CandidatesFor(World world, Entity player, AIObservation observation, string currentKey, AIGoal requestGoal, AIGoal progressGoal)
+218:     {
+219:         if (requestGoal == null || (requestGoal.kind != GoalKind.Store && requestGoal.kind != GoalKind.Take) || Gate(world, player) != null) return new List<AICandidate>();
+220:         AIGoal bound = ReferenceEquals(progressGoal, AIGoals.Goal) && ReferenceEquals(progressGoal, S.goal) ? progressGoal : null;
+221:         var result = ChestCandidates(world, player, observation, currentKey, requestGoal, bound);
+222:         if (bound != null)
+223:             foreach (var candidate in result)
+224:             {
+225:                 var binding = AILife.ForGoal(bound);
+226:                 binding.Mode = requestGoal.kind == GoalKind.Store ? "store" : "take"; binding.Where = requestGoal.where; binding.Slot = candidate.inventory?.from ?? -1;
+227:                 if (candidate.inventory != null && candidate.inventory.beforeFrom.objectID != ObjectID.None) binding.Item = candidate.inventory.beforeFrom.objectID + "#v" + candidate.inventory.beforeFrom.variation;
+228:                 binding.RequestedCount = requestGoal.count > 0 ? math.max(0, requestGoal.count - (ReferenceEquals(requestGoal, bound) ? MovedForGoal(bound) : 0)) : 0; binding.OfferedCount = candidate.itemCount;
+229:                 candidate.life = binding;
+230:             }
+231:         return result;
+232:     }
+
+> node tools/product.mjs "source" "code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Ended(AISkill)"
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AILife.cs:215-225 sha256=0080f00ff8c9e65a25e27bd8cf852a4a2388c759a662503679c6c915b3fea750
+215:     public static void Ended(AISkill skill)
+216:     {
+217:         var s = Sync();
+218:         if (!s.Runs.TryGetValue(skill, out var binding)) return;
+219:         s.Runs.Remove(skill);
+220:         if (!(skill is ILifeResult r)) return;
+221:         var canonical = ProgressKey(binding); s.Progress.Record(skill.Run, canonical, r);
+222:         int left = binding.MatchesGoal ? Remaining(binding) : 0;
+223:         s.Result = $"{binding.Branch}/{binding.Mode}: 요청량 {(binding.Goal as AIGoal)?.count ?? binding.RequestedCount} / 이번 시도량 {r.RequestedWork} / 확인된 작업량 {r.ConfirmedWork} / 확보량 {r.ConfirmedReceived} / 잔량 {left}; {r.ResultStage}";
+224:         AIBrain.ObserveExecution(s.Result);
+225:     }
+

@@ -1,0 +1,20 @@
+﻿DIFF mod (14 lines)
+   => E1E4D51294F8466C \ModManifest.json
+   => 6118CABA5F72A3FB \Scripts\Scripts\AIChatHint.cs
+   => 27C5D70CD6F7DAD4 \Scripts\Scripts\AIPlayerSpikeMod.cs
+   <= D2D72FEB490B1C63 \ModManifest.json
+   <= 30F34FC0FCDFDAA0 \Scripts\Scripts\AIChatHint.cs
+   <= CE3F87D960E58538 \Scripts\Scripts\AIChatScreenLayer.cs
+   <= 2137DC8E5A3A3150 \Scripts\Scripts\AICompactFont.cs
+   <= 33A807DE099A08CD \Scripts\Scripts\AICompactFontData.cs
+DIFF aiplayers (4 lines)
+   => D797D5C1B7074E55 \a66565fae4bf489b0ec9c119ec31add3\Gemini.json
+   <= E5A557E74228785F \a66565fae4bf489b0ec9c119ec31add3\Gemini.json
+   <= E3B0C44298FC1C14 \decisionlog.on
+   <= E3B0C44298FC1C14 \testcmds.on
+same localsteam (251 files)
+same remote (49 files)
+same registry
+DIFF switch testcmds.on was True now False
+DIFF switch decisionlog.on was True now False
+verify: 4 difference group(s)

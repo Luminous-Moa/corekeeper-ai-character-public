@@ -1,0 +1,31 @@
+Updating 902721e..b25099f
+Fast-forward
+ Assets/AIPlayerSpike/Scripts/AIBase.cs             |  6 +-
+ Assets/AIPlayerSpike/Scripts/AIBody.cs             |  2 +-
+ Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs | 25 ++++--
+ Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs       |  2 +-
+ Assets/AIPlayerSpike/Scripts/AICook.cs             |  4 +-
+ Assets/AIPlayerSpike/Scripts/AIFarm.cs             |  2 +-
+ Assets/AIPlayerSpike/Scripts/AIMineSkill.cs        |  5 +-
+ Assets/AIPlayerSpike/Scripts/AIPlaces.cs           |  6 +-
+ Assets/AIPlayerSpike/Scripts/AITileReader.cs       |  9 +++
+ Assets/AIPlayerSpike/Scripts/AITunnel.cs           | 14 +++-
+ Assets/AIPlayerSpike/Scripts/Core/AIBaseGuard.cs   |  6 +-
+ .../AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs   |  7 ++
+ .../Scripts/Core/AIMoveEstimate.cs.meta            |  2 +
+ .../AIPlayerSpike/Scripts/Core/AIPickupOptions.cs  | 31 ++++++++
+ .../Scripts/Core/AIPickupOptions.cs.meta           |  2 +
+ .../AIPlayerSpike/Scripts/Core/AITunnelSearch.cs   |  2 +-
+ Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs    | 17 +++++
+ .../AIPlayerSpike/Scripts/Core/AIWallRisk.cs.meta  |  2 +
+ Tools/core-tests/ChoiceFactsTests.cs               | 88 ++++++++++++++++++++++
+ Tools/core-tests/PlaceGoalTests.cs                 |  4 +-
+ Tools/core-tests/Program.cs                        |  1 +
+ 21 files changed, 212 insertions(+), 25 deletions(-)
+ create mode 100644 Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs
+ create mode 100644 Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs.meta
+ create mode 100644 Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs
+ create mode 100644 Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs.meta
+ create mode 100644 Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs
+ create mode 100644 Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs.meta
+ create mode 100644 Tools/core-tests/ChoiceFactsTests.cs

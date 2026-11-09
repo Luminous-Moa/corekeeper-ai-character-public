@@ -1,0 +1,64 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 대표 생산 경로",
+        "doc": "expeditionValidation",
+        "end": 36,
+        "line": 26,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionValidation.md",
+        "sha256": "a3491913094e2f0a8e3e0ef08caa9078830a60c9e6cbefbac05d25e936caa709",
+        "start": 26
+      },
+      {
+        "anchor": "## Unity와 소스 동일성",
+        "doc": "expeditionValidation",
+        "end": 70,
+        "line": 60,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionValidation.md",
+        "sha256": "a3491913094e2f0a8e3e0ef08caa9078830a60c9e6cbefbac05d25e936caa709",
+        "start": 60
+      }
+    ],
+    "id": "R.expedition-offline",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 36,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionValidation.md",
+        "start": 26
+      },
+      {
+        "end": 70,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionValidation.md",
+        "start": 60
+      }
+    ],
+    "status": "참고·오프라인 실행·미실게임",
+    "summary": "execution92는 실제 Apply→body/관측→RequestReplan/Report/pending·HTTP payload와 finish_goal→OnGoalEnded→다음tick→StartNextStep→SetGoalFrom을 실행했다. gather61/native14/travel43/navigator9/producer11와 관련 회귀·전체 .NET/Unity compile을 연결한다. 물리/ECS와 외부 transport는 fixture 경계다.",
+    "title": "실제 생산 경로의 원정·후속 보고·조건 수명 검증",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 대표 생산 경로",
+          "doc": "expeditionValidation",
+          "end": 36,
+          "line": 26,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionValidation.md",
+          "sha256": "a3491913094e2f0a8e3e0ef08caa9078830a60c9e6cbefbac05d25e936caa709",
+          "start": 26
+        }
+      ],
+      "from": "R.expedition-implementation",
+      "id": "E204",
+      "kind": "참고: 실제 생산 경로 검증",
+      "to": "R.expedition-offline",
+      "type": "reference"
+    }
+  ]
+}

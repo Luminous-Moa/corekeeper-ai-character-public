@@ -1,0 +1,268 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 실제 처리 경계",
+        "doc": "observationReceipt",
+        "end": 13,
+        "line": 5,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+        "sha256": "f61022e66707ae61471e273548d690de34808b8fb866283bb338ecda6328ae8c",
+        "start": 5
+      },
+      {
+        "anchor": "## 변경한 관측",
+        "doc": "observationReceipt",
+        "end": 24,
+        "line": 15,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+        "sha256": "f61022e66707ae61471e273548d690de34808b8fb866283bb338ecda6328ae8c",
+        "start": 15
+      },
+      {
+        "anchor": "## 게임 처리 순서 독립 대조",
+        "doc": "observationReview",
+        "end": 55,
+        "line": 46,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "sha256": "984ca55262e8f724a2a453eaff5a0bd5b9943afceb1facdd1f1a88a76827eccf",
+        "start": 46
+      },
+      {
+        "anchor": "## 장비 세 부위 전달 확인",
+        "doc": "observationLiveReview",
+        "end": 15,
+        "line": 5,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+        "sha256": "1667cc4b4b04defc63b51d2f4b0f84c32dc18362ef7dd0aaae412444866f70ed",
+        "start": 5
+      }
+    ],
+    "id": "R.observation-delivery",
+    "layer": "참고",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "sourceLocations": [
+      {
+        "end": 13,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+        "start": 5
+      },
+      {
+        "end": 24,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+        "start": 15
+      },
+      {
+        "end": 55,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "start": 46
+      },
+      {
+        "end": 15,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+        "start": 5
+      }
+    ],
+    "status": "참고·공식 코드·09e418a의 세 부위 실수령",
+    "summary": "pickup 이전 sender 표식·정확 물품·자기 슬롯 감소·새 유일 floor를 귀속하고 inventory 소비 이전 동일 floor의 지정 recipient receipt를 관측한다. 이후 실제 floor 소비와 수령자 증가를 맞춘다. 수령 수량은 floor 포착과 독립적으로 매 Tick 측정하고 누락은 미관측으로 표시한다. 송신 drop을 자동 반복하지 않으며 이전 목표의 완료가 새 목표 수령량을 올리지 않게 한다. 09e418a에서 세 부위 각각1개 실수령과 후속 단계 진행을 확인했다. 해당 receipt 소스는20b1aced에서 동일하며 추가 상위 완료 경계의 실기 성공으로 확대하지 않는다.",
+    "title": "sender·floor·recipient 귀속과 실제 소비를 대조하는 Give 관측",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 5
+        },
+        {
+          "end": 24,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 15
+        },
+        {
+          "end": 55,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 46
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-delivery",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.Completed(World, Entity, AIInventoryMove, string, int)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 5
+        },
+        {
+          "end": 24,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 15
+        },
+        {
+          "end": 55,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 46
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-delivery",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventoryDeliveryObservationSystem.OnUpdate()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 5
+        },
+        {
+          "end": 24,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 15
+        },
+        {
+          "end": 55,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 46
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-delivery",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventoryDeliverySourceObservationSystem.OnUpdate()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 5
+        },
+        {
+          "end": 24,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 15
+        },
+        {
+          "end": 55,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 46
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-delivery",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventorySkill.CaptureDelivery(World, bool)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 13,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 5
+        },
+        {
+          "end": 24,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "start": 15
+        },
+        {
+          "end": 55,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "start": 46
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-delivery",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventorySkill.DropTick(World, Entity, float)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 변경한 관측",
+          "doc": "observationReceipt",
+          "end": 24,
+          "line": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "sha256": "f61022e66707ae61471e273548d690de34808b8fb866283bb338ecda6328ae8c",
+          "start": 15
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "id": "E222",
+      "kind": "참고: 정확한 수령 관측 구현",
+      "to": "R.observation-delivery",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 변경한 관측",
+          "doc": "observationReceipt",
+          "end": 24,
+          "line": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+          "sha256": "f61022e66707ae61471e273548d690de34808b8fb866283bb338ecda6328ae8c",
+          "start": 15
+        }
+      ],
+      "from": "R.observation-implementation",
+      "id": "E224",
+      "kind": "참고: 완료 사실의 전달 관측 소비",
+      "to": "R.observation-delivery",
+      "type": "reference"
+    }
+  ]
+}

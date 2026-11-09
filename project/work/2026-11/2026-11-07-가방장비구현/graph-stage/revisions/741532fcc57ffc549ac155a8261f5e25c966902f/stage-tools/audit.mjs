@@ -1,0 +1,22 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),manifest=JSON.parse(fs.readFileSync(path.join(stage,'canonical-before.json'),'utf8'));
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const G='work/지식그래프',P='work/2026-11/2026-11-05-지식그래프-개편',L='work/2026-11/2026-11-05-지식그래프-실화면';
+const candidates=[G+'/tools/config.json',G+'/기획/기능.md',G+'/기획/정책.md',G+'/기획/미결.md',G+'/README.md',G+'/제품그래프-사용법.md',...['pin-snapshot.mjs','build.mjs','verify.mjs'].map(f=>P+'/B/extractor/'+f),P+'/B/README.md',P+'/B/validation-review.json',L+'/B/remap-base.mjs',L+'/B/code-version-mapping.md',L+'/C/overlay-source.json',...['planning.mjs','bag-source.mjs','integrate.mjs'].map(f=>L+'/D/'+f),'work/2026-11/2026-11-07-기획연결/source.mjs','work/2026-11/2026-11-07-가방장비구현/implementation-status.md','work/2026-11/2026-11-07-가방장비구현/implementation-evidence.json'];
+for(const name of ['menu-examples.md','connected-menu-examples.md','connected-source-check.json'])candidates.push('work/2026-11/2026-11-07-가방장비구현/'+name);
+const canonicalDrift=[],patches=[];
+for(const row of manifest.files){const src=path.join(manifest.canonical,row.path);if(!fs.existsSync(src)||hash(src)!==row.sha256)canonicalDrift.push(row.path);}
+fs.mkdirSync(path.join(stage,'source-patches'),{recursive:true});
+for(const rel of candidates){const staged=path.join(stage,rel);if(!fs.existsSync(staged))continue;const original=path.join(manifest.canonical,rel),before=manifest.files.find(r=>r.path===rel);if(before&&before.sha256===hash(staged))continue;
+ if(canonicalDrift.includes(rel)){patches.push({path:rel,patch:null,baseSha256:before?.sha256||null,currentCanonicalSha256:fs.existsSync(original)?hash(original):null,stagedSha256:hash(staged),canonicalDrift:true,applyBlocked:true,reason:'기록 기준 이후 공식 변경. 최신 생활 트리를 지울 수 있는 diff를 만들지 않고 별도 통합/재기반을 요구한다.'});continue;}
+ const name=String(patches.length+1).padStart(2,'0')+'-'+path.basename(rel)+'.patch';let diff;
+ if(fs.existsSync(original))diff=spawnSync('git',['diff','--no-index','--',original,staged],{encoding:'utf8',maxBuffer:16*1024*1024}).stdout;
+ else {const lines=fs.readFileSync(staged,'utf8').replace(/\n$/,'').split('\n');diff='--- /dev/null\n+++ b/'+rel+'\n@@ -0,0 +1,'+lines.length+' @@\n'+lines.map(l=>'+'+l).join('\n')+'\n';}
+ fs.writeFileSync(path.join(stage,'source-patches',name),diff||'');patches.push({path:rel,patch:'source-patches/'+name,baseSha256:before?.sha256||null,stagedSha256:hash(staged),canonicalDrift:canonicalDrift.includes(rel)});
+}
+const dev=JSON.parse(fs.readFileSync(path.join(stage,G,'graph/graph.json'),'utf8')),base=JSON.parse(fs.readFileSync(path.join(stage,'evidence/development-before.json'),'utf8'));
+const baselineIds=new Set(base.nodes.filter(n=>n.type==='미결'&&n.kind==='선 밖 코드').map(n=>n.id));
+const out=dev.nodes.filter(n=>n.type==='미결'&&n.kind==='선 밖 코드');
+const audit={canonicalInputCount:manifest.files.length,canonicalChangedSinceCopy:canonicalDrift,canonicalChangeMeaning:'Read-only lane. This list records concurrent changes since copy; no canonical graph/product writes were performed by this lane.',sourcePatches:patches,baselineWarnings:base.meta.unresolvedByKind,currentWarnings:dev.meta.unresolvedByKind,newOutsideLines:out.filter(n=>!baselineIds.has(n.id)),removedOutsideLines:[...baselineIds].filter(id=>!out.some(n=>n.id===id))};
+fs.writeFileSync(path.join(stage,'stage-audit.json'),JSON.stringify(audit,null,2)+'\n');console.log(JSON.stringify({canonicalInputCount:audit.canonicalInputCount,canonicalChangedSinceCopy:canonicalDrift.length,sourcePatches:patches.length,newOutsideLines:audit.newOutsideLines.length,baselineWarnings:audit.baselineWarnings,currentWarnings:audit.currentWarnings},null,2));
+fs.writeFileSync(path.join(stage,'원본-패치목록.md'),'# 검토할 현재 원본 패치\n\n이 목록의 경로·해시가 현재 권위다. 최신 공식c4 생활 트리가 기록 기준685 이후 추가되어 **직접 적용은 차단**했다. 드리프트 파일은 최신 생활 변경을 삭제하는 diff를 생성하지 않았다. source-patches 폴더에 남은 이전 번호 파일을 통째 적용하지 않는다. 생성 graph JSON은 패치하지 않고 통합 소스에서 다시 만든다.\n\n| 원본 경로 | 기록 기준 SHA256 | staging SHA256 | 검토 패치/차단 |\n|---|---|---|---|\n'+patches.map(x=>'| '+x.path+' | '+(x.baseSha256||'새 파일')+' | '+x.stagedSha256+' | '+(x.patch?'['+path.basename(x.patch)+']('+x.patch+')':'기준 드리프트로 diff 생성·적용 차단')+' |').join('\n')+'\n\n복사 후 바뀐 공식 원문: '+(canonicalDrift.join(', ')||'없음')+'. 기록 원문은 역복사하지 않는다. HEAD가 두 코드/기획을 통합한 SHA와 현재 공식 해시를 정한 뒤 codeRoot와 repo/SHA를 맞춰 재고정·재생성한다.\n');

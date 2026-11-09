@@ -1,0 +1,22 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs:1501-1521 sha256=38976c95d61cfcc13cb0da5b9a3bf1e83f9346a37db671706d64da096c0c2fe8
+1501:     public static List<string> Members(string worldId)
+1502:     {
+1503:         var l = new List<string>();
+1504:         if (worldId == null) return l;
+1505:         string p = PathFor(worldId);
+1506:         try
+1507:         {
+1508:             if (!File.Exists(p)) return l;
+1509:             string text = File.ReadAllText(p, Encoding.UTF8);
+1510:             var d = JsonUtility.FromJson<Data>(text);
+1511:             if (d == null) return l;
+1512:             bool hasMembers = text.IndexOf("\"members\"", StringComparison.Ordinal) >= 0;
+1513:             if (hasMembers && d.members != null) { foreach (var m in d.members) if (AIAgent.ById(m) != null && !l.Contains(m)) l.Add(m); }
+1514:             else if (!hasMembers && d.aiEnabled) l.Add("claude");   // file from before members
+1515:         }
+1516:         catch (Exception e)
+1517:         {
+1518:             AIPlayerSpikeMod.LogError($"AI setting: reading {p} failed; treating as off", e);
+1519:         }
+1520:         return l;
+1521:     }

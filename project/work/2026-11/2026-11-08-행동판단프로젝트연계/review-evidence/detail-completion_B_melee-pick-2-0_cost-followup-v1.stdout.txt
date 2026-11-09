@@ -1,0 +1,848 @@
+{
+  "node": {
+    "action": "melee_attack",
+    "id": "completion:B:melee-pick-2-0:cost-followup-v1",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "c09e4a0b39e75d1c3ebf65c2596ebaf88e1a801500d933e0b993d5447cb822ef",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+      "pointer": "/cases/75"
+    },
+    "producerStatus": "static_path_research_awaits_independent_review",
+    "recordFormat": "reviewed_action_path",
+    "roleBindings": [
+      {
+        "conditional": true,
+        "objectId": 2,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/1",
+          "rawByteSha256": "2eb4f72dbeb8e597c521704ae1bee8639b730a74633c87db1f7d82fcd1a0661f",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+        },
+        "role": "tool_for",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-101759535937157508",
+        "variation": 0
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "97 conditional melee/ranged follow-up paths including existing 9100; prior claims are not counted twice.",
+    "scopeOrigin": {
+      "normalizedValueSha256": "e7f12c5bffdceaadead67809d7a21030b3bceef1b83287248808a02ca721d647",
+      "path": "../2026-11/2026-11-07-행동결과완결/integration/receipts/B-combat97.json",
+      "pointer": "/scope"
+    },
+    "status": "independent_pass"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "c16abe006ebab5b88f8045039bab89e3a09c334fabd345a746e2aa15a4348943",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/conditions"
+      },
+      "value": [
+        "원본 곡괭이가 runtime primary 장비 prefab 및 변환 결과에 일치하고 입력·공격·쿨다운·prediction gate를 통과해야 한다",
+        "고정 source에선 objectType MiningPick, SecondaryUse mechanic 없음, 특수 AOE·trail 및 ConsumesManaAuthoring 부재. 플레이어·장비 조건과 파손 상태는 실행 중 결정된다",
+        "적중 대상, 충돌 판정, 피해·방어·난수·HP 및 파괴 상태는 동적이다"
+      ]
+    },
+    {
+      "relation": "has_condition",
+      "field": "sourceValues",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/condition/sourceValues",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "9576f101e03fc3ddaf38aa444ea8b087f05e82fba7d02651aaedbc17efa4c14f",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/sourceValues"
+      },
+      "value": {
+        "authorings": {
+          "AreaLevelAuthoring": {
+            "areaLevel": 40,
+            "entityMono": {
+              "m_FileID": 0,
+              "m_PathID": "-101759535937157508"
+            },
+            "forceGenerateLevelEntities": 0,
+            "level": 11,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4428881620230866556"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "8200685022502099611"
+            }
+          },
+          "DurabilityAuthoring": {
+            "durability": 800,
+            "durabilityMultiplier": 1.0,
+            "entityMono": {
+              "m_FileID": 0,
+              "m_PathID": "-101759535937157508"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4428881620230866556"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-4321641655394159069"
+            },
+            "maxDurability": 800,
+            "reinforceCostMultiplier": 1.0,
+            "repairMultiplier": 0.30000001192092896
+          },
+          "GivesConditionsWhenEquippedAuthoring": {
+            "dontCalculateValuesFromLevel": 0,
+            "givesConditionsWhenEquipped": [
+              {
+                "id": 9,
+                "value": 385,
+                "valueMultiplier": 1.850000023841858
+              },
+              {
+                "id": 50,
+                "value": 91,
+                "valueMultiplier": 3.0
+              }
+            ],
+            "givesConditionsWhenHeldInHand": 1,
+            "isArmor": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4428881620230866556"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "8988269692984011909"
+            }
+          },
+          "MeleeWeaponAuthoring": {
+            "arcAngle": 1,
+            "attackFXType": 0,
+            "baseHitColliderSize": 1.5,
+            "disable": 0,
+            "extraHitColliderReachSize": 0.0,
+            "isBigSpearWeapon": 0,
+            "isBigSwingWeapon": 0,
+            "lungeForce": 0.0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4428881620230866556"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-6530375698705378283"
+            },
+            "overrideAnimation": "",
+            "quickHit": 0,
+            "skipAnticipationAnimation": 0,
+            "tileDamageAOE": 0
+          },
+          "WeaponDamageAuthoring": {
+            "cooldown": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "damage": 108,
+            "damageMultiplier": 0.550000011920929,
+            "entityMono": {
+              "m_FileID": 0,
+              "m_PathID": "-101759535937157508"
+            },
+            "isMagic": 0,
+            "isRange": 0,
+            "level": {
+              "m_FileID": 0,
+              "m_PathID": "7563767500122752636"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4428881620230866556"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-3334522134878156171"
+            }
+          }
+        },
+        "costFollowup": {
+          "durabilityAuthoring": {
+            "durability": 800,
+            "durabilityMultiplier": 1.0,
+            "entityMono": {
+              "m_FileID": 0,
+              "m_PathID": "-101759535937157508"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4428881620230866556"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-4321641655394159069"
+            },
+            "maxDurability": 800,
+            "reinforceCostMultiplier": 1.0,
+            "repairMultiplier": 0.30000001192092896
+          },
+          "rarity": 3,
+          "warmupAuthoring": null
+        },
+        "objectInfo": {
+          "additionalSprites": [],
+          "appearInMapUI": 0,
+          "buyValueMultiplier": 1.0,
+          "centerIsAtEntityPosition": 0,
+          "craftingSettings": {
+            "canOnlyUseAnyMaterialsWithTag": 0,
+            "iconType": 0
+          },
+          "craftingTime": 2.0,
+          "icon": {
+            "m_FileID": 0,
+            "m_PathID": "-1112383836713826488"
+          },
+          "iconOffset": {
+            "x": 0.0,
+            "y": -0.125
+          },
+          "iconSkinAssetRef": {
+            "m_address": {
+              "m_high": "0",
+              "m_low": "0"
+            }
+          },
+          "initialAmount": 800,
+          "isCustomScenePrefab": 0,
+          "isStackable": 0,
+          "languageGenders": [],
+          "level": 0,
+          "mapColor": {
+            "a": 0.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "objectID": 2,
+          "objectType": 603,
+          "prefabCornerOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "prefabInfo": {
+            "authoring": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "authoringRef": {
+              "m_address": {
+                "m_high": "-2523694827151141208",
+                "m_low": "7198108580238040428"
+              }
+            },
+            "graphicalRef": {
+              "m_address": {
+                "m_high": "0",
+                "m_low": "0"
+              }
+            },
+            "prefab": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            }
+          },
+          "prefabTileSize": {
+            "x": 1,
+            "y": 1
+          },
+          "rarity": 3,
+          "requiredObjectsToCraft": [
+            {
+              "amount": 12,
+              "objectID": 1004
+            },
+            {
+              "amount": 2,
+              "objectID": 1600
+            }
+          ],
+          "salvageMultiplier": 1.0,
+          "sellValue": -1,
+          "smallIcon": {
+            "m_FileID": 0,
+            "m_PathID": "-1112383836713826488"
+          },
+          "tags": [
+            25,
+            34
+          ],
+          "tileType": 0,
+          "tileset": 0,
+          "variation": 0,
+          "variationIsDynamic": 1,
+          "variationToToggleTo": 0
+        }
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "assetEvidence",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "4de8f1624676c71b756c81242b26c7e05924c98b1c5d8c989e541f45ca9feaa6",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/assetEvidence"
+      },
+      "value": [
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4140281635255482756",
+          "line": 16263,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "472278177dfbc30adeb5995a67dd8f7b36abcc2d5c567cf02c7ec630cb458ba6"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-101759535937157508",
+          "line": 95,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "2eb4f72dbeb8e597c521704ae1bee8639b730a74633c87db1f7d82fcd1a0661f"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7013130125904316028",
+          "line": 73939,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "a16c36d607402077b82499393156e1bde41f8ef04e738862cb2ce85c8f436806"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2572054946252654204",
+          "line": 51069,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "bde9f94ee46e166acefb500e17ec7cd9bcb491753162cb39d710641741cad9fd"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7154119403163354748",
+          "line": 74700,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "505d08af3b64ad7f9bc75507361d7f5499c2b7e17b73e1e0d0949e75f67d2d6c"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7563767500122752636",
+          "line": 76772,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "8438b11e0e21479ffd23057fd15aa723311f29a73da8c99033585f6f4bf96107"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2348017822142563964",
+          "line": 49966,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "78d417f7af692b29b8cbab6a8787b4c1f5373b8a237ff3581adbce4eeea5d594"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7013130125904316028",
+          "line": 73939,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "a16c36d607402077b82499393156e1bde41f8ef04e738862cb2ce85c8f436806"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "176f77f73059e0cfc1f4cd10fca6fe136db87a0708ca8134648113ba64483b8d",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/codeEvidence"
+      },
+      "value": [
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\RangeWeaponConverter.cs",
+          "sha256": "9fe2fdb5ba761c633283dfaa4624ced5aa6dc18ca565984a72a5174287135ecb"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\ProjectileConverter.cs",
+          "sha256": "c5252ab723378cc38f41e469154b8072f60243082cafdabfbeee9313da25ec96"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\WeaponDamageConverter.cs",
+          "sha256": "04a596b52c48d022b12410848420ea4d6a0563d374c71c22596d22c208fc69b5"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\LevelEntitiesBufferConverter.cs",
+          "sha256": "7969b9a86955936032027c894b6a28449af0dc61edc928eb47bc4af64f911bbb"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\WeaponDamageCD.cs",
+          "sha256": "850a94dfacba48d2843691bfcdab60d33e8a82dcad187344df5cc81a8a342f8e"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\AttackWithEquipmentSystem.cs",
+          "sha256": "b42afa8d53d50c34fc4dd84062d108b8f76ca11cfd69abb3ddfa804b2f4ccc5f"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\RangeWeaponSpawnProjectileSystem.cs",
+          "sha256": "726c8f0fa03333fbc49de1832c2c52bf27f75fdfee84a471f1d8a2b39444839f"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\RangeWeaponSlot.cs",
+          "sha256": "ede4a9d1149aa9200279d1901c28b716bf789a87160b8f382e67487ffb3b3381"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ProjectileSystem.cs",
+          "sha256": "90d385da6f4da3625ea76cfc2482ef8db9f4de82ca1c2e4f0584f5d5c87ce5c4"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ProjectileMovementSystem.cs",
+          "sha256": "4674f983c0cd7c84c03dec24a0dbe539cd886f5ea807d5c223a7208d07255806"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AttackSystem.cs",
+          "sha256": "a7938e8c736e1c7a873a4ffc2f8de39ca53686a3a424c4a0e7ce1aadfe767c0d"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateHealthFromBufferSystem.cs",
+          "sha256": "5fe7f275753316f5b212bd46f5335f6a8b27b0a1db14e6bec7b29188e7d0f668"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EquipmentSlot.cs",
+          "sha256": "eeb8110c33990bbb8b7025fc35578b2cd865919f4573ef7073389af43273ee61"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\ChangeDurabilitySystem.cs",
+          "sha256": "a48f532753b98c50731a8c473d83c36fe0f6ec586b08520991401201ce2f4ade"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AttackPlayerSystem.cs",
+          "sha256": "7b44354da8d11617fe426a70d699310521db734667a04875751f2f1d89f295ec"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AttackPlayerServer.cs",
+          "sha256": "9d01d0a29603f9711584347126e891b5def8a95b959ec7d5a96ba9c4211f1bb9"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\EquipmentUpdateSystem.cs",
+          "sha256": "ff5462481464b065f16ea1d84ee849bc03ef8b18e9bb3497ac1d93ec1c9654aa"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\SecondaryUseCD.cs",
+          "sha256": "98a91ea061ab0fb7f69f4aebd247cf276c3cfb200f89b22c6235c29ffb9154a1"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\ConsumesManaConverter.cs",
+          "sha256": "e45aaf21ce7152d6fbb06b74438e7354c1c2737b5311b9030d3004033dc6c6e5"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\MeleeWeaponSlot.cs",
+          "sha256": "aba7a1615abe3630f22c075e4950e9defc50290d0866410e4d52e7ecdd335189"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\QueueHitSystem.cs",
+          "sha256": "9f1c6ec407914876e8c3aee4b7c041df3212c0d775e37bff6e9f82d350db3e45"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\PlayerAttackRoutineSystem.cs",
+          "sha256": "03d61f4901c22f1856693cb96ea742d7d649fceafc361df5e108cda47182f601"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerAttackSystem.cs",
+          "sha256": "e48e346b4e4d6b1c800cb41116613443af29d78dad9370f0d700c6f905d45da1"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\MeleeWeaponConverter.cs",
+          "sha256": "8c9c2ad0c45aed93325d32690ee5358e335772a9d6960032675b5d7b94106399"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\TileDamageSystem.cs",
+          "sha256": "f10c48fbdb77e0069d2cc991b4dbfc9515caf289c5e2982431ea63f36a67e5fe"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\InitialHealthChangeSystem.cs",
+          "sha256": "19f9dc9456bc569a5798a7d9568102c1f1826a276e21ae1b6faf005e27786a08"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SetEntitiesDestroyedSystem.cs",
+          "sha256": "9994c6f8005abed56ab614064ff4e4839abedde03a2f6477d09f518ba46c1778"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\DestroyEntitiesSystem.cs",
+          "sha256": "7188d88d5774ebf41874d60c819803a3c79107feba418a756a38e106a3303214"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\ChangeDurabilitySystem.cs",
+          "sha256": "a48f532753b98c50731a8c473d83c36fe0f6ec586b08520991401201ce2f4ade"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EquipmentSlot.cs",
+          "sha256": "eeb8110c33990bbb8b7025fc35578b2cd865919f4573ef7073389af43273ee61"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\RangeWeaponSlot.cs",
+          "sha256": "ede4a9d1149aa9200279d1901c28b716bf789a87160b8f382e67487ffb3b3381"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\WarmupConverter.cs",
+          "sha256": "51ced2229aa51ade6fbe99c87ada1fd165d089983b20ad39f3e82d59346b59c4"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AddSkillValueSystem.cs",
+          "sha256": "dc50328ea964f3a795c6e3d1469ba68797703dfba24c1314bd32d98d5e8a54b0"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ExplosiveSystem.cs",
+          "sha256": "47d22768d41d9cbf0d45027d1360a164ce0f535e1a5f86f40b167cdf212798ec"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "priorCase",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/evidence/priorCase",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "481132655ed0e3f29df8aa88399f8d5e87c337738fba7fdb756263d8531818d6",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/priorCase"
+      },
+      "value": {
+        "id": "completion:B:melee-pick-2-0",
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\melee-picks-v1-replay-1\\cases.json",
+        "sha256": "ba5369806f788332d963ce3bb58597a4e97a1ae8ee18896b52208359fa78cf37"
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "typedEndpoints",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/evidence/typedEndpoints",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "6824ed2adfe33b121994cfcb7489f797c2a4924163e602807a888e2554e14fa4",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/typedEndpoints"
+      },
+      "value": [
+        {
+          "condition": "충돌, 진영, 체력, 면역 및 대상 선택 조건",
+          "id": "dynamic:melee-hit-target",
+          "role": "conditional_target",
+          "type": "runtime_entity_or_tile"
+        }
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "15d7697f51b484f6eaa687c9883a68f6192e74a74f3e235630f53afd3871b420",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/transitions"
+      },
+      "value": [
+        {
+          "from": "attack input",
+          "refs": [
+            "Pug.Other/PlayerEquipment/EquipmentUpdateSystem.cs:137-151,201-207",
+            "Pug.Other/EquipmentSlot.cs:51-115,533-580",
+            "Pug.Other/PlayerEquipment/AttackWithEquipmentSystem.cs:144-188",
+            "Pug.Other/MeleeWeaponSlot.cs:9-16,51-70",
+            "Pug.Other/PlayerEquipment/QueueHitSystem.cs:144-220"
+          ],
+          "text": "주 입력으로 장비 공격 시 MeleeWeaponSlot이 mana 비용과 cooldown을 처리하고 QueueHit를 활성화한다. 해당 source에 mana authoring이 없고 DB/변환이 일치하면 비용 0. QueueHit은 파손·windup 및 level/reinforcement/조건을 고려해 피해와 hit delay를 준비한다.",
+          "to": "queued hit"
+        },
+        {
+          "from": "hit delay",
+          "refs": [
+            "Pug.Other/PlayerEquipment/PlayerAttackRoutineSystem.cs:258-299",
+            "Pug.Other/PlayerAttackSystem.cs:425-451",
+            "Pug.Other/PlayerController.cs:5157-5217,5280-5358"
+          ],
+          "text": "공격 routine의 hit delay가 끝나면 Melee 요청을 쓰고 PlayerAttackSystem이 사망 상태가 아니면 TryMeleeAttack을 호출한다. 곡괭이 유형은 physics collider에서 적과 오브젝트를 선택하고 tile entity, tile collider, 별도 파괴 가능 오브젝트 등을 분기한다. 가까움·타일 우선순위·가교 위 플레이어 등 게이트를 적용한다.",
+          "to": "collision and target"
+        },
+        {
+          "from": "eligible target",
+          "refs": [
+            "Pug.Other/PlayerController.cs:5194-5212,6465-6594,7057-7108,7138-7165",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302,384-435,558-560",
+            "Pug.Other/AttackPlayerSystem.cs:1469-1544,1560-1578,1696-1701",
+            "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-854"
+          ],
+          "text": "적격 적/오브젝트는 실제 진영·HP·면역·방패 등 gate와 HealthChangeBuffer 또는 플레이어 별도 피해 경로를 지난다. 무기 피해가 있는 적 명중 또는 곡괭이의 벽 명중이면 내구도 감소 trigger이며 실제 변화는 보존확률·무적·inventory gate 및 동일 ID에 달린다. 광석 파괴의 내구도 회복과 곡괭이 AOE condition 등 runtime 조건은 별도 적용된다.",
+          "to": "health and cost"
+        },
+        {
+          "from": "selected tile",
+          "refs": [
+            "Pug.Other/PlayerController.cs:5899-6120",
+            "Pug.Other/TileDamageSystem.cs:517-552,790-830",
+            "Pug.Other/InitialHealthChangeSystem.cs:125-135",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302,384-435,558-560",
+            "Pug.Other/SetEntitiesDestroyedSystem.cs:126-146",
+            "Pug.Other/DestroyEntitiesSystem.cs"
+          ],
+          "text": "기존 tile entity는 직접 피해 경로로 HP 요청, tile collider/맵 타일은 계산한 감소 전 damage로 TileDamageBuffer를 만든다. TileDamageSystem은 기존 entity와 위치·top tile 일치시 HealthChangeBuffer에 옮기거나, 보호/DB/첫 예측 조건에서 신규 tile entity를 예약하고 InitialHealthChange가 버퍼로 전환한다. health consumer는 피해 감소·면역 등 조건 후 HP를 쓰며 0 HP여도 DontDestroyOnZeroHealth 등 보호가 없을 때 파괴 플래그·타이머와 ECB 삭제가 이어진다. 요청·예약과 실제 파괴/드롭은 구분한다.",
+          "to": "tile health and destruction"
+        },
+        {
+          "from": "durability and inventory gates",
+          "refs": [
+            "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-845,970-972",
+            "Pug.Other/Inventory/InventoryUtility.cs:278-322,464-473,3167-3196",
+            "Pug.Other/RangeWeaponSlot.cs:29-45"
+          ],
+          "text": "내구도 처리기는 양수 장착품과 실제 DurabilityCD가 필요하다. 증가 trigger와 조건252가 있으면 상한까지 증가 요청을 먼저 만들고, 무적·godMode·보존확률 gate 뒤 감소량을 0 이상으로 계산한다. 양수였던 장착품이 계산상 0에 이르면 EquipmentBreak 효과와 SetAmount(slot, 같은 objectID, 0), TryReplaceBrokenObject(slot)를 각각 요청한다. SetAmount는 같은 ID 조건에서만 기록한다. 교체 요청은 현재 slot의 objectType과 같은 첫 양수 수량의 다른 slot을 찾아 Swap할 수 있다. 각 요청 성공과 effect는 독립적이며 실제 수량 변경·장착 변경을 보장하지 않는다.",
+          "to": "conditional break and replacement"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "conditional": true,
+      "field": "declared_transition_stage",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/transition-result/0",
+      "kind": "result",
+      "meaning": "Recorded intermediate or final destination, subject to this transition and case conditions.",
+      "origin": {
+        "normalizedValueSha256": "fb516ceade32da98a4bbe193ea473f347453d1a890c0baf3268c8d59cac56969",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/transitions/0"
+      },
+      "stage": "queued hit",
+      "value": {
+        "from": "attack input",
+        "refs": [
+          "Pug.Other/PlayerEquipment/EquipmentUpdateSystem.cs:137-151,201-207",
+          "Pug.Other/EquipmentSlot.cs:51-115,533-580",
+          "Pug.Other/PlayerEquipment/AttackWithEquipmentSystem.cs:144-188",
+          "Pug.Other/MeleeWeaponSlot.cs:9-16,51-70",
+          "Pug.Other/PlayerEquipment/QueueHitSystem.cs:144-220"
+        ],
+        "text": "주 입력으로 장비 공격 시 MeleeWeaponSlot이 mana 비용과 cooldown을 처리하고 QueueHit를 활성화한다. 해당 source에 mana authoring이 없고 DB/변환이 일치하면 비용 0. QueueHit은 파손·windup 및 level/reinforcement/조건을 고려해 피해와 hit delay를 준비한다.",
+        "to": "queued hit"
+      }
+    },
+    {
+      "relation": "has_result",
+      "conditional": true,
+      "field": "declared_transition_stage",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/transition-result/1",
+      "kind": "result",
+      "meaning": "Recorded intermediate or final destination, subject to this transition and case conditions.",
+      "origin": {
+        "normalizedValueSha256": "939468227fb5d9c049c6ce357a0a574df08218133a59d38582800ce3df4489dc",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/transitions/1"
+      },
+      "stage": "collision and target",
+      "value": {
+        "from": "hit delay",
+        "refs": [
+          "Pug.Other/PlayerEquipment/PlayerAttackRoutineSystem.cs:258-299",
+          "Pug.Other/PlayerAttackSystem.cs:425-451",
+          "Pug.Other/PlayerController.cs:5157-5217,5280-5358"
+        ],
+        "text": "공격 routine의 hit delay가 끝나면 Melee 요청을 쓰고 PlayerAttackSystem이 사망 상태가 아니면 TryMeleeAttack을 호출한다. 곡괭이 유형은 physics collider에서 적과 오브젝트를 선택하고 tile entity, tile collider, 별도 파괴 가능 오브젝트 등을 분기한다. 가까움·타일 우선순위·가교 위 플레이어 등 게이트를 적용한다.",
+        "to": "collision and target"
+      }
+    },
+    {
+      "relation": "has_result",
+      "conditional": true,
+      "field": "declared_transition_stage",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/transition-result/2",
+      "kind": "result",
+      "meaning": "Recorded intermediate or final destination, subject to this transition and case conditions.",
+      "origin": {
+        "normalizedValueSha256": "8bd4d96907bd0a221e75891650f087c0e62f6efd6e8aa7aab3f4e3b484c18df8",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/transitions/2"
+      },
+      "stage": "health and cost",
+      "value": {
+        "from": "eligible target",
+        "refs": [
+          "Pug.Other/PlayerController.cs:5194-5212,6465-6594,7057-7108,7138-7165",
+          "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302,384-435,558-560",
+          "Pug.Other/AttackPlayerSystem.cs:1469-1544,1560-1578,1696-1701",
+          "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-854"
+        ],
+        "text": "적격 적/오브젝트는 실제 진영·HP·면역·방패 등 gate와 HealthChangeBuffer 또는 플레이어 별도 피해 경로를 지난다. 무기 피해가 있는 적 명중 또는 곡괭이의 벽 명중이면 내구도 감소 trigger이며 실제 변화는 보존확률·무적·inventory gate 및 동일 ID에 달린다. 광석 파괴의 내구도 회복과 곡괭이 AOE condition 등 runtime 조건은 별도 적용된다.",
+        "to": "health and cost"
+      }
+    },
+    {
+      "relation": "has_result",
+      "conditional": true,
+      "field": "declared_transition_stage",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/transition-result/3",
+      "kind": "result",
+      "meaning": "Recorded intermediate or final destination, subject to this transition and case conditions.",
+      "origin": {
+        "normalizedValueSha256": "c376b987e5f4d6c9b2666905007498fc35fb526fdc2e8a29bfaead68c7fd5ca7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/transitions/3"
+      },
+      "stage": "tile health and destruction",
+      "value": {
+        "from": "selected tile",
+        "refs": [
+          "Pug.Other/PlayerController.cs:5899-6120",
+          "Pug.Other/TileDamageSystem.cs:517-552,790-830",
+          "Pug.Other/InitialHealthChangeSystem.cs:125-135",
+          "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302,384-435,558-560",
+          "Pug.Other/SetEntitiesDestroyedSystem.cs:126-146",
+          "Pug.Other/DestroyEntitiesSystem.cs"
+        ],
+        "text": "기존 tile entity는 직접 피해 경로로 HP 요청, tile collider/맵 타일은 계산한 감소 전 damage로 TileDamageBuffer를 만든다. TileDamageSystem은 기존 entity와 위치·top tile 일치시 HealthChangeBuffer에 옮기거나, 보호/DB/첫 예측 조건에서 신규 tile entity를 예약하고 InitialHealthChange가 버퍼로 전환한다. health consumer는 피해 감소·면역 등 조건 후 HP를 쓰며 0 HP여도 DontDestroyOnZeroHealth 등 보호가 없을 때 파괴 플래그·타이머와 ECB 삭제가 이어진다. 요청·예약과 실제 파괴/드롭은 구분한다.",
+        "to": "tile health and destruction"
+      }
+    },
+    {
+      "relation": "has_result",
+      "conditional": true,
+      "field": "declared_transition_stage",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/transition-result/4",
+      "kind": "result",
+      "meaning": "Recorded intermediate or final destination, subject to this transition and case conditions.",
+      "origin": {
+        "normalizedValueSha256": "dc6e44f1796a59ff05cc130adfb041d34b054626aa4cc892090249af95e9564c",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/transitions/4"
+      },
+      "stage": "conditional break and replacement",
+      "value": {
+        "from": "durability and inventory gates",
+        "refs": [
+          "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-845,970-972",
+          "Pug.Other/Inventory/InventoryUtility.cs:278-322,464-473,3167-3196",
+          "Pug.Other/RangeWeaponSlot.cs:29-45"
+        ],
+        "text": "내구도 처리기는 양수 장착품과 실제 DurabilityCD가 필요하다. 증가 trigger와 조건252가 있으면 상한까지 증가 요청을 먼저 만들고, 무적·godMode·보존확률 gate 뒤 감소량을 0 이상으로 계산한다. 양수였던 장착품이 계산상 0에 이르면 EquipmentBreak 효과와 SetAmount(slot, 같은 objectID, 0), TryReplaceBrokenObject(slot)를 각각 요청한다. SetAmount는 같은 ID 조건에서만 기록한다. 교체 요청은 현재 slot의 objectType과 같은 첫 양수 수량의 다른 slot을 찾아 Swap할 수 있다. 각 요청 성공과 effect는 독립적이며 실제 수량 변경·장착 변경을 보장하지 않는다.",
+        "to": "conditional break and replacement"
+      }
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "completion:B:melee-pick-2-0:cost-followup-v1/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "5d82a0b874944a9b4ba751c9eebdb94b6417e1c4857a7fa762c43fe5b06da3d0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/75/boundaries"
+      },
+      "value": [
+        "고정 source의 정적 조건부 조사; 게임 또는 ECS 미실행",
+        "장비 source와 실제 primary/level DB 일치 조건",
+        "실제 적중·피해·비용·대상 HP·월드 상태는 관측하지 않았다",
+        "독립 검수 전"
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:B-combat97",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "conditional_target",
+      "target": "completion:B:melee-pick-2-0:cost-followup-v1/typed-endpoint/0",
+      "kind": "runtime_role_endpoint",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "completion:B:melee-pick-2-0:cost-followup-v1/role/0",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "investigates",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-101759535937157508#0",
+      "kind": "claim",
+      "action": "melee_attack"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-101759535937157508#0",
+      "kind": "claim",
+      "action": "melee_attack"
+    }
+  ],
+  "incoming": [
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-101759535937157508#0"
+    ],
+    [
+      "tool_for",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-101759535937157508"
+    ]
+  ]
+}

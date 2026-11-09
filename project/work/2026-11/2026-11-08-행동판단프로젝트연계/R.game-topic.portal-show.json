@@ -1,0 +1,670 @@
+{
+  "node": {
+    "action": "teleport_from_portal",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "code_linked",
+    "facts": {},
+    "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal",
+    "kind": "claim",
+    "label": "teleport_from_portal",
+    "origin": {
+      "normalizedValueSha256": "317377899dee56370aca4681916755f7688cf68237018a29dcb54f1a71aafc82",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/2/payload/extraction.json/records/59"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "1f409a501c85260309beae2bea09679433803255a7584f4190bb05c111ac1887",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59/conditions"
+      },
+      "value": {
+        "UI": "entity and player exist; portal/waypoint marker count >1; source amount >=360; selected destination active, positioned and rounded position differs",
+        "onUseEvent": {
+          "call": {
+            "m_Arguments": {
+              "m_BoolArgument": 0,
+              "m_FloatArgument": 0.0,
+              "m_IntArgument": 0,
+              "m_ObjectArgument": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+              "m_StringArgument": ""
+            },
+            "m_CallState": 2,
+            "m_MethodName": "Use",
+            "m_Mode": 1,
+            "m_Target": {
+              "m_FileID": 0,
+              "m_PathID": "-1126017853365700323"
+            },
+            "m_TargetAssemblyTypeName": "WayPoint, Pug.Other"
+          },
+          "callIndex": 0,
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1548275991832475933",
+          "dataBlockKey": "CAB-2ebcba97367158c9b08f790c25d642c9:509994457888684214",
+          "fieldPath": "onUseActions[0]",
+          "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2871977428613678819",
+          "targetError": null,
+          "targetKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1126017853365700323",
+          "targetScript": {
+            "assembly": "Pug.Other",
+            "class": "WayPoint",
+            "namespace": ""
+          }
+        }
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "assetEvidence",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "7f2b7b993cc1a0e446bd5a173ad9581d36bbae8af5df5c70851d585221d4a356",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59/assetEvidence"
+      },
+      "value": [
+        {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-3252584952547586973"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-3433258096368064317"
+            }
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7542029096910965859",
+          "rawByteSha256": "af47667972bb95ab676b1c85ee86dd64e6adc074763baad0d42f2445ed9bef00"
+        },
+        {
+          "data": {
+            "allowToUseOnlyWhenClaimed": 0,
+            "ignorePlayerDirection": 1,
+            "ignorePlayerDirectionRadiusPercentage": 1.0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5047193523897678109"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "5851019413773715447"
+            },
+            "onTriggerExitActions": [
+              {
+                "m_PersistentCalls": {
+                  "m_Calls": [
+                    {
+                      "m_Arguments": {
+                        "m_BoolArgument": 0,
+                        "m_FloatArgument": 0.0,
+                        "m_IntArgument": 0,
+                        "m_ObjectArgument": {
+                          "m_FileID": 0,
+                          "m_PathID": "0"
+                        },
+                        "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                        "m_StringArgument": ""
+                      },
+                      "m_CallState": 2,
+                      "m_MethodName": "OnLeavePortal",
+                      "m_Mode": 1,
+                      "m_Target": {
+                        "m_FileID": 0,
+                        "m_PathID": "-1126017853365700323"
+                      },
+                      "m_TargetAssemblyTypeName": "WayPoint, Pug.Other"
+                    }
+                  ]
+                }
+              }
+            ],
+            "onUseActions": [
+              {
+                "m_PersistentCalls": {
+                  "m_Calls": [
+                    {
+                      "m_Arguments": {
+                        "m_BoolArgument": 0,
+                        "m_FloatArgument": 0.0,
+                        "m_IntArgument": 0,
+                        "m_ObjectArgument": {
+                          "m_FileID": 0,
+                          "m_PathID": "0"
+                        },
+                        "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                        "m_StringArgument": ""
+                      },
+                      "m_CallState": 2,
+                      "m_MethodName": "Use",
+                      "m_Mode": 1,
+                      "m_Target": {
+                        "m_FileID": 0,
+                        "m_PathID": "-1126017853365700323"
+                      },
+                      "m_TargetAssemblyTypeName": "WayPoint, Pug.Other"
+                    }
+                  ]
+                }
+              }
+            ],
+            "optionalIcon": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "optionalOutlineController": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "radius": 1.7999999523162842,
+            "requireLineOfSight": 0,
+            "requiredFactionToInteract": 0,
+            "subInteractingData": [
+              {
+                "optionalOutlineControllers": [],
+                "optionalSpriteObjectOutlines": [
+                  {
+                    "m_FileID": 0,
+                    "m_PathID": "-2585127613120136931"
+                  }
+                ],
+                "overrideRadius": 0.0,
+                "points": [
+                  {
+                    "m_FileID": 0,
+                    "m_PathID": "3030695652145437"
+                  }
+                ],
+                "subIndex": 0
+              }
+            ],
+            "useDiscreteOutlineColor": 0,
+            "weightMultiplier": 1.0
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1548275991832475933",
+          "rawByteSha256": "091d44df1ddd49b732c1668d27caa6a707c41c69fb2a6195613089390b92b9dd"
+        },
+        {
+          "data": {
+            "PlatformGlowSR": {
+              "m_FileID": 0,
+              "m_PathID": "8896484126230624541"
+            },
+            "PlatformSO": {
+              "m_FileID": 0,
+              "m_PathID": "-2585127613120136931"
+            },
+            "RisingParticles": {
+              "m_FileID": 0,
+              "m_PathID": "6622290876011165981"
+            },
+            "XScaler": {
+              "m_FileID": 0,
+              "m_PathID": "7878608407820548381"
+            },
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "conditionEffectsHandler": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "conditionsEffectsSettings": {
+              "stunEffectOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "gameObjectsToRandomlyFlip": [],
+            "hasDisableableParticles": 0,
+            "indirectLightEmitters": [],
+            "interactable": {
+              "m_FileID": 0,
+              "m_PathID": "1548275991832475933"
+            },
+            "loadPoints": [],
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-2871977428613678819"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-1654250064152135755"
+            },
+            "m_spriteObjectOrientationHash": 0,
+            "objectVariants": [],
+            "optionalHealthBar": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "optionalLightOptimizer": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "outlineControllers": [],
+            "paintableOptions": {
+              "spriteColorTints": [],
+              "spriteRenderers": [],
+              "spriteSheetSkins": []
+            },
+            "particleOptions": {
+              "particleSpawnLocations": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "2966372643311040797"
+                }
+              ],
+              "particlesToDisableOnLowQuality": [],
+              "particlesToSpawn": [
+                {
+                  "objectID": 6514,
+                  "particles": [
+                    {
+                      "particleCount": 10,
+                      "positionTransform": {
+                        "m_FileID": 0,
+                        "m_PathID": "2966372643311040797"
+                      },
+                      "puff": 0
+                    },
+                    {
+                      "particleCount": 30,
+                      "positionTransform": {
+                        "m_FileID": 0,
+                        "m_PathID": "2966372643311040797"
+                      },
+                      "puff": 63
+                    },
+                    {
+                      "particleCount": 10,
+                      "positionTransform": {
+                        "m_FileID": 0,
+                        "m_PathID": "2966372643311040797"
+                      },
+                      "puff": 62
+                    },
+                    {
+                      "particleCount": 10,
+                      "positionTransform": {
+                        "m_FileID": 0,
+                        "m_PathID": "2966372643311040797"
+                      },
+                      "puff": 33
+                    }
+                  ],
+                  "spawnManually": 0,
+                  "spawnOccasion": 0
+                }
+              ]
+            },
+            "platformEmissiveColor": {
+              "a": 1.0,
+              "b": 16.0,
+              "g": 7.676372051239014,
+              "r": 7.018867492675781
+            },
+            "platformEmissiveMinColor": {
+              "a": 1.0,
+              "b": 1.4980393648147583,
+              "g": 0.7187091708183289,
+              "r": 0.6571499109268188
+            },
+            "platformGlowColor": {
+              "a": 1.0,
+              "b": 0.8196078538894653,
+              "g": 0.2549019753932953,
+              "r": 0.0
+            },
+            "platformLight": {
+              "m_FileID": 0,
+              "m_PathID": "5466592693345237277"
+            },
+            "portalEffectSR": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "previousHealth": 0,
+            "reskinOptions": [],
+            "shadow": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "soundOptions": {
+              "deathSfx": {
+                "value": -246067812
+              },
+              "soundsToPlay": [],
+              "takeDamageSfx": {
+                "value": -1253005357
+              }
+            },
+            "spawnLocation": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "spriteObjects": [
+              {
+                "m_FileID": 0,
+                "m_PathID": "-2585127613120136931"
+              }
+            ],
+            "spritesToRandomlyFlip": [],
+            "sr": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "useSharedTransformAnimations": 1
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1126017853365700323",
+          "rawByteSha256": "ae0951801ad753b525e92a74cb503d58e5e0ed8b336d8d8f1373cebdda3dc937"
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failureBranches",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal/failure/failureBranches",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "3775a38f168ae4c543233fd0189e084b12da07f18bf0354861e539d15fd43a3c",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59/failureBranches"
+      },
+      "value": [
+        "insufficient source charge or <=1 marker prevents opening",
+        "invalid destination prevents request",
+        "locked or already same state prevents transition"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputProcessingConsumer",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal/flow/inputProcessingConsumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "facd979207b64f1520f375bdee1b76af2cc0f4844aef6c32d1e1f6e2c84ddc3c",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59/inputProcessingConsumer"
+      },
+      "value": "Portal.Use -> map selection -> UI queue/RPC/tick -> Teleport state; state locks may reject"
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "a6c704d3813a7182483b6e50d21b7f05511d4d888cebda02178499b5600240cb",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59/result"
+      },
+      "value": {
+        "destinationOffset": "variation 20: (1,1), otherwise (1,-0.25)",
+        "positionUpdate": "timer passes 4.1 seconds",
+        "timerEndSeconds": 6.1
+      }
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unknown",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal/unknown/unknown",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "e433b0479a15df9c4ba668365efd031ca33dee50faa6cd568ef5b7ff7744b78a",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59/unknown"
+      },
+      "value": [
+        "UI conditions not rechecked by teleport consumer",
+        "marker generation and runtime authority"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "relation": "governed_by",
+      "node": {
+        "dataset": "base",
+        "evidenceContext": {
+          "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+          "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+          "originalReferenceContext": {
+            "codeRoot": "../../../게임원본-상호작용/code",
+            "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+            "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+            "rawRoot": "../../../게임원본-상호작용"
+          },
+          "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+          "resolvedReferenceContext": {
+            "codeRoot": "../게임원본-상호작용/code",
+            "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+            "rawRoot": "../게임원본-상호작용"
+          },
+          "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+        },
+        "facts": {
+          "priorReviewedCase": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동20건수집\\C-conditions\\cases\\portal\\action.md"
+        },
+        "group": "C",
+        "id": "rule:base:C:portal",
+        "kind": "rule",
+        "name": "portal",
+        "origin": {
+          "normalizedValueSha256": "192aaf72692f83326ea08265ab963c4329f31f276edeba17c4340e058cb6b0e3",
+          "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "pointer": "/groups/2/payload/extraction.json/rules/portal"
+        }
+      },
+      "fields": [
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "codeFiles",
+          "id": "rule:base:C:portal/evidence/codeFiles",
+          "kind": "evidence",
+          "origin": {
+            "normalizedValueSha256": "b2cbbb882615ceb2691b7e7310fea8b3090acb3b7bd64f7d3b6454bf2135ef31",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/2/payload/extraction.json/rules/portal/codeFiles"
+          },
+          "value": [
+            "Pug.Other/Portal.cs",
+            "Pug.Other/WayPoint.cs",
+            "Pug.Other/MapMarkerUIElement.cs",
+            "Pug.Other/TriggerUIActionsSystem.cs",
+            "Pug.Other/PlayerState/Teleporting.cs",
+            "Pug.Other/PlayerState/ChangePlayerStateSystem.cs"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation": "has_reviewed_map_click_detail",
+      "target": "residual:C:portal-map-click-detail-v1",
+      "kind": "configuration_consumer",
+      "action": null
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:teleport_from_portal",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797"
+    ],
+    [
+      "prerequisite_stage_for",
+      "supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#activate_portal_or_waypoint"
+    ]
+  ]
+}

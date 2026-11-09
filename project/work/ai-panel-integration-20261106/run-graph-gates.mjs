@@ -1,0 +1,7 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+const W='C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work',T=W+'/ai-panel-integration-20261106',G=W+'/지식그래프',P=W+'/2026-11/2026-11-05-지식그래프-개편',L=W+'/2026-11/2026-11-05-지식그래프-실화면';
+const groups={b:[[P+'/B','extractor/build.mjs'],[P+'/B','extractor/verify.mjs'],[P+'/B','extractor/determinism.mjs']],product:[[P+'/C','integrate-c.mjs'],[P+'/C','build-graph-C.mjs'],[L+'/B','remap-base.mjs','--base','11eb461ae122f404acec94563c086b09e002987c'],[L+'/C','validate-C.mjs'],[G,'tools/product-build.mjs'],[L+'/D','questions.mjs'],[L+'/D','check-entrypoints.mjs'],[G,'tools/product-build.mjs'],[G,'tools/product.mjs','check'],[G,'tools/product-build.mjs','--check']],dev:[[G,'tools/build.mjs','--strict'],[G,'tools/query.mjs','check'],[G,'tools/query.mjs','code','F.ai-info-ui'],[G,'tools/query.mjs','code','F.chat-compact-screen']]};
+const group=process.argv[2],results=[];
+for(const [cwd,...args] of groups[group]){const r=spawnSync(process.execPath,args,{cwd,encoding:'utf8',maxBuffer:25*1024*1024});const log=`${group}-${results.length+1}-${path.basename(args[0])}.log`;fs.writeFileSync(T+'/evidence/'+log,r.stdout+'\n'+r.stderr);results.push({cwd,args,exitCode:r.status,error:r.error?.message,log});fs.writeFileSync(T+'/evidence/canonical-'+group+'-gates.json',JSON.stringify(results,null,2)+'\n');console.log(args.join(' ')+' => '+r.status);if(r.status!==0){console.log((r.stdout+'\n'+r.stderr).slice(-6000));process.exit(1);}}

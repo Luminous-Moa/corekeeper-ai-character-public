@@ -1,0 +1,10 @@
+UA-02 — AI에게 탐험·이동·모으기 목표를 맡기기 [게임/정상 AI 흐름 미관측; 문서화 완료]
+pol.behavior-roles — LLM은 목표, 행동 선택은 Jev 검토, 프로그램은 실행
+pol.body-thinclient — 몸은 thin client 진짜 플레이어
+pol.combat-fit-criterion — 전투 전환은 "그 순간 상황에 맞았나"로 판단한다
+pol.exp-retry-allowed — 실패 횟수만으로 목표를 영구히 피하게 하지 않는다
+pol.explore-end-when-nothing — 탐험할 곳이 없으면 목표를 끝낸다
+pol.idle-stand — 할 일이 없으면 제자리에 선다
+pol.llm-can-retreat — 전투 중에도 LLM이 목표를 바꿀 수 있다
+pol.llm-subscription — 위쪽 LLM은 API 키가 아니라 구독 CLI로 부른다
+pol.self-defence — 목표가 없어도 맞거나 적이 다가오면 스스로 지킨다

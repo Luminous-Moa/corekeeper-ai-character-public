@@ -1,0 +1,30 @@
+02:46:30 S2 goal dirt 5
+sent /ai goal dirt 5
+[AIPlayerSpike] t=371.2 @Claude GOAL done rev=3: 흙벽 블록(WallDirtBlock) 5개 모으기 (5/5) after 19.2s, calls this session 7
+02:46:54 S3 goal tin 3
+sent /ai goal tin 3
+TIMEOUT GOAL (done|stalled|ended)
+sent /ai stop
+02:52:02 S4 goal craft WoodenWorkBench 1
+sent /ai goal craft WoodenWorkBench 1
+[AIPlayerSpike] t=700.4 @Claude GOAL done rev=7: WoodenWorkBench(WoodenWorkBench) 1개 만들기 (1/1) after 14.1s, calls this session 169
+sent /ai stop
+02:52:26 S5 goal follow (host walks east then west)
+sent /ai goal follow
+sent /ai stop
+02:53:33 S6 self-defence: arena go + spawn 3 (no goal)
+sent /ai claude arena go
+sent /ai arena spawn 3
+TIMEOUT SELF-DEFENCE #[0-9]+ end
+02:56:23 S7 close fight with a goal: spawn 3 MushroomEnemy 5 explore
+sent /ai arena spawn 3 MushroomEnemy 5 explore
+sent /ai stop
+02:58:04 S8 down: spawn 1 MushroomBrute (no goal)
+sent /ai arena spawn 1 MushroomBrute
+TIMEOUT DOWN #
+TIMEOUT stood up again
+03:02:15 S11 goal home
+sent /ai goal home
+[AIPlayerSpike] t=1337.9 @Claude GOAL done rev=14: 기지로 돌아가기 (기지 (0,0) 코어(정하지 않아 기본값) 도착(2.0칸)) after 41.1s, calls this session 720
+sent /ai stop
+03:03:03 scenarios 2-8, 11 done

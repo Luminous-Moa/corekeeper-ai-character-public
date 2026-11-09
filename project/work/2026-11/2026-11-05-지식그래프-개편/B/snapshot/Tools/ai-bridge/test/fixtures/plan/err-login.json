@@ -1,0 +1,8 @@
+{
+ "status": 503,
+ "body": {
+  "ok": false,
+  "error": "login",
+  "detail": "not logged in (LoginGate)"
+ }
+}

@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const lines=fs.readFileSync(path.join(dir,'Player-swarm4.snapshot.log'),'utf8').split(/\r?\n/);
+const rows=lines.map((text,i)=>({line:i+1,text,t:Number(text.match(/t=([\d.]+)/)?.[1]),actor:text.match(/@(\w+)/)?.[1]}));
+const full=rows.filter(r=>r.text.includes(' FULL input='));
+const send=rows.filter(r=>/DECISION #\d+ SEND/.test(r.text));
+const results=rows.filter(r=>/DECISION #\d+ RESULT/.test(r.text));
+const summary={totalLines:lines.length,totalSend:send.length,totalFull:full.length,fullMappings:full.map(r=>{let s=send.find(x=>x.line>r.line&&x.actor===r.actor);return {line:r.line,t:r.t,actor:r.actor,printedFull:Number(r.text.match(/DECISION #(\d+)/)[1]),actualSend:Number(s.text.match(/DECISION #(\d+)/)[1]),sendLine:s.line};}),latest:{start:640.2,end:722.9,send:send.filter(r=>r.actor==='Claude'&&r.t>=640.2&&r.t<=722.9).length,full:full.filter(r=>r.actor==='Claude'&&r.t>=640.2&&r.t<=722.9).length},completeCombat:rows.filter(r=>/COMBAT #\d+ end/.test(r.text)).map(r=>({line:r.line,text:r.text}))};
+fs.writeFileSync(path.join(dir,'audit-summary.json'),JSON.stringify(summary,null,2));
+fs.writeFileSync(path.join(dir,'latest-evidence.txt'),rows.filter(r=>r.t>=640.2&&r.t<=722.9).map(r=>`${r.line}: ${r.text}`).join('\n'));
+fs.writeFileSync(path.join(dir,'full-inputs.txt'),full.map(r=>{let s=send.find(x=>x.line>r.line&&x.actor===r.actor);let id=s.text.match(/DECISION #(\d+)/)[1];let result=results.find(x=>x.actor===r.actor&&x.text.includes(`DECISION #${id} RESULT`));return `${r.line}: ${r.text}\n${s.line}: ${s.text}\n${result?.line}: ${result?.text}\n`;}).join('\n'));
+console.log(JSON.stringify({totalLines:summary.totalLines,totalSend:send.length,totalFull:full.length,latest:summary.latest,mappingAllPlusOne:summary.fullMappings.every(m=>m.printedFull===m.actualSend+1),latestFull:summary.fullMappings.filter(m=>m.t>=640)},null,2));
+for(const r of rows.filter(r=>r.t>=640.2&&r.t<=722.9&&(/COMBAT|VITALS: DOWN|SWITCH/.test(r.text))))console.log(`${r.line}: ${r.text}`);

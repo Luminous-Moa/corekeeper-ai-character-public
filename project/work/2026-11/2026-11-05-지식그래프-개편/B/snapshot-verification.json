@@ -1,0 +1,1842 @@
+{
+  "commit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+  "allMatch": true,
+  "fileCount": 367,
+  "files": [
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asmdef",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asmdef.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asset",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/AIPlayerSpike.asset.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Data/AIPlayerSpike.asset",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Data/AIPlayerSpike.asset.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Data.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIActions.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIActions.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIAgents.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIApproach.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIApproach.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBase.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBaseProbe.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBaseProbe.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBed.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBed.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChargeWatch.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChargeWatch.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatHint.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatHint.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatWindow.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatWindow.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestAreas.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestAreas.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestMode.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestMode.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICombat.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICombat.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICombatOptions.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICombatOptions.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFont.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFont.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFontData.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFontData.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICook.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICraft.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AICraft.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDoorFacts.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDoorFacts.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDrops.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDrops.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Guard.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Guard.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Place.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Place.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Reach.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Reach.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdgeSkills.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdgeSkills.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpedition.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpedition.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExperience.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExperience.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIFarm.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGathering.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGathering.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalFeatures.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalFeatures.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalText.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalText.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoals.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIHandLease.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIHandLease.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoPanel.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoPanel.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoSnapshot.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoSnapshot.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventory.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AILife.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AILife.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMaintenance.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMaintenance.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMemory.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMineSkill.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMineSkill.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AINavigator.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AINavigator.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIObjects.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIObjects.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIObservation.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIObservation.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPickupSkill.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPickupSkill.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlace.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlace.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlaces.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlaces.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIShortSkills.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIShortSkills.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AISkill.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AISkill.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITestControl.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITestControl.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITestWorldEdit.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITestWorldEdit.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITileReader.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITileReader.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITravel.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITravel.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITunnel.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AITunnel.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIVision.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIVision.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWeaponInput.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWeaponInput.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldFacts.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldFacts.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIApproachSearch.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIApproachSearch.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseEdge.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseEdge.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseGuard.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseGuard.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseMap.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseMap.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChargeMath.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChargeMath.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatFade.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatFade.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatLog.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatLog.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatScreenMath.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatScreenMath.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIContinueText.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIContinueText.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIDoorPass.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIDoorPass.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIExpeditionRules.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIExpeditionRules.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIFightLog.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIFightLog.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGatheringRules.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGatheringRules.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHeldChoice.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHeldChoice.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryGoalForm.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryGoalForm.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMention.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMention.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaceGrid.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaceGrid.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaces.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaces.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPressQueue.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPressQueue.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AISettle.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AISettle.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIThreatHistory.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIThreatHistory.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITravelRules.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITravelRules.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITunnelSearch.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITunnelSearch.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiLayout.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiLayout.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiPointerCapture.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiPointerCapture.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWeaponUseControl.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWeaponUseControl.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts/Core.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/AIPlayerSpike/Scripts.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/HeadlessTools/Editor/HeadlessSdk.cs.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/HeadlessTools/Editor/HeadlessTools.Editor.asmdef",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/HeadlessTools/Editor/HeadlessTools.Editor.asmdef.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Assets/HeadlessTools/Editor.meta",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/bridge.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/brief.md",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/memgraph.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/plan.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/preflight.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/protocol.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/recall-loop.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/replay.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/bridge-wiring.test.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fake-bridge.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fake-seq/l0.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/goal-contract.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/life-contract.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/maintenance-contract.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/cases.expect.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-float.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-out-of-range.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/cut-body.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/decision-number.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/dup-key.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/empty-body.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-aborted.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-error-detail-null.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-parse.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-timeout.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-auth.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-bridge.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-busy.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit-float-retry.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-login.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-spawn.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-unknown-member.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/esc-say.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-missing.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-null.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-string-number.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/html-body.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/make-cases.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-error-in-answer.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-memo-first.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-ask.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-hold.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-craft.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-explore-quoted-why.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-gather.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-item.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-null-item.json",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/gather-limit.test.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/memgraph.test.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/protocol.test.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/real-data.mjs",
+      "match": true
+    },
+    {
+      "root": "snapshot",
+      "path": "Tools/ai-bridge/test/recall-loop.test.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/bridge.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/brief.md",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/memgraph.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/plan.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/preflight.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/protocol.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/recall-loop.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/replay.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/bridge-wiring.test.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fake-bridge.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fake-seq/l0.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/goal-contract.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/life-contract.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/maintenance-contract.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/cases.expect.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-float.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/count-out-of-range.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/cut-body.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/decision-number.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/dup-key.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/empty-body.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-aborted.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-error-detail-null.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-parse.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/env-timeout.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-auth.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-bridge.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-busy.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit-float-retry.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-limit.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-login.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-spawn.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/err-unknown-member.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/esc-say.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-missing.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-null.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/for-string-number.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/html-body.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/make-cases.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-error-in-answer.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/nested-memo-first.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-ask.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-hold.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-craft.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-explore-quoted-why.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-gather.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-item.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/fixtures/plan/ok-set-store-null-item.json",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/gather-limit.test.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/memgraph.test.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/protocol.test.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/real-data.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/ai-bridge/test/recall-loop.test.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/knowledge/.gitignore",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/knowledge/README.md",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/knowledge/build.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/knowledge/kg.mjs",
+      "match": true
+    },
+    {
+      "root": "runtime-package",
+      "path": "Tools/knowledge/rules.json",
+      "match": true
+    }
+  ]
+}

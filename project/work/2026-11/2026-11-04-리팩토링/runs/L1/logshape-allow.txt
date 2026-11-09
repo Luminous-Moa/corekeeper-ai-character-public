@@ -1,0 +1,10 @@
+ASM-IN ## {} |  | ASM-IN	S6a recorder (AIDecisions.cs AsmIn :2528), decisionlog.on only — planned new line
+ASM-OUT ## {} |  | ASM-OUT	S6a recorder (AIDecisions.cs AsmOut :2539) — planned new line
+ASM-OUT ## recursed |  | ASM-OUT	S6a recorder, tool-short rebuild (AIDecisions.cs :2463) — planned new line
+SKILL | reason start end facts wall | SKILL FAILED	TunnelSkill failure facts (AIExplore.cs:955, same text in rf-S0); L0 had no tunnel failure (situation)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set set | DECISION SEND	_setLog ' set=close-fight' + ' set=free-time' (AIDecisions.cs :2403/:2413 = rf-S0 :2584/:2594); L0 had no fight during free time (situation)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set set swarm | DECISION SEND	same as above with swarm field (situation)
+DECISION ## INPUT | rev trigger set set running motion input | DECISION INPUT	same _setLog in the INPUT line (situation)
+BRAIN |  | BRAIN LLM	BRAIN only-wait line (unchanged) whose trigger text '자유 시간 시작: 위쪽 LLM에 5초 뒤…' contains LLM (situation)
+TEST-ONLY nonew |  | TEST-ONLY	extra test command used in L1 X2/X3 (not in L0 set)
+GOAL ended | rev | GOAL	explore end branch (AIDecisions.cs :1002 EndGoal), exercised only in L1 X3 with nonew

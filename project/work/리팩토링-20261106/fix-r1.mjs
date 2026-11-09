@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const p='C:/Dev/CoreKeeperModSDK-refactor-20261106/Assets/AIPlayerSpike/Scripts/AIGoals.cs';
+let s=fs.readFileSync(p,'utf8');
+const a=s.indexOf('    // Build facts are consumed now');
+const b=s.indexOf('\n\n\n}',a);
+if(a<0||b<0) throw Error('markers');
+const block=s.slice(a,b);
+s=s.slice(0,a)+'\n'+s.slice(b);
+const dest=s.indexOf('    // The one way a goal ends with a report');
+s=s.slice(0,dest)+block+'\n\n'+s.slice(dest);
+fs.writeFileSync(p,s);

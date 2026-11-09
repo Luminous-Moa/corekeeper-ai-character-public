@@ -1,0 +1,541 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 선택 트리 연결 이후 checkpoint",
+        "doc": "pathSharedReview",
+        "end": 48,
+        "line": 38,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+        "start": 38
+      },
+      {
+        "anchor": "## 구현 확인",
+        "doc": "pathSharedReview",
+        "end": 15,
+        "line": 9,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+        "start": 9
+      },
+      {
+        "anchor": "## 범위",
+        "doc": "pathSharedIntegration",
+        "end": 64,
+        "line": 60,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+        "sha256": "28a721abd979837a8ab05a2ff866731888e37dc0a9c7b50d3d2f8cc9ecd7cdc0",
+        "start": 60
+      },
+      {
+        "anchor": "## 2차 구현",
+        "doc": "pathFinalImplementation",
+        "end": 17,
+        "line": 9,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+        "sha256": "a40d84d2a984eefec10a199178013ae5e9666115910c3c3479cc73cd59b4c744",
+        "start": 9
+      },
+      {
+        "anchor": "HEAD는 2차 후보",
+        "doc": "pathAcceptance",
+        "end": 5,
+        "line": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+        "sha256": "0555e074a2b3a9ab035afc65c961ae2a831fefc17554c3520f507cad2d85db7a",
+        "start": 5
+      }
+    ],
+    "id": "R.path-implementation",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 48,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "start": 38
+      },
+      {
+        "end": 15,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+        "start": 9
+      },
+      {
+        "end": 64,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+        "start": 60
+      },
+      {
+        "end": 17,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+        "start": 9
+      },
+      {
+        "end": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+        "start": 5
+      }
+    ],
+    "status": "참고·공식 통합·대표 ai2 실기 수용",
+    "summary": "같은 배치의 열린·닫힌 검색을 공유하고 경계 목적지는 마지막 한 칸으로 복원한다. 기존 원정 트리에서 싼key/좌표 목록을 탐색한 뒤 현재 leaf의 상세 경로와 실행 전 위험을 준비한다. 가까운 직접 행동·entity/life/명시 목적지·현재 실행과 원래 목표를 보존한다. 소수계획은 단일검색을 쓰고8은 공유검색 전환 조건이다. 직접 대응만255를 초과하면 진단 후 전송을 중단한다. 동률 최단경로 순서와 공유 관측 진단 범위는 달라질 수 있다.",
+    "title": "43c3817 공유 검색과 기존 원정 트리 연결의 공식 구현",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.ExploreSteps()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.RememberedOresSteps()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.BuildCandidateSteps(World, Entity, AIObservation, bool, bool, System.Action<System.Collections.Generic.List<AICandidate>>)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.BuildJsonSteps(string, System.Collections.Generic.List<AICandidate>, System.Action<string>)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs#AIBrain.PreparationSteps(AIBrain.Preparation, bool)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs#AIBrain.PreparePlan(World, Entity, int2, bool)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.Compose(World, Entity, AIObservation, System.Collections.Generic.List<AICandidate>, ExpeditionQuery)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.Navigate(AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.PlanBatch.BeginSinglePlan(int2, int, bool, bool)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#AITunnel.PlanBatch.StepSearches(int)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 48,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 38
+        },
+        {
+          "end": 15,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "start": 9
+        },
+        {
+          "end": 64,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/tunnel-shared.md",
+          "start": 60
+        },
+        {
+          "end": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/implementation-final.md",
+          "start": 9
+        },
+        {
+          "end": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "start": 5
+        }
+      ],
+      "from": "R.path-implementation",
+      "kind": "길 계산 최적화 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/Core/AITunnelSearch.cs#AITunnelSearch.SharedSearchJob.Step(int)",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 2차 대표 실기 · 43c3817",
+          "doc": "pathLiveFinal",
+          "end": 69,
+          "line": 65,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+          "sha256": "5c11461c55028c37133fc3d976fe8710831d7ed8b2fdc878039da9138c02f458",
+          "start": 65
+        }
+      ],
+      "from": "R.path-implementation",
+      "id": "E217",
+      "kind": "참고: 같은43c3817 실기 관측",
+      "to": "R.path-live",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 직접 실행",
+          "doc": "pathSharedReview",
+          "end": 27,
+          "line": 17,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+          "start": 17
+        }
+      ],
+      "from": "R.path-implementation",
+      "id": "E214",
+      "kind": "참고: 생산 경로와 회귀 검증",
+      "to": "R.path-offline",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 선택 트리 연결 이후 checkpoint",
+          "doc": "pathSharedReview",
+          "end": 48,
+          "line": 38,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-shared-search.md",
+          "sha256": "a151f563cb0df229b93a9573534af2949a9227587610c5b53fedbecf4b9d543c",
+          "start": 38
+        }
+      ],
+      "from": "P.path-optimization",
+      "id": "E212",
+      "kind": "참고: 2차 구현 후보의 실제 변경",
+      "to": "R.path-implementation",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "node": {
+    "class": "사용자 결정 요약",
+    "evidence": [
+      {
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결",
+        "doc": "expeditionAgreement",
+        "end": 38,
+        "line": 30,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+        "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+        "start": 30
+      }
+    ],
+    "id": "pol.expedition-flow",
+    "sourceLocations": [
+      {
+        "end": 38,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+        "start": 30
+      }
+    ],
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "이번 외출의 목적·현장 판단·실제 확보량·귀환 목적·후속 작업을 연결한다. 원정은 새 목표 계층이 아니며 원래 부탁과 중간 작업의 완료를 구별한다.",
+    "title": "채집·이동·귀환의 모델 판단과 실제 실행",
+    "type": "정책"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 3. 목표량·귀환·후속 작업 연결",
+          "doc": "expeditionAgreement",
+          "end": 38,
+          "line": 30,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition",
+      "kind": "현재 합의의 정책 요약",
+      "to": "pol.expedition-flow",
+      "type": "reference"
+    }
+  ]
+}

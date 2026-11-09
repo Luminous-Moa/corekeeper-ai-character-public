@@ -1,0 +1,78 @@
+{
+  "id": "R.game-topic.hazards",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [],
+      "counts": {
+        "action_completion": 28
+      },
+      "id": "R.game-topic.hazards",
+      "labels": [
+        "block_fire_aoe",
+        "cave_in_mortar_then_rock",
+        "cicada_buzz_mortar",
+        "hydra_beam_mortar_attack",
+        "hydra_ice_shard_mortar",
+        "hydra_lava_mortar",
+        "hydra_nilipede_mortar",
+        "hydra_shockwave_mortar",
+        "hydra_stalactite_mortar",
+        "hydra_void_mortar_then_spawn_trap",
+        "larva_hive_mortar_ground_slime",
+        "mummy_mortar_attack",
+        "poison_slime_mortar_spawn_slime",
+        "robot_fire_rocket_mortar",
+        "robot_patroller_fire_mortar",
+        "robot_patroller_oil_mortar",
+        "robot_void_mortar",
+        "sand_explosion_spawn_bomb_scarab",
+        "scarab_sand_mortar",
+        "shaman_mortar_spawn_fire",
+        "stream_bomb_mortar"
+      ],
+      "planning": [
+        "P.observation",
+        "P.field-choice"
+      ],
+      "title": "환경·적 공격의 위험",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:completion:A:block-fire-mortar-9305-v1",
+        "game:completion:A:cave-in-9311-rock-5526-v1",
+        "game:completion:A:cave-in-9312-rock-5527-v1",
+        "game:completion:A:cicada-buzz-mortar-9322-v1",
+        "game:completion:A:hydra-beam-mortar-9313-v1",
+        "game:completion:A:hydra-ice-shard-mortar-9316-v1",
+        "game:completion:A:hydra-lava-mortar-9317-v1",
+        "game:completion:A:hydra-nilipede-mortar-9318-v1",
+        "game:completion:A:hydra-shockwave-9315-v1",
+        "game:completion:A:hydra-stalactite-9314-v1",
+        "game:completion:A:hydra-void-mortar-6613-spawn-6612-v1",
+        "game:completion:A:larva-hive-mortar-9300-v1",
+        "game:completion:A:mummy-mortar-9310-v1",
+        "game:completion:A:poison-slime-mortar-9301-v1",
+        "game:completion:A:robot-fire-mortar-9333-v1",
+        "game:completion:A:robot-fire-mortar-9333-variant1-v1",
+        "game:completion:A:robot-patroller-fire-9340-v1",
+        "game:completion:A:robot-patroller-oil-9339-v1",
+        "game:completion:A:robot-void-mortar-9332-v1",
+        "game:completion:A:robot-void-mortar-9332-variant1-v1",
+        "game:completion:A:scarab-mortar-9303-v1",
+        "game:completion:A:scarab-mortar-9304-spawn-3130-1-v1",
+        "game:completion:A:shaman-mortar-9302-v1",
+        "game:completion:A:stream-mortar-9326-bomb-9001-v1",
+        "game:completion:A:stream-mortar-9327-bomb-9002-v1",
+        "game:completion:A:stream-mortar-9328-bomb-9003-v1",
+        "game:completion:A:stream-mortar-9329-bomb-9010-v1",
+        "game:completion:A:stream-mortar-9330-bomb-9018-v1"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

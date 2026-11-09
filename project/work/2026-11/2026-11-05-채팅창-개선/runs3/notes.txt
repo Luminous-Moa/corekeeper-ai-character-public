@@ -1,0 +1,34 @@
+﻿07:36:22 backup done (C:\Dev\_scratch\chat-ui3\backup); installed 99c9a95 cs46 diff0
+07:36:56 bridge up, launching game 99c9a95 (A)
+07:38:35 in world (A, 99c9a95)
+07:38:37 /ai all on
+07:39:47 rep done A-rep1
+07:40:34 rep done A-rep2
+07:41:21 rep done A-rep3
+07:42:42 rep done A-rep4
+07:43:26 rep done A-rep5
+07:44:57 fill done A-fill2pan-1
+07:46:00 fill done A-fill2pan-2
+07:47:05 rep done A-rep6-after
+07:48:13 var done A-var-hint (hint)
+07:49:06 var done A-var-mention (mention)
+07:50:16 var2 (mention, shots at each step)
+07:50:42 /ai off (A)
+07:51:20 game closed (A), log saved
+07:52:17 installed chat-fade 0927753 exit0 errorCS0 installed .cs 48, different from 0927753: 0
+07:52:17 launching game (B, 0927753)
+07:53:57 in world (B)
+07:53:59 /ai all on (B)
+07:55:19 B1 distinct fill done
+07:56:03 B2 fade open/close measured
+07:56:55 B2 new-line fade (@Grok)
+07:57:17 B3 hint/tab
+07:58:06 rep done B4-rep1
+07:58:50 rep done B4-rep2
+07:59:55 fill done B4-fill2pan-1
+08:01:03 fill done B4-fill2pan-2
+08:01:35 fadeSeconds 3 written
+08:01:54 fadeSeconds back to 7
+08:02:04 /ai off (B)
+08:03:13 game closed (B), log saved
+08:03:31 restore verify 0; installed .cs 46, different from 99c9a95: 0

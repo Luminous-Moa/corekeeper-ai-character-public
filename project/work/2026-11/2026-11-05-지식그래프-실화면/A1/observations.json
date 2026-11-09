@@ -1,0 +1,213 @@
+[
+  {
+    "time": "2026-11-05T05:16:30.467Z",
+    "name": "01-world",
+    "action": "Activate existing Core Keeper window; observation only",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:16:37.707Z",
+    "name": "02-chat-open",
+    "action": "Press Return to open chat command input",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": {
+      "focused_element": "0 창 Core Keeper",
+      "tree": "Window: \"Core Keeper\", App: CoreKeeper.exe.\n\t0 창 Core Keeper\n\nThe focused UI element is 0 창 Core Keeper."
+    }
+  },
+  {
+    "time": "2026-11-05T05:16:45.564Z",
+    "name": "03-ai-draft",
+    "action": "Type /ai into visible chat input; not submitted",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:16:51.318Z",
+    "name": "04-ai-help",
+    "action": "Submit /ai; local help response",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:17:15.943Z",
+    "name": "05-chat-reopen",
+    "action": "Reopen chat after /ai response",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:17:22.013Z",
+    "name": "06-target-draft",
+    "action": "Type /ai Claude in command input",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:17:31.301Z",
+    "name": "07-target-cancelled",
+    "action": "Cancel unsubmitted /ai Claude draft on parent instruction; no command execution",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:18:04.939Z",
+    "name": "08-chat-open-again",
+    "action": "Reopen chat for log scroll inspection",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:18:11.235Z",
+    "name": "09-chat-scroll-up",
+    "action": "Scroll upward over visible chat log by 600",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:18:21.099Z",
+    "name": "10-chat-closed",
+    "action": "Close chat; scroll did not move log and changed selected quick slot from 1 to 0",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:18:29.997Z",
+    "name": "11-slot-restored",
+    "action": "Press visible quickslot key 1 to restore original selection; no item use",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:18:38.084Z",
+    "name": "12-game-menu",
+    "action": "Open existing game menu with Escape; no settings/exit action",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  },
+  {
+    "time": "2026-11-05T05:18:47.087Z",
+    "name": "13-world-final",
+    "action": "Close game menu and leave original world view with quickslot 1 selected; end UI input",
+    "window": {
+      "app": "process:C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper.exe",
+      "id": 30475784,
+      "title": "Core Keeper"
+    },
+    "screenshot": {
+      "id": "screenshot-0",
+      "width": 1600,
+      "height": 1001
+    },
+    "accessibility": null
+  }
+]

@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+function blocks(f,prefix){const t=fs.readFileSync(f,'utf8');const lines=t.split(/\r?\n/),out=[];for(let i=0;i<lines.length;i++){const m=lines[i].match(/^### ((?:pol|cand|U)\.[^\s]+)/);if(!m||!m[1].startsWith(prefix))continue;let j=i+1;while(j<lines.length&&!/^#{1,3} /.test(lines[j]))j++;out.push({id:m[1],text:lines.slice(i,j).join('\n').trim()});}return out;}
+let seed=72945137;let samples=[],checks=[];
+for(const [old,neu,prefix] of [['preserved/legacy/기획/정책.md','C/기획/정책-기준.md','pol.'],['preserved/legacy/기획/정책.md','C/기획/후보-보존.md','cand.'],['preserved/legacy/기획/미결.md','C/기획/미결-보존.md','U.']]){let a=blocks(old,prefix),b=blocks(neu,prefix);checks.push({prefix,oldCount:a.length,newCount:b.length,mismatches:a.filter(x=>!b.some(y=>y.id===x.id&&y.text.includes(x.text))).map(x=>x.id)});for(let k=0;k<2;k++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;samples.push(a.splice(Math.floor(seed/4294967296*a.length),1)[0]);}}
+fs.writeFileSync('Review/preservation-samples.json',JSON.stringify({seed:72945137,checks,samples},null,2));console.log(JSON.stringify({checks,samples},null,2));

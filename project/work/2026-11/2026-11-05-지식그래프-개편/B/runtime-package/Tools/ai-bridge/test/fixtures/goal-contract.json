@@ -1,0 +1,588 @@
+{
+  "wireNames": [
+    "gather",
+    "explore",
+    "follow",
+    "craft",
+    "store",
+    "home",
+    "farm",
+    "cook",
+    "goto",
+    "place",
+    "equip",
+    "unequip",
+    "hold",
+    "take",
+    "drop",
+    "give",
+    "maintain"
+  ],
+  "hostWords": {
+    "None": [],
+    "Gather": [],
+    "Explore": [
+      "탐험",
+      "explore"
+    ],
+    "Follow": [
+      "따라와",
+      "follow"
+    ],
+    "Craft": [
+      "만들기",
+      "craft"
+    ],
+    "Store": [
+      "보관",
+      "store"
+    ],
+    "Home": [
+      "기지로",
+      "home"
+    ],
+    "Farm": [
+      "농사",
+      "밭",
+      "farm"
+    ],
+    "Cook": [
+      "요리",
+      "cook"
+    ],
+    "Free": [],
+    "Goto": [
+      "가기",
+      "goto"
+    ],
+    "Place": [
+      "놓기",
+      "place"
+    ],
+    "Equip": [
+      "장착",
+      "equip"
+    ],
+    "Unequip": [
+      "벗기",
+      "unequip"
+    ],
+    "Hold": [
+      "들기",
+      "hold"
+    ],
+    "Take": [
+      "꺼내기",
+      "take"
+    ],
+    "Drop": [
+      "내려놓기",
+      "drop"
+    ],
+    "Give": [
+      "건네기",
+      "give"
+    ]
+  },
+  "cases": [
+    {
+      "name": "valid gather",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": 1
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid explore",
+      "goal": {
+        "do": "explore"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid follow",
+      "goal": {
+        "do": "follow"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid craft",
+      "goal": {
+        "do": "craft",
+        "item": "Wood",
+        "count": 1
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid store",
+      "goal": {
+        "do": "store"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid home",
+      "goal": {
+        "do": "home"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid farm",
+      "goal": {
+        "do": "farm"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid cook",
+      "goal": {
+        "do": "cook"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid goto",
+      "goal": {
+        "do": "goto",
+        "where": "base"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "valid place",
+      "goal": {
+        "do": "place",
+        "item": "Wood"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "gather count -1",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": -1
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "gather count 0",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": 0
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "gather count 1",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": 1
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "gather count 30",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": 30
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "gather count 31",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": 31
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "craft count -1",
+      "goal": {
+        "do": "craft",
+        "item": "Wood",
+        "count": -1
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "craft count 0",
+      "goal": {
+        "do": "craft",
+        "item": "Wood",
+        "count": 0
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "craft count 1",
+      "goal": {
+        "do": "craft",
+        "item": "Wood",
+        "count": 1
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "craft count 10",
+      "goal": {
+        "do": "craft",
+        "item": "Wood",
+        "count": 10
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "craft count 11",
+      "goal": {
+        "do": "craft",
+        "item": "Wood",
+        "count": 11
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "place count -1",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "count": -1
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "place count 0",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "count": 0
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "place count 1",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "count": 1
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "place count 30",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "count": 30
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "place count 31",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "count": 31
+      },
+      "bridgeError": null,
+      "max": 2147483647
+    },
+    {
+      "name": "missing gather item",
+      "goal": {
+        "do": "gather",
+        "count": 1
+      },
+      "bridgeError": "gather needs item and integer count"
+    },
+    {
+      "name": "missing craft count",
+      "goal": {
+        "do": "craft",
+        "item": "Wood"
+      },
+      "bridgeError": "craft needs item and integer count"
+    },
+    {
+      "name": "fraction gather count",
+      "goal": {
+        "do": "gather",
+        "item": "Wood",
+        "count": 1.5
+      },
+      "bridgeError": "gather needs item and integer count"
+    },
+    {
+      "name": "missing goto where",
+      "goal": {
+        "do": "goto"
+      },
+      "bridgeError": "goto needs where (a place)"
+    },
+    {
+      "name": "bad goto where",
+      "goal": {
+        "do": "goto",
+        "where": 3
+      },
+      "bridgeError": "goto needs where (a place)"
+    },
+    {
+      "name": "missing place item",
+      "goal": {
+        "do": "place"
+      },
+      "bridgeError": "place needs item (where a string, count an integer when given)"
+    },
+    {
+      "name": "bad place where",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "where": 3
+      },
+      "bridgeError": "place needs item (where a string, count an integer when given)"
+    },
+    {
+      "name": "bad place count",
+      "goal": {
+        "do": "place",
+        "item": "Wood",
+        "count": "1"
+      },
+      "bridgeError": "place needs item (where a string, count an integer when given)"
+    },
+    {
+      "name": "store item",
+      "goal": {
+        "do": "store",
+        "item": "Wood"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "bad store item",
+      "goal": {
+        "do": "store",
+        "item": 4
+      },
+      "bridgeError": "store item must be a string"
+    },
+    {
+      "name": "unknown goal",
+      "goal": {
+        "do": "build"
+      },
+      "bridgeError": "bad goal.do"
+    },
+    {
+      "name": "internal free",
+      "goal": {
+        "do": "free"
+      },
+      "bridgeError": "bad goal.do"
+    },
+    {
+      "name": "equip exact slot",
+      "goal": {
+        "do": "equip",
+        "item": "CopperHelm",
+        "where": "head",
+        "slot": 12
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "unequip named gear slot",
+      "goal": {
+        "do": "unequip",
+        "where": "head"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "hold specific sword",
+      "goal": {
+        "do": "hold",
+        "item": "CopperSword",
+        "slot": 13,
+        "count": 1
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "reserve wood when storing",
+      "goal": {
+        "do": "store",
+        "item": "Wood",
+        "keep": 10,
+        "where": "chest:1,2"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "take partial stack",
+      "goal": {
+        "do": "take",
+        "item": "Wood",
+        "count": 20
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "drop partial stack",
+      "goal": {
+        "do": "drop",
+        "item": "Wood",
+        "count": 2
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "give to visible named player",
+      "goal": {
+        "do": "give",
+        "item": "Wood",
+        "count": 2,
+        "where": "Gemini"
+      },
+      "bridgeError": null
+    },
+    {
+      "name": "give requires recipient",
+      "goal": {
+        "do": "give",
+        "item": "Wood"
+      },
+      "bridgeError": "give needs recipient in where"
+    },
+    {
+      "name": "inventory rejects negative slot",
+      "goal": {
+        "do": "hold",
+        "item": "CopperSword",
+        "slot": -1
+      },
+      "bridgeError": "inventory slot must be an integer in 0..2147483647"
+    },
+    {
+      "name": "inventory rejects fractional reserve",
+      "goal": {
+        "do": "store",
+        "item": "Wood",
+        "keep": 2.5
+      },
+      "bridgeError": "inventory keep must be an integer in 0..2147483647"
+    },
+    {
+      "name": "equipment rejects multiple count",
+      "goal": {
+        "do": "equip",
+        "item": "CopperHelm",
+        "count": 2
+      },
+      "bridgeError": "equipment action count must be 1"
+    },
+    {
+      "name": "transfer rejects zero count",
+      "goal": {
+        "do": "take",
+        "item": "Wood",
+        "count": 0
+      },
+      "bridgeError": "transfer count must be positive"
+    }
+  ],
+  "experience": [
+    {
+      "kind": 0,
+      "item": "Wood",
+      "hasItem": true,
+      "key": ""
+    },
+    {
+      "kind": 9,
+      "item": "Wood",
+      "hasItem": true,
+      "key": ""
+    },
+    {
+      "kind": 1,
+      "item": "None",
+      "hasItem": false,
+      "key": "gather:None"
+    },
+    {
+      "kind": 4,
+      "item": "None",
+      "hasItem": false,
+      "key": "craft:None"
+    },
+    {
+      "kind": 2,
+      "item": "Wood",
+      "hasItem": true,
+      "key": "explore"
+    },
+    {
+      "kind": 3,
+      "item": "Wood",
+      "hasItem": true,
+      "key": "follow"
+    },
+    {
+      "kind": 5,
+      "item": "None",
+      "hasItem": false,
+      "key": "store"
+    },
+    {
+      "kind": 6,
+      "item": "Wood",
+      "hasItem": true,
+      "key": "home:Wood"
+    },
+    {
+      "kind": 11,
+      "item": "Torch",
+      "hasItem": true,
+      "key": "place:Torch"
+    },
+    {
+      "kind": 99,
+      "item": "Wood",
+      "hasItem": true,
+      "key": "99:Wood"
+    },
+    {
+      "kind": 99,
+      "item": "None",
+      "hasItem": false,
+      "key": "99"
+    }
+  ]
+}

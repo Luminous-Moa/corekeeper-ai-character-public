@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "11eb461ae122f404acec94563c086b09e002987c",
+  "status": "accepted-bounded-live-verification",
+  "inputs": [
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\00-agreement.md",
+      "stagedPath": "C/ui-20261106/00-agreement.md",
+      "sha256": "4d78fd46f5c864bd6303ffbd0d9b1d40a8c013997046756e1d2be519eaaaec6b",
+      "bytes": 6588
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\04-live-verification.md",
+      "stagedPath": "C/ui-20261106/04-live-verification.md",
+      "sha256": "37a9e0e31f2bc39ef069e3c2f03da7919e2c017095e8f8243ad4aef6d2c40b9d",
+      "bytes": 34130
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\08-acceptance.md",
+      "stagedPath": "C/ui-20261106/08-acceptance.md",
+      "sha256": "b39c068d0e23410a53fac6967d71abc0758765399256881ff1620c53a3907bd2",
+      "bytes": 3756
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\07-chat-screen-review.md",
+      "stagedPath": "C/ui-20261106/07-chat-screen-review.md",
+      "sha256": "ffbcd42bfdf5cf67ff6f863d6324b4d95a1562acae280ec5517f757ec90da1a4",
+      "bytes": 5627
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\34-fixture-equipped-panel-avatar.png",
+      "stagedPath": "C/ui-20261106/34-fixture-equipped-panel-avatar.png",
+      "sha256": "7cc389720c300a6d571d940f2c8ffda908bf22405388beaeeb6097618959f923",
+      "bytes": 299842
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\38-final-chat-real-ai-reply.png",
+      "stagedPath": "C/ui-20261106/38-final-chat-real-ai-reply.png",
+      "sha256": "bceb9a705148c1a03eefa74b717060c6451d72b0b0702122eb422fb2c956a168",
+      "bytes": 323596
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\43-final-skills.png",
+      "stagedPath": "C/ui-20261106/43-final-skills.png",
+      "sha256": "ec4d380b04ce5a6dc470a014c62e834279ae3bd75c97744574618a1e9a386cce",
+      "bytes": 294225
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\chat-installed-source-check.json",
+      "stagedPath": "C/ui-20261106/chat-installed-source-check.json",
+      "sha256": "76f7d79a76fda764538999890a2d115e2e2631d9d6c1e291d4d9a9008d51154b",
+      "bytes": 8310
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\fixture-equipment-source-raw.log",
+      "stagedPath": "C/ui-20261106/fixture-equipment-source-raw.log",
+      "sha256": "6edbe3c0fa501be37323f1207f92d972fb84758f246635708712d8b95db173e0",
+      "bytes": 2141
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\final-chat-row-measurement.json",
+      "stagedPath": "C/ui-20261106/final-chat-row-measurement.json",
+      "sha256": "0ca3ae487f11809ef364f9424b104fbb4595a97c5eff3720d0938130702cd312",
+      "bytes": 349
+    },
+    {
+      "originalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\ai-panel-integration-20261106\\evidence\\live\\fixture-undo-verification.json",
+      "stagedPath": "C/ui-20261106/fixture-undo-verification.json",
+      "sha256": "e56165f860cb6fcdb7da2f73eebaf2378712c2bb16496413ed916812c5c3cb39",
+      "bytes": 526
+    }
+  ],
+  "authority": "04 live report and 08 HEAD acceptance; no inferred function trace and no auto-equip claim",
+  "observations": [
+    {
+      "id": "UI-CHAT-11eb461",
+      "capability": "작은 기본 채팅 출력",
+      "developmentCapabilities": [
+        "F.chat-compact-screen"
+      ],
+      "relatedProductFeatures": [
+        "hook:AIChatScreenLayer.OnGUI"
+      ],
+      "status": "observed",
+      "boundary": "Actual Korean AI reply 43~44 to24 capture px, 7s+1s fade; input and mention hint remain native size. IME composition not exercised."
+    },
+    {
+      "id": "UI-INFO-11eb461",
+      "capability": "스킬·착용 장비 읽기",
+      "developmentCapabilities": [
+        "F.ai-info-ui"
+      ],
+      "relatedProductFeatures": [
+        "hook:AIInfoPanel.OnGUI"
+      ],
+      "status": "observed",
+      "boundary": "Skill XP conversion, empty slots, explicit three-slot armor fixture, off/on clearing/restoring. Fixture is test data, not product auto-equip."
+    }
+  ],
+  "limitations": [
+    "No OS IME composition test",
+    "No simultaneous mouse buttons test",
+    "No extra resolution live test",
+    "No quantitative performance benchmark"
+  ],
+  "functionTraceObserved": false
+}

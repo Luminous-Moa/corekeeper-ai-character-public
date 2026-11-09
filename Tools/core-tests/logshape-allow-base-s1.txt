@@ -1,0 +1,9 @@
+// logshape allow list for 코어-안전지대 단계 1 (branch base-s1). Use together with the combat stage 2 list:
+//   node Tools/core-tests/logshape.mjs diff <base log> <new log> --allow Tools/core-tests/logshape-allow-base-s1.txt
+// (concatenate with logshape-allow-combat-s2.txt when the base log is older than combat stage 2).
+// New lines outside the watched prefixes (not compared): "PLACE options: …", "PLACE: …" (AICraft.cs AIPlaceSpot),
+// "BASE-PROBE …" (AIBaseProbe.cs, test switch only). The other new SKILL 놓기 sentences have the old shapes (Korean text).
+SKILL | tileset | SKILL DONE	AICraft.cs PlaceSkill.Tick: a tile item placed (AIPlaceSpot.PlacedAt "타일 <type> tileset=<n>")
+SKILL | variation | SKILL DONE	AICraft.cs PlaceSkill.Tick: an object placed (AIPlaceSpot.PlacedAt "물체 <id> (x,z) variation=<n>")
+SKILL | phase variation me | SKILL	AIEdge.cs DoorPassSkill.Tick / DoorCloseSkill: door step log (phase, door variation, AI position; 단계 2)
+SKILL | phase hp bag | SKILL	AIEdge.Guard.cs PickupSkill.Tick: pick-up step log (phase, object health, bag count; 단계 3 치우기·옮기기)

@@ -1,0 +1,2054 @@
+{
+  "node": {
+    "action": "beam_attack",
+    "evidenceContext": {
+      "fixedCodeRoot": "../게임원본-상호작용/code",
+      "priorResearchRoot": "../2026-11",
+      "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated",
+      "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+      "sessionWorkRoot": ".."
+    },
+    "id": "beam",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "3e46a4074b58f614ddd7a0cc84bc6645dd9332d97de8f20169a4b45ed779b4e1",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+      "pointer": "/cases/12"
+    },
+    "roleBindings": [
+      {
+        "conditional": true,
+        "objectId": 18802,
+        "origin": [
+          {
+            "class": "GivesConditionsWhenEquippedAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6231121484686958865",
+            "data": {
+              "dontCalculateValuesFromLevel": 0,
+              "givesConditionsWhenEquipped": [
+                {
+                  "id": 9,
+                  "value": 18,
+                  "valueMultiplier": 0.15000000596046448
+                }
+              ],
+              "givesConditionsWhenHeldInHand": 1,
+              "isArmor": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8988269692984011909"
+              }
+            },
+            "line": 70012,
+            "pointers": [
+              "/3174/links/1/matches/0/components/2"
+            ],
+            "rawByteSha256": "7a4b4ecc274143e5f22da97bbb48bf8fd48bd0d01ad547329921b4f0e12fc584"
+          },
+          {
+            "class": "CooldownAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6232462972918440209",
+            "data": {
+              "casualCharacterIgnoresCustomCooldown": 0,
+              "cooldown": 0.20000000298023224,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "4962339814036285802"
+              },
+              "sharedCooldownIdentifier": 0
+            },
+            "line": 70023,
+            "pointers": [
+              "/3174/links/1/matches/0/components/3"
+            ],
+            "rawByteSha256": "2e8c92bc1d88a10bb0529231d4979ffe64f683ec795a5d6fb59fd8866a500ce9"
+          },
+          {
+            "class": "WeaponDamageAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2023361608059461905",
+            "data": {
+              "cooldown": {
+                "m_FileID": 0,
+                "m_PathID": "6232462972918440209"
+              },
+              "damage": 30,
+              "damageMultiplier": 1.0,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "1600031905084023057"
+              },
+              "isMagic": 1,
+              "isRange": 1,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "-5062887152188055279"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3334522134878156171"
+              }
+            },
+            "line": 48322,
+            "pointers": [
+              "/3174/links/1/matches/0/components/4"
+            ],
+            "rawByteSha256": "9fb8179cd6a60f1b4bf1d7149ed93e78145f6fc3275bda83c87d4b244d5d1f86"
+          },
+          {
+            "class": "AreaLevelAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5062887152188055279",
+            "data": {
+              "areaLevel": 10,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "1600031905084023057"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 5,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "line": 21027,
+            "pointers": [
+              "/3174/links/1/matches/0/components/5"
+            ],
+            "rawByteSha256": "768844515c1b75c13919dfff314103eae8c7491199851c0461021615e0d67fd8"
+          },
+          {
+            "class": "BeamWeaponAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:318381010361590033",
+            "data": {
+              "attackDistance": 5.0,
+              "attackFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "beamVisualFromCenter": 1,
+              "collideFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "damageIncreaseCondition": 351,
+              "expandMinDistance": 0.0,
+              "expandTimeSeconds": 0.0,
+              "expandWhenHeld": 0,
+              "extraProjectiles": 0,
+              "isStickyBeam": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7502771736259834553"
+              },
+              "manaCostCondition": 351,
+              "onlyDamageAtEndOfBeam": 0,
+              "overrideAnimation": "x",
+              "secondaryOverrideAnimation": "rangedAttack",
+              "secondaryProjectileVariationID": 0,
+              "spawnOffsetDistance": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "spreadAngle": 0,
+              "useRangedLoopAnimation": 1
+            },
+            "line": 54250,
+            "pointers": [
+              "/3174/links/1/matches/0/components/6"
+            ],
+            "rawByteSha256": "8bb1538519931d1f41a6da7f7d01b638238b2ca41df4be470c1e054554d06c3f"
+          },
+          {
+            "class": "ConsumesManaAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3370118000720469743",
+            "data": {
+              "cooldownAuth": {
+                "m_FileID": 0,
+                "m_PathID": "6232462972918440209"
+              },
+              "levelAuthoring": {
+                "m_FileID": 0,
+                "m_PathID": "-5062887152188055279"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2064036087421685163"
+              },
+              "manaCost": 4,
+              "manaCostMultiplier": 1.2999999523162842,
+              "secondaryUse": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "weaponDamage": {
+                "m_FileID": 0,
+                "m_PathID": "2023361608059461905"
+              }
+            },
+            "line": 12310,
+            "pointers": [
+              "/3174/links/1/matches/0/components/10"
+            ],
+            "rawByteSha256": "38c9d69d6b7d009403cc09ccdac9160da7799b4547d717888ef1bdce22c83e35"
+          },
+          {
+            "class": "DurabilityAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8179148821020156177",
+            "data": {
+              "durability": 875,
+              "durabilityMultiplier": 3.5,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "1600031905084023057"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "7926717838778376465"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4321641655394159069"
+              },
+              "maxDurability": 875,
+              "reinforceCostMultiplier": 1.0,
+              "repairMultiplier": 1.0
+            },
+            "line": 80022,
+            "pointers": [
+              "/3174/links/1/matches/0/components/12"
+            ],
+            "rawByteSha256": "360f906818d4938b63f3f1d1112cd58f3026c4f25e1f02165603f330445bca72"
+          }
+        ],
+        "role": "conditional_beam_tool",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1600031905084023057",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 91,
+        "origin": [
+          {
+            "class": "DurabilityAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3425314615227645036",
+            "data": {
+              "durability": 250,
+              "durabilityMultiplier": 1.0,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "220306917290476436"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7756979421580491884"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4321641655394159069"
+              },
+              "maxDurability": 250,
+              "reinforceCostMultiplier": 2.0,
+              "repairMultiplier": 4.0
+            },
+            "line": 12634,
+            "pointers": [
+              "/67/links/1/matches/0/components/2"
+            ],
+            "rawByteSha256": "7054c0926ca46143ee1b3c80bcd511cbc0a9c1c43ec006dd0b98534c7283e623"
+          },
+          {
+            "class": "GivesConditionsWhenEquippedAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5536472974591460244",
+            "data": {
+              "dontCalculateValuesFromLevel": 0,
+              "givesConditionsWhenEquipped": [
+                {
+                  "id": 9,
+                  "value": 800,
+                  "valueMultiplier": 0.7829999923706055
+                }
+              ],
+              "givesConditionsWhenHeldInHand": 1,
+              "isArmor": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7756979421580491884"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8988269692984011909"
+              }
+            },
+            "line": 66456,
+            "pointers": [
+              "/67/links/1/matches/0/components/3"
+            ],
+            "rawByteSha256": "9a920bc7dcd278b207dcdaa483fb0b814ac2929ce0d2b5959c1cbd4766cb75ae"
+          },
+          {
+            "class": "CooldownAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7886175049410346092",
+            "data": {
+              "casualCharacterIgnoresCustomCooldown": 0,
+              "cooldown": 0.20000000298023224,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7756979421580491884"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "4962339814036285802"
+              },
+              "sharedCooldownIdentifier": 0
+            },
+            "line": 35519,
+            "pointers": [
+              "/67/links/1/matches/0/components/4"
+            ],
+            "rawByteSha256": "b25e202304100c21c44284816cba86fc7098f9824c90b479dea88f6bc6d0550b"
+          },
+          {
+            "class": "WeaponDamageAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-992039529958866028",
+            "data": {
+              "cooldown": {
+                "m_FileID": 0,
+                "m_PathID": "-7886175049410346092"
+              },
+              "damage": 76,
+              "damageMultiplier": 0.5,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "220306917290476436"
+              },
+              "isMagic": 0,
+              "isRange": 0,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "3504980372265436052"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7756979421580491884"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3334522134878156171"
+              }
+            },
+            "line": 42918,
+            "pointers": [
+              "/67/links/1/matches/0/components/5"
+            ],
+            "rawByteSha256": "8322bcb2249b9e4d5aa0f93b8b3f196d5671b95f2bf5f445297edbc465a759b3"
+          },
+          {
+            "class": "AreaLevelAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3504980372265436052",
+            "data": {
+              "areaLevel": 70,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "220306917290476436"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 17,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7756979421580491884"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "line": 55958,
+            "pointers": [
+              "/67/links/1/matches/0/components/6"
+            ],
+            "rawByteSha256": "2c4a103cfa2334e11c40765fdd19eb4197c138e60fd74540994b3927efb437e9"
+          },
+          {
+            "class": "BeamWeaponAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1602001642826234988",
+            "data": {
+              "attackDistance": 5.0,
+              "attackFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "beamVisualFromCenter": 0,
+              "collideFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "damageIncreaseCondition": 0,
+              "expandMinDistance": 0.0,
+              "expandTimeSeconds": 0.0,
+              "expandWhenHeld": 0,
+              "extraProjectiles": 0,
+              "isStickyBeam": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7756979421580491884"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7502771736259834553"
+              },
+              "manaCostCondition": 0,
+              "onlyDamageAtEndOfBeam": 1,
+              "overrideAnimation": "x",
+              "secondaryOverrideAnimation": "",
+              "secondaryProjectileVariationID": 0,
+              "spawnOffsetDistance": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "spreadAngle": 0,
+              "useRangedLoopAnimation": 0
+            },
+            "line": 3158,
+            "pointers": [
+              "/67/links/1/matches/0/components/7"
+            ],
+            "rawByteSha256": "19283f32ce0d95176442b905694ac3bf80c6f0f51a5eebca20acfcdb23164db3"
+          }
+        ],
+        "role": "conditional_beam_tool",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:220306917290476436",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 9157,
+        "origin": [
+          {
+            "class": "GivesConditionsWhenEquippedAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2863843565587116700",
+            "data": {
+              "dontCalculateValuesFromLevel": 0,
+              "givesConditionsWhenEquipped": [
+                {
+                  "id": 9,
+                  "value": 421,
+                  "valueMultiplier": 1.2000000476837158
+                },
+                {
+                  "id": 12,
+                  "value": 11,
+                  "valueMultiplier": 2.325000047683716
+                },
+                {
+                  "id": 350,
+                  "value": 10,
+                  "valueMultiplier": 33.0
+                }
+              ],
+              "givesConditionsWhenHeldInHand": 1,
+              "isArmor": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8988269692984011909"
+              }
+            },
+            "line": 52585,
+            "pointers": [
+              "/2736/links/1/matches/0/components/2"
+            ],
+            "rawByteSha256": "d9d07f4223b50f60c9bde1152ac9f45169c2f8c5de68aba08c69c8f3e311cdbb"
+          },
+          {
+            "class": "CooldownAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1258899326024174948",
+            "data": {
+              "casualCharacterIgnoresCustomCooldown": 0,
+              "cooldown": 0.20000000298023224,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "4962339814036285802"
+              },
+              "sharedCooldownIdentifier": 0
+            },
+            "line": 1361,
+            "pointers": [
+              "/2736/links/1/matches/0/components/3"
+            ],
+            "rawByteSha256": "e3e8fce54ae218a9bd5afe4ff3c319b9fc089f02049b301c09429f4ef347d86b"
+          },
+          {
+            "class": "WeaponDamageAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2600996202413116772",
+            "data": {
+              "cooldown": {
+                "m_FileID": 0,
+                "m_PathID": "-1258899326024174948"
+              },
+              "damage": 48,
+              "damageMultiplier": 0.5,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "3957302099693908636"
+              },
+              "isMagic": 1,
+              "isRange": 1,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "8098124934913962652"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3334522134878156171"
+              }
+            },
+            "line": 8394,
+            "pointers": [
+              "/2736/links/1/matches/0/components/4"
+            ],
+            "rawByteSha256": "b3807a60f96579f839b08ab850217929c28ccfd8b4300286f3d9205d4679add3"
+          },
+          {
+            "class": "AreaLevelAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8098124934913962652",
+            "data": {
+              "areaLevel": 70,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "3957302099693908636"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 18,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "line": 79588,
+            "pointers": [
+              "/2736/links/1/matches/0/components/5"
+            ],
+            "rawByteSha256": "d51c8efe8f3e9b67c9ef45cd793f2bc8fbd5245bcb132b4cd61010423180d596"
+          },
+          {
+            "class": "BeamWeaponAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6182728670922100068",
+            "data": {
+              "attackDistance": 10.0,
+              "attackFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "beamVisualFromCenter": 1,
+              "collideFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "damageIncreaseCondition": 351,
+              "expandMinDistance": 0.0,
+              "expandTimeSeconds": 0.0,
+              "expandWhenHeld": 0,
+              "extraProjectiles": 0,
+              "isStickyBeam": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7502771736259834553"
+              },
+              "manaCostCondition": 351,
+              "onlyDamageAtEndOfBeam": 1,
+              "overrideAnimation": "x",
+              "secondaryOverrideAnimation": "rangedAttack",
+              "secondaryProjectileVariationID": 9206,
+              "spawnOffsetDistance": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "spreadAngle": 0,
+              "useRangedLoopAnimation": 1
+            },
+            "line": 26752,
+            "pointers": [
+              "/2736/links/1/matches/0/components/6"
+            ],
+            "rawByteSha256": "560ac0e2805cb42e4b83ad9c1759439f6d59c601215279d0480ac520a7952b67"
+          },
+          {
+            "class": "ConsumesManaAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8408365024442561180",
+            "data": {
+              "cooldownAuth": {
+                "m_FileID": 0,
+                "m_PathID": "-1258899326024174948"
+              },
+              "levelAuthoring": {
+                "m_FileID": 0,
+                "m_PathID": "8098124934913962652"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2064036087421685163"
+              },
+              "manaCost": 6,
+              "manaCostMultiplier": 1.0,
+              "secondaryUse": {
+                "m_FileID": 0,
+                "m_PathID": "-2115481694829825380"
+              },
+              "weaponDamage": {
+                "m_FileID": 0,
+                "m_PathID": "-2600996202413116772"
+              }
+            },
+            "line": 81184,
+            "pointers": [
+              "/2736/links/1/matches/0/components/10"
+            ],
+            "rawByteSha256": "d182699e7f4d5ba37dceb3044c229717fa12d698f4384862eb4249cae64a506a"
+          },
+          {
+            "class": "SecondaryUseAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2115481694829825380",
+            "data": {
+              "cancelAttackIfNotAtWindupTier": 1,
+              "extraDamageMultiplier": 0.0,
+              "knockback": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-7369778304160386404"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7150632308987263172"
+              },
+              "manaCostMultiplier": 0.0,
+              "mechanic": 1,
+              "minionToSpawn": 0,
+              "movementSpeedMultiplier": 0.5,
+              "projectileSpeedMultiplier": 1.0,
+              "useAimingAnimationDuringWindup": 1,
+              "useTerm": 19,
+              "weaponEffectType": 0,
+              "windupAreaSizeMultiplier": 1.0,
+              "windupExplosionSequenceIncrement": 0,
+              "windupExplosionSequenceStart": 0,
+              "windupTiers": 1,
+              "windupTime": 0.5,
+              "windupTimeMultiplier": 1.0
+            },
+            "line": 5845,
+            "pointers": [
+              "/2736/links/1/matches/0/components/11"
+            ],
+            "rawByteSha256": "6ed00d6599dc58a32d44c867c842b4c3c1165b6070fecf6f4250721a9bb780d4"
+          },
+          {
+            "components": [
+              {
+                "class": "ProjectileAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1014807575246520464",
+                "data": {
+                  "ExplodeOnEnemyCollision": 0,
+                  "collideWithNonWalkableTiles": 0,
+                  "damageRadius": 0.20000000298023224,
+                  "damageRadiusClient": 0.4000000059604645,
+                  "damagesTiles": 0,
+                  "dontDestroyOnCollision": 0,
+                  "isDamageable": 0,
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "-7770393707547922484"
+                  },
+                  "maxBounceCount": 0,
+                  "mayExplodeWithWindup": 0,
+                  "onlyAttackEveryXSecond": 0.0,
+                  "piercesEnemies": 1,
+                  "piercesWallTypes": [],
+                  "pingPongDuration": 0.0,
+                  "speedCurve1": {
+                    "m_Curve": [
+                      {
+                        "inSlope": -3.0144877433776855,
+                        "inWeight": 0.0,
+                        "outSlope": -3.0144877433776855,
+                        "outWeight": 0.09825103729963303,
+                        "time": 0.0,
+                        "value": 1.0,
+                        "weightedMode": 0
+                      },
+                      {
+                        "inSlope": -0.002520292764529586,
+                        "inWeight": 0.3333333432674408,
+                        "outSlope": -0.002520292764529586,
+                        "outWeight": 0.9999998211860657,
+                        "time": 0.4484489858150482,
+                        "value": 0.0,
+                        "weightedMode": 0
+                      },
+                      {
+                        "inSlope": 0.00021469563944265246,
+                        "inWeight": 0.2031707763671875,
+                        "outSlope": 0.00021469563944265246,
+                        "outWeight": 0.0,
+                        "time": 1.0,
+                        "value": 0.0,
+                        "weightedMode": 0
+                      }
+                    ],
+                    "m_PostInfinity": 2,
+                    "m_PreInfinity": 2,
+                    "m_RotationOrder": 4
+                  },
+                  "speedCurve2": {
+                    "m_Curve": [
+                      {
+                        "inSlope": -3.0144877433776855,
+                        "inWeight": 0.0,
+                        "outSlope": -3.0144877433776855,
+                        "outWeight": 0.09825103729963303,
+                        "time": 0.0,
+                        "value": 1.0,
+                        "weightedMode": 0
+                      },
+                      {
+                        "inSlope": -0.002520292764529586,
+                        "inWeight": 0.3333333432674408,
+                        "outSlope": -0.002520292764529586,
+                        "outWeight": 0.9999998211860657,
+                        "time": 0.4484489858150482,
+                        "value": 0.0,
+                        "weightedMode": 0
+                      },
+                      {
+                        "inSlope": 0.00021469563944265246,
+                        "inWeight": 0.2031707763671875,
+                        "outSlope": 0.00021469563944265246,
+                        "outWeight": 0.0,
+                        "time": 1.0,
+                        "value": 0.0,
+                        "weightedMode": 0
+                      }
+                    ],
+                    "m_PostInfinity": 2,
+                    "m_PreInfinity": 2,
+                    "m_RotationOrder": 4
+                  },
+                  "tileDamageRadius": 0.0,
+                  "treatDodgeAsHit": 0,
+                  "useSpeedCurve": 1,
+                  "zigZag": 0
+                },
+                "line": 69,
+                "pointer": "/2757/links/1/matches/0/components/3",
+                "rawByteSha256": "7a68d37074a8c8360cddaffe8d18a89bad31c73fca14b880313a78b7ee127f11"
+              },
+              {
+                "class": "HealthAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7631995476798160752",
+                "data": {
+                  "dontCalculateHealthFromLevel": 0,
+                  "hasHealthRegeneration": 0,
+                  "healDelayAfterLeavingCombat": 5.0,
+                  "healInCombatAsWell": 0,
+                  "healthIncreasePercentPerFiveSeconds": 100,
+                  "level": {
+                    "m_FileID": 0,
+                    "m_PathID": "-7989596793182011536"
+                  },
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "8684237468152111645"
+                  },
+                  "maxHealth": 1389,
+                  "maxHealthMultiplier": 1.0,
+                  "normalizedOverrideStartHealth": 1.0,
+                  "overrideStartHealth": 0,
+                  "startHealth": 1389
+                },
+                "line": 77126,
+                "pointer": "/2757/links/1/matches/0/components/5",
+                "rawByteSha256": "166e03a566b4236a39ed1bb9a1fd2cf27c2a6ab727b117427d6b17f3f378ae49"
+              },
+              {
+                "class": "DestroyTimerAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-312248539400159376",
+                "data": {
+                  "disablePhysicsAfterDuration": 0.0,
+                  "dontDropLootAfterTimerRunsOut": 0,
+                  "lifetime": {
+                    "isPlatformSpecific": 0,
+                    "nintendoSwitch": 0.0,
+                    "nintendoSwitch2": 0.0,
+                    "pc": 12.0,
+                    "playstation4": 0.0,
+                    "playstation5": 0.0,
+                    "xboxOne": 0.0,
+                    "xboxSeries": 0.0
+                  },
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "1165070251086839840"
+                  },
+                  "startTimerWhenVariation": 0
+                },
+                "line": 11090,
+                "pointer": "/2757/links/1/matches/0/components/6",
+                "rawByteSha256": "96730ae7ec377f87b2377a9f5cceb38123788e9825c1d23192527312eaab6b43"
+              },
+              {
+                "class": "BehaviourTagsAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6217079450575487120",
+                "data": {
+                  "cantAttackTags": [],
+                  "dataBlockRef": {
+                    "m_address": {
+                      "m_high": "-3074621198175539239",
+                      "m_low": "-638319326277819699"
+                    }
+                  },
+                  "eatsTags": [],
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "2632704552988684176"
+                  },
+                  "wantsToAttackTags": []
+                },
+                "line": 26946,
+                "pointer": "/2757/links/1/matches/0/components/7",
+                "rawByteSha256": "18ab9b8b26c86cc29eca294332ae74b50b002adef32c63d878b56e07f0486114"
+              },
+              {
+                "class": "MovementSpeedAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5020969715322830992",
+                "data": {
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "-7304748388382161257"
+                  },
+                  "speed": 3.0
+                },
+                "line": 20808,
+                "pointer": "/2757/links/1/matches/0/components/9",
+                "rawByteSha256": "7fe26837e94acdc07384fa213e1afe1d1a70f51c92f388665a19b0d31c68d9ae"
+              },
+              {
+                "class": "FactionAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4825654600829321072",
+                "data": {
+                  "faction": 0,
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "113154184469520911"
+                  }
+                },
+                "line": 62853,
+                "pointer": "/2757/links/1/matches/0/components/10",
+                "rawByteSha256": "b8227bb8de152bcca6b98e41736c0ae431c730033cf3b34fe83abedc027e23b5"
+              },
+              {
+                "class": "SiphonManaAuthoring",
+                "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8263493143757242512",
+                "data": {
+                  "m_Enabled": 1,
+                  "m_GameObject": {
+                    "m_FileID": 0,
+                    "m_PathID": "-6869133156259709072"
+                  },
+                  "m_Name": "",
+                  "m_Script": {
+                    "m_FileID": 1,
+                    "m_PathID": "-4228368297719438066"
+                  },
+                  "manaSiphonCooldownSeconds": 0.25,
+                  "maxManaSiphonedPerSecond": 0.20000000298023224,
+                  "maxTransferDistance": 10.0,
+                  "siphonRadius": 4.0
+                },
+                "line": 37507,
+                "pointer": "/2757/links/1/matches/0/components/16",
+                "rawByteSha256": "722f5529ccac9d2d898ed173efefc971d81f12dd83de6df0db40950c9f6884ed"
+              }
+            ],
+            "objectPointer": "/2757",
+            "role": "conditional_windup_projectile",
+            "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4422595524638228336",
+            "sourceRawByteSha256": "c95f4fe0afc2d783c096a940818fba234486bc56a1bbfd2fe6c953f9ad55d747"
+          }
+        ],
+        "role": "conditional_beam_tool",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3957302099693908636",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 9138,
+        "origin": [
+          {
+            "class": "DurabilityAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1593509588712776997",
+            "data": {
+              "durability": 875,
+              "durabilityMultiplier": 3.5,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "4082082101520000293"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-398445099599436507"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4321641655394159069"
+              },
+              "maxDurability": 875,
+              "reinforceCostMultiplier": 1.0,
+              "repairMultiplier": 1.0
+            },
+            "line": 46071,
+            "pointers": [
+              "/2726/links/1/matches/0/components/2"
+            ],
+            "rawByteSha256": "aace81979abf0c5b1ce5ef329c8b33160c333b8cb4395b4e1a922cc88385658f"
+          },
+          {
+            "class": "GivesConditionsWhenEquippedAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:383890324822058277",
+            "data": {
+              "dontCalculateValuesFromLevel": 0,
+              "givesConditionsWhenEquipped": [
+                {
+                  "id": 30,
+                  "value": 58,
+                  "valueMultiplier": 2.0
+                },
+                {
+                  "id": 352,
+                  "value": 100,
+                  "valueMultiplier": 208.0
+                }
+              ],
+              "givesConditionsWhenHeldInHand": 1,
+              "isArmor": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-398445099599436507"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8988269692984011909"
+              }
+            },
+            "line": 57694,
+            "pointers": [
+              "/2726/links/1/matches/0/components/3"
+            ],
+            "rawByteSha256": "4854f5c60f732fc7d80dea646f2cc52ef3c696522bdbb2e888ed657ec47e19c7"
+          },
+          {
+            "class": "CooldownAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8289053489513863899",
+            "data": {
+              "casualCharacterIgnoresCustomCooldown": 0,
+              "cooldown": 0.20000000298023224,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-398445099599436507"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "4962339814036285802"
+              },
+              "sharedCooldownIdentifier": 0
+            },
+            "line": 37659,
+            "pointers": [
+              "/2726/links/1/matches/0/components/4"
+            ],
+            "rawByteSha256": "bf139aa5b9fe0f6387a7ebc717fffd8f15a1dfa848e17248c1eaa1b8ba5d0611"
+          },
+          {
+            "class": "WeaponDamageAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6966524138634110245",
+            "data": {
+              "cooldown": {
+                "m_FileID": 0,
+                "m_PathID": "-8289053489513863899"
+              },
+              "damage": 69,
+              "damageMultiplier": 0.949999988079071,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "4082082101520000293"
+              },
+              "isMagic": 0,
+              "isRange": 1,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "4965400374388679973"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-398445099599436507"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3334522134878156171"
+              }
+            },
+            "line": 73704,
+            "pointers": [
+              "/2726/links/1/matches/0/components/5"
+            ],
+            "rawByteSha256": "00adc05361518fa76a99cee2a86dfd1b7256cd6dddbfa4478241c2abe0ca8f43"
+          },
+          {
+            "class": "AreaLevelAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4965400374388679973",
+            "data": {
+              "areaLevel": 85,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "4082082101520000293"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 18,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-398445099599436507"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "line": 63548,
+            "pointers": [
+              "/2726/links/1/matches/0/components/6"
+            ],
+            "rawByteSha256": "c32809f34cb37cf999c4035c0b244eaa2ff98c1eee42a41f77e49cb9038291ef"
+          },
+          {
+            "class": "BeamWeaponAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2848409133900208859",
+            "data": {
+              "attackDistance": 4.0,
+              "attackFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 1,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "beamVisualFromCenter": 0,
+              "collideFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "damageIncreaseCondition": 0,
+              "expandMinDistance": 1.0,
+              "expandTimeSeconds": 0.5,
+              "expandWhenHeld": 1,
+              "extraProjectiles": 0,
+              "isStickyBeam": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-398445099599436507"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7502771736259834553"
+              },
+              "manaCostCondition": 0,
+              "onlyDamageAtEndOfBeam": 0,
+              "overrideAnimation": "x",
+              "secondaryOverrideAnimation": "",
+              "secondaryProjectileVariationID": 0,
+              "spawnOffsetDistance": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "spreadAngle": 0,
+              "useRangedLoopAnimation": 0
+            },
+            "line": 9676,
+            "pointers": [
+              "/2726/links/1/matches/0/components/7"
+            ],
+            "rawByteSha256": "b124ba9f1eb544a180009a3c569f60e22d76eea8f6e0bc01cf2c89140dd31512"
+          }
+        ],
+        "role": "conditional_beam_tool",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4082082101520000293",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "objectId": 9135,
+        "origin": [
+          {
+            "class": "GivesConditionsWhenEquippedAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3262334510109399812",
+            "data": {
+              "dontCalculateValuesFromLevel": 0,
+              "givesConditionsWhenEquipped": [
+                {
+                  "id": 9,
+                  "value": 1000,
+                  "valueMultiplier": 2.4549999237060547
+                },
+                {
+                  "id": 58,
+                  "value": 15,
+                  "valueMultiplier": 2.5
+                },
+                {
+                  "id": 303,
+                  "value": 1,
+                  "valueMultiplier": 1.0
+                }
+              ],
+              "givesConditionsWhenHeldInHand": 1,
+              "isArmor": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-781565855912073988"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8988269692984011909"
+              }
+            },
+            "line": 11761,
+            "pointers": [
+              "/2723/links/1/matches/0/components/2"
+            ],
+            "rawByteSha256": "c1b60ba9a454567318814034a10c07ee0a0e0fe489b70b7a17531d0994bc60e7"
+          },
+          {
+            "class": "CooldownAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6472787894787138812",
+            "data": {
+              "casualCharacterIgnoresCustomCooldown": 0,
+              "cooldown": 0.20000000298023224,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-781565855912073988"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "4962339814036285802"
+              },
+              "sharedCooldownIdentifier": 0
+            },
+            "line": 71221,
+            "pointers": [
+              "/2723/links/1/matches/0/components/3"
+            ],
+            "rawByteSha256": "b3025f8fe82884854a2290eade03f3424aa54e264a51381e32477e1307fa2ad8"
+          },
+          {
+            "class": "WeaponDamageAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5199986240742581500",
+            "data": {
+              "cooldown": {
+                "m_FileID": 0,
+                "m_PathID": "6472787894787138812"
+              },
+              "damage": 93,
+              "damageMultiplier": 0.550000011920929,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "6805886266268017916"
+              },
+              "isMagic": 0,
+              "isRange": 0,
+              "level": {
+                "m_FileID": 0,
+                "m_PathID": "-5675892186551196420"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-781565855912073988"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3334522134878156171"
+              }
+            },
+            "line": 64755,
+            "pointers": [
+              "/2723/links/1/matches/0/components/4"
+            ],
+            "rawByteSha256": "a62e5e887c37378a9f238f66f7a6a62bbab3e416b91c3d160dda8adff5fc0074"
+          },
+          {
+            "class": "AreaLevelAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5675892186551196420",
+            "data": {
+              "areaLevel": 80,
+              "entityMono": {
+                "m_FileID": 0,
+                "m_PathID": "6805886266268017916"
+              },
+              "forceGenerateLevelEntities": 0,
+              "level": 19,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-781565855912073988"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "8200685022502099611"
+              }
+            },
+            "line": 24219,
+            "pointers": [
+              "/2723/links/1/matches/0/components/5"
+            ],
+            "rawByteSha256": "8442bac8a16e45bdd6c235e278a6bd8aacb5c1837fe3018896140ebda152262d"
+          },
+          {
+            "class": "BeamWeaponAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3201151536151356668",
+            "data": {
+              "attackDistance": 5.0,
+              "attackFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "beamVisualFromCenter": 0,
+              "collideFilterPVPOn": {
+                "Category00": 1,
+                "Category01": 1,
+                "Category02": 0,
+                "Category03": 1,
+                "Category04": 1,
+                "Category05": 0,
+                "Category06": 0,
+                "Category07": 0,
+                "Category08": 0,
+                "Category09": 0,
+                "Category10": 0,
+                "Category11": 0,
+                "Category12": 0,
+                "Category13": 0,
+                "Category14": 0,
+                "Category15": 0,
+                "Category16": 0,
+                "Category17": 0,
+                "Category18": 0,
+                "Category19": 1,
+                "Category20": 0,
+                "Category21": 0,
+                "Category22": 0,
+                "Category23": 0,
+                "Category24": 0,
+                "Category25": 0,
+                "Category26": 0,
+                "Category27": 0,
+                "Category28": 0,
+                "Category29": 0,
+                "Category30": 0,
+                "Category31": 0
+              },
+              "damageIncreaseCondition": 0,
+              "expandMinDistance": 0.0,
+              "expandTimeSeconds": 0.0,
+              "expandWhenHeld": 0,
+              "extraProjectiles": 0,
+              "isStickyBeam": 1,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-781565855912073988"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "7502771736259834553"
+              },
+              "manaCostCondition": 0,
+              "onlyDamageAtEndOfBeam": 1,
+              "overrideAnimation": "x",
+              "secondaryOverrideAnimation": "",
+              "secondaryProjectileVariationID": 0,
+              "spawnOffsetDistance": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "spreadAngle": 0,
+              "useRangedLoopAnimation": 0
+            },
+            "line": 54335,
+            "pointers": [
+              "/2723/links/1/matches/0/components/6"
+            ],
+            "rawByteSha256": "719ed9ea3f6c2442ebc3836f09405f79a4395d883495055654950ad70e6dbe3c"
+          }
+        ],
+        "role": "conditional_beam_tool",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916",
+        "variation": 0
+      },
+      {
+        "conditional": true,
+        "role": "dynamic_hit_target",
+        "type": "runtime_entity_or_tile"
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "5 distinct beam sources; sample 91 exact prior PASS plus four source-specific variants",
+    "status": "investigated_pending_review"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "beam/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "a8e15e4ac9dc4ccf33f12b91814bd759414007a89ff72ed8033dc23a829aab26",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/conditions"
+      },
+      "value": [
+        "state, cooldown, mana and windup gate; held item not broken",
+        "source-specific beam distance, sticky/expand/endpoint flags, target collision, faction, immunity and defense"
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "assetEvidence",
+      "id": "beam/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "0a43d23fef565acb572e0596be2f30913230b5a4499e9c0f47d918ad8d68ef8f",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/assetEvidence"
+      },
+      "value": "coverage.json"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "beam/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "be1d48112459d351d1a34c39ca18c3a2c632b949fb5e004971b14818e39e7874",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/codeEvidence"
+      },
+      "value": "pins.json; review/terra-sample/report.md and review/full-B-range-9100/report.md"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "relationLinks",
+      "id": "beam/evidence/relationLinks",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "1e579947f95b64d058146e54b306fd14316c36cd8dc0e44b2e1b0dc92b2799ac",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/relationLinks"
+      },
+      "value": "role-links.json"
+    },
+    {
+      "relation": "has_failure",
+      "field": "negativeCases",
+      "id": "beam/failure/negativeCases",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "c86cc85ed8c87ef60969bd943ede2690c9a824d7cb95b1627e1b6994066095a4",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/negativeCases"
+      },
+      "value": [
+        "missing/blocked target, immunity, invalid state, mana or cooldown",
+        "windup projectile ID 0 does not prove valid instantiated projectile for 91 and other zero-ID sources",
+        "9206 no owner visibility/range, no eligible target, inactive owner or no ManaCD blocks relevant siphon writes",
+        "owner mana increase counts nonnull targets even if target lacks eligible mana write; not necessarily conserved transfer"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "entry",
+      "id": "beam/flow/entry",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "c89e5499e7b94d0638772080c49653a6c4b70f9ef4f34a5daff5482de9d15d08",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/entry"
+      },
+      "value": "Interact held -> BeamWeaponSlot and QueueHit -> raycast"
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "beam/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "7989071c061e952a23966117741cb07c8d1a9be66251426bef79fe0545bcc53c",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/transitions"
+      },
+      "value": [
+        {
+          "from": "active beam",
+          "refs": [
+            "Pug.Other/PlayerEquipment/BeamTargetUpdateSystem.cs:276-425",
+            "Pug.Other/PlayerController.cs:5215-5250",
+            "Pug.Other/PlayerCommand/ClientSystem.cs:279-478",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:194-431,558",
+            "Pug.Other/TileDamageSystem.cs:515-550,790-844"
+          ],
+          "to": "raycast target selection then conditional health or tile damage"
+        },
+        {
+          "from": "attack gate",
+          "refs": [
+            "Pug.Other/BeamWeaponSlot.cs:13-42",
+            "Pug.Other/EquipmentSlot.cs:508-560",
+            "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-264",
+            "Pug.Other/Inventory/InventoryUtility.cs:464-473"
+          ],
+          "to": "mana write and conditional durability slot write"
+        },
+        {
+          "from": "9157 charged windup",
+          "refs": [
+            "Pug.ECS.Conversion/ECS.Conversion/BeamWeaponConverter.cs",
+            "Pug.Other/BeamWeaponSlot.cs:60-103",
+            "Pug.Other/PlayerEquipment/RangeWeaponSpawnProjectileSystem.cs:589-624",
+            "Pug.Other/ProjectileSystem.cs:230-440",
+            "SiphonMana.Converters/SiphonManaConverter.cs",
+            "SiphonMana/SiphonMana/SiphonManaSystem.cs:199-305,668-695"
+          ],
+          "to": "9206 projectile ECB spawn, attack or siphon target/mana writes"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "outcomes",
+      "id": "beam/result/outcomes",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "d21d4a608d462de743dfc2be9c8bb674997b0debd18573eda3995f7897f28125",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/outcomes"
+      },
+      "value": [
+        "beam entity hits conditionally enqueue health changes then health write; tile damage uses existing or initial health paths; no constant damage guaranteed",
+        "9135 is sticky/end-only; 9138 expands/nonsticky/non-end-only; 9157 has secondary 9206 and mana authoring; 18802 has mana authoring; source-specific full fields preserved",
+        "9206 siphon selects up to one valid visible enemy/player within radius and owner range/sight; every cooldown owner gains min(round(0.05*owner maxMana)*nonnull target count, maxMana cap), target mana decreases only if target Simulate and ManaCD",
+        "beam result true may trigger durability even for blocked hit, and eligible mana is deducted at attack stage; requests and actual slot writes differ"
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "beam/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "925ea2c89c7c509c9f3dad581573a9f05004b592cb0ba123a5dd943b85d7494b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12/boundaries"
+      },
+      "value": [
+        "runtime hit, damage, projectile spawn/playback, mana and defense unobserved; sample 91 specifics not generalized"
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:B-world-tools122",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "has_essential_supplement",
+      "target": "completion:essential:effect58-input-direction-v1",
+      "kind": "condition_consumer",
+      "action": "effect58_buttonmask_and_direction_support"
+    },
+    {
+      "relation": "has_essential_supplement",
+      "target": "completion:essential:lightning-chain-target-v1",
+      "kind": "action_completion",
+      "action": "lightning_first_and_chain_target_selection"
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "beam/role/0",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "beam/role/1",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "beam/role/2",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "beam/role/3",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "beam/role/4",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "beam/role/5",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:111",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:115",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:122",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:123",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:124",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "catalog-binding:B-world-tools122:133",
+      "kind": "participation_role",
+      "action": null
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1600031905084023057#0",
+      "kind": "claim",
+      "action": "beam_attack"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:220306917290476436#0",
+      "kind": "claim",
+      "action": "beam_attack"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3957302099693908636#0",
+      "kind": "claim",
+      "action": "beam_attack"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:4082082101520000293#0",
+      "kind": "claim",
+      "action": "beam_attack"
+    },
+    {
+      "relation": "supplements_claim",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916#0",
+      "kind": "claim",
+      "action": "beam_attack"
+    }
+  ],
+  "incoming": [
+    [
+      "supports_action",
+      "completion:essential:effect58-input-direction-v1"
+    ],
+    [
+      "reuses_consumer",
+      "completion:essential:lightning-chain-target-v1"
+    ],
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1600031905084023057#0"
+    ],
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:220306917290476436#0"
+    ],
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3957302099693908636#0"
+    ],
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:4082082101520000293#0"
+    ],
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916#0"
+    ],
+    [
+      "conditional_beam_tool",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1600031905084023057"
+    ],
+    [
+      "conditional_beam_tool",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:220306917290476436"
+    ],
+    [
+      "conditional_beam_tool",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3957302099693908636"
+    ],
+    [
+      "conditional_beam_tool",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4082082101520000293"
+    ],
+    [
+      "conditional_windup_projectile",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4422595524638228336"
+    ],
+    [
+      "conditional_beam_tool",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:6805886266268017916"
+    ]
+  ]
+}

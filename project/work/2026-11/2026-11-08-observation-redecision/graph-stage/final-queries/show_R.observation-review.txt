@@ -1,0 +1,113 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 판정",
+        "doc": "observationReview",
+        "end": 7,
+        "line": 5,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "sha256": "984ca55262e8f724a2a453eaff5a0bd5b9943afceb1facdd1f1a88a76827eccf",
+        "start": 5
+      },
+      {
+        "anchor": "## 직접 확인한 결과",
+        "doc": "observationReview",
+        "end": 23,
+        "line": 9,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "sha256": "984ca55262e8f724a2a453eaff5a0bd5b9943afceb1facdd1f1a88a76827eccf",
+        "start": 9
+      },
+      {
+        "anchor": "## 남은 검증",
+        "doc": "observationReview",
+        "end": 61,
+        "line": 57,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "sha256": "984ca55262e8f724a2a453eaff5a0bd5b9943afceb1facdd1f1a88a76827eccf",
+        "start": 57
+      },
+      {
+        "anchor": "## 판정",
+        "doc": "observationUpperReview",
+        "end": 7,
+        "line": 5,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+        "start": 5
+      }
+    ],
+    "id": "R.observation-review",
+    "layer": "참고",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "sourceLocations": [
+      {
+        "end": 7,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "start": 5
+      },
+      {
+        "end": 23,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "start": 9
+      },
+      {
+        "end": 61,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+        "start": 57
+      },
+      {
+        "end": 7,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "start": 5
+      }
+    ],
+    "status": "참고·독립 코드/오프라인/Unity 수용",
+    "summary": "기존 관측·실행156개, inventory171개, travel51개를 독립 통과했고 최종 상위 완료 경계는 생산 검사181개와 Unity를 수용했다. HTTP transport와 ECS 정렬·consumer 대역 경계가 있다. 실기09e418a의 장비 수령과 통로 선택은 별도 증거다. 조용한 통로에서 continue 후5초 재호출 조합과 floorNull 빠른 수령은 실기에서 관측하지 않았다.",
+    "title": "관측·재판단 코드와 생산 경로 오프라인 독립 수용",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 판정",
+          "doc": "observationUpperReview",
+          "end": 7,
+          "line": 5,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-review",
+      "id": "E228",
+      "kind": "참고: 최종 추가 경계 독립 검수",
+      "to": "R.observation-upper-completion",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 판정",
+          "doc": "observationReview",
+          "end": 7,
+          "line": 5,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+          "sha256": "984ca55262e8f724a2a453eaff5a0bd5b9943afceb1facdd1f1a88a76827eccf",
+          "start": 5
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "id": "E223",
+      "kind": "참고: 독립 검수와 남은 실기",
+      "to": "R.observation-review",
+      "type": "reference"
+    }
+  ]
+}

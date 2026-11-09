@@ -1,0 +1,57 @@
+{
+  "id": "R.expedition-game-evidence",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [],
+  "recordedEvidence": [
+    {
+      "class": "과거 조회 대응",
+      "evidence": [
+        {
+          "end": 36,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+          "start": 28
+        }
+      ],
+      "from": "R.expedition-game-evidence",
+      "kind": "기존 구현 기록에서 실제 조회한 게임 근거",
+      "runtimeTrace": false,
+      "to": "game:completion:B:melee-pick-2-0:cost-followup-v1",
+      "type": "reference"
+    },
+    {
+      "class": "과거 조회 대응",
+      "evidence": [
+        {
+          "end": 36,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+          "start": 28
+        }
+      ],
+      "from": "R.expedition-game-evidence",
+      "kind": "기존 구현 기록에서 실제 조회한 게임 근거",
+      "runtimeTrace": false,
+      "to": "game:completion:B:place-tile:CAB-2ebcba97367158c9b08f790c25d642c9:-1592303294285069928",
+      "type": "reference"
+    },
+    {
+      "class": "과거 조회 대응",
+      "evidence": [
+        {
+          "end": 36,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+          "start": 28
+        }
+      ],
+      "from": "R.expedition-game-evidence",
+      "kind": "기존 구현 기록에서 실제 조회한 게임 근거",
+      "runtimeTrace": false,
+      "to": "game:door",
+      "type": "reference"
+    }
+  ],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

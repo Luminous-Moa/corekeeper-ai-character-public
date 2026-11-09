@@ -1,0 +1,83 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 3차 최종 코드 검수 · 7af8f91e5d26e4fd9ce5996809ae41e213340118",
+        "doc": "expeditionFinalReview",
+        "end": 15,
+        "line": 13,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+        "sha256": "faa036c2b5f98d02803c9435dd69741aae46a21ccb5002b8a04b54ab90f1a2ff",
+        "start": 13
+      },
+      {
+        "anchor": "### 직접 검증 결과와 한계",
+        "doc": "expeditionFinalReview",
+        "end": 37,
+        "line": 31,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+        "sha256": "faa036c2b5f98d02803c9435dd69741aae46a21ccb5002b8a04b54ab90f1a2ff",
+        "start": 31
+      }
+    ],
+    "id": "R.expedition-final-review",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 15,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+        "start": 13
+      },
+      {
+        "end": 37,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+        "start": 31
+      }
+    ],
+    "status": "참고·독립 수용·조명 후속·미실게임",
+    "summary": "최종 독립검수에서 R2~R7 수정과 추가 중대블로커 부재를 확인했다. 시야 R1은 검수 당시 미해결이었고 이후 사용자가 후속 분리했다. 이전 Unity 로그 대신 최종v2 CompileCheck ok/exit0만 확인했다.",
+    "title": "7af8f91의 R2~R7 수정과 생산 경로 독립 수용",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 3차 최종 코드 검수",
+          "doc": "expeditionFinalReview",
+          "end": 15,
+          "line": 13,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+          "sha256": "faa036c2b5f98d02803c9435dd69741aae46a21ccb5002b8a04b54ab90f1a2ff",
+          "start": 13
+        }
+      ],
+      "from": "P.expedition",
+      "id": "E202",
+      "kind": "참고: 최종 구현의 독립 수용",
+      "to": "R.expedition-final-review",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 3차 최종 코드 검수",
+          "doc": "expeditionFinalReview",
+          "end": 15,
+          "line": 13,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+          "sha256": "faa036c2b5f98d02803c9435dd69741aae46a21ccb5002b8a04b54ab90f1a2ff",
+          "start": 13
+        }
+      ],
+      "from": "R.expedition-implementation",
+      "id": "E205",
+      "kind": "참고: 독립 검수 범위",
+      "to": "R.expedition-final-review",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,1035 @@
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=533.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=538.8 @Gemini PLANNER: report #13 answer after 15.2s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":15181,"report_id":13,"goal_rev":22,"answer":{"decision":"set","for":{"report":13,"goal_rev":22},"goal":{"do":"explore"},"order":"follow","say":"네, 장비 전달 완료했으니 혼자 주변 미개척 통로를 탐험해볼게요!","why":"호스트의 탐험 지시에 따라 혼자 주변 미개척 통로를 탐색하도록 목표 설정"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 13, \"goal_rev\": 22}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"네, 장비 전달 완료했으니 혼자 주변 미개척 통로를 탐험해볼게요!\", \"why\": \"호스트의 탐험 지시에 따라 혼자 주변 미개척 통로를 탐색하도록 목표 설정\"}\n","error":null,"detail":null,"prompt_chars":72696,"turn_chars":56370,"answer_chars":203,"usage":{"input":45677,"cached":0,"output":94,"reasoning":0},"usage_last":{"input":45677,"cached":0,"output":94,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2179,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=538.8 @Gemini chat reply: [Gemini] 네, 장비 전달 완료했으니 혼자 주변 미개척 통로를 탐험해볼게요!
+[AIPlayerSpike] t=538.8 @Gemini PLANNER: report #13 APPLY trigger=host_said decision=set plan=[explore] order=follow why='호스트의 탐험 지시에 따라 혼자 주변 미개척 통로를 탐색하도록 목표 설정' after 15.2s
+[AIPlayerSpike] t=538.8 @Gemini ORDER Gemini: host instruction #3 '@Gemini 장비는 다 받았어. 이제 혼자 주변의 아직 가보지 않은 통로를 탐험해줘. 갈림길에서는 네가 다음 방향을 골라 계속 이동해줘.' 받음 -> 따름 (report #13, 20s after it was given): 호스트의 탐험 지시에 따라 혼자 주변 미개척 통로를 탐색하도록 목표 설정
+[AIPlayerSpike] t=538.8 @Gemini PLAN Gemini: owed goal_done after report #13 (set): not needed
+[AIPlayerSpike] t=538.9 @Gemini EXP: goal run 613ecad7.436 started: explore x0 (llm:gemini#13)
+[AIPlayerSpike] t=538.9 @Gemini GOAL set rev=25 source=llm:gemini#13: 탐험 (start count 0)
+[AIPlayerSpike] t=538.9 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=538.9 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 10.9 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=538.9 @Gemini DECISION #113 SEND rev=25 trigger='새 목표' goal='탐험' candidates=44 inputChars=32348 prep=41.2ms[frames 5, wall 49.9ms, plans 6.0 n2 cached0] motion=boundary players=[Luminous(호스트) 남쪽 0.7칸, 체력 바 106/100, 서 있음] (objects 7 (+8 trigger-only, 0 under the AI), blocked tiles 10, large: CopperOreBoulder 2x2 at (31,-12)) | options=44 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=538.9 @Gemini PREP finished: rev=25 frames=8 plans=2 cached=0 work=41.6ms maxSlice=16.51ms trees=0 expanded=0 tiles=2018
+[AIPlayerSpike] t=539.2 @Gemini DECISION #113 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c29 tokens=29132 bodyChars=1893
+[AIPlayerSpike] t=539.2 @Gemini DECISION #113 RESULT choice=c29 (통로 탐색 — 지금 보이는 서쪽 길로 출발. 외길은 코너를 따라 계속 걷고, 다음 갈림길은 방향을 선택. 막힘·발견·위험은 다시 판단.) top=[c29=0.38, c30=0.27, c31=0.06] confidence=0.37 latency=0.29s tokens=29132 cached=0 cost=$0.002913 APPLY
+[AIPlayerSpike] t=539.2 @Gemini SKILL 통로 탐색 START at (26.90,-2.28)
+[AIPlayerSpike] t=539.2 @Gemini nav: mod A* path int2(27, -2) -> int2(26, -2): 1 tiles
+[AIPlayerSpike] t=539.4 @Gemini LEAK-CHECK walk to (26,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=539.4 @Gemini nav: mod A* path int2(26, -2) -> int2(25, -2): 1 tiles
+[AIPlayerSpike] t=539.6 @Gemini LEAK-CHECK walk to (25,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=539.6 @Gemini nav: mod A* path int2(25, -2) -> int2(24, -2): 1 tiles
+[AIPlayerSpike] t=539.8 @Gemini LEAK-CHECK walk to (24,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=541.5 @Gemini DECISION #114 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 37] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=23 inputChars=31770 prep=19.4ms[frames 5, wall 38.5ms, plans 0.0 n0 cached0] motion=boundary players=[Luminous(호스트) 동쪽 3.1칸, 체력 바 106/100, 서 있음] (objects 8 (+8 trigger-only, 0 under the AI), blocked tiles 11, large: CopperOreBoulder 2x2 at (31,-12)) | options=23 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=541.5 @Gemini PREP finished: rev=25 frames=6 plans=0 cached=0 work=20.1ms maxSlice=4.81ms trees=0 expanded=0 tiles=0
+[AIPlayerSpike] t=542.0 @Gemini DECISION #114 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c12 tokens=26990 bodyChars=1159
+[AIPlayerSpike] t=542.1 @Gemini EXP: report part 6256 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=542.1 @Gemini nav: mod A* path int2(24, -2) -> int2(24, -1): 1 tiles
+[AIPlayerSpike] t=542.3 @Gemini LEAK-CHECK walk to (24,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=542.3 @Gemini nav: mod A* path int2(24, -1) -> int2(24, 0): 1 tiles
+[AIPlayerSpike] t=542.5 @Gemini LEAK-CHECK walk to (24,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=542.5 @Gemini nav: mod A* path int2(24, 0) -> int2(24, 1): 1 tiles
+[AIPlayerSpike] t=542.6 @Gemini LEAK-CHECK walk to (24,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=542.6 @Gemini nav: mod A* path int2(24, 1) -> int2(24, 2): 1 tiles
+[AIPlayerSpike] t=542.8 @Gemini LEAK-CHECK walk to (24,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=542.8 @Gemini nav: mod A* path int2(24, 2) -> int2(24, 3): 1 tiles
+[AIPlayerSpike] t=543.0 @Gemini LEAK-CHECK walk to (24,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=543.0 @Gemini nav: mod A* path int2(24, 3) -> int2(24, 4): 1 tiles
+[AIPlayerSpike] t=543.2 @Gemini LEAK-CHECK walk to (24,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=543.2 @Gemini nav: mod A* path int2(24, 4) -> int2(24, 5): 1 tiles
+[AIPlayerSpike] t=543.3 @Gemini LEAK-CHECK walk to (24,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=543.3 @Gemini nav: mod A* path int2(24, 5) -> int2(24, 6): 1 tiles
+[AIPlayerSpike] t=543.5 @Gemini LEAK-CHECK walk to (24,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=543.5 @Gemini nav: mod A* path int2(24, 6) -> int2(24, 7): 1 tiles
+[AIPlayerSpike] t=543.7 @Gemini LEAK-CHECK walk to (24,7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=544.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 55, work 196.7ms
+[AIPlayerSpike] t=545.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 53, work 174.1ms
+[AIPlayerSpike] t=545.4 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 49, work 159.2ms
+[AIPlayerSpike] t=546.3 @Gemini DECISION #115 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 37] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=28 inputChars=25338 prep=345.0ms[frames 49, wall 429.3ms, plans 135.0 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 10.7칸, 체력 바 106/100, 서 있음] (objects 11 (+6 trigger-only, 0 under the AI), blocked tiles 20, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=28 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=546.3 @Gemini PREP finished: rev=25 frames=107 plans=5 cached=5 work=360.1ms maxSlice=16.92ms trees=0 expanded=0 tiles=33205
+[AIPlayerSpike] t=546.7 @Gemini DECISION #115 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c21 tokens=21535 bodyChars=1333
+[AIPlayerSpike] t=546.7 @Gemini nav: mod A* path int2(24, 7) -> int2(24, 8): 1 tiles
+[AIPlayerSpike] t=546.8 @Gemini LEAK-CHECK walk to (24,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=546.8 @Gemini nav: mod A* path int2(24, 8) -> int2(25, 8): 1 tiles
+[AIPlayerSpike] t=546.9 @Gemini LEAK-CHECK walk to (25,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=546.9 @Gemini nav: mod A* path int2(25, 8) -> int2(26, 8): 1 tiles
+[AIPlayerSpike] t=547.1 @Gemini LEAK-CHECK walk to (26,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=547.1 @Gemini nav: mod A* path int2(26, 8) -> int2(27, 8): 1 tiles
+[AIPlayerSpike] t=547.3 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=547.3 @Gemini LEAK-CHECK walk to (27,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=547.3 @Gemini nav: mod A* path int2(27, 8) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=547.5 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=547.8 @Gemini AI character: saved (periodic) to C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\b39072f4c49d28bf6ab43b7b6a702d7f\Gemini.json: guid=c1a0de0000000000000000000000a003 role=Explorer items=[0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx88, 7:WoodMiningPickx125, 9:WoodMiningPickx0, 10:WallDirtBlockx25, 12:FungalGrowthx1, 14:Woodx14] skills=5 coins=0 connects=1 health=78/102 serverPos=float3(28.06864f, 0f, 8.000695f) world=b39072f4c49d28bf6ab43b7b6a702d7f
+[AIPlayerSpike] t=549.7 @Gemini DECISION #116 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 37] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=39 inputChars=28028 prep=336.4ms[frames 47, wall 398.8ms, plans 127.9 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 11.1칸, 체력 바 106/100, 서 있음] (objects 10 (+5 trigger-only, 0 under the AI), blocked tiles 18, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=39 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=549.7 @Gemini PREP finished: rev=25 frames=105 plans=5 cached=5 work=337.1ms maxSlice=14.57ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=550.1 @Gemini DECISION #116 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c32 tokens=24738 bodyChars=1714
+[AIPlayerSpike] t=550.1 @Gemini nav: mod A* path int2(28, 8) -> int2(28, 9): 1 tiles
+[AIPlayerSpike] t=550.3 @Gemini LEAK-CHECK walk to (28,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=552.1 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=553.2 @Gemini DECISION #117 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 37] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=33 inputChars=28426 prep=332.8ms[frames 46, wall 387.5ms, plans 128.6 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 11.9칸, 체력 바 106/100, 서 있음] (objects 11 (+5 trigger-only, 0 under the AI), blocked tiles 19, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=33 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=553.2 @Gemini PREP finished: rev=25 frames=105 plans=5 cached=5 work=333.4ms maxSlice=14.45ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=553.5 @Gemini DECISION #117 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c25 tokens=24696 bodyChars=1502
+[AIPlayerSpike] t=553.5 @Gemini DECISION #117 RESULT choice=c25 (막힘·순환에서 새로 남쪽 보이는 통로 선택. 원래 목적 유지.) top=[c25=0.73, c26=0.19, c23=0.01] confidence=0.72 latency=0.37s tokens=24696 cached=0 cost=$0.002470 APPLY (at motion boundary)
+[AIPlayerSpike] t=553.5 @Gemini SWITCH 통로 탐색(travel:explore:27,-2:26,-2, ran 14.32s) -> explore(travel:restart:37:28,8) at boundary; swing left 0.00s
+[AIPlayerSpike] t=553.5 @Gemini SKILL 통로 탐색 CANCELLED after 14.3s: reason='새 기술 통로 탐색(으)로 바뀜' start=(26.90,-2.28) end=(28.01,8.87) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=553.5 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (14.3초)
+[AIPlayerSpike] t=553.5 @Gemini SKILL 통로 탐색 START at (28.01,8.87)
+[AIPlayerSpike] t=553.5 @Gemini nav: mod A* path int2(28, 9) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=553.7 CHARGE e=68084 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=553.7 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=553.7 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=554.9 PERF 30s: AIs in world 1; frames 3560 (118.7 fps); frame ms avg 8.43 p50 8.33 p95 8.33 p99 8.34 max 83.3; server ticks/s 20.0; mod per AI [Gemini 0.92ms avg/80.7ms max]
+[AIPlayerSpike] t=555.2 @Gemini PLANNER: report #14 answer after 13.1s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13092,"report_id":14,"goal_rev":24,"answer":{"decision":"keep","for":{"report":14,"goal_rev":24},"order":"follow","say":"주변 통로와 갈림길을 계속 탐험할게요.","why":"호스트의 탐험 지시에 따라 탐험 목표를 유지"},"raw":"```json\n{\"decision\": \"keep\", \"for\": {\"report\": 14, \"goal_rev\": 24}, \"order\": \"follow\", \"say\": \"주변 통로와 갈림길을 계속 탐험할게요.\", \"why\": \"호스트의 탐험 지시에 따라 탐험 목표를 유지\"}\n```\n","error":null,"detail":null,"prompt_chars":72641,"turn_chars":56315,"answer_chars":158,"usage":{"input":45635,"cached":0,"output":73,"reasoning":0},"usage_last":{"input":45635,"cached":0,"output":73,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2179,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=555.2 @Gemini chat reply: [Gemini] 주변 통로와 갈림길을 계속 탐험할게요.
+[AIPlayerSpike] t=555.2 @Gemini PLANNER: report #14 APPLY trigger=action_replan decision=keep order=follow why='호스트의 탐험 지시에 따라 탐험 목표를 유지' after 13.1s
+[AIPlayerSpike] t=555.2 @Gemini EXP: report part 6261 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=556.6 @Gemini DECISION #118 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 38] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=36 inputChars=25096 prep=347.4ms[frames 49, wall 427.5ms, plans 144.8 n5 cached5] motion=boundary players=[Luminous(호스트) 서쪽 4.1칸, 체력 바 106/100, 북쪽으로 걷는 중] (objects 12 (+3 trigger-only, 0 under the AI), blocked tiles 20, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=36 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=556.6 @Gemini PREP finished: rev=25 frames=107 plans=5 cached=5 work=348.2ms maxSlice=14.61ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=557.1 @Gemini DECISION #118 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c29 tokens=22403 bodyChars=1607
+[AIPlayerSpike] t=557.1 @Gemini nav: mod A* path int2(28, 8) -> int2(27, 8): 1 tiles
+[AIPlayerSpike] t=557.2 @Gemini LEAK-CHECK walk to (27,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=557.2 @Gemini nav: mod A* path int2(27, 8) -> int2(26, 8): 1 tiles
+[AIPlayerSpike] t=557.4 @Gemini LEAK-CHECK walk to (26,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=559.1 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 13.4 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=559.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 46, work 150.2ms
+[AIPlayerSpike] t=560.4 @Gemini DECISION #119 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 38] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=31 inputChars=26182 prep=330.8ms[frames 48, wall 402.5ms, plans 138.8 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 0.4칸, 체력 바 106/100, 서 있음] (objects 11 (+4 trigger-only, 0 under the AI), blocked tiles 19, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=31 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=560.4 @Gemini PREP finished: rev=25 frames=105 plans=5 cached=5 work=331.4ms maxSlice=7.82ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=560.7 @Gemini DECISION #119 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c24 tokens=22564 bodyChars=1440
+[AIPlayerSpike] t=560.7 @Gemini nav: mod A* path int2(26, 8) -> int2(26, 7): 1 tiles
+[AIPlayerSpike] t=560.8 @Gemini LEAK-CHECK walk to (26,7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=563.7 @Gemini DECISION #120 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 38] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=32 inputChars=26409 prep=330.4ms[frames 46, wall 387.3ms, plans 128.4 n5 cached5] motion=boundary players=[Luminous(호스트) 서쪽 1.3칸, 체력 바 106/100, 서 있음] (objects 10 (+4 trigger-only, 0 under the AI), blocked tiles 18, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=32 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=563.7 @Gemini PREP finished: rev=25 frames=104 plans=5 cached=5 work=331.1ms maxSlice=13.68ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=564.0 @Gemini DECISION #120 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c25 tokens=22770 bodyChars=1470
+[AIPlayerSpike] t=564.0 @Gemini DECISION #120 RESULT choice=c25 (막힘·순환에서 새로 북쪽 보이는 통로 선택. 원래 목적 유지.) top=[c25=0.49, c24=0.29, c26=0.10] confidence=0.47 latency=0.28s tokens=22770 cached=0 cost=$0.002277 APPLY (at motion boundary)
+[AIPlayerSpike] t=564.0 @Gemini SWITCH 통로 탐색(travel:restart:37:28,8, ran 10.48s) -> explore(travel:restart:38:26,8) at boundary; swing left 0.00s
+[AIPlayerSpike] t=564.0 @Gemini SKILL 통로 탐색 CANCELLED after 10.5s: reason='새 기술 통로 탐색(으)로 바뀜' start=(28.01,8.87) end=(26.00,7.13) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=564.0 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (10.5초)
+[AIPlayerSpike] t=564.0 @Gemini SKILL 통로 탐색 START at (26.00,7.13)
+[AIPlayerSpike] t=564.0 @Gemini nav: mod A* path int2(26, 7) -> int2(26, 8): 1 tiles
+[AIPlayerSpike] t=564.2 @Gemini LEAK-CHECK walk to (26,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=564.2 @Gemini nav: mod A* path int2(26, 8) -> int2(27, 8): 1 tiles
+[AIPlayerSpike] t=564.4 @Gemini LEAK-CHECK walk to (27,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=564.4 @Gemini nav: mod A* path int2(27, 8) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=564.6 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=565.0 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=565.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=565.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=565.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=565.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=567.1 @Gemini DECISION #121 SEND rev=25 trigger='[현재 목표 탐험, 목표 세대 24, 실행 39] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=44 inputChars=27984 prep=337.0ms[frames 47, wall 404.7ms, plans 136.4 n5 cached5] motion=boundary players=[Luminous(호스트) 서쪽 0.6칸, 체력 바 106/100, 서 있음] (objects 11 (+5 trigger-only, 0 under the AI), blocked tiles 19, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=44 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=567.1 @Gemini PREP finished: rev=25 frames=104 plans=5 cached=5 work=337.8ms maxSlice=14.94ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=567.5 @Gemini DECISION #121 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c37 tokens=25217 bodyChars=1882
+[AIPlayerSpike] t=567.5 @Gemini nav: mod A* path int2(28, 8) -> int2(28, 9): 1 tiles
+[AIPlayerSpike] t=567.7 @Gemini LEAK-CHECK walk to (28,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=569.6 @Gemini PLANNER: report #15 answer after 14.4s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":14438,"report_id":15,"goal_rev":24,"answer":{"decision":"set","for":{"report":15,"goal_rev":24},"goal":{"do":"explore"},"order":"follow","say":"갈림길에서 계속 새로운 통로 쪽으로 방향을 잡아 탐험할게요.","why":"갈림길 끝 대기 상태를 해소하고 호스트 지시에 따라 미개척 통로 탐험을 지속"},"raw":"```json\n{\"decision\": \"set\", \"for\": {\"report\": 15, \"goal_rev\": 24}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"갈림길에서 계속 새로운 통로 쪽으로 방향을 잡아 탐험할게요.\", \"why\": \"갈림길 끝 대기 상태를 해소하고 호스트 지시에 따라 미개척 통로 탐험을 지속\"}\n```\n","error":null,"detail":null,"prompt_chars":74560,"turn_chars":58234,"answer_chars":214,"usage":{"input":46447,"cached":0,"output":97,"reasoning":0},"usage_last":{"input":46447,"cached":0,"output":97,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=569.6 @Gemini chat reply: [Gemini] 갈림길에서 계속 새로운 통로 쪽으로 방향을 잡아 탐험할게요.
+[AIPlayerSpike] t=569.6 @Gemini PLANNER: report #15 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='갈림길 끝 대기 상태를 해소하고 호스트 지시에 따라 미개척 통로 탐험을 지속' after 14.4s
+[AIPlayerSpike] t=569.7 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#15)
+[AIPlayerSpike] t=569.7 @Gemini GOAL set rev=26 source=llm:gemini#15: 탐험 (start count 0)
+[AIPlayerSpike] t=569.7 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=569.7 @Gemini EXP: report part 6263 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=570.6 @Gemini DECISION #122 SEND rev=26 trigger='새 목표' goal='탐험' candidates=30 inputChars=28638 prep=343.0ms[frames 47, wall 407.5ms, plans 130.9 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 1.2칸, 체력 바 106/100, 서 있음] (objects 12 (+5 trigger-only, 0 under the AI), blocked tiles 20, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=30 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=570.6 @Gemini PREP finished: rev=26 frames=105 plans=5 cached=5 work=343.3ms maxSlice=14.17ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=570.9 @Gemini DECISION #122 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c21 tokens=24574 bodyChars=1410
+[AIPlayerSpike] t=570.9 @Gemini DECISION #122 RESULT choice=c21 (막힘·순환에서 새로 남쪽 보이는 통로 선택. 원래 목적 유지.) top=[c21=0.67, c22=0.09, c1=0.04] confidence=0.66 latency=0.29s tokens=24574 cached=0 cost=$0.002457 APPLY (at motion boundary)
+[AIPlayerSpike] t=570.9 @Gemini SWITCH 통로 탐색(travel:restart:38:26,8, ran 6.83s) -> explore(travel:restart:39:28,8) at boundary; swing left 0.00s
+[AIPlayerSpike] t=570.9 @Gemini SKILL 통로 탐색 CANCELLED after 6.8s: reason='새 기술 통로 탐색(으)로 바뀜' start=(26.00,7.13) end=(28.00,8.87) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=570.9 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (6.8초)
+[AIPlayerSpike] t=570.9 @Gemini SKILL 통로 탐색 START at (28.00,8.87)
+[AIPlayerSpike] t=570.9 @Gemini nav: mod A* path int2(28, 9) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=571.0 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=573.9 @Gemini DECISION #123 SEND rev=26 trigger='[현재 목표 탐험, 목표 세대 25, 실행 40] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=29 inputChars=25226 prep=327.3ms[frames 46, wall 387.1ms, plans 128.4 n5 cached5] motion=boundary players=[Luminous(호스트) 동쪽 2.6칸, 체력 바 106/100, 서 있음] (objects 12 (+3 trigger-only, 0 under the AI), blocked tiles 20, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=29 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=573.9 @Gemini PREP finished: rev=26 frames=103 plans=5 cached=5 work=328.0ms maxSlice=14.30ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=574.2 @Gemini DECISION #123 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c21 tokens=21850 bodyChars=1376
+[AIPlayerSpike] t=574.2 @Gemini nav: mod A* path int2(28, 8) -> int2(29, 8): 1 tiles
+[AIPlayerSpike] t=574.4 @Gemini LEAK-CHECK walk to (29,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=574.4 @Gemini nav: mod A* path int2(29, 8) -> int2(30, 8): 1 tiles
+[AIPlayerSpike] t=574.5 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=574.6 @Gemini LEAK-CHECK walk to (30,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=576.7 @Gemini BRAIN: preparation cancelled (new enemy observed), frames 34, work 120.9ms
+[AIPlayerSpike] t=577.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 94, work 328.8ms
+[AIPlayerSpike] t=578.2 CHARGE e=68084 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=578.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 83, work 265.8ms
+[AIPlayerSpike] t=579.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 85, work 274.6ms
+[AIPlayerSpike] t=579.4 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 43, work 143.1ms
+[AIPlayerSpike] t=579.4 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 10.1 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=579.8 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=580.2 @Gemini DECISION #124 SEND rev=26 trigger='[현재 목표 탐험, 목표 세대 25, 실행 40] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=58 inputChars=17825 prep=310.0ms[frames 41, wall 336.2ms, plans 95.9 n32 cached44] motion=boundary players=[Luminous(호스트) 동쪽 0.6칸, 체력 바 106/100, 서 있음] (objects 12 (+6 trigger-only, 0 under the AI), blocked tiles 21, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=58 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=580.2 @Gemini PREP finished: rev=26 frames=98 plans=32 cached=44 work=310.3ms maxSlice=10.81ms trees=1 expanded=30532 tiles=33206
+[AIPlayerSpike] t=580.5 @Gemini DECISION #124 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c53 tokens=18423 bodyChars=2353
+[AIPlayerSpike] t=580.5 @Gemini nav: mod A* path int2(30, 8) -> int2(30, 9): 1 tiles
+[AIPlayerSpike] t=580.6 @Gemini LEAK-CHECK walk to (30,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=580.6 @Gemini nav: mod A* path int2(30, 9) -> int2(30, 10): 1 tiles
+[AIPlayerSpike] t=580.8 @Gemini LEAK-CHECK walk to (30,10) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=580.8 @Gemini nav: mod A* path int2(30, 10) -> int2(30, 11): 1 tiles
+[AIPlayerSpike] t=581.0 @Gemini LEAK-CHECK walk to (30,11) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=581.0 @Gemini nav: mod A* path int2(30, 11) -> int2(31, 11): 1 tiles
+[AIPlayerSpike] t=581.1 @Gemini LEAK-CHECK walk to (31,11) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=581.1 @Gemini nav: mod A* path int2(31, 11) -> int2(32, 11): 1 tiles
+[AIPlayerSpike] t=581.3 @Gemini LEAK-CHECK walk to (32,11) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=581.5 @Gemini COMBAT #8 start: enemy within 8 tiles (re-decision floor 0.25s, cap 240/min, continuous True)
+[AIPlayerSpike] t=582.4 @Gemini DECISION #125 SEND rev=26 trigger='[현재 목표 탐험, 목표 세대 25, 실행 40] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=40 inputChars=15870 prep=339.7ms[frames 44, wall 396.1ms, plans 106.6 n55 cached79] motion=boundary players=[Luminous(호스트) 서쪽 4.6칸, 체력 바 106/100, 서 있음] (objects 15 (+14 trigger-only, 0 under the AI), blocked tiles 24, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=40 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=582.4 @Gemini PREP finished: rev=26 frames=104 plans=55 cached=79 work=340.3ms maxSlice=15.87ms trees=1 expanded=30530 tiles=33206
+[AIPlayerSpike] t=582.6 @Gemini DECISION #125 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c35 tokens=15703 bodyChars=1744
+[AIPlayerSpike] t=582.6 @Gemini DECISION #125 RESULT choice=c35 (막힘·순환에서 새로 서쪽 보이는 통로 선택. 원래 목적 유지.) top=[c35=0.74, c36=0.09, c2=0.03] confidence=0.73 latency=0.27s tokens=15703 cached=0 cost=$0.001570 APPLY (at motion boundary)
+[AIPlayerSpike] t=582.6 @Gemini SWITCH 통로 탐색(travel:restart:39:28,8, ran 11.78s) -> explore(travel:restart:40:31,11) at boundary; swing left 0.00s
+[AIPlayerSpike] t=582.6 @Gemini SKILL 통로 탐색 CANCELLED after 11.8s: reason='새 기술 통로 탐색(으)로 바뀜' start=(28.00,8.87) end=(32.04,10.93) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=582.6 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (11.8초)
+[AIPlayerSpike] t=582.6 @Gemini SKILL 통로 탐색 START at (32.04,10.93)
+[AIPlayerSpike] t=582.6 @Gemini nav: mod A* path int2(32, 11) -> int2(31, 11): 1 tiles
+[AIPlayerSpike] t=582.8 @Gemini LEAK-CHECK walk to (31,11) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=582.8 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 22, work 74.2ms
+[AIPlayerSpike] t=583.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 51, work 174.2ms
+[AIPlayerSpike] t=583.6 @Gemini PLANNER: report #16 answer after 13.9s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13894,"report_id":16,"goal_rev":25,"answer":{"decision":"set","for":{"report":16,"goal_rev":25},"goal":{"do":"explore"},"order":"follow","say":"미개척 갈림길에서 동쪽 통로를 골라 계속 탐험해볼게요!","why":"호스트 지시에 따라 갈림길 대기 상태를 해소하고 미개척 통로 방향을 선택해 탐험 지속"},"raw":"```json\n{\"decision\": \"set\", \"for\": {\"report\": 16, \"goal_rev\": 25}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"미개척 갈림길에서 동쪽 통로를 골라 계속 탐험해볼게요!\", \"why\": \"호스트 지시에 따라 갈림길 대기 상태를 해소하고 미개척 통로 방향을 선택해 탐험 지속\"}\n```\n","error":null,"detail":null,"prompt_chars":73609,"turn_chars":57283,"answer_chars":216,"usage":{"input":45904,"cached":0,"output":102,"reasoning":0},"usage_last":{"input":45904,"cached":0,"output":102,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=583.6 @Gemini chat reply: [Gemini] 미개척 갈림길에서 동쪽 통로를 골라 계속 탐험해볼게요!
+[AIPlayerSpike] t=583.6 @Gemini PLANNER: report #16 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='호스트 지시에 따라 갈림길 대기 상태를 해소하고 미개척 통로 방향을 선택해 탐험 지속' after 13.9s
+[AIPlayerSpike] t=583.6 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#16)
+[AIPlayerSpike] t=583.6 @Gemini BRAIN: preparation cancelled (new goal), frames 33, work 117.9ms
+[AIPlayerSpike] t=583.6 @Gemini GOAL set rev=27 source=llm:gemini#16: 탐험 (start count 0)
+[AIPlayerSpike] t=583.6 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=583.6 @Gemini EXP: report part 6263 chars in 0.5 ms (goal runs 79)
+[AIPlayerSpike] t=584.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 50, work 160.2ms
+[AIPlayerSpike] t=584.9 PERF 30s: AIs in world 1; frames 3550 (118.3 fps); frame ms avg 8.45 p50 8.33 p95 8.33 p99 16.67 max 58.3; server ticks/s 20.0; mod per AI [Gemini 2.01ms avg/58.0ms max]
+[AIPlayerSpike] t=585.0 @Gemini DECISION #126 SEND rev=27 trigger='새 목표' goal='탐험' candidates=72 inputChars=32532 prep=356.1ms[frames 50, wall 439.1ms, plans 151.4 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 4.0칸, 체력 바 106/100, 서 있음] (objects 15 (+11 trigger-only, 0 under the AI), blocked tiles 23, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=72 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=585.0 @Gemini PREP finished: rev=27 frames=108 plans=5 cached=5 work=356.5ms maxSlice=15.74ms trees=0 expanded=0 tiles=33205
+[AIPlayerSpike] t=585.3 @Gemini DECISION #126 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c57 tokens=31224 bodyChars=2841
+[AIPlayerSpike] t=585.3 @Gemini nav: mod A* path int2(31, 11) -> int2(31, 10): 1 tiles
+[AIPlayerSpike] t=585.5 @Gemini LEAK-CHECK walk to (31,10) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=585.5 @Gemini nav: mod A* path int2(31, 10) -> int2(31, 9): 1 tiles
+[AIPlayerSpike] t=585.6 CHARGE e=68084 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=585.7 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 45, work 145.2ms
+[AIPlayerSpike] t=585.7 @Gemini COMBAT #8 end (적이 범위 밖): 4.2s, calls 2 (28/min), answers 2, latency p50 0.27s p95 0.31s max 0.31s, tokens 46927 ($0.00469, $0.06674/min)
+[AIPlayerSpike] t=585.7 @Gemini COMBAT #8 result: switches 1 (at boundary 1, emergency 0, MID-MOTION 0, short actions at once 0; reversals 0; between movement options 0, between short moves 0), started from idle 0, held for boundary 0 (dropped 0), chose 'continue' 0; kills 0, hp 78->78, downs 0; prep ms p50 339.7 p95 356.1 max 356.1 (n 2); frames 487 (115 fps, avg 8.6ms), hitches >25ms 2 (0.47/s) >33ms 0 >50ms 0, worst 25ms
+[AIPlayerSpike] t=585.7 @Gemini COMBAT #8 answers (session totals): received 125, started 70, continued 25, queued next swing 0, held 3 (replaced 0, dropped 0), discarded 3, failed calls 0; charge anticipation triggers 1, requests dropped for one 1
+[AIPlayerSpike] t=585.7 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 2, work 18.8ms
+[AIPlayerSpike] t=585.7 @Gemini LEAK-CHECK walk to (31,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=585.7 @Gemini nav: mod A* path int2(31, 9) -> int2(31, 8): 1 tiles
+[AIPlayerSpike] t=585.8 @Gemini LEAK-CHECK walk to (31,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=587.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 43, work 166.2ms
+[AIPlayerSpike] t=588.7 @Gemini DECISION #127 SEND rev=27 trigger='[이전 목표 탐험, 목표 세대 25, 실행 41] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=59 inputChars=17010 prep=319.5ms[frames 43, wall 353.8ms, plans 103.6 n33 cached45] motion=boundary players=[Luminous(호스트) 서쪽 2.4칸, 체력 바 106/100, 서 있음] (objects 12 (+6 trigger-only, 0 under the AI), blocked tiles 21, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=59 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=588.7 @Gemini PREP finished: rev=27 frames=101 plans=33 cached=45 work=319.7ms maxSlice=12.71ms trees=1 expanded=30531 tiles=33205
+[AIPlayerSpike] t=589.0 @Gemini DECISION #127 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c54 tokens=17769 bodyChars=2388
+[AIPlayerSpike] t=589.0 @Gemini nav: mod A* path int2(31, 8) -> int2(30, 8): 1 tiles
+[AIPlayerSpike] t=589.1 CHARGE e=68084 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=589.2 @Gemini LEAK-CHECK walk to (30,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=589.2 @Gemini nav: mod A* path int2(30, 8) -> int2(29, 8): 1 tiles
+[AIPlayerSpike] t=589.4 @Gemini LEAK-CHECK walk to (29,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=589.4 @Gemini nav: mod A* path int2(29, 8) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=589.5 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=591.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 56, work 187.5ms
+[AIPlayerSpike] t=592.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 52, work 172.0ms
+[AIPlayerSpike] t=592.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 56, work 190.8ms
+[AIPlayerSpike] t=593.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 54, work 178.3ms
+[AIPlayerSpike] t=593.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 60, work 202.1ms
+[AIPlayerSpike] t=593.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=593.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=593.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=593.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=593.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=594.2 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 63, work 246.1ms
+[AIPlayerSpike] t=595.0 @Gemini DECISION #128 SEND rev=27 trigger='[이전 목표 탐험, 목표 세대 25, 실행 41] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=43 inputChars=27013 prep=328.9ms[frames 46, wall 386.0ms, plans 127.9 n5 cached5] motion=boundary players=[Luminous(호스트) 동쪽 0.5칸, 체력 바 106/100, 서 있음] (objects 14 (+5 trigger-only, 0 under the AI), blocked tiles 22, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=43 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=595.0 @Gemini PREP finished: rev=27 frames=102 plans=5 cached=5 work=329.3ms maxSlice=14.76ms trees=0 expanded=0 tiles=33205
+[AIPlayerSpike] t=595.3 @Gemini DECISION #128 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c36 tokens=24375 bodyChars=1844
+[AIPlayerSpike] t=595.3 @Gemini nav: mod A* path int2(28, 8) -> int2(28, 9): 1 tiles
+[AIPlayerSpike] t=595.5 @Gemini LEAK-CHECK walk to (28,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=596.9 @Gemini PLANNER: report #17 answer after 13.3s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13244,"report_id":17,"goal_rev":26,"answer":{"decision":"set","for":{"report":17,"goal_rev":26},"goal":{"do":"explore"},"say":"갈림길에서 새로운 통로를 골라 혼자 탐험을 계속할게요!","why":"호스트의 탐험 지시에 따라 갈림길 대기 상태를 해소하고 미개척 통로 방향으로 이동 지속"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 17, \"goal_rev\": 26}, \"goal\": {\"do\": \"explore\"}, \"say\": \"갈림길에서 새로운 통로를 골라 혼자 탐험을 계속할게요!\", \"why\": \"호스트의 탐험 지시에 따라 갈림길 대기 상태를 해소하고 미개척 통로 방향으로 이동 지속\"}\n","error":null,"detail":null,"prompt_chars":75894,"turn_chars":59568,"answer_chars":186,"usage":{"input":47387,"cached":0,"output":89,"reasoning":0},"usage_last":{"input":47387,"cached":0,"output":89,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2181,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=596.9 @Gemini chat reply: [Gemini] 갈림길에서 새로운 통로를 골라 혼자 탐험을 계속할게요!
+[AIPlayerSpike] t=596.9 @Gemini PLANNER: report #17 APPLY trigger=action_replan decision=set plan=[explore] order=- why='호스트의 탐험 지시에 따라 갈림길 대기 상태를 해소하고 미개척 통로 방향으로 이동 지속' after 13.3s
+[AIPlayerSpike] t=596.9 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#17)
+[AIPlayerSpike] t=596.9 @Gemini GOAL set rev=28 source=llm:gemini#17: 탐험 (start count 0)
+[AIPlayerSpike] t=596.9 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=596.9 @Gemini EXP: report part 6265 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=597.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 49, work 168.1ms
+[AIPlayerSpike] t=598.8 @Gemini DECISION #129 SEND rev=28 trigger='새 목표' goal='탐험' candidates=38 inputChars=28909 prep=331.6ms[frames 46, wall 387.5ms, plans 128.6 n5 cached5] motion=boundary players=[Luminous(호스트) 남쪽 1.2칸, 체력 바 106/100, 서 있음] (objects 12 (+5 trigger-only, 0 under the AI), blocked tiles 20, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=38 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=598.8 @Gemini PREP finished: rev=28 frames=104 plans=5 cached=5 work=331.9ms maxSlice=14.61ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=599.5 @Gemini DECISION #129 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c29 tokens=25586 bodyChars=1684
+[AIPlayerSpike] t=599.5 @Gemini DECISION #129 RESULT choice=c29 (막힘·순환에서 새로 남쪽 보이는 통로 선택. 원래 목적 유지.) top=[c29=0.68, c30=0.09, c1=0.04] confidence=0.67 latency=0.70s tokens=25586 cached=0 cost=$0.002559 APPLY (at motion boundary)
+[AIPlayerSpike] t=599.5 @Gemini SWITCH 통로 탐색(travel:restart:40:31,11, ran 16.88s) -> explore(travel:restart:41:28,8) at boundary; swing left 0.00s
+[AIPlayerSpike] t=599.5 @Gemini SKILL 통로 탐색 CANCELLED after 16.9s: reason='새 기술 통로 탐색(으)로 바뀜' start=(32.04,10.93) end=(28.01,8.87) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=599.5 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (16.9초)
+[AIPlayerSpike] t=599.5 @Gemini SKILL 통로 탐색 START at (28.01,8.87)
+[AIPlayerSpike] t=599.5 @Gemini nav: mod A* path int2(28, 9) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=599.7 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=601.3 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 10.6 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=601.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 51, work 169.6ms
+[AIPlayerSpike] t=602.2 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 47, work 154.7ms
+[AIPlayerSpike] t=602.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 65, work 217.1ms
+[AIPlayerSpike] t=603.2 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 54, work 175.1ms
+[AIPlayerSpike] t=603.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 58, work 196.8ms
+[AIPlayerSpike] t=604.6 @Gemini DECISION #130 SEND rev=28 trigger='[현재 목표 탐험, 목표 세대 27, 실행 42] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=37 inputChars=17596 prep=351.3ms[frames 53, wall 444.9ms, plans 133.0 n18 cached22] motion=boundary players=[Luminous(호스트) 동쪽 0.6칸, 체력 바 106/100, 서 있음] (objects 14 (+3 trigger-only, 0 under the AI), blocked tiles 23, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=37 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=604.6 @Gemini PREP finished: rev=28 frames=110 plans=18 cached=22 work=351.8ms maxSlice=16.52ms trees=1 expanded=30529 tiles=33205
+[AIPlayerSpike] t=604.9 @Gemini DECISION #130 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c32 tokens=16381 bodyChars=1638
+[AIPlayerSpike] t=604.9 @Gemini nav: mod A* path int2(28, 8) -> int2(27, 8): 1 tiles
+[AIPlayerSpike] t=605.1 @Gemini LEAK-CHECK walk to (27,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=605.1 @Gemini nav: mod A* path int2(27, 8) -> int2(26, 8): 1 tiles
+[AIPlayerSpike] t=605.3 @Gemini LEAK-CHECK walk to (26,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=606.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=607.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 74, work 242.8ms
+[AIPlayerSpike] t=607.8 @Gemini AI character: saved (periodic) to C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\b39072f4c49d28bf6ab43b7b6a702d7f\Gemini.json: guid=c1a0de0000000000000000000000a003 role=Explorer items=[0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx88, 7:WoodMiningPickx125, 9:WoodMiningPickx0, 10:WallDirtBlockx25, 12:FungalGrowthx1, 14:Woodx14] skills=5 coins=0 connects=1 health=78/102 serverPos=float3(25.96351f, 0f, 8.000014f) world=b39072f4c49d28bf6ab43b7b6a702d7f
+[AIPlayerSpike] t=608.4 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 75, work 244.2ms
+[AIPlayerSpike] t=609.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 72, work 230.2ms
+[AIPlayerSpike] t=609.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 75, work 240.3ms
+[AIPlayerSpike] t=610.2 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 72, work 229.6ms
+[AIPlayerSpike] t=610.4 @Gemini PLANNER: report #18 answer after 13.6s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13548,"report_id":18,"goal_rev":27,"answer":{"decision":"set","for":{"report":18,"goal_rev":27},"goal":{"do":"explore"},"say":"막힌 곳을 피해 주변의 새로운 통로 쪽으로 계속 탐험할게요!","why":"호스트의 단독 탐험 지시에 따라 막힌 갈림길에서 미개척 통로 방향으로 탐험 지속"},"raw":"```json\n{\"decision\": \"set\", \"for\": {\"report\": 18, \"goal_rev\": 27}, \"goal\": {\"do\": \"explore\"}, \"say\": \"막힌 곳을 피해 주변의 새로운 통로 쪽으로 계속 탐험할게요!\", \"why\": \"호스트의 단독 탐험 지시에 따라 막힌 갈림길에서 미개척 통로 방향으로 탐험 지속\"}\n```\n","error":null,"detail":null,"prompt_chars":70773,"turn_chars":54447,"answer_chars":197,"usage":{"input":44446,"cached":0,"output":92,"reasoning":0},"usage_last":{"input":44446,"cached":0,"output":92,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=610.4 @Gemini chat reply: [Gemini] 막힌 곳을 피해 주변의 새로운 통로 쪽으로 계속 탐험할게요!
+[AIPlayerSpike] t=610.4 @Gemini PLANNER: report #18 APPLY trigger=action_replan decision=set plan=[explore] order=- why='호스트의 단독 탐험 지시에 따라 막힌 갈림길에서 미개척 통로 방향으로 탐험 지속' after 13.6s
+[AIPlayerSpike] t=610.5 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#18)
+[AIPlayerSpike] t=610.5 @Gemini BRAIN: preparation cancelled (new goal), frames 24, work 100.0ms
+[AIPlayerSpike] t=610.5 @Gemini GOAL set rev=29 source=llm:gemini#18: 탐험 (start count 0)
+[AIPlayerSpike] t=610.5 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=610.5 @Gemini EXP: report part 6267 chars in 0.9 ms (goal runs 79)
+[AIPlayerSpike] t=611.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 87, work 295.7ms
+[AIPlayerSpike] t=611.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 77, work 250.5ms
+[AIPlayerSpike] t=612.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 76, work 240.5ms
+[AIPlayerSpike] t=613.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 79, work 255.4ms
+[AIPlayerSpike] t=613.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 78, work 252.9ms
+[AIPlayerSpike] t=614.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 69, work 218.2ms
+[AIPlayerSpike] t=614.9 PERF 30s: AIs in world 1; frames 3533 (117.8 fps); frame ms avg 8.49 p50 8.33 p95 8.33 p99 16.67 max 50.0; server ticks/s 20.0; mod per AI [Gemini 2.65ms avg/42.7ms max]
+[AIPlayerSpike] t=615.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 67, work 218.8ms
+[AIPlayerSpike] t=615.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 68, work 220.2ms
+[AIPlayerSpike] t=616.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 69, work 221.5ms
+[AIPlayerSpike] t=616.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 64, work 205.0ms
+[AIPlayerSpike] t=617.7 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=617.8 @Gemini DECISION #131 SEND rev=29 trigger='새 목표' goal='탐험' candidates=22 inputChars=16940 prep=382.3ms[frames 64, wall 527.9ms, plans 163.5 n24 cached30] motion=boundary players=[Luminous(호스트) 동쪽 2.6칸, 체력 바 106/100, 서 있음] (objects 13 (+4 trigger-only, 0 under the AI), blocked tiles 22, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=22 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=617.8 @Gemini PREP finished: rev=29 frames=121 plans=24 cached=30 work=382.6ms maxSlice=12.41ms trees=1 expanded=30530 tiles=33206
+[AIPlayerSpike] t=618.1 @Gemini DECISION #131 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c18 tokens=14562 bodyChars=1129
+[AIPlayerSpike] t=618.1 @Gemini nav: mod A* path int2(26, 8) -> int2(26, 7): 1 tiles
+[AIPlayerSpike] t=618.3 @Gemini LEAK-CHECK walk to (26,7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=620.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=620.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 64, work 209.1ms
+[AIPlayerSpike] t=621.4 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 66, work 222.1ms
+[AIPlayerSpike] t=621.4 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 10.9 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=622.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 71, work 238.8ms
+[AIPlayerSpike] t=622.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 65, work 227.0ms
+[AIPlayerSpike] t=623.6 @Gemini PLANNER: report #19 answer after 13.1s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13118,"report_id":19,"goal_rev":28,"answer":{"decision":"set","for":{"report":19,"goal_rev":28},"goal":{"do":"explore"},"order":"follow","say":"갈림길에서 새로운 통로를 찾아 탐험을 계속할게요!","why":"호스트의 단독 탐험 지시 유지 및 갈림길 탐험 재개"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 19, \"goal_rev\": 28}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"갈림길에서 새로운 통로를 찾아 탐험을 계속할게요!\", \"why\": \"호스트의 단독 탐험 지시 유지 및 갈림길 탐험 재개\"}\n","error":null,"detail":null,"prompt_chars":58601,"turn_chars":42275,"answer_chars":182,"usage":{"input":37770,"cached":0,"output":83,"reasoning":0},"usage_last":{"input":37770,"cached":0,"output":83,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=623.6 @Gemini chat reply: [Gemini] 갈림길에서 새로운 통로를 찾아 탐험을 계속할게요!
+[AIPlayerSpike] t=623.6 @Gemini PLANNER: report #19 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='호스트의 단독 탐험 지시 유지 및 갈림길 탐험 재개' after 13.1s
+[AIPlayerSpike] t=623.7 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#19)
+[AIPlayerSpike] t=623.7 @Gemini BRAIN: preparation cancelled (new goal), frames 125, work 400.2ms
+[AIPlayerSpike] t=623.7 @Gemini GOAL set rev=30 source=llm:gemini#19: 탐험 (start count 0)
+[AIPlayerSpike] t=623.7 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=623.7 @Gemini EXP: report part 6273 chars in 0.9 ms (goal runs 79)
+[AIPlayerSpike] t=624.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 72, work 241.1ms
+[AIPlayerSpike] t=625.2 @Gemini DECISION #132 SEND rev=30 trigger='새 목표' goal='탐험' candidates=31 inputChars=26376 prep=340.6ms[frames 47, wall 394.1ms, plans 130.7 n5 cached5] motion=boundary players=[Luminous(호스트) 동쪽 2.7칸, 체력 바 106/100, 서 있음] (objects 12 (+4 trigger-only, 0 under the AI), blocked tiles 21, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=31 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=625.2 @Gemini PREP finished: rev=30 frames=106 plans=5 cached=5 work=341.2ms maxSlice=13.61ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=625.6 @Gemini DECISION #132 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c24 tokens=22708 bodyChars=1436
+[AIPlayerSpike] t=625.6 @Gemini DECISION #132 RESULT choice=c24 (막힘·순환에서 새로 북쪽 보이는 통로 선택. 원래 목적 유지.) top=[c24=0.51, c23=0.20, c25=0.17] confidence=0.49 latency=0.41s tokens=22708 cached=0 cost=$0.002271 APPLY (at motion boundary)
+[AIPlayerSpike] t=625.6 @Gemini SWITCH 통로 탐색(travel:restart:41:28,8, ran 26.13s) -> explore(travel:restart:42:26,8) at boundary; swing left 0.00s
+[AIPlayerSpike] t=625.6 @Gemini SKILL 통로 탐색 CANCELLED after 26.1s: reason='새 기술 통로 탐색(으)로 바뀜' start=(28.01,8.87) end=(26.00,7.13) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=625.6 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (26.1초)
+[AIPlayerSpike] t=625.6 @Gemini SKILL 통로 탐색 START at (26.00,7.13)
+[AIPlayerSpike] t=625.6 @Gemini nav: mod A* path int2(26, 7) -> int2(26, 8): 1 tiles
+[AIPlayerSpike] t=625.8 @Gemini LEAK-CHECK walk to (26,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=625.8 @Gemini nav: mod A* path int2(26, 8) -> int2(27, 8): 1 tiles
+[AIPlayerSpike] t=626.0 @Gemini LEAK-CHECK walk to (27,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=626.0 @Gemini nav: mod A* path int2(27, 8) -> int2(28, 8): 1 tiles
+[AIPlayerSpike] t=626.2 @Gemini LEAK-CHECK walk to (28,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=626.2 @Gemini COMBAT #9 start: enemy within 8 tiles (re-decision floor 0.25s, cap 240/min, continuous True)
+[AIPlayerSpike] t=626.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 47, work 146.9ms
+[AIPlayerSpike] t=627.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 85, work 271.5ms
+[AIPlayerSpike] t=627.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 46, work 145.3ms
+[AIPlayerSpike] t=628.2 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 51, work 167.7ms
+[AIPlayerSpike] t=628.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 48, work 157.5ms
+[AIPlayerSpike] t=629.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 49, work 164.4ms
+[AIPlayerSpike] t=629.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 83, work 266.6ms
+[AIPlayerSpike] t=630.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 47, work 156.5ms
+[AIPlayerSpike] t=630.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 45, work 149.3ms
+[AIPlayerSpike] t=630.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 47, work 155.2ms
+[AIPlayerSpike] t=631.7 @Gemini COMBAT #9 end (적이 범위 밖): 5.5s, calls 0 (0/min), answers 0, latency p50 -s p95 -s max -s, tokens 0 ($0.00000, $0.00000/min)
+[AIPlayerSpike] t=631.7 @Gemini COMBAT #9 result: switches 0 (at boundary 0, emergency 0, MID-MOTION 0, short actions at once 0; reversals 0; between movement options 0, between short moves 0), started from idle 0, held for boundary 0 (dropped 0), chose 'continue' 0; kills 0, hp 78->78, downs 0; prep ms p50 - p95 - max - (n 0); frames 651 (118 fps, avg 8.5ms), hitches >25ms 0 (0.00/s) >33ms 0 >50ms 0, worst 17ms
+[AIPlayerSpike] t=631.7 @Gemini COMBAT #9 answers (session totals): received 131, started 72, continued 25, queued next swing 0, held 3 (replaced 0, dropped 0), discarded 3, failed calls 0; charge anticipation triggers 1, requests dropped for one 1
+[AIPlayerSpike] t=631.7 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 103, work 324.9ms
+[AIPlayerSpike] t=632.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 46, work 154.7ms
+[AIPlayerSpike] t=632.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 49, work 165.5ms
+[AIPlayerSpike] t=633.4 @Gemini DECISION #133 SEND rev=30 trigger='[현재 목표 탐험, 목표 세대 29, 실행 43] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=43 inputChars=28317 prep=333.5ms[frames 46, wall 390.9ms, plans 129.5 n5 cached5] motion=boundary players=[Luminous(호스트) 동쪽 0.6칸, 체력 바 106/100, 서 있음] (objects 13 (+5 trigger-only, 0 under the AI), blocked tiles 22, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=43 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=633.4 @Gemini PREP finished: rev=30 frames=104 plans=5 cached=5 work=334.2ms maxSlice=16.00ms trees=0 expanded=0 tiles=33206
+[AIPlayerSpike] t=633.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.7 @Gemini DECISION #133 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c36 tokens=25372 bodyChars=1847
+[AIPlayerSpike] t=633.7 @Gemini nav: mod A* path int2(28, 8) -> int2(28, 9): 1 tiles
+[AIPlayerSpike] t=633.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.8 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.8 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.8 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.8 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=633.9 @Gemini LEAK-CHECK walk to (28,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=636.8 @Gemini DECISION #134 SEND rev=30 trigger='[현재 목표 탐험, 목표 세대 29, 실행 43] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=35 inputChars=16260 prep=333.6ms[frames 44, wall 370.6ms, plans 114.3 n36 cached44] motion=boundary players=[Luminous(호스트) 남쪽 1.2칸, 체력 바 106/100, 서 있음] (objects 12 (+5 trigger-only, 0 under the AI), blocked tiles 21, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=35 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=636.8 @Gemini PREP finished: rev=30 frames=102 plans=36 cached=44 work=334.3ms maxSlice=15.31ms trees=1 expanded=30531 tiles=33206
+[AIPlayerSpike] t=637.1 @Gemini DECISION #134 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c32 tokens=15462 bodyChars=1580
+[AIPlayerSpike] t=637.1 @Gemini DECISION #134 RESULT choice=c32 (보이는 같은 종류 20대상 묶음 채집 — 아래에 지정한 대상에 접근·채집·회수를 이어감. 새 대상은 포함하지 않음. 대상 수와 실제 확보량은 다…) top=[c32=0.40, c31=0.29, c1=0.07] confidence=0.38 latency=0.28s tokens=15462 cached=0 cost=$0.001546 APPLY (at motion boundary)
+[AIPlayerSpike] t=637.1 @Gemini SWITCH 통로 탐색(travel:restart:42:26,8, ran 11.42s) -> gather_group(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18,6|mine:19,5|mine:20,4|mine:21,2|mine:21,3|mine:22,3|mine:23,3|mine:23,4|mine:23,5|mine:23,6|mine:23,7|mine:23,8|mine:24,9|mine:25,9|mine:26,9|mine:27,9) at boundary; swing left 0.00s
+[AIPlayerSpike] t=637.1 @Gemini SKILL 통로 탐색 CANCELLED after 11.4s: reason='새 기술 묶음 채집(으)로 바뀜' start=(26.00,7.13) end=(28.00,8.87) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=637.1 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 묶음 채집(으)로 바뀜 (11.4초)
+[AIPlayerSpike] t=637.1 @Gemini SKILL 묶음 채집 START at (28.00,8.87)
+[AIPlayerSpike] t=637.1 @Gemini LEAK-CHECK walk to (28,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=637.1 @Gemini PLANNER: report #20 answer after 13.4s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13364,"report_id":20,"goal_rev":29,"answer":{"decision":"set","for":{"report":20,"goal_rev":29},"goal":{"do":"explore"},"order":"follow","say":"통로 끝 갈림길에서 새로운 방향을 찾아 단독 탐험을 이어갈게요!","why":"호스트의 단독 탐험 지시를 따라 통로 끝 대기 상태에서 탐험을 재설정해 진행"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 20, \"goal_rev\": 29}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"통로 끝 갈림길에서 새로운 방향을 찾아 단독 탐험을 이어갈게요!\", \"why\": \"호스트의 단독 탐험 지시를 따라 통로 끝 대기 상태에서 탐험을 재설정해 진행\"}\n","error":null,"detail":null,"prompt_chars":58671,"turn_chars":42345,"answer_chars":204,"usage":{"input":37825,"cached":0,"output":95,"reasoning":0},"usage_last":{"input":37825,"cached":0,"output":95,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=637.1 @Gemini chat reply: [Gemini] 통로 끝 갈림길에서 새로운 방향을 찾아 단독 탐험을 이어갈게요!
+[AIPlayerSpike] t=637.1 @Gemini PLANNER: report #20 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='호스트의 단독 탐험 지시를 따라 통로 끝 대기 상태에서 탐험을 재설정해 진행' after 13.4s
+[AIPlayerSpike] t=637.2 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#20)
+[AIPlayerSpike] t=637.2 @Gemini GOAL set rev=31 source=llm:gemini#20: 탐험 (start count 0)
+[AIPlayerSpike] t=637.2 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=637.2 @Gemini EXP: report part 6273 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=637.2 @Gemini SKILL 캐기: swinging at (27,9) tileHp=-1 pos=(28.00,8.87) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=638.5 @Gemini LEAK-CHECK walk to (27,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=638.6 @Gemini SKILL 캐기: swinging at (26,9) tileHp=-1 pos=(27.21,8.97) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=639.6 @Gemini nav: mod A* path int2(26, 9) -> int2(26, 9): 0 tiles
+[AIPlayerSpike] t=639.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 42, work 140.6ms
+[AIPlayerSpike] t=639.6 @Gemini LEAK-CHECK walk to (26,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=639.7 @Gemini SKILL 캐기: swinging at (25,9) tileHp=-1 pos=(25.85,8.99) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=639.8 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 14, work 55.3ms
+[AIPlayerSpike] t=640.7 @Gemini DECISION #135 SEND rev=31 trigger='[이전 목표 탐험, 목표 세대 29, 실행 44] 묶음 채집: 새로 보이는 물체 YellowFirefly @38,10; 새로 보이는 물체 YellowFirefly @37,17; 새로 보이는 물체 PlayerGrave @12,-2. 현재 선택 묶음에는 추가하지 않음. 원래 작업을 계속하면서 다음 현장 판단에 제공.' goal='탐험' candidates=26 inputChars=17502 prep=351.4ms[frames 55, wall 452.8ms, plans 139.2 n21 cached26] motion=휘두르는 중(게임 쿨다운 0.40초 중 0.35초 남음) players=[Luminous(호스트) 동쪽 3.0칸, 체력 바 106/100, 서 있음] (objects 12 (+4 trigger-only, 0 under the AI), blocked tiles 21, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=26 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=640.7 @Gemini PREP finished: rev=31 frames=112 plans=21 cached=26 work=352.0ms maxSlice=9.13ms trees=1 expanded=30531 tiles=33206
+[AIPlayerSpike] t=640.8 @Gemini LEAK-CHECK walk to (25,9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=640.9 @Gemini SKILL 캐기: swinging at (24,9) tileHp=-1 pos=(25.13,9.00) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=641.1 @Gemini DECISION #135 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=15311 bodyChars=1272
+[AIPlayerSpike] t=641.1 @Gemini DECISION #135 RESULT choice=c1 (계속하기 — 3초째 하고 있는 '묶음 채집'(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18,…) top=[c1=0.51, c21=0.15, c2=0.04] confidence=0.49 latency=0.35s tokens=15311 cached=0 cost=$0.001531 APPLY
+[AIPlayerSpike] t=641.4 @Gemini MOTION swing #100 item=WoodMiningPick: game cooldown timer 0.400s (8 ticks); observed interval median 0.400s (n 15, min 0.399, max 1.350); attack-speed stats [40]=0 [65]=0 -> 0.4/1.000
+[AIPlayerSpike] t=642.5 @Gemini nav: mod A* path int2(24, 9) -> int2(24, 8): 1 tiles
+[AIPlayerSpike] t=642.7 @Gemini LEAK-CHECK walk to (24,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=642.9 @Gemini SKILL 캐기: swinging at (23,8) tileHp=-1 pos=(24.04,8.16) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=643.2 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 12.7 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=643.6 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 42, work 138.9ms
+[AIPlayerSpike] t=644.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 58, work 208.8ms
+[AIPlayerSpike] t=644.3 @Gemini LEAK-CHECK walk to (23,8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=644.4 @Gemini SKILL 캐기: swinging at (23,7) tileHp=-1 pos=(23.23,8.04) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=644.6 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 56, work 209.1ms
+[AIPlayerSpike] t=644.9 PERF 30s: AIs in world 1; frames 3535 (117.8 fps); frame ms avg 8.49 p50 8.33 p95 8.33 p99 16.67 max 66.7; server ticks/s 20.0; mod per AI [Gemini 2.52ms avg/61.7ms max]
+[AIPlayerSpike] t=645.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 59, work 190.4ms
+[AIPlayerSpike] t=645.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 타일 (23,7)), frames 82, work 267.8ms
+[AIPlayerSpike] t=645.9 @Gemini LEAK-CHECK walk to (23,7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=646.0 @Gemini SKILL 캐기: swinging at (23,6) tileHp=-1 pos=(23.05,7.23) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=646.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 37, work 122.6ms
+[AIPlayerSpike] t=646.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 77, work 243.7ms
+[AIPlayerSpike] t=647.0 @Gemini nav: mod A* path int2(23, 6) -> int2(23, 6): 0 tiles
+[AIPlayerSpike] t=647.0 @Gemini LEAK-CHECK walk to (23,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=647.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 43, work 140.5ms
+[AIPlayerSpike] t=647.2 @Gemini SKILL 캐기: swinging at (23,5) tileHp=-1 pos=(23.00,6.04) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=647.6 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 59, work 193.4ms
+[AIPlayerSpike] t=648.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 58, work 186.4ms
+[AIPlayerSpike] t=648.6 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 59, work 193.8ms
+[AIPlayerSpike] t=648.7 @Gemini LEAK-CHECK walk to (23,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=648.8 @Gemini SKILL 캐기: swinging at (23,4) tileHp=-1 pos=(23.00,5.23) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=649.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 58, work 186.6ms
+[AIPlayerSpike] t=649.6 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 59, work 192.8ms
+[AIPlayerSpike] t=649.8 @Gemini nav: mod A* path int2(23, 4) -> int2(23, 4): 0 tiles
+[AIPlayerSpike] t=649.8 @Gemini LEAK-CHECK walk to (23,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=650.0 @Gemini SKILL 캐기: swinging at (23,3) tileHp=-1 pos=(23.00,4.03) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=650.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 59, work 189.0ms
+[AIPlayerSpike] t=650.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 76, work 250.4ms
+[AIPlayerSpike] t=651.1 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 41, work 135.5ms
+[AIPlayerSpike] t=651.4 @Gemini PLANNER: report #21 answer after 14.2s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":14180,"report_id":21,"goal_rev":30,"answer":{"decision":"set","for":{"report":21,"goal_rev":30},"goal":{"do":"explore"},"order":"follow","say":"새로운 통로로 계속 전진하며 주변을 탐험할게요!","why":"호스트의 단독 탐험 지시에 따라 갈림길 대기 상태를 해제하고 탐험을 이어감"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 21, \"goal_rev\": 30}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"새로운 통로로 계속 전진하며 주변을 탐험할게요!\", \"why\": \"호스트의 단독 탐험 지시에 따라 갈림길 대기 상태를 해제하고 탐험을 이어감\"}\n","error":null,"detail":null,"prompt_chars":57609,"turn_chars":41283,"answer_chars":194,"usage":{"input":37252,"cached":0,"output":90,"reasoning":0},"usage_last":{"input":37252,"cached":0,"output":90,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=651.4 @Gemini chat reply: [Gemini] 새로운 통로로 계속 전진하며 주변을 탐험할게요!
+[AIPlayerSpike] t=651.4 @Gemini PLANNER: report #21 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='호스트의 단독 탐험 지시에 따라 갈림길 대기 상태를 해제하고 탐험을 이어감' after 14.2s
+[AIPlayerSpike] t=651.4 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#21)
+[AIPlayerSpike] t=651.4 @Gemini BRAIN: preparation cancelled (new goal), frames 26, work 90.1ms
+[AIPlayerSpike] t=651.4 @Gemini GOAL set rev=32 source=llm:gemini#21: 탐험 (start count 0)
+[AIPlayerSpike] t=651.4 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=651.5 @Gemini LEAK-CHECK walk to (23,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=651.6 @Gemini SKILL 캐기: swinging at (22,3) tileHp=-1 pos=(23.00,3.22) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=651.6 @Gemini MOTION swing #120 item=WoodMiningPick: game cooldown timer 0.400s (8 ticks); observed interval median 0.400s (n 15, min 0.391, max 0.800); attack-speed stats [40]=0 [65]=0 -> 0.4/1.000
+[AIPlayerSpike] t=652.5 @Gemini DECISION #136 SEND rev=32 trigger='새 목표' goal='탐험' candidates=29 inputChars=25739 prep=413.8ms[frames 76, wall 624.3ms, plans 199.2 n12 cached15] motion=휘두르는 중(게임 쿨다운 0.40초 중 0.40초 남음) players=[Luminous(호스트) 북쪽 2.3칸, 체력 바 106/100, 서 있음] (objects 11 (+8 trigger-only, 0 under the AI), blocked tiles 20, large: WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=29 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=652.5 @Gemini PREP finished: rev=32 frames=133 plans=12 cached=15 work=414.4ms maxSlice=7.46ms trees=1 expanded=30531 tiles=33206
+[AIPlayerSpike] t=652.7 @Gemini DECISION #136 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=21718 bodyChars=1374
+[AIPlayerSpike] t=652.7 @Gemini DECISION #136 RESULT choice=c1 (계속하기 — 14초째 하고 있는 '묶음 채집'(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18…) top=[c1=0.57, c20=0.16, c21=0.05] confidence=0.55 latency=0.26s tokens=21718 cached=0 cost=$0.002172 APPLY
+[AIPlayerSpike] t=653.1 @Gemini LEAK-CHECK walk to (22,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=653.2 @Gemini SKILL 캐기: swinging at (21,3) tileHp=-1 pos=(22.27,3.03) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=654.6 @Gemini nav: mod A* path int2(21, 3) -> int2(20, 3): 1 tiles
+[AIPlayerSpike] t=654.7 @Gemini LEAK-CHECK walk to (20,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=654.9 @Gemini SKILL 캐기: swinging at (20,4) tileHp=-1 pos=(20.18,3.00) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=655.0 @Gemini DECISION #137 SEND rev=32 trigger='[이전 목표 탐험, 목표 세대 29, 실행 44] 묶음 채집: 새로 보이는 물체 IndestructibleAncientWire @6,4; 새로 보이는 물체 CritterWorm @6,5; 새로 보이는 물체 CritterWorm @33,9. 현재 선택 묶음에는 추가하지 않음. 원래 작업을 계속하면서 다음 현장 판단에 제공.' goal='탐험' candidates=22 inputChars=26619 prep=18.1ms[frames 5, wall 37.3ms, plans 0.0 n0 cached0] motion=휘두르는 중(게임 쿨다운 0.40초 중 0.30초 남음) players=[Luminous(호스트) 남쪽 2.1칸, 체력 바 106/100, 서 있음] (objects 12 (+14 trigger-only, 0 under the AI), blocked tiles 28, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=22 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=655.0 @Gemini PREP finished: rev=32 frames=6 plans=0 cached=0 work=18.3ms maxSlice=4.00ms trees=0 expanded=0 tiles=0
+[AIPlayerSpike] t=655.4 @Gemini DECISION #137 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=21534 bodyChars=1125
+[AIPlayerSpike] t=655.4 @Gemini DECISION #137 RESULT choice=c1 (계속하기 — 18초째 하고 있는 '묶음 채집'(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18…) top=[c1=0.91, c13=0.03, c15=0.01] confidence=0.91 latency=0.37s tokens=21534 cached=0 cost=$0.002153 APPLY
+[AIPlayerSpike] t=655.9 @Gemini nav: mod A* path int2(20, 4) -> int2(19, 4): 1 tiles
+[AIPlayerSpike] t=656.0 @Gemini LEAK-CHECK walk to (19,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=656.1 @Gemini SKILL 캐기: swinging at (19,5) tileHp=-1 pos=(19.13,4.00) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=657.2 @Gemini nav: mod A* path int2(19, 5) -> int2(21, 3): 4 tiles
+[AIPlayerSpike] t=657.7 @Gemini LEAK-CHECK walk to (21,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=5 unseenAtStartWalked=0
+[AIPlayerSpike] t=657.9 @Gemini SKILL 캐기: swinging at (21,2) tileHp=-1 pos=(20.98,3.00) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=657.9 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 46, work 149.3ms
+[AIPlayerSpike] t=658.4 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 58, work 207.7ms
+[AIPlayerSpike] t=658.9 @Gemini nav: mod A* path int2(21, 2) -> int2(18, 5): 6 tiles
+[AIPlayerSpike] t=658.9 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 60, work 182.9ms
+[AIPlayerSpike] t=658.9 @Gemini BRAIN: planned mining damage 53 -> 54 (도구 WoodMiningPick); 0 cached no-way plans dropped, 0 found routes kept; changes so far 4
+[AIPlayerSpike] t=659.2 @Gemini TUNNEL: mining bonus while holding WoodMiningPick = 34
+[AIPlayerSpike] t=659.4 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 58, work 177.9ms
+[AIPlayerSpike] t=659.5 @Gemini DECISION #138 SEND rev=32 trigger='[이전 목표 탐험, 목표 세대 29, 실행 44] 묶음 채집: 새로 보이는 물체 CritterWorm @5,4; 새로 보이는 물체 CritterWorm @6,-4. 현재 선택 묶음에는 추가하지 않음. 원래 작업을 계속하면서 다음 현장 판단에 제공.' goal='탐험' candidates=23 inputChars=28556 prep=19.1ms[frames 5, wall 37.7ms, plans 0.0 n0 cached0] motion=한 칸 걷는 중 players=[Luminous(호스트) 남쪽 1.6칸, 체력 바 106/100, 서 있음] (objects 12 (+16 trigger-only, 0 under the AI), blocked tiles 29, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=23 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=659.5 @Gemini PREP finished: rev=32 frames=6 plans=0 cached=0 work=19.4ms maxSlice=4.48ms trees=0 expanded=0 tiles=0
+[AIPlayerSpike] t=659.6 @Gemini LEAK-CHECK walk to (18,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=6 unseenAtStartWalked=0
+[AIPlayerSpike] t=659.8 @Gemini DECISION #138 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=23142 bodyChars=1171
+[AIPlayerSpike] t=659.8 @Gemini DECISION #138 RESULT choice=c1 (계속하기 — 22초째 하고 있는 '묶음 채집'(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18…) top=[c1=0.72, c13=0.05, c2=0.03] confidence=0.71 latency=0.29s tokens=23142 cached=0 cost=$0.002314 APPLY
+[AIPlayerSpike] t=659.8 @Gemini SKILL 캐기: swinging at (18,6) tileHp=-1 pos=(18.02,4.99) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=661.2 @Gemini LEAK-CHECK walk to (18,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=661.3 @Gemini SKILL 캐기: swinging at (17,6) tileHp=-1 pos=(18.00,5.78) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=662.0 @Gemini BRAIN: fight facts MushroomBrute hp 540/540 at 16.1 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 20타, 6.0초. 이 종류에게 받은 피해(관찰 27번) 약 54/번 → 내 체력 78이면 약 2번 맞으면 쓰러짐. 이 종류에게 체력 55에서 한 번 맞고 바로 쓰러진 적 있음(한 번에 55 이상, 내 체력 지금 78). 이 종류가 근처에 있을 때 쓰러진 기록 14번(내 기록).
+[AIPlayerSpike] t=662.1 @Gemini MOTION swing #140 item=WoodMiningPick: game cooldown timer 0.400s (8 ticks); observed interval median 0.400s (n 15, min 0.397, max 1.100); attack-speed stats [40]=0 [65]=0 -> 0.4/1.000
+[AIPlayerSpike] t=662.4 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 54, work 173.3ms
+[AIPlayerSpike] t=662.5 @Gemini DECISION #139 SEND rev=32 trigger='[이전 목표 탐험, 목표 세대 29, 실행 44] 묶음 채집: 새로 보이는 물체 IndestructibleAncientWire @3,4; 새로 보이는 물체 PlayerGrave @3,1; 새로 보이는 물체 PlayerGrave @3,-1; 새로 보이는 물체 PlayerGrave @2,-3. 현재 선택 묶음에는 추가하지 않음. 원래 작업을 계속하면서 다음 현장 판단에 제공.' goal='탐험' candidates=27 inputChars=28239 prep=31.0ms[frames 5, wall 42.4ms, plans 2.1 n1 cached0] motion=한 칸 걷는 중 players=[Luminous(호스트) 남쪽 3.9칸, 체력 바 106/100, 서 있음] (objects 10 (+20 trigger-only, 0 under the AI), blocked tiles 26, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=27 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=662.5 @Gemini PREP finished: rev=32 frames=7 plans=1 cached=0 work=34.3ms maxSlice=12.16ms trees=0 expanded=0 tiles=751
+[AIPlayerSpike] t=662.7 @Gemini nav: mod A* path int2(17, 6) -> int2(16, 6): 1 tiles
+[AIPlayerSpike] t=662.8 @Gemini DECISION #139 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=23248 bodyChars=1305
+[AIPlayerSpike] t=662.8 @Gemini DECISION #139 RESULT choice=c1 (계속하기 — 25초째 하고 있는 '묶음 채집'(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18…) top=[c1=0.53, c18=0.21, c19=0.05] confidence=0.51 latency=0.28s tokens=23248 cached=0 cost=$0.002325 APPLY
+[AIPlayerSpike] t=662.9 @Gemini LEAK-CHECK walk to (16,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=663.0 @Gemini SKILL 캐기: swinging at (16,7) tileHp=-1 pos=(16.05,5.91) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=664.5 @Gemini LEAK-CHECK walk to (16,7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=1 unseenAtStartWalked=0
+[AIPlayerSpike] t=664.6 @Gemini SKILL 캐기: swinging at (15,7) tileHp=-1 pos=(16.01,6.75) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=665.1 @Gemini DECISION #140 SEND rev=32 trigger='[이전 목표 탐험, 목표 세대 29, 실행 44] 묶음 채집: 새로 보이는 물체 CritterWorm @7,-2. 현재 선택 묶음에는 추가하지 않음. 원래 작업을 계속하면서 다음 현장 판단에 제공.' goal='탐험' candidates=21 inputChars=28568 prep=30.5ms[frames 5, wall 41.9ms, plans 1.8 n1 cached0] motion=휘두르는 중(게임 쿨다운 0.40초 중 0.40초 남음) players=[Luminous(호스트) 남쪽 5.2칸, 체력 바 106/100, 서 있음] (objects 9 (+23 trigger-only, 0 under the AI), blocked tiles 25, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=21 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=665.1 @Gemini PREP finished: rev=32 frames=7 plans=1 cached=0 work=30.8ms maxSlice=11.64ms trees=0 expanded=0 tiles=701
+[AIPlayerSpike] t=665.3 @Gemini DECISION #140 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=23230 bodyChars=1101
+[AIPlayerSpike] t=665.3 @Gemini DECISION #140 RESULT choice=c1 (계속하기 — 28초째 하고 있는 '묶음 채집'(gather:mine:14,6|mine:15,7|mine:16,7|mine:17,6|mine:18…) top=[c1=0.42, c15=0.15, c16=0.10] confidence=0.39 latency=0.28s tokens=23230 cached=0 cost=$0.002323 APPLY
+[AIPlayerSpike] t=665.6 @Gemini nav: mod A* path int2(15, 7) -> int2(15, 6): 1 tiles
+[AIPlayerSpike] t=665.7 @Gemini LEAK-CHECK walk to (15,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=665.8 @Gemini SKILL 캐기: swinging at (14,6) tileHp=-1 pos=(15.01,6.03) state=[Walk next=Walk locked=False] damageBuffer(target)=0 entries/0 dmg (buffers 1); damagedTileEntities near=[]
+[AIPlayerSpike] t=666.9 @Gemini chat hidden (status): [Gemini] AI 묶음 채집 완료: 선택한 묶음 처리 종료. 완료 대상 20/20, 사라짐/변경 0, 관측 가방 증가 [WallDirtBlock+20]. 새 대상은 포함하지 않음 (29.8초)
+[AIPlayerSpike] t=667.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 47, work 152.6ms
+[AIPlayerSpike] t=667.8 @Gemini AI character: saved (periodic) to C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\b39072f4c49d28bf6ab43b7b6a702d7f\Gemini.json: guid=c1a0de0000000000000000000000a003 role=Explorer items=[0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx88, 7:WoodMiningPickx65, 9:WoodMiningPickx0, 10:WallDirtBlockx45, 12:FungalGrowthx1, 14:Woodx14] skills=5 coins=0 connects=1 health=78/102 serverPos=float3(14.21303f, 0f, 6.006598f) world=b39072f4c49d28bf6ab43b7b6a702d7f
+[AIPlayerSpike] t=668.1 @Gemini DECISION #141 SEND rev=32 trigger='[이전 목표 탐험, 목표 세대 29, 실행 44] 묶음 채집: 새로 보이는 물체 CritterWorm @8,-2; 새로 보이는 물체 CritterWorm @26,-4. 현재 선택 묶음에는 추가하지 않음. 원래 작업을 계속하면서 다음 현장 판단에 제공.' goal='탐험' candidates=21 inputChars=24998 prep=328.4ms[frames 47, wall 389.1ms, plans 135.6 n5 cached4] motion=boundary players=[Luminous(호스트) 동쪽 5.9칸, 체력 바 106/100, 서 있음] (objects 10 (+26 trigger-only, 0 under the AI), blocked tiles 58, large: SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2); WoodenDestructible 2x2 at (27,10)) | options=21 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=668.1 @Gemini PREP finished: rev=32 frames=104 plans=5 cached=4 work=329.1ms maxSlice=6.36ms trees=0 expanded=0 tiles=33196
+[AIPlayerSpike] t=668.6 @Gemini DECISION #141 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c14 tokens=20101 bodyChars=1097
+[AIPlayerSpike] t=668.6 @Gemini DECISION #141 RESULT choice=c14 (통로 탐색 — 지금 보이는 동쪽 길로 출발. 외길은 코너를 따라 계속 걷고, 다음 갈림길은 방향을 선택. 막힘·발견·위험은 다시 판단.) top=[c14=0.63, c15=0.16, c16=0.09] confidence=0.61 latency=0.42s tokens=20101 cached=0 cost=$0.002010 APPLY
+[AIPlayerSpike] t=668.6 @Gemini EXP: report part 6273 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=668.6 @Gemini SKILL 통로 탐색 START at (14.21,6.01)
+[AIPlayerSpike] t=668.6 @Gemini nav: mod A* path int2(14, 6) -> int2(15, 6): 1 tiles
+[AIPlayerSpike] t=668.8 @Gemini LEAK-CHECK walk to (15,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=668.9 @Gemini nav: mod A* path int2(15, 6) -> int2(16, 6): 1 tiles
+[AIPlayerSpike] t=668.9 @Gemini LEAK-CHECK walk to (16,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=669.0 @Gemini nav: mod A* path int2(16, 6) -> int2(17, 6): 1 tiles
+[AIPlayerSpike] t=669.1 @Gemini LEAK-CHECK walk to (17,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=669.1 @Gemini nav: mod A* path int2(17, 6) -> int2(18, 6): 1 tiles
+[AIPlayerSpike] t=669.3 @Gemini LEAK-CHECK walk to (18,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=669.3 @Gemini nav: mod A* path int2(18, 6) -> int2(18, 5): 1 tiles
+[AIPlayerSpike] t=669.4 @Gemini LEAK-CHECK walk to (18,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=670.7 @Gemini DECISION #142 SEND rev=32 trigger='[현재 목표 탐험, 목표 세대 31, 실행 45] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=27 inputChars=29110 prep=29.2ms[frames 5, wall 40.6ms, plans 2.0 n1 cached0] motion=boundary players=[Luminous(호스트) 남쪽 2.8칸, 체력 바 106/100, 서 있음] (objects 10 (+17 trigger-only, 0 under the AI), blocked tiles 26, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=27 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=670.7 @Gemini PREP finished: rev=32 frames=6 plans=1 cached=0 work=29.9ms maxSlice=11.80ms trees=0 expanded=0 tiles=772
+[AIPlayerSpike] t=671.1 @Gemini DECISION #142 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c19 tokens=23789 bodyChars=1300
+[AIPlayerSpike] t=671.1 @Gemini nav: mod A* path int2(18, 5) -> int2(18, 4): 1 tiles
+[AIPlayerSpike] t=671.3 @Gemini LEAK-CHECK walk to (18,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=671.3 @Gemini nav: mod A* path int2(18, 4) -> int2(18, 3): 1 tiles
+[AIPlayerSpike] t=671.4 @Gemini LEAK-CHECK walk to (18,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=671.4 @Gemini nav: mod A* path int2(18, 3) -> int2(18, 2): 1 tiles
+[AIPlayerSpike] t=671.6 @Gemini LEAK-CHECK walk to (18,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=671.6 @Gemini nav: mod A* path int2(18, 2) -> int2(18, 1): 1 tiles
+[AIPlayerSpike] t=671.8 @Gemini LEAK-CHECK walk to (18,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=671.8 @Gemini nav: mod A* path int2(18, 1) -> int2(18, 0): 1 tiles
+[AIPlayerSpike] t=672.0 @Gemini LEAK-CHECK walk to (18,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=672.0 @Gemini nav: mod A* path int2(18, 0) -> int2(18, -1): 1 tiles
+[AIPlayerSpike] t=672.1 @Gemini LEAK-CHECK walk to (18,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=672.1 @Gemini nav: mod A* path int2(18, -1) -> int2(18, -2): 1 tiles
+[AIPlayerSpike] t=672.3 @Gemini LEAK-CHECK walk to (18,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=672.3 @Gemini nav: mod A* path int2(18, -2) -> int2(18, -3): 1 tiles
+[AIPlayerSpike] t=672.5 @Gemini LEAK-CHECK walk to (18,-3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=672.5 @Gemini nav: mod A* path int2(18, -3) -> int2(18, -4): 1 tiles
+[AIPlayerSpike] t=672.6 @Gemini LEAK-CHECK walk to (18,-4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=672.6 @Gemini nav: mod A* path int2(18, -4) -> int2(18, -5): 1 tiles
+[AIPlayerSpike] t=672.7 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=672.9 @Gemini LEAK-CHECK walk to (18,-5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=673.2 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 13.5 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=673.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 49, work 164.4ms
+[AIPlayerSpike] t=674.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 49, work 159.9ms
+[AIPlayerSpike] t=674.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 6, work 28.6ms
+[AIPlayerSpike] t=674.1 @Gemini DECISION #143 SEND rev=32 trigger='[현재 목표 탐험, 목표 세대 31, 실행 45] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=27 inputChars=30278 prep=25.1ms[frames 6, wall 41.7ms, plans 1.6 n1 cached0] motion=boundary players=[Luminous(호스트) 북쪽 7.6칸, 체력 바 106/100, 서 있음] (objects 9 (+20 trigger-only, 0 under the AI), blocked tiles 20, large: LarvaHiveBossStatue 3x3 at (7,5); CopperOreBoulder 2x2 at (31,-12)) | options=27 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=674.1 @Gemini PREP finished: rev=32 frames=7 plans=1 cached=0 work=25.3ms maxSlice=5.25ms trees=0 expanded=0 tiles=602
+[AIPlayerSpike] t=674.6 @Gemini DECISION #143 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c16 tokens=24674 bodyChars=1305
+[AIPlayerSpike] t=674.6 @Gemini DECISION #143 RESULT choice=c16 (막힘·순환에서 새로 북쪽 보이는 통로 선택. 원래 목적 유지.) top=[c16=0.45, c15=0.31, c17=0.09] confidence=0.43 latency=0.42s tokens=24674 cached=0 cost=$0.002467 APPLY (at motion boundary)
+[AIPlayerSpike] t=674.6 @Gemini SWITCH 통로 탐색(travel:explore:14,6:15,6, ran 5.99s) -> explore(travel:restart:45:18,-4) at boundary; swing left 0.00s
+[AIPlayerSpike] t=674.6 @Gemini SKILL 통로 탐색 CANCELLED after 6.0s: reason='새 기술 통로 탐색(으)로 바뀜' start=(14.21,6.01) end=(18.00,-5.05) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=674.6 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (6.0초)
+[AIPlayerSpike] t=674.6 @Gemini SKILL 통로 탐색 START at (18.00,-5.05)
+[AIPlayerSpike] t=674.6 @Gemini nav: mod A* path int2(18, -5) -> int2(18, -4): 1 tiles
+[AIPlayerSpike] t=674.8 @Gemini LEAK-CHECK walk to (18,-4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=674.9 PERF 30s: AIs in world 1; frames 3560 (118.6 fps); frame ms avg 8.43 p50 8.33 p95 8.33 p99 8.34 max 91.7; server ticks/s 19.9; mod per AI [Gemini 1.69ms avg/87.2ms max]
+[AIPlayerSpike] t=676.7 @Gemini DECISION #144 SEND rev=32 trigger='[현재 목표 탐험, 목표 세대 31, 실행 46] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=31 inputChars=31402 prep=30.2ms[frames 6, wall 47.6ms, plans 1.7 n1 cached0] motion=boundary players=[Luminous(호스트) 북쪽 6.1칸, 체력 바 106/100, 서 있음] (objects 9 (+19 trigger-only, 0 under the AI), blocked tiles 20, large: LarvaHiveBossStatue 3x3 at (7,5); CopperOreBoulder 2x2 at (31,-12)) | options=31 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=676.7 @Gemini PREP finished: rev=32 frames=7 plans=1 cached=0 work=31.0ms maxSlice=11.02ms trees=0 expanded=0 tiles=633
+[AIPlayerSpike] t=677.0 @Gemini DECISION #144 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c20 tokens=25925 bodyChars=1436
+[AIPlayerSpike] t=677.1 @Gemini nav: mod A* path int2(18, -4) -> int2(18, -3): 1 tiles
+[AIPlayerSpike] t=677.2 @Gemini LEAK-CHECK walk to (18,-3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=677.2 @Gemini nav: mod A* path int2(18, -3) -> int2(18, -2): 1 tiles
+[AIPlayerSpike] t=677.3 @Gemini LEAK-CHECK walk to (18,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=677.3 @Gemini nav: mod A* path int2(18, -2) -> int2(18, -1): 1 tiles
+[AIPlayerSpike] t=677.5 @Gemini LEAK-CHECK walk to (18,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=677.5 @Gemini nav: mod A* path int2(18, -1) -> int2(18, 0): 1 tiles
+[AIPlayerSpike] t=677.7 @Gemini LEAK-CHECK walk to (18,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=677.7 @Gemini nav: mod A* path int2(18, 0) -> int2(18, 1): 1 tiles
+[AIPlayerSpike] t=677.9 @Gemini LEAK-CHECK walk to (18,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=677.9 @Gemini nav: mod A* path int2(18, 1) -> int2(18, 2): 1 tiles
+[AIPlayerSpike] t=678.0 @Gemini LEAK-CHECK walk to (18,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=678.0 @Gemini nav: mod A* path int2(18, 2) -> int2(18, 3): 1 tiles
+[AIPlayerSpike] t=678.2 @Gemini LEAK-CHECK walk to (18,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=678.2 @Gemini nav: mod A* path int2(18, 3) -> int2(18, 4): 1 tiles
+[AIPlayerSpike] t=678.4 @Gemini LEAK-CHECK walk to (18,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=678.4 @Gemini nav: mod A* path int2(18, 4) -> int2(18, 5): 1 tiles
+[AIPlayerSpike] t=678.5 @Gemini LEAK-CHECK walk to (18,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=678.5 @Gemini nav: mod A* path int2(18, 5) -> int2(18, 6): 1 tiles
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=678.7 @Gemini LEAK-CHECK walk to (18,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=679.3 @Gemini DECISION #145 SEND rev=32 trigger='[현재 목표 탐험, 목표 세대 31, 실행 46] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=23 inputChars=28313 prep=30.0ms[frames 5, wall 40.3ms, plans 2.2 n1 cached0] motion=boundary players=[Luminous(호스트) 남쪽 4.0칸, 체력 바 106/100, 서 있음] (objects 9 (+16 trigger-only, 0 under the AI), blocked tiles 25, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=23 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=679.3 @Gemini PREP finished: rev=32 frames=7 plans=1 cached=0 work=74.4ms maxSlice=45.05ms trees=0 expanded=0 tiles=818
+[AIPlayerSpike] t=679.8 @Gemini DECISION #145 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c15 tokens=22868 bodyChars=1164
+[AIPlayerSpike] t=679.8 @Gemini DECISION #145 RESULT choice=c15 (막힘·순환에서 새로 서쪽 보이는 통로 선택. 원래 목적 유지.) top=[c15=0.48, c16=0.37, c17=0.05] confidence=0.46 latency=0.51s tokens=22868 cached=0 cost=$0.002287 APPLY (at motion boundary)
+[AIPlayerSpike] t=679.8 @Gemini SWITCH 통로 탐색(travel:restart:45:18,-4, ran 5.21s) -> explore(travel:restart:46:17,6) at boundary; swing left 0.00s
+[AIPlayerSpike] t=679.8 @Gemini SKILL 통로 탐색 CANCELLED after 5.2s: reason='새 기술 통로 탐색(으)로 바뀜' start=(18.00,-5.05) end=(18.00,6.29) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=679.8 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (5.2초)
+[AIPlayerSpike] t=679.8 @Gemini SKILL 통로 탐색 START at (18.00,6.29)
+[AIPlayerSpike] t=679.8 @Gemini nav: mod A* path int2(18, 6) -> int2(17, 6): 1 tiles
+[AIPlayerSpike] t=680.0 @Gemini LEAK-CHECK walk to (17,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=680.0 @Gemini nav: mod A* path int2(17, 6) -> int2(16, 6): 1 tiles
+[AIPlayerSpike] t=680.2 @Gemini LEAK-CHECK walk to (16,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=680.2 @Gemini nav: mod A* path int2(16, 6) -> int2(15, 6): 1 tiles
+[AIPlayerSpike] t=680.4 @Gemini LEAK-CHECK walk to (15,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=680.4 @Gemini nav: mod A* path int2(15, 6) -> int2(14, 6): 1 tiles
+[AIPlayerSpike] t=680.6 @Gemini LEAK-CHECK walk to (14,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=680.6 @Gemini nav: mod A* path int2(14, 6) -> int2(14, 5): 1 tiles
+[AIPlayerSpike] t=680.8 @Gemini LEAK-CHECK walk to (14,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=682.2 @Gemini PLANNER: report #22 answer after 13.6s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13568,"report_id":22,"goal_rev":31,"answer":{"decision":"set","for":{"report":22,"goal_rev":31},"goal":{"do":"explore"},"order":"follow","say":"주변 미개척 통로와 갈림길을 계속 탐험해 볼게요!","why":"호스트의 단독 탐험 지시에 따라 현장 재계획 보고 후 미개척 통로 탐험을 계속 이어감"},"raw":"```json\n{\"decision\": \"set\", \"for\": {\"report\": 22, \"goal_rev\": 31}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"주변 미개척 통로와 갈림길을 계속 탐험해 볼게요!\", \"why\": \"호스트의 단독 탐험 지시에 따라 현장 재계획 보고 후 미개척 통로 탐험을 계속 이어감\"}\n```\n","error":null,"detail":null,"prompt_chars":73279,"turn_chars":56953,"answer_chars":213,"usage":{"input":45189,"cached":0,"output":100,"reasoning":0},"usage_last":{"input":45189,"cached":0,"output":100,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2180,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=682.2 @Gemini chat reply: [Gemini] 주변 미개척 통로와 갈림길을 계속 탐험해 볼게요!
+[AIPlayerSpike] t=682.2 @Gemini PLANNER: report #22 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='호스트의 단독 탐험 지시에 따라 현장 재계획 보고 후 미개척 통로 탐험을 계속 이어감' after 13.6s
+[AIPlayerSpike] t=682.2 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#22)
+[AIPlayerSpike] t=682.2 @Gemini BRAIN: preparation cancelled (new goal), frames 46, work 151.4ms
+[AIPlayerSpike] t=682.2 @Gemini GOAL set rev=33 source=llm:gemini#22: 탐험 (start count 0)
+[AIPlayerSpike] t=682.2 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=682.2 @Gemini EXP: report part 6273 chars in 0.5 ms (goal runs 79)
+[AIPlayerSpike] t=682.2 @Gemini BRAIN: fight facts MushroomBrute hp 540/540 at 12.8 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 20타, 6.0초. 이 종류에게 받은 피해(관찰 27번) 약 54/번 → 내 체력 78이면 약 2번 맞으면 쓰러짐. 이 종류에게 체력 55에서 한 번 맞고 바로 쓰러진 적 있음(한 번에 55 이상, 내 체력 지금 78). 이 종류가 근처에 있을 때 쓰러진 기록 14번(내 기록).
+[AIPlayerSpike] t=682.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 52, work 171.8ms
+[AIPlayerSpike] t=683.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 47, work 155.1ms
+[AIPlayerSpike] t=683.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 48, work 148.3ms
+[AIPlayerSpike] t=684.4 @Gemini DECISION #146 SEND rev=33 trigger='새 목표' goal='탐험' candidates=26 inputChars=25759 prep=347.4ms[frames 50, wall 421.2ms, plans 145.2 n5 cached4] motion=boundary players=[Luminous(호스트) 동쪽 5.4칸, 체력 바 106/100, 서 있음] (objects 9 (+27 trigger-only, 0 under the AI), blocked tiles 57, large: SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2); WoodenDestructible 2x2 at (27,10)) | options=26 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=684.4 @Gemini PREP finished: rev=33 frames=108 plans=5 cached=4 work=347.7ms maxSlice=11.11ms trees=0 expanded=0 tiles=33196
+[AIPlayerSpike] t=685.0 @Gemini DECISION #146 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c18 tokens=21082 bodyChars=1269
+[AIPlayerSpike] t=685.0 @Gemini nav: mod A* path int2(14, 5) -> int2(15, 5): 1 tiles
+[AIPlayerSpike] t=685.2 @Gemini LEAK-CHECK walk to (15,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=685.2 @Gemini nav: mod A* path int2(15, 5) -> int2(16, 5): 1 tiles
+[AIPlayerSpike] t=685.4 @Gemini LEAK-CHECK walk to (16,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=685.4 @Gemini nav: mod A* path int2(16, 5) -> int2(17, 5): 1 tiles
+[AIPlayerSpike] t=685.6 @Gemini LEAK-CHECK walk to (17,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=685.6 @Gemini nav: mod A* path int2(17, 5) -> int2(18, 5): 1 tiles
+[AIPlayerSpike] t=685.8 @Gemini LEAK-CHECK walk to (18,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=685.8 @Gemini nav: mod A* path int2(18, 5) -> int2(19, 5): 1 tiles
+[AIPlayerSpike] t=685.9 @Gemini LEAK-CHECK walk to (19,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=685.9 @Gemini nav: mod A* path int2(19, 5) -> int2(19, 4): 1 tiles
+[AIPlayerSpike] t=686.1 @Gemini LEAK-CHECK walk to (19,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=687.9 @Gemini DECISION #147 SEND rev=33 trigger='[이전 목표 탐험, 목표 세대 31, 실행 47] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=27 inputChars=29487 prep=375.1ms[frames 60, wall 504.5ms, plans 173.4 n5 cached4] motion=boundary players=[Luminous(호스트) 남쪽 1.7칸, 체력 바 106/100, 서 있음] (objects 11 (+17 trigger-only, 0 under the AI), blocked tiles 28, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=27 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=687.9 @Gemini PREP finished: rev=33 frames=117 plans=5 cached=4 work=375.9ms maxSlice=12.05ms trees=0 expanded=0 tiles=33205
+[AIPlayerSpike] t=688.1 @Gemini DECISION #147 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c20 tokens=24080 bodyChars=1300
+[AIPlayerSpike] t=688.2 @Gemini nav: mod A* path int2(19, 4) -> int2(19, 3): 1 tiles
+[AIPlayerSpike] t=688.4 @Gemini LEAK-CHECK walk to (19,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=688.4 @Gemini nav: mod A* path int2(19, 3) -> int2(19, 2): 1 tiles
+[AIPlayerSpike] t=688.5 @Gemini LEAK-CHECK walk to (19,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=688.5 @Gemini nav: mod A* path int2(19, 2) -> int2(19, 1): 1 tiles
+[AIPlayerSpike] t=688.7 @Gemini LEAK-CHECK walk to (19,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=688.7 @Gemini nav: mod A* path int2(19, 1) -> int2(19, 0): 1 tiles
+[AIPlayerSpike] t=688.9 @Gemini LEAK-CHECK walk to (19,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=688.9 @Gemini nav: mod A* path int2(19, 0) -> int2(19, -1): 1 tiles
+[AIPlayerSpike] t=689.1 @Gemini LEAK-CHECK walk to (19,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=689.1 @Gemini nav: mod A* path int2(19, -1) -> int2(19, -2): 1 tiles
+[AIPlayerSpike] t=689.2 @Gemini LEAK-CHECK walk to (19,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=689.3 @Gemini nav: mod A* path int2(19, -2) -> int2(19, -3): 1 tiles
+[AIPlayerSpike] t=689.4 @Gemini LEAK-CHECK walk to (19,-3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=689.4 @Gemini nav: mod A* path int2(19, -3) -> int2(19, -4): 1 tiles
+[AIPlayerSpike] t=689.6 @Gemini LEAK-CHECK walk to (19,-4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=689.6 @Gemini nav: mod A* path int2(19, -4) -> int2(19, -5): 1 tiles
+[AIPlayerSpike] t=689.7 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=689.7 @Gemini LEAK-CHECK walk to (19,-5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=689.7 @Gemini nav: mod A* path int2(19, -5) -> int2(19, -6): 1 tiles
+[AIPlayerSpike] t=689.9 @Gemini LEAK-CHECK walk to (19,-6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=689.9 @Gemini nav: mod A* path int2(19, -6) -> int2(19, -7): 1 tiles
+[AIPlayerSpike] t=690.1 @Gemini LEAK-CHECK walk to (19,-7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=690.1 @Gemini nav: mod A* path int2(19, -7) -> int2(19, -8): 1 tiles
+[AIPlayerSpike] t=690.3 @Gemini LEAK-CHECK walk to (19,-8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=690.3 @Gemini nav: mod A* path int2(19, -8) -> int2(19, -9): 1 tiles
+[AIPlayerSpike] t=690.4 @Gemini DECISION #148 SEND rev=33 trigger='[이전 목표 탐험, 목표 세대 31, 실행 47] 다음 갈림길 방향 선택 필요: 동·남' goal='탐험' candidates=32 inputChars=32395 prep=30.9ms[frames 6, wall 46.1ms, plans 2.1 n1 cached0] motion=한 칸 걷는 중 players=[Luminous(호스트) 북쪽 11.1칸, 체력 바 106/100, 서 있음] (objects 9 (+16 trigger-only, 0 under the AI), blocked tiles 12, large: CopperOreBoulder 2x2 at (31,-12)) | options=32 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=690.4 @Gemini PREP finished: rev=33 frames=7 plans=1 cached=0 work=31.3ms maxSlice=11.64ms trees=0 expanded=0 tiles=804
+[AIPlayerSpike] t=690.4 @Gemini LEAK-CHECK walk to (19,-9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=690.4 @Gemini nav: mod A* path int2(19, -9) -> int2(19, -10): 1 tiles
+[AIPlayerSpike] t=690.6 @Gemini LEAK-CHECK walk to (19,-10) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=690.6 @Gemini nav: mod A* path int2(19, -10) -> int2(19, -11): 1 tiles
+[AIPlayerSpike] t=690.7 @Gemini DECISION #148 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c1 tokens=26706 bodyChars=1486
+[AIPlayerSpike] t=690.7 @Gemini DECISION #148 RESULT choice=c1 (계속하기 — 11초째 하고 있는 '통로 탐색'(travel:restart:46:17,6)(쪽 탐험 걷기) 이어 하기 (선택한 통로 탐색 중. 외…) top=[c1=0.38, c21=0.08, c2=0.07] confidence=0.36 latency=0.29s tokens=26706 cached=0 cost=$0.002671 APPLY
+[AIPlayerSpike] t=690.8 @Gemini LEAK-CHECK walk to (19,-11) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=690.8 @Gemini nav: mod A* path int2(19, -11) -> int2(19, -12): 1 tiles
+[AIPlayerSpike] t=690.9 @Gemini LEAK-CHECK walk to (19,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=692.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=692.2 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=692.3 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=692.3 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=692.3 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=692.3 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=692.3 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=693.0 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 6, work 30.4ms
+[AIPlayerSpike] t=693.0 @Gemini DECISION #149 SEND rev=33 trigger='[이전 목표 탐험, 목표 세대 31, 실행 47] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=33 inputChars=33188 prep=27.7ms[frames 5, wall 40.3ms, plans 2.8 n1 cached0] motion=boundary (objects 12 (+16 trigger-only, 0 under the AI), blocked tiles 14, large: CopperOreBoulder 2x2 at (31,-12)) | options=33 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=693.0 @Gemini PREP finished: rev=33 frames=7 plans=1 cached=0 work=28.0ms maxSlice=6.68ms trees=0 expanded=0 tiles=1030
+[AIPlayerSpike] t=693.9 @Gemini DECISION #149 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c21 tokens=27324 bodyChars=1509
+[AIPlayerSpike] t=693.9 @Gemini nav: mod A* path int2(19, -12) -> int2(18, -12): 1 tiles
+[AIPlayerSpike] t=694.1 @Gemini LEAK-CHECK walk to (18,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=694.1 @Gemini nav: mod A* path int2(18, -12) -> int2(17, -12): 1 tiles
+[AIPlayerSpike] t=694.3 @Gemini LEAK-CHECK walk to (17,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=694.3 @Gemini nav: mod A* path int2(17, -12) -> int2(16, -12): 1 tiles
+[AIPlayerSpike] t=694.5 @Gemini LEAK-CHECK walk to (16,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=694.5 @Gemini nav: mod A* path int2(16, -12) -> int2(15, -12): 1 tiles
+[AIPlayerSpike] t=694.7 @Gemini LEAK-CHECK walk to (15,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=694.7 @Gemini nav: mod A* path int2(15, -12) -> int2(14, -12): 1 tiles
+[AIPlayerSpike] t=694.8 @Gemini LEAK-CHECK walk to (14,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=695.5 @Gemini PLANNER: report #23 answer after 13.2s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13228,"report_id":23,"goal_rev":32,"answer":{"decision":"set","for":{"report":23,"goal_rev":32},"goal":{"do":"explore"},"say":"갈림길에서 남쪽 통로를 선택해 계속 탐험해볼게요!","why":"호스트의 단독 탐험 지시에 따라 갈림길 끝 대기 상태에서 탐험을 재개함"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 23, \"goal_rev\": 32}, \"goal\": {\"do\": \"explore\"}, \"say\": \"갈림길에서 남쪽 통로를 선택해 계속 탐험해볼게요!\", \"why\": \"호스트의 단독 탐험 지시에 따라 갈림길 끝 대기 상태에서 탐험을 재개함\"}\n","error":null,"detail":null,"prompt_chars":76841,"turn_chars":60515,"answer_chars":174,"usage":{"input":47414,"cached":0,"output":85,"reasoning":0},"usage_last":{"input":47414,"cached":0,"output":85,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2183,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=695.5 @Gemini chat reply: [Gemini] 갈림길에서 남쪽 통로를 선택해 계속 탐험해볼게요!
+[AIPlayerSpike] t=695.5 @Gemini PLANNER: report #23 APPLY trigger=action_replan decision=set plan=[explore] order=- why='호스트의 단독 탐험 지시에 따라 갈림길 끝 대기 상태에서 탐험을 재개함' after 13.2s
+[AIPlayerSpike] t=695.5 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#23)
+[AIPlayerSpike] t=695.5 @Gemini GOAL set rev=34 source=llm:gemini#23: 탐험 (start count 0)
+[AIPlayerSpike] t=695.5 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=695.5 @Gemini EXP: report part 6275 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=695.6 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 14.9 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=696.4 @Gemini DECISION #150 SEND rev=34 trigger='새 목표' goal='탐험' candidates=27 inputChars=28339 prep=330.6ms[frames 43, wall 368.3ms, plans 124.5 n5 cached5] motion=boundary (objects 8 (+15 trigger-only, 0 under the AI), blocked tiles 8) | options=27 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=696.4 @Gemini PREP finished: rev=34 frames=102 plans=5 cached=5 work=330.9ms maxSlice=12.38ms trees=0 expanded=0 tiles=33221
+[AIPlayerSpike] t=696.7 @Gemini DECISION #150 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c18 tokens=22911 bodyChars=1304
+[AIPlayerSpike] t=696.7 @Gemini nav: mod A* path int2(14, -12) -> int2(14, -13): 1 tiles
+[AIPlayerSpike] t=696.9 @Gemini LEAK-CHECK walk to (14,-13) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=696.9 @Gemini nav: mod A* path int2(14, -13) -> int2(14, -14): 1 tiles
+[AIPlayerSpike] t=697.1 @Gemini LEAK-CHECK walk to (14,-14) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=697.1 @Gemini nav: mod A* path int2(14, -14) -> int2(14, -15): 1 tiles
+[AIPlayerSpike] t=697.2 @Gemini LEAK-CHECK walk to (14,-15) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=697.2 @Gemini nav: mod A* path int2(14, -15) -> int2(14, -16): 1 tiles
+[AIPlayerSpike] t=697.4 @Gemini LEAK-CHECK walk to (14,-16) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=697.4 @Gemini nav: mod A* path int2(14, -16) -> int2(14, -17): 1 tiles
+[AIPlayerSpike] t=697.6 @Gemini LEAK-CHECK walk to (14,-17) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=697.6 @Gemini nav: mod A* path int2(14, -17) -> int2(14, -18): 1 tiles
+[AIPlayerSpike] t=697.8 @Gemini LEAK-CHECK walk to (14,-18) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=698.9 @Gemini EDGE tile damage SlimeBlob: no chase state; bump 0 obj 0 melee 0 charge 0 (game data; breaker=False)
+[AIPlayerSpike] t=698.9 @Gemini BRAIN: fight facts SlimeBlob hp 105/105 at 14.6 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 3번) 약 20/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐.
+[AIPlayerSpike] t=699.3 @Gemini BRAIN: blocked targets: 공격 — 적 MushroomEnemy (27,-30) 17.5칸: 닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정).
+[AIPlayerSpike] t=699.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 44, work 152.4ms
+[AIPlayerSpike] t=699.6 @Gemini BRAIN: blocked targets: 공격 — 적 MushroomEnemy (27,-30) 17.7칸: 닿는 길: 벽 너머라 지금 닿을 수 없음(열린 길도 자기 문도 없음). 이 적이 나에게 걸어올 길은 지금 없음(걷는 적은 닫힌 문을 못 여는 것으로 봄, 추정).
+[AIPlayerSpike] t=699.7 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 47, work 154.1ms
+[AIPlayerSpike] t=700.1 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 48, work 156.3ms
+[AIPlayerSpike] t=700.9 @Gemini DECISION #151 SEND rev=34 trigger='[이전 목표 탐험, 목표 세대 31, 실행 47] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=27 inputChars=31701 prep=332.9ms[frames 47, wall 396.2ms, plans 108.4 n9 cached10] motion=boundary (objects 8 (+8 trigger-only, 0 under the AI), blocked tiles 8) | options=27 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=700.9 @Gemini PREP finished: rev=34 frames=104 plans=9 cached=10 work=333.3ms maxSlice=13.63ms trees=1 expanded=30546 tiles=33221
+[AIPlayerSpike] t=701.3 @Gemini DECISION #151 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c16 tokens=25421 bodyChars=1302
+[AIPlayerSpike] t=701.3 @Gemini DECISION #151 RESULT choice=c16 (막힘·순환에서 새로 북쪽 보이는 통로 선택. 원래 목적 유지.) top=[c16=0.46, c15=0.34, c17=0.07] confidence=0.44 latency=0.37s tokens=25421 cached=0 cost=$0.002542 APPLY (at motion boundary)
+[AIPlayerSpike] t=701.3 @Gemini SWITCH 통로 탐색(travel:restart:46:17,6, ran 21.54s) -> explore(travel:restart:47:14,-17) at boundary; swing left 0.00s
+[AIPlayerSpike] t=701.3 @Gemini SKILL 통로 탐색 CANCELLED after 21.5s: reason='새 기술 통로 탐색(으)로 바뀜' start=(18.00,6.29) end=(14.00,-18.11) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=701.3 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (21.5초)
+[AIPlayerSpike] t=701.3 @Gemini SKILL 통로 탐색 START at (14.00,-18.11)
+[AIPlayerSpike] t=701.3 @Gemini nav: mod A* path int2(14, -18) -> int2(14, -17): 1 tiles
+[AIPlayerSpike] t=701.6 @Gemini LEAK-CHECK walk to (14,-17) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=701.6 @Gemini nav: mod A* path int2(14, -17) -> int2(14, -16): 1 tiles
+[AIPlayerSpike] t=701.7 CHARGE e=67294 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=701.7 @Gemini LEAK-CHECK walk to (14,-16) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=703.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 40, work 124.0ms
+[AIPlayerSpike] t=704.7 @Gemini DECISION #152 SEND rev=34 trigger='[현재 목표 탐험, 목표 세대 33, 실행 48] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=21 inputChars=32315 prep=328.1ms[frames 39, wall 321.9ms, plans 104.0 n4 cached5] motion=boundary (objects 9 (+8 trigger-only, 0 under the AI), blocked tiles 8) | options=21 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=704.7 @Gemini PREP finished: rev=34 frames=104 plans=4 cached=5 work=329.6ms maxSlice=6.48ms trees=0 expanded=0 tiles=33221
+[AIPlayerSpike] t=704.9 PERF 30s: AIs in world 1; frames 3557 (118.6 fps); frame ms avg 8.43 p50 8.33 p95 8.33 p99 8.34 max 66.7; server ticks/s 20.0; mod per AI [Gemini 1.69ms avg/64.7ms max]
+[AIPlayerSpike] t=705.1 @Gemini DECISION #152 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c11 tokens=25573 bodyChars=1093
+[AIPlayerSpike] t=705.1 @Gemini nav: mod A* path int2(14, -16) -> int2(14, -15): 1 tiles
+[AIPlayerSpike] t=705.3 @Gemini LEAK-CHECK walk to (14,-15) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=705.3 @Gemini nav: mod A* path int2(14, -15) -> int2(14, -14): 1 tiles
+[AIPlayerSpike] t=705.5 @Gemini LEAK-CHECK walk to (14,-14) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=705.5 @Gemini nav: mod A* path int2(14, -14) -> int2(14, -13): 1 tiles
+[AIPlayerSpike] t=705.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.5 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=705.6 @Gemini LEAK-CHECK walk to (14,-13) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=705.6 @Gemini nav: mod A* path int2(14, -13) -> int2(14, -12): 1 tiles
+[AIPlayerSpike] t=705.8 CHARGE e=67421 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=705.8 @Gemini LEAK-CHECK walk to (14,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=707.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 38, work 118.4ms
+[AIPlayerSpike] t=707.8 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 38, work 118.4ms
+[AIPlayerSpike] t=708.2 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 범위), frames 40, work 131.0ms
+[AIPlayerSpike] t=708.5 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 39, work 120.0ms
+[AIPlayerSpike] t=708.6 @Gemini PLANNER: report #24 answer after 13.1s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":13056,"report_id":24,"goal_rev":33,"answer":{"decision":"set","for":{"report":24,"goal_rev":33},"goal":{"do":"explore"},"order":"follow","say":"갈림길에서 서쪽 통로를 선택해 탐험을 계속할게요!","why":"호스트 지시에 따라 미개척 통로 갈림길에서 새 방향으로 탐험 지속"},"raw":"```json\n{\"decision\": \"set\", \"for\": {\"report\": 24, \"goal_rev\": 33}, \"goal\": {\"do\": \"explore\"}, \"order\": \"follow\", \"say\": \"갈림길에서 서쪽 통로를 선택해 탐험을 계속할게요!\", \"why\": \"호스트 지시에 따라 미개척 통로 갈림길에서 새 방향으로 탐험 지속\"}\n```\n","error":null,"detail":null,"prompt_chars":80411,"turn_chars":64085,"answer_chars":202,"usage":{"input":49597,"cached":0,"output":92,"reasoning":0},"usage_last":{"input":49597,"cached":0,"output":92,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2185,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=708.6 @Gemini chat reply: [Gemini] 갈림길에서 서쪽 통로를 선택해 탐험을 계속할게요!
+[AIPlayerSpike] t=708.6 @Gemini PLANNER: report #24 APPLY trigger=action_replan decision=set plan=[explore] order=follow why='호스트 지시에 따라 미개척 통로 갈림길에서 새 방향으로 탐험 지속' after 13.1s
+[AIPlayerSpike] t=708.6 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#24)
+[AIPlayerSpike] t=708.6 @Gemini BRAIN: preparation cancelled (new goal), frames 10, work 31.1ms
+[AIPlayerSpike] t=708.6 @Gemini GOAL set rev=35 source=llm:gemini#24: 탐험 (start count 0)
+[AIPlayerSpike] t=708.6 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=708.6 @Gemini EXP: report part 6275 chars in 0.5 ms (goal runs 79)
+[AIPlayerSpike] t=708.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 42, work 134.5ms
+[AIPlayerSpike] t=709.3 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 38, work 127.6ms
+[AIPlayerSpike] t=709.6 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 38, work 118.8ms
+[AIPlayerSpike] t=709.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 40, work 125.7ms
+[AIPlayerSpike] t=710.7 @Gemini DECISION #153 SEND rev=35 trigger='새 목표' goal='탐험' candidates=19 inputChars=25832 prep=295.0ms[frames 37, wall 304.8ms, plans 98.8 n4 cached5] motion=boundary (objects 9 (+15 trigger-only, 0 under the AI), blocked tiles 9) | options=19 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=710.7 @Gemini PREP finished: rev=35 frames=94 plans=4 cached=5 work=295.2ms maxSlice=5.65ms trees=0 expanded=0 tiles=33221
+[AIPlayerSpike] t=711.0 @Gemini DECISION #153 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c9 tokens=20063 bodyChars=1032
+[AIPlayerSpike] t=711.0 @Gemini DECISION #153 RESULT choice=c9 (막힘·순환에서 새로 동쪽 보이는 통로 선택. 원래 목적 유지.) top=[c9=0.38, c10=0.27, c11=0.17] confidence=0.35 latency=0.29s tokens=20063 cached=0 cost=$0.002006 APPLY (at motion boundary)
+[AIPlayerSpike] t=711.0 @Gemini SWITCH 통로 탐색(travel:restart:47:14,-17, ran 9.67s) -> explore(travel:restart:48:15,-12) at boundary; swing left 0.00s
+[AIPlayerSpike] t=711.0 @Gemini SKILL 통로 탐색 CANCELLED after 9.7s: reason='새 기술 통로 탐색(으)로 바뀜' start=(14.00,-18.11) end=(14.00,-12.00) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=711.0 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (9.7초)
+[AIPlayerSpike] t=711.0 @Gemini SKILL 통로 탐색 START at (14.00,-12.00)
+[AIPlayerSpike] t=711.0 @Gemini nav: mod A* path int2(14, -12) -> int2(15, -12): 1 tiles
+[AIPlayerSpike] t=711.1 CHARGE e=67421 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=711.2 @Gemini LEAK-CHECK walk to (15,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=711.2 @Gemini nav: mod A* path int2(15, -12) -> int2(16, -12): 1 tiles
+[AIPlayerSpike] t=711.4 @Gemini LEAK-CHECK walk to (16,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=711.4 @Gemini nav: mod A* path int2(16, -12) -> int2(17, -12): 1 tiles
+[AIPlayerSpike] t=711.5 @Gemini LEAK-CHECK walk to (17,-12) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=713.3 @Gemini DECISION #154 SEND rev=35 trigger='[현재 목표 탐험, 목표 세대 34, 실행 49] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=31 inputChars=31924 prep=33.5ms[frames 6, wall 50.3ms, plans 2.7 n1 cached0] motion=boundary (objects 11 (+16 trigger-only, 0 under the AI), blocked tiles 14, large: CopperOreBoulder 2x2 at (31,-12)) | options=31 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=713.3 @Gemini PREP finished: rev=35 frames=8 plans=1 cached=0 work=34.1ms maxSlice=12.67ms trees=0 expanded=0 tiles=946
+[AIPlayerSpike] t=713.6 @Gemini DECISION #154 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c20 tokens=26245 bodyChars=1436
+[AIPlayerSpike] t=713.6 @Gemini nav: mod A* path int2(17, -12) -> int2(17, -11): 1 tiles
+[AIPlayerSpike] t=713.8 @Gemini LEAK-CHECK walk to (17,-11) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=713.8 @Gemini nav: mod A* path int2(17, -11) -> int2(17, -10): 1 tiles
+[AIPlayerSpike] t=714.0 @Gemini LEAK-CHECK walk to (17,-10) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=714.0 @Gemini nav: mod A* path int2(17, -10) -> int2(17, -9): 1 tiles
+[AIPlayerSpike] t=714.1 @Gemini LEAK-CHECK walk to (17,-9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=714.1 @Gemini nav: mod A* path int2(17, -9) -> int2(18, -9): 1 tiles
+[AIPlayerSpike] t=714.3 @Gemini LEAK-CHECK walk to (18,-9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=714.3 @Gemini nav: mod A* path int2(18, -9) -> int2(19, -9): 1 tiles
+[AIPlayerSpike] t=714.5 @Gemini LEAK-CHECK walk to (19,-9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=715.8 @Gemini BRAIN: fight facts MushroomEnemy hp 105/105 at 10.2 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 4타, 1.2초. 이 종류에게 받은 피해(관찰 41번) 약 24/번 → 내 체력 78이면 약 4번 맞으면 쓰러짐, 연달아 맞을 때 간격 약 2.4초(관찰) → 붙어 있으면 약 9.5초. 이 종류가 근처에 있을 때 쓰러진 기록 2번(내 기록). 비교(관찰 기준, 다른 적은 뺌): 처치까지 약 1.2초 vs 내가 쓰러지기까지 약 9.5초.
+[AIPlayerSpike] t=715.8 @Gemini DECISION #155 SEND rev=35 trigger='[현재 목표 탐험, 목표 세대 34, 실행 49] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=40 inputChars=34542 prep=40.9ms[frames 6, wall 57.1ms, plans 2.3 n1 cached0] motion=boundary players=[Luminous(호스트) 북쪽 11.4칸, 체력 바 106/100, 서 있음] (objects 8 (+18 trigger-only, 0 under the AI), blocked tiles 11, large: CopperOreBoulder 2x2 at (31,-12)) | options=40 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=715.8 @Gemini PREP finished: rev=35 frames=8 plans=1 cached=0 work=42.3ms maxSlice=12.32ms trees=0 expanded=0 tiles=866
+[AIPlayerSpike] t=716.2 @Gemini DECISION #155 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c25 tokens=29036 bodyChars=1742
+[AIPlayerSpike] t=716.2 @Gemini nav: mod A* path int2(19, -9) -> int2(19, -8): 1 tiles
+[AIPlayerSpike] t=716.4 @Gemini LEAK-CHECK walk to (19,-8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=716.4 @Gemini nav: mod A* path int2(19, -8) -> int2(19, -7): 1 tiles
+[AIPlayerSpike] t=716.6 @Gemini LEAK-CHECK walk to (19,-7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=716.6 @Gemini nav: mod A* path int2(19, -7) -> int2(19, -6): 1 tiles
+[AIPlayerSpike] t=716.7 @Gemini LEAK-CHECK walk to (19,-6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=718.4 @Gemini DECISION #156 SEND rev=35 trigger='[현재 목표 탐험, 목표 세대 34, 실행 49] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=30 inputChars=31851 prep=31.1ms[frames 6, wall 48.8ms, plans 2.0 n1 cached0] motion=boundary players=[Luminous(호스트) 북쪽 8.5칸, 체력 바 106/100, 서 있음] (objects 8 (+22 trigger-only, 0 under the AI), blocked tiles 19, large: LarvaHiveBossStatue 3x3 at (7,5); CopperOreBoulder 2x2 at (31,-12)) | options=30 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=718.4 @Gemini PREP finished: rev=35 frames=7 plans=1 cached=0 work=31.9ms maxSlice=11.63ms trees=0 expanded=0 tiles=753
+[AIPlayerSpike] t=718.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.6 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.7 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=718.9 @Gemini DECISION #156 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c19 tokens=26104 bodyChars=1406
+[AIPlayerSpike] t=718.9 @Gemini nav: mod A* path int2(19, -6) -> int2(19, -5): 1 tiles
+[AIPlayerSpike] t=719.1 @Gemini LEAK-CHECK walk to (19,-5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=720.9 @Gemini PLANNER: report #25 answer after 12.3s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":12288,"report_id":25,"goal_rev":34,"answer":{"decision":"set","for":{"report":25,"goal_rev":34},"goal":{"do":"explore"},"say":"갈림길에서 북쪽 통로를 골라 미개척 구역을 계속 탐험할게요!","why":"호스트 지시에 따라 갈림길에서 새로운 방향(북쪽)으로 단독 통로 탐험 지속"},"raw":"{\"decision\": \"set\", \"for\": {\"report\": 25, \"goal_rev\": 34}, \"goal\": {\"do\": \"explore\"}, \"say\": \"갈림길에서 북쪽 통로를 골라 미개척 구역을 계속 탐험할게요!\", \"why\": \"호스트 지시에 따라 갈림길에서 새로운 방향(북쪽)으로 단독 통로 탐험 지속\"}\n","error":null,"detail":null,"prompt_chars":76122,"turn_chars":59796,"answer_chars":182,"usage":{"input":46850,"cached":0,"output":89,"reasoning":0},"usage_last":{"input":46850,"cached":0,"output":89,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2185,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=720.9 @Gemini chat reply: [Gemini] 갈림길에서 북쪽 통로를 골라 미개척 구역을 계속 탐험할게요!
+[AIPlayerSpike] t=720.9 @Gemini PLANNER: report #25 APPLY trigger=action_replan decision=set plan=[explore] order=- why='호스트 지시에 따라 갈림길에서 새로운 방향(북쪽)으로 단독 통로 탐험 지속' after 12.3s
+[AIPlayerSpike] t=720.9 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#25)
+[AIPlayerSpike] t=720.9 @Gemini GOAL set rev=36 source=llm:gemini#25: 탐험 (start count 0)
+[AIPlayerSpike] t=720.9 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=721.0 @Gemini EXP: report part 6277 chars in 0.4 ms (goal runs 79)
+[AIPlayerSpike] t=721.0 @Gemini DECISION #157 SEND rev=36 trigger='새 목표' goal='탐험' candidates=30 inputChars=31222 prep=31.1ms[frames 6, wall 61.3ms, plans 2.0 n1 cached0] motion=boundary players=[Luminous(호스트) 북쪽 7.4칸, 체력 바 106/100, 서 있음] (objects 8 (+20 trigger-only, 0 under the AI), blocked tiles 19, large: LarvaHiveBossStatue 3x3 at (7,5); CopperOreBoulder 2x2 at (31,-12)) | options=30 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=721.0 @Gemini PREP finished: rev=36 frames=7 plans=1 cached=0 work=31.5ms maxSlice=11.63ms trees=0 expanded=0 tiles=724
+[AIPlayerSpike] t=721.3 @Gemini DECISION #157 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c20 tokens=25669 bodyChars=1403
+[AIPlayerSpike] t=721.3 @Gemini nav: mod A* path int2(19, -5) -> int2(19, -4): 1 tiles
+[AIPlayerSpike] t=721.4 @Gemini LEAK-CHECK walk to (19,-4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=721.4 @Gemini nav: mod A* path int2(19, -4) -> int2(19, -3): 1 tiles
+[AIPlayerSpike] t=721.6 @Gemini LEAK-CHECK walk to (19,-3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=721.6 @Gemini nav: mod A* path int2(19, -3) -> int2(19, -2): 1 tiles
+[AIPlayerSpike] t=721.8 @Gemini LEAK-CHECK walk to (19,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=721.8 @Gemini nav: mod A* path int2(19, -2) -> int2(19, -1): 1 tiles
+[AIPlayerSpike] t=721.9 @Gemini LEAK-CHECK walk to (19,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=721.9 @Gemini nav: mod A* path int2(19, -1) -> int2(19, 0): 1 tiles
+[AIPlayerSpike] t=722.1 @Gemini LEAK-CHECK walk to (19,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=722.1 @Gemini nav: mod A* path int2(19, 0) -> int2(19, 1): 1 tiles
+[AIPlayerSpike] t=722.3 @Gemini LEAK-CHECK walk to (19,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=722.3 @Gemini nav: mod A* path int2(19, 1) -> int2(19, 2): 1 tiles
+[AIPlayerSpike] t=722.5 @Gemini LEAK-CHECK walk to (19,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=722.5 @Gemini nav: mod A* path int2(19, 2) -> int2(19, 3): 1 tiles
+[AIPlayerSpike] t=722.6 @Gemini LEAK-CHECK walk to (19,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=722.6 @Gemini nav: mod A* path int2(19, 3) -> int2(19, 4): 1 tiles
+[AIPlayerSpike] t=722.8 @Gemini LEAK-CHECK walk to (19,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=722.8 @Gemini nav: mod A* path int2(19, 4) -> int2(19, 5): 1 tiles
+[AIPlayerSpike] t=723.0 @Gemini LEAK-CHECK walk to (19,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=724.5 @Gemini DECISION #158 SEND rev=36 trigger='[이전 목표 탐험, 목표 세대 34, 실행 49] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=18 inputChars=28793 prep=361.4ms[frames 59, wall 487.9ms, plans 167.5 n4 cached4] motion=boundary players=[Luminous(호스트) 남쪽 2.5칸, 체력 바 106/100, 서 있음] (objects 11 (+15 trigger-only, 0 under the AI), blocked tiles 28, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=18 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=724.5 @Gemini PREP finished: rev=36 frames=116 plans=4 cached=4 work=362.0ms maxSlice=5.21ms trees=0 expanded=0 tiles=33204
+[AIPlayerSpike] t=724.9 @Gemini DECISION #158 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c11 tokens=22558 bodyChars=996
+[AIPlayerSpike] t=724.9 @Gemini DECISION #158 RESULT choice=c11 (막힘·순환에서 새로 남쪽 보이는 통로 선택. 원래 목적 유지.) top=[c11=0.54, c10=0.28, c12=0.05] confidence=0.51 latency=0.42s tokens=22558 cached=0 cost=$0.002256 APPLY (at motion boundary)
+[AIPlayerSpike] t=724.9 @Gemini SWITCH 통로 탐색(travel:restart:48:15,-12, ran 13.91s) -> explore(travel:restart:49:19,4) at boundary; swing left 0.00s
+[AIPlayerSpike] t=724.9 @Gemini SKILL 통로 탐색 CANCELLED after 13.9s: reason='새 기술 통로 탐색(으)로 바뀜' start=(14.00,-12.00) end=(19.00,4.96) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=724.9 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (13.9초)
+[AIPlayerSpike] t=724.9 @Gemini SKILL 통로 탐색 START at (19.00,4.96)
+[AIPlayerSpike] t=724.9 @Gemini nav: mod A* path int2(19, 5) -> int2(19, 4): 1 tiles
+[AIPlayerSpike] t=725.1 @Gemini LEAK-CHECK walk to (19,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=727.4 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 57, work 175.5ms
+[AIPlayerSpike] t=727.8 @Gemini AI character: saved (periodic) to C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper\AIPlayers\b39072f4c49d28bf6ab43b7b6a702d7f\Gemini.json: guid=c1a0de0000000000000000000000a003 role=Explorer items=[0:WoodMiningPickx0, 1:SmallLanternx1, 2:CopperWorkbenchx1, 3:MushroomHelmx90, 4:WitchDoctorPantsArmorx95, 5:WoodMiningPickx0, 6:WoodSwordx88, 7:WoodMiningPickx65, 9:WoodMiningPickx0, 10:WallDirtBlockx45, 12:FungalGrowthx1, 14:Woodx14] skills=5 coins=0 connects=1 health=78/102 serverPos=float3(19f, 0f, 4.091753f) world=b39072f4c49d28bf6ab43b7b6a702d7f
+[AIPlayerSpike] t=727.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 59, work 185.8ms
+[AIPlayerSpike] t=728.4 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 57, work 175.5ms
+[AIPlayerSpike] t=728.9 @Gemini BRAIN: preparation cancelled (경로 계산 중 관측 상태 변경: 장애물 위치), frames 60, work 195.7ms
+[AIPlayerSpike] t=729.9 @Gemini DECISION #159 SEND rev=36 trigger='[현재 목표 탐험, 목표 세대 35, 실행 50] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=18 inputChars=29390 prep=350.4ms[frames 57, wall 468.9ms, plans 156.2 n4 cached4] motion=boundary players=[Luminous(호스트) 남쪽 1.7칸, 체력 바 106/100, 서 있음] (objects 11 (+16 trigger-only, 0 under the AI), blocked tiles 28, large: LarvaHiveBossStatue 3x3 at (7,5); WoodenDestructible 1x2 at (33,10); WoodenDestructible 2x2 at (27,10); MelodyListenerMuralDirt 6x1 at (28,12)) | options=18 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=729.9 @Gemini PREP finished: rev=36 frames=114 plans=4 cached=4 work=350.7ms maxSlice=5.48ms trees=0 expanded=0 tiles=33205
+[AIPlayerSpike] t=730.2 @Gemini DECISION #159 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c10 tokens=23164 bodyChars=995
+[AIPlayerSpike] t=730.3 @Gemini nav: mod A* path int2(19, 4) -> int2(18, 4): 1 tiles
+[AIPlayerSpike] t=730.5 @Gemini LEAK-CHECK walk to (18,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=730.5 @Gemini nav: mod A* path int2(18, 4) -> int2(17, 4): 1 tiles
+[AIPlayerSpike] t=730.7 @Gemini LEAK-CHECK walk to (17,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=730.7 @Gemini nav: mod A* path int2(17, 4) -> int2(16, 4): 1 tiles
+[AIPlayerSpike] t=730.8 @Gemini LEAK-CHECK walk to (16,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=730.8 @Gemini nav: mod A* path int2(16, 4) -> int2(15, 4): 1 tiles
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=731.0 @Gemini LEAK-CHECK walk to (15,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=731.0 @Gemini nav: mod A* path int2(15, 4) -> int2(14, 4): 1 tiles
+[AIPlayerSpike] t=731.2 @Gemini LEAK-CHECK walk to (14,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=733.2 @Gemini DECISION #160 SEND rev=36 trigger='[현재 목표 탐험, 목표 세대 35, 실행 50] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=16 inputChars=26500 prep=319.4ms[frames 47, wall 388.3ms, plans 127.5 n4 cached4] motion=boundary players=[Luminous(호스트) 동쪽 5.1칸, 체력 바 106/100, 서 있음] (objects 9 (+27 trigger-only, 0 under the AI), blocked tiles 57, large: SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2); WoodenDestructible 2x2 at (27,10)) | options=16 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=733.2 @Gemini PREP finished: rev=36 frames=104 plans=4 cached=4 work=320.1ms maxSlice=4.50ms trees=0 expanded=0 tiles=33196
+[AIPlayerSpike] t=733.5 @Gemini DECISION #160 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c9 tokens=20673 bodyChars=923
+[AIPlayerSpike] t=733.5 @Gemini nav: mod A* path int2(14, 4) -> int2(14, 3): 1 tiles
+[AIPlayerSpike] t=733.7 @Gemini LEAK-CHECK walk to (14,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=733.7 @Gemini nav: mod A* path int2(14, 3) -> int2(14, 2): 1 tiles
+[AIPlayerSpike] t=733.9 @Gemini PLANNER: report #26 answer after 12.9s code=200 error=null body={"ok":true,"member":"gemini","cli":"agy","model":"gemini-3.8-flash-low","ms":12932,"report_id":26,"goal_rev":35,"answer":{"decision":"set","for":{"report":26,"goal_rev":35},"goal":{"do":"explore"},"say":"갈림길에서 북쪽 미개척 통로를 선택해 계속 탐험할게요!","why":"호스트 지시에 따라 갈림길에서 북쪽 미개척 통로로 단독 탐험 지속"},"raw":"```json\n{\"decision\": \"set\", \"for\": {\"report\": 26, \"goal_rev\": 35}, \"goal\": {\"do\": \"explore\"}, \"say\": \"갈림길에서 북쪽 미개척 통로를 선택해 계속 탐험할게요!\", \"why\": \"호스트 지시에 따라 갈림길에서 북쪽 미개척 통로로 단독 탐험 지속\"}\n```\n","error":null,"detail":null,"prompt_chars":76243,"turn_chars":59917,"answer_chars":186,"usage":{"input":47316,"cached":0,"output":90,"reasoning":0},"usage_last":{"input":47316,"cached":0,"output":90,"reasoning":0},"stderr_api_override":false,"calls":1,"searches":0,"index_chars":2184,"prefetch_used":false,"recall_summary":""}
+[AIPlayerSpike] t=733.9 @Gemini chat reply: [Gemini] 갈림길에서 북쪽 미개척 통로를 선택해 계속 탐험할게요!
+[AIPlayerSpike] t=733.9 @Gemini PLANNER: report #26 APPLY trigger=action_replan decision=set plan=[explore] order=- why='호스트 지시에 따라 갈림길에서 북쪽 미개척 통로로 단독 탐험 지속' after 12.9s
+[AIPlayerSpike] t=733.9 @Gemini EXP: goal run 613ecad7.436 goes on (same goal set again): explore x0 (llm:gemini#26)
+[AIPlayerSpike] t=733.9 @Gemini GOAL set rev=37 source=llm:gemini#26: 탐험 (start count 0)
+[AIPlayerSpike] t=733.9 @Gemini chat hidden (status): [Gemini] AI 목표(위쪽 LLM): 탐험
+[AIPlayerSpike] t=733.9 @Gemini EXP: report part 6277 chars in 0.5 ms (goal runs 79)
+[AIPlayerSpike] t=733.9 @Gemini LEAK-CHECK walk to (14,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=733.9 @Gemini nav: mod A* path int2(14, 2) -> int2(14, 1): 1 tiles
+[AIPlayerSpike] t=734.1 @Gemini LEAK-CHECK walk to (14,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=734.1 @Gemini nav: mod A* path int2(14, 1) -> int2(14, 0): 1 tiles
+[AIPlayerSpike] t=734.3 @Gemini LEAK-CHECK walk to (14,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=734.3 @Gemini nav: mod A* path int2(14, 0) -> int2(14, -1): 1 tiles
+[AIPlayerSpike] t=734.4 @Gemini LEAK-CHECK walk to (14,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=734.4 @Gemini nav: mod A* path int2(14, -1) -> int2(14, -2): 1 tiles
+[AIPlayerSpike] t=734.6 @Gemini LEAK-CHECK walk to (14,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=734.6 @Gemini nav: mod A* path int2(14, -2) -> int2(14, -3): 1 tiles
+[AIPlayerSpike] t=734.8 @Gemini LEAK-CHECK walk to (14,-3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=734.8 @Gemini nav: mod A* path int2(14, -3) -> int2(14, -4): 1 tiles
+[AIPlayerSpike] t=734.9 PERF 30s: AIs in world 1; frames 3588 (119.6 fps); frame ms avg 8.36 p50 8.33 p95 8.33 p99 8.34 max 38.6; server ticks/s 20.0; mod per AI [Gemini 1.61ms avg/43.3ms max]
+[AIPlayerSpike] t=734.9 CHARGE e=68177 left the watch (farther than 24 tiles from every AI); charges 0
+[AIPlayerSpike] t=734.9 @Gemini LEAK-CHECK walk to (14,-4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=734.9 @Gemini nav: mod A* path int2(14, -4) -> int2(14, -5): 1 tiles
+[AIPlayerSpike] t=735.1 @Gemini LEAK-CHECK walk to (14,-5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=735.1 @Gemini nav: mod A* path int2(14, -5) -> int2(14, -6): 1 tiles
+[AIPlayerSpike] t=735.3 @Gemini LEAK-CHECK walk to (14,-6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=735.3 @Gemini nav: mod A* path int2(14, -6) -> int2(14, -7): 1 tiles
+[AIPlayerSpike] t=735.5 @Gemini LEAK-CHECK walk to (14,-7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=735.5 @Gemini nav: mod A* path int2(14, -7) -> int2(14, -8): 1 tiles
+[AIPlayerSpike] t=735.6 @Gemini LEAK-CHECK walk to (14,-8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=735.6 @Gemini nav: mod A* path int2(14, -8) -> int2(14, -9): 1 tiles
+[AIPlayerSpike] t=735.8 @Gemini LEAK-CHECK walk to (14,-9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=735.8 @Gemini nav: mod A* path int2(14, -9) -> int2(14, -10): 1 tiles
+[AIPlayerSpike] t=736.0 @Gemini LEAK-CHECK walk to (14,-10) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=736.0 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 28, work 87.3ms
+[AIPlayerSpike] t=736.8 @Gemini DECISION #161 SEND rev=37 trigger='[이전 목표 탐험, 목표 세대 35, 실행 50] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=18 inputChars=25672 prep=298.3ms[frames 40, wall 320.2ms, plans 104.3 n4 cached5] motion=boundary (objects 8 (+19 trigger-only, 0 under the AI), blocked tiles 8) | options=18 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=736.8 @Gemini PREP finished: rev=37 frames=97 plans=4 cached=5 work=298.9ms maxSlice=5.03ms trees=0 expanded=0 tiles=33221
+[AIPlayerSpike] t=737.1 @Gemini DECISION #161 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c9 tokens=19857 bodyChars=988
+[AIPlayerSpike] t=737.1 @Gemini DECISION #161 RESULT choice=c9 (막힘·순환에서 새로 북쪽 보이는 통로 선택. 원래 목적 유지.) top=[c9=0.71, c10=0.20, c8=0.04] confidence=0.69 latency=0.30s tokens=19857 cached=0 cost=$0.001986 APPLY (at motion boundary)
+[AIPlayerSpike] t=737.1 @Gemini SWITCH 통로 탐색(travel:restart:49:19,4, ran 12.20s) -> explore(travel:restart:50:14,-9) at boundary; swing left 0.00s
+[AIPlayerSpike] t=737.1 @Gemini SKILL 통로 탐색 CANCELLED after 12.2s: reason='새 기술 통로 탐색(으)로 바뀜' start=(19.00,4.96) end=(14.00,-9.96) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=737.1 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (12.2초)
+[AIPlayerSpike] t=737.1 @Gemini SKILL 통로 탐색 START at (14.00,-9.96)
+[AIPlayerSpike] t=737.1 @Gemini nav: mod A* path int2(14, -10) -> int2(14, -9): 1 tiles
+[AIPlayerSpike] t=737.3 @Gemini LEAK-CHECK walk to (14,-9) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=737.3 @Gemini nav: mod A* path int2(14, -9) -> int2(14, -8): 1 tiles
+[AIPlayerSpike] t=737.5 @Gemini LEAK-CHECK walk to (14,-8) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=737.5 @Gemini nav: mod A* path int2(14, -8) -> int2(14, -7): 1 tiles
+[AIPlayerSpike] t=737.7 @Gemini LEAK-CHECK walk to (14,-7) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=737.7 @Gemini nav: mod A* path int2(14, -7) -> int2(14, -6): 1 tiles
+[AIPlayerSpike] t=737.9 @Gemini LEAK-CHECK walk to (14,-6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=737.9 @Gemini nav: mod A* path int2(14, -6) -> int2(14, -5): 1 tiles
+[AIPlayerSpike] t=738.0 @Gemini LEAK-CHECK walk to (14,-5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=738.0 @Gemini nav: mod A* path int2(14, -5) -> int2(14, -4): 1 tiles
+[AIPlayerSpike] t=738.2 @Gemini LEAK-CHECK walk to (14,-4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=738.2 @Gemini nav: mod A* path int2(14, -4) -> int2(14, -3): 1 tiles
+[AIPlayerSpike] t=738.4 @Gemini LEAK-CHECK walk to (14,-3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=738.4 @Gemini nav: mod A* path int2(14, -3) -> int2(14, -2): 1 tiles
+[AIPlayerSpike] t=738.5 @Gemini LEAK-CHECK walk to (14,-2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=738.5 @Gemini nav: mod A* path int2(14, -2) -> int2(14, -1): 1 tiles
+[AIPlayerSpike] t=738.7 @Gemini LEAK-CHECK walk to (14,-1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=738.7 @Gemini nav: mod A* path int2(14, -1) -> int2(14, 0): 1 tiles
+[AIPlayerSpike] t=738.9 @Gemini LEAK-CHECK walk to (14,0) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=739.3 @Gemini DECISION #162 SEND rev=37 trigger='[현재 목표 탐험, 목표 세대 36, 실행 51] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=17 inputChars=25788 prep=19.2ms[frames 6, wall 43.2ms, plans 0.0 n0 cached0] motion=boundary players=[Luminous(호스트) 동쪽 5.5칸, 체력 바 106/100, 서 있음] (objects 9 (+28 trigger-only, 0 under the AI), blocked tiles 52, large: SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2); WoodenDestructible 2x2 at (27,10)) | options=17 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=739.3 @Gemini PREP finished: rev=37 frames=6 plans=0 cached=0 work=19.9ms maxSlice=3.60ms trees=0 expanded=0 tiles=0
+[AIPlayerSpike] t=739.6 @Gemini DECISION #162 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c10 tokens=20100 bodyChars=960
+[AIPlayerSpike] t=739.6 @Gemini nav: mod A* path int2(14, 0) -> int2(14, 1): 1 tiles
+[AIPlayerSpike] t=739.8 @Gemini LEAK-CHECK walk to (14,1) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=739.8 @Gemini nav: mod A* path int2(14, 1) -> int2(14, 2): 1 tiles
+[AIPlayerSpike] t=740.0 @Gemini LEAK-CHECK walk to (14,2) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=740.0 @Gemini nav: mod A* path int2(14, 2) -> int2(14, 3): 1 tiles
+[AIPlayerSpike] t=740.1 @Gemini LEAK-CHECK walk to (14,3) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=740.1 @Gemini nav: mod A* path int2(14, 3) -> int2(14, 4): 1 tiles
+[AIPlayerSpike] t=740.3 @Gemini LEAK-CHECK walk to (14,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=740.3 @Gemini nav: mod A* path int2(14, 4) -> int2(14, 5): 1 tiles
+[AIPlayerSpike] t=740.5 @Gemini LEAK-CHECK walk to (14,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=740.5 @Gemini nav: mod A* path int2(14, 5) -> int2(14, 6): 1 tiles
+[AIPlayerSpike] t=740.7 @Gemini LEAK-CHECK walk to (14,6) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=741.9 @Gemini BRAIN: fight facts MushroomBrute hp 540/540 at 13.8 tiles, my hp 78: 관찰한 WoodSword 피해 약 28/타, 타격 간격 약 0.3초 → 약 20타, 6.0초. 이 종류에게 받은 피해(관찰 27번) 약 54/번 → 내 체력 78이면 약 2번 맞으면 쓰러짐. 이 종류에게 체력 55에서 한 번 맞고 바로 쓰러진 적 있음(한 번에 55 이상, 내 체력 지금 78). 이 종류가 근처에 있을 때 쓰러진 기록 14번(내 기록).
+[AIPlayerSpike] t=741.9 @Gemini DECISION #163 SEND rev=37 trigger='[현재 목표 탐험, 목표 세대 36, 실행 51] 통로 탐색: 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.' goal='탐험' candidates=21 inputChars=25596 prep=28.7ms[frames 5, wall 42.1ms, plans 1.5 n1 cached0] motion=boundary players=[Luminous(호스트) 동쪽 6.1칸, 체력 바 106/100, 서 있음] (objects 8 (+26 trigger-only, 0 under the AI), blocked tiles 56, large: SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2); WoodenDestructible 2x2 at (27,10)) | options=21 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=741.9 @Gemini PREP finished: rev=37 frames=6 plans=1 cached=0 work=29.1ms maxSlice=11.72ms trees=0 expanded=0 tiles=567
+[AIPlayerSpike] t=742.4 @Gemini DECISION #163 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c15 tokens=20530 bodyChars=1098
+[AIPlayerSpike] t=742.4 @Gemini DECISION #163 RESULT choice=c15 (막힘·순환에서 새로 남쪽 보이는 통로 선택. 원래 목적 유지.) top=[c15=0.46, c14=0.26, c16=0.14] confidence=0.43 latency=0.54s tokens=20530 cached=0 cost=$0.002053 APPLY (at motion boundary)
+[AIPlayerSpike] t=742.4 @Gemini SWITCH 통로 탐색(travel:restart:50:14,-9, ran 5.34s) -> explore(travel:restart:51:14,5) at boundary; swing left 0.00s
+[AIPlayerSpike] t=742.4 @Gemini SKILL 통로 탐색 CANCELLED after 5.3s: reason='새 기술 통로 탐색(으)로 바뀜' start=(14.00,-9.96) end=(14.00,6.04) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 현재 보이는 통로 끝 또는 막힘에서 대기 중. 원래 목적 유지. 되돌아가기·가능한 다른 수단·재계획을 직접 선택.]
+[AIPlayerSpike] t=742.4 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: 새 기술 통로 탐색(으)로 바뀜 (5.3초)
+[AIPlayerSpike] t=742.4 @Gemini SKILL 통로 탐색 START at (14.00,6.04)
+[AIPlayerSpike] t=742.4 @Gemini nav: mod A* path int2(14, 6) -> int2(14, 5): 1 tiles
+[AIPlayerSpike] t=742.6 @Gemini LEAK-CHECK walk to (14,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=743.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=743.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=743.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=743.9 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=744.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=744.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=744.0 @Gemini chat hidden (status): [Gemini] (다음 할 일을 생각하는 중...)
+[AIPlayerSpike] t=744.5 @Gemini DECISION #164 SEND rev=37 trigger='[현재 목표 탐험, 목표 세대 36, 실행 52] 통로 탐색: 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.' goal='탐험' candidates=25 inputChars=26201 prep=28.0ms[frames 5, wall 42.5ms, plans 1.5 n1 cached0] motion=boundary players=[Luminous(호스트) 동쪽 5.6칸, 체력 바 106/100, 서 있음] (objects 8 (+26 trigger-only, 0 under the AI), blocked tiles 56, large: SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2); WoodenDestructible 2x2 at (27,10)) | options=25 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=744.5 @Gemini PREP finished: rev=37 frames=6 plans=1 cached=0 work=28.3ms maxSlice=11.28ms trees=0 expanded=0 tiles=578
+[AIPlayerSpike] t=744.7 @Gemini DECISION #164 parsed with fallback reader (JsonUtility gave no answer): type=choice choice=c17 tokens=21311 bodyChars=1237
+[AIPlayerSpike] t=744.7 @Gemini nav: mod A* path int2(14, 5) -> int2(15, 5): 1 tiles
+[AIPlayerSpike] t=744.9 @Gemini LEAK-CHECK walk to (15,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=744.9 @Gemini nav: mod A* path int2(15, 5) -> int2(16, 5): 1 tiles
+[AIPlayerSpike] t=745.1 @Gemini LEAK-CHECK walk to (16,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=745.1 @Gemini nav: mod A* path int2(16, 5) -> int2(17, 5): 1 tiles
+[AIPlayerSpike] t=745.3 @Gemini LEAK-CHECK walk to (17,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=745.3 @Gemini nav: mod A* path int2(17, 5) -> int2(18, 5): 1 tiles
+[AIPlayerSpike] t=745.5 @Gemini LEAK-CHECK walk to (18,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=745.5 @Gemini nav: mod A* path int2(18, 5) -> int2(19, 5): 1 tiles
+[AIPlayerSpike] t=745.6 @Gemini LEAK-CHECK walk to (19,5) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=745.6 @Gemini nav: mod A* path int2(19, 5) -> int2(19, 4): 1 tiles
+[AIPlayerSpike] t=745.8 @Gemini LEAK-CHECK walk to (19,4) Arrived mode=mod-astar: knownPathAtStart=True tilesWalked=2 unseenAtStartWalked=0
+[AIPlayerSpike] t=746.1 chat command from host: '/ai stop'
+[AIPlayerSpike] t=746.1 @Gemini ORDER Gemini: host instruction #3 '@Gemini 장비는 다 받았어. 이제 혼자 주변의 아직 가보지 않은 통로를 탐험해줘. 갈림길에서는 네가 다음 방향을 골라 계속 이동해줘.' 따름 -> 멈춤 (report #27, 228s after it was given): /ai stop
+[AIPlayerSpike] t=746.1 @Gemini PLANNER: Gemini stopped by the host (/ai stop): 호스트가 멈춤(/ai stop, 열린 지시 1개 닫음, 계획 버림)
+[AIPlayerSpike] t=746.1 @Gemini PLANNER: request dropped (/ai stop)
+[AIPlayerSpike] t=746.1 @Gemini PLANNER: auto off (/ai stop)
+[AIPlayerSpike] t=746.1 @Gemini GOAL cleared (/ai stop): was '탐험' rev=37
+[AIPlayerSpike] t=746.1 @Gemini EXP: goal run 613ecad7.436 ended: explore -> cancelled got -1/0, 207s, downs 0
+[AIPlayerSpike] t=746.1 @Gemini SKILL 통로 탐색 CANCELLED after 3.7s: reason='/ai stop' start=(14.00,6.04) end=(18.99,4.13) facts=[갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.; 갈림길 끝에서 방향 미선택으로 서 있음. 계속하기는 이 대기를 유지하며 새 방향을 정하지 않음. 이동하려면 갈림길 방향 후보 또는 다른 이동 행동을 선택해야 함.]
+[AIPlayerSpike] t=746.1 @Gemini chat hidden (status): [Gemini] AI 통로 탐색 취소: /ai stop (3.7초)
+[AIPlayerSpike] t=746.1 @Gemini chat reply: [Gemini] AI 목표 해제(/ai stop). 판단 호출 없음.

@@ -1,0 +1,1820 @@
+{
+  "origin": {
+    "normalizedValueSha256": "509df7b60f008048bb7d54cf914de5162a7022b6c5b70ed41380f1746e725045",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated/cases.json",
+    "pointer": "/cases/1"
+  },
+  "value": {
+    "id": "animal-cage",
+    "action": "cage",
+    "build": "26332184",
+    "status": "pending_independent_review",
+    "scope": "fixed claims selected by IDs",
+    "runtimeTested": false,
+    "roles": [
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888",
+        "objectId": 1311,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:6621244806578927720",
+            "pointer": "/432/links/1/matches/0/components/13",
+            "line": 71981,
+            "rawByteSha256": "9aab552f4db67e0e87e21ad0c59ea6739dcf381e3b8f829005339e6d5664abee",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-639151763562530712"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5964344316707895400"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6924427023650621336",
+            "pointer": "/432/links/1/matches/0/components/15",
+            "line": 30566,
+            "rawByteSha256": "4b8b366711b6e7cef42addfa1a2c62cc315bed40e59d2cc28c4297195ea60c5f",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "-7171545723847438501",
+                  "m_low": "4946126655038430627"
+                }
+              },
+              "eatsTags": [
+                30
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5964344316707895400"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5249977801710208920",
+            "pointer": "/432/links/1/matches/0/components/23",
+            "line": 21980,
+            "rawByteSha256": "f1faf569ec727759bbae8848e08d4c43c795c551c847051495da128c856c2f32",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5964344316707895400"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3755
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5162428886944876440",
+            "pointer": "/432/links/1/matches/0/components/27",
+            "line": 21530,
+            "rawByteSha256": "08a69ded75b8afa750a2dfc1cb361ce0ee0d49ac13c8c1ae09abe07f889e7bbb",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "5964344316707895400"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1656677536759297025",
+        "objectId": 1305,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1758246733829649409",
+            "pointer": "/426/links/1/matches/0/components/13",
+            "line": 4020,
+            "rawByteSha256": "3921dc7065d8366daa3400b62749017379256a7705920c35b7c17fe0792ed175",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-622367127563154433"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2868031801029938175"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1507505829181862913",
+            "pointer": "/426/links/1/matches/0/components/15",
+            "line": 2672,
+            "rawByteSha256": "38075825f36eda6d2b28e71bdc3bfa60980f3a52efb54b4e209b03f634381cc5",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "-7171545723847438501",
+                  "m_low": "4946126655038430627"
+                }
+              },
+              "eatsTags": [
+                30
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2868031801029938175"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7234805472172651521",
+            "pointer": "/426/links/1/matches/0/components/25",
+            "line": 32147,
+            "rawByteSha256": "9882012e9b8e90325b52b1055887aebeab4aa175f5b9c3664c4816f1466e23c5",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2868031801029938175"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4583163494428494847",
+            "pointer": "/426/links/1/matches/0/components/28",
+            "line": 61543,
+            "rawByteSha256": "441c65400ad2daa1f12da4186daf69bfcd75958158f5401dd6504708eee06348",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.6299999952316284,
+              "eatPostDuration": 1.2699999809265137,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "2868031801029938175"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1852928159473590828",
+        "objectId": 1307,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1452565253253489196",
+            "pointer": "/428/links/1/matches/0/components/13",
+            "line": 2377,
+            "rawByteSha256": "22143a298d30775c854a73f2fd3d6603962dbf73c055dba0ebca7a941e5d103e",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-2215944611046023724"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3014799785934462420"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1135575066575036972",
+            "pointer": "/428/links/1/matches/0/components/15",
+            "line": 723,
+            "rawByteSha256": "cb18c3371a6a66841695aa125e014140dff3fdc8fe89e9a6d8076324630bb169",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "2190730272936212185",
+                  "m_low": "-2696414472979501994"
+                }
+              },
+              "eatsTags": [
+                33
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3014799785934462420"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:9144016802500255188",
+            "pointer": "/428/links/1/matches/0/components/24",
+            "line": 84893,
+            "rawByteSha256": "9f4822c2e547544e6d53884bb4c821235fb62430e500b70d40500d370f8cf45a",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3014799785934462420"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3753
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2046599097035448876",
+            "pointer": "/428/links/1/matches/0/components/27",
+            "line": 5474,
+            "rawByteSha256": "b2983161623942c24841b80f7ba2fb70a3d3dc23f33a6ac8171e62946d69f0aa",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3014799785934462420"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2184720477549299984",
+        "objectId": 1306,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-116900944226814224",
+            "pointer": "/427/links/1/matches/0/components/13",
+            "line": 894,
+            "rawByteSha256": "61f6c1277c1db0942bee6c5553ce0157ed6897de67daa6e91d00462515cfe61b",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-2687880053084260624"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6873275183901640976"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2748158623727487248",
+            "pointer": "/427/links/1/matches/0/components/15",
+            "line": 9188,
+            "rawByteSha256": "9c6f57e79ae6ee2039b6e9dd808da360ce773165ef901a10728ddabd8cde7ad1",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "5571021906078953515",
+                  "m_low": "-6240798638692572517"
+                }
+              },
+              "eatsTags": [
+                31
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6873275183901640976"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-493436621569263888",
+            "pointer": "/427/links/1/matches/0/components/24",
+            "line": 20365,
+            "rawByteSha256": "16f678563f47491c234576fe24684d8ac816f1db67a0fe820488829cae54a5d3",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6873275183901640976"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4096732795608238352",
+            "pointer": "/427/links/1/matches/0/components/27",
+            "line": 16023,
+            "rawByteSha256": "c5c88876e8506cc395f82be131ae44e042ee4da1f30aa3071dce08668aabada9",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.9399999976158142,
+              "eatPostDuration": 0.20999999344348907,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6873275183901640976"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2447877482093979574",
+        "objectId": 1303,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2158057079603157066",
+            "pointer": "/424/links/1/matches/0/components/13",
+            "line": 49026,
+            "rawByteSha256": "5f50676028fac322cde8565f75ec5ed37238aa80115d5da6f51a2064e6831b6f",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-5233646789449918390"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6754061310736902070"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4613202047867443274",
+            "pointer": "/424/links/1/matches/0/components/15",
+            "line": 61696,
+            "rawByteSha256": "05e4a3bab7945ece12f5164e3f3b35fa97675520b793f954ef1b852326917c4c",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "5571021906078953515",
+                  "m_low": "-6240798638692572517"
+                }
+              },
+              "eatsTags": [
+                31
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6754061310736902070"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-13949198780573622",
+            "pointer": "/424/links/1/matches/0/components/24",
+            "line": 2064,
+            "rawByteSha256": "87e0623a55119cc142d06c2a6daf3bfa10d54b9d38ca832f16380deeb314743b",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6754061310736902070"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3752
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3184305762201131082",
+            "pointer": "/424/links/1/matches/0/components/28",
+            "line": 54256,
+            "rawByteSha256": "f46c5c4ce005092806111188a026134574ba8ab68a30ceaa0539b714b2a7b24e",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.9399999976158142,
+              "eatPostDuration": 0.20999999344348907,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6754061310736902070"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3905698990389012827",
+        "objectId": 1308,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4380656428093942107",
+            "pointer": "/429/links/1/matches/0/components/13",
+            "line": 17512,
+            "rawByteSha256": "c52ce0e8e0227c77e8e0b1509126541c4c1045b3d3e2ec70adf061b264046ed6",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-2492384105769281883"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6309468646290368859"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7636256947912911195",
+            "pointer": "/429/links/1/matches/0/components/15",
+            "line": 34215,
+            "rawByteSha256": "152f481a1b865f5bf551735fc8483a1e154c23fda7a036c8c32be870ab0f1170",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "2190730272936212185",
+                  "m_low": "-2696414472979501994"
+                }
+              },
+              "eatsTags": [
+                33
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6309468646290368859"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:9210896858559731365",
+            "pointer": "/429/links/1/matches/0/components/24",
+            "line": 85204,
+            "rawByteSha256": "ee2070a3ff71d29fcb28f858af8f24b696004933a8742a36601ac7f4dd004145",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6309468646290368859"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3296749733755693403",
+            "pointer": "/429/links/1/matches/0/components/27",
+            "line": 11955,
+            "rawByteSha256": "7e5d5b41382a7a54238fc8db4028c6d4d2759b26165f6d4acb0ead2a0f8b7bc8",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-6309468646290368859"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6599958699261323032",
+        "objectId": 1309,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8864107245719820520",
+            "pointer": "/430/links/1/matches/0/components/13",
+            "line": 83492,
+            "rawByteSha256": "b737d8799035433507dd79d00e83d77a40a0b981c33a0f6c480e6de2bdbf89af",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "8052089263121537256"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-42509486842275608"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8860539358042089240",
+            "pointer": "/430/links/1/matches/0/components/15",
+            "line": 40693,
+            "rawByteSha256": "83b4d81a5c11002809ba4eb1431e7f7fa74f16ae05c6a6499bd8733a8eddad47",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "5571021906078953515",
+                  "m_low": "-6240798638692572517"
+                }
+              },
+              "eatsTags": [
+                31
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-42509486842275608"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8694393822181549848",
+            "pointer": "/430/links/1/matches/0/components/24",
+            "line": 39803,
+            "rawByteSha256": "6d286b19fef69133d2ca9a24dbb6c4a399810da367af12d26d60d9191a9533ef",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-42509486842275608"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3754
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1242469287082432744",
+            "pointer": "/430/links/1/matches/0/components/28",
+            "line": 44269,
+            "rawByteSha256": "0b15ed89b40114e370719ee0c5e94e632b95f8a1faf0e5f7558189170eec9094",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-42509486842275608"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7672463449741227531",
+        "objectId": 1302,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8606739445999438325",
+            "pointer": "/423/links/1/matches/0/components/13",
+            "line": 82199,
+            "rawByteSha256": "943f16167e696aca5a27089355a35dd7c2241e47d662f5b5c8c922d99a9f91fe",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "721974423531260405"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-284500346518861323"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3122775397755161077",
+            "pointer": "/423/links/1/matches/0/components/15",
+            "line": 53955,
+            "rawByteSha256": "1ef8d1f9a58e7cda3ecadcc67decb1b1273d2ccd508fb7f3c951a9a4e8ab05f0",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "-7171545723847438501",
+                  "m_low": "4946126655038430627"
+                }
+              },
+              "eatsTags": [
+                30
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-284500346518861323"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:487915833463114229",
+            "pointer": "/423/links/1/matches/0/components/25",
+            "line": 63124,
+            "rawByteSha256": "391f6d58cd00478e2fe35d21ac26f2d7224e3d8508859df9d35bf905a1025bc8",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-284500346518861323"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3751
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1327043029802055179",
+            "pointer": "/423/links/1/matches/0/components/29",
+            "line": 1720,
+            "rawByteSha256": "9a0837c48b6142322246ff1f484fb546be644c05e43d8dda46f5716c04b5b444",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.6299999952316284,
+              "eatPostDuration": 1.2699999809265137,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-284500346518861323"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1951679037098672034",
+        "objectId": 1310,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6892756271064236126",
+            "pointer": "/431/links/1/matches/0/components/13",
+            "line": 30404,
+            "rawByteSha256": "cdf369c37f44c6b3bc296f9df07b40a46ee42b7e7fc2fcf41a16093c39d7d05f",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-8936241143820402782"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8750406915837214814"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1070554031052734370",
+            "pointer": "/431/links/1/matches/0/components/15",
+            "line": 43354,
+            "rawByteSha256": "ba110bc19ed67f5052a4220f6e0ab7dd5e7a726a008d03d88ec085a936074b62",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "5571021906078953515",
+                  "m_low": "-6240798638692572517"
+                }
+              },
+              "eatsTags": [
+                31
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8750406915837214814"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7962770986295017378",
+            "pointer": "/431/links/1/matches/0/components/24",
+            "line": 78887,
+            "rawByteSha256": "3af3af929e8567be016165c8e34c2aa28e130024737935be938683049c383960",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8750406915837214814"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5100018480780918690",
+            "pointer": "/431/links/1/matches/0/components/26",
+            "line": 64243,
+            "rawByteSha256": "6fac012b62893d769d4879a8775a5d3fb01b90532373f4a6a405e22bf830ed3d",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-8750406915837214814"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+        "objectId": 1300,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8784818565709398631",
+            "pointer": "/421/links/1/matches/0/components/13",
+            "line": 83113,
+            "rawByteSha256": "33cde37c39aadf3e798e53e7699aba231bb2620aef950ff9621f54fa02282d04",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-1903691335647395225"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2620884058177240473"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:303073482890707559",
+            "pointer": "/421/links/1/matches/0/components/15",
+            "line": 53465,
+            "rawByteSha256": "acbcff17e0b060cbedece0c7a18a9fb0c34c8df67dfa58e56121a5e1a6c01abd",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "-7171545723847438501",
+                  "m_low": "4946126655038430627"
+                }
+              },
+              "eatsTags": [
+                30
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2620884058177240473"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5355137863976649319",
+            "pointer": "/421/links/1/matches/0/components/24",
+            "line": 65527,
+            "rawByteSha256": "4b5bacb594d4d68657e998c8773095e872270e39d212acd23706c30b069ca734",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2620884058177240473"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3750
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1057400520633318809",
+            "pointer": "/421/links/1/matches/0/components/28",
+            "line": 297,
+            "rawByteSha256": "3d8a789345e5f88c8e57d8ed3fe63ff8a51e98ab6ed9732f755ad5fe50dc519f",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2620884058177240473"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4918106960329660179",
+        "objectId": 1313,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:533494911363143443",
+            "pointer": "/434/links/1/matches/0/components/13",
+            "line": 65435,
+            "rawByteSha256": "bfcfce9abbab59ddf84f20a5a9486bf26b760dff3faeaf4a9b42ed570138f005",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-1695186309293648109"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3573181297375008531"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1754021271592806637",
+            "pointer": "/434/links/1/matches/0/components/15",
+            "line": 4002,
+            "rawByteSha256": "b88ebc312a912db5a7fd56f4084b108eefed39a42e30d62e60b5dfcb00e9c28c",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "5571021906078953515",
+                  "m_low": "-6240798638692572517"
+                }
+              },
+              "eatsTags": [
+                31
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3573181297375008531"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5499630332500268819",
+            "pointer": "/434/links/1/matches/0/components/23",
+            "line": 66265,
+            "rawByteSha256": "874552bee71b952c4e880fb5f89ef28bcc26b5b33f20e8f80c3343b111619fca",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3573181297375008531"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 3756
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1739363791613700333",
+            "pointer": "/434/links/1/matches/0/components/27",
+            "line": 3902,
+            "rawByteSha256": "f2696a8c7f6e48f4e916bcef5459b33a6a2908eafe1c06e0aa71953a04e60698",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 0.20999999344348907,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "3573181297375008531"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 4
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5753386593381717373",
+        "objectId": 1304,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3754244021908662915",
+            "pointer": "/425/links/1/matches/0/components/13",
+            "line": 14305,
+            "rawByteSha256": "0a5d0e93da15df16f308a3dc4035379bf5ff6914a9c9fb0c9477d10d4580a998",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "6823361756175209853"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1574255292089821827"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4270593290601687683",
+            "pointer": "/425/links/1/matches/0/components/15",
+            "line": 16895,
+            "rawByteSha256": "a45dbbd21f45c1182bcb5fb737b5fe2d2ea93ae1a635f5daf89d6fcc5879172a",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "-7171545723847438501",
+                  "m_low": "4946126655038430627"
+                }
+              },
+              "eatsTags": [
+                30
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1574255292089821827"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6242805269228546691",
+            "pointer": "/425/links/1/matches/0/components/24",
+            "line": 27073,
+            "rawByteSha256": "0d32eec42801c59c9b6a940f2834039d87c9541130cfa5c1227cf67fa447f0ea",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1574255292089821827"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1441630523145251459",
+            "pointer": "/425/links/1/matches/0/components/26",
+            "line": 2315,
+            "rawByteSha256": "efcf76594aa9737ce46af22e8d6488d274b85cffd49609a59c5aa0c0ae578d53",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-1574255292089821827"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5848084246349782095",
+        "objectId": 1314,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3185164066669618097",
+            "pointer": "/435/links/1/matches/0/components/13",
+            "line": 11399,
+            "rawByteSha256": "8be47223da0444bc23b9e78b19ea38373195545345c17cdee6ee7c972464e389",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-8533690924229157809"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8951608669461781583"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4776668278954171471",
+            "pointer": "/435/links/1/matches/0/components/15",
+            "line": 62599,
+            "rawByteSha256": "70497cb8118d6235dcbb338478a3a8206f147d3fa6b446ca93bb17e01b295514",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "5571021906078953515",
+                  "m_low": "-6240798638692572517"
+                }
+              },
+              "eatsTags": [
+                31
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8951608669461781583"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8372487530120045489",
+            "pointer": "/435/links/1/matches/0/components/23",
+            "line": 38091,
+            "rawByteSha256": "7d0e20d152ea0b50f1b0e5aa9a6b8f38edc3755dba4feefe0a12fad3f479878a",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8951608669461781583"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5394654153615827889",
+            "pointer": "/435/links/1/matches/0/components/25",
+            "line": 22739,
+            "rawByteSha256": "004b3060af9670a6b7b89082972f9e8c37d275e7227229fc8abac221bbba2c06",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 0.20999999344348907,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8951608669461781583"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_animal_target",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6210385517274995137",
+        "objectId": 1312,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "ChaseStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8391637415622220225",
+            "pointer": "/433/links/1/matches/0/components/13",
+            "line": 81091,
+            "rawByteSha256": "d53a2a95c319f4ff66316330c87508482ba0c4619cd5d1c7bc6b460992ad7256",
+            "data": {
+              "belongsToShape": {
+                "m_FileID": 0,
+                "m_PathID": "-3416004141854352959"
+              },
+              "chaseAtDistance": 8.0,
+              "chaseHeldObjects": [],
+              "disabled": 0,
+              "distanceToKeepNoiseDisabled": 0,
+              "distanceToStartSideStepping": 0.0,
+              "endChaseDuration": 0.0,
+              "idleCooldown": 0.0,
+              "idleDuration": 0.0,
+              "ignoreLowColliders": 0,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "6430566823940725185"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8992862358325093010"
+              },
+              "maxDistanceToKeep": 0.8999999761581421,
+              "minDistanceToKeep": 0.8999999761581421,
+              "moveSpeedMultiplier": 1.5,
+              "needPathToChase": 1,
+              "neverStopChasing": 0,
+              "obstacleAvoidDistance": 0.0,
+              "preChaseDuration": 0.0,
+              "preferPathFind": 0,
+              "skipVisibilityCheck": 0
+            }
+          },
+          {
+            "class": "BehaviourTagsAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2777415439914047937",
+            "pointer": "/433/links/1/matches/0/components/15",
+            "line": 52116,
+            "rawByteSha256": "897ac1536399b22611cc0d90e781b9693c879512558032761ff7fa8ef11622d1",
+            "data": {
+              "cantAttackTags": [],
+              "dataBlockRef": {
+                "m_address": {
+                  "m_high": "-7171545723847438501",
+                  "m_low": "4946126655038430627"
+                }
+              },
+              "eatsTags": [
+                30
+              ],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "6430566823940725185"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "2632704552988684176"
+              },
+              "wantsToAttackTags": []
+            }
+          },
+          {
+            "class": "CattleAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4177043147359328705",
+            "pointer": "/433/links/1/matches/0/components/23",
+            "line": 59451,
+            "rawByteSha256": "1c1fea02a9b2ec19b6f629b2740448ebe746d1fe50b04440cce2010ec75aa647",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "6430566823940725185"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3669474902280514522"
+              },
+              "turnIntoObjectIDWhenSaddled": 0
+            }
+          },
+          {
+            "class": "EatStateAuthoring",
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3278121407565208001",
+            "pointer": "/433/links/1/matches/0/components/25",
+            "line": 54753,
+            "rawByteSha256": "7e9746b534d66dd1967f504645ac8807d25c69e89a80f767d807ec4adeed918f",
+            "data": {
+              "distanceToEat": 1.0,
+              "duration": 0.550000011920929,
+              "eatPostDuration": 1.649999976158142,
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "6430566823940725185"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-7741295671865928056"
+              },
+              "maxFoodUntilFull": 1
+            }
+          }
+        ]
+      }
+    ],
+    "entry": "Casting.CageCattle; common cast producer reused from B-review",
+    "conditions": "per-source components and prior rules in sources.json; runtime gates in README",
+    "transitions": [
+      {
+        "from": "target and gate",
+        "to": "state write, inventory request or ECB",
+        "refs": [
+          "Pug.Other/PlayerState/Casting.cs:424-500",
+          "Pug.Other/EntityUtility.cs:603-626",
+          "Pug.Other/Inventory/InventoryUpdateSystem.cs:831-845",
+          "Pug.Other/Inventory/InventoryUtility.cs:278-318"
+        ]
+      }
+    ],
+    "outcomes": [
+      "server DropCattleInCage creates DroppedItem and sets contained object plus optional auxiliary name, meals and breed fields; ECB schedules original deletion",
+      "queue one cage consume; consumer changes inventory buffer if eligible"
+    ],
+    "negativeCases": [
+      "not CattleCage or no valid target/ObjectData/transform",
+      "creation can fail yet caller still schedules deletion",
+      "godMode dontConsume branch or inventory rejection"
+    ],
+    "boundaries": [
+      "ECB playback, request authorization and actual runtime state unobserved",
+      "review required"
+    ],
+    "assetEvidence": "sources.json",
+    "codeEvidence": "pins.json and README.md",
+    "priorClaimIds": [
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1656677536759297025|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1852928159473590828|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-2184720477549299984|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-2447877482093979574|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-3905698990389012827|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-6599958699261323032|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-7672463449741227531|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:1951679037098672034|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:4918106960329660179|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:5753386593381717373|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:5848084246349782095|cage",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:6210385517274995137|cage",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#1",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1656677536759297025#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1852928159473590828#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2184720477549299984#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2447877482093979574#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-3905698990389012827#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-6599958699261323032#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7672463449741227531#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1951679037098672034#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:4918106960329660179#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:5753386593381717373#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:5848084246349782095#2",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:6210385517274995137#2",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-1656677536759297025|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-1852928159473590828|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-2184720477549299984|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-2447877482093979574|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-3905698990389012827|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-6599958699261323032|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:-7672463449741227531|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:1951679037098672034|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:4918106960329660179|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:5753386593381717373|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:5848084246349782095|cage",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:6210385517274995137|cage"
+    ],
+    "relationLinks": "role-links.json"
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "priorResearchRoot": "../2026-11",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+    "sessionWorkRoot": ".."
+  }
+}

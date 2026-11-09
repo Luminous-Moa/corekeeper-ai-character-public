@@ -1,0 +1,363 @@
+
+// 관측·재판단20b1aced의 공식 코드와 후보별 실기 범위.
+Object.assign(documents,{
+  "observationAgreement": {
+    "layer": "재기획",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+    "originalPath": "../2026-11-08-observation-redecision/agreement.md"
+  },
+  "observationImplementation": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+    "originalPath": "../2026-11-08-observation-redecision/implementation.md"
+  },
+  "observationReceipt": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+    "originalPath": "../2026-11-08-observation-redecision/give-receipt-implementation.md"
+  },
+  "observationReview": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+    "originalPath": "../2026-11-08-observation-redecision/review-code.md"
+  },
+  "observationReviewedHashes": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code-sha256.json",
+    "originalPath": "../2026-11-08-observation-redecision/review-code-sha256.json"
+  },
+  "observationUpperReview": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+    "originalPath": "../2026-11-08-observation-redecision/review-upper-completion.md"
+  },
+  "observationLiveReview": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-live.md",
+    "originalPath": "../2026-11-08-observation-redecision/review-live.md"
+  },
+  "observationLive": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/live-validation.md",
+    "originalPath": "../2026-11-08-observation-redecision/live-validation.md"
+  },
+  "observationDirtyBefore": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/main-dirty-before.json",
+    "originalPath": "../2026-11-08-observation-redecision/main-dirty-before.json"
+  },
+  "observationDirtyAfter": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/main-dirty-after.json",
+    "originalPath": "../2026-11-08-observation-redecision/main-dirty-after.json"
+  },
+  "observationAcceptance": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/head-acceptance.md",
+    "originalPath": "../2026-11-08-observation-redecision/graph-stage/head-acceptance.md"
+  }
+});
+nodes.push(...[
+  {
+    "id": "P.observation-completion-check",
+    "title": "완료 선택과 실제 미완료 사실을 대조하고 재판단",
+    "layer": "재기획",
+    "status": "합의·현재 후속 요청",
+    "summary": "모델이 완료를 선택했어도 실제 부족·미확인이면 현재 사실을 알리고 판단모델을 다시 호출한다. 관측은 목표·단계·대상·실행 회차에 귀속하며 원래 부탁과 미완료 의무를 보존한다. 계속·중단·전환의 AI 선택권을 유지하고 실제 완료 사실과 미완료를 알고 중단하는 의사를 구별한다.",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "사용자는 모델이 완료를 선택했더라도"
+      },
+      {
+        "doc": "observationAgreement",
+        "anchor": "## 구현 기준"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-implementation",
+    "title": "20b1aced의 관측 소속·완료 사실 검사·지속 대기 재검토",
+    "layer": "참고",
+    "status": "참고·공식 구현·코드/오프라인/Unity 수용",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "현재 몸 Tick에서 다시 확인된 대기 사실을 다음 Brain에서 읽고 같은 pending은5초 간격으로 재검토한다. 진행 중 요청·준비·미소비 사건은 중복 알림을 막고 새 사실은 즉시 전달한다. 목표 세대·이름·run을 입력과 상위 보고에 유지한다. finish_goal은 현재 수량·도착·수령을 다시 읽어 부족·미확인이면 단계 advance를 보류한다. 측정 완료 조건 없는 탐색·따르기의 종료와 stop_action/request_plan은 유지한다.",
+    "evidence": [
+      {
+        "doc": "observationImplementation",
+        "anchor": "## 실행 관측"
+      },
+      {
+        "doc": "observationImplementation",
+        "anchor": "## 단계 완료"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 수용 근거"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-delivery",
+    "title": "sender·floor·recipient 귀속과 실제 소비를 대조하는 Give 관측",
+    "layer": "참고",
+    "status": "참고·공식 코드·09e418a의 세 부위 실수령",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "pickup 이전 sender 표식·정확 물품·자기 슬롯 감소·새 유일 floor를 귀속하고 inventory 소비 이전 동일 floor의 지정 recipient receipt를 관측한다. 이후 실제 floor 소비와 수령자 증가를 맞춘다. 수령 수량은 floor 포착과 독립적으로 매 Tick 측정하고 누락은 미관측으로 표시한다. 송신 drop을 자동 반복하지 않으며 이전 목표의 완료가 새 목표 수령량을 올리지 않게 한다. 09e418a에서 세 부위 각각1개 실수령과 후속 단계 진행을 확인했다. 해당 receipt 소스는20b1aced에서 동일하며 추가 상위 완료 경계의 실기 성공으로 확대하지 않는다.",
+    "evidence": [
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 실제 처리 경계"
+      },
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 변경한 관측"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 게임 처리 순서 독립 대조"
+      },
+      {
+        "doc": "observationLiveReview",
+        "anchor": "## 장비 세 부위 전달 확인"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-review",
+    "title": "관측·재판단 코드와 생산 경로 오프라인 독립 수용",
+    "layer": "참고",
+    "status": "참고·독립 코드/오프라인/Unity 수용",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "기존 관측·실행156개, inventory171개, travel51개를 독립 통과했고 최종 상위 완료 경계는 생산 검사181개와 Unity를 수용했다. HTTP transport와 ECS 정렬·consumer 대역 경계가 있다. 실기09e418a의 장비 수령과 통로 선택은 별도 증거다. 조용한 통로에서 continue 후5초 재호출 조합과 floorNull 빠른 수령은 실기에서 관측하지 않았다.",
+    "evidence": [
+      {
+        "doc": "observationReview",
+        "anchor": "## 판정"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 직접 확인한 결과"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 남은 검증"
+      },
+      {
+        "doc": "observationUpperReview",
+        "anchor": "## 판정"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-upper-completion",
+    "title": "거절된 새 계획과 동일 미완료 원부탁 done의 부분 적용 보호",
+    "layer": "참고",
+    "status": "참고·20b1aced 추가 경계·오프라인/Unity 수용",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "새 set 계획 전체가 거절되고 현재 유효 목표가 활성 계획 source와 같으며 같은 미완료 원부탁을 done으로 갱신할 때 적용 전 보류한다. 후속 단계 또는 재관측한 마지막 단계의 미완료를 근거로 원부탁·목표·몸·계획을 유지하고 상위에 다시 보고한다. source/goal revision/원부탁 ID/실제 사실 키 집합으로 같은 모순의 반복 보고를 억제한다. 무관한 done과 defer/drop/answered, 유효 새 계획과 비계량 마지막 목표의 기존 권한은 유지한다.",
+    "evidence": [
+      {
+        "doc": "observationUpperReview",
+        "anchor": "## 적용 범위 확인"
+      },
+      {
+        "doc": "observationUpperReview",
+        "anchor": "## 원부탁 보존과 재보고"
+      },
+      {
+        "doc": "observationUpperReview",
+        "anchor": "## 직접 재실행한 주요 검사"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-live",
+    "title": "09e418a 세 부위 수령·다음 단계·원래 부탁 완료와 통로 선택",
+    "layer": "참고",
+    "status": "참고·09e418a 실기·20b1aced 전체 실기와 구별",
+    "sourceCommit": "09e418a8af85bd1578b2cfea09cdbe3c0180db77",
+    "functionTraceObserved": false,
+    "summary": "투구0.9초·갑옷0.7초·바지1초의 drop 각1회와 sender 감소·정확 floor·지정 pickup/소비·호스트 증가를 확인했다. 단계마다 다음 부위로 진행했고 마지막 finish 뒤 plan_done과 원부탁 done에 도달했다. 바지 미확인 finish는 약5.3초마다 재판단하며 의무를 보존한 뒤 정상 전달했다. 조용한 통로에서 방향 필요→모델 방향 선택→이동을 확인했다. continue 유지 뒤 재호출과 floorNull 빠른 pickup 조합은 실기 미관측이다. 사용자의 이후 왕복·지연은 별도 조사 범위다.",
+    "evidence": [
+      {
+        "doc": "observationLiveReview",
+        "anchor": "## 장비 세 부위 전달 확인"
+      },
+      {
+        "doc": "observationLiveReview",
+        "anchor": "## 미확인 완료 뒤 재판단"
+      },
+      {
+        "doc": "observationLiveReview",
+        "anchor": "## 통로 방향 선택 실기"
+      },
+      {
+        "doc": "observationLiveReview",
+        "anchor": "## 남은 수용 범위"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-integration",
+    "title": "공식20b1aced 통합·설치09e418a·사용자 종료 승인 대기",
+    "layer": "참고",
+    "status": "참고·공식 코드 통합·최종 설치/복원 대기",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "HEAD가20b1aced를 공식 ai-character에 fast-forward 통합하고 기존 dirty 내용을 보존했다. 현재 사용자는09e418a 시험 설치 상태에서 게임을 직접 조작 중이며 정상 종료·시험 자료 복원·최종20b1aced 설치 승인을 기다린다.20b1aced 추가 경계는 코드181검사·독립·Unity 수용 범위다.",
+    "evidence": [
+      {
+        "doc": "observationAcceptance",
+        "anchor": "최종 코드20b1aced"
+      },
+      {
+        "doc": "observationAcceptance",
+        "anchor": "코드 수용과 정본 반영을 승인했다."
+      },
+      {
+        "doc": "observationDirtyAfter",
+        "anchor": "\"Unchanged\": true"
+      },
+      {
+        "doc": "observationLive",
+        "anchor": "## 사용자 개입 의심과 종료 대기"
+      }
+    ]
+  }
+]);
+edges.push(...[
+  {
+    "from": "P.valid-action",
+    "to": "P.observation-completion-check",
+    "type": "계속·중단·전환 권한을 유지하는 후속 완료 확인",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "- 계속·중단·전환은 AI가 선택한다."
+      }
+    ]
+  },
+  {
+    "from": "P.original-request",
+    "to": "P.observation-completion-check",
+    "type": "미완료 의무와 원래 부탁의 보존",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "- 모델의 완료 선택과 실제 관측이 맞지 않으면"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.finish-goal",
+    "type": "참고: 기존 명시 단계 완료 계약의 후속 보완",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "현재 요청에 따라 완료 선언과 실제 사실이 어긋날 때의 재판단 흐름을 보완한다."
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-implementation",
+    "type": "참고: 실제 관측과 재판단 구현",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationImplementation",
+        "anchor": "## 단계 완료"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-delivery",
+    "type": "참고: 정확한 수령 관측 구현",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 변경한 관측"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-review",
+    "type": "참고: 독립 검수와 남은 실기",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationReview",
+        "anchor": "## 판정"
+      }
+    ]
+  },
+  {
+    "from": "R.observation-implementation",
+    "to": "R.observation-delivery",
+    "type": "참고: 완료 사실의 전달 관측 소비",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 변경한 관측"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-upper-completion",
+    "type": "참고: 같은 미완료 원부탁의 상위 완료 모순 보호",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationUpperReview",
+        "anchor": "## 적용 범위 확인"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-live",
+    "type": "참고: 정확한 후보판의 실기 관측",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationLiveReview",
+        "anchor": "## 장비 세 부위 전달 확인"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-integration",
+    "type": "참고: 공식 통합과 설치 대기",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAcceptance",
+        "anchor": "최종 코드20b1aced"
+      }
+    ]
+  },
+  {
+    "from": "R.observation-review",
+    "to": "R.observation-upper-completion",
+    "type": "참고: 최종 추가 경계 독립 검수",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationUpperReview",
+        "anchor": "## 판정"
+      }
+    ]
+  }
+]);
+Object.assign(nodes.find(node=>node.id==='R.finish-goal'),{"title":"finish_goal — 현재 사실을 확인한 명시 단계 완료","status":"참고·기존 계약과 후속 완료 확인","summary":"685dde4에서 현재 단계의 명시 완료와 다음 단계·상위 보고를 연결했다.2026-11-08 후속 요청에 따라 측정 완료 조건이 있는 단계는 적용 직전 사실을 다시 읽고 부족·미확인이면 단계·원래 부탁을 유지하며 재판단한다. 확인된 완료와 비계량 목표의 판단 종료, AI의 중단·전환 권한은 보존한다."});
+nodes.find(node=>node.id==='R.finish-goal').evidence.push({"doc":"observationAgreement","anchor":"현재 요청에 따라 완료 선언과 실제 사실이 어긋날 때의 재판단 흐름을 보완한다."});

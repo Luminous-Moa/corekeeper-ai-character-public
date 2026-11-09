@@ -1,0 +1,194 @@
+{
+  "origin": {
+    "normalizedValueSha256": "b03338fc75ed3c0994bc2344b9aff7d8e71b7f28c985241baa0f886e4a91dc90",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/D/contents-time/cases.json",
+    "pointer": "/cases/0"
+  },
+  "value": {
+    "id": "completion:full-d:contents-time:supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441#change_variation_after_time",
+    "action": "change_variation_after_time",
+    "build": "26332184",
+    "status": "investigated_pending_independent_review",
+    "runtimeTested": false,
+    "scope": "source-specific authored variation input and conditional consumers",
+    "roles": [
+      {
+        "role": "subject",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441",
+        "objectId": 5770,
+        "variation": 0,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/1566",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "acd7c2f4404f109bf45acf6b428d2744c62af8c264a17bf7e04424b7a3ecc846"
+        }
+      }
+    ],
+    "parameters": {
+      "targetVariation": 2,
+      "candidateTargetSourceKeys": [
+        "CAB-2ebcba97367158c9b08f790c25d642c9:6706192270698338194"
+      ],
+      "requiredVariation": 1,
+      "timeSeconds": 11.5
+    },
+    "assetEvidence": {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+      "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+      "components": [
+        {
+          "class": "ToggleInteractionOnVariationAuthoring",
+          "line": 35541,
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7888705394911340961",
+          "rawByteSha256": "5aace4cd371c060e5cf36370ea7fff5d3d516c4091ffd53944ce546f717b61ed",
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5130206643586864735"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-2873593265493774823"
+            },
+            "toggleType": 0,
+            "variation": 1
+          }
+        },
+        {
+          "class": "ChangeVariationAfterTimeAuthoring",
+          "line": 47222,
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1813770924171859551",
+          "rawByteSha256": "f780b10036223712956d0871b29bde455ae47dfac3c0c351d6e65c91f4e11674",
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5130206643586864735"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-3934514018726256334"
+            },
+            "requiredVariation": 1,
+            "targetVariation": 2,
+            "timeSeconds": 11.5
+          }
+        }
+      ]
+    },
+    "codeEvidence": {
+      "Pug.ECS.Conversion/ChangeVariationWhenContainingObjectConverter.cs:1-55": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\ChangeVariationWhenContainingObjectConverter.cs",
+        "sha256": "b1e1372a6e1796040bfc511c27b7789a4bffb77fd658185202e8ad815799223b",
+        "start": 1,
+        "end": 55
+      },
+      "Pug.ECS.Conversion/ChangeVariationAfterTimeConverter.cs:1-15": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\ChangeVariationAfterTimeConverter.cs",
+        "sha256": "d140af083b8aa65f7fea9039f5b7bbc9eef277da16cf6eea85e7d4d8cddea143",
+        "start": 1,
+        "end": 15
+      },
+      "Pug.Other/ChangeVariationWhenContainingObjectSystem.cs:173-295": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ChangeVariationWhenContainingObjectSystem.cs",
+        "sha256": "1b13b5eac1790aee3c537f9f63de344edcc2006d7533a721f00c849267e911f3",
+        "start": 173,
+        "end": 295
+      },
+      "Pug.Other/ChangeVariationAfterTimeSystem.cs:125-141": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ChangeVariationAfterTimeSystem.cs",
+        "sha256": "4b560277ce03594b9c54a9d2175b4b7513b24d09dc79975d3ce2b9ddf0e9ac99",
+        "start": 125,
+        "end": 141
+      },
+      "Pug.Other/UpdateColliderWhenChangeVariationWhenContainingObjectSystem.cs:144-176": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateColliderWhenChangeVariationWhenContainingObjectSystem.cs",
+        "sha256": "fb96780b79ed96697e037396b5e39d6e1dfdb54cc13d9499a6446f3d5022bd30",
+        "start": 144,
+        "end": 176
+      },
+      "Pug.Other/UpdateColliderWhenChangeVariationAfterTimeObjectSystem.cs:144-164": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateColliderWhenChangeVariationAfterTimeObjectSystem.cs",
+        "sha256": "6438ec8b5848dff4501c57df796d339944c0f250c5a8b8f3cde2eda768d30576",
+        "start": 144,
+        "end": 164
+      },
+      "Interaction.Converters/Interaction/ToggleInteractionOnVariationConverter.cs:1-15": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Interaction.Converters\\Interaction\\ToggleInteractionOnVariationConverter.cs",
+        "sha256": "d6e3acd8a1fe713779ff24f562ae8b9c15e05e33214900a81e0fed87f4cfc120",
+        "start": 1,
+        "end": 15
+      },
+      "Interaction/Interaction/ResolveInteractableActiveSystem.cs:64-135": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Interaction\\Interaction\\ResolveInteractableActiveSystem.cs",
+        "sha256": "8cf27554c5f15eb4a5c4fc319c8e5c272f192da277f6d684a6c474c1ed49be03",
+        "start": 64,
+        "end": 135
+      }
+    },
+    "priorClaimIds": [
+      "supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441#change_variation_after_time"
+    ],
+    "relationLinks": [
+      {
+        "relation": "supplements",
+        "target": "supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441#change_variation_after_time"
+      }
+    ],
+    "conditions": [
+      "Actual entity components, buffer contents, timer progress, state changes, database prefab selection and ECB playback are runtime conditions."
+    ],
+    "transitions": [
+      {
+        "from": "required_variation",
+        "to": "timer_then_target",
+        "text": "Converter creates a TickTimer using configured seconds and simulation tick rate. If current variation differs from required, clear timer start; if matching and not started, start at current tick; on later elapsed tick write target variation and schedule removal of the timer component.",
+        "refs": [
+          "Pug.ECS.Conversion/ChangeVariationAfterTimeConverter.cs:1-15",
+          "Pug.Other/ChangeVariationAfterTimeSystem.cs:125-141"
+        ]
+      },
+      {
+        "from": "target_variation",
+        "to": "conditional_collider",
+        "text": "A separate update checks target variation and existing PhysicsCollider, then schedules target primary prefab collider or removal if absent, and schedules HasBeenUpdated. Timing and ECB execution remain conditional.",
+        "refs": [
+          "Pug.Other/UpdateColliderWhenChangeVariationAfterTimeObjectSystem.cs:144-164"
+        ]
+      },
+      {
+        "from": "variation",
+        "to": "conditional_interaction_gate",
+        "text": "ResolveInteractableActiveSystem combines the authored variation toggle with other blockers and enables InteractableCD only if the combined disable flag is false.",
+        "refs": [
+          "Interaction.Converters/Interaction/ToggleInteractionOnVariationConverter.cs:1-15",
+          "Interaction/Interaction/ResolveInteractableActiveSystem.cs:64-135"
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "conditional",
+        "text": "ObjectDataCD variation can change to the authored target under the source-specific trigger; target source is a candidate and does not prove runtime prefab replacement."
+      }
+    ],
+    "negativeCases": [
+      {
+        "input": "current variation differs from required",
+        "expected": "timer start is cleared and target write does not occur on that update"
+      }
+    ],
+    "boundaries": [
+      "Actual inventory insertion, collider state, interaction availability and game outcome are not observed."
+    ],
+    "entry": {
+      "input": "ChangeVariationAfterTimeSystem tick on configured entity"
+    }
+  },
+  "evidenceContext": null
+}

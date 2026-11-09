@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),month=path.resolve(stage,'../..');
+const file=path.join(month,'2026-11-05-지식그래프-개편/B/README.md');
+let text=fs.readFileSync(file,'utf8');
+const oldLine=text.split(/\r?\n/)[0];
+if(!oldLine.startsWith('> 공식 코드 기준: `11eb461'))throw Error('예상 첫 현재형 안내와 다름');
+const current='> 현재 공식 코드와 이 코드층의 고정 snapshot 기준은 `c4a0f5e38016c79567f880bbaea5e56e0eeae347`이다. 공식 ai-character와 일치하며, [본 코드 반영](../../2026-11-07-생활트리구현/08-integration.md)과 [그래프 반영·검증](../../2026-11-07-생활트리구현/09-graph-integration.md)을 따른다. 설치·실게임은 보류이며, 아래 과거 코드판의 관측·추출 기록을 현재판의 실게임 성공으로 승격하지 않는다.';
+const historical='> 과거 코드 기준: `11eb461ae122f404acec94563c086b09e002987c` (2026-11-06 사용자 승인 후 UI 흡수판). 당시 ai-character와 일치했다. 당시 실게임·수용 근거는 work/ai-panel-integration-20261106/04-live-verification.md 및08-acceptance.md, 통합 결과는09-final-integration.md다.';
+text=text.replace(oldLine,current+'\n\n'+historical);
+text=text.replace('> 공식 코드 기준: `b25099f6fd31e4c4c3618357eb9e8101e0e17124` (2026-11-06 사용자 병합 승인 후 적용). 본 저장소 ai-character와 기준이 같다.','> 과거 코드 기준: `b25099f6fd31e4c4c3618357eb9e8101e0e17124` (2026-11-06 사용자 병합 승인 후 적용). 당시 본 저장소 ai-character와 기준이 같았다.');
+fs.writeFileSync(file,text);
+const graph=JSON.parse(fs.readFileSync(path.join(month,'2026-11-05-지식그래프-실화면/D/graph.json'),'utf8'));
+const inputs=graph.meta.sources.filter(s=>s.path==='B/README.md'||s.path.endsWith('/B/README.md'));
+console.log(JSON.stringify({changed:file,currentCommit:'c4a0f5e38016c79567f880bbaea5e56e0eeae347',productInputHashEntries:inputs,sourceCodeChanged:false,gameChanged:false},null,2));

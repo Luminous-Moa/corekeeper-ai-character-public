@@ -1,0 +1,183 @@
+{
+  "origin": {
+    "normalizedValueSha256": "6919fed2c85660cd57b21cd3e55f95a33ef1346123cd667404bcb7f21260d5f0",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+    "pointer": "/cases/6"
+  },
+  "value": {
+    "id": "big-larva",
+    "action": "interact_big_larva",
+    "build": "26332184",
+    "runtimeTested": false,
+    "status": "investigated_pending_review",
+    "scope": "3002 variations 0,1,2",
+    "roles": [
+      {
+        "role": "conditional_interactable_larva",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7004293648590065962",
+        "objectId": 3002,
+        "variation": 2,
+        "conditional": true,
+        "origin": [
+          {
+            "role": "on_use",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7662722587773652117",
+            "rawByteSha256": "8400feb6c5ae095ad69f5f4b0ff63646167e7eff03974a5e86f90d1ba1ea5ea9",
+            "line": 77298,
+            "pointers": [
+              "/625/links/0/matches/0/components/8"
+            ],
+            "call": {
+              "m_Arguments": {
+                "m_BoolArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_IntArgument": 0,
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_StringArgument": ""
+              },
+              "m_CallState": 2,
+              "m_MethodName": "OnInteract",
+              "m_Mode": 1,
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": "-1560854674545226603"
+              },
+              "m_TargetAssemblyTypeName": "BigLarva, Pug.Other"
+            },
+            "targetKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1560854674545226603",
+            "targetLine": 2964,
+            "targetRawByteSha256": "97b9c9320b78f51e82a678091c1c2566e04d45bc2a800d2fdb5b48a302bd88be"
+          }
+        ]
+      },
+      {
+        "role": "conditional_interactable_larva",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4591444171025736796",
+        "objectId": 3002,
+        "variation": 1,
+        "conditional": true,
+        "origin": [
+          {
+            "role": "on_use",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7662722587773652117",
+            "rawByteSha256": "8400feb6c5ae095ad69f5f4b0ff63646167e7eff03974a5e86f90d1ba1ea5ea9",
+            "line": 77298,
+            "pointers": [
+              "/624/links/0/matches/0/components/8"
+            ],
+            "call": {
+              "m_Arguments": {
+                "m_BoolArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_IntArgument": 0,
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_StringArgument": ""
+              },
+              "m_CallState": 2,
+              "m_MethodName": "OnInteract",
+              "m_Mode": 1,
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": "-1560854674545226603"
+              },
+              "m_TargetAssemblyTypeName": "BigLarva, Pug.Other"
+            },
+            "targetKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1560854674545226603",
+            "targetLine": 2964,
+            "targetRawByteSha256": "97b9c9320b78f51e82a678091c1c2566e04d45bc2a800d2fdb5b48a302bd88be"
+          }
+        ]
+      },
+      {
+        "role": "conditional_interactable_larva",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6923062258166150972",
+        "objectId": 3002,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "role": "on_use",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:7662722587773652117",
+            "rawByteSha256": "8400feb6c5ae095ad69f5f4b0ff63646167e7eff03974a5e86f90d1ba1ea5ea9",
+            "line": 77298,
+            "pointers": [
+              "/623/links/0/matches/0/components/8"
+            ],
+            "call": {
+              "m_Arguments": {
+                "m_BoolArgument": 0,
+                "m_FloatArgument": 0.0,
+                "m_IntArgument": 0,
+                "m_ObjectArgument": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+                "m_StringArgument": ""
+              },
+              "m_CallState": 2,
+              "m_MethodName": "OnInteract",
+              "m_Mode": 1,
+              "m_Target": {
+                "m_FileID": 0,
+                "m_PathID": "-1560854674545226603"
+              },
+              "m_TargetAssemblyTypeName": "BigLarva, Pug.Other"
+            },
+            "targetKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1560854674545226603",
+            "targetLine": 2964,
+            "targetRawByteSha256": "97b9c9320b78f51e82a678091c1c2566e04d45bc2a800d2fdb5b48a302bd88be"
+          }
+        ]
+      }
+    ],
+    "entry": "active serialized onUse -> BigLarva.OnInteract",
+    "conditions": [
+      "selected valid interactable, active persistent OnInteract event and graphical target"
+    ],
+    "transitions": [
+      {
+        "from": "event",
+        "to": "emote object, positional Sfx and achievement manager",
+        "refs": [
+          "Pug.Objects/BigLarva.cs:28-33",
+          "Pug.Other/Emote.cs:234-260,358-360",
+          "Pug.Other/AchievementsManager.cs:102-140"
+        ]
+      }
+    ],
+    "outcomes": [
+      "LarvaEmote text selection and positional audio requested; achievement manager adds ID to triggered set and invokes platform when its gates pass"
+    ],
+    "negativeCases": [
+      "no selected use or disabled event blocks handler",
+      "creative character or console command session blocks achievement; audio may be suppressed outside viewport"
+    ],
+    "boundaries": [
+      "actual display, audio, platform completion and runtime invocation unobserved"
+    ],
+    "priorClaimIds": [
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7004293648590065962#0",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:4591444171025736796#0",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:6923062258166150972#0"
+    ],
+    "relationLinks": "role-links.json",
+    "assetEvidence": "coverage.json",
+    "codeEvidence": "pins.json"
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "priorResearchRoot": "../2026-11",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+    "sessionWorkRoot": ".."
+  }
+}

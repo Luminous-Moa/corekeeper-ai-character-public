@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "stage": "C-1",
+    "class": "기존 기획 전환 해석",
+    "readyForC5": false,
+    "waitingFor": [
+      "A 최종 산출물",
+      "B 최종 산출물"
+    ]
+  },
+  "documents": [
+    {
+      "id": "CORE-01",
+      "type": "제품코어",
+      "doc": "기획/제품코어.md",
+      "legacyIds": [
+        "core"
+      ]
+    },
+    {
+      "id": "JOURNEY-01",
+      "type": "유저저니",
+      "doc": "기획/유저저니.md"
+    },
+    {
+      "id": "IA-01",
+      "type": "IA",
+      "doc": "기획/IA.md"
+    },
+    {
+      "id": "UA-01",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-01.md",
+      "legacyIds": [
+        "F.ai-toggle",
+        "F.thin-connect",
+        "F.ai-char-load",
+        "F.naming",
+        "F.multi-ai"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-02",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-02.md",
+      "legacyIds": [
+        "F.goal-cmd",
+        "F.skill-look",
+        "F.skill-inv",
+        "F.skill-goto",
+        "F.skill-mine",
+        "F.skill-dig",
+        "F.explore-memory"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-03",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-03.md",
+      "legacyIds": [
+        "F.craft",
+        "F.goal-cmd"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-04",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-04.md",
+      "legacyIds": [
+        "F.llm-goal",
+        "F.free-time",
+        "F.goal-plan",
+        "F.llm-report"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-05",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-05.md",
+      "legacyIds": [
+        "F.skill-attack",
+        "F.ai-weapon",
+        "F.combat-options",
+        "F.teammates",
+        "F.vitals"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-06",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-06.md",
+      "legacyIds": [
+        "F.memory-recall",
+        "F.exp-memory",
+        "F.memory"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-07",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-07.md",
+      "legacyIds": [
+        "F.leave",
+        "F.ai-char-save",
+        "F.ai-char-load"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "UA-08",
+      "type": "유저 활동",
+      "doc": "기획/유저활동/UA-08.md",
+      "legacyIds": [
+        "F.dev-build",
+        "F.test-switch"
+      ],
+      "unresolvedScreenElements": true
+    },
+    {
+      "id": "OUT-01",
+      "type": "화면",
+      "doc": "기획/화면출력/OUT-01.md",
+      "legacyIds": [
+        "F.ai-toggle",
+        "F.leave",
+        "F.multi-ai"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    },
+    {
+      "id": "OUT-02",
+      "type": "화면",
+      "doc": "기획/화면출력/OUT-02.md",
+      "legacyIds": [
+        "F.goal-cmd",
+        "F.craft",
+        "F.llm-goal"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    },
+    {
+      "id": "OUT-03",
+      "type": "화면",
+      "doc": "기획/화면출력/OUT-03.md",
+      "legacyIds": [
+        "F.action-select",
+        "F.llm-goal",
+        "F.exp-memory",
+        "F.teammates"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    },
+    {
+      "id": "OUT-04",
+      "type": "화면",
+      "doc": "기획/화면출력/OUT-04.md",
+      "legacyIds": [
+        "F.vitals",
+        "F.combat-options"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    },
+    {
+      "id": "OUT-05",
+      "type": "화면",
+      "doc": "기획/화면출력/OUT-05.md",
+      "legacyIds": [
+        "F.memory-recall"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    },
+    {
+      "id": "OUT-06",
+      "type": "화면",
+      "doc": "기획/화면출력/OUT-06.md",
+      "legacyIds": [
+        "F.dev-build",
+        "F.test-switch"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    },
+    {
+      "id": "GAME-01",
+      "type": "화면",
+      "doc": "기획/화면출력/GAME-01.md",
+      "legacyIds": [
+        "F.thin-connect",
+        "F.naming",
+        "F.ai-char-load",
+        "F.move-input",
+        "F.vitals"
+      ],
+      "status": "예약/미관측",
+      "readyForGraph": false
+    }
+  ]
+}

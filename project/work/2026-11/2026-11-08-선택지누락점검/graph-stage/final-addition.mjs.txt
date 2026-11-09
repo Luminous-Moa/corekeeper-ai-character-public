@@ -1,0 +1,636 @@
+
+// 빈 선택지 3범위·상자 공용·상자 열림 모드·전투 진입 기준(공식 49bd748). 검수 반영(review-graph.md) 포함.
+Object.assign(documents,{
+  "gapAgreement": {
+    "layer": "재기획",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+    "originalPath": "../2026-11-08-선택지누락점검/agreement.md"
+  },
+  "gapBagAudit": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/bag-equipment.md",
+    "originalPath": "../2026-11-08-선택지누락점검/bag-equipment.md"
+  },
+  "gapLifeAudit": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/life.md",
+    "originalPath": "../2026-11-08-선택지누락점검/life.md"
+  },
+  "gapMaintAudit": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/maintenance.md",
+    "originalPath": "../2026-11-08-선택지누락점검/maintenance.md"
+  },
+  "gapIntegration": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/integration.md",
+    "originalPath": "../2026-11-08-선택지누락점검/integration.md"
+  },
+  "gapFixes": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+    "originalPath": "../2026-11-08-선택지누락점검/fixes.md"
+  },
+  "gapReview": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review.md",
+    "originalPath": "../2026-11-08-선택지누락점검/review.md"
+  },
+  "gapReview5": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review-5.md",
+    "originalPath": "../2026-11-08-선택지누락점검/review-5.md"
+  },
+  "gapReviewMerge": {
+    "layer": "참고",
+    "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review-merge.md",
+    "originalPath": "../2026-11-08-선택지누락점검/review-merge.md"
+  }
+});
+nodes.push(...[
+  {
+    "id": "P.choice-gaps",
+    "title": "가방·생활·정비 범위의 빈 선택지를 판단 모델 후보로 채움",
+    "layer": "재기획",
+    "status": "합의·2026-11-08 사용자 승인",
+    "summary": "5개 선택지 범위 중 전투(미구현)·채집이동귀환(별도 진행)을 뺀 가방·장비, 생활, 장비 정비에서 범위 안인데 빠진 선택지를 찾아 구현한다. 고르는 것은 판단 모델이며 스크립트가 대신 고르거나 후보를 지우지 않는다. 후보 상한·페이지를 다시 만들지 않고 기존 트리에 붙인다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "빈 선택지는 구현까지 진행한다"
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "공통 조건: 고르는 것은 판단 모델이다."
+      }
+    ]
+  },
+  {
+    "id": "P.gap-bag",
+    "title": "가방·장비의 빈 선택지(파우치·일괄 정리·프리셋·펫·꾸미기·사용·착용 장비 이동·자리 옮기기)",
+    "layer": "재기획",
+    "status": "합의·구현",
+    "summary": "파우치 안 물품 보기·옮기기, 근처 상자 빠른 쌓기·정렬, 착용 프리셋 전환과 비활성 프리셋 보기, 펫 칸·꾸미기 칸, 회복·허기와 무관한 물품 사용(버프·마나 물약·선물 상자·탐지기·악기), 착용 장비를 바로 보관·내려놓기·전달, 가방 안 자리 옮기기·나누기·합치기, 분류 정보 없는 물품의 기본 조작. 게임 단축 조작은 들기로 대신해 제외했다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 가방·장비"
+      }
+    ]
+  },
+  {
+    "id": "P.gap-life",
+    "title": "생활의 빈 선택지(솥 입력 정리·빈 땅 물주기·무괭이 수확·씨앗 뿌리개·침대)",
+    "layer": "재기획",
+    "status": "합의·구현",
+    "summary": "솥 입력 비대칭 상태의 채우기·입력 재료 빼기, 작물 없는 판 땅 물주기, 괭이 없이 거둔 수확의 농사 목표 진척, 씨앗 뿌리개 사용, 화면 밖 기억 시설 레시피가 확인 없이 제작 목록에 섞이는 문제 수정, 침대에서 자기. 가축 기르기는 사용자가 고르지 않아 제외했고 자동 가공·제련·거래·낚시·내구 강화는 기존 후속이다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 생활"
+      }
+    ]
+  },
+  {
+    "id": "P.gap-maintenance",
+    "title": "장비 정비의 빈 선택지(화면 밖 대장간 회수·pending 중 수리·파우치 장비)",
+    "layer": "재기획",
+    "status": "합의·구현",
+    "summary": "화면 밖 대장간에 남은 자기 장비를 회수하러 가는 후보, 업그레이드 pending 중에도 투입 없는 일반 수리 허용, 파우치 안 장비 정비. 분해(수리대 salvage)는 범위 밖이다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 장비 정비"
+      }
+    ]
+  },
+  {
+    "id": "P.maintenance-abandon",
+    "title": "회수 불가 정비 장비: 판단 모델의 포기 → 상위 LLM에 상황 알림",
+    "layer": "재기획",
+    "status": "합의·사용자 정정 반영",
+    "summary": "대장간이 없거나 입력 칸이 비어 맡긴 장비를 돌려받을 수 없으면 판단 모델에 그 사실과 포기 선택지를 준다. 포기하면 pending을 지우고 상위 LLM에 어떤 장비를 어느 대장간에서 잃었는지와 가져간 것으로 보이는 사람(사라진 순간 대장간 근처 플레이어 추정, 추정임 명시)을 알린다. 대장간 파괴·식별 불가면 모른다는 사실을 그대로 전한다. 따질지 넘어갈지는 LLM이 정하며 따지라는 지시는 넣지 않는다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "- M2 회수 불가 pending:"
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "따질지 넘어갈지는 LLM이 정한다."
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "대장간 파괴·식별 불가면 모른다는 사실을 그대로 전한다."
+      }
+    ]
+  },
+  {
+    "id": "P.chests-shared",
+    "title": "모든 상자를 공용으로 사용(호스트·다른 AI 상자 포함)",
+    "layer": "재기획",
+    "status": "합의·기존 자기 상자 한정을 대체",
+    "summary": "보관·꺼내기·빠른 쌓기·제작 재료 계산이 호스트·다른 AI 상자를 포함한 모든 상자를 공용으로 쓴다. 제작은 게임처럼 제작대 근처 상자 재료로 바로 한다. 기존 가방 합의의 호스트·다른 AI 상자 제외를 대체한다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 상자 공용"
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "기존 가방 합의의"
+      }
+    ]
+  },
+  {
+    "id": "P.chest-open-mode",
+    "title": "상자 열림 모드: 연 상자의 일과 닫기만 선택",
+    "layer": "재기획",
+    "status": "합의·사용자 결정",
+    "summary": "상자를 연 상태의 판단 요청은 그 상자 안 물건 꺼내기, 내 가방·파우치·착용 물건 넣기, 이 상자 빠른 쌓기·정렬, 닫기만 제공한다. 다른 목록은 붙이지 않고 닫기를 고르면 원래 선택면으로 돌아간다. 상자가 없어지거나 보이지 않거나 손닿는 거리를 벗어나면 모드를 풀고 전투 상태에 들어가면 상자를 닫는다. 연 상자가 쓸모없으면(가득 참·원하는 물건 없음) 닫은 뒤 다음 판단에서 기억 내용을 반영한 구역 대표 상자로 이어진다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "## 상자 열림 모드"
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "AI가 상자를 연 상태이면, 그 판단 요청의 선택지를 그 상자 안의 일로 제한한다."
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "연 상자가 쓸모없으면"
+      }
+    ]
+  },
+  {
+    "id": "P.combat-entry",
+    "title": "전투 상태 진입 기준(전투 구현 시작 때 사용자 재확인)",
+    "layer": "재기획",
+    "status": "합의(사용자 구상)·전투 구현 시작 때 사용자에게 제시·확인 전 확정 설계 아님",
+    "summary": "공격당하거나 적이 나를 인식하는 순간 전투 모드로 바꾸고 전투 선택지만 띄운다. 적이 나를 인식했어도 도주 가능하거나 적이 나를 공격할 수 없는 상태면 진입하지 않는다. 상자 열림 모드는 전투 상태 진입 때만 끝나며 지금은 기존 피격 신호에 임시 연결했다. 전투 구현을 시작할 때 이 합의를 먼저 사용자에게 제시하고 수정할 내용을 묻는다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "## 전투 상태 진입 기준"
+      },
+      {
+        "doc": "gapAgreement",
+        "anchor": "전투 구현을 시작할 때는 이 절의 합의 내용을 먼저 사용자에게 제시하고 수정할 내용이 있는지 묻는다."
+      }
+    ]
+  },
+  {
+    "id": "Q.choice-total-limit",
+    "title": "한 판단 요청의 전체 후보 합계 255 초과 가능성",
+    "layer": "참고",
+    "status": "미정",
+    "summary": "상자 쪽 후보는 생산자마다 40개 이하로 묶였지만 최악 합계 약 125개에 상한 없는 벽 캐기·줍기·탐험·둘레 목록이 더해지면 한 요청이 255개를 넘어 판단 요청이 나가지 않을 수 있다. 이번 작업 전부터 있던 조립 구조 문제이며 해결 방식은 정하지 않았다. 사용자 판단 대기다.",
+    "evidence": [
+      {
+        "doc": "gapReview5",
+        "anchor": "#### G3."
+      }
+    ]
+  },
+  {
+    "id": "Q.maintenance-unreachable",
+    "title": "길을 찾을 수 없는 화면 밖 대장간 pending의 출구",
+    "layer": "참고",
+    "status": "미정",
+    "summary": "포기는 대장간 없음·칸 빔을 직접 본 경우로 한정했으므로 길이 없는 화면 밖 대장간에 장비가 남으면 막힘 사실만 보고하고 새 업그레이드가 계속 막힌다.",
+    "evidence": [
+      {
+        "doc": "gapReview",
+        "anchor": "#### L8."
+      }
+    ]
+  },
+  {
+    "id": "Q.salvage",
+    "title": "수리대 분해(salvage) 선택지 포함 여부",
+    "layer": "재기획",
+    "status": "미정",
+    "summary": "장비를 부숴 수리 재료를 얻는 게임 행동이다. 시설생활 계획에 별도로 정한다고만 남아 있었고 이번 범위에 넣지 않았다. 세션 할 일로 남겼다.",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "분해(수리대 salvage)는 이번 범위가 아니다."
+      }
+    ]
+  },
+  {
+    "id": "R.gap-implementation",
+    "title": "빈 선택지 3범위·상자 공용·상자 열림 모드 구현(공식 49bd748)",
+    "layer": "참고",
+    "status": "참고·공식 코드·오프라인/Unity 수용·실게임 미확인",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "summary": "가방(파우치·일괄 정리·프리셋·펫·꾸미기·사용·착용 장비 이동·자리 옮기기), 생활(솥 입력 정리·빈 땅 물주기·무괭이 수확·씨앗 뿌리개·기억 시설 누출 수정·침대·근처 상자 재료 제작), 정비(화면 밖 대장간 회수·pending 중 수리·파우치·포기와 상위 알림), 상자 구역 단계(AIChestAreas)와 상자 열림 모드(AIChestMode)를 구현했다. 씨앗 뿌리개 범위, 침대 수면 처리, 착용 칸 직접 내려놓기, 펫·꾸미기 칸 교환, 근처 상자 빠른 쌓기 범위, 악기 연주는 실게임 확인 전 추정이다. HEAD 판단·구현(사용자 결정 아님): 회수 불가 포기를 대장간 없음·칸 빔을 직접 본 경우로 한정했고, 기지에 상자를 더 만들지 판단할 때 세는 상자는 직접 놓은 상자로 남겼다.",
+    "evidence": [
+      {
+        "doc": "gapIntegration",
+        "anchor": "## 충돌 해결"
+      },
+      {
+        "doc": "gapFixes",
+        "anchor": "### 공통 규칙"
+      },
+      {
+        "doc": "gapFixes",
+        "anchor": "### 상자 열림 모드"
+      },
+      {
+        "doc": "gapIntegration",
+        "anchor": "## 상자 판정 확인"
+      },
+      {
+        "doc": "gapFixes",
+        "anchor": "### 경미"
+      }
+    ]
+  },
+  {
+    "id": "R.gap-review",
+    "title": "빈 선택지 통합판 독립 검수 5회와 공식 병합 검수",
+    "layer": "참고",
+    "status": "참고·독립 코드/오프라인 검수·실게임 별도",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "summary": "통합판 검수와 재검수에서 상자 공용으로 생긴 후보 255 초과 경로를 반복 발견해 상자 후보 생산자 18곳을 공통 규칙으로 정리했다. 공식 61aa67b 병합 검수에서 목표 없을 때 상자가 열린 채 멈추는 문제를 고쳤다. 차단 발견은 0건이다. 전체 판단 조립 경로의 총 후보 수는 오프라인에서 직접 재지 못했다.",
+    "evidence": [
+      {
+        "doc": "gapReview5",
+        "anchor": "## 결론 요약"
+      },
+      {
+        "doc": "gapReviewMerge",
+        "anchor": "## 2. 발견"
+      },
+      {
+        "doc": "gapFixes",
+        "anchor": "## 병합 검수"
+      }
+    ]
+  },
+  {
+    "id": "R.gap-integration",
+    "title": "공식 ai-character 49bd748 반영(공식 61aa67b 병합 포함)",
+    "layer": "참고",
+    "status": "참고·공식 코드 통합·설치/실게임 미실시",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "summary": "gap-integrated-20261108을 공식 61aa67b(이동전달 개선·호출 계기·자유 시간 제거·지역 이동·토큰 절감)와 병합하고 검수 뒤 ai-character를 49bd748로 fast-forward했다. 자유 시간 제거에 따라 자유 시간 보관 후보를 뺐다. 게임 설치와 실게임·실제 모델 검증은 하지 않았다.",
+    "evidence": [
+      {
+        "doc": "gapFixes",
+        "anchor": "## 공식 병합"
+      },
+      {
+        "doc": "gapFixes",
+        "anchor": "### 뺀 것"
+      }
+    ]
+  },
+  {
+    "id": "R.chest-areas-implementation",
+    "title": "상자가 많을 때 구역 단계로 나누는 구현 해법(40개 기준)",
+    "layer": "참고",
+    "status": "참고·구현 해법·사용자 결정 아님",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "summary": "상자 공용으로 기억 상자가 늘어 판단 요청 후보가 255를 넘는 문제를 검수에서 반복 발견해, 상자를 후보로 만드는 생산자 18곳을 공통 규칙으로 묶었다. 40개 이하면 그대로 두고, 넘으면 구역→작은 구역→상자 단계로 나눠 한 단계가 40개 이하가 되게 하며 모든 상자에 닿는다. 후보 상한·페이지는 만들지 않았다. 40이라는 수와 구역 분할은 HEAD·구현 판단이다.",
+    "evidence": [
+      {
+        "doc": "gapFixes",
+        "anchor": "### 공통 규칙"
+      },
+      {
+        "doc": "gapFixes",
+        "anchor": "### 전수 목록"
+      }
+    ]
+  }
+]);
+edges.push(...[
+  {
+    "from": "P.field-choice",
+    "to": "P.choice-gaps",
+    "type": "범위별 빈 선택지 보완",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "빈 선택지는 구현까지 진행한다"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-choice",
+    "to": "P.choice-gaps",
+    "type": "후보 상한·페이지를 다시 만들지 않음",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "후보 상한·페이지 분할을 다시 만들지 않는다(제약 해제 합의)."
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "P.gap-bag",
+    "type": "가방·장비 범위",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 가방·장비"
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "P.gap-life",
+    "type": "생활 범위",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 생활"
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "P.gap-maintenance",
+    "type": "장비 정비 범위",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 장비 정비"
+      }
+    ]
+  },
+  {
+    "from": "P.bag-equipment",
+    "to": "P.gap-bag",
+    "type": "기존 가방 승인 범위의 보완",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 가방·장비"
+      }
+    ]
+  },
+  {
+    "from": "P.life-tree",
+    "to": "P.gap-life",
+    "type": "기존 생활 트리의 보완",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 생활"
+      }
+    ]
+  },
+  {
+    "from": "P.maintenance",
+    "to": "P.gap-maintenance",
+    "type": "기존 정비 범위의 보완",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 장비 정비"
+      }
+    ]
+  },
+  {
+    "from": "P.gap-maintenance",
+    "to": "P.maintenance-abandon",
+    "type": "회수 불가 pending의 출구",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "- M2 회수 불가 pending:"
+      }
+    ]
+  },
+  {
+    "from": "P.maintenance-pending",
+    "to": "P.maintenance-abandon",
+    "type": "자기 pending 수명의 후속 결정",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "- M2 회수 불가 pending:"
+      }
+    ]
+  },
+  {
+    "from": "P.agency",
+    "to": "P.maintenance-abandon",
+    "type": "상위 LLM이 대응을 스스로 정함",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "따질지 넘어갈지는 LLM이 정한다."
+      }
+    ]
+  },
+  {
+    "from": "P.gap-bag",
+    "to": "P.chests-shared",
+    "type": "상자 접근 기준",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "### 상자 공용"
+      }
+    ]
+  },
+  {
+    "from": "P.gap-life",
+    "to": "P.chests-shared",
+    "type": "근처 상자 재료 제작",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "- 제작: 게임처럼 제작대 근처 상자 재료로 바로 제작(life M4)."
+      }
+    ]
+  },
+  {
+    "from": "P.chests-shared",
+    "to": "P.bag-item-first",
+    "type": "대체: 자기 상자 꺼내기 경로를 모든 상자로",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "기존 가방 합의의"
+      }
+    ]
+  },
+  {
+    "from": "P.chests-shared",
+    "to": "R.bag-store",
+    "type": "참고: 대체: 자기 상자 보관 한정을 모든 상자로",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "기존 가방 합의의"
+      }
+    ]
+  },
+  {
+    "from": "P.chests-shared",
+    "to": "R.bag-take",
+    "type": "참고: 대체: 자기 상자 꺼내기 한정을 모든 상자로",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "기존 가방 합의의"
+      }
+    ]
+  },
+  {
+    "from": "P.gap-bag",
+    "to": "P.chest-open-mode",
+    "type": "상자를 연 동안의 선택면",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "## 상자 열림 모드"
+      }
+    ]
+  },
+  {
+    "from": "P.chest-open-mode",
+    "to": "P.combat-entry",
+    "type": "전투 상태 진입 때만 상자 모드 종료",
+    "class": "합의",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "상자 열림 모드와의 관계:"
+      }
+    ]
+  },
+  {
+    "from": "P.field-choice",
+    "to": "P.combat-entry",
+    "type": "전투 선택지로 바꾸는 시점",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "## 전투 상태 진입 기준"
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "Q.choice-total-limit",
+    "type": "참고: 남은 조립 구조 문제",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapReview5",
+        "anchor": "#### G3."
+      }
+    ]
+  },
+  {
+    "from": "P.maintenance-abandon",
+    "to": "Q.maintenance-unreachable",
+    "type": "참고: 포기 범위 밖의 막힘",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapReview",
+        "anchor": "#### L8."
+      }
+    ]
+  },
+  {
+    "from": "P.gap-maintenance",
+    "to": "Q.salvage",
+    "type": "범위 밖으로 남긴 정비 행동",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapAgreement",
+        "anchor": "분해(수리대 salvage)는 이번 범위가 아니다."
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "R.gap-implementation",
+    "type": "참고: 구현",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapIntegration",
+        "anchor": "## 충돌 해결"
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "R.gap-review",
+    "type": "참고: 독립 검수",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapReview5",
+        "anchor": "## 결론 요약"
+      }
+    ]
+  },
+  {
+    "from": "P.choice-gaps",
+    "to": "R.gap-integration",
+    "type": "참고: 공식 반영",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapFixes",
+        "anchor": "## 공식 병합"
+      }
+    ]
+  },
+  {
+    "from": "R.gap-implementation",
+    "to": "R.gap-review",
+    "type": "참고: 검수 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapFixes",
+        "anchor": "## 병합 검수"
+      }
+    ]
+  },
+  {
+    "from": "P.chests-shared",
+    "to": "R.chest-areas-implementation",
+    "type": "참고: 상자가 많을 때의 구현 해법(사용자 결정 아님)",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "gapFixes",
+        "anchor": "### 공통 규칙"
+      }
+    ]
+  }
+]);

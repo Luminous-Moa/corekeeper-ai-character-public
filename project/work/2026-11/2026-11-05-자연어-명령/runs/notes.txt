@@ -1,0 +1,13 @@
+﻿limits at start 오후 5:17:16: claude week 66 (week-fable 0), gemini 5h 0 week 12.3
+오후 5:18:43 game closed at title (no world loaded) for the new trigger rules (coordinator change)
+launched 17:25:29
+world nltest seed 392337514042 slot 7
+host character 4
+world id eeefc53664f972c9b13fbc38c638610c
+17:29:15 F2 sent '@Claude 구리 광석 3개 캐 와'
+17:30:11 F4 question (after IME Tab) sent
+17:30:32 F5 @모두 + plain chat sent
+17:30:50 note: Hangul IME was left on after the IME test; plain-chat 'Claude' typed via SendKeys became 치명ㄷ (test tool, ASCII went through the IME). Hangul toggled off
+17:31:37 F3 setup: long explore goal via mention
+17:39:16 /ai off
+17:45:12 save and exit, quit

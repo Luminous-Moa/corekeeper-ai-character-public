@@ -1,0 +1,25 @@
+P.release-goal — Core Keeper 모드로 만들어 배포 [합의]
+  모드가 제공할 플레이 경험 [합의]
+P.experience — 동료·친구와 협력하고 생활하는 경험 [합의]
+  생활 경험으로 구체화 [해석]
+P.life — 자율 생활과 사용자 도움을 함께 이어감 [합의]
+  지속 방향과 일을 연결 [합의]
+P.hierarchy — 생활 방향 → 프로젝트 → 작업 → 행동 [합의]
+  작업을 실제 수행으로 연결 [해석]
+P.cycle — 판단 → 동적 계획 → 실행 → 결과 갱신 [합의]
+  11/07에 판단·계획 주체 구체화 [해석]
+P.agency — 위쪽 LLM이 목적·작업 계획과 중요한 변경을 주도 [합의]
+  비전투의 구체 선택 주체를 보완 [합의]
+P.noncombat-choice — Decisions가 비전투 구체 행동을 연속 판단 [합의]
+  현장 선택을 임의 개수·목표필터로 제한하지 않음 [해석]
+P.unrestricted-choice — 생활 페이지·후보 압축과 목표/허기 기반 숨김 해제 [사용자 지시·구현 수용은 별도 참고]
+생활 분류를 유지하며5개 페이지 제한을 없앤다. 옛 방위별 탐험 대표 압축과 목표 밖 채집 후보 숨김을 제거하고 합의된 이동과 연결한다.
+원문 C:\Dev\.head\sessions\코어키퍼-AI-캐릭터\work\2026-11\2026-11-07-제약해제\00-agreement.md:5
+  제약해제 최종후보 구현 위치 [코드 대응] → code:Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs#AIBrain.CandBuild.Walls() — Walls
+  제약해제 최종후보 구현 위치 [코드 대응] → code:Assets/AIPlayerSpike/Scripts/AILife.cs#AILife.Compose(World, Entity, AIObservation, string, bool, System.Collections.Generic.List<AICandidate>, AICandidate) — Compose
+  참고: 과거 페이지 정책의 대체 범위 [해석] → R.life-tree-spec — 과거 생활 트리 첫 단위의 승인 명세 [참고·과거 승인명세·페이지정책 대체]
+  참고: 과거 페이지 정책의 대체 범위 [해석] → R.bag-cap-audit — 과거39 후보 상한과 소비자 제한 구별 [참고·과거39 적용판정·해제범위 확대]
+  참고: 과거 페이지 정책의 대체 범위 [해석] → R.bag-life-consumers — 과거39 생활·가방 소비자 계약 통합 [참고·과거39 통합계약]
+  참고: 과거 페이지 정책의 대체 범위 [해석] → R.maintenance-consumers — 과거5a 정비와 생활·가방 소비자 경계 [참고·과거5a 통합기준]
+
+STDERR

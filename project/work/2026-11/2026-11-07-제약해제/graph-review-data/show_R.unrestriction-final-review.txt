@@ -1,0 +1,66 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 최종 고정란",
+        "doc": "unrestrictionFinalReview",
+        "end": 87,
+        "line": 80,
+        "path": "../2026-11-07-제약해제/review.md",
+        "sha256": "1adf4b6f4e90c7031cd6456daafd08d7e7ec916c35c70fa45f4972cbb387ef4e",
+        "start": 80
+      },
+      {
+        "anchor": "## 마지막 생성입구 일괄 대조",
+        "doc": "unrestrictionFinalValidation",
+        "end": 68,
+        "line": 54,
+        "path": "../2026-11-07-제약해제/validation.md",
+        "sha256": "526a1fe436ed684948f3438895413440a668309d8977499f881e93391dc2eea0",
+        "start": 54
+      }
+    ],
+    "id": "R.unrestriction-final-review",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 87,
+        "path": "../2026-11-07-제약해제/review.md",
+        "start": 80
+      },
+      {
+        "end": 68,
+        "path": "../2026-11-07-제약해제/validation.md",
+        "start": 54
+      }
+    ],
+    "status": "참고·독립수용·미실게임",
+    "summary": "최종5cc source의실제생산입구·수량/계획/지시·공간·정보·지원동작을감사범위에서수용했다.후속생성gate47·Core·전체컴파일과영역별검증경계를따르며설치/모델/게임성공으로확대하지않는다.",
+    "title": "제약해제5cc의정적·대표오프라인독립수용",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 최종 고정란",
+          "doc": "unrestrictionFinalReview",
+          "end": 87,
+          "line": 80,
+          "path": "../2026-11-07-제약해제/review.md",
+          "sha256": "1adf4b6f4e90c7031cd6456daafd08d7e7ec916c35c70fa45f4972cbb387ef4e",
+          "start": 80
+        }
+      ],
+      "from": "P.unrestricted-actions",
+      "id": "E175",
+      "kind": "참고: 최종source의독립수용범위",
+      "to": "R.unrestriction-final-review",
+      "type": "reference"
+    }
+  ]
+}
+
+STDERR

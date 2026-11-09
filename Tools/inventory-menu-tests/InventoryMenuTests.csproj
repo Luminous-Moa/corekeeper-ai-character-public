@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- 2026-11-08 이동·전달 개선 4/4: links the actual AIInventoryMenu with the life-inventory adapter boundary. -->
+<PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><EnableDefaultCompileItems>false</EnableDefaultCompileItems></PropertyGroup>
+<ItemGroup>
+<Compile Include="Program.cs"/>
+<Compile Include=".generated/Stubs.cs"/>
+<Compile Include="../life-inventory-tests/BaseSourceSlices.cs" Link="BaseSourceSlices.cs"/>
+<Compile Include="../life-inventory-tests/LifeBindingSource.cs" Link="LifeBindingSource.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs" Link="AIInventoryMenu.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs" Link="AIHandCapabilities.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/AIInventory.cs" Link="AIInventory.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/AIChestAreas.cs" Link="AIChestAreas.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs" Link="AIInventoryRules.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/AIHandLease.cs" Link="AIHandLease.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIHeldChoice.cs" Link="AIHeldChoice.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs" Link="AILifeTree.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs" Link="AIMaintenanceRules.cs"/>
+<Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs" Link="AIPlanRules.cs"/>
+</ItemGroup>
+</Project>

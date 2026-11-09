@@ -1,0 +1,84 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 빌드와 배포의 구분",
+        "doc": "bagFinalValidation",
+        "end": 38,
+        "line": 32,
+        "path": "../2026-11-07-가방장비구현/tree-validation.md",
+        "sha256": "7ebbd8cbfbeb3511ddfa65686c3617c49fcadcb297791aaf4c05ecef999b89ad",
+        "start": 32
+      },
+      {
+        "anchor": "## 741 Unity·SDK 후보 산출물 읽기 대조 완료",
+        "doc": "bagFinalReview",
+        "end": 90,
+        "line": 82,
+        "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+        "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+        "start": 82
+      }
+    ],
+    "id": "R.bag-source-export",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 38,
+        "path": "../2026-11-07-가방장비구현/tree-validation.md",
+        "start": 32
+      },
+      {
+        "end": 90,
+        "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+        "start": 82
+      }
+    ],
+    "status": "참고·Unity exit0/source SDK export, 미설치·미실게임",
+    "summary": "101 C#와 manifest의 source 후보이며 런타임 설치나 바이너리 릴리스가 아니다. producer/export raw101일치와 review raw92+EOL-only9를 구별한다. 과거774 Unity나 b1 실패를 현재 성공으로 승계하지 않는다.",
+    "title": "741 자체 Unity 컴파일과 설치 없는 SDK 소스 후보",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 741 Unity·SDK 후보 산출물 읽기 대조 완료",
+          "doc": "bagFinalReview",
+          "end": 90,
+          "line": 82,
+          "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+          "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+          "start": 82
+        }
+      ],
+      "from": "R.bag-source-export",
+      "id": "E124",
+      "kind": "참고: 원시 해시·줄끝 차이의 독립 대조",
+      "to": "R.bag-review",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 빌드와 배포의 구분",
+          "doc": "bagFinalValidation",
+          "end": 38,
+          "line": 32,
+          "path": "../2026-11-07-가방장비구현/tree-validation.md",
+          "sha256": "7ebbd8cbfbeb3511ddfa65686c3617c49fcadcb297791aaf4c05ecef999b89ad",
+          "start": 32
+        }
+      ],
+      "from": "R.bag-validation",
+      "id": "E122",
+      "kind": "참고: 같은 SHA의 자체 빌드·source 후보",
+      "to": "R.bag-source-export",
+      "type": "reference"
+    }
+  ]
+}

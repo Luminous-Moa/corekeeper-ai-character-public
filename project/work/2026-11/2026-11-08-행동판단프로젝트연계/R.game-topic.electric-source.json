@@ -1,0 +1,1348 @@
+{
+  "origin": {
+    "normalizedValueSha256": "7a00d84cfb6bdef5a24575d318b314f06b4ceb03a837b95937ec23a599158c16",
+    "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "pointer": "/groups/0/payload/extraction.json/records/38"
+  },
+  "value": {
+    "action": "toggle_lever",
+    "codeEvidence": [
+      "evidence/rules.md"
+    ],
+    "conditions": "정상 변환·필수 ECS 성분·시뮬레이션과 사례 코드의 선택/상태/점유 조건이 성립할 때에 한정",
+    "evidenceLevel": "code_linked",
+    "failureBranches": "선택·사용·trigger 조건 미충족 시 전환 없음; 차단·전력 소진 시 전파 종료",
+    "id": "CAB-2ebcba97367158c9b08f790c25d642c9:-1712373390419719003#toggle_lever",
+    "inputProcessingConsumer": "선택·사용 버퍼와 Simulate → 변형 기록 → 조건부 전기 네트워크 재구성과 전력 기록",
+    "objectId": 6500,
+    "result": "설정된 variationToToggleTo로 변형 요청 및 조건부 전원 네트워크 재구성",
+    "rule": "lever",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1712373390419719003",
+    "sourceLinks": [
+      {
+        "address": [
+          "7333148365407872437",
+          "-3982467136130218471"
+        ],
+        "kind": "graphicalRef",
+        "matchCount": 1,
+        "matches": [
+          {
+            "components": [
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8646893438003365211",
+                "gameObjectName": "Lever",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3037639267496770213",
+                "script": null,
+                "type": "Transform"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:331061175052977499",
+                "gameObjectName": "XScaler",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8881970558934107483",
+                "script": null,
+                "type": "Transform"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:9074253650005771611",
+                "gameObjectName": "SpriteObject (Base)",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:193528018689574235",
+                "script": null,
+                "type": "Transform"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:9074253650005771611",
+                "gameObjectName": "SpriteObject (Base)",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2366463232217957723",
+                "script": {
+                  "assembly": "PugSprite",
+                  "class": "SpriteObject",
+                  "namespace": "Pug.Sprite"
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8788538696346581669",
+                "gameObjectName": "SpriteObject (Lever)",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2577984410363807067",
+                "script": null,
+                "type": "Transform"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8788538696346581669",
+                "gameObjectName": "SpriteObject (Lever)",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5542343666661538469",
+                "script": {
+                  "assembly": "PugSprite",
+                  "class": "SpriteObject",
+                  "namespace": "Pug.Sprite"
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8931580580016896677",
+                "gameObjectName": "Interactable",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6518569962448829093",
+                "script": null,
+                "type": "Transform"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8931580580016896677",
+                "gameObjectName": "Interactable",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3062885485812303195",
+                "script": {
+                  "assembly": "Pug.Other",
+                  "class": "InteractableObject",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8646893438003365211",
+                "gameObjectName": "Lever",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6788368932861196965",
+                "script": {
+                  "assembly": "Pug.Objects",
+                  "class": "Lever",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              }
+            ],
+            "dataBlockKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2923447761661843199",
+            "dataBlockPathId": "2923447761661843199",
+            "dataBlockRaw": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_Name": "Lever",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-8189160215083356855"
+              },
+              "m_address": {
+                "m_high": "-3982467136130218471",
+                "m_low": "7333148365407872437"
+              },
+              "m_dynamicCollections": {
+                "m_list": []
+              },
+              "m_overload": {
+                "m_address": {
+                  "m_high": "0",
+                  "m_low": "0"
+                }
+              },
+              "poolParams": {
+                "m_address": {
+                  "m_high": "3483163772298863800",
+                  "m_low": "7117093835267264374"
+                }
+              },
+              "prefab": {
+                "m_FileID": 0,
+                "m_PathID": "8646893438003365211"
+              },
+              "references": {
+                "RefIds": [],
+                "version": 2
+              }
+            },
+            "errors": [],
+            "events": [],
+            "prefabError": null,
+            "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8646893438003365211",
+            "prefabPointer": {
+              "m_FileID": 0,
+              "m_PathID": "8646893438003365211"
+            }
+          }
+        ],
+        "reference": {
+          "m_address": {
+            "m_high": "-3982467136130218471",
+            "m_low": "7333148365407872437"
+          }
+        }
+      },
+      {
+        "address": [
+          "3203314581003772930",
+          "-2896995772122012789"
+        ],
+        "kind": "authoringRef",
+        "matchCount": 1,
+        "matches": [
+          {
+            "components": [
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1597266100357002075",
+                "script": null,
+                "type": "Transform"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1712373390419719003",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "EntityMonoBehaviourData",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5168343815859762011",
+                "script": {
+                  "assembly": "Unity.NetCode.Authoring.Hybrid",
+                  "class": "GhostAuthoringComponent",
+                  "namespace": "Unity.NetCode"
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7262734814020137819",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "MineableAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7823011759258635429",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "HealthAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:236749224901250213",
+                "script": {
+                  "assembly": "Animation.Authoring",
+                  "class": "AnimationAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3343701221361749157",
+                "script": {
+                  "assembly": "Unity.Physics.Custom",
+                  "class": "PhysicsShapeAuthoring",
+                  "namespace": "Unity.Physics.Authoring"
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1523688616088997029",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "PlaceableObjectAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7331146856383810725",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "IgnoreVertexOffsetsAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2119624114949485403",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "StateAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2519212489366795099",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "IdleStateAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6892799531331842907",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "TookDamageStateAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1470637721341293403",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "DeathStateAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:502948295614565541",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "DamageReductionAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4533050012356604763",
+                "script": {
+                  "assembly": "Pug.ECS.Authoring",
+                  "class": "AlwaysDropSpecificVariationAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4580108716180861787",
+                "script": {
+                  "assembly": "Pug.Automation.Authoring",
+                  "class": "ElectricityAuthoring",
+                  "namespace": "Pug.Automation"
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4981110742333289307",
+                "script": {
+                  "assembly": "Unity.Entities.Hybrid",
+                  "class": "LinkedEntityGroupAuthoring",
+                  "namespace": "Unity.Entities.Hybrid.Baking"
+                },
+                "type": "MonoBehaviour"
+              },
+              {
+                "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+                "gameObjectName": "LeverOnEntity",
+                "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4179150569115644763",
+                "script": {
+                  "assembly": "Interaction.CoreKeeper.Authoring",
+                  "class": "ChangeVariationTriggerAuthoring",
+                  "namespace": ""
+                },
+                "type": "MonoBehaviour"
+              }
+            ],
+            "dataBlockKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7711833522266789100",
+            "dataBlockPathId": "-7711833522266789100",
+            "dataBlockRaw": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "m_Name": "LeverOnEntity",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "6519176324599240182"
+              },
+              "m_address": {
+                "m_high": "-2896995772122012789",
+                "m_low": "3203314581003772930"
+              },
+              "m_dynamicCollections": {
+                "m_list": []
+              },
+              "m_overload": {
+                "m_address": {
+                  "m_high": "0",
+                  "m_low": "0"
+                }
+              },
+              "prefab": {
+                "m_FileID": 0,
+                "m_PathID": "5050580082903256229"
+              },
+              "references": {
+                "RefIds": [],
+                "version": 2
+              }
+            },
+            "errors": [],
+            "events": [],
+            "prefabError": null,
+            "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5050580082903256229",
+            "prefabPointer": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            }
+          }
+        ],
+        "reference": {
+          "m_address": {
+            "m_high": "-2896995772122012789",
+            "m_low": "3203314581003772930"
+          }
+        }
+      }
+    ],
+    "sourceRawByteSha256": "b65c8b57f6652092dd5245703229cf9b7bde88161f669a2b4b27ee6d2f8ac761",
+    "sourceSettings": {
+      "components": {
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-1470637721341293403": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "7136367106876791332"
+            },
+            "overrideTimeBeforeDestroy": 0,
+            "skipDeathAnimation": 0,
+            "timeBeforeDestroy": 0.0,
+            "timeBeforeLootDrop": 0.0
+          },
+          "rawByteSha256": "8ffffe912883b025418d4f6840af84e070c7a54e1f35b5e83d467142a52b5111",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "DeathStateAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-1712373390419719003": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "6118287244658929394"
+            },
+            "objectInfo": {
+              "additionalSprites": [],
+              "appearInMapUI": 0,
+              "buyValueMultiplier": 1.0,
+              "centerIsAtEntityPosition": 0,
+              "craftingSettings": {
+                "canOnlyUseAnyMaterialsWithTag": 0,
+                "iconType": 0
+              },
+              "craftingTime": 2.0,
+              "icon": {
+                "m_FileID": 0,
+                "m_PathID": "1745589889634054173"
+              },
+              "iconOffset": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "iconSkinAssetRef": {
+                "m_address": {
+                  "m_high": "0",
+                  "m_low": "0"
+                }
+              },
+              "initialAmount": 1,
+              "isCustomScenePrefab": 0,
+              "isStackable": 1,
+              "languageGenders": [],
+              "level": 0,
+              "mapColor": {
+                "a": 0.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.0
+              },
+              "objectID": 6500,
+              "objectType": 800,
+              "prefabCornerOffset": {
+                "x": 0,
+                "y": 0
+              },
+              "prefabInfo": {
+                "authoring": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                },
+                "authoringRef": {
+                  "m_address": {
+                    "m_high": "-2896995772122012789",
+                    "m_low": "3203314581003772930"
+                  }
+                },
+                "graphicalRef": {
+                  "m_address": {
+                    "m_high": "-3982467136130218471",
+                    "m_low": "7333148365407872437"
+                  }
+                },
+                "prefab": {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                }
+              },
+              "prefabTileSize": {
+                "x": 1,
+                "y": 1
+              },
+              "rarity": 0,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 3,
+                  "objectID": 1610
+                },
+                {
+                  "amount": 2,
+                  "objectID": 1001
+                }
+              ],
+              "salvageMultiplier": 1.0,
+              "sellValue": -1,
+              "smallIcon": {
+                "m_FileID": 0,
+                "m_PathID": "-4342700505225671251"
+              },
+              "tags": [
+                25
+              ],
+              "tileType": 0,
+              "tileset": 0,
+              "variation": 1,
+              "variationIsDynamic": 0,
+              "variationToToggleTo": 0
+            },
+            "optionalPreviewPrefab": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            }
+          },
+          "rawByteSha256": "b65c8b57f6652092dd5245703229cf9b7bde88161f669a2b4b27ee6d2f8ac761",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "EntityMonoBehaviourData",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-2119624114949485403": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-9086801831208836850"
+            }
+          },
+          "rawByteSha256": "bf0e6a4187fc73ff9035f4d3b12b79857bc46b27ac0aeb01e07317d7b4dfff5c",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "StateAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-2519212489366795099": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "6386596311749776998"
+            },
+            "playIdleAnimation": 1
+          },
+          "rawByteSha256": "183670832437f9645432bb41127e2e7102d0c56da1038ebf61f3dd9485b7998f",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "IdleStateAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-4179150569115644763": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "1993565397469075137"
+            }
+          },
+          "rawByteSha256": "1bbadb949f6eba60c3bba2c52c0d75ee8fb03694c4fe5efde558ea0649416eb9",
+          "script": {
+            "assembly": "Interaction.CoreKeeper.Authoring",
+            "class": "ChangeVariationTriggerAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-4533050012356604763": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "801922014228375185"
+            },
+            "variation": 0
+          },
+          "rawByteSha256": "213d71910d544489e6bacc3c675c8eda7a211b0d6c81caca30a8ea5a0bcd21c7",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "AlwaysDropSpecificVariationAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-4580108716180861787": {
+          "data": {
+            "blocksElectricity": 0,
+            "circuitConnectionMode": 0,
+            "circuitType": 0,
+            "direction": {
+              "x": 0,
+              "y": 0
+            },
+            "isLever": 1,
+            "isWire": 0,
+            "levelUseCurrentVariationAsInactive": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-3508808338460747394"
+            },
+            "sourceEnergy": 13
+          },
+          "rawByteSha256": "a9111a98540c5ab54beaef53b81163e92967137bd1a6ace7b7d2b936b88c72f7",
+          "script": {
+            "assembly": "Pug.Automation.Authoring",
+            "class": "ElectricityAuthoring",
+            "namespace": "Pug.Automation"
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-4981110742333289307": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-4111754316327763027"
+            }
+          },
+          "rawByteSha256": "0942cf2158d65e51b0f4c6ab0206f8993ae297c4595eb78feb6ca35a7d62da33",
+          "script": {
+            "assembly": "Unity.Entities.Hybrid",
+            "class": "LinkedEntityGroupAuthoring",
+            "namespace": "Unity.Entities.Hybrid.Baking"
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-5168343815859762011": {
+          "data": {
+            "DefaultGhostMode": 0,
+            "DontUsePredictionBackup": 0,
+            "GhostGroup": 0,
+            "HasOwner": 0,
+            "Importance": 1,
+            "OptimizationMode": 1,
+            "SupportAutoCommandTarget": 0,
+            "SupportedGhostModes": 3,
+            "TrackInterpolationDelay": 0,
+            "UsePreSerialization": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "7187583088765432342"
+            },
+            "prefabId": "1f572159aaac5954d93faddeb7d6e46c"
+          },
+          "rawByteSha256": "eba759e26e9d9f69859508ca8702bbcb00996ace1c82bc2cfa9fe31436ae46c4",
+          "script": {
+            "assembly": "Unity.NetCode.Authoring.Hybrid",
+            "class": "GhostAuthoringComponent",
+            "namespace": "Unity.NetCode"
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-6788368932861196965": {
+          "data": {
+            "XScaler": {
+              "m_FileID": 0,
+              "m_PathID": "8881970558934107483"
+            },
+            "animator": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "baseSprite": {
+              "m_FileID": 0,
+              "m_PathID": "2366463232217957723"
+            },
+            "conditionEffectsHandler": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "conditionsEffectsSettings": {
+              "stunEffectOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "gameObjectsToRandomlyFlip": [],
+            "hasDisableableParticles": 0,
+            "indirectLightEmitters": [],
+            "interactable": {
+              "m_FileID": 0,
+              "m_PathID": "3062885485812303195"
+            },
+            "leverSprite": {
+              "m_FileID": 0,
+              "m_PathID": "-5542343666661538469"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "8646893438003365211"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "473154081479424847"
+            },
+            "m_spriteObjectOrientationHash": 0,
+            "objectVariants": [],
+            "optionalHealthBar": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "optionalLightOptimizer": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "outlineControllers": [],
+            "paintableOptions": {
+              "spriteColorTints": [],
+              "spriteRenderers": [],
+              "spriteSheetSkins": []
+            },
+            "particleOptions": {
+              "particleSpawnLocations": [],
+              "particlesToDisableOnLowQuality": [],
+              "particlesToSpawn": []
+            },
+            "previousHealth": 0,
+            "reskinOptions": [],
+            "shadow": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "soundOptions": {
+              "deathSfx": {
+                "value": 1045606711
+              },
+              "soundsToPlay": [],
+              "takeDamageSfx": {
+                "value": 926580047
+              }
+            },
+            "spriteObjects": [
+              {
+                "m_FileID": 0,
+                "m_PathID": "2366463232217957723"
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": "-5542343666661538469"
+              }
+            ],
+            "spritesToRandomlyFlip": [],
+            "useSharedTransformAnimations": 1
+          },
+          "rawByteSha256": "4d6f013dc3ae4f8af8faa0b148bec9638b6d3e6c40cee77aa2964868d90beb9a",
+          "script": {
+            "assembly": "Pug.Objects",
+            "class": "Lever",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-6892799531331842907": {
+          "data": {
+            "duration": 0.0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "492835651308636983"
+            },
+            "refreshStateOnNewDamageTaken": 0
+          },
+          "rawByteSha256": "66c8d330420b5547c5bea28ff96bff83ae1f38dbe54969900deaad4989c9b90a",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "TookDamageStateAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-7262734814020137819": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-3152224696030317505"
+            },
+            "playFailedEffectOnZeroDamage": 0
+          },
+          "rawByteSha256": "3bcf8729d97194e26e4405ef0144acadbac8dfc8a20a3ee21c968053cbe6b706",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "MineableAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-8931580580016896677": {
+          "data": {
+            "m_Component": [
+              {
+                "component": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6518569962448829093"
+                }
+              },
+              {
+                "component": {
+                  "m_FileID": 0,
+                  "m_PathID": "3062885485812303195"
+                }
+              }
+            ],
+            "m_IsActive": true,
+            "m_Layer": 0,
+            "m_Name": "Interactable",
+            "m_Tag": 0
+          },
+          "rawByteSha256": "73e702a8528c545dcd761cc4f67c406a8d6c723e0661c396adf74bafceb60388",
+          "script": null,
+          "type": "GameObject"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:1523688616088997029": {
+          "data": {
+            "alignWithPlayerDirection": 0,
+            "appearInMapUI": 0,
+            "blocksHangingWallObjects": 0,
+            "canBePlacedOnAnyWalkableTile": 1,
+            "canBePlacedOnBlockingObjects": 0,
+            "canBePlacedOnImmuneTiles": 0,
+            "canBePlacedOnLava": 0,
+            "canBePlacedOnLowColliders": 0,
+            "canBePlacedOnObjects": [],
+            "canBePlacedOnPit": 0,
+            "canBePlacedOnPlayer": 1,
+            "canBePlacedOnWater": 0,
+            "canNotBePlacedOnObjects": [],
+            "canPlaceOnSideOfWall": 0,
+            "centerIsAtEntityPosition": 0,
+            "displayPlaceableType": 0,
+            "dontBlockRoots": 0,
+            "dontDestroyObjectIfInvalidPlacement": 0,
+            "hasVariationsThatCanBePlacedOnWalls": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "6521028669070963198"
+            },
+            "mapColor": {
+              "a": 0.0,
+              "b": 0.0,
+              "g": 0.0,
+              "r": 0.0
+            },
+            "objectCanBeToggledToNewNonRotationOption": 0,
+            "prefabCornerOffset": {
+              "x": 0,
+              "y": 0
+            },
+            "prefabTileSize": {
+              "x": 1,
+              "y": 1
+            },
+            "toggledToNewNonRotationOptions": 0,
+            "variationToPlace": 0,
+            "wallSideVariationStartsOnIndex1": 0
+          },
+          "rawByteSha256": "1459499e1e5615d847ff53c8bfa8f60eea5bd7ab1ae382ce7bf13636dd80bc97",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "PlaceableObjectAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:236749224901250213": {
+          "data": {
+            "largeAnimationHistorySupport": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "3835051519099528520"
+            },
+            "orientationSupport": 0
+          },
+          "rawByteSha256": "0bfab8cfaa100ef032e144e87b54ca7e7f40b980cc98bd48c9e9e2cbe26a609f",
+          "script": {
+            "assembly": "Animation.Authoring",
+            "class": "AnimationAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:3062885485812303195": {
+          "data": {
+            "allowToUseOnlyWhenClaimed": 0,
+            "ignorePlayerDirection": 0,
+            "ignorePlayerDirectionRadiusPercentage": 1.0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-8931580580016896677"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "5851019413773715447"
+            },
+            "onTriggerExitActions": [],
+            "onUseActions": [],
+            "optionalIcon": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "optionalOutlineController": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "radius": 1.2000000476837158,
+            "requireLineOfSight": 0,
+            "requiredFactionToInteract": 0,
+            "subInteractingData": [
+              {
+                "optionalOutlineControllers": [],
+                "optionalSpriteObjectOutlines": [
+                  {
+                    "m_FileID": 0,
+                    "m_PathID": "2366463232217957723"
+                  },
+                  {
+                    "m_FileID": 0,
+                    "m_PathID": "-5542343666661538469"
+                  }
+                ],
+                "overrideRadius": 0.0,
+                "points": [],
+                "subIndex": 0
+              }
+            ],
+            "useDiscreteOutlineColor": 0,
+            "weightMultiplier": 1.0
+          },
+          "rawByteSha256": "3fabf7011d4c4bdb99a79c54a39bb1ca47aeda9abccec6eb9a662b239e6d4bbc",
+          "script": {
+            "assembly": "Pug.Other",
+            "class": "InteractableObject",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:3343701221361749157": {
+          "data": {
+            "m_Capsule": {
+              "Axis": 1,
+              "Height": 1.0,
+              "Radius": 0.5
+            },
+            "m_ConvexHullGenerationParameters": {
+              "m_BevelRadius": 0.0,
+              "m_MinimumAngle": 2.500000238418579,
+              "m_SimplificationTolerance": 0.014999999664723873
+            },
+            "m_CustomMesh": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "m_Cylinder": {
+              "Axis": 2,
+              "Height": 1.0,
+              "Radius": 0.5
+            },
+            "m_CylinderSideCount": 20,
+            "m_Enabled": 1,
+            "m_ForceUnique": 0,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Material": {
+              "m_BelongsToCategories": {
+                "m_Override": 0,
+                "m_Value": {
+                  "Category00": 0,
+                  "Category01": 0,
+                  "Category02": 0,
+                  "Category03": 0,
+                  "Category04": 0,
+                  "Category05": 0,
+                  "Category06": 0,
+                  "Category07": 0,
+                  "Category08": 0,
+                  "Category09": 1,
+                  "Category10": 0,
+                  "Category11": 0,
+                  "Category12": 1,
+                  "Category13": 0,
+                  "Category14": 0,
+                  "Category15": 0,
+                  "Category16": 0,
+                  "Category17": 0,
+                  "Category18": 0,
+                  "Category19": 0,
+                  "Category20": 0,
+                  "Category21": 0,
+                  "Category22": 0,
+                  "Category23": 0,
+                  "Category24": 0,
+                  "Category25": 0,
+                  "Category26": 0,
+                  "Category27": 0,
+                  "Category28": 0,
+                  "Category29": 0,
+                  "Category30": 0,
+                  "Category31": 0
+                }
+              },
+              "m_CollidesWithCategories": {
+                "m_Override": 0,
+                "m_Value": {
+                  "Category00": 0,
+                  "Category01": 1,
+                  "Category02": 0,
+                  "Category03": 0,
+                  "Category04": 0,
+                  "Category05": 0,
+                  "Category06": 0,
+                  "Category07": 0,
+                  "Category08": 0,
+                  "Category09": 0,
+                  "Category10": 0,
+                  "Category11": 0,
+                  "Category12": 0,
+                  "Category13": 0,
+                  "Category14": 0,
+                  "Category15": 0,
+                  "Category16": 0,
+                  "Category17": 0,
+                  "Category18": 0,
+                  "Category19": 0,
+                  "Category20": 0,
+                  "Category21": 0,
+                  "Category22": 0,
+                  "Category23": 0,
+                  "Category24": 0,
+                  "Category25": 0,
+                  "Category26": 0,
+                  "Category27": 0,
+                  "Category28": 0,
+                  "Category29": 0,
+                  "Category30": 0,
+                  "Category31": 0
+                }
+              },
+              "m_CollisionResponse": {
+                "m_Override": 0,
+                "m_Value": 254
+              },
+              "m_CustomMaterialTags": {
+                "m_Override": 0,
+                "m_Value": {
+                  "Tag00": 0,
+                  "Tag01": 0,
+                  "Tag02": 0,
+                  "Tag03": 0,
+                  "Tag04": 0,
+                  "Tag05": 0,
+                  "Tag06": 0,
+                  "Tag07": 0
+                }
+              },
+              "m_Friction": {
+                "m_Override": 0,
+                "m_Value": {
+                  "CombineMode": 0,
+                  "Value": 0.0
+                }
+              },
+              "m_Restitution": {
+                "m_Override": 0,
+                "m_Value": {
+                  "CombineMode": 2,
+                  "Value": 0.0
+                }
+              },
+              "m_SerializedVersion": 1,
+              "m_SupportsTemplate": 1,
+              "m_Template": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              }
+            },
+            "m_MinimumSkinnedVertexWeight": 0.10000000149011612,
+            "m_Name": "",
+            "m_PrimitiveCenter": {
+              "x": 0.0,
+              "y": 0.5,
+              "z": 0.0
+            },
+            "m_PrimitiveOrientation": {
+              "RotationOrder": 4,
+              "Value": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "m_PrimitiveSize": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "1550093908393624849"
+            },
+            "m_SerializedVersion": 1,
+            "m_ShapeType": 0,
+            "m_SphereRadius": 0.5
+          },
+          "rawByteSha256": "9d1e107a7b2d1fab0daf5e738b7adeef971263d5bedb147bc37bb9d9b6d938fa",
+          "script": {
+            "assembly": "Unity.Physics.Custom",
+            "class": "PhysicsShapeAuthoring",
+            "namespace": "Unity.Physics.Authoring"
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:502948295614565541": {
+          "data": {
+            "calculateReductionFromLevel": 0,
+            "ignoreReductionWhenDamagedByDrill": 0,
+            "level": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-375258212975122451"
+            },
+            "maxDamagePerHit": 1,
+            "minDamagePerHit": 0,
+            "reduction": 0,
+            "reductionMultiplier": 1.0
+          },
+          "rawByteSha256": "468d510aa61fcb0eebcce991a3280663dfb1bedfd87e819ee61e0eff573d59ac",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "DamageReductionAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:7331146856383810725": {
+          "data": {
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "3353499526963094667"
+            }
+          },
+          "rawByteSha256": "1842b91422349d4205e9c6035783db86fabd4a6e0d6473ce8a79a99539c77abc",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "IgnoreVertexOffsetsAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "CAB-2ebcba97367158c9b08f790c25d642c9:7823011759258635429": {
+          "data": {
+            "dontCalculateHealthFromLevel": 0,
+            "hasHealthRegeneration": 1,
+            "healDelayAfterLeavingCombat": 5.0,
+            "healInCombatAsWell": 0,
+            "healthIncreasePercentPerFiveSeconds": 100,
+            "level": {
+              "m_FileID": 0,
+              "m_PathID": "0"
+            },
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5050580082903256229"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "8684237468152111645"
+            },
+            "maxHealth": 2,
+            "maxHealthMultiplier": 1.0,
+            "normalizedOverrideStartHealth": 1.0,
+            "overrideStartHealth": 0,
+            "startHealth": 2
+          },
+          "rawByteSha256": "d437451df092efcfc3ba504ec48a7ca29419941da0b889df35b399d3c96a03f3",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "HealthAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        }
+      },
+      "graphicalClass": "Lever",
+      "targetVariationSourceKeys": [
+        "CAB-2ebcba97367158c9b08f790c25d642c9:-294628976910207269"
+      ],
+      "variationToToggleTo": 0
+    },
+    "unresolved": "실제 회로 이웃과 부하 작동",
+    "variation": 1
+  },
+  "evidenceContext": {
+    "groupBasePath": "../2026-11/2026-11-07-행동전체추출/A-actions",
+    "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+    "originalReferenceContext": {
+      "codeRoot": "../../../게임원본-상호작용/code",
+      "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+      "priorSampleRoot": "../../2026-11-07-행동20건수집/A-actions",
+      "rawRoot": "../../../게임원본-상호작용"
+    },
+    "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+    "resolvedReferenceContext": {
+      "codeRoot": "../게임원본-상호작용/code",
+      "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/A-actions",
+      "rawRoot": "../게임원본-상호작용"
+    },
+    "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "origin": {
+    "normalizedValueSha256": "4397cefe786a5aeb31189283413cf2695467fdcb86d22b37d9801d1f4677bc62",
+    "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "pointer": "/groups/3/payload/extraction.json/records/348"
+  },
+  "value": {
+    "action": "capture",
+    "assetEvidence": [
+      {
+        "class": "CritterAuthoring",
+        "component": {
+          "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+          "data": {
+            "allowLargerAmount": 1,
+            "biomesToSpawnIn": [
+              2
+            ],
+            "isFlying": 0,
+            "isPersistent": 1,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4301871207835641419"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "4982584305422836290"
+            },
+            "spawnContinuously": 0,
+            "spawnType": 0,
+            "tilesetsToSpawnIn": []
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6218621554127526325",
+          "pathId": "-6218621554127526325",
+          "rawByteSha256": "ad090679ad8039b38936a328d41525309d56057292b8debdafdc251657cf0f06",
+          "script": {
+            "assembly": "Pug.ECS.Authoring",
+            "class": "CritterAuthoring",
+            "namespace": ""
+          },
+          "type": "MonoBehaviour"
+        },
+        "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6218621554127526325",
+        "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4301871207835641419",
+        "gameObjectName": "CritterLarvaPersistentEntity",
+        "linkKind": "authoringRef"
+      }
+    ],
+    "conditions": "Active CritterAuthoring converted to CritterCD; successful bug-net attack, historical collision hit, request validation, entity and inventory conditions.",
+    "evidenceLevel": "code_linked",
+    "failureBranches": "No collision/CritterCD: no request. Invalid DB, no capacity, absent destruction component and rejected inventory request have distinct outcomes.",
+    "id": "CAB-2ebcba97367158c9b08f790c25d642c9:-1311355567330613685#capture",
+    "inputProcessingConsumer": "PlayerAttackSystem.TryCatchAnyCritters -> InventoryUpdateSystem -> InventoryUtility.PickUpObject/CreateObject",
+    "objectId": 9801,
+    "result": "CreateObject receives entity ObjectData objectID, amount 1, variation 0; inventory insertion or conditional drop; destruction marking is separate.",
+    "rule": "capture",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1311355567330613685",
+    "unknown": "Runtime entity existence, ECB playback and all future tick repeated requests are unobserved; authoring presence alone does not establish collision filter eligibility.",
+    "variation": 1
+  },
+  "evidenceContext": {
+    "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+    "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+    "originalReferenceContext": {
+      "codeRoot": "../../../게임원본-상호작용/code",
+      "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+      "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+      "rawRoot": "../../../게임원본-상호작용"
+    },
+    "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+    "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+    "resolvedReferenceContext": {
+      "codeRoot": "../게임원본-상호작용/code",
+      "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+      "rawRoot": "../게임원본-상호작용"
+    },
+    "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+  }
+}

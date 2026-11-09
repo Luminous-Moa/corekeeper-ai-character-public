@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),p=path.join(stage,'work/2026-11/2026-11-07-기획연결/source.mjs');let s=fs.readFileSync(p,'utf8');
+s=s.replace("bagPlan:{layer:'참고',path:'../2026-11-07-가방장비-계획안.md'},","bagPlan:{layer:'참고',path:'../2026-11-07-가방장비-계획안.md'},bagInvest:{layer:'참고',path:'../2026-11-07-가방장비-조사.md'},");
+s=s.replace("n('R.bag-rules','가방 이동·드롭·수령의 게임 정적 규칙','참고·게임 소비자 정적 조사','정상 UI DropItem과 게임 자동 줍기 소비 경로, 수량/권한/경쟁·상관관계 한계다. 실게임 성공 근거가 아니다.','bagRules','## 요청 API와 실제 소비')","n('R.bag-rules','장착·상자 이동·드롭·수령의 게임 정적 규칙','참고·게임 소비자 정적 조사','장착/상자 이동의 검수된 정적 규칙과 정상 UI DropItem/자동 줍기 소비 경로다. 각 규칙의 runtimeTested=false와 전달 경쟁·상관관계 한계를 유지한다.','bagInvest','### 장착 대표',[ev('bagInvest','### 상자 대표'),ev('bagRules','## 요청 API와 실제 소비'),ev('bagRules','## 즉시 재습득 차단과 수령 규칙')])");
+fs.writeFileSync(p,s);console.log('Bound all six capabilities to equipment/container and drop/pickup static evidence.');

@@ -1,0 +1,396 @@
+{
+  "status": "pass",
+  "productNodes": 27015,
+  "productEdges": 49591,
+  "foreignReferences": 19122,
+  "canonicalNodes": 251417,
+  "canonicalEdges": 350275,
+  "topics": [
+    {
+      "topic": "R.game-topic.craft",
+      "counts": {
+        "action_completion": 29,
+        "action_completion_rule": 5,
+        "claim": 621,
+        "verb": 15
+      },
+      "target": "game:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration",
+      "sourceOrigin": {
+        "normalizedValueSha256": "c04eb1525a7cc62b9df82616a0d773bc4a4e034af8ef74aa99210b3dea015fe6",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.cook",
+      "counts": {
+        "action_completion_rule": 1,
+        "claim": 82,
+        "cooking_pair": 6561,
+        "verb": 2
+      },
+      "target": "game:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking",
+      "sourceOrigin": {
+        "normalizedValueSha256": "ae34d97134b55ea06b19918b5e141c7a3cbeea58c54143f5747f432b9c54dcee",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.farm",
+      "counts": {
+        "action_completion": 50,
+        "claim": 34,
+        "verb": 7
+      },
+      "target": "game:D102:cases:case",
+      "sourceOrigin": {
+        "normalizedValueSha256": "2dbdfa906edad9f7e97d2a8095aeceac171e686e7fe3cec7c6b2ed23942d67b0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.inventory",
+      "counts": {
+        "action_completion": 5,
+        "action_completion_rule": 8,
+        "claim": 862,
+        "verb": 10
+      },
+      "target": "game:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#inventory_transfer",
+      "sourceOrigin": {
+        "normalizedValueSha256": "539eb45883e1093518f04889fe3e0aaca9ed2fa3e94a5d8114a2fd0cb6cb360f",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/96"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.maintenance",
+      "counts": {
+        "action_completion_rule": 2,
+        "claim": 1250,
+        "verb": 5
+      },
+      "target": "game:base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair",
+      "sourceOrigin": {
+        "normalizedValueSha256": "a22943ed43f3d1e10a465ccc6b4e78ce233a20bc7e7afc4876b8fd544747b1f0",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.mining",
+      "counts": {
+        "action_completion": 16,
+        "claim": 19,
+        "verb": 2
+      },
+      "target": "game:completion:full-d:critter-after-pilot-dig",
+      "sourceOrigin": {
+        "normalizedValueSha256": "97fa8140c705e76ad44bddf0c8e39e247be4017df398f7d3238240e8ad14c05b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.move",
+      "counts": {
+        "action_completion": 6,
+        "claim": 29,
+        "verb": 2
+      },
+      "target": "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319#toggle_door",
+      "sourceOrigin": {
+        "normalizedValueSha256": "669ffaba99d78e92a5e72731770c62118c8e0b5e4a58b11c5bb19a7ed08e14c3",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/26"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.place",
+      "counts": {
+        "action_completion": 1337,
+        "claim": 1350,
+        "verb": 3
+      },
+      "target": "game:completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010",
+      "sourceOrigin": {
+        "normalizedValueSha256": "97e9fa70b986f42073a99bd8505a16090a25a229d3e611c022386c1a9dbdf967",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.combat",
+      "counts": {
+        "action_completion": 190,
+        "claim": 305,
+        "condition_consumer": 1,
+        "conditional_relation": 3,
+        "verb": 6
+      },
+      "target": "game:beam",
+      "sourceOrigin": {
+        "normalizedValueSha256": "3e46a4074b58f614ddd7a0cc84bc6645dd9332d97de8f20169a4b45ed779b4e1",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.food",
+      "counts": {
+        "action_completion": 183,
+        "claim": 375,
+        "verb": 4
+      },
+      "target": "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4705220532759303983#sit",
+      "sourceOrigin": {
+        "normalizedValueSha256": "8964eb199eb1732f3bfdcdf114b3d555fbd8b2288c0b97881feed8c251cfc62c",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/32"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.animals",
+      "counts": {
+        "action_completion": 6,
+        "action_completion_rule": 1,
+        "claim": 225,
+        "verb": 12
+      },
+      "target": "game:animal-cage",
+      "sourceOrigin": {
+        "normalizedValueSha256": "509df7b60f008048bb7d54cf914de5162a7022b6c5b70ed41380f1746e725045",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated/cases.json",
+        "pointer": "/cases/1"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.capture",
+      "counts": {
+        "action_completion": 3,
+        "claim": 152,
+        "verb": 5
+      },
+      "target": "game:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1311355567330613685#capture",
+      "sourceOrigin": {
+        "normalizedValueSha256": "4397cefe786a5aeb31189283413cf2695467fdcb86d22b37d9801d1f4677bc62",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/348"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.fish",
+      "counts": {
+        "action_completion": 8,
+        "claim": 8,
+        "verb": 2
+      },
+      "target": "game:completion:B:fishing-50-0",
+      "sourceOrigin": {
+        "normalizedValueSha256": "a84a9b1be45a42606f4a223f3f20d3f1658404260714b74f4b7fe373f679e106",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/fishing-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.trade",
+      "counts": {
+        "action_completion": 2,
+        "action_completion_rule": 4,
+        "claim": 22,
+        "verb": 8
+      },
+      "target": "game:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item",
+      "sourceOrigin": {
+        "normalizedValueSha256": "f99faf1f77694369241f7787077109d117f1c6c1826aedd8a8d64a531c22a4a8",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.vehicle",
+      "counts": {
+        "action_completion": 3,
+        "claim": 6,
+        "verb": 3
+      },
+      "target": "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board",
+      "sourceOrigin": {
+        "normalizedValueSha256": "2cc08845566c8679406627a41af98bd2439fd5061c579bf58c80561115e17ada",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/39"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.portal",
+      "counts": {
+        "action_completion_rule": 1,
+        "claim": 89,
+        "verb": 6
+      },
+      "target": "game:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal",
+      "sourceOrigin": {
+        "normalizedValueSha256": "317377899dee56370aca4681916755f7688cf68237018a29dcb54f1a71aafc82",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.electric",
+      "counts": {
+        "action_completion": 275,
+        "claim": 275,
+        "verb": 21
+      },
+      "target": "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1712373390419719003#toggle_lever",
+      "sourceOrigin": {
+        "normalizedValueSha256": "7a00d84cfb6bdef5a24575d318b314f06b4ceb03a837b95937ec23a599158c16",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/0/payload/extraction.json/records/38"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.interact",
+      "counts": {
+        "action_completion": 29,
+        "action_completion_rule": 5,
+        "claim": 152,
+        "verb": 12
+      },
+      "target": "game:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object",
+      "sourceOrigin": {
+        "normalizedValueSha256": "259256deedf8bd915bf4cbd0522d0012343e75a7b2a9f2baab23d3df0a488bed",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.lifecycle",
+      "counts": {
+        "action_completion": 3
+      },
+      "target": "game:completion:essential:player-death-armor-cost-v1",
+      "sourceOrigin": {
+        "normalizedValueSha256": "b0c2b8d51c3bf847425fbea297a60f60598ff6cd4dfcc64ea1bc009a94c5db34",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.environment",
+      "counts": {
+        "action_completion": 366,
+        "action_completion_rule": 1,
+        "claim": 24,
+        "verb": 4
+      },
+      "target": "game:completion:full-d:contents-time:supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441#change_variation_after_time",
+      "sourceOrigin": {
+        "normalizedValueSha256": "b03338fc75ed3c0994bc2344b9aff7d8e71b7f28c985241baa0f886e4a91dc90",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/contents-time/cases.json",
+        "pointer": "/cases/0"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.hazards",
+      "counts": {
+        "action_completion": 28
+      },
+      "target": "game:completion:A:block-fire-mortar-9305-v1",
+      "sourceOrigin": {
+        "normalizedValueSha256": "41a1732c48fffb35c0350be4fae0ba072fe37ca349b3dfa5ccbc2ef05bdbeab9",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    },
+    {
+      "topic": "R.game-topic.debug",
+      "counts": {
+        "action_completion": 2
+      },
+      "target": "game:completion:B:debug-noclip",
+      "sourceOrigin": {
+        "normalizedValueSha256": "75b2ac51469bc1d01c34da54ce6b5966c3785120888915e45f0991a38e570495",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "showSucceeded": true,
+      "sourceSucceeded": true
+    }
+  ],
+  "recordedEvidence": 3,
+  "planningLifeTopics": [
+    "R.game-topic.craft",
+    "R.game-topic.cook",
+    "R.game-topic.farm"
+  ],
+  "cookingPair": {
+    "normalizedValueSha256": "1fa6cd6e2580d40bd89c9d0150ba1023c1cbf8d665bedebb033e6193b5a41655",
+    "path": "../2026-11/2026-11-07-행동전체추출/D-outcomes/cooking-pairs.json",
+    "pointer": "/pairs/1"
+  },
+  "productCheck": {
+    "ok": true,
+    "structuralErrors": [],
+    "stale": [],
+    "baselineDrift": {
+      "baseline": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "workingTreeHead": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "warning": null
+    }
+  },
+  "queryRunProductEdges": 49589,
+  "finalChecks": {
+    "check": "final-check.json",
+    "mining": "final-mining.json",
+    "move": "final-move.json",
+    "ok": true,
+    "stale": [],
+    "structuralErrors": [],
+    "note": "22주제 원문조회 중 채굴·이동 주제에 기존 정확근거 2간선을 추가했다. 최종 주제조회와 전체 구조·stale를 다시 확인했다."
+  }
+}

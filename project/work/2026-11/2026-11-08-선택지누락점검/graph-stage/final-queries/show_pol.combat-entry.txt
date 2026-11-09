@@ -1,0 +1,72 @@
+{
+  "node": {
+    "class": "사용자 결정 요약",
+    "evidence": [
+      {
+        "anchor": "## 전투 상태 진입 기준",
+        "doc": "gapAgreement",
+        "end": 47,
+        "line": 42,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 42
+      },
+      {
+        "anchor": "전투 구현을 시작할 때는 이 절의 합의 내용을 먼저 사용자에게 제시하고 수정할 내용이 있는지 묻는다.",
+        "doc": "gapAgreement",
+        "end": 46,
+        "line": 46,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 46
+      }
+    ],
+    "id": "pol.combat-entry",
+    "sourceLocations": [
+      {
+        "end": 47,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 42
+      },
+      {
+        "end": 46,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 46
+      }
+    ],
+    "status": "사용자 구상·전투 구현 시작 때 재확인",
+    "summary": "공격당하거나 적이 나를 인식하는 순간 전투 모드로 바꾸고 전투 선택지만 띄운다. 적이 나를 인식했어도 도주 가능하거나 적이 나를 공격할 수 없는 상태면 진입하지 않는다. 상자 열림 모드는 전투 상태 진입 때만 끝나며 지금은 기존 피격 신호에 임시 연결했다. 전투 구현을 시작할 때 이 합의를 먼저 사용자에게 제시하고 수정할 내용을 묻는다.",
+    "title": "전투 상태 진입 기준(전투 구현 시작 때 사용자 재확인)",
+    "type": "정책"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 전투 상태 진입 기준",
+          "doc": "gapAgreement",
+          "end": 47,
+          "line": 42,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 42
+        },
+        {
+          "anchor": "전투 구현을 시작할 때는 이 절의 합의 내용을 먼저 사용자에게 제시하고 수정할 내용이 있는지 묻는다.",
+          "doc": "gapAgreement",
+          "end": 46,
+          "line": 46,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 46
+        }
+      ],
+      "from": "P.combat-entry",
+      "kind": "현재 결정의 정책 요약",
+      "to": "pol.combat-entry",
+      "type": "reference"
+    }
+  ]
+}

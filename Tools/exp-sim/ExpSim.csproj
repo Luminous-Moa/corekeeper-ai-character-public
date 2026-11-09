@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Offline check of the experience memory (Assets/AIPlayerSpike/Scripts/AIExpCore.cs, no Unity):
+       dotnet run -c Release (optional arg: work dir)   scenario checks + a 100-hour synthetic play. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Assets\AIPlayerSpike\Scripts\AIExpCore.cs" Link="AIExpCore.cs" />
+  </ItemGroup>
+</Project>

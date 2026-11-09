@@ -1,0 +1,399 @@
+{
+  "node": {
+    "action": "place",
+    "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "97e9fa70b986f42073a99bd8505a16090a25a229d3e611c022386c1a9dbdf967",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+      "pointer": "/cases/0"
+    },
+    "roleBindings": [
+      {
+        "conditional": true,
+        "objectId": 4777,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/1049",
+          "rawByteSha256": "2e14d4a51195b7f58909a48ad725aa79e8062b2908f05ed800f04ecdecc87412",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+        },
+        "role": "input_for",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010",
+        "variation": 2
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "선택 source authoring과 일치하는 non-TileCD runtime prefab의 배치 조건부 경로",
+    "status": "static_path_research_awaits_independent_review"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "df9bb0fea0ce45ee9033a0b672eed7f086946e7883785842610dea5f197c1215",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/conditions"
+      },
+      "value": [
+        "같은 정확 source가 runtime equipment prefab으로 선택되고 TileCD가 없는 경우. linked TileAuthoring 부재만으로 runtime DB 선택은 확정하지 않는다.",
+        "second interact, 빈 mouse, canPlaceObject/CanPlaceItem, 소모 가능성·동일 위치 1초 방지 및 world/type gate",
+        "위치 탐색은 reach, 가시선, 크기, source의 물·용암·pit·walkable·벽·충돌물 허용 및 허용/금지 목록, 현재 타일·오브젝트를 검사한다."
+      ]
+    },
+    {
+      "relation": "has_condition",
+      "field": "sourceValues",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/condition/sourceValues",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "8ae8ac5e47968769a7dd2ffe86d1aa87313f9104dd582d73e6c0a8796bab963c",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/sourceValues"
+      },
+      "value": {
+        "initialAmount": 1,
+        "isStackable": 1,
+        "objectTileType": 0,
+        "objectType": 800,
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "otherSelectedAuthoring": [],
+        "placementAuthoring": {
+          "alignWithPlayerDirection": 0,
+          "appearInMapUI": 0,
+          "blocksHangingWallObjects": 1,
+          "canBePlacedOnAnyWalkableTile": 0,
+          "canBePlacedOnBlockingObjects": 1,
+          "canBePlacedOnImmuneTiles": 0,
+          "canBePlacedOnLava": 0,
+          "canBePlacedOnLowColliders": 0,
+          "canBePlacedOnObjects": [],
+          "canBePlacedOnPit": 0,
+          "canBePlacedOnPlayer": 1,
+          "canBePlacedOnWater": 0,
+          "canNotBePlacedOnObjects": [],
+          "canPlaceOnSideOfWall": 1,
+          "centerIsAtEntityPosition": 0,
+          "displayPlaceableType": 0,
+          "dontBlockRoots": 0,
+          "dontDestroyObjectIfInvalidPlacement": 0,
+          "hasVariationsThatCanBePlacedOnWalls": 1,
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "1160714866985340846"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "6521028669070963198"
+          },
+          "mapColor": {
+            "a": 0.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "objectCanBeToggledToNewNonRotationOption": 0,
+          "prefabCornerOffset": {
+            "x": 0,
+            "y": 0
+          },
+          "prefabTileSize": {
+            "x": 1,
+            "y": 1
+          },
+          "toggledToNewNonRotationOptions": 0,
+          "variationToPlace": 0,
+          "wallSideVariationStartsOnIndex1": 0
+        },
+        "size": {
+          "x": 1,
+          "y": 1
+        },
+        "tileset": 0
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "assetEvidence",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "a6266fe0a0d5e8d4c59f1acf2bf498592dc9de92c47b5c09295dc2315ea4d3d8",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/assetEvidence"
+      },
+      "value": [
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010",
+          "line": 66,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "2e14d4a51195b7f58909a48ad725aa79e8062b2908f05ed800f04ecdecc87412"
+        },
+        {
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1849127588375695278",
+          "line": 47406,
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+          "pointer": "/data",
+          "rawByteSha256": "12980e278acf7bd6d35b2d7869a75232ce3c4702e7d1c60145f10ca69f6791c3"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeEvidence",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/evidence/codeEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "0308f1230dc39a1aba84b2f807c4f41721fbe8c7a33dd95d9e07fa75ec15849a",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/codeEvidence"
+      },
+      "value": [
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlaceObjectSlot.cs",
+          "sha256": "0cd34943b22c9dce8bd00179db621b60765f52b4f70e4989123e714b0aeb011f"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlacementHandler.cs",
+          "sha256": "d882de8e5b143e6bcf4c599cd985d2be91f2e2db3d6f8bc45bec36e8439ef59c"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\PlaceableObjectConverter.cs",
+          "sha256": "6b612c5d6e1a7d1d732aa82ca737ba5433db7c16698f72f1af8a84527aa0bdbe"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\DestroyIfNotOnTileConverter.cs",
+          "sha256": "ac52fe19ea73b5bd45ad5a0037bb5cc126c74114ac205e502e2919761a6f79fb"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\DestroyEntityIfPlacementNotValidSystem.cs",
+          "sha256": "4e8387b59d3de3ed787e0d82c72a73773cf756aec58d6ef2b3acc32a876d7004"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerAttackSystem.cs",
+          "sha256": "e48e346b4e4d6b1c800cb41116613443af29d78dad9370f0d700c6f905d45da1"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerCommand\\ClientSystem.cs",
+          "sha256": "b9fabf486e4ccec43f2b6525248790b15b396e2d3ec50e914e3d2afef98ae4ab"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateHealthFromBufferSystem.cs",
+          "sha256": "5fe7f275753316f5b212bd46f5335f6a8b27b0a1db14e6bec7b29188e7d0f668"
+        },
+        {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\ObjectPropertiesConverter.cs",
+          "sha256": "65c0512bce1aa3d69e92c0e7e059ca5c748e444eefd540e1fb0d6a8dd7769949"
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "sharedFollowup",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/evidence/sharedFollowup",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "4676739e987184f4655e615f9316ad81cc247b91e660820b08be675aa483780b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/sharedFollowup"
+      },
+      "value": {
+        "callDifference": "placement flying=true; rare seed property may disable squash override",
+        "caseId": "completion:full-d:critter-after-pilot-dig",
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\D\\followups-v2\\cases.json",
+        "reviewPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\review\\full-D-followups\\report-v2.md",
+        "reviewSha256": "63811510f385f8f38432ce77690347f52654548406369c0bfedd4bac9567a90a",
+        "sha256": "74bf7b17c9578c4dd090b386a334e1a3db0153a1315bcda4cc941c8dfe70d64a",
+        "status": "independent_pass"
+      }
+    },
+    {
+      "relation": "has_failure",
+      "field": "negativeCases",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/failure/negativeCases",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "4754ae163cf9ad57882a65761e37cd7a5fb644e4f77f656101b1d38821f46f90",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/negativeCases"
+      },
+      "value": [
+        "배치 footprint 또는 가시선·조건 불합격, 수량 부족이나 guest/read-only gate는 해당 경로를 막는다",
+        "검증 CD가 있을 때 부적합 배치는 생성 이후 health 0 또는 파괴 표시로 이어질 수 있다",
+        "god mode 또는 폭발물 보존 성공은 소비 없이 생성 경로가 될 수 있다"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "entry",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/flow/entry",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "f87a69a1617e79f23635fb977f154e51382ee0e379bb63c6bb0daa5d6b53ecd4",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/entry"
+      },
+      "value": {
+        "consumer": "Pug.Other/PlaceObjectSlot.cs:23-208",
+        "input": "배치 슬롯 secondary interact, 마우스 비어 있음"
+      }
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "8763cd916b4c919d23e3d140a80b32bcbfb07445530bc5d9b0732d83470157a8",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/transitions"
+      },
+      "value": [
+        {
+          "from": "authoring",
+          "refs": [
+            "Pug.ECS.Conversion/PlaceableObjectConverter.cs:6-82",
+            "Pug.ECS.Conversion/DestroyIfNotOnTileConverter.cs:10-103",
+            "Pug.ECS.Conversion/ObjectPropertiesConverter.cs:5-10",
+            "Pug.Other/PlacementHandler.cs:856-879"
+          ],
+          "text": "PlaceableObjectConverter가 source 개별 허용 값 및 variation을 property로 변환; DestroyIfNotOnTileConverter는 dontDestroy=false인 active placeable 및 별도 DestroyIfNotOnTile 설정에 따라 검증 CD를 추가",
+          "to": "runtime properties"
+        },
+        {
+          "from": "valid input",
+          "refs": [
+            "Pug.Other/PlaceObjectSlot.cs:49-208",
+            "Pug.Other/PlacementHandler.cs:195-223,357-440",
+            "Pug.Other/PlacementHandler.cs:564-772"
+          ],
+          "text": "variation은 adaptive 주변 타일, wall side, direction, rare seed condition 및 toggle 등 조건에 따라 결정. 폭발물 보존/god mode는 dontConsume을 설정하고, 그 외 보통 1개를 destroy=false 요청",
+          "to": "inventory consume/create request"
+        },
+        {
+          "from": "request",
+          "refs": [
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-382,797-848",
+            "Pug.Other/Inventory/InventoryUtility.cs:278-318,322-390"
+          ],
+          "text": "playerEntity를 지정한 이 호출은 read-only guest gate와 inventory/buffer·파괴 gate를 통과해야 처리. ConsumeEntityAt은 destroy=false일 때 첫 완전 예측 tick에 선택 variation의 DB prefab 생성 예약, 실제 슬롯 amount를 감소 또는 비우고 placement-validation tag를 추가. dontConsume이면 감소 없이 별도 CreateEntityWithoutConsume 경로",
+          "to": "inventory and entity reservation"
+        },
+        {
+          "from": "spawned entity",
+          "refs": [
+            "Pug.Other/DestroyEntityIfPlacementNotValidSystem.cs:171-362,640-647",
+            "Pug.ECS.Conversion/DestroyIfNotOnTileConverter.cs:24-75"
+          ],
+          "text": "DestroyEntityIfNotOnTileCD 및 placement tag, LocalTransform/ObjectData/ObjectProperties가 있고 EntityDestroyedCD가 없거나 비활성이고 EnemyCD가 없는 경우 footprint의 물·용암·pit·벽·blocker와 허용/금지 ID 등을 검사. 실패 시 HealthCD가 있으면 health=0/maxHealth=1, 아니면 EntityDestroyedCD 활성 예약; tag 제거. source dontDestroy=true라도 별도 authoring에 따른 CD가 있을 수 있다.",
+          "to": "conditional placement validation"
+        },
+        {
+          "from": "placement request",
+          "refs": [
+            "Pug.Other/PlaceObjectSlot.cs:155-174,199-213",
+            "Pug.Other/PlayerAttackSystem.cs:429-456",
+            "Pug.Other/PlayerController.cs:6649-6669"
+          ],
+          "text": "비Critter는 prefabTileSize 범위 CritterDamage 요청. flying=true; rareSeedVariation property 분기에 들어가면 squash override=false, 그 외 true. 입력·재고와 별도로 후속 처리되며 정적 대상과 실피해는 미확정",
+          "to": "critter damage"
+        },
+        {
+          "from": "footprint and placement properties",
+          "refs": [
+            "Pug.Other/PlacementHandler.cs:564-772"
+          ],
+          "text": "일치 type이 이미 있으면 불가; walkable/low collider/일반 물/tileset 3 용암/pit/벽면·fence는 개별 허용 flag를 보고, footprint 내 물·용암·pit 혼합을 검사한다. 금지 ID 목록과 충돌체·전자장치/이벤트 단말 차단, 명시 허용 목록 및 대상의 역방향 허용 목록을 함께 검사한다.",
+          "to": "per-tile decision"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "outcomes",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/result/outcomes",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "e057f2da5866ef50e720619a389d162d989f9a77f68c08b9c505bfd3358feaa2",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/outcomes"
+      },
+      "value": [
+        "조건부 소비 시 슬롯 수량 실제 감소 또는 비움, first prediction에서 entity 생성은 ECB 예약이며 재생·후속 유효성 통과는 런타임에 의존",
+        "placementAuthoring의 각 허용값·변형·dontDestroy 값은 sourceValues에 원문 그대로 보존한다"
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "3339beb8481a012378b12a6eb0471daed5c1230794369d658e19e8aab1c59998",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0/boundaries"
+      },
+      "value": [
+        "DB prefab 일치, 물리·타일·재고·난수·ECB playback 및 실제 결과 미관측",
+        "player 대상 별도 처리",
+        "새 source 적용과 이 조사 결과는 독립 검수 전"
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:B-place-objects-v3",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "completes_selected_target_path_of",
+      "target": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010#0",
+      "kind": "claim",
+      "action": "place"
+    },
+    {
+      "relation": "has_participation_role",
+      "target": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010/role/0",
+      "kind": "participation_role",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_completion",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010#0"
+    ],
+    [
+      "input_for",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010"
+    ]
+  ]
+}

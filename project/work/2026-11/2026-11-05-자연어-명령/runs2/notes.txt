@@ -1,0 +1,29 @@
+launched 18:45:52
+limits at start 18:46:06: claude week 68 (fable 0), gemini 5h 1 week 12.5; bridge game graph 3187 nodes
+18:47:34 world nltest (slot 7, existing from run 1), host char 4
+18:48:02 /ai on claude, gemini
+18:48:28 sent '@Claude 버섯한테 덜 맞게 나무 방어구 한 벌 맞춰 와'
+18:48:33 sent '@Gemini 구리 곡괭이 하나 만들어 줘'
+18:48:57 sent '@Claude 지금 뭐 하고 있어?'
+18:49:00 sent '@Gemini 지금 뭐 하고 있어?'
+18:49:43 hint shot with @c, Esc
+18:50:09 IME test: @ + ime z, Tab, Hangul toggle, type ok?
+18:50:22 sent '@Claude ok?' then held D 1.5s
+18:51:47 sent '@Claude 1분만 지금 자리에서 멈춰서 기다려 줘' (B1 hold test)
+18:53:43 observed: Gemini 3-step plan ran without calls, plan_done 1 call; Gemini DOWN#1 t=341.9 (instant, explosive wall?) -> back_up only
+18:54:10 sent '@Gemini 그거 끝나면 횃불 5개 만들어 줘'
+18:54:15 sent '@Gemini 아니다, 횃불 말고 나무 10개만 더 모아 줘'
+18:54:56 bridge killed (F7/F2 test)
+18:55:00 sent '@Claude 지금 체력 얼마야?' with bridge down
+18:56:30 bridge restarted
+18:57:23 testcmds.on created (F4 arena)
+18:57:24 sent '/ai claude arena go 0 -8'
+18:57:35 sent '/ai arena spawn 2 MushroomBrute 3'
+19:01:16 observations: B1 hold->periodic 120s->resume armor plan PASS; F1 'not applied' PASS; F7 notice PASS, F2 single retry kept; F4 Gemini DOWN#2 back_up only + 'fight_end not reported'; finding: Claude fight_end answer #11 dropped stale because plan step advanced (rev 19->20). Free play ~8 min now
+19:09:27 sent '/ai stop' (no member, F3)
+19:12:12 sent '/ai off'
+19:13:08 save and exit clicked
+19:13:22 quit clicked
+19:13:30 game closed
+19:13:30 bridge stopped
+19:14:42 restore done (verify 0), reinstalled nl-chat 5433992 (cs 35 same); verify after reinstall: mod group differs on purpose

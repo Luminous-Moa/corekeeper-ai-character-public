@@ -1,0 +1,983 @@
+{
+  "depthLimit": 16,
+  "judgment": "문서/기준 코드 원문 및 A1/C3 실제 PNG 대조. 네트워크 요청·함수 trace·현재 저장 파일 확인은 아님",
+  "questions": [
+    {
+      "activity": "CKAI-ACT-01",
+      "answer": "인자 없는 /ai는 전체 상태 분기로 들어간다. StatusAll은 AIAgent 이름, 월드 설정 Members의 켜짐 여부, 현재 단계의 StageText를 합친다. Members의 파일 데이터 p는 PathFor가 정하는 AIPlayers/<world>/settings.json이다. A1·C3 화면은 Claude 켜짐/들어와 있음에 대응한다. 현재 설정 파일 내용은 읽지 않았고 함수 실행 trace는 없다.",
+      "data": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+      "dataPath": [
+        {
+          "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+          "from": "CKAI-ACT-01",
+          "scope": "/ai 입력·제출과 입력 닫힘",
+          "to": "CKAI-02#3",
+          "type": "유저 활동→화면요소"
+        },
+        {
+          "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+          "evidenceSources": [
+            "../2026-11-05-지식그래프-실화면/A1/observations.json",
+            "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+            "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+            "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+          ],
+          "from": "CKAI-02#3",
+          "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+          "runtimeTrace": false,
+          "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+          "to": "slash:ai",
+          "type": "화면요소→기능"
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+          "from": "slash:ai",
+          "line": 27,
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+          "type": "기능→코드"
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+          "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+          "kind": "call",
+          "line": 75,
+          "resolution": "semantic",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+          "type": "reference"
+        },
+        {
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+          "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+          "kind": "call",
+          "line": 247,
+          "resolution": "semantic",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+          "type": "reference"
+        },
+        {
+          "expression": "File.Exists",
+          "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+          "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+          "line": 40,
+          "to": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+          "type": "read"
+        }
+      ],
+      "elementSources": [
+        {
+          "boundary": null,
+          "id": "CKAI-02#3",
+          "sources": [
+            {
+              "end": 165,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+              "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+              "start": 154,
+              "text": "154: ### 3. 채팅 입력칸\n155: \n156: ID: `CKAI-02#3`\n157: \n158: 세 줄은 동시 표시 문구가 아니라 증거별 입력 상태. E02/E05/E08/E09는 빈칸, E03은 /ai, E06은 /ai Claude. E04/E07/E10에서는 입력칸 닫힘.\n159: \n160: ```text\n161: >\n162: >/ai\n163: >/ai Claude\n164: ```\n165: "
+            }
+          ]
+        },
+        {
+          "boundary": null,
+          "id": "CKAI-02#2-7",
+          "sources": [
+            {
+              "end": 191,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+              "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+              "start": 176,
+              "text": "176: ### 2-7. AI 목록과 생략된 명령 안내\n177: \n178: ID: `CKAI-02#2-7`\n179: \n180: 줄바꿈은 PNG 기준. '없음' 필드의 의미 및 … 뒤 전체 명령은 미확인. 이 화면만으로 개별 명령의 지원/효과를 확정하지 않음.\n181: \n182: ```text\n183: AI: Claude 켜짐/들어와\n184: 있음/없음 · ChatGPT\n185: 꺼짐/들어와 있지 않음 ·\n186: Gemini 꺼짐/들어와 있지\n187: 않음 · Grok 꺼짐/들어와\n188: 있지 않음 · 명령: /ai\n189: <〔인자명 판독 불확실〕> on|off|goal …\n190: ```\n191: "
+            }
+          ]
+        }
+      ],
+      "elements": [
+        "CKAI-02#3",
+        "CKAI-02#2-7"
+      ],
+      "evidence": [
+        "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+        "../2026-11-05-지식그래프-실화면/C3/flow-check.md",
+        "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md"
+      ],
+      "feature": "slash:ai",
+      "paths": [
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            }
+          ],
+          "sources": [
+            {
+              "end": 94,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "sha256": "2109a0426be7642153230da8c0401b550cb91f65bfa983ab0bbe48a9254c106c",
+              "start": 27,
+              "text": "27:     internal static bool TryHandleChatCommand(string message)\n28:     {\n29:         string text = message.Trim();\n30:         if (!IsAiCommand(text))\n31:         {\n32:             int idx = message.IndexOf(\": \", StringComparison.Ordinal);\n33:             if (idx < 0) return false;\n34:             text = message.Substring(idx + 2).Trim();\n35:             if (!IsAiCommand(text))\n36:             {\n37:                 // not a command: a line with an @mention also goes to those members' upper LLM; the line itself is sent\n38:                 // to the other players as ordinary chat either way (자연어 명령 합의 1)\n39:                 try { TryHandleMention(text); } catch (Exception e) { LogError(\"mention handling failed\", e); }\n40:                 return false;\n41:             }\n42:         }\n43:         if (!InHostedGame(out World server))\n44:         {\n45:             return false; // not our world (joined someone else's): leave the message alone\n46:         }\n47:         string[] parts = text.Split(new[] { ' ', '\\t' }, StringSplitOptions.RemoveEmptyEntries);\n48:         Log($\"chat command from host: '{text}'\");\n49:         if (WorldId == null)\n50:         {\n51:             Reply(\"AI: 아직 월드 정보를 읽는 중입니다. 잠시 뒤 다시 입력하세요.\");\n52:             return true;\n53:         }\n54:         // Which character: \"/ai <member> <cmd ...>\" (claude | gpt | gemini | grok, names too) or \"/ai all <cmd>\";\n55:         // also \"/ai on|off <member>\". Without a member: the default character (Claude when it is in the world, else\n56:         // the first character in the world); \"/ai off\" without a member turns every character off; \"/ai\" alone\n57:         // shows every member.\n58:         var targets = new List<AIAgent>();\n59:         bool all = false;\n60:         if (parts.Length > 1)\n61:         {\n62:             if (IsAll(parts[1])) { all = true; parts = Without(parts, 1); }\n63:             else { var a = AIAgent.Find(parts[1]); if (a != null) { targets.Add(a); parts = Without(parts, 1); } }\n64:         }\n65:         string arg = parts.Length > 1 ? parts[1].ToLowerInvariant() : \"status\";\n66:         bool onOff = arg == \"on\" || arg == \"켜기\" || arg == \"off\" || arg == \"끄기\";\n67:         if (targets.Count == 0 && !all && onOff && parts.Length > 2)\n68:         {\n69:             if (IsAll(parts[2])) all = true;\n70:             else { var a = AIAgent.Find(parts[2]); if (a != null) targets.Add(a); }\n71:         }\n72:         if (all) { targets.Clear(); targets.AddRange(AIAgent.All); }\n73:         if (targets.Count == 0)\n74:         {\n75:             if (arg == \"status\" || arg == \"상태\") { Reply(StatusAll()); return true; }\n76:             // stop and \"goal 없음\" without a member stop every member too (검수 F3, HEAD decision): members go on with\n77:             // goals of their own (합의 3d), so stopping only the default one left the others running\n78:             bool stopAll = arg == \"stop\" || arg == \"멈춤\" || ((arg == \"goal\" || arg == \"목표\") && parts.Length > 2 && AIGoals.IsNoGoalWord(parts[2]));\n79:             if (arg == \"off\" || arg == \"끄기\" || stopAll) { foreach (var a in AIAgent.All) if (arg == \"off\" || arg == \"끄기\" || IsJoined(a)) targets.Add(a); }\n80:             else targets.Add(DefaultAgent());\n81:         }\n82:         int order = 0;\n83:         foreach (var a in targets)\n84:         {\n85:             // with \"all\", commands other than on/off go only to characters that are in the world\n86:             if (all && !onOff && !IsJoined(a)) continue;\n87:             using (AIAgent.Enter(a))\n88:             {\n89:                 try { Dispatch(server, arg, parts, order++); }\n90:                 catch (Exception e) { LogError($\"chat command for {a.Name} failed\", e); }\n91:             }\n92:         }\n93:         return true;\n94:     }"
+            }
+          ]
+        },
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "kind": "call",
+              "line": 75,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+              "type": "reference"
+            }
+          ],
+          "sources": [
+            {
+              "end": 251,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "sha256": "2109a0426be7642153230da8c0401b550cb91f65bfa983ab0bbe48a9254c106c",
+              "start": 241,
+              "text": "241:     private static string StatusAll()\n242:     {\n243:         var l = new List<string>();\n244:         foreach (var a in AIAgent.All)\n245:             using (AIAgent.Enter(a))\n246:             {\n247:                 bool on = AIWorldSettings.Members(WorldId).Contains(a.Id);\n248:                 l.Add($\"{a.Name} {(on ? \"켜짐\" : \"꺼짐\")}/{StageText()}{(_stage == Stage.Walking ? \"/\" + AIBrain.Goal.Text : \"\")}\");\n249:             }\n250:         return \"AI: \" + string.Join(\" · \", l) + \" · 명령: /ai <멤버> on|off|goal …\";\n251:     }"
+            }
+          ]
+        },
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "kind": "call",
+              "line": 39,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleMention(string)",
+              "type": "reference"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleMention(string)",
+              "kind": "call",
+              "line": 113,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+              "type": "reference"
+            }
+          ],
+          "sources": [
+            {
+              "end": 233,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "sha256": "2109a0426be7642153230da8c0401b550cb91f65bfa983ab0bbe48a9254c106c",
+              "start": 218,
+              "text": "218:     private static string StageText()\n219:     {\n220:         switch (_stage)\n221:         {\n222:             case Stage.Disabled: return \"들어와 있지 않음\";\n223:             case Stage.CountingDown: return \"곧 들어옴\";\n224:             case Stage.ThinWorldCreated:\n225:             case Stage.Connected:\n226:             case Stage.Accepted:\n227:             case Stage.StartGameSent: return \"들어오는 중\";\n228:             case Stage.PlayerSpawned:\n229:             case Stage.Walking: return \"들어와 있음\";\n230:             case Stage.Stopped: return \"오류로 멈춤, 로그 확인\";\n231:             default: return _stage.ToString();\n232:         }\n233:     }"
+            }
+          ]
+        },
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "kind": "call",
+              "line": 75,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+              "type": "reference"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+              "kind": "call",
+              "line": 247,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+              "type": "reference"
+            }
+          ],
+          "sources": [
+            {
+              "end": 53,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+              "sha256": "3d2ef0feebdef835ead69848dfa4beb21841b3553eb59ee7c3788043160e91ac",
+              "start": 33,
+              "text": "33:     public static List<string> Members(string worldId)\n34:     {\n35:         var l = new List<string>();\n36:         if (worldId == null) return l;\n37:         string p = PathFor(worldId);\n38:         try\n39:         {\n40:             if (!File.Exists(p)) return l;\n41:             string text = File.ReadAllText(p, Encoding.UTF8);\n42:             var d = JsonUtility.FromJson<Data>(text);\n43:             if (d == null) return l;\n44:             bool hasMembers = text.IndexOf(\"\\\"members\\\"\", StringComparison.Ordinal) >= 0;\n45:             if (hasMembers && d.members != null) { foreach (var m in d.members) if (AIAgent.ById(m) != null && !l.Contains(m)) l.Add(m); }\n46:             else if (!hasMembers && d.aiEnabled) l.Add(\"claude\");   // file from before members\n47:         }\n48:         catch (Exception e)\n49:         {\n50:             AIPlayerSpikeMod.LogError($\"AI setting: reading {p} failed; treating as off\", e);\n51:         }\n52:         return l;\n53:     }"
+            }
+          ]
+        },
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.PathFor(string)",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "kind": "call",
+              "line": 75,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+              "type": "reference"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+              "kind": "call",
+              "line": 247,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+              "type": "reference"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+              "kind": "call",
+              "line": 37,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.PathFor(string)",
+              "type": "reference"
+            }
+          ],
+          "sources": [
+            {
+              "end": 84,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+              "sha256": "3d2ef0feebdef835ead69848dfa4beb21841b3553eb59ee7c3788043160e91ac",
+              "start": 81,
+              "text": "81:     public static string PathFor(string worldId)\n82:     {\n83:         return Path.Combine(Application.persistentDataPath, \"AIPlayers\", worldId, \"settings.json\");\n84:     }"
+            }
+          ]
+        }
+      ],
+      "question": "Claude가 켜짐/들어와 있음으로 보이는 값은 어디서 오는가?",
+      "targets": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+        "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+        "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.PathFor(string)"
+      ]
+    },
+    {
+      "activity": "CKAI-ACT-01",
+      "answer": "코드에서 Walking일 때 붙이는 Goal.Text 자리다. 이 문자열만으로 현재 기술·자기 방어·최근 로그의 발생 시점까지 해석할 수 없다. C3 사용자는 필드 의미와 현재 목표를 확인하지 못했다. 화면 관측과 소스 필드 대응을 구별한다.",
+      "dataPath": null,
+      "elementSources": [
+        {
+          "boundary": null,
+          "id": "CKAI-02#2-7",
+          "sources": [
+            {
+              "end": 191,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+              "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+              "start": 176,
+              "text": "176: ### 2-7. AI 목록과 생략된 명령 안내\n177: \n178: ID: `CKAI-02#2-7`\n179: \n180: 줄바꿈은 PNG 기준. '없음' 필드의 의미 및 … 뒤 전체 명령은 미확인. 이 화면만으로 개별 명령의 지원/효과를 확정하지 않음.\n181: \n182: ```text\n183: AI: Claude 켜짐/들어와\n184: 있음/없음 · ChatGPT\n185: 꺼짐/들어와 있지 않음 ·\n186: Gemini 꺼짐/들어와 있지\n187: 않음 · Grok 꺼짐/들어와\n188: 있지 않음 · 명령: /ai\n189: <〔인자명 판독 불확실〕> on|off|goal …\n190: ```\n191: "
+            }
+          ]
+        }
+      ],
+      "elements": [
+        "CKAI-02#2-7"
+      ],
+      "evidence": [
+        "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+        "../2026-11-05-지식그래프-실화면/C3/flow-check.md",
+        "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md"
+      ],
+      "feature": "slash:ai",
+      "paths": [
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "kind": "call",
+              "line": 75,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+              "type": "reference"
+            }
+          ],
+          "sources": [
+            {
+              "end": 251,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "sha256": "2109a0426be7642153230da8c0401b550cb91f65bfa983ab0bbe48a9254c106c",
+              "start": 241,
+              "text": "241:     private static string StatusAll()\n242:     {\n243:         var l = new List<string>();\n244:         foreach (var a in AIAgent.All)\n245:             using (AIAgent.Enter(a))\n246:             {\n247:                 bool on = AIWorldSettings.Members(WorldId).Contains(a.Id);\n248:                 l.Add($\"{a.Name} {(on ? \"켜짐\" : \"꺼짐\")}/{StageText()}{(_stage == Stage.Walking ? \"/\" + AIBrain.Goal.Text : \"\")}\");\n249:             }\n250:         return \"AI: \" + string.Join(\" · \", l) + \" · 명령: /ai <멤버> on|off|goal …\";\n251:     }"
+            }
+          ]
+        }
+      ],
+      "question": "상태 뒤 /없음은 동료가 아무 행동도 안 한다는 뜻인가?",
+      "targets": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()"
+      ]
+    },
+    {
+      "activity": "CKAI-ACT-01",
+      "answer": "상태 결과는 Reply 큐에 넣고 다음 Update가 FlushReplies에서 게임 ChatWindow.RenderText를 reflection으로 부른다. slash:ai 직접 호출 트리와 다음 프레임 전달은 구별하며 가짜 call/render 간선을 만들지 않았다. Luminous: /ai 에코는 게임 본체 출력으로 미매칭이다.",
+      "dataPath": null,
+      "displayHook": [
+        "hook:AIPlayerSpikeMod.Update — 호스트 월드 여부를 확인하고 멤버별 상태 기계와 게임 내 작업을 갱신한다.",
+        "  code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update() — Update",
+        "    [B 추출 경계 기록 3개] System.Diagnostics.Stopwatch.GetTimestamp, System.Diagnostics.Stopwatch.GetTimestamp, AIPerf.Frame (전체: B/boundaries.json)",
+        "      [B 추출 경계 기록 1개] Debug.LogError (전체: B/boundaries.json)",
+        "      [B 추출 경계 기록 1개] Scope (전체: B/boundaries.json)",
+        "      [B 추출 경계 기록 4개] members.Contains, Log, string.Join (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 7개] .GetMethod, .GetMethod, st.GetFrame (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 4개] Debug.Log, msg.StartsWith, msg.StartsWith (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 2개] _w.Write, _w.WriteLine (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] Path.Combine, .Dispose, .Flush (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] T (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 7개] server.EntityManager.Exists, AIBody.Stop, AICharacterStore.SaveFromServer (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 3개] string.IsNullOrEmpty, string.IsNullOrEmpty, cur.Contains (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 3개] em.Exists, em.GetComponentData<HealthCD>, em.HasComponent<HealthCD> (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 16개] AIBaseGuard.TailNeeded, math.distance, s.doors.ContainsKey (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] server.EntityManager.GetComponentData<LocalTransform> (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 2개] math.distance, DoorView (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 10개] ComponentType.ReadOnly<LocalTransform>, ComponentType.ReadOnly<ObjectDataCD>, em.CreateEntityQuery (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 2개] em.HasComponent<DoorCD>, em.HasComponent<GateCD> (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 3개] math.round, math.round, int2 (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 4개] ComponentType.ReadOnly<SubMapRegistry>, _em.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] S.inside.Contains (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] Top(p).tileType.IsWalkableTile (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] best.tileType.GetSurfacePriority, t.tileType.GetSurfacePriority (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 9개] _em.Exists, _em.HasBuffer<SubMapLayerBuffer>, _map.TryGetValue (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 2개] _frame.TryGetValue, math.all (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 65개] _what.TryGetValue, what.Clear, _critterOnly.TryGetValue (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 2개] _bigSeen.TryGetValue, BigObjectMemory (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] math.abs (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 14개] cam.ViewportPointToRay, plane.Raycast, r.GetPoint (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] _m.Remove (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] (gone ?? (gone = new List<long>())).Add, inView, seenNow.Contains (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] float2 (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 2개] blocked.Contains, shut.Contains (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 2개] Math.Abs, DoorPassState (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 6개] em.Exists, em.GetComponentData<LocalTransform>, string.Join (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] _child.Cleanup (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 2개] server.EntityManager.Exists, server.EntityManager.DestroyEntity (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] (_tServer - StartTime).ToString (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 3개] msg.StartsWith, _repeatGate.Allow, _pendingReplies.Enqueue (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] l.Add, List<AIAgent> (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 11개] string.IsNullOrEmpty, sb.Append, sb.Append (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] _last.TryGetValue (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 14개] _recent.Add, string.IsNullOrEmpty, _recent.RemoveAt (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] s.Substring, string.IsNullOrEmpty (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 3개] reason.StartsWith, reason.StartsWith, reason.StartsWith (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] reason.StartsWith (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] reason.Contains (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] _req.Abort, _req.Dispose (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 59개] em.Exists, em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer> (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 8개] Directory.CreateDirectory, Path.GetDirectoryName, JsonUtility.ToJson (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 3개] items.Add, string.Join, List<string> (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 6개] Latencies.Clear, _noPathAreas.Clear, _seenEnemies.Clear (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 59개] s.Add, s.Add, v.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 34개] si.Add, st.Add, hi.Add (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 2개] _states.TryGetValue, State (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 23개] l.Add, l.Add, l.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 12개] l.Add, l.Add, l.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 25개] id.Add, op.Add, pl.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 14개] since.Add, xy.Add, xy.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 10개] id.Add, sn.Add, xy.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 9개] ins.Add, ins.Add, ins.ToArray (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] l.Add, l.Add, l.Add (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] l.Add, l.Add, l.Add (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 4개] l.Add, l.Add, l.ToArray (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 2개] DropPress, float2 (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 2개] _choices.Clear, _hist.Clear (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 3개] _req.Abort, _req.Dispose, _events.Clear (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] s.bosses.Clear (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 2개] _st.TryGetValue, State (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 6개] string.IsNullOrEmpty, Clock, Math.Max (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] l.Add, string.IsNullOrEmpty, l.Add (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 10개] Clock, Math.Round, string.IsNullOrEmpty (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 3개] (items ?? Enumerable.Empty<string>()).Select, Enumerable.Empty<string>, string.Join (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 10개] string.IsNullOrEmpty, sb.Append, sb.Append (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 1개] d.ToString (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] DateTimeOffset.UtcNow.ToUnixTimeSeconds (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] _runs.Add, Rows.Add, ByKey.TryGetValue (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 3개] Math.Round, File.WriteAllText, UTF8Encoding (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 6개] File.Exists, File.Move, File.Replace (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 27개] MaxHp, em.GetComponentData<HealthCD>, em.HasComponent<HealthCD> (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] server.EntityManager.Exists (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 3개] em.GetBuffer<SummarizedConditionEffectsBuffer>, em.HasBuffer<SummarizedConditionEffectsBuffer>, h.GetMaxHealthWithConditions (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 18개] math.floor, math.floor, s.biomeCache.TryGetValue (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 26개] string.IsNullOrEmpty, _noDamage.Clear, _ores.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] s.chests.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 2개] S.pots.Clear, S.watch.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] _d.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 5개] s.doors.Clear, s.gaps.Clear, s.inside.Clear (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] _m.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] s.bad.Clear, s.growthLogged.Clear, s.plots.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 6개] _bigSeen.Clear, _critterOnly.Clear, _frame.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 2개] Path.Combine, Directory.CreateDirectory (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 6개] Path.Combine, Path.Combine, Path.Combine (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] _hit.ContainsKey, _taken.ContainsKey, _away.ContainsKey (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 3개] _d.TryGetValue, Math.Max, Stat (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 5개] list.Add, int2, List<ChestMem> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 3개] int2, Plot, int2 (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 2개] int2, PotMem (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 8개] s.inside.Add, s.gaps.Add, s.gaps[gi].Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] int2 (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] _m.Clear (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] S.myDoors.Clear, S.myDoors.Add, int2 (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] ((ObjectID)kv.Key).ToString, parts.Add, string.Join (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 4개] _d.TryGetValue, parts.Add, string.Join (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] math.distance, parts.Add, string.Join (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] DateTimeOffset.UtcNow.ToUnixTimeSeconds (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 4개] AIVision.CanSee, l.Add, l.Sort (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 3개] math.distance, math.distance, math.distance(aiPos.xz, (float2)a.tile).CompareTo (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 2개] PugDatabase.GetComponent<LevelCD>, PugDatabase.HasComponent<LevelCD> (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] s.runAreas.OrderByDescending, s.runAreas.OrderByDescending(kv => kv.Value).First (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] _list.Clear (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] _steps.Clear (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 103개] AccessTools.Field, AccessTools.Field, AccessTools.Method (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 3개] _harmony.Patch, HarmonyMethod, HarmonyMethod (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 7개] typeof(StartGameRPCSystem).GetNestedTypes, typeof(StartGameRPCSystem).GetNestedTypes, t.GetMethods (전체: B/boundaries.json)",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ServerNetworkUpdatePrefix() — ServerNetworkUpdatePrefix [다른 기능/화면 경계]",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.UnloadWorldsPrefix() — UnloadWorldsPrefix [다른 기능/화면 경계]",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.SpawnLambdaPrefix(object[]) — SpawnLambdaPrefix [다른 기능/화면 경계]",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.SpawnLambdaPostfix() — SpawnLambdaPostfix [다른 기능/화면 경계]",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData) — CharacterDataPostfix [다른 기능/화면 경계]",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool) — ChatSendPrefix [다른 기능/화면 경계]",
+        "          [B 추출 경계 기록 4개] Input.GetKeyDown, __instance.inputField.GetText, string.IsNullOrEmpty (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 1개] Array.ConvertAll (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 8개] al.Add, al.AddRange, al.AddRange (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 1개] input.Substring (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 4개] p.ToLowerInvariant, a.ToLowerInvariant, r.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] string.IsNullOrEmpty, input.Substring (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] char.IsLetterOrDigit (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] string.CompareOrdinal (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] Cho.IndexOf (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 10개] AccessTools.Field, AccessTools.Field, AccessTools.Field (전체: B/boundaries.json)",
+        "        framework-invoked code:Assets/AIPlayerSpike/Scripts/AIChatWindow.cs#AIChatWindow.LateUpdatePostfix(ChatWindow) — LateUpdatePostfix",
+        "            [B 추출 경계 기록 4개] AccessTools.Field, AccessTools.Field, _fadesF.GetValue (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] _orig.Clear (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 14개] File.Exists, Directory.CreateDirectory, Path.GetDirectoryName (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] float.IsInfinity, float.IsNaN (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 6개] _orig.ContainsKey, AnimationCurve, Keyframe (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 3개] __instance.transform.IsChildOf, _changed.Add, _changed.RemoveWhere (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 1개] NativeOnly.Contains (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 5개] Texts.Add, Owned.ContainsKey, NativeOnly.Add (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 4개] Texts.Contains, Owned.TryGetValue, Owned.Remove (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 1개] ReferenceEquals (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 10개] Bar.Contains, Panel.Contains, Input.GetMouseButton (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] AIUiLayout (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] Rect (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] Rect (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] Manager.menu.IsAnyMenuActive (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 6개] ComponentType.ReadOnly<ServerGuidCD>, server.EntityManager.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 9개] File.Exists, File.ReadAllText, JsonUtility.FromJson<Data> (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 1개] File.Exists (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 13개] UnityEngine.Hash128.Compute, Manager.saves.GetWorldInfo, Manager.saves.GetWorldId (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 4개] Path.Combine, File.Exists, File.Exists (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 3개] JsonUtility.FromJsonOverwrite, cd.UpgradeIfOutdated, CharacterData (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 17개] Manager.saves.playerCustomizationTable.TryGet, DistinctLook, Manager.saves.GetCharacterCustomization (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 25개] t.bodySkinCollection.Get, t.eyeSkinCollection.Get, t.shirtSkinCollection.Get (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 3개] math.max, math.max, math.max (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 3개] PugDatabase.GetObjectInfo, given.Add, ObjectDataCD (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 3개] cd.inventory.Add, cd.inventoryObjectNames.Add, cd.inventoryAuxData.Add (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 8개] PugDatabase.GetObjectInfo, facts.Add, parts.Add (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 15개] ComponentType.ReadOnly<PlayerGhost>, em.CreateEntityQuery, q.ToEntityArray (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 5개] DefaultWorldInitialization.GetAllSystems, DefaultWorldInitialization.AddSystemsToRootLevelSystemGroups, ScriptBehaviourUpdateOrder.AppendWorldToCurrentPlayerLoop (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 19개] ComponentType.ReadOnly<NetworkStreamConnection>, em.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 6개] ComponentType.ReadOnly<GhostOwner>, ComponentType.ReadOnly<LocalTransform>, ComponentType.ReadOnly<PlayerGhost> (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 18개] ComponentType.ReadOnly<NetworkStreamConnection>, em.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 5개] ComponentType.ReadOnly<NetworkProtocolVersion>, w.EntityManager.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 8개] BufferSummary, ComponentType.ReadOnly<PlayerGhost>, em.CreateEntityQuery (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 6개] em.Exists, em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer> (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 11개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, CraftableAt (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 8개] ComponentType.ReadOnly<PugDatabase.DatabaseBankCD>, em.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 19개] sem.Exists, sem.GetComponentData<PlayerCustomizationCD>, cust.customization.name.ToString (전체: B/boundaries.json)",
+        "        [B 추출 경계 기록 32개] q.GetSingleton<NetworkTime>, AIBody.UseBitFor, AIBody.NudgeFor (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 1개] float2 (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 3개] math.clamp, tick.TicksSince, UnsafeUtility.As<ClientInput, ClientInputData> (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 21개] cem.GetComponentData<LocalTransform>, cem.GetComponentData<PlayerGhost>, _w.WriteLine (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 6개] System.IO.Path.Combine, _w.WriteLine, .Dispose (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] System.IO.Path.Combine (전체: B/boundaries.json)",
+        "          [B 추출 경계 기록 10개] _seenEnemies.Contains, _seenEnemies.Add, o.enemies.Exists (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 6개] _antNew.Clear, S._chargePend.Add, em.GetComponentData<LocalTransform> (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 3개] into.Add, math.max, Anticipation (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 8개] Path.Combine, File.Exists, File.ReadAllText (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 2개] _brutes.TryGetValue, V2 (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] Math.Sqrt (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 4개] Directory.CreateDirectory, File.WriteAllText, JsonUtility.ToJson (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 7개] DateTime.Now.ToString, Path.Combine, File.Exists (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 4개] Array.Resize, Array.Resize, Array.Resize (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] a.Stale (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] Kinds.TryGetValue (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 5개] S._left.RemoveAll, S._left.Exists, S._left.Add (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 4개] key.IndexOf, key.IndexOf, key.Substring (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 2개] string.IsNullOrEmpty, string.IsNullOrEmpty (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] a.Make (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 2개] _choices.Add, _choices.RemoveAt (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] desc.StartsWith, desc.IndexOf, desc.Substring (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 3개] em.Exists, em.GetComponentData<LocalTransform>, e.GetType (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] em.Exists, em.HasComponent<Unity.Transforms.LocalTransform>, em.GetComponentData<Unity.Transforms.LocalTransform> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 6개] o.enemies.Find, Facts.Add, string.IsNullOrEmpty (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 58개] em.GetComponentData<LocalTransform>, AIVision.CanSee, em.GetBuffer<ContainedObjectsBuffer> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 10개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, PlayerController.ItemIsBroken (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 9개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, MainEnd (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, PlayerController.ItemIsBroken (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 6개] em.Exists, em.HasBuffer<ContainedObjectsBuffer>, _invBefore.TryGetValue (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, PugDatabase.GetObjectInfo (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] math.distance, _doorsUsed.Clear, _stuckBlocked.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 5개] em.Exists, em.HasBuffer<ContainedObjectsBuffer>, em.GetComponentData<LocalTransform> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 9개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, em.GetComponentData<CraftingCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] d.TryGetValue, parts.Add, string.Join (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 6개] Alive, em.GetComponentData<ObjectDataCD>, em.HasComponent<ObjectDataCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 7개] em.Exists, em.HasComponent<Disabled>, em.HasComponent<HealthCD> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 3개] Facts.Add, string.IsNullOrEmpty, Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] tr.Layers(t).Exists (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 9개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, MainEnd (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] Facts.Add, string.IsNullOrEmpty, em.GetComponentData<HealthCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] em.GetBuffer<ContainedObjectsBuffer>, PugDatabase.GetObjectInfo (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] AIBody.InventoryCounts(server, player).TryGetValue (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 11개] ComponentType.ReadOnly<EnemyCD>, ComponentType.ReadOnly<HealthCD>, ComponentType.ReadOnly<LocalTransform> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 18개] math.distance, math.min, q.Enqueue (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] Facts.Add, math.all (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] _invBefore.TryGetValue, em.GetComponentData<LocalTransform>, Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] em.Exists, em.GetComponentData<CraftingCD>, em.HasComponent<CraftingCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] em.HasComponent<LocalTransform>, AIBody.TileOf, em.GetComponentData<LocalTransform> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 10개] em.Exists, em.HasBuffer<CanCraftObjectsBuffer>, em.GetBuffer<CanCraftObjectsBuffer> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 4개] em.HasBuffer<CanCraftObjectsBuffer>, em.GetBuffer<CanCraftObjectsBuffer>, res.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 4개] PugDatabase.GetObjectInfo, inv.TryGetValue, res.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] m.TrueForAll (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] parts.Add, string.Join, List<string> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 3개] Facts.Add, _tiles.ConvertAll, string.Join (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 11개] math.dot, math.round, math.round (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 3개] Facts.Add, _tiles.ConvertAll, string.Join (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] AIBody.InventoryCounts(server, player).TryGetValue (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 30개] sb.Append, sb.Append, sb.Append (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 6개] ComponentType.ReadOnly<LocalTransform>, ComponentType.ReadOnly<PlayerGhost>, em.CreateEntityQuery (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 14개] ComponentType.ReadOnly<TileWithTilesetToObjectDataMapCD>, em.CreateEntityQuery, q.CalculateEntityCount (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 12개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, math.min (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 5개] AIVision.CanSee, math.distance, Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] res.Add, HashSet<int2> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] math.distance, int2, int2 (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 6개] Facts.Add, string.IsNullOrEmpty, em.HasBuffer<ContainedObjectsBuffer> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 11개] ComponentType.ReadOnly<HealthCD>, ComponentType.ReadOnly<LocalTransform>, ComponentType.ReadOnly<ObjectDataCD> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 7개] inv.TryGetValue, Facts.Add, string.IsNullOrEmpty (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, PugDatabase.GetObjectInfo (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 10개] ComponentType.ReadOnly<InventoryAutoTransferEnabledCD>, ComponentType.ReadOnly<LocalTransform>, em.CreateEntityQuery (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] ComponentType.ReadOnly<InventoryAutoTransferEnabledCD>, PrefabHas (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] _potItem.TryGetValue, em.GetComponentData<CraftingCD>, em.HasComponent<CraftingCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 13개] ComponentType.ReadOnly<CraftingCD>, ComponentType.ReadOnly<LocalTransform>, ComponentType.ReadOnly<ObjectDataCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 16개] ComponentType.ReadOnly<CanCraftObjectsBuffer>, ComponentType.ReadOnly<LocalTransform>, ComponentType.ReadOnly<ObjectDataCD> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 3개] Facts.Add, _tiles.ConvertAll, string.Join (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 8개] Alive, em.GetComponentData<ObjectDataCD>, em.HasComponent<ObjectDataCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 7개] em.Exists, em.HasComponent<Disabled>, em.HasComponent<HealthCD> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] em.HasBuffer<ContainedObjectsBuffer>, em.GetBuffer<ContainedObjectsBuffer>, PlayerController.ItemIsBroken (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 4개] em.Exists, em.GetComponentData<HealthCD>, em.HasComponent<HealthCD> (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] e.GetType, Facts.Add (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 5개] math.distance, em.GetComponentData<PhysicsVelocity>, em.HasComponent<PhysicsVelocity> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] System.Math.Sqrt, System.Math.Sqrt (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 1개] Facts.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 11개] math.max, math.min, math.any (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 5개] d.TryGetValue, s.Add, string.Join (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 11개] edgeOk.Add, AIBaseGuard.EdgeWallsOn, plan.walls.ConvertAll (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 7개] k.Contains, k.Replace, k.Replace(\"left\", \"#\").Replace (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] b.picks.Add (전체: B/boundaries.json)",
+        "            [B 추출 경계 기록 1개] AIBody.InventoryCounts(server, player).TryGetValue (전체: B/boundaries.json)",
+        "              [B 추출 경계 기록 1개] (source ?? \"\").StartsWith (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] Array.AsReadOnly (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 1개] Array.AsReadOnly (전체: B/boundaries.json)",
+        "                [B 추출 경계 기록 1개] AIGoal (전체: B/boundaries.json)",
+        "                  [B 추출 경계 기록 5개] AIBody.InventoryCounts(s.server, s.player).TryGetValue, Math.Min, Math.Max (전체: B/boundaries.json)",
+        "                    [B 추출 경계 기록 4개] string.IsNullOrEmpty, Stopwatch.StartNew, s.biomeCache.Clear (전체: B/boundaries.json)",
+        "                      [B 추출 경계 기록 40개] Directory.CreateDirectory, File.Exists, notes.Add (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 2개] File.Exists, File.ReadAllText (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] d.TryGetValue (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] d.TryGetValue (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] string.IsNullOrEmpty, string.IsNullOrEmpty, ExpRun (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 3개] d.TryGetValue, r.Add, List<string> (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 4개] Directory.Exists, Directory.GetFiles, Directory.GetFiles(Dir, \"events*.jsonl\").OrderBy (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] text.Split (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 8개] File.Exists, Math.Max, fs.Seek (전체: B/boundaries.json)",
+        "                        [B 추출 경계 기록 1개] d.TryGetValue (전체: B/boundaries.json)",
+        "    call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.FlushReplies() — FlushReplies"
+      ],
+      "elementSources": [
+        {
+          "boundary": "게임 채팅 에코; 모드 Reply 출력으로 매칭하지 않음",
+          "id": "CKAI-02#2-6",
+          "sources": [
+            {
+              "end": 175,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+              "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+              "start": 166,
+              "text": "166: ### 2-6. 제출된 /ai 채팅 에코\n167: \n168: ID: `CKAI-02#2-6`\n169: \n170: 원본 직접 관측.\n171: \n172: ```text\n173: Luminous: /ai\n174: ```\n175: "
+            }
+          ]
+        },
+        {
+          "boundary": null,
+          "id": "CKAI-02#2-7",
+          "sources": [
+            {
+              "end": 191,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+              "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+              "start": 176,
+              "text": "176: ### 2-7. AI 목록과 생략된 명령 안내\n177: \n178: ID: `CKAI-02#2-7`\n179: \n180: 줄바꿈은 PNG 기준. '없음' 필드의 의미 및 … 뒤 전체 명령은 미확인. 이 화면만으로 개별 명령의 지원/효과를 확정하지 않음.\n181: \n182: ```text\n183: AI: Claude 켜짐/들어와\n184: 있음/없음 · ChatGPT\n185: 꺼짐/들어와 있지 않음 ·\n186: Gemini 꺼짐/들어와 있지\n187: 않음 · Grok 꺼짐/들어와\n188: 있지 않음 · 명령: /ai\n189: <〔인자명 판독 불확실〕> on|off|goal …\n190: ```\n191: "
+            }
+          ]
+        }
+      ],
+      "elements": [
+        "CKAI-02#2-6",
+        "CKAI-02#2-7"
+      ],
+      "evidence": [
+        "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+        "../2026-11-05-지식그래프-실화면/C3/flow-check.md",
+        "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md"
+      ],
+      "feature": "slash:ai",
+      "paths": [
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+          "path": [
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/활동-동료확인.md",
+              "from": "CKAI-ACT-01",
+              "scope": "/ai 입력·제출과 입력 닫힘",
+              "to": "CKAI-02#3",
+              "type": "유저 활동→화면요소"
+            },
+            {
+              "evidence": "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md",
+              "evidenceSources": [
+                "../2026-11-05-지식그래프-실화면/A1/observations.json",
+                "../2026-11-05-지식그래프-실화면/A2/manifest.json",
+                "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json",
+                "../2026-11-05-지식그래프-실화면/C3/flow-check.md"
+              ],
+              "from": "CKAI-02#3",
+              "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+              "runtimeTrace": false,
+              "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+              "to": "slash:ai",
+              "type": "화면요소→기능"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "slash:ai",
+              "line": 27,
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "type": "기능→코드"
+            },
+            {
+              "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+              "kind": "call",
+              "line": 51,
+              "resolution": "semantic",
+              "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+              "type": "reference"
+            }
+          ],
+          "sources": [
+            {
+              "end": 261,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "sha256": "2109a0426be7642153230da8c0401b550cb91f65bfa983ab0bbe48a9254c106c",
+              "start": 252,
+              "text": "252:     internal static void Reply(string msg, ChatKind kind = ChatKind.Command, string repeatKey = null)\n253:     {\n254:         var who = AIAgent.InScope;\n255:         if (who != null && !msg.StartsWith(\"[\") && (who.Index != 0 || Joined().Count > 1)) msg = $\"[{who.Name}] \" + msg;\n256:         msg = ChatPolicy.FontSafe(msg);   // the game font has no arrows (실게임2 N5)\n257:         if (!ChatPolicy.Show(kind, AIBrain.Verbose)) { Log(\"chat hidden (status): \" + msg); return; }\n258:         if (repeatKey != null && !_repeatGate.Allow((who?.Id ?? \"-\") + \"|\" + repeatKey, Time.realtimeSinceStartup)) { Log(\"chat hidden (same notice within 5 min): \" + msg); return; }\n259:         Log(\"chat reply: \" + msg);\n260:         _pendingReplies.Enqueue(msg);\n261:     }"
+            }
+          ]
+        },
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+          "path": null,
+          "sources": [
+            {
+              "end": 261,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+              "sha256": "84f18efeefa25a0c920d8bb095e444531f1dd5e3c1bb3b8c5318f000ed5cf285",
+              "start": 226,
+              "text": "226:     public void Update()\n227:     {\n228:         bool hosted = false;\n229:         World server = null;\n230:         try { hosted = InHostedGame(out server); } catch (Exception e) { LogError(\"hosted-game check failed\", e); }\n231:         // Every member has its own state machine; members that are off just sit in Stage.Disabled.\n232:         foreach (var a in AIAgent.All)\n233:         {\n234:             using (AIAgent.Enter(a))\n235:             {\n236:                 long t0 = System.Diagnostics.Stopwatch.GetTimestamp();\n237:                 try\n238:                 {\n239:                     Tick(hosted, server);\n240:                 }\n241:                 catch (Exception e)\n242:                 {\n243:                     LogError($\"exception in stage {_stage}; stopping this character\", e);\n244:                     SetStage(Stage.Stopped);\n245:                 }\n246:                 if (_stage == Stage.Walking)\n247:                 {\n248:                     double ms = (System.Diagnostics.Stopwatch.GetTimestamp() - t0) * 1000.0 / System.Diagnostics.Stopwatch.Frequency;\n249:                     a.TickMsSum += ms; a.TickN++; if (ms > a.TickMsMax) a.TickMsMax = ms;\n250:                 }\n251:             }\n252:         }\n253:         try { AIChatHint.Frame(hosted); } catch (Exception e) { LogError(\"chat hint failed\", e); }   // hint only in our own world (검수 작은 지적 5)\n254:         try { AIChatScreenLayer.Frame(hosted); } catch (Exception e) { LogError(\"chat screen layer failed\", e); }\n255:         try { AIInfoPanel.Frame(hosted, server); } catch (Exception e) { LogError(\"AI info UI failed\", e); }\n256:         if (hosted)\n257:         {\n258:             FlushReplies();\n259:             try { AIPerf.Frame(server); } catch (Exception e) { LogError(\"perf sample failed\", e); }\n260:         }\n261:     }"
+            }
+          ]
+        },
+        {
+          "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.FlushReplies()",
+          "path": null,
+          "sources": [
+            {
+              "end": 284,
+              "path": "B/snapshot/Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+              "sha256": "2109a0426be7642153230da8c0401b550cb91f65bfa983ab0bbe48a9254c106c",
+              "start": 263,
+              "text": "263:     private static void FlushReplies()\n264:     {\n265:         while (_pendingReplies.Count > 0)\n266:         {\n267:             string msg = _pendingReplies.Dequeue();\n268:             try\n269:             {\n270:                 var cw = Manager.ui != null ? Manager.ui.chatWindow : null;\n271:                 if (_renderChatText == null) _renderChatText = AccessTools.Method(typeof(ChatWindow), \"RenderText\");\n272:                 if (cw == null || _renderChatText == null)\n273:                 {\n274:                     LogError($\"chat reply not shown (chatWindow={(cw != null)}, RenderText={(_renderChatText != null)}): {msg}\");\n275:                     continue;\n276:                 }\n277:                 _renderChatText.Invoke(cw, new object[] { msg });\n278:             }\n279:             catch (Exception e)\n280:             {\n281:                 LogError(\"chat reply failed: \" + msg, e);\n282:             }\n283:         }\n284:     }"
+            }
+          ]
+        }
+      ],
+      "question": "상태 응답은 어떻게 화면에 표시되며 게임 채팅 에코도 같은 결과인가?",
+      "targets": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.FlushReplies()"
+      ]
+    },
+    {
+      "activity": "CKAI-ACT-01",
+      "answer": "A3의 플레이어 관리는 관리자/차단 목록으로 목적에 맞지 않았다. 이 화면의 게임 본체 구현은 기존 모드 추출 범위 밖이다. 최근 공격 메시지는 보였지만 AI 접두어만으로 특정 동료와 현재 목표를 확정하지 않는다. 전투 실행판 전체도 기준판 코드 그래프와 다르다.",
+      "dataPath": null,
+      "elementSources": [
+        {
+          "boundary": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음",
+          "id": "CKAI-03#7",
+          "sources": [
+            {
+              "end": 155,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-03.md",
+              "sha256": "d06bce63ee8e7a265431731b9d46849cead3ec41e239dd45626ac27652acf175",
+              "start": 146,
+              "text": "146: ### 7. 플레이어 관리\n147: \n148: ID: `CKAI-03#7`\n149: \n150: 원본 직접 관측.\n151: \n152: ```text\n153: 플레이어 관리\n154: ```\n155: "
+            }
+          ]
+        },
+        {
+          "boundary": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음",
+          "id": "CKAI-04#2-1",
+          "sources": [
+            {
+              "end": 67,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-04.md",
+              "sha256": "37d370aae6a357a675e140ec5e68652ec75d153b8dc929c8285f0672d6334b07",
+              "start": 58,
+              "text": "58: ### 2-1. 관리자 이름 행\n59: \n60: ID: `CKAI-04#2-1`\n61: \n62: 원본 직접 관측\n63: \n64: ```text\n65: Luminous\n66: ```\n67: "
+            }
+          ]
+        },
+        {
+          "boundary": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음",
+          "id": "CKAI-04#3-1",
+          "sources": [
+            {
+              "end": 88,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-04.md",
+              "sha256": "37d370aae6a357a675e140ec5e68652ec75d153b8dc929c8285f0672d6334b07",
+              "start": 78,
+              "text": "78: ### 3-1. 차단 목록 빈 상태\n79: \n80: ID: `CKAI-04#3-1`\n81: \n82: 원본 직접 관측\n83: \n84: ```text\n85: 차단된 플레이어가\n86: 없습니다.\n87: ```\n88: "
+            }
+          ]
+        },
+        {
+          "boundary": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음",
+          "id": "CKAI-02#2-2",
+          "sources": [
+            {
+              "end": 118,
+              "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+              "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+              "start": 107,
+              "text": "107: ### 2-2. 공격 완료 메시지\n108: \n109: ID: `CKAI-02#2-2`\n110: \n111: 〔기호 불확실〕은 편집 표기이며 화면 문구 아님. A1 전사는 70→70이나 원본 픽셀에서 두 숫자 사이 기호를 확정하지 못함.\n112: \n113: ```text\n114: AI 공격 완료:\n115: MushroomEnemy 처치\n116: (체력 70〔기호 불확실〕70) (3.9초)\n117: ```\n118: "
+            }
+          ]
+        }
+      ],
+      "elements": [
+        "CKAI-03#7",
+        "CKAI-04#2-1",
+        "CKAI-04#3-1",
+        "CKAI-02#2-2"
+      ],
+      "evidence": [
+        "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+        "../2026-11-05-지식그래프-실화면/C3/flow-check.md",
+        "../2026-11-05-지식그래프-실화면/C/화면-기능-원문.md"
+      ],
+      "paths": [],
+      "question": "플레이어 관리에서 AI 목표를 찾거나 최근 공격 메시지를 Claude 행동으로 확정할 수 있는가?",
+      "targets": []
+    }
+  ]
+}

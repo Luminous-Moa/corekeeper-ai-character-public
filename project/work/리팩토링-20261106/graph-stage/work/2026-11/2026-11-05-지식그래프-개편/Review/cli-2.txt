@@ -1,0 +1,33 @@
+ai-bridge:GET /v1/health — 브리지에 보관된 멤버별 사전 점검 상태와 처리 중 멤버를 반환한다.
+[조회 한도: 깊이 12, 코드 800개]
+  code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health — GET /v1/health
+    [B 추출 경계 기록 1개] health (전체: B/boundaries.json)
+    call code:Tools/ai-bridge/preflight.mjs#health@3942 — health
+      [B 추출 경계 기록 5개] Object.fromEntries, Object.keys, Object.keys(MEMBERS).map (전체: B/boundaries.json)
+      callback code:Tools/ai-bridge/preflight.mjs#anonymous@4026 — anonymous
+        call code:Tools/ai-bridge/preflight.mjs#memberHealth@3334 — memberHealth
+      callback code:Tools/ai-bridge/preflight.mjs#anonymous@4105 — anonymous
+    call code:Tools/ai-bridge/bridge.mjs#send@9521 — send
+      [B 추출 경계 기록 3개] JSON.stringify, res.end, res.writeHead (전체: B/boundaries.json)
+  code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe() — HealthProbe
+    [B 추출 경계 기록 2개] UnityWebRequest.Get, _health.SendWebRequest (전체: B/boundaries.json)
+    call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Log(string) — Log
+      [B 추출 경계 기록 4개] Debug.Log, msg.StartsWith, msg.StartsWith (전체: B/boundaries.json)
+      call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Who — Who
+        call code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.InScope — InScope
+      call code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.Write(string) — Write
+        [B 추출 경계 기록 2개] _w.Write, _w.WriteLine (전체: B/boundaries.json)
+        call code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.InScope — InScope [이미 펼침]
+        call code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.ToggleLog(bool) — ToggleLog
+          [B 추출 경계 기록 5개] Path.Combine, .Dispose, .Flush (전체: B/boundaries.json)
+          write → data:Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path — Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path
+          call code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.Dir — Dir
+            [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)
+          call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Log(string) — Log [이미 펼침]
+          call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.LogError(string, System.Exception) — LogError
+            [B 추출 경계 기록 1개] Debug.LogError (전체: B/boundaries.json)
+            call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Who — Who [이미 펼침]
+          call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Log(string) — Log [이미 펼침]
+        call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.LogError(string, System.Exception) — LogError [이미 펼침]
+
+추출·실행 경계: B/boundaries.json 및 D/validation.json 참조. 정적 도달은 실행 증명이 아님.

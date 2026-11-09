@@ -1,0 +1,507 @@
+{
+  "sessionRoot": "../..",
+  "docs": [
+    "기획/제품코어.md",
+    "기획/정책.md",
+    "기획/기능.md",
+    "기획/미결.md"
+  ],
+  "codeRoot": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-개편/B/snapshot",
+  "codeDirs": [
+    "Assets/AIPlayerSpike/Scripts",
+    "Assets/HeadlessTools/Editor"
+  ],
+  "codeFiles": [
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIActions.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIAgents.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIApproach.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBase.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBaseProbe.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBed.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBody.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBrain.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIBreakSkills.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChargeWatch.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatHint.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChatWindow.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestAreas.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIChestMode.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICombat.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICombatOptions.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFont.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICompactFontData.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICook.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AICraft.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDoorFacts.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIDrops.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Guard.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Place.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.Reach.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdge.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIEdgeSkills.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExpedition.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIExperience.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIFarm.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGathering.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalFeatures.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoalText.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGoals.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIHandLease.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoPanel.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInfoSnapshot.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventory.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AILife.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMaintenance.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMemory.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMineSkill.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIMoveTrace.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AINavigator.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIObjects.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIObservation.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPickupSkill.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlace.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlaces.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIShortSkills.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AISkill.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AITestControl.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AITestWorldEdit.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AITileReader.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AITravel.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AITunnel.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIVision.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWeaponInput.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldFacts.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIApproachSearch.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseEdge.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseGuard.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIBaseMap.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChargeMath.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatFade.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatLog.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIChatScreenMath.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIContinueText.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIDoorPass.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIExpeditionRules.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIFightLog.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGatheringRules.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHeldChoice.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIHostOrders.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryGoalForm.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMention.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIMoveEstimate.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPickupOptions.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaceGrid.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlaces.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIPressQueue.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AISettle.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIThreatHistory.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITravelRules.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AITunnelSearch.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiLayout.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIUiPointerCapture.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWallRisk.cs"
+    },
+    {
+      "container": "모드(게임 안에서 실행)",
+      "path": "Assets/AIPlayerSpike/Scripts/Core/AIWeaponUseControl.cs"
+    },
+    {
+      "container": "빌드 도구(Unity Editor)",
+      "path": "Assets/HeadlessTools/Editor/HeadlessSdk.cs"
+    }
+  ],
+  "decompRoot": "C:/Dev/_ref/corekeeper-decomp",
+  "out": "graph/graph.json",
+  "summary": "graph/요약.md"
+}

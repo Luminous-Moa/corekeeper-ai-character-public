@@ -1,0 +1,10 @@
+== B/snapshot/Tools/ai-bridge/memgraph.mjs:576-584 sha256=87da12542593c093a13098e96b023e6da33098d7f64a63972064b174724e1e77
+576: export function runQuery(ctx, q) {
+577:   try {
+578:     if (!q || typeof q !== 'object' || Array.isArray(q)) return { text: '질의는 {"q": 이름, ...} 꼴의 객체', hits: 0, err: 'shape' };
+579:     const f = Q[q.q];
+580:     if (!f) return { text: `모르는 q '${q.q}'. 쓸 수 있는 것: ${QUERY_NAMES.join(', ')}`, hits: 0, err: 'q' };
+581:     const r = f(ctx, q);
+582:     return { ...r, text: r.text.length > LIMITS.query ? r.text.slice(0, LIMITS.query - 20) + '…(잘림)' : r.text };
+583:   } catch (e) { return { text: `질의를 처리하지 못함: ${String(e.message || e).slice(0, 100)}`, hits: 0, err: 'error' }; }
+584: }

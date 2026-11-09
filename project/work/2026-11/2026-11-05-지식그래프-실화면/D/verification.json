@@ -1,0 +1,426 @@
+{
+  "checks": [
+    "two independent builds byte-identical",
+    "on-disk graph and validation match regeneration",
+    "all registered source hashes match",
+    "all prior node fields and edges preserved",
+    "prior generated artifacts and preserved citations unchanged",
+    "57 element document sections have exact ID",
+    "activity to input to slash:ai to status/members/file-data path exists",
+    "output producer reverse direction preserved",
+    "no additional product core or command feature",
+    "display candidates remain explicitly non-authoritative"
+  ],
+  "limits": [
+    "정적 도달은 실행 trace 아님",
+    "현재 게임 설정·저장 파일은 읽지 않음",
+    "실제 게임 렌더러·전투 전체 실행판은 기준 그래프 밖"
+  ],
+  "passed": true,
+  "samples": [
+    {
+      "id": "CKAI-03#10-2",
+      "positions": [
+        {
+          "bbox": [
+            1114,
+            197,
+            210,
+            35
+          ],
+          "evidence": "E12",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/12-game-menu.png"
+        }
+      ],
+      "source": [
+        {
+          "end": 207,
+          "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-03.md",
+          "sha256": "d06bce63ee8e7a265431731b9d46849cead3ec41e239dd45626ac27652acf175",
+          "start": 198,
+          "text": "198: ### 10-2. Claude 행\n199: \n200: ID: `CKAI-03#10-2`\n201: \n202: 원본 직접 관측.\n203: \n204: ```text\n205: Claude\n206: ```\n207: "
+        }
+      ],
+      "verdict": "원문 ID·문구·관측 조건 대조; 시각 검수 판정은 report.md 참조"
+    },
+    {
+      "id": "CKHUD-01#5-1",
+      "positions": [
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E01",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/01-world.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E02",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/02-chat-open.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E03",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/03-ai-draft.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E04",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E05",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/05-chat-reopen.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E06",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/06-target-draft.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E07",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/07-target-cancelled.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E08",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/08-chat-open-again.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E09",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/09-chat-scroll-up.png",
+          "selectedSlot": "0"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E10",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/10-chat-closed.png",
+          "selectedSlot": "0"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E11",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/11-slot-restored.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            435,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E13",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/13-world-final.png",
+          "selectedSlot": "1"
+        }
+      ],
+      "source": [
+        {
+          "end": 129,
+          "path": "../2026-11-05-지식그래프-실화면/A2/CKHUD-01.md",
+          "sha256": "41b364ed4fb1a3e9f802f12f20ef407bb5002f6518d77f2c9d4238c04f4b93a6",
+          "start": 119,
+          "text": "119: ### 5-1. 퀵슬롯 1\n120: \n121: ID: `CKHUD-01#5-1`\n122: \n123: 아이템 이름은 아이콘만으로 확정하지 않음.\n124: \n125: ```text\n126: 1\n127: 24\n128: ```\n129: "
+        }
+      ],
+      "verdict": "원문 ID·문구·관측 조건 대조; 시각 검수 판정은 report.md 참조"
+    },
+    {
+      "id": "CKHUD-01#5-8",
+      "positions": [
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E01",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/01-world.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E02",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/02-chat-open.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E03",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/03-ai-draft.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E04",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E05",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/05-chat-reopen.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E06",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/06-target-draft.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E07",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/07-target-cancelled.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E08",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/08-chat-open-again.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E09",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/09-chat-scroll-up.png",
+          "selectedSlot": "0"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E10",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/10-chat-closed.png",
+          "selectedSlot": "0"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E11",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/11-slot-restored.png",
+          "selectedSlot": "1"
+        },
+        {
+          "bbox": [
+            949,
+            852,
+            69,
+            70
+          ],
+          "coordinateSource": "shared region definition",
+          "evidence": "E13",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/13-world-final.png",
+          "selectedSlot": "1"
+        }
+      ],
+      "source": [
+        {
+          "end": 204,
+          "path": "../2026-11-05-지식그래프-실화면/A2/CKHUD-01.md",
+          "sha256": "41b364ed4fb1a3e9f802f12f20ef407bb5002f6518d77f2c9d4238c04f4b93a6",
+          "start": 194,
+          "text": "194: ### 5-8. 퀵슬롯 8\n195: \n196: ID: `CKHUD-01#5-8`\n197: \n198: 아이템 이름은 아이콘만으로 확정하지 않음.\n199: \n200: ```text\n201: 8\n202: 3\n203: ```\n204: "
+        }
+      ],
+      "verdict": "원문 ID·문구·관측 조건 대조; 시각 검수 판정은 report.md 참조"
+    },
+    {
+      "id": "CKAI-03#7",
+      "positions": [
+        {
+          "bbox": [
+            48,
+            717,
+            300,
+            53
+          ],
+          "evidence": "E12",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/12-game-menu.png"
+        }
+      ],
+      "source": [
+        {
+          "end": 155,
+          "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-03.md",
+          "sha256": "d06bce63ee8e7a265431731b9d46849cead3ec41e239dd45626ac27652acf175",
+          "start": 146,
+          "text": "146: ### 7. 플레이어 관리\n147: \n148: ID: `CKAI-03#7`\n149: \n150: 원본 직접 관측.\n151: \n152: ```text\n153: 플레이어 관리\n154: ```\n155: "
+        }
+      ],
+      "verdict": "원문 ID·문구·관측 조건 대조; 시각 검수 판정은 report.md 참조"
+    },
+    {
+      "id": "CKAI-02#2-2",
+      "positions": [
+        {
+          "bbox": [
+            28,
+            347,
+            410,
+            135
+          ],
+          "evidence": "E02",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/02-chat-open.png"
+        },
+        {
+          "bbox": [
+            28,
+            347,
+            410,
+            135
+          ],
+          "evidence": "E03",
+          "raw": "../2026-11-05-지식그래프-실화면/A1/03-ai-draft.png"
+        }
+      ],
+      "source": [
+        {
+          "end": 118,
+          "path": "../2026-11-05-지식그래프-실화면/A2/CKAI-02.md",
+          "sha256": "ee076086870a60f3969ec6d6b4ce445ef1cc81d06f152aae627156db75a467d6",
+          "start": 107,
+          "text": "107: ### 2-2. 공격 완료 메시지\n108: \n109: ID: `CKAI-02#2-2`\n110: \n111: 〔기호 불확실〕은 편집 표기이며 화면 문구 아님. A1 전사는 70→70이나 원본 픽셀에서 두 숫자 사이 기호를 확정하지 못함.\n112: \n113: ```text\n114: AI 공격 완료:\n115: MushroomEnemy 처치\n116: (체력 70〔기호 불확실〕70) (3.9초)\n117: ```\n118: "
+        }
+      ],
+      "verdict": "원문 ID·문구·관측 조건 대조; 시각 검수 판정은 report.md 참조"
+    }
+  ],
+  "seed": 2026110506
+}

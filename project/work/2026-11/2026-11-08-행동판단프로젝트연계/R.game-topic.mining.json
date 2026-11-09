@@ -1,0 +1,73 @@
+{
+  "id": "R.game-topic.mining",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGatherSkill.Tick(World, Entity, float)"
+      ],
+      "counts": {
+        "action_completion": 15,
+        "claim": 19,
+        "verb": 2
+      },
+      "id": "R.game-topic.mining",
+      "labels": [
+        "automated_mine_damage_and_loot",
+        "dig_shovel",
+        "dig_up_entity",
+        "critter_damage_after_dig"
+      ],
+      "planning": [
+        "P.expedition"
+      ],
+      "title": "채굴·채집",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:completion:full-d:critter-after-pilot-dig",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1017436649789838430#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2125841584879135722#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6729735309708721123#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7848739837089933400#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8813596259445491904#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8900071728908637451#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8914586936788573113#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:3104717414155658034#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:3958820527969737915#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:4940489112568778942#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:6219173310831522781#automated_mine_damage_and_loot",
+        "game:completion:full-d:mining:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:6304212774846273488#automated_mine_damage_and_loot",
+        "game:completion:pilot:shovel-digging-spot-dirt-graveyard-1",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-144372203460870711#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2459141596147313655#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-5270231642700377674#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8314246900210402349#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:5062121965500587449#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:7993446700824795153#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:87604618629899976#0",
+        "game:shovel",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1017436649789838430#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2125841584879135722#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6729735309708721123#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7848739837089933400#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8813596259445491904#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8900071728908637451#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8914586936788573113#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:3104717414155658034#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:3958820527969737915#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:4940489112568778942#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:6219173310831522781#automated_mine_damage_and_loot",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:6304212774846273488#automated_mine_damage_and_loot",
+        "game:verb:automated_mine_damage_and_loot",
+        "game:verb:dig_shovel"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

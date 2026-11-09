@@ -1,0 +1,50 @@
+{
+  "note": "Refactor plan 2-계획.md B.1 scenario 10 (review F8): the mod's planner branches that a real CLI almost never produces. One request per step in order; after the last step the last one repeats. Envelopes copy bridge.mjs at 3c3adbe (early returns :208-224, the 200 envelope :280-288, key order kept). {{report_id}} / {{goal_rev}} become the request's numbers.",
+  "steps": [
+    {
+      "name": "1 limit (retry_after_s 120): auto stays on, asks again in 120 s, free time meanwhile",
+      "status": 429,
+      "body": { "ok": false, "error": "limit", "detail": "usage 99% > 85% (fake bridge)", "retry_after_s": 120 }
+    },
+    {
+      "name": "2 parse error: asked again at once with the reason",
+      "status": 200,
+      "body": { "ok": false, "member": "claude", "cli": "fake", "model": null, "effort": null, "ms": 5, "report_id": "{{report_id}}", "goal_rev": "{{goal_rev}}",
+        "answer": null, "raw": "this is not json", "error": "parse", "detail": "no-json",
+        "prompt_chars": 0, "turn_chars": 0, "answer_chars": 16, "usage": null, "usage_last": null, "stderr_api_override": false,
+        "calls": 1, "searches": 0, "index_chars": 0, "prefetch_used": false, "recall_summary": "" }
+    },
+    {
+      "name": "3 set follow: an upper-LLM follow goal, done after 3 minutes (goal_done report)",
+      "status": 200,
+      "body": { "ok": true, "member": "claude", "cli": "fake", "model": null, "effort": null, "ms": 5, "report_id": "{{report_id}}", "goal_rev": "{{goal_rev}}",
+        "answer": { "decision": "set", "for": { "report": "{{report_id}}", "goal_rev": "{{goal_rev}}" }, "goal": { "do": "follow" }, "say": "따라갈게요(가짜 브리지)", "why": "fake bridge step 3" },
+        "raw": "", "error": null, "detail": null,
+        "prompt_chars": 0, "turn_chars": 0, "answer_chars": 0, "usage": null, "usage_last": null, "stderr_api_override": false,
+        "calls": 1, "searches": 0, "index_chars": 0, "prefetch_used": false, "recall_summary": "" }
+    },
+    {
+      "name": "4 busy (409): the same report again after 5 s",
+      "status": 409,
+      "body": { "ok": false, "error": "busy" }
+    },
+    {
+      "name": "5 set gather IronOre (not in can_do.gather): DROPPED by the mod's check, asked again once",
+      "status": 200,
+      "body": { "ok": true, "member": "claude", "cli": "fake", "model": null, "effort": null, "ms": 5, "report_id": "{{report_id}}", "goal_rev": "{{goal_rev}}",
+        "answer": { "decision": "set", "for": { "report": "{{report_id}}", "goal_rev": "{{goal_rev}}" }, "goal": { "do": "gather", "item": "IronOre", "count": 3 }, "say": "철을 캘게요(가짜 브리지)", "why": "fake bridge step 5" },
+        "raw": "", "error": null, "detail": null,
+        "prompt_chars": 0, "turn_chars": 0, "answer_chars": 0, "usage": null, "usage_last": null, "stderr_api_override": false,
+        "calls": 1, "searches": 0, "index_chars": 0, "prefetch_used": false, "recall_summary": "" }
+    },
+    {
+      "name": "6 hold: asked again by the 2-minute look while held (watched after a hold), answered hold again (repeats)",
+      "status": 200,
+      "body": { "ok": true, "member": "claude", "cli": "fake", "model": null, "effort": null, "ms": 5, "report_id": "{{report_id}}", "goal_rev": "{{goal_rev}}",
+        "answer": { "decision": "hold", "for": { "report": "{{report_id}}", "goal_rev": "{{goal_rev}}" }, "say": "잠깐 기다릴게요(가짜 브리지)", "why": "fake bridge step 6" },
+        "raw": "", "error": null, "detail": null,
+        "prompt_chars": 0, "turn_chars": 0, "answer_chars": 0, "usage": null, "usage_last": null, "stderr_api_override": false,
+        "calls": 1, "searches": 0, "index_chars": 0, "prefetch_used": false, "recall_summary": "" }
+    }
+  ]
+}

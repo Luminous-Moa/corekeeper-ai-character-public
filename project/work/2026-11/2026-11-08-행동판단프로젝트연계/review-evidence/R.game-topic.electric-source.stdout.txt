@@ -1,0 +1,157 @@
+{
+  "origin": {
+    "normalizedValueSha256": "c1c6f6a49da8f9aa7c103f36ab6165452c8296ab9a0fb00ad8bfa52b42c4f680",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/D/ancient-v2/cases.json",
+    "pointer": "/cases/3"
+  },
+  "value": {
+    "id": "completion:full-d:ancient-electricity:CAB-2ebcba97367158c9b08f790c25d642c9:-7658880460584646847",
+    "action": "automatic_ancient_electricity_update",
+    "build": "26332184",
+    "status": "investigated_pending_independent_review",
+    "runtimeTested": false,
+    "scope": "five fixed authored ancient-electricity sources and conditional component-to-texture consumer",
+    "roles": [
+      {
+        "role": "subject",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7658880460584646847",
+        "objectId": 6502,
+        "variation": 0,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/1806",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "18c561108313b95152d12a6a686b5cb6b281b0c76de4e012f4018eef36cad727"
+        }
+      }
+    ],
+    "entry": {
+      "input": "AncientElectricityFlowSystem periodic update on eligible runtime AncientElectricityConnectionCD and LocalTransform"
+    },
+    "conditions": [
+      "Converter installs separate ancient-electricity data. Enabled EntityDestroyedCD is excluded. Authored zero values are initial data and do not establish runtime state."
+    ],
+    "transitions": [
+      {
+        "from": "authored_data",
+        "to": "ancient_component",
+        "text": "Converter copies ancient connection data into AncientElectricityConnectionCD.",
+        "refs": [
+          "Pug.ECS.Conversion/AncientElectricityConnectionConverter.cs:1-14"
+        ]
+      },
+      {
+        "from": "runtime_neighbors",
+        "to": "ancient_amount",
+        "text": "On each variable update, unblocked positive sourceEnergy is first assigned to a rounded-position map; multiple sources at one coordinate can overwrite according to iteration order. Every prior electricityAmount is then merged by coordinate maximum, including an amount on a blocked connection. A positive source skips its own amount update before checking its blocked flag. For a non-source, blocked sets amount to zero; otherwise its own previous amount and the four adjacent map values are maximized, reduced by one and clamped at zero. The fixed map means this update does not immediately relay a newly written value a second hop. This is a separate component and update from ordinary ElectricityCD propagation.",
+        "refs": [
+          "Pug.Other/AncientElectricityFlowSystem.cs:473-555"
+        ]
+      },
+      {
+        "from": "positive_ancient_amount",
+        "to": "shader_strength",
+        "text": "Only positive electricityAmount inside the camera bounds writes green strength floor(255 × min(1,(amount + sourceEnergy + 2)/10)); positive sourceEnergy by itself does not meet that gate. In game the producer uses a 36×24 texture region. The finalize system applies its dependency, map/database gates, texture Apply and global ElectricityTex binding. Actual material display remains unobserved.",
+        "refs": [
+          "Pug.Other/ShaderTexturesSystem.cs:280-289",
+          "Pug.Other/ShaderTexturesSystem.cs:759-778",
+          "Pug.Other/ShaderTexturesFinalizeSystem.cs:86-107"
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "conditional",
+        "text": "Ancient component amount may change based on runtime source energy, blocking, positions and adjacent component state; no live outcome observed."
+      }
+    ],
+    "negativeCases": [
+      {
+        "input": "blocked non-source",
+        "expected": "ancient amount is set to zero during the applicable flow update"
+      },
+      {
+        "input": "enabled EntityDestroyedCD",
+        "expected": "excluded from the flow query"
+      }
+    ],
+    "boundaries": [
+      "Positions, update order, dynamic entities and runtime values are unobserved. Ancient network is not the standard directional ElectricityCD BFS. The update parameter 6f is recorded as code evidence without asserting its unit."
+    ],
+    "assetEvidence": {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+      "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+      "components": [
+        {
+          "class": "AncientElectricityConnectionAuthoring",
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-166240750873147583",
+          "line": 3468,
+          "rawByteSha256": "fd602e7e758cc7fccea29ec682054b282c0fbfb5cafab750ad9bc2f289d3d5bc",
+          "data": {
+            "blocksElectricity": 0,
+            "electricityAmount": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-2309357088134920383"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "6871041134976675883"
+            },
+            "sourceEnergy": 0
+          }
+        }
+      ]
+    },
+    "codeEvidence": {
+      "Pug.ECS.Conversion/AncientElectricityConnectionConverter.cs:1-14": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\AncientElectricityConnectionConverter.cs",
+        "sha256": "823131007c04708467d729057ee9bdf12b116fdc42a25181c1b1d9c8b9ccc381",
+        "start": 1,
+        "end": 14
+      },
+      "Pug.Other/AncientElectricityFlowSystem.cs:473-555": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AncientElectricityFlowSystem.cs",
+        "sha256": "c9c8d9ddc29eb014df2c4a1cabd38044587d60e1a0eda40ae16ee1feacd4d8ed",
+        "start": 473,
+        "end": 555
+      },
+      "Pug.Other/BossStatueSystem.cs:253-283": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\BossStatueSystem.cs",
+        "sha256": "e3ee2358a7cb3b88ce04274f41f24232990f44fa3bd4e6aeb4e453351d78e50e",
+        "start": 253,
+        "end": 283
+      },
+      "Pug.Other/ShaderTexturesSystem.cs:280-289": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ShaderTexturesSystem.cs",
+        "sha256": "212d38ea70268e0fb8b3d41fdc6753aa097d6f80ba9215fba89708c776304141",
+        "start": 280,
+        "end": 289
+      },
+      "Pug.Other/ShaderTexturesSystem.cs:759-778": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ShaderTexturesSystem.cs",
+        "sha256": "212d38ea70268e0fb8b3d41fdc6753aa097d6f80ba9215fba89708c776304141",
+        "start": 759,
+        "end": 778
+      },
+      "Pug.Other/ShaderTexturesFinalizeSystem.cs:86-107": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ShaderTexturesFinalizeSystem.cs",
+        "sha256": "09fb8ee44efb842e2ff589886621b46e260094e831d05eaa823e2901666c83a3",
+        "start": 86,
+        "end": 107
+      },
+      "Pug.ECS.Conversion/BossStatueConverter.cs:5-14": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\BossStatueConverter.cs",
+        "sha256": "59c42564adf20a384f00096d125a635ecd5cb7842e35ded72ad909804d1d721f",
+        "start": 5,
+        "end": 14
+      }
+    },
+    "priorClaimIds": [],
+    "relationLinks": []
+  },
+  "evidenceContext": null
+}

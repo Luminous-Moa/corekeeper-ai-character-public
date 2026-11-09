@@ -1,0 +1,137 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 채집물 전반의 기본 선택 단위 — 사용자 합의",
+        "doc": "expeditionRoles",
+        "end": 80,
+        "line": 78,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+        "sha256": "9a9100dcb23941f8d194a6562938db3a3622603954831c134ec50079bf2d631f",
+        "start": 78
+      }
+    ],
+    "id": "P.expedition-bundle",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 80,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+        "start": 78
+      }
+    ],
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "벽 광맥·식물·바닥 아이템의 같은 종류 대상 묶음과 개별 선택을 지원한다. 선택 범위의 접근·채집·회수는 연속 실행하되 새 발견은 다음 선택으로 제공하고 대상 수와 실제 확보량을 구별한다.",
+    "title": "선택 당시 보이는 자연스러운 묶음을 고정해 연속 실행",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 80,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 78
+        }
+      ],
+      "from": "P.expedition-bundle",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGatherSkill.ObserveDiscoveries(AIObservation)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 80,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 78
+        }
+      ],
+      "from": "P.expedition-bundle",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGatherSkill.Tick(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 80,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 78
+        }
+      ],
+      "from": "P.expedition-bundle",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGathering.AddCandidates(World, Entity, AIObservation, System.Collections.Generic.List<AICandidate>)",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## HEAD에 반환하는 판단",
+          "doc": "expeditionVisionInvestigation",
+          "end": 28,
+          "line": 24,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionVisionInvestigation.md",
+          "sha256": "47443c8573011e0bdd5ea0fd6aba072a8969ed8c76daf4a1e6b67a26b51f3acc",
+          "start": 24
+        }
+      ],
+      "from": "P.expedition-bundle",
+      "id": "E195",
+      "kind": "참고: 채집 일반 관측에도 같은 시야 경계 적용 필요",
+      "to": "R.expedition-vision-gap",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 검증",
+          "doc": "expeditionDirection",
+          "end": 15,
+          "line": 13,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionDirection.md",
+          "sha256": "7ffd85a01ac8fc37b0cbde52182498a6b7e59b1b976e6024014e1a61e44917ef",
+          "start": 13
+        }
+      ],
+      "from": "P.expedition-bundle",
+      "id": "E191",
+      "kind": "참고: 고정 묶음 생산 실행 경로",
+      "to": "R.expedition-direction",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 채집물 전반의 기본 선택 단위 — 사용자 합의",
+          "doc": "expeditionRoles",
+          "end": 80,
+          "line": 78,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "sha256": "9a9100dcb23941f8d194a6562938db3a3622603954831c134ec50079bf2d631f",
+          "start": 78
+        }
+      ],
+      "from": "P.expedition",
+      "id": "E180",
+      "kind": "채집·이동·귀환 합의의 구성",
+      "to": "P.expedition-bundle",
+      "type": "reference"
+    }
+  ]
+}

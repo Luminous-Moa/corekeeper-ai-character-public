@@ -1,0 +1,5 @@
+﻿testcmds.on True
+decisionlog.on True
+closefight.off False
+movetrace.on False
+.testgive False

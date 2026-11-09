@@ -1,0 +1,366 @@
+{
+  "policies": [
+    {
+      "legacyId": "pol.ai-look-distinct",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.ai-look-distinct"
+    },
+    {
+      "legacyId": "pol.ai-own-character",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.ai-own-character"
+    },
+    {
+      "legacyId": "pol.ai-per-world",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.ai-per-world"
+    },
+    {
+      "legacyId": "pol.ai-start-new",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.ai-start-new"
+    },
+    {
+      "legacyId": "pol.behavior-roles",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.behavior-roles"
+    },
+    {
+      "legacyId": "pol.body-fight",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.body-fight"
+    },
+    {
+      "legacyId": "pol.body-npc",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "대체/역사 또는 개발 판단 기준",
+      "source": "C/기획/정책-기준.md#pol.body-npc"
+    },
+    {
+      "legacyId": "pol.body-progress",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.body-progress"
+    },
+    {
+      "legacyId": "pol.body-thinclient",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.body-thinclient"
+    },
+    {
+      "legacyId": "pol.body-visible",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.body-visible"
+    },
+    {
+      "legacyId": "pol.call-interval",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.call-interval"
+    },
+    {
+      "legacyId": "pol.combat-choice-design",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.combat-choice-design"
+    },
+    {
+      "legacyId": "pol.combat-composite",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.combat-composite"
+    },
+    {
+      "legacyId": "pol.combat-fit-criterion",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.combat-fit-criterion"
+    },
+    {
+      "legacyId": "pol.combat-kill-brute",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.combat-kill-brute"
+    },
+    {
+      "legacyId": "pol.combat-no-auto-dodge",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.combat-no-auto-dodge"
+    },
+    {
+      "legacyId": "pol.combat-options",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.combat-options"
+    },
+    {
+      "legacyId": "pol.combat-rate-max",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.combat-rate-max"
+    },
+    {
+      "legacyId": "pol.cost-cap-200",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.cost-cap-200"
+    },
+    {
+      "legacyId": "pol.cost-ceiling",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.cost-ceiling"
+    },
+    {
+      "legacyId": "pol.decision-chat-off",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.decision-chat-off"
+    },
+    {
+      "legacyId": "pol.dig-and-explore-first",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.dig-and-explore-first"
+    },
+    {
+      "legacyId": "pol.exp-keep-world-memory",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.exp-keep-world-memory"
+    },
+    {
+      "legacyId": "pol.exp-link-by-id",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.exp-link-by-id"
+    },
+    {
+      "legacyId": "pol.exp-no-extra-calls",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.exp-no-extra-calls"
+    },
+    {
+      "legacyId": "pol.exp-no-repeat-misfit",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "대체/역사 또는 개발 판단 기준",
+      "source": "C/기획/정책-기준.md#pol.exp-no-repeat-misfit"
+    },
+    {
+      "legacyId": "pol.exp-retry-allowed",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.exp-retry-allowed"
+    },
+    {
+      "legacyId": "pol.explore-dig-by-model",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.explore-dig-by-model"
+    },
+    {
+      "legacyId": "pol.explore-end-when-nothing",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.explore-end-when-nothing"
+    },
+    {
+      "legacyId": "pol.fewer-calls",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.fewer-calls"
+    },
+    {
+      "legacyId": "pol.idle-stand",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.idle-stand"
+    },
+    {
+      "legacyId": "pol.join-toggle",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.join-toggle"
+    },
+    {
+      "legacyId": "pol.llm-can-retreat",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.llm-can-retreat"
+    },
+    {
+      "legacyId": "pol.llm-subscription",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.llm-subscription"
+    },
+    {
+      "legacyId": "pol.mod-source-no-dll",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "전제",
+      "source": "C/기획/정책-기준.md#pol.mod-source-no-dll"
+    },
+    {
+      "legacyId": "pol.modsdk",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "전제",
+      "source": "C/기획/정책-기준.md#pol.modsdk"
+    },
+    {
+      "legacyId": "pol.motion-real-speed",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.motion-real-speed"
+    },
+    {
+      "legacyId": "pol.multi-ai",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.multi-ai"
+    },
+    {
+      "legacyId": "pol.no-self-workaround",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "대체/역사 또는 개발 판단 기준",
+      "source": "C/기획/정책-기준.md#pol.no-self-workaround"
+    },
+    {
+      "legacyId": "pol.path-leak-watch",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.path-leak-watch"
+    },
+    {
+      "legacyId": "pol.realtime-by-program",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.realtime-by-program"
+    },
+    {
+      "legacyId": "pol.recall-budget",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.recall-budget"
+    },
+    {
+      "legacyId": "pol.recall-facts-only",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.recall-facts-only"
+    },
+    {
+      "legacyId": "pol.recall-game-by-query",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.recall-game-by-query"
+    },
+    {
+      "legacyId": "pol.recall-in-bridge",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.recall-in-bridge"
+    },
+    {
+      "legacyId": "pol.recall-index-then-query",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.recall-index-then-query"
+    },
+    {
+      "legacyId": "pol.recall-on-demand",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.recall-on-demand"
+    },
+    {
+      "legacyId": "pol.recall-prompt-cost",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "원칙",
+      "source": "C/기획/정책-기준.md#pol.recall-prompt-cost"
+    },
+    {
+      "legacyId": "pol.refactor-json-fix-accepted",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.refactor-json-fix-accepted"
+    },
+    {
+      "legacyId": "pol.refactor-option-c",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.refactor-option-c"
+    },
+    {
+      "legacyId": "pol.reflex-minimal-now",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.reflex-minimal-now"
+    },
+    {
+      "legacyId": "pol.reflex-while-late",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.reflex-while-late"
+    },
+    {
+      "legacyId": "pol.scope-chatroom",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.scope-chatroom"
+    },
+    {
+      "legacyId": "pol.selector-openai",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.selector-openai"
+    },
+    {
+      "legacyId": "pol.self-defence",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.self-defence"
+    },
+    {
+      "legacyId": "pol.single-ai-first",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "대체/역사 또는 개발 판단 기준",
+      "source": "C/기획/정책-기준.md#pol.single-ai-first"
+    },
+    {
+      "legacyId": "pol.start-kit-role-only",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.start-kit-role-only"
+    },
+    {
+      "legacyId": "pol.test-tools-ok",
+      "disposition": "정본 문서 보존; 역사·개발범위·전제·평가기준",
+      "reason": "범위",
+      "source": "C/기획/정책-기준.md#pol.test-tools-ok"
+    },
+    {
+      "legacyId": "pol.vision-human-view",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.vision-human-view"
+    },
+    {
+      "legacyId": "pol.weapon-default",
+      "disposition": "표준 정책; 원문 규칙/확정도 유지",
+      "reason": "처리",
+      "source": "C/기획/정책-기준.md#pol.weapon-default"
+    }
+  ],
+  "candidates": "C/기획/후보-보존.md; 표준 정책 자동 승격 없음",
+  "unknowns": "C/기획/미결-보존.md 및 legacy graph 별도 보존"
+}

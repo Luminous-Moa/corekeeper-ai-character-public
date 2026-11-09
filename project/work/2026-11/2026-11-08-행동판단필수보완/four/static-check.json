@@ -1,0 +1,3840 @@
+{
+  "status": "PASS_STATIC_SELF_CHECK_ONLY",
+  "baselineGraphPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동판단필수보완/baseline-246/graph.json",
+  "baselineGraphSha256": "cd39047d5814cf565d1a071ed41bd89c15fec025b1de76b6a714df3f31bfcbad",
+  "recordCount": 6,
+  "boundedGapCount": 4,
+  "sourceBindingCount": 5,
+  "runtimeTested": false,
+  "wholeScopeComplete": false,
+  "checks": [
+    {
+      "id": "completion:essential:breed-downstream-cow1300-v1",
+      "appendOnlyIdAbsent": true,
+      "allBindingIdentitiesMatch": true,
+      "allReuseTargetsExist": true,
+      "codeReferencesHashAndRangeValid": true,
+      "existingReuse": [
+        "completion:C:breed-toggle-v1/flow/consumer",
+        "animal-feed"
+      ],
+      "addedSemantics": "After the existing toggle/request and Breed entry, recheck the actual partner and Meals before requesting a child; reset both Meals only in the eligible branch. Representative exact Cow1300:0 binding only."
+    },
+    {
+      "id": "completion:essential:dash8340-8341-v1",
+      "appendOnlyIdAbsent": true,
+      "allBindingIdentitiesMatch": true,
+      "allReuseTargetsExist": true,
+      "codeReferencesHashAndRangeValid": true,
+      "existingReuse": [
+        "completion:C:equip-gear-swap-v1/flow/transitions"
+      ],
+      "addedSemantics": "Offhand dash activation initializes direction and move timer, then writes collision-adjusted movement force until expiry requests Walk."
+    },
+    {
+      "id": "completion:essential:minion-detonator8330-8331-v1",
+      "appendOnlyIdAbsent": true,
+      "allBindingIdentitiesMatch": true,
+      "allReuseTargetsExist": true,
+      "codeReferencesHashAndRangeValid": true,
+      "existingReuse": [
+        "completion:C:equip-gear-swap-v1/flow/transitions",
+        "completion:B:summon-9176-0/flow/transitions"
+      ],
+      "addedSemantics": "Offhand MinionDetonation marks only tracked minions owned by the player for dismissal and detonation, then conditionally initializes explosive damage. Reuse generic summon/dismiss and tracker consumers."
+    },
+    {
+      "id": "completion:essential:player-death-grave-inventory-v1",
+      "appendOnlyIdAbsent": true,
+      "allBindingIdentitiesMatch": true,
+      "allReuseTargetsExist": true,
+      "codeReferencesHashAndRangeValid": true,
+      "existingReuse": [
+        "object:6002",
+        "completion:C:container-inventory-transfer-v2/flow/transitions"
+      ],
+      "addedSemantics": "Health-zero lifecycle requests PlayerGrave6002, player GUID and mode-specific initial inventory transfer; the transfer consumer has death-only item exclusions and conditional destination writes."
+    },
+    {
+      "id": "completion:essential:player-death-armor-cost-v1",
+      "appendOnlyIdAbsent": true,
+      "allBindingIdentitiesMatch": true,
+      "allReuseTargetsExist": true,
+      "codeReferencesHashAndRangeValid": true,
+      "existingReuse": [
+        "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions"
+      ],
+      "addedSemantics": "Health-zero requests locked Death and, on nonhardcore server, adds0.15 to armor durability percentage. Armor-specific consumer adds flat loss and requests SetAmount; cost is not exactly15percent."
+    },
+    {
+      "id": "completion:essential:player-death-respawn-gates-v1",
+      "appendOnlyIdAbsent": true,
+      "allBindingIdentitiesMatch": true,
+      "allReuseTargetsExist": true,
+      "codeReferencesHashAndRangeValid": true,
+      "existingReuse": [
+        "bed-sleep/flow/transitions",
+        "completion:B:new-spectate-next-player/condition/conditions",
+        "completion:B:new-spectate-next-player/flow/transitions",
+        "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions"
+      ],
+      "addedSemantics": "Death state locks and gates timed respawn; once eligible it reuses stored-bed/default position and restores HP/hunger plus respawn tick and immunity condition request. Permakill reuses existing spectate path."
+    }
+  ],
+  "originChecks": [
+    {
+      "nodeId": "animal-feed",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated/cases.json",
+      "pointer": "/cases/3",
+      "expectedNormalizedSha256": "db96e4aadd185515011b876572ef3b9776bf79d2daf1df51e55cf24f41fbe793",
+      "actualNormalizedSha256": "db96e4aadd185515011b876572ef3b9776bf79d2daf1df51e55cf24f41fbe793",
+      "matches": true
+    },
+    {
+      "nodeId": "bed-sleep/flow/transitions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+      "pointer": "/cases/17/transitions",
+      "expectedNormalizedSha256": "79b7255a166183dae7b075d708f13780a2255485308580fee7732615473eadf6",
+      "actualNormalizedSha256": "79b7255a166183dae7b075d708f13780a2255485308580fee7732615473eadf6",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+      "pointer": "/cases/65/transitions",
+      "expectedNormalizedSha256": "8540dd0f8e197e24374c8636917dc636ebc48d86ace055e3f95a7c2431d107a1",
+      "actualNormalizedSha256": "8540dd0f8e197e24374c8636917dc636ebc48d86ace055e3f95a7c2431d107a1",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:B:new-spectate-next-player/condition/conditions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+      "pointer": "/cases/1/conditions",
+      "expectedNormalizedSha256": "983b0fcc35f135eb7aa6253c71044685e230ea6fe5b9824aa4144e744927941e",
+      "actualNormalizedSha256": "983b0fcc35f135eb7aa6253c71044685e230ea6fe5b9824aa4144e744927941e",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:B:new-spectate-next-player/flow/transitions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+      "pointer": "/cases/1/transitions",
+      "expectedNormalizedSha256": "7f56c4c13bbbca8f3161d38b8fa22f8225ed8d068bb7bf7d6ec642d3708e46b6",
+      "actualNormalizedSha256": "7f56c4c13bbbca8f3161d38b8fa22f8225ed8d068bb7bf7d6ec642d3708e46b6",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:B:summon-9176-0/flow/transitions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/B/evidence/summon-v2-replay-1/cases.json",
+      "pointer": "/cases/0/transitions",
+      "expectedNormalizedSha256": "ce25f9345bdc3d93f10548e42b18957c6698981dbff2b16727d952527ce4c2d0",
+      "actualNormalizedSha256": "ce25f9345bdc3d93f10548e42b18957c6698981dbff2b16727d952527ce4c2d0",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:C:breed-toggle-v1/flow/consumer",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/C/animal-toggles-v2.json",
+      "pointer": "/families/0/consumer",
+      "expectedNormalizedSha256": "76c9bcbc04634ff9aff584e18a067a1e75eb22323be3e90fb47474adcc8906ff",
+      "actualNormalizedSha256": "76c9bcbc04634ff9aff584e18a067a1e75eb22323be3e90fb47474adcc8906ff",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:C:container-inventory-transfer-v2/flow/transitions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/C/container-rule-v2.json",
+      "pointer": "/transitions",
+      "expectedNormalizedSha256": "1ee3b2632d36d5a151b7c7c940d97b22c2d16164240fae105993f91c14a92607",
+      "actualNormalizedSha256": "1ee3b2632d36d5a151b7c7c940d97b22c2d16164240fae105993f91c14a92607",
+      "matches": true
+    },
+    {
+      "nodeId": "completion:C:equip-gear-swap-v1/flow/transitions",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/C/gear-rule-v2.json",
+      "pointer": "/transitions",
+      "expectedNormalizedSha256": "233375e4faaa5355dca2b8d741293dbe655c6548779bf74dbce2cdb0f6a10901",
+      "actualNormalizedSha256": "233375e4faaa5355dca2b8d741293dbe655c6548779bf74dbce2cdb0f6a10901",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/1426",
+      "expectedNormalizedSha256": "4220186af89571714990ecaa953ac7ea6e288dd0d78f033781094a897594b033",
+      "actualNormalizedSha256": "4220186af89571714990ecaa953ac7ea6e288dd0d78f033781094a897594b033",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/961",
+      "expectedNormalizedSha256": "2b72348f7dd34a002911bc10495158906729ab76b8f1a9d8681e2865585afb38",
+      "actualNormalizedSha256": "2b72348f7dd34a002911bc10495158906729ab76b8f1a9d8681e2865585afb38",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/1425",
+      "expectedNormalizedSha256": "9ed2e82705edc33b7e2b218105c53770917f98ab9d64a79910ec56b92ea86920",
+      "actualNormalizedSha256": "9ed2e82705edc33b7e2b218105c53770917f98ab9d64a79910ec56b92ea86920",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/963",
+      "expectedNormalizedSha256": "c5adb6060ddd356692e01c7b6b6014441e5763b1a787f3fd9208fc0760dc75ed",
+      "actualNormalizedSha256": "c5adb6060ddd356692e01c7b6b6014441e5763b1a787f3fd9208fc0760dc75ed",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/964",
+      "expectedNormalizedSha256": "ab9cbf272c6f7f6fa0fe2f67494b8791d801ac6463fe1f74011d84f15cd8a2f2",
+      "actualNormalizedSha256": "ab9cbf272c6f7f6fa0fe2f67494b8791d801ac6463fe1f74011d84f15cd8a2f2",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/1424",
+      "expectedNormalizedSha256": "1c114c9b37a043547c4eda95ff080b7d64012311f2156f1f2bd7f604423fa889",
+      "actualNormalizedSha256": "1c114c9b37a043547c4eda95ff080b7d64012311f2156f1f2bd7f604423fa889",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/965",
+      "expectedNormalizedSha256": "174f357e4492f7f7787750f52e9c7d720853f9eb14b09b373a5cbb4e7628493f",
+      "actualNormalizedSha256": "174f357e4492f7f7787750f52e9c7d720853f9eb14b09b373a5cbb4e7628493f",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/1423",
+      "expectedNormalizedSha256": "da1729e653d61f00faa80537aae55005686de06ac0f5366be76ba09f8a890468",
+      "actualNormalizedSha256": "da1729e653d61f00faa80537aae55005686de06ac0f5366be76ba09f8a890468",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/1973",
+      "expectedNormalizedSha256": "d796032543276399552c2d05107698e1a0ec2085a45c06ce5395ca539f663d25",
+      "actualNormalizedSha256": "d796032543276399552c2d05107698e1a0ec2085a45c06ce5395ca539f663d25",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/962",
+      "expectedNormalizedSha256": "456f03a443dfa52bfa339ef137167eb576585fce1a442176e622578c00752853",
+      "actualNormalizedSha256": "456f03a443dfa52bfa339ef137167eb576585fce1a442176e622578c00752853",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/966",
+      "expectedNormalizedSha256": "76d10e196a9b90edcd2a5e1c765c300e7d1d40f8bc7797c40a8419aa20cfaa1f",
+      "actualNormalizedSha256": "76d10e196a9b90edcd2a5e1c765c300e7d1d40f8bc7797c40a8419aa20cfaa1f",
+      "matches": true
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "pointer": "/records/967",
+      "expectedNormalizedSha256": "6eb212050e900e3cc18a83aa66bff75c616d12cae6d73a65a2bff995d7be5b34",
+      "actualNormalizedSha256": "6eb212050e900e3cc18a83aa66bff75c616d12cae6d73a65a2bff995d7be5b34",
+      "matches": true
+    }
+  ],
+  "currentExactNodes": {
+    "animal-feed": {
+      "action": "feed",
+      "evidenceContext": {
+        "fixedCodeRoot": "../게임원본-상호작용/code",
+        "priorResearchRoot": "../2026-11",
+        "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated",
+        "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+        "sessionWorkRoot": ".."
+      },
+      "id": "animal-feed",
+      "kind": "action_completion",
+      "origin": {
+        "normalizedValueSha256": "db96e4aadd185515011b876572ef3b9776bf79d2daf1df51e55cf24f41fbe793",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated/cases.json",
+        "pointer": "/cases/3"
+      },
+      "roleBindings": [
+        {
+          "conditional": true,
+          "objectId": 1311,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-639151763562530712"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5964344316707895400"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:6621244806578927720",
+              "line": 71981,
+              "pointer": "/432/links/1/matches/0/components/13",
+              "rawByteSha256": "9aab552f4db67e0e87e21ad0c59ea6739dcf381e3b8f829005339e6d5664abee"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "-7171545723847438501",
+                    "m_low": "4946126655038430627"
+                  }
+                },
+                "eatsTags": [
+                  30
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5964344316707895400"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6924427023650621336",
+              "line": 30566,
+              "pointer": "/432/links/1/matches/0/components/15",
+              "rawByteSha256": "4b8b366711b6e7cef42addfa1a2c62cc315bed40e59d2cc28c4297195ea60c5f"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5964344316707895400"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3755
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5249977801710208920",
+              "line": 21980,
+              "pointer": "/432/links/1/matches/0/components/23",
+              "rawByteSha256": "f1faf569ec727759bbae8848e08d4c43c795c551c847051495da128c856c2f32"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5964344316707895400"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5162428886944876440",
+              "line": 21530,
+              "pointer": "/432/links/1/matches/0/components/27",
+              "rawByteSha256": "08a69ded75b8afa750a2dfc1cb361ce0ee0d49ac13c8c1ae09abe07f889e7bbb"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1305,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-622367127563154433"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "2868031801029938175"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1758246733829649409",
+              "line": 4020,
+              "pointer": "/426/links/1/matches/0/components/13",
+              "rawByteSha256": "3921dc7065d8366daa3400b62749017379256a7705920c35b7c17fe0792ed175"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "-7171545723847438501",
+                    "m_low": "4946126655038430627"
+                  }
+                },
+                "eatsTags": [
+                  30
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "2868031801029938175"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1507505829181862913",
+              "line": 2672,
+              "pointer": "/426/links/1/matches/0/components/15",
+              "rawByteSha256": "38075825f36eda6d2b28e71bdc3bfa60980f3a52efb54b4e209b03f634381cc5"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "2868031801029938175"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7234805472172651521",
+              "line": 32147,
+              "pointer": "/426/links/1/matches/0/components/25",
+              "rawByteSha256": "9882012e9b8e90325b52b1055887aebeab4aa175f5b9c3664c4816f1466e23c5"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.6299999952316284,
+                "eatPostDuration": 1.2699999809265137,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "2868031801029938175"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4583163494428494847",
+              "line": 61543,
+              "pointer": "/426/links/1/matches/0/components/28",
+              "rawByteSha256": "441c65400ad2daa1f12da4186daf69bfcd75958158f5401dd6504708eee06348"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1656677536759297025",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1307,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2215944611046023724"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3014799785934462420"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1452565253253489196",
+              "line": 2377,
+              "pointer": "/428/links/1/matches/0/components/13",
+              "rawByteSha256": "22143a298d30775c854a73f2fd3d6603962dbf73c055dba0ebca7a941e5d103e"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "2190730272936212185",
+                    "m_low": "-2696414472979501994"
+                  }
+                },
+                "eatsTags": [
+                  33
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3014799785934462420"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1135575066575036972",
+              "line": 723,
+              "pointer": "/428/links/1/matches/0/components/15",
+              "rawByteSha256": "cb18c3371a6a66841695aa125e014140dff3fdc8fe89e9a6d8076324630bb169"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3014799785934462420"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3753
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:9144016802500255188",
+              "line": 84893,
+              "pointer": "/428/links/1/matches/0/components/24",
+              "rawByteSha256": "9f4822c2e547544e6d53884bb4c821235fb62430e500b70d40500d370f8cf45a"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3014799785934462420"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2046599097035448876",
+              "line": 5474,
+              "pointer": "/428/links/1/matches/0/components/27",
+              "rawByteSha256": "b2983161623942c24841b80f7ba2fb70a3d3dc23f33a6ac8171e62946d69f0aa"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1852928159473590828",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1306,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2687880053084260624"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6873275183901640976"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-116900944226814224",
+              "line": 894,
+              "pointer": "/427/links/1/matches/0/components/13",
+              "rawByteSha256": "61f6c1277c1db0942bee6c5553ce0157ed6897de67daa6e91d00462515cfe61b"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "5571021906078953515",
+                    "m_low": "-6240798638692572517"
+                  }
+                },
+                "eatsTags": [
+                  31
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6873275183901640976"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-2748158623727487248",
+              "line": 9188,
+              "pointer": "/427/links/1/matches/0/components/15",
+              "rawByteSha256": "9c6f57e79ae6ee2039b6e9dd808da360ce773165ef901a10728ddabd8cde7ad1"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6873275183901640976"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-493436621569263888",
+              "line": 20365,
+              "pointer": "/427/links/1/matches/0/components/24",
+              "rawByteSha256": "16f678563f47491c234576fe24684d8ac816f1db67a0fe820488829cae54a5d3"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.9399999976158142,
+                "eatPostDuration": 0.20999999344348907,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6873275183901640976"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4096732795608238352",
+              "line": 16023,
+              "pointer": "/427/links/1/matches/0/components/27",
+              "rawByteSha256": "c5c88876e8506cc395f82be131ae44e042ee4da1f30aa3071dce08668aabada9"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2184720477549299984",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1303,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-5233646789449918390"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6754061310736902070"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2158057079603157066",
+              "line": 49026,
+              "pointer": "/424/links/1/matches/0/components/13",
+              "rawByteSha256": "5f50676028fac322cde8565f75ec5ed37238aa80115d5da6f51a2064e6831b6f"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "5571021906078953515",
+                    "m_low": "-6240798638692572517"
+                  }
+                },
+                "eatsTags": [
+                  31
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6754061310736902070"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4613202047867443274",
+              "line": 61696,
+              "pointer": "/424/links/1/matches/0/components/15",
+              "rawByteSha256": "05e4a3bab7945ece12f5164e3f3b35fa97675520b793f954ef1b852326917c4c"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6754061310736902070"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3752
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-13949198780573622",
+              "line": 2064,
+              "pointer": "/424/links/1/matches/0/components/24",
+              "rawByteSha256": "87e0623a55119cc142d06c2a6daf3bfa10d54b9d38ca832f16380deeb314743b"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.9399999976158142,
+                "eatPostDuration": 0.20999999344348907,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6754061310736902070"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3184305762201131082",
+              "line": 54256,
+              "pointer": "/424/links/1/matches/0/components/28",
+              "rawByteSha256": "f46c5c4ce005092806111188a026134574ba8ab68a30ceaa0539b714b2a7b24e"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2447877482093979574",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1308,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2492384105769281883"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6309468646290368859"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4380656428093942107",
+              "line": 17512,
+              "pointer": "/429/links/1/matches/0/components/13",
+              "rawByteSha256": "c52ce0e8e0227c77e8e0b1509126541c4c1045b3d3e2ec70adf061b264046ed6"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "2190730272936212185",
+                    "m_low": "-2696414472979501994"
+                  }
+                },
+                "eatsTags": [
+                  33
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6309468646290368859"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-7636256947912911195",
+              "line": 34215,
+              "pointer": "/429/links/1/matches/0/components/15",
+              "rawByteSha256": "152f481a1b865f5bf551735fc8483a1e154c23fda7a036c8c32be870ab0f1170"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6309468646290368859"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:9210896858559731365",
+              "line": 85204,
+              "pointer": "/429/links/1/matches/0/components/24",
+              "rawByteSha256": "ee2070a3ff71d29fcb28f858af8f24b696004933a8742a36601ac7f4dd004145"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-6309468646290368859"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3296749733755693403",
+              "line": 11955,
+              "pointer": "/429/links/1/matches/0/components/27",
+              "rawByteSha256": "7e5d5b41382a7a54238fc8db4028c6d4d2759b26165f6d4acb0ead2a0f8b7bc8"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3905698990389012827",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1309,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "8052089263121537256"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-42509486842275608"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8864107245719820520",
+              "line": 83492,
+              "pointer": "/430/links/1/matches/0/components/13",
+              "rawByteSha256": "b737d8799035433507dd79d00e83d77a40a0b981c33a0f6c480e6de2bdbf89af"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "5571021906078953515",
+                    "m_low": "-6240798638692572517"
+                  }
+                },
+                "eatsTags": [
+                  31
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-42509486842275608"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8860539358042089240",
+              "line": 40693,
+              "pointer": "/430/links/1/matches/0/components/15",
+              "rawByteSha256": "83b4d81a5c11002809ba4eb1431e7f7fa74f16ae05c6a6499bd8733a8eddad47"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-42509486842275608"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3754
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8694393822181549848",
+              "line": 39803,
+              "pointer": "/430/links/1/matches/0/components/24",
+              "rawByteSha256": "6d286b19fef69133d2ca9a24dbb6c4a399810da367af12d26d60d9191a9533ef"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-42509486842275608"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1242469287082432744",
+              "line": 44269,
+              "pointer": "/430/links/1/matches/0/components/28",
+              "rawByteSha256": "0b15ed89b40114e370719ee0c5e94e632b95f8a1faf0e5f7558189170eec9094"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6599958699261323032",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1302,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "721974423531260405"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-284500346518861323"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8606739445999438325",
+              "line": 82199,
+              "pointer": "/423/links/1/matches/0/components/13",
+              "rawByteSha256": "943f16167e696aca5a27089355a35dd7c2241e47d662f5b5c8c922d99a9f91fe"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "-7171545723847438501",
+                    "m_low": "4946126655038430627"
+                  }
+                },
+                "eatsTags": [
+                  30
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-284500346518861323"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3122775397755161077",
+              "line": 53955,
+              "pointer": "/423/links/1/matches/0/components/15",
+              "rawByteSha256": "1ef8d1f9a58e7cda3ecadcc67decb1b1273d2ccd508fb7f3c951a9a4e8ab05f0"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-284500346518861323"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3751
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:487915833463114229",
+              "line": 63124,
+              "pointer": "/423/links/1/matches/0/components/25",
+              "rawByteSha256": "391f6d58cd00478e2fe35d21ac26f2d7224e3d8508859df9d35bf905a1025bc8"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.6299999952316284,
+                "eatPostDuration": 1.2699999809265137,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-284500346518861323"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1327043029802055179",
+              "line": 1720,
+              "pointer": "/423/links/1/matches/0/components/29",
+              "rawByteSha256": "9a0837c48b6142322246ff1f484fb546be644c05e43d8dda46f5716c04b5b444"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7672463449741227531",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1310,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8936241143820402782"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8750406915837214814"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6892756271064236126",
+              "line": 30404,
+              "pointer": "/431/links/1/matches/0/components/13",
+              "rawByteSha256": "cdf369c37f44c6b3bc296f9df07b40a46ee42b7e7fc2fcf41a16093c39d7d05f"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "5571021906078953515",
+                    "m_low": "-6240798638692572517"
+                  }
+                },
+                "eatsTags": [
+                  31
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8750406915837214814"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1070554031052734370",
+              "line": 43354,
+              "pointer": "/431/links/1/matches/0/components/15",
+              "rawByteSha256": "ba110bc19ed67f5052a4220f6e0ab7dd5e7a726a008d03d88ec085a936074b62"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8750406915837214814"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:7962770986295017378",
+              "line": 78887,
+              "pointer": "/431/links/1/matches/0/components/24",
+              "rawByteSha256": "3af3af929e8567be016165c8e34c2aa28e130024737935be938683049c383960"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8750406915837214814"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5100018480780918690",
+              "line": 64243,
+              "pointer": "/431/links/1/matches/0/components/26",
+              "rawByteSha256": "6fac012b62893d769d4879a8775a5d3fb01b90532373f4a6a405e22bf830ed3d"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1951679037098672034",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1300,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-1903691335647395225"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2620884058177240473"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8784818565709398631",
+              "line": 83113,
+              "pointer": "/421/links/1/matches/0/components/13",
+              "rawByteSha256": "33cde37c39aadf3e798e53e7699aba231bb2620aef950ff9621f54fa02282d04"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "-7171545723847438501",
+                    "m_low": "4946126655038430627"
+                  }
+                },
+                "eatsTags": [
+                  30
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2620884058177240473"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:303073482890707559",
+              "line": 53465,
+              "pointer": "/421/links/1/matches/0/components/15",
+              "rawByteSha256": "acbcff17e0b060cbedece0c7a18a9fb0c34c8df67dfa58e56121a5e1a6c01abd"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2620884058177240473"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3750
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5355137863976649319",
+              "line": 65527,
+              "pointer": "/421/links/1/matches/0/components/24",
+              "rawByteSha256": "4b5bacb594d4d68657e998c8773095e872270e39d212acd23706c30b069ca734"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-2620884058177240473"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1057400520633318809",
+              "line": 297,
+              "pointer": "/421/links/1/matches/0/components/28",
+              "rawByteSha256": "3d8a789345e5f88c8e57d8ed3fe63ff8a51e98ab6ed9732f755ad5fe50dc519f"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1313,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-1695186309293648109"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3573181297375008531"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:533494911363143443",
+              "line": 65435,
+              "pointer": "/434/links/1/matches/0/components/13",
+              "rawByteSha256": "bfcfce9abbab59ddf84f20a5a9486bf26b760dff3faeaf4a9b42ed570138f005"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "5571021906078953515",
+                    "m_low": "-6240798638692572517"
+                  }
+                },
+                "eatsTags": [
+                  31
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3573181297375008531"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1754021271592806637",
+              "line": 4002,
+              "pointer": "/434/links/1/matches/0/components/15",
+              "rawByteSha256": "b88ebc312a912db5a7fd56f4084b108eefed39a42e30d62e60b5dfcb00e9c28c"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3573181297375008531"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 3756
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:5499630332500268819",
+              "line": 66265,
+              "pointer": "/434/links/1/matches/0/components/23",
+              "rawByteSha256": "874552bee71b952c4e880fb5f89ef28bcc26b5b33f20e8f80c3343b111619fca"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 0.20999999344348907,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "3573181297375008531"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 4
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1739363791613700333",
+              "line": 3902,
+              "pointer": "/434/links/1/matches/0/components/27",
+              "rawByteSha256": "f2696a8c7f6e48f4e916bcef5459b33a6a2908eafe1c06e0aa71953a04e60698"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4918106960329660179",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1304,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "6823361756175209853"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-1574255292089821827"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3754244021908662915",
+              "line": 14305,
+              "pointer": "/425/links/1/matches/0/components/13",
+              "rawByteSha256": "0a5d0e93da15df16f308a3dc4035379bf5ff6914a9c9fb0c9477d10d4580a998"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "-7171545723847438501",
+                    "m_low": "4946126655038430627"
+                  }
+                },
+                "eatsTags": [
+                  30
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-1574255292089821827"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-4270593290601687683",
+              "line": 16895,
+              "pointer": "/425/links/1/matches/0/components/15",
+              "rawByteSha256": "a45dbbd21f45c1182bcb5fb737b5fe2d2ea93ae1a635f5daf89d6fcc5879172a"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-1574255292089821827"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6242805269228546691",
+              "line": 27073,
+              "pointer": "/425/links/1/matches/0/components/24",
+              "rawByteSha256": "0d32eec42801c59c9b6a940f2834039d87c9541130cfa5c1227cf67fa447f0ea"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "-1574255292089821827"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1441630523145251459",
+              "line": 2315,
+              "pointer": "/425/links/1/matches/0/components/26",
+              "rawByteSha256": "efcf76594aa9737ce46af22e8d6488d274b85cffd49609a59c5aa0c0ae578d53"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5753386593381717373",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1314,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-8533690924229157809"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "8951608669461781583"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3185164066669618097",
+              "line": 11399,
+              "pointer": "/435/links/1/matches/0/components/13",
+              "rawByteSha256": "8be47223da0444bc23b9e78b19ea38373195545345c17cdee6ee7c972464e389"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "5571021906078953515",
+                    "m_low": "-6240798638692572517"
+                  }
+                },
+                "eatsTags": [
+                  31
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "8951608669461781583"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4776668278954171471",
+              "line": 62599,
+              "pointer": "/435/links/1/matches/0/components/15",
+              "rawByteSha256": "70497cb8118d6235dcbb338478a3a8206f147d3fa6b446ca93bb17e01b295514"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "8951608669461781583"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8372487530120045489",
+              "line": 38091,
+              "pointer": "/435/links/1/matches/0/components/23",
+              "rawByteSha256": "7d0e20d152ea0b50f1b0e5aa9a6b8f38edc3755dba4feefe0a12fad3f479878a"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 0.20999999344348907,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "8951608669461781583"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-5394654153615827889",
+              "line": 22739,
+              "pointer": "/435/links/1/matches/0/components/25",
+              "rawByteSha256": "004b3060af9670a6b7b89082972f9e8c37d275e7227229fc8abac221bbba2c06"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5848084246349782095",
+          "variation": 0
+        },
+        {
+          "conditional": true,
+          "objectId": 1312,
+          "origin": [
+            {
+              "class": "ChaseStateAuthoring",
+              "data": {
+                "belongsToShape": {
+                  "m_FileID": 0,
+                  "m_PathID": "-3416004141854352959"
+                },
+                "chaseAtDistance": 8.0,
+                "chaseHeldObjects": [],
+                "disabled": 0,
+                "distanceToKeepNoiseDisabled": 0,
+                "distanceToStartSideStepping": 0.0,
+                "endChaseDuration": 0.0,
+                "idleCooldown": 0.0,
+                "idleDuration": 0.0,
+                "ignoreLowColliders": 0,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "6430566823940725185"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-8992862358325093010"
+                },
+                "maxDistanceToKeep": 0.8999999761581421,
+                "minDistanceToKeep": 0.8999999761581421,
+                "moveSpeedMultiplier": 1.5,
+                "needPathToChase": 1,
+                "neverStopChasing": 0,
+                "obstacleAvoidDistance": 0.0,
+                "preChaseDuration": 0.0,
+                "preferPathFind": 0,
+                "skipVisibilityCheck": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8391637415622220225",
+              "line": 81091,
+              "pointer": "/433/links/1/matches/0/components/13",
+              "rawByteSha256": "d53a2a95c319f4ff66316330c87508482ba0c4619cd5d1c7bc6b460992ad7256"
+            },
+            {
+              "class": "BehaviourTagsAuthoring",
+              "data": {
+                "cantAttackTags": [],
+                "dataBlockRef": {
+                  "m_address": {
+                    "m_high": "-7171545723847438501",
+                    "m_low": "4946126655038430627"
+                  }
+                },
+                "eatsTags": [
+                  30
+                ],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "6430566823940725185"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "2632704552988684176"
+                },
+                "wantsToAttackTags": []
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:2777415439914047937",
+              "line": 52116,
+              "pointer": "/433/links/1/matches/0/components/15",
+              "rawByteSha256": "897ac1536399b22611cc0d90e781b9693c879512558032761ff7fa8ef11622d1"
+            },
+            {
+              "class": "CattleAuthoring",
+              "data": {
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "6430566823940725185"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "3669474902280514522"
+                },
+                "turnIntoObjectIDWhenSaddled": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4177043147359328705",
+              "line": 59451,
+              "pointer": "/433/links/1/matches/0/components/23",
+              "rawByteSha256": "1c1fea02a9b2ec19b6f629b2740448ebe746d1fe50b04440cce2010ec75aa647"
+            },
+            {
+              "class": "EatStateAuthoring",
+              "data": {
+                "distanceToEat": 1.0,
+                "duration": 0.550000011920929,
+                "eatPostDuration": 1.649999976158142,
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "6430566823940725185"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "-7741295671865928056"
+                },
+                "maxFoodUntilFull": 1
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3278121407565208001",
+              "line": 54753,
+              "pointer": "/433/links/1/matches/0/components/25",
+              "rawByteSha256": "7e9746b534d66dd1967f504645ac8807d25c69e89a80f767d807ec4adeed918f"
+            }
+          ],
+          "role": "conditional_eater",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6210385517274995137",
+          "variation": 0
+        }
+      ],
+      "runtimeTested": false,
+      "scope": "fixed claims selected by IDs",
+      "status": "pending_independent_review"
+    },
+    "bed-sleep/flow/transitions": {
+      "field": "transitions",
+      "id": "bed-sleep/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "79b7255a166183dae7b075d708f13780a2255485308580fee7732615473eadf6",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/17/transitions"
+      },
+      "value": [
+        {
+          "from": "eligible bed",
+          "refs": [
+            "Pug.Other/ClaimBedSystem.cs:202-249,269-335"
+          ],
+          "to": "claimed GUID and PlayerClaimedBed entity/position writes"
+        },
+        {
+          "from": "claimed bed proximity",
+          "refs": [
+            "Pug.Other/ClaimBedSystem.cs:338-359",
+            "Pug.Other/PlayerState/Sleep.cs:11-83"
+          ],
+          "to": "Sleep state, position and healing condition"
+        },
+        {
+          "from": "condition effect 78",
+          "refs": [
+            "Pug.Other/HealFromConditionsSystem.cs:164-196",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:194-226",
+            "Pug.Other/PlayerController.cs:7030-7041"
+          ],
+          "to": "positive health buffer and actual player health write"
+        },
+        {
+          "from": "death respawn",
+          "refs": [
+            "Pug.Other/PlayerState/Death.cs:122-132"
+          ],
+          "to": "claimed stored position or default spawn position write"
+        },
+        {
+          "from": "quality sleep timer elapsed and positive BuffsFromQualitySleep",
+          "refs": [
+            "Pug.Other/PlayerState/Sleep.cs:23-24,41-67"
+          ],
+          "to": "add or refresh IncreasedManaRegenEffectiveness with same value for 30 seconds"
+        },
+        {
+          "from": "summarized condition 255 and mana below unreserved maximum",
+          "refs": [
+            "Pug.Other/ManaSystem.cs:157-195"
+          ],
+          "to": "multiply regen by 1+value/100; timer, accumulatedMana and ManaCD.mana write and clamp"
+        }
+      ]
+    },
+    "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions": {
+      "field": "transitions",
+      "id": "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "8540dd0f8e197e24374c8636917dc636ebc48d86ace055e3f95a7c2431d107a1",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+        "pointer": "/cases/65/transitions"
+      },
+      "value": [
+        {
+          "from": "attack input",
+          "refs": [
+            "Pug.Other/PlayerEquipment/EquipmentUpdateSystem.cs:137-151,201-207",
+            "Pug.Other/EquipmentSlot.cs:51-115,533-580",
+            "Pug.Other/PlayerEquipment/AttackWithEquipmentSystem.cs:144-188",
+            "Pug.Other/MeleeWeaponSlot.cs:9-16,51-70",
+            "Pug.Other/PlayerEquipment/QueueHitSystem.cs:144-220"
+          ],
+          "text": "주 입력으로 장비 공격 시 MeleeWeaponSlot이 mana 비용과 cooldown을 처리하고 QueueHit를 활성화한다. 해당 source에 mana authoring이 없고 DB/변환이 일치하면 비용 0. QueueHit은 파손·windup 및 level/reinforcement/조건을 고려해 피해와 hit delay를 준비한다.",
+          "to": "queued hit"
+        },
+        {
+          "from": "hit delay",
+          "refs": [
+            "Pug.Other/PlayerEquipment/PlayerAttackRoutineSystem.cs:258-299",
+            "Pug.Other/PlayerAttackSystem.cs:425-451",
+            "Pug.Other/PlayerController.cs:5157-5217,5280-5358"
+          ],
+          "text": "공격 routine의 지연이 끝나면 Melee 피해 요청을 쓰고 PlayerAttackSystem이 사망 상태가 아니면 TryMeleeAttack을 호출한다. 무기 크기·방향·상태에 따른 collider와 현재/과거 physics collision으로 후보를 얻어 적·대상 오브젝트를 선택한다. 근접 무기는 적중한 적이 있거나 무기 유형에 따라 오브젝트 선택이 제한된다.",
+          "to": "collision and target"
+        },
+        {
+          "from": "eligible target",
+          "refs": [
+            "Pug.Other/PlayerController.cs:5194-5212,6465-6594,7057-7108,7138-7165",
+            "Pug.Other/UpdateHealthFromBufferSystem.cs:194-302,384-435,558-560",
+            "Pug.Other/AttackPlayerSystem.cs:1469-1544,1560-1578,1696-1701",
+            "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-854"
+          ],
+          "text": "피해 후보의 진영·체력·면역·방패·회피를 확인한다. 비플레이어는 조건부 HealthChangeBuffer와 health consumer, 플레이어는 별도 hit·barrier/mana·무적·cheat death 소비자를 거쳐 실제 HP가 바뀔 수 있다. 적 명중과 weapon-damage 조건이면 내구도 감소 trigger; 보존확률·무적과 inventory gate 및 동일 ID를 지나야 실제 감소한다.",
+          "to": "health and cost"
+        },
+        {
+          "from": "durability and inventory gates",
+          "refs": [
+            "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-845,970-972",
+            "Pug.Other/Inventory/InventoryUtility.cs:278-322,464-473,3167-3196",
+            "Pug.Other/RangeWeaponSlot.cs:29-45"
+          ],
+          "text": "내구도 처리기는 양수 장착품과 실제 DurabilityCD가 필요하다. 증가 trigger와 조건252가 있으면 상한까지 증가 요청을 먼저 만들고, 무적·godMode·보존확률 gate 뒤 감소량을 0 이상으로 계산한다. 양수였던 장착품이 계산상 0에 이르면 EquipmentBreak 효과와 SetAmount(slot, 같은 objectID, 0), TryReplaceBrokenObject(slot)를 각각 요청한다. SetAmount는 같은 ID 조건에서만 기록한다. 교체 요청은 현재 slot의 objectType과 같은 첫 양수 수량의 다른 slot을 찾아 Swap할 수 있다. 각 요청 성공과 effect는 독립적이며 실제 수량 변경·장착 변경을 보장하지 않는다.",
+          "to": "conditional break and replacement"
+        }
+      ]
+    },
+    "completion:B:new-spectate-next-player/condition/conditions": {
+      "field": "conditions",
+      "id": "completion:B:new-spectate-next-player/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "983b0fcc35f135eb7aa6253c71044685e230ea6fe5b9824aa4144e744927941e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+        "pointer": "/cases/1/conditions"
+      },
+      "value": [
+        "Death presentation에서 local ghost, hardcore이면서 allowHardcoreRespawn=false, 관전 전환 입력 pressed",
+        "Manager.main.allPlayers가 비어 있지 않고 선택 player가 유효"
+      ]
+    },
+    "completion:B:new-spectate-next-player/flow/transitions": {
+      "field": "transitions",
+      "id": "completion:B:new-spectate-next-player/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "7f56c4c13bbbca8f3161d38b8fa22f8225ed8d068bb7bf7d6ec642d3708e46b6",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+        "pointer": "/cases/1/transitions"
+      },
+      "value": [
+        {
+          "from": "spectate input",
+          "refs": [
+            "Pug.Other/PlayerState/Death.cs:82-88,134-142",
+            "Pug.Other/CameraManager.cs:355-383"
+          ],
+          "text": "Death presentation은 조건을 통과하면 CameraManager.FollowNextPlayer를 호출한다. 현재 추적 player를 목록에서 찾고 (index+1)%count를 적용해 다음 playerToFollow를 쓴다. 새 대상의 smooth 위치와 현재 카메라 목표가 20보다 멀면 새 대상의 world 위치를 즉시 카메라 위치에 적용하고 scene handler가 있으면 camera parent 위치를 갱신한다.",
+          "to": "camera target"
+        }
+      ]
+    },
+    "completion:B:summon-9176-0/flow/transitions": {
+      "field": "transitions",
+      "id": "completion:B:summon-9176-0/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "ce25f9345bdc3d93f10548e42b18957c6698981dbff2b16727d952527ce4c2d0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/summon-v2-replay-1/cases.json",
+        "pointer": "/cases/0/transitions"
+      },
+      "value": [
+        {
+          "from": "authoring",
+          "refs": [
+            "Pug.ECS.Conversion/WindupConverter.cs:5-25"
+          ],
+          "text": "mechanic, minion ID, windup 등 변환",
+          "to": "SecondaryUseCD"
+        },
+        {
+          "from": "windup",
+          "refs": [
+            "Pug.Other/SummoningWeaponSlot.cs:11-76",
+            "Pug.Other/MinionSummonAndDismissSystem.cs:955-995"
+          ],
+          "text": "최대 충전은 charge action, 그 외는 mana gate 후 spawn 요청",
+          "to": "SummonOrDismissRequestCD"
+        },
+        {
+          "from": "request",
+          "refs": [
+            "Pug.Other/MinionSummonAndDismissSystem.cs:177-380"
+          ],
+          "text": "현재 소환수·한도·reserved mana 확인 후 dismissal 표시 또는 ECB 생성 및 소유자·레벨·위치·조건부 체력 설정",
+          "to": "ECB spawn or dismissal"
+        },
+        {
+          "from": "durability trigger",
+          "refs": [
+            "Pug.Other/SummoningWeaponSlot.cs:85-99",
+            "Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs:189-263",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-854",
+            "Pug.Other/Inventory/InventoryUtility.cs:452-480",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:357-382"
+          ],
+          "text": "보존·무적 분기 이후 SetAmount 요청, inventory gate와 동일 ID 조건이 맞을 때 기록",
+          "to": "inventory amount"
+        },
+        {
+          "from": "creation",
+          "refs": [
+            "Pug.Other/EntityUtility.cs:155-195",
+            "Pug.Other/MinionSummonAndDismissSystem.cs:338-380"
+          ],
+          "text": "EntityUtility.CreateEntity는 variation 기본 0의 ID를 DB primary prefab에서 찾아 null이면 오류와 Entity.Null을 반환하고, 그렇지 않으면 ECB.Instantiate와 ObjectData·transform을 예약한다. 호출자는 후속 component 설정을 예약하므로 null 처리 경로 및 ECB 실행은 런타임 경계다.",
+          "to": "DB primary prefab ECB"
+        },
+        {
+          "from": "dismissal marked",
+          "refs": [
+            "Pug.Other/MinionHandlerSystem.cs:155-187,1166-1216"
+          ],
+          "text": "MinionHandler가 dismissTimer를 deltaTime으로 줄이고 0 이하이면 EntityDestroyedCD 활성 및 trackedMinions 제거한다. 별도 tracker job은 소유된 minion의 기본 reservation 합계에 conditionEffects[150] 할인을 적용하고 count와 floor(합계)를 perMinionTotalManaReserved에 쓴다.",
+          "to": "entity destroyed and tracker update"
+        },
+        {
+          "from": "maximum windup request",
+          "refs": [
+            "Pug.Other/MinionSummonAndDismissSystem.cs:194-265,310-351"
+          ],
+          "text": "일치 ID가 있으면 해당 미니언 해제 표시 후 반환. 없으면 다른 ID 전체 해제 표시 후 num=0 및 flag3 설정, maxMana와 maxMinions 기준 가능한 수만큼 생성한다. 일반 소환은 한 번 최대 1개.",
+          "to": "dismiss or spawn multiple"
+        }
+      ]
+    },
+    "completion:C:breed-toggle-v1/flow/consumer": {
+      "field": "consumer",
+      "id": "completion:C:breed-toggle-v1/flow/consumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "76c9bcbc04634ff9aff584e18a067a1e75eb22323be3e90fb47474adcc8906ff",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/C/animal-toggles-v2.json",
+        "pointer": "/families/0/consumer"
+      },
+      "value": "ClientSystem sets bool0 to index != 0. Server guest/non-admin restrictions apply and the command queues BreedToggleCD with breedingDisabled set to that bool. BreedStateRequest checks that both partners have BreedToggleCD and neither has breedingDisabled, alongside its distance, object type, meal and fullness checks before entering Breed. State change does not itself prove breeding or offspring."
+    },
+    "completion:C:container-inventory-transfer-v2/flow/transitions": {
+      "field": "transitions",
+      "id": "completion:C:container-inventory-transfer-v2/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "1ee3b2632d36d5a151b7c7c940d97b22c2d16164240fae105993f91c14a92607",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/C/container-rule-v2.json",
+        "pointer": "/transitions"
+      },
+      "value": [
+        {
+          "from": "on_use",
+          "refs": [
+            "Pug.Other/InteractableObject.cs:109-131",
+            "Pug.Other/Chest.cs:21-31",
+            "Pug.Other/CraftingBuilding.cs:204-208",
+            "Pug.Other/UIManager.cs:772-835",
+            "Pug.Other/UIManager.cs:875-879"
+          ],
+          "text": "InteractableObject.Use는 활성 객체의 onUseActions를 호출한다. Chest.Use는 player 존재 시 해당 inventory handler와 chest UI를 열고, CraftingBuilding.Use는 active crafting handler 및 player UI를 연다. 구현 root와 event target class 상속 체인은 source별로 기록한다.",
+          "to": "inventory_ui"
+        },
+        {
+          "from": "slot_input",
+          "refs": [
+            "Pug.Other/InventorySlotUI.cs:953-997",
+            "Pug.Other/InventorySlotUI.cs:1127-1144",
+            "Pug.Other/OutputSlotUI.cs:103-115",
+            "Pug.Other/UIMouse.cs:983-1055",
+            "Pug.Other/UIMouse.cs:1114-1119",
+            "Pug.Other/InventoryHandler.cs:363-372"
+          ],
+          "text": "Normal InventorySlotUI right-click requests 1, modifier 1 requests 10, modifier 2 requests the rounded-up half; it allows placement. OutputSlotUI overrides right-click to request 1/10/100 and passes allowPlacingStuff=false. DoMove first rejects an occupied slot whose inventory handler locks objects. Empty mouse selects source→mouse; permitted empty destination selects mouse→destination. Two clicks are distinct requests, not atomic.",
+          "to": "move_request"
+        },
+        {
+          "from": "move_request",
+          "refs": [
+            "Pug.Other/TriggerUIActionsSystem.cs:201-217",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:353-380",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-824",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:866-870",
+            "Pug.Other/Inventory/InventoryUtility.cs:831-834",
+            "Pug.Other/Inventory/InventoryUtility.cs:607-646",
+            "Pug.Other/Inventory/InventoryUtility.cs:509-565",
+            "Pug.Other/Inventory/InventoryUtility.cs:2368-2457",
+            "Pug.Other/Inventory/InventoryUtility.cs:2549-2565",
+            "Pug.Other/Inventory/InventoryUtility.cs:3334-3367",
+            "Pug.ECS.Conversion/InventoryConverter.cs:188-197"
+          ],
+          "text": "UIInputAction.InventoryChange는 action을 소비할 때 playerEntity를 설정해 InventoryChangeBuffer에 넣는다. guest mode 비관리자 요청은 소비하지 않고, InventoryUpdateSystem은 양 inventory 유효성·buffer·미파괴를 검사한 뒤 MoveAmount→TryMove를 호출한다. TryMove는 적합 destination slot이 없으면 false; 있으면 이동가능량을 산출해 source amount를 줄이고 destination amount를 늘려 양 buffer에 쓴다. 결과는 runtime 수량·용량·요구조건에 달린다. GetAmountToMoveToInventory chooses the quantity: stackable items use the minimum of source amount, requested amount and available capacity (up to 9999); for stackable items a one-per-slot destination permits one in an empty slot; for nonstackable items it returns the whole source amount. InventoryUpdateSystem MoveAmount does not propagate TryMove’s boolean into its result, so request processing is not proof of a buffer change.",
+          "to": "buffers_updated"
+        }
+      ]
+    },
+    "completion:C:equip-gear-swap-v1/flow/transitions": {
+      "field": "transitions",
+      "id": "completion:C:equip-gear-swap-v1/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "233375e4faaa5355dca2b8d741293dbe655c6548779bf74dbce2cdb0f6a10901",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/C/gear-rule-v2.json",
+        "pointer": "/transitions"
+      },
+      "value": [
+        {
+          "from": "equipment_input",
+          "refs": [
+            "Pug.Other/PlayerEquipment/EquipmentUpdateSystem.cs:135-195",
+            "Pug.Other/EquipGearSlot.cs:11-107",
+            "Pug.Other/PlayerController.cs:4055-4074",
+            "Pug.Other/PlayerController.cs:1111-1116",
+            "Pug.Other/PlayerController.cs:1167-1174"
+          ],
+          "text": "EquipGearSlot은 object type별 대상 장비 슬롯을 택한다. ring은 ring1 비었으면 1, 아니면 ring2가 차 있고 ring1의 ID가 새 아이템과 다르면 1, 그 밖엔 2. pouch는 첫 빈 4개 중 하나, 모두 차면 pouch1. CooldownCD가 있으면 1초(신 모드0.15초) 적용 후 같은 player inventory의 출발·대상 index Swap 요청을 낸다. held second interact에만 secondInteractBlockedUntilRelease가 적용되고, 유효 pending은 그 뒤 OR된다. CurrentStateAllowInteractions는 guest mode 비관리자를 큐 생성 전에 거른다.",
+          "to": "swap_request"
+        },
+        {
+          "from": "swap_request",
+          "refs": [
+            "Pug.Other/EquipGearSlot.cs:98-107",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:353-380",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:797-824",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs:859-861",
+            "Pug.Other/Inventory/InventoryUtility.cs:661-692"
+          ],
+          "text": "ProcessInventoryChangesJob의 guest gate는 playerEntity에 PlayerGhost가 없는 요청도 통과시킨다. EquipGearSlot이 생성한 이 InventoryChangeBuffer는 playerEntity를 별도 설정하지 않는다. 요청의 양 inventory가 존재·buffer 보유·미파괴이면 InventoryUpdateSystem이 Swap을 실행한다. InventoryUtility.Swap은 두 ContainedObjectsBuffer 슬롯을 서로 쓴다. 각 locked buffer가 존재하면 그 방향의 잠금 값은 교환 전 상대 locked buffer가 존재하고 잠겨 있으며 교환 후 해당 slot에 물품이 있을 때 true이고, 그렇지 않으면 false다. 잠금은 무조건 맞교환되지 않는다.",
+          "to": "two_slots_swapped"
+        },
+        {
+          "from": "equipment_buffer_changed",
+          "refs": [
+            "Pug.Other/SummarizeConditionsSystem.cs:115-115",
+            "Pug.Other/SummarizeConditionsSystem.cs:210-241",
+            "Pug.Other/SummarizeConditionsSystem.cs:280-320",
+            "Pug.Other/SummarizeConditionsSystem.cs:322-344",
+            "Pug.Other/SummarizeConditionsSystem.cs:437-453"
+          ],
+          "text": "SummarizeConditionsSystem은 장비/contained buffer 변경을 관찰하면 helm, necklace, breast, pants, ring1/2, offhand, bag, lantern을 읽는다. 해당 항목의 primary prefab이 내구도 보유이면서 amount<=0이면 제외하고, LevelEntitiesBuffer·LevelCD 및 GivesConditionsWhenEquippedBuffer가 있으면 조건을 요약한다. 각 장비에 특정 buff가 반드시 존재한다는 주장은 아니다. pouch는 이 직접 장비 목록에 포함하지 않는다. 유효 범위 ConditionID에 대해서만 SummarizedConditionsBuffer의 ID 합과 SummarizedConditionEffectsBuffer의 effect 합을 각각 갱신한다. 세트 보너스는 같은 ObjectID를 중복 집계하지 않고, 요구 piece 수를 충족할 때 조건을 합산한다.",
+          "to": "conditions_resummarized"
+        }
+      ]
+    },
+    "object:6002": {
+      "currentAiKey": "o:6002",
+      "id": "object:6002",
+      "kind": "object_id_reference",
+      "meaning": "Shared numeric identity reference only; source and variation remain distinct; not an AI visibility grant.",
+      "objectId": 6002
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "kind": "source",
+      "names": [
+        "AzeosSwiftFeather"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 8341,
+      "origin": {
+        "normalizedValueSha256": "4220186af89571714990ecaa953ac7ea6e288dd0d78f033781094a897594b033",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/1426"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "2b72348f7dd34a002911bc10495158906729ab76b8f1a9d8681e2865585afb38",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/961"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "kind": "source",
+      "names": [
+        "SwiftFeather"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 8340,
+      "origin": {
+        "normalizedValueSha256": "9ed2e82705edc33b7e2b218105c53770917f98ab9d64a79910ec56b92ea86920",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/1425"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "c5adb6060ddd356692e01c7b6b6014441e5763b1a787f3fd9208fc0760dc75ed",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/963"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "ab9cbf272c6f7f6fa0fe2f67494b8791d801ac6463fe1f74011d84f15cd8a2f2",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/964"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "kind": "source",
+      "names": [
+        "MinionDetonatorMinor"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 8331,
+      "origin": {
+        "normalizedValueSha256": "1c114c9b37a043547c4eda95ff080b7d64012311f2156f1f2bd7f604423fa889",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/1424"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "174f357e4492f7f7787750f52e9c7d720853f9eb14b09b373a5cbb4e7628493f",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/965"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "kind": "source",
+      "names": [
+        "MinionDetonator"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 8330,
+      "origin": {
+        "normalizedValueSha256": "da1729e653d61f00faa80537aae55005686de06ac0f5366be76ba09f8a890468",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/1423"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "kind": "source",
+      "names": [
+        "Cow"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 1300,
+      "origin": {
+        "normalizedValueSha256": "d796032543276399552c2d05107698e1a0ec2085a45c06ce5395ca539f663d25",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/1973"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "456f03a443dfa52bfa339ef137167eb576585fce1a442176e622578c00752853",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/962"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "76d10e196a9b90edcd2a5e1c765c300e7d1d40f8bc7797c40a8419aa20cfaa1f",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/966"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "variation": 0
+    },
+    "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500": {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "kind": "source",
+      "names": [
+        "PlayerGrave"
+      ],
+      "noInteractionMeaning": "No recorded claim does not establish impossibility.",
+      "objectId": 6002,
+      "origin": {
+        "normalizedValueSha256": "6eb212050e900e3cc18a83aa66bff75c616d12cae6d73a65a2bff995d7be5b34",
+        "path": "../게임원본-상호작용/final/collection.json",
+        "pointer": "/records/967"
+      },
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "variation": 0
+    }
+  },
+  "currentSourceOutgoingEdges": [
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:610"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:632"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "conditional_equipment_item",
+      "completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "conditional_upgrade_target",
+      "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_claim",
+      "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724#upgrade_equipment"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_coverage_disposition",
+      "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_material_requirement_evidence",
+      "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:883188158366509582#0/material/61"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_object_id",
+      "object:8341"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:439"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3882052621804937724",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:897"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1097"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:926"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:805"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "health_regeneration_source",
+      "D095:applications:application:1041"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:1020"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:262"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:310"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:358"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:406"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:454"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:602"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:646"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:690"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:734"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:778"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:824"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:873"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:922"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_default_table_output_id",
+      "record:A:U026:links:971"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_equipment_item",
+      "completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "conditional_upgrade_target",
+      "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_claim",
+      "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237#upgrade_equipment"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_coverage_disposition",
+      "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_material_requirement_evidence",
+      "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:883188158366509582#0/material/60"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_object_id",
+      "object:8340"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:1033"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-8056593086384761237",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:554"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1098"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:928"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:807"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "health_regeneration_source",
+      "D095:applications:application:1043"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1099"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:929"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:808"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "health_regeneration_source",
+      "D095:applications:application:1044"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1437"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1454"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1470"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:424"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "conditional_equipment_item",
+      "completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "conditional_upgrade_target",
+      "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_claim",
+      "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382#upgrade_equipment"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_coverage_disposition",
+      "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_material_requirement_evidence",
+      "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:926703991974170746#1/material/147"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_object_id",
+      "object:8331"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:1117"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2227985870625417382",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:632"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1100"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:930"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:809"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "health_regeneration_source",
+      "D095:applications:application:1045"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1555"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1568"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1580"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1593"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1606"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1618"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1630"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1643"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1656"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1669"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1682"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1694"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1707"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1720"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1733"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1746"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:1759"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_default_table_output_id",
+      "configured-role-link:A-drop-loot-other164:0:933"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_equipment_item",
+      "completion:C:equip-gear-swap-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "conditional_upgrade_target",
+      "completion:C:upgrade-equipment-conditional-v1/application/CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_claim",
+      "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451#upgrade_equipment"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_coverage_disposition",
+      "disposition:D:map_exchange:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_material_requirement_evidence",
+      "configuration-review:initial:CAB-2ebcba97367158c9b08f790c25d642c9:106149578713104983#1/material/9"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_object_id",
+      "object:8330"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:1148"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3105037105095647451",
+      "has_role_evidence",
+      "role-evidence:A-C-equipment-links:657"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_or_pet_ui_name_candidate",
+      "completion:C:animal-names-v2"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "animal-cage"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "animal-leash"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "animal-saddle"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "completion:B:cast-animal-tool-3680-v3"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "completion:B:cast-animal-tool-3681-v3"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "completion:B:cast-animal-tool-7-v3"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_animal_target",
+      "completion:B:cast-animal-tool-8-v3"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_breed_toggle_target",
+      "completion:C:breed-toggle-v1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_damage_target",
+      "conditional-enemy-hit"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_death_loot_configuration",
+      "partial-source-role:A-death-loot-other163:0:roles:0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_drop_loot_configuration",
+      "partial-source-role:A-drop-loot-other164:0:roles:0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_eater",
+      "animal-feed"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_source_for",
+      "reviewed-claim:initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "conditional_source_for",
+      "reviewed-claim:initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "configured_output_candidate",
+      "configured-role-link:A-drop-loot-other164:0:0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|cage"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|feed"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|leash"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "base:B::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|saddle"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#recipe_configuration"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#2"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#3"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#4"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#5"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#6"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|cage"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|feed"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|leash"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "supp:B::B-followup|CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871|saddle"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_claim",
+      "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#automatic_recipe_result"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_configuration_review",
+      "reviewed-claim:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#recipe_configuration"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_coverage_disposition",
+      "disposition:D:automatic_craft:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_coverage_disposition",
+      "disposition:D:recipe_ui_craft:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "has_object_id",
+      "object:1300"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "health_regeneration_source",
+      "D095:applications:application:246"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871",
+      "subject",
+      "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:3642166057735520871#automatic_recipe_result"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1101"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:927"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:806"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "health_regeneration_source",
+      "D095:applications:application:1042"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1102"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:931"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:810"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "health_regeneration_source",
+      "D095:applications:application:1046"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "conditional_custom_loot_output_id",
+      "record:A:U026:links:1103"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "conditional_incoming_damage_reduction_configuration",
+      "gap-role:damage-reduction-applications-v3:932"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "conditional_player_object_damage_candidate",
+      "record:A:U001:roles:811"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "has_claim",
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500#0"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "has_historical_gap",
+      "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500#1"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "has_object_id",
+      "object:6002"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "health_regeneration_source",
+      "D095:applications:application:1047"
+    ],
+    [
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "input_for",
+      "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500"
+    ]
+  ],
+  "graveSourceComparison": [
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1097"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:926"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:805"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "health_regeneration_source",
+          "D095:applications:application:1041"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-7832995576137288676"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1098"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:928"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:807"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "health_regeneration_source",
+          "D095:applications:application:1043"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:1207006969937263788"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1099"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:929"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:808"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "health_regeneration_source",
+          "D095:applications:application:1044"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:1625345567154454233"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1100"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:930"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:809"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "health_regeneration_source",
+          "D095:applications:application:1045"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:2405300256495486371"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1101"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:927"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:806"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "health_regeneration_source",
+          "D095:applications:application:1042"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:569781817015059012"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1102"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:931"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:810"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "health_regeneration_source",
+          "D095:applications:application:1046"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:5899042965173051423"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    },
+    {
+      "nodeId": "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+      "objectId": 6002,
+      "variation": 0,
+      "currentRoles": [
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "conditional_custom_loot_output_id",
+          "record:A:U026:links:1103"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "conditional_incoming_damage_reduction_configuration",
+          "gap-role:damage-reduction-applications-v3:932"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "conditional_player_object_damage_candidate",
+          "record:A:U001:roles:811"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "has_claim",
+          "initial:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500#0"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "has_historical_gap",
+          "initial-gap:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500#1"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "has_object_id",
+          "object:6002"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "health_regeneration_source",
+          "D095:applications:application:1047"
+        ],
+        [
+          "source:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500",
+          "input_for",
+          "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:8277437750538175500"
+        ]
+      ],
+      "supplementBindingAssigned": false,
+      "reason": "Catalog PlayerGrave target; existing placement/damage/loot/healing roles do not identify actual runtime DB primary or a fixed player producer."
+    }
+  ]
+}

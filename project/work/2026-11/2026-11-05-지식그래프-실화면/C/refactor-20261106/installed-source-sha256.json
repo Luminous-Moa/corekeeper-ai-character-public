@@ -1,0 +1,338 @@
+﻿[
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIActions.cs",
+        "Hash":  "D2A354B0B2B19C0EEAABD7C423B9B4F8313393F5848C1DD2CE466AC5B95DAE5D"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIAgents.cs",
+        "Hash":  "3B17564875132A0B304F166FE221C4AA0A000710C81B49B83C586963B110F5DF"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIApproach.cs",
+        "Hash":  "8815459AAFF211EB97A0FE7A16C11AE2EF71A1B30F7D5945142087F06B1691FC"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIAttackSkill.cs",
+        "Hash":  "CA56AD0CCE7F9EFC514B04F56D9DC7EC649CA33A2BE6A6196673EAEDCD5E1587"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBase.cs",
+        "Hash":  "04CC42664C23DF752834A098DD2D43FEA6F432F062E7A0EE37391FA9D50EA7C9"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBaseProbe.cs",
+        "Hash":  "5E371708AF5C0A9E48284C828E03D35C2F60504957A45DAB0936A5819781BFD8"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBody.Commands.cs",
+        "Hash":  "62EFD5F1B68F9EC498E020327B43B73CBCF0B297005F948505A364C471652D56"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBody.cs",
+        "Hash":  "33E6DA29C2E9402F1C7660A54BC0CCB6B4CCD8D788AE767E5145E4C9CF8FEEE1"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.Candidates.cs",
+        "Hash":  "1D2344EBEB9EE2ADC9421B633481D4C2E15F821DFB5F9BE5CDA2D41F8210F07D"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.cs",
+        "Hash":  "BB7D07430E4F4C1DECEBE3175564583D326160FD7C981C48357180C0A7DB2913"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.Loop.cs",
+        "Hash":  "94CDBC0645A1A7188C1F6107B416656B525867DD76A960201545F70192E67925"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.Prep.cs",
+        "Hash":  "F72FE0EC450771E6FCEB421E9E94F958EEF18E31290370A585353C8E5B3C58FB"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBreakSkills.cs",
+        "Hash":  "BFB4D31F084202D21732228738D8EBAEC3758524D675BA118875BB52164AEF0E"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICharacterStore.cs",
+        "Hash":  "9371986B35C2B2B8F7CEE7A785763A88D9C99D564A9077B84D76F881F605DE15"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIChargeWatch.cs",
+        "Hash":  "F04A72757292C856D3CA5B674082F36E7A3A40B3E00674FD71E3851274567BF7"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIChatHint.cs",
+        "Hash":  "6118CABA5F72A3FB3EE87279CA179B0932B5620DA5E6BF0B9C208847CC654AAD"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIChatWindow.cs",
+        "Hash":  "AB209AF38024DE8C4A9EC52F08C7EF77122799ED866F9E5E4EC1EA736F7A75A4"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICombat.cs",
+        "Hash":  "E52F95B5CEE4AB3D2DBB66DCDC7C7F6E8F5E47ADDE734DCDE9C3167B64F9E7B6"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICook.cs",
+        "Hash":  "D95D5DF75D72882FBBF8A1210891196C4B01EE468B1DE70EE4041770B482E984"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICraft.cs",
+        "Hash":  "B817218BAFD5F3ED665AD57575C630FE4B0968757D5BBD811319B131EEBE2BE0"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIDecisions.cs",
+        "Hash":  "9CDEA379BB12DC0E17F6F02AF37493E16549963EE840D515559A24AA922CDAEA"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIDecisionsApi.cs",
+        "Hash":  "60A75C0FD70E74604D600FE5B5F2DC5EBD00B5E3B55A386AE629640EBB695556"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIDoorFacts.cs",
+        "Hash":  "D91BCF4D36C5C8AD88EC055BC8D404138D61CBD15714E6F44637B3C8F32ED8C3"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIDrops.cs",
+        "Hash":  "6B957CECA1F5EEE5234E6653CD7593CDD26969853CE239A848E5352B05896BCC"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIEdge.cs",
+        "Hash":  "5C8061D30943C0D1CF96C9BCCC4D9449F70BED5F777ECE41F8C0921A0B4641C1"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIEdge.Guard.cs",
+        "Hash":  "D8A889882605B2AE32155757E34EE3005A92C3178A19C7E1B6921571B044BD7A"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIEdge.Place.cs",
+        "Hash":  "C6F76FDEEB1356938D0134C43F1FA57F689E96124C1993E82F1B00A32731BD30"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIEdge.Reach.cs",
+        "Hash":  "7020B1A7038E3A8CFAF4737C3D7701BAF159843C9D153C84E462E1A6B7D07748"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIEdgeSkills.cs",
+        "Hash":  "4E522CE039EF19A90B716DAD0E38A6C33304414D2CE4572ED76221634B16E042"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIExpCore.cs",
+        "Hash":  "CA3D66A95BDA7B79317AAF53D1873B4265DFC778A32FA74F18C657EF1D662DA1"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIExperience.cs",
+        "Hash":  "BC8F3601CD690870FDA0C5B8041A0CEF01460AD14B77DA3CE3F5E77AF77AE7C6"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIFarm.cs",
+        "Hash":  "6C2A4B8BF2E79D9DAA016D960AFB9BD57DF498600228E8BCA8AD28969EE30859"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIGoalFeatures.cs",
+        "Hash":  "BD6885BAEDC2067C6F074BD78A46914B680A58A1078BEB923B439A8F36930DB3"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIGoals.cs",
+        "Hash":  "536A49D809E010026F2EE89E5EB75A32E73368FD1C16388AF47F6E25F95F17F9"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIGoalText.cs",
+        "Hash":  "A71ED79C23C839B322C2E0C2B108639BF4E6D25E8A77865977E0CB670B6402FE"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIGotoSkill.cs",
+        "Hash":  "10096AE896D262E142FCC60A16065CEAA5F0EF3F235E36FB30D35CEE97AEBD0F"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIInspectSkills.cs",
+        "Hash":  "58F72D3F56199E725D7C5466A142FA92803FDD9B93BCE3EEF84C4D54F446BDC7"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIKnowledge.cs",
+        "Hash":  "C588D24D8F7885756D5C21F38F5CCF6B1802584B05B7DD5F1D41185825EE03EB"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIMemory.cs",
+        "Hash":  "85A00D4C524C6F95DC21747810544192B2DEE62BBCE8CB3ED37E4E41BAF597EF"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIMineSkill.cs",
+        "Hash":  "9EB02D6C7D1BC112F38846ABD2D88D46E652CF6C80899AD32A0EB98D526EBB2F"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIMoveTrace.cs",
+        "Hash":  "9AFF23B2E1599E6270163F5120C9F33470917D6B64A459C2AC2158229A105511"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AINavigator.cs",
+        "Hash":  "DECF1855DF61297D7C6382CF67568C80FD69815C36C6B7C0AD4A4D1A7CC77A49"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIObjects.cs",
+        "Hash":  "B3B9BE8E0E76F2B87051E5B57136EF3A75889EDAACDC130CAB78D00324C5E038"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIObservation.cs",
+        "Hash":  "B8C66F5DFDAFB24B955168E22CE7C8645A847D6FDDEA8D4B35320AEED59D9AAB"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPickupSkill.cs",
+        "Hash":  "3B1844803419A8B8FE314494C27F6E00A8728E53DB57CB4A340D4C68D96C7224"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlace.cs",
+        "Hash":  "05949B0D61529FD6E8B3FC4048DEA08283E8D5ADD872A44FC23C804856B62A91"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlaces.cs",
+        "Hash":  "9F9B17CA64749FCC294B0CDE7266C2519328893CA218774F1B751CFD80C94CF3"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlanner.cs",
+        "Hash":  "9862B48BC2F376C7ECD048F13BB285E8B7110146FD5E6E347F223DEEC08544B5"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlanReport.cs",
+        "Hash":  "B46CA7D576F75F57926EBC471302A602245C9967D06E956AC45A194071FAF15C"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlayerSpikeMod.Chat.cs",
+        "Hash":  "AD15F48C78639C9C1BAF969B97C3BBD9E3DBE6A3A52C8C774192D3DB9CB05151"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlayerSpikeMod.cs",
+        "Hash":  "27C5D70CD6F7DAD42D7992E6B05F7EE92B963976380ED1FE1B59A6D502801EAA"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlayerSpikePatches.cs",
+        "Hash":  "E0D5163F5923CF5311529BAFB86DC9037C944382F41B95047837E40454AD0F8A"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIShortSkills.cs",
+        "Hash":  "74167C1A31E4A5A34BDB8DDB587E27615D6414A42D23FE705C53A5755C0A6EE7"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AISkill.cs",
+        "Hash":  "FEC8DF3BA77024A3F156187F49DB2E969C34B4990703273E392F4A7565D9CB53"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AITileReader.cs",
+        "Hash":  "9F38CF4A37C502A46BC6E535C08F56AF35EAE90D2082B789981A83DBD3DB2094"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AITunnel.cs",
+        "Hash":  "656E9D8C5DF0D0722DE4917112599F10A597640CD95536E7BC1B0AEC3A3EBDE0"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIVision.cs",
+        "Hash":  "15F3C881945F271F9D19975EF5439653F2A236FF5AEC4F942DCF7DF7273CEB3A"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIWorldFacts.cs",
+        "Hash":  "B3E8270BF31E13B54C572B427554E8C2916A50903A38B7888BFC48AC434FAA47"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIWorldSettings.cs",
+        "Hash":  "1F72BADACCF54E765E660C95C89FA57AA51F77CBD12F252B91881864232D6C7A"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIApproachSearch.cs",
+        "Hash":  "D3EB857F142154E4F72E40B566721EC3A707AF5755DE769D5245656F445031A5"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIBaseEdge.cs",
+        "Hash":  "E48DCBCAA55E08F24146A8EAB6A7B3438F99DE60190E3ED7C615C6637AADF718"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIBaseGuard.cs",
+        "Hash":  "1F510F4F4BA5BC5C9939DA17138194D8F88F6C6264742E0E3D8F92FDBD167E66"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIBaseMap.cs",
+        "Hash":  "AB9F01EADBA92FD6DCDE848160068D2FAEA985EC2F332EFFD01EC1A131679F1E"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AICandidateAssembler.cs",
+        "Hash":  "9442849560BD186DDC7C1A5724F2775CB6A19B53618762750B4BA6F04E75A7A1"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIChargeMath.cs",
+        "Hash":  "6D13CF344AEF7EA7D854FD5E68F2F85E25ADEA7AF3F2693E2F0DDB3C5B0C89F7"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIChatFade.cs",
+        "Hash":  "876F99D2D8AC7D65AD19B4D84E35B3359E2BB9D0C18A4F9E030E87A4E9CB49C7"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIChatLog.cs",
+        "Hash":  "AF36A32FB2D3B13876584E1FAED3E3C526CE3037FA05D22C993B39FFBE44646E"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIContinueText.cs",
+        "Hash":  "CC4D05CEAD45FA51029520D9B5B33C7958761810F1A05032F67AD6ABD26958EC"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIDoorPass.cs",
+        "Hash":  "8353AE8555B7BCFF79DC02E090B4D956C606F530C9C779DAB36B831FEF580E22"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIFightLog.cs",
+        "Hash":  "EB7B384B945E7B5216C231C910D8FD7F03A64C50338A7E03AD99FF8A59712AC4"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIGoalKinds.cs",
+        "Hash":  "41056D025DE0D583B9016079FDA18A650B1638D3940202DDCD8663F24F1A965D"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIHostOrders.cs",
+        "Hash":  "F1718093AAD19EDCE7DFE4B403CA955DECAA0DF6D78702B0D7457411B39A0083"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIMention.cs",
+        "Hash":  "300D7F65D83CCC2BB419B084C5652B94668087306DAAC2F722E70F4391138FCE"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIOutcomes.cs",
+        "Hash":  "483EFE3DE79B2267217E81026DBE2CD857FAFD4DEAF95A2553A0E28D2D99721D"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlaceGrid.cs",
+        "Hash":  "E6DB7225C498FA2FA314327E17A8CD49207E1144B7F272D0EB084999BF3BB156"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlaces.cs",
+        "Hash":  "82F001DD73A95B0D09EBF8AED331036E19F2F62CD07FBC8BC354B1B1484BA903"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlanInbox.cs",
+        "Hash":  "3688CD1AFE7F11CF8B31B07A0BFC4C96D1B04A0A1D6661E8887524E1D331B607"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlanProtocol.cs",
+        "Hash":  "8EC13F3CCF3C997E8A60705B16E199A3992D5E77FBF09E280E3DC54BAC7576A0"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlanRules.cs",
+        "Hash":  "148EF19131072C66E18FC31C80A4E6141E5C975BB4DFCD4303F50D8C1CE15C70"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPressQueue.cs",
+        "Hash":  "FA53DCD77652B8B878DC52F67CCB274FE4DCF06ACFC98C9433032366FE273528"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIRunGate.cs",
+        "Hash":  "3A69D992773C0D6E51136B6114AAFE3B662CCA596A404E2FC7E1C9D4C82C27D7"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AISettle.cs",
+        "Hash":  "17DDC60949F1BB28B54F21EA504A8C482ABFBA85EDE1987116849290EB380C95"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIThreatHistory.cs",
+        "Hash":  "914470F5CFC0584C3063911A95B8D46A2EF4FE0FD76950DE298666E52B956E39"
+    },
+    {
+        "Path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AITunnelSearch.cs",
+        "Hash":  "51548F7F007E796347E6AF7AA5A35E50D57F874F2B5F45E1B8596A35F8AC4E0D"
+    }
+]

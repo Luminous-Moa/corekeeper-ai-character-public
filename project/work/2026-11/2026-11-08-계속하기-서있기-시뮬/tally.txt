@@ -1,0 +1,22 @@
+== H-v0 (164 answers)
+  fight: continue 91, explore 4, attack(other target) 3
+  calm : continue 48, explore 12, request_plan 4, stop_action 1, expedition_resume 1
+== H-v1 (164 answers)
+  fight: explore 64, attack(other target) 32, follow 2
+  calm : explore 61, request_plan 4, stop_action 1
+== H-v2 (164 answers)
+  fight: explore 68, attack(other target) 28, follow 2
+  calm : explore 60, request_plan 4, stop_action 2
+== H-v3 (164 answers)
+  fight: explore 58, attack(other target) 38, follow 2
+  calm : explore 59, stop_action 4, request_plan 3
+== O-v0 (34 answers)
+  continue 30, stop_action 4
+  current action kept: 30/34
+   travel: continue 14
+   attack: continue 16, stop_action 4
+== O-v1 (34 answers)
+  travel_turn 13, stop_action 11, away 4, hit 2, dig 2, attack(other target) 1, request_plan 1
+  current action kept: 0/34
+   travel: travel_turn 13, stop_action 1
+   attack: stop_action 10, away 4, hit 2, dig 2, attack(other target) 1, request_plan 1

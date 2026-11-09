@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),file=path.resolve(stage,'../../../지식그래프/기획/기능.md');
+let text=fs.readFileSync(file,'utf8').replace(/^\uFEFF/,'');
+const start=text.indexOf('### F.craft '),end=text.indexOf('\n### ',start+1);if(start<0||end<0)throw Error('F.craft 절 경계 없음');
+let section=text.slice(start,end);const prior=section.match(/^- 한 줄: (.*)$/m)?.[1];
+if(!prior)throw Error('기존 한 줄 없음');
+section=section.replace(/^- 상태: .*$/m,'- 상태: 구현됨·새 실게임 미확인');
+section=section.replace(/^- 한 줄: .*$/m,'- 한 줄: 알려진 품목과 실제 제작대를 선택하고 runtime 레시피 비용·출력량으로 요청 횟수/초과량을 계산한다. 트리 말단과 직접 지정·Prep은 같은 ExactCandidate 입구를 쓰며 자동 가공은 별도다. 커서·시설 잔류와 main 가방 수령을 구분하고 원래 부탁의 단계 완료는 AI가 선택한다.');
+section+='\n- 메모: 이전 구현의 한 줄 설명과 실게임 확인 지위는 당시 판의 기록이다: '+prior+'\n- 근거: work/2026-11/2026-11-07-생활트리구현/05-implementation.md "실제 runtime recipe 출력량으로 횟수와 초과량을 계산하고"\n- 메모: c4a0f5e의 제작·Prep 연결은 생산코드 어댑터·독립 표본·Unity로 검증했으며 새 실게임 성공으로 승격하지 않는다. 위 확인한 선과 과거 실게임 인용은 그때 판에 한정한다.\n';
+text=text.slice(0,start)+section+text.slice(end);fs.writeFileSync(file,text);

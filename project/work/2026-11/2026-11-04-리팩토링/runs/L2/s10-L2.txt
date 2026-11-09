@@ -1,0 +1,33 @@
+PLANNER: auto on (/ai goal 알아서)
+PLANNER: report # sent trigger=auto_on rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=429 error=limit
+PLANNER: upper LLM unavailable (limit: usage 99% > 85% (fake bridge)); auto stays on, asking again in 120s
+GOAL free time rev=#: 위쪽 LLM을 지금 쓸 수 없음(limit: usage 99% > 85% (fake bridge); 120초 뒤 다시 물음)
+PLANNER: report # sent trigger=auto_on rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=200 error=parse
+PLANNER: report # sent trigger=retry rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=200 error=null
+PLANNER: upper LLM answers again (was: limit: usage 99% > 85% (fake bridge))
+PLANNER: report # APPLY decision=set goal=follow  -1 why='fake bridge step 3' after #s
+GOAL free time ends after #s: a goal came (llm:claude#)
+GOAL set rev=# source=llm:claude#: 호스트 따라가기 (start count 0)
+GOAL done rev=#: 호스트 따라가기 (3 minutes, upper-LLM follow) after #s
+GOAL cleared (goal done): was '호스트 따라가기' rev=#
+PLANNER: report # sent trigger=goal_done rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=409 error=busy
+GOAL free time rev=#: 위쪽 LLM에 5초 뒤 다시 물음(앞 답을 쓰지 못함)
+PLANNER: report # sent trigger=goal_done rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=200 error=null
+PLANNER: report # answer DROPPED: 보고의 can_do.gather에 없는 품목 'IronOre'
+PLANNER: report # sent trigger=retry rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=200 error=null
+PLANNER: report # APPLY decision=hold goal=   why='fake bridge step 6' after #s
+GOAL free time ends after #s: the upper LLM is available and asks nothing now (e.g. it answered hold, or auto is off)
+GOAL cleared (free time over): was '자유 시간(정해진 목표 없음)' rev=#
+PLANNER: report # sent trigger=hold_recheck rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=200 error=null
+PLANNER: report # APPLY decision=hold goal=   why='fake bridge step 6' after #s
+PLANNER: report # sent trigger=hold_recheck rev=# reportChars=# buildMs=#
+PLANNER: report # answer after #s code=200 error=null
+PLANNER: report # APPLY decision=hold goal=   why='fake bridge step 6' after #s
+PLANNER: auto off (/ai stop)

@@ -1,0 +1,12 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs:1231-1241 sha256=d648cce1d493e1dee19acb6cfd341c6ff93e0e57c2bf952e1a5b99f3a477bb86
+1231:     private static List<AICandidate> InventoryChoiceSurface(World server, Entity player, AIObservation observation, List<AICandidate> ordinary)
+1232:     {
+1233:         if (AILife.BlocksInventoryView(server, player)) return ordinary;
+1234:         var menu = AIInventoryMenu.Candidates(server, player, observation, AIBody.Current?.Key ?? "");
+1235:         bool active = AIInventoryMenu.Active;
+1236:         bool danger = observation.enemies.Exists(e => e.dist <= Settings().combatRange && !AIEdge.LastAssessedCannotCome(e.entity));
+1237:         ordinary.RemoveAll(c => c.kind == "inventory_menu" || c.life == null && (c.kind == "inventory" || c.kind == "store" || c.kind == "take") || active && !InventoryMenuControl(c, danger, observation.enemies.Exists(e => e.entity == c.entity)));
+1238:         ordinary.AddRange(menu);
+1239:         for (int i = 0; i < ordinary.Count; i++) ordinary[i].value = "c" + (i + 1);
+1240:         return ordinary;
+1241:     }

@@ -1,0 +1,6 @@
+ai-bridge: game graph C:\Dev\CoreKeeperModSDK\Tools\knowledge\data (3190 nodes, build 26332184)
+ai-bridge: claude (claude) found=true login=true auth=claude.ai subscription=max usage={"week":84,"week-fable":0} ok 
+ai-bridge: gpt (codex) found=true login=true auth=ChatGPT subscription=ChatGPT usage={"week":71} ok 
+ai-bridge: gemini (agy) found=true login=true auth=account login subscription=account usage={"5h":0,"week":13.6} ok 
+ai-bridge: grok (grok) found=true login=true auth=account login subscription=account usage={"week":1} ok 
+ai-bridge listening on http://127.0.0.1:8331

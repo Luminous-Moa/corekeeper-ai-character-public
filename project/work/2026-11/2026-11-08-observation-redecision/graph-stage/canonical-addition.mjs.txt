@@ -1,0 +1,200 @@
+
+// 사용자 후속 완료 확인 요청과 관측·재판단 구현 근거.
+Object.assign(documents,{
+  "observationAgreement": {
+    "layer": "재기획",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/agreement.md",
+    "originalPath": "../2026-11-08-observation-redecision/agreement.md"
+  },
+  "observationImplementation": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/implementation.md",
+    "originalPath": "../2026-11-08-observation-redecision/implementation.md"
+  },
+  "observationReceipt": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/give-receipt-implementation.md",
+    "originalPath": "../2026-11-08-observation-redecision/give-receipt-implementation.md"
+  },
+  "observationReview": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code.md",
+    "originalPath": "../2026-11-08-observation-redecision/review-code.md"
+  },
+  "observationReviewedHashes": {
+    "layer": "참고",
+    "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-code-sha256.json",
+    "originalPath": "../2026-11-08-observation-redecision/review-code-sha256.json"
+  }
+});
+nodes.push(...[
+  {
+    "id": "P.observation-completion-check",
+    "title": "완료 선택과 실제 미완료 사실을 대조하고 재판단",
+    "layer": "재기획",
+    "status": "합의·현재 후속 요청",
+    "summary": "모델이 완료를 선택했어도 실제 부족·미확인이면 현재 사실을 알리고 판단모델을 다시 호출한다. 관측은 목표·단계·대상·실행 회차에 귀속하며 원래 부탁과 미완료 의무를 보존한다. 계속·중단·전환의 AI 선택권을 유지하고 실제 완료 사실과 미완료를 알고 중단하는 의사를 구별한다.",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "사용자는 모델이 완료를 선택했더라도"
+      },
+      {
+        "doc": "observationAgreement",
+        "anchor": "## 구현 기준"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-implementation",
+    "title": "관측 소속·완료 적용 직전 사실 검사·지속 대기 재검토 후보",
+    "layer": "참고",
+    "status": "참고·코드/오프라인 수용 후보·실기 대기",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "현재 몸 Tick에서 다시 확인된 대기 사실을 다음 Brain에서 읽고 같은 pending은5초 간격으로 재검토한다. 진행 중 요청·준비·미소비 사건은 중복 알림을 막고 새 사실은 즉시 전달한다. 목표 세대·이름·run을 입력과 상위 보고에 유지한다. finish_goal은 현재 수량·도착·수령을 다시 읽어 부족·미확인이면 단계 advance를 보류한다. 측정 완료 조건 없는 탐색·따르기의 종료와 stop_action/request_plan은 유지한다.",
+    "evidence": [
+      {
+        "doc": "observationImplementation",
+        "anchor": "## 실행 관측"
+      },
+      {
+        "doc": "observationImplementation",
+        "anchor": "## 단계 완료"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 수용 근거"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-delivery",
+    "title": "sender·floor·recipient 귀속과 실제 소비를 대조하는 Give 관측",
+    "layer": "참고",
+    "status": "참고·생산 observer 구현·실기 순서 미확인",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "pickup 이전 sender 표식·정확 물품·자기 슬롯 감소·새 유일 floor를 귀속하고 inventory 소비 이전 동일 floor의 지정 recipient receipt를 관측한다. 이후 실제 floor 소비와 수령자 증가를 맞춘다. 수령 수량은 floor 포착과 독립적으로 매 Tick 측정하고 누락은 미관측으로 표시한다. 송신 drop을 자동 반복하지 않으며 이전 목표의 완료가 새 목표 수령량을 올리지 않게 한다.",
+    "evidence": [
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 실제 처리 경계"
+      },
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 변경한 관측"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 게임 처리 순서 독립 대조"
+      }
+    ]
+  },
+  {
+    "id": "R.observation-review",
+    "title": "관측·재판단 코드와 생산 경로 오프라인 독립 수용",
+    "layer": "참고",
+    "status": "참고·독립 코드/오프라인 수용·Unity/실기 별도",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "summary": "실제 실행·관측·완료·계획 메서드156개, inventory/observer171개, travel51개를 독립 통과했다. Brain→Body의50ms·2초 순서, 이전 acknowledgment와 새 관측, 타인 동일 물품·지정 외 pickup·복수 floor·즉시 착용·cleanup 반례를 확인했다. HTTP와 ECS consumer/정렬은 대역이며 실제 지정 수령·후속 부위 실행·조용한 통로 재판단·새 목표 관측 분리는 실기로 확인해야 한다.",
+    "evidence": [
+      {
+        "doc": "observationReview",
+        "anchor": "## 판정"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 직접 확인한 결과"
+      },
+      {
+        "doc": "observationReview",
+        "anchor": "## 남은 검증"
+      }
+    ]
+  }
+]);
+edges.push(...[
+  {
+    "from": "P.valid-action",
+    "to": "P.observation-completion-check",
+    "type": "계속·중단·전환 권한을 유지하는 후속 완료 확인",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "- 계속·중단·전환은 AI가 선택한다."
+      }
+    ]
+  },
+  {
+    "from": "P.original-request",
+    "to": "P.observation-completion-check",
+    "type": "미완료 의무와 원래 부탁의 보존",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "- 모델의 완료 선택과 실제 관측이 맞지 않으면"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.finish-goal",
+    "type": "참고: 기존 명시 단계 완료 계약의 후속 보완",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationAgreement",
+        "anchor": "현재 요청에 따라 완료 선언과 실제 사실이 어긋날 때의 재판단 흐름을 보완한다."
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-implementation",
+    "type": "참고: 실제 관측과 재판단 구현",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationImplementation",
+        "anchor": "## 단계 완료"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-delivery",
+    "type": "참고: 정확한 수령 관측 구현",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 변경한 관측"
+      }
+    ]
+  },
+  {
+    "from": "P.observation-completion-check",
+    "to": "R.observation-review",
+    "type": "참고: 독립 검수와 남은 실기",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationReview",
+        "anchor": "## 판정"
+      }
+    ]
+  },
+  {
+    "from": "R.observation-implementation",
+    "to": "R.observation-delivery",
+    "type": "참고: 완료 사실의 전달 관측 소비",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "observationReceipt",
+        "anchor": "## 변경한 관측"
+      }
+    ]
+  }
+]);

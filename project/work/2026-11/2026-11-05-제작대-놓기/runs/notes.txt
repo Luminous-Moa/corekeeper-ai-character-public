@@ -1,0 +1,125 @@
+08:54:25 start place-s1 4e87a87 live check; game/unity off
+08:56:50 installed 4e87a87 (52 .cs diff 0); backup verify 0 (mod 50 aiplayers 43 localsteam 200 remote 52); switches testcmds decisionlog; lowgfx 30; bridge gemini up (KG 3190); launching
+08:59:03 new world placetest seed 917121490949 일반 slot 29: create clicked
+08:59:49 in world placetest slot 29 host char 4
+sent /ai on gemini
+[AIPlayerSpike] t=173.4 @Gemini stage Disabled -> CountingDown
+sent /ai give CopperAnvil 1
+[AIPlayerSpike] t=208.1 chat command from host: '/ai give CopperAnvil 1'
+sent /ai give CopperBar 12
+[AIPlayerSpike] t=212.3 chat command from host: '/ai give CopperBar 12'
+sent /ai inv
+[AIPlayerSpike] t=215.1 @Gemini SKILL 가방 START at (0.00,-0.14)
+09:00:43 T1 anvil: mention craft CopperSword (anvil in bag only)
+sent @Gemini make one CopperSword for yourself
+[AIPlayerSpike] t=230.7 @Gemini PLANNER: report #1 sent trigger=host_said rev=0 reportChars=3646 buildMs=41.6: {"trigger":"host_said","goal":{"source":"","text":""},"goal_now":{"text":"없음","by":"none"},"plan":null,"plan_max":5,"host_order":{"id":1,"text":"@Gemini make one CopperSword for yourself","ago_s":0,"state":"받음"},"host_orders_open":[],"chat":[{"from":"호스트","to":"Gemini","to_me":true,"ago_s":0,"new":true,"text":"@Gemini make one CopperSword for yourself"}],"recent_fights":[],"last_decision":null,"why_ended":"","events":[],"me":{"hp":"100/100","hunger":70,"hand":"CopperAnvi
+09:02:40 T1 PASS: report#1 answer plan [place CopperAnvil base (no count) -> craft CopperSword 1], placed (-2,-1) 0.7s, sword crafted t=249.1; report#3 places has station:CopperAnvil, can_do.craft CopperAnvil group, no statues in places
+sent /ai stop
+[AIPlayerSpike] t=343.6 @Gemini chat reply: [Gemini] AI: 하던 기술이 없습니다. 제자리에 서 있습니다.
+sent /ai give WoodFloor 7
+[AIPlayerSpike] t=347.4 chat command from host: '/ai give WoodFloor 7'
+sent /ai give WoodenWorkBench 1
+[AIPlayerSpike] t=352.7 chat command from host: '/ai give WoodenWorkBench 1'
+sent /ai give InventoryChest 1
+[AIPlayerSpike] t=357.3 @Gemini TEST-ONLY give: InventoryChest x1 into AI slot 13
+sent /ai give WoodDoor 2
+[AIPlayerSpike] t=361.1 @Gemini TEST-ONLY give: WoodDoor x2 into AI slot 14
+sent /ai give WoodBridge 8
+[AIPlayerSpike] t=365.6 @Gemini TEST-ONLY give: WoodBridge x8 into AI slot 15
+09:03:11 T4 floor: pre-place 1 at (3,-3)
+sent /ai goal place WoodFloor rect:3,-3,3,-3
+[AIPlayerSpike] t=378.5 @Gemini chat reply: [Gemini] AI place: rect:3,-3,3,-3에 놓을 칸이 없음(이미 WoodFloor 있는 칸 0개) - 건너뛴 칸 1개: (3,-3) 이미 벽이 있음
+sent /ai goal place WoodFloor rect:-1,-3,-1,-3
+[AIPlayerSpike] t=401.3 @Gemini GOAL done rev=13: WoodFloor을(를) rect:-1,-3,-1,-3에 놓기 (rect:-1,-3,-1,-3의 1칸 중 1칸에 WoodFloor 놓음) after 7.7s, calls this session 27
+09:03:47 T4 rect 3x3 -2,-4..0,-2 with (-1,-3) pre-placed, bag WoodFloor 6
+sent /ai goal place WoodFloor rect:-2,-4,0,-2
+[AIPlayerSpike] t=417.2 @Gemini GOAL done rev=15: WoodFloor을(를) rect:-2,-4,0,-2에 놓기 9개 (rect:-2,-4,0,-2의 9칸 중 4칸에 WoodFloor 놓음 · 건너뛴 칸 5개: (-2,-4) 이미 벽이 있음; (-1,-4) 이미 벽이 있음; (0,-4) 이미 벽이 있음; (-2,-3) 이미 벽이 있음 외 1개) after 2.9s, calls this session 28
+09:04:06 T4 result: 4 placed, 5 skipped (4 walls + 1 hidden in '외 1개'), ended done
+sent /ai goal place WoodFloor rect:1,-3,2,-2
+[AIPlayerSpike] t=435.3 @Gemini GOAL done rev=17: WoodFloor을(를) rect:1,-3,2,-2에 놓기 4개 (rect:1,-3,2,-2의 4칸 중 2칸에 WoodFloor 놓음 — 가방에 WoodFloor이(가) 떨어져 1칸 못 놓음 · 건너뛴 칸 1개: (2,-3) 이미 벽이 있음) after 1.5s, calls this session 29
+09:04:22 T4/F3 PASS: taken note '가방에 WoodFloor 2개, 놓을 칸 3개 — 2칸만 놓임', ended done with placed/not placed
+sent /ai goal place WoodenWorkBench base
+[AIPlayerSpike] t=450.8 @Gemini GOAL done rev=19: WoodenWorkBench을(를) base에 놓기 (WoodenWorkBench 1개 놓음(기지 (0,0) 코어(정하지 않아 기본값))(마지막 (0,-2))) after 1.6s, calls this session 30
+09:04:37 T7a WoodenWorkBench is 1x1: placed (0,-2) on floor, done
+sent /ai give Furnace 1
+[AIPlayerSpike] t=462.6 @Gemini TEST-ONLY give: Furnace x1 into AI slot 9
+sent /ai goal place Furnace base
+[AIPlayerSpike] t=468.9 @Gemini GOAL done rev=21: Furnace을(를) base에 놓기 (Furnace 1개 놓음(기지 (0,0) 코어(정하지 않아 기본값))(마지막 (-1,-3))) after 0.8s, calls this session 31
+sent /ai give WoodBed 1
+[AIPlayerSpike] t=501.6 @Gemini chat reply: [Gemini] 사용법: /ai give <ObjectID> [개수]
+sent /ai give WoodenBed 1
+[AIPlayerSpike] t=506.1 @Gemini chat reply: [Gemini] 사용법: /ai give <ObjectID> [개수]
+sent /ai give BasicBed 1
+[AIPlayerSpike] t=510.2 @Gemini chat reply: [Gemini] 사용법: /ai give <ObjectID> [개수]
+sent /ai give Bed 1
+[AIPlayerSpike] t=528.1 @Gemini TEST-ONLY give: Bed x1 into AI slot 12
+sent /ai goal place Bed base
+[AIPlayerSpike] t=542.0 @Gemini GOAL done rev=28: Bed을(를) base에 놓기 (Bed 1개 놓음(기지 (0,0) 코어(정하지 않아 기본값))(마지막 (-4,0))) after 8.9s, calls this session 37
+09:06:09 T7 PASS Bed 1x2 at (-4,0); also place base from 16 tiles away walked to base (dig_0_0) then placed
+sent /ai goal goto ore:CopperOre@-11,-3
+[AIPlayerSpike] t=555.8 @Gemini chat reply: [Gemini] AI goto: ore:CopperOre@-11,-3 - 그 칸의 광석은 기억에 없음(다시 보았을 때 없어 잊었거나 잘못된 식별자). 아는 장소는 보고 places 참고
+sent /ai gemini arena go 14 -12
+[AIPlayerSpike] t=568.2 chat command from host: '/ai gemini arena go 14 -12'
+sent /ai goal goto station:CopperAnvil@-2,-1
+[AIPlayerSpike] t=586.2 @Gemini GOAL done rev=31: station:CopperAnvil@-2,-1(으)로 가기 (CopperAnvil (-2,-1) 도착(1.2칸)) after 8.1s, calls this session 39
+09:06:54 T2 goto station:CopperAnvil@-2,-1 from (14,-12): done 8.1s (16 tiles, known path 45, 1 wall). ore:CopperOre@-11,-3 refused: ore no longer remembered (mined) - message names places
+09:07:05 T3 water not known yet; T6 my door: dig tunnel -4,-7 then place door rect:-4,-6
+sent /ai dig -4 -7
+[AIPlayerSpike] t=620.3 @Gemini SKILL 파들어가기 DONE after 10.7s: reason='목표 벽 (5,-15) 부숨 · 벽 3개 뚫음 · 가방 WallDirtBlock +2' start=(-2.64,-1.93) end=(5.00,-14.03) facts=[target=기억한 광석 CopperOre (5,-15) wall=True; plan: path 41 tiles, walls 3 [WallDirtBlock 3], est hits 12, damage 37 (도구 WoodMiningPick), tool-short walls avoided 0; walls mined 3/3 planned at start, steps 6, inventory WallDirtBlock +2]
+sent /ai goal place WoodDoor rect:-4,-6,-4,-6
+[AIPlayerSpike] t=627.1 @Gemini chat reply: [Gemini] AI place: rect:-4,-6,-4,-6에 놓을 칸이 없음(이미 WoodDoor 있는 칸 0개) - 건너뛴 칸 1개: (-4,-6) 이미 벽이 있음
+sent /ai dig -4 -7
+TIMEOUT ^\[AIPlayerSpike\].*(SKILL 파들어가기 (DONE|FAILED).*\(-4,-7\)|목표 \(-4,-7\))
+sent /ai goal place WoodDoor rect:-4,-6,-4,-6
+[AIPlayerSpike] t=704.8 @Gemini chat reply: [Gemini] AI place: rect:-4,-6,-4,-6에 놓을 칸이 없음(이미 WoodDoor 있는 칸 0개) - 건너뛴 칸 1개: (-4,-6) 이미 벽이 있음
+sent /ai goal none
+[AIPlayerSpike] t=721.8 @Gemini GOAL cleared (/ai goal 없음): was 'WoodFloor(WoodFloor) 4개 만들기' rev=37
+sent /ai mine -4 -6
+[AIPlayerSpike] t=730.7 @Gemini SKILL 캐기 DONE after 5.1s: reason='벽 (-4,-6) 부숨 · 가방 WallDirtBlock +1' start=(-2.10,-1.98) end=(-4.00,-6.22) facts=[target=(-4,-6) wall=Dirt obj=WallDirtBlock hp=135 reduction=1 ore=False stand=(-4,-7) tool=WoodMiningPick slot=5; precheck: est damage 39 (20 + Mining effect 19) vs reduction 1; holding WoodMiningPick; tile gone after 1.4s of swinging: top now ground; tileHp -1->21; inventory diff 0.1s after: WallDirtBlock +1; drops still on ground within 3: []]
+sent /ai goal place WoodDoor rect:-4,-6,-4,-6
+[AIPlayerSpike] t=743.3 @Gemini GOAL done rev=39: WoodDoor을(를) rect:-4,-6,-4,-6에 놓기 (rect:-4,-6,-4,-6의 1칸 중 1칸에 WoodDoor 놓음) after 1.0s, calls this session 54
+09:09:30 T6 door placed via place rect at (-4,-6): 'EDGE memory: ... is my door (placed off the edge plan; my doors 1)'
+sent /ai goal goto tile:-4,-3
+[AIPlayerSpike] t=759.1 @Gemini GOAL done rev=41: tile:-4,-3(으)로 가기 (칸 (-4,-3) 도착(1.0칸)) after 3.4s, calls this session 55
+09:09:58 T6 goto tile:-4,-3 from (-4,-7): walked 22-tile detour west (game-bfs, path 27) instead of through my door (-4,-6) 1 tile away; door step not exercised
+sent /ai edge
+[AIPlayerSpike] t=782.6 @Gemini EDGE options: base (0,0), 4; grid 16 ms on the game thread, 141 cuts done 80 ms later on a worker thread: [1] 틈 2곳, 막을 칸 2칸(가장 긴 틈 1칸), 블록 2개 필요, 가진 블록 64개, 둘러싸이는 넓이 26칸, 안쪽에 놓을 수 있는 칸 17칸, 둘레 밖에 남는 것: LarvaBossStatue, LarvaHiveBossStatue, SlimeBossStatue, 둘레에 걸친 것: TheCore, 틈 1의 문 자리 (-5,-1): 문을 달려면 양옆에 벽 2칸이 더 필요, 틈 2의 문 자리 (-3,1): 문을 달려면 양옆에 벽 2칸이 더 필요, 막을 칸 2칸 너머는 본 적 있는 바깥 공간; 틈: 1칸 (-5,-1)~(-5,-1) / 1칸 (-3,1)~(-3,1) | [2] 틈 1곳, 막을 칸 1칸(가장 긴 틈 1칸), 블록 1개 필요, 가진 블록 64개, 둘러싸이는 넓이 63칸, 안쪽에 놓을 수 있는 칸 54칸, 둘레 밖에 남는 것: LarvaHiveBossStatue, SlimeBossStatue, 둘레에 걸친 것: LarvaBossStatue, TheCore, 틈 1의 문 자리 (-10,-2): 문을 달려면 양옆에 벽 1칸이 더 필요, 막을 칸 1칸 너머는 본 적 있는 바깥 공간; 틈: 1칸 (-10,-2)~(-10,-2) | [3] 틈 1곳, 막을 칸 1칸(가장 긴 틈 1칸), 블록 1개 필요, 가진 블록 64개, 둘러싸이는 넓이 73칸, 안쪽에 놓을 수 있는 칸 64칸, 둘레 밖에 남는 것: LarvaHiveBossStatue, SlimeBossStatue, 둘레에 걸친 것: LarvaBossStatue, TheCore, 틈 1의 문 자리 (-8,-6): 문을 달려면 양옆에 벽 2칸이 더 필요, 막을 칸 1칸 너머는 본
+sent /ai edge pick 2
+[AIPlayerSpike] t=792.8 @Gemini EDGE plan: 둘레 2번을 고름: 틈 1곳·막을 칸 1칸·안쪽 63칸, 문 자리 없음
+sent /ai goal place WallDirtBlock tile:-10,-2
+[AIPlayerSpike] t=803.5 @Gemini GOAL done rev=44: WallDirtBlock을(를) tile:-10,-2에 놓기 (WallDirtBlock 1개 놓음(칸 (-10,-2))(마지막 (-10,-1))) after 3.5s, calls this session 63
+09:10:40 T5: edge plan 2 (gap (-10,-2)); place goal tile:-10,-2: AI stood on gap tile, options (-10,-1) ok / (-10,-3) cut-out / (-9,0) text '칸 (-10,-2) 중심에서 2칸 — 반경 3칸 밖' (contradiction); edgefill + edgefill_out (바깥에서 닫음) offered
+sent /ai goal goto tile:-7,-2
+[AIPlayerSpike] t=830.2 @Gemini GOAL done rev=47: tile:-7,-2(으)로 가기 (칸 (-7,-2) 도착(1.5칸)) after 3.7s, calls this session 65
+sent /ai goal place WallDirtBlock rect:-10,-2,-10,-2
+[AIPlayerSpike] t=839.9 @Gemini GOAL done rev=49: WallDirtBlock을(를) rect:-10,-2,-10,-2에 놓기 (rect:-10,-2,-10,-2의 1칸 중 1칸에 WallDirtBlock 놓음) after 1.6s, calls this session 66
+09:11:12 T5 rect at gap: option text '그중 1칸이 둘레 틈 1 위(…그 틈을 메움)'; EDGE memory walls 1 doors 0 (my door not counted as edge door)
+sent /ai off
+[AIPlayerSpike] t=856.1 @Gemini stage Stopped -> Disabled
+sent /ai on gemini
+[AIPlayerSpike] t=875.7 @Gemini stage PlayerSpawned -> Walking
+09:11:52 T6 reconnect: /ai off -> /ai on gemini; gemini/memory.json has edgeMyDoors [-4,-6] (saved per world)
+sent /ai goal goto tile:-4,-3
+[AIPlayerSpike] t=900.2 @Gemini GOAL done rev=51: tile:-4,-3(으)로 가기 (칸 (-4,-3) 도착(1.1칸)) after 1.9s, calls this session 1
+sent /ai goal goto tile:-4,-8
+[AIPlayerSpike] t=910.5 @Gemini GOAL done rev=53: tile:-4,-8(으)로 가기 (칸 (-4,-8) 도착(0.1칸)) after 5.4s, calls this session 3
+09:12:27 T6 goto tile:-4,-8 from inside: tunnel plan dug edge wall (-9,-3) (new breach) and detoured; door (-4,-6) may lead to wall (-4,-5) - checking
+sent /ai mine -4 -5
+[AIPlayerSpike] t=932.5 @Gemini SKILL 캐기 FAILED after 0.0s: reason='대상 칸이 보이지 않음' start=(-15.15,-20.42) end=(-15.15,-20.42) facts=[]
+sent /ai mine -4 -4
+[AIPlayerSpike] t=936.2 @Gemini SKILL 캐기 FAILED after 0.0s: reason='대상 칸이 보이지 않음' start=(-9.09,-30.74) end=(-9.09,-30.74) facts=[]
+sent /ai goal none
+[AIPlayerSpike] t=944.7 @Gemini GOAL cleared (/ai goal 없음): was '탐험' rev=55
+sent /ai gemini arena go -4 -3
+[AIPlayerSpike] t=949.9 @Gemini TEST-ONLY arena go: cleared 0 enemies; teleport to (-5,-2) (spot -4,-3); health 100; removed 1 melee weapon(s), fresh WoodSword (durability 88) into slot 17
+sent /ai mine -4 -4
+[AIPlayerSpike] t=955.3 @Gemini SKILL 캐기 FAILED after 0.0s: reason='대상 옆에 설 수 있는 칸이 없음' start=(-5.00,-2.00) end=(-5.00,-2.00) facts=[]
+sent /ai mine -4 -5
+[AIPlayerSpike] t=959.2 @Gemini SKILL 캐기 FAILED after 0.0s: reason='대상 옆에 설 수 있는 칸이 없음' start=(-5.00,-2.00) end=(-5.00,-2.00) facts=[]
+sent /ai dig -4 -5
+[AIPlayerSpike] t=974.2 @Gemini SKILL 파들어가기 DONE after 5.2s: reason='목표 벽 (-4,-5) 부숨 · 벽 3개 뚫음 · 가방 WallDirtBlock +2' start=(-5.00,-2.00) end=(-4.00,-4.05) facts=[target=좌표 (-4,-5) wall=True; plan: path 4 tiles, walls 3 [WallDirtBlock 3], est hits 12, damage 40 (도구 WoodMiningPick(기억한 캐기 +20)), tool-short walls avoided 0; walls mined 3/3 planned at start, steps 5, inventory WallDirtBlock +2]
+sent /ai goal goto tile:-4,-8
+[AIPlayerSpike] t=982.3 @Gemini GOAL done rev=57: tile:-4,-8(으)로 가기 (칸 (-4,-8) 도착(0.8칸)) after 4.1s, calls this session 26
+09:13:34 T6 FAIL: after opening (-4,-3..-5), goto tile:-4,-8 from (-4,-4): tunnel plan path 5 walls 2, mined (-5,-5),(-5,-6) (door side wall) instead of passing my door (-4,-6); door step never used
+sent /ai off
+[AIPlayerSpike] t=998.2 @Gemini stage Stopped -> Disabled

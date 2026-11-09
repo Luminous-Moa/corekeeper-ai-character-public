@@ -1,0 +1,120 @@
+model=gpt-6-luna variants=48
+T1o-N-orig-base 200 0.31 m1_left
+T1o-N-orig-dist 200 0.34 m1_left
+T1o-N-swap-base 200 0.21 m1_left
+T1o-N-orig-shuf 200 0.46 retreat_0_-1
+T1o-N-swap-dist 200 0.21 m1_left
+T1o-N-swap-shuf 200 0.21 m1_backright
+T1o-K-orig-base 200 0.23 m1_left
+T1o-K-orig-shuf 200 0.22 m1_left
+T1o-K-orig-dist 200 0.28 m1_left
+T1o-K-swap-base 200 0.23 m1_left
+T1o-K-swap-dist 200 0.24 m1_left
+T1o-K-swap-shuf 200 0.22 m1_left
+T1mo-N-orig-base 200 0.28 m1_left
+T1mo-N-orig-dist 200 0.22 m1_right
+T1mo-N-orig-shuf 200 0.21 m1_left
+T1mo-N-swap-base 200 0.21 m1_right
+T1mo-N-swap-dist 200 0.35 m1_left
+T1mo-N-swap-shuf 200 0.29 m1_left
+T1mo-K-orig-base 200 0.26 m1_right
+T1mo-K-orig-dist 200 0.31 m1_right
+T1mo-K-orig-shuf 200 0.22 m1_right
+T1mo-K-swap-base 200 0.21 m1_right
+T1mo-K-swap-shuf 200 0.22 m1_backright
+T1mo-K-swap-dist 200 0.28 m1_right
+T2o-N-orig-dist 200 0.35 m1_away
+T2o-N-orig-base 200 0.37 m1_away
+T2o-N-orig-shuf 200 0.22 m1_backleft
+T2o-N-swap-base 200 0.26 m1_away
+T2o-N-swap-dist 200 0.23 m1_away
+T2o-N-swap-shuf 200 0.22 m1_backleft
+T2o-K-orig-base 200 0.21 m1_away
+T2o-K-orig-dist 200 0.24 m1_away
+T2o-K-orig-shuf 200 0.24 m1_backleft
+T2o-K-swap-dist 200 0.22 m1_backright
+T2o-K-swap-base 200 0.50 m1_away
+T2o-K-swap-shuf 200 0.29 retreat_0_-1
+T6-N-orig-base 200 0.36 approach
+T6-N-orig-dist 200 0.22 approach
+T6-N-swap-base 200 0.29 approach
+T6-N-orig-shuf 200 0.35 approach
+T6-N-swap-dist 200 0.22 approach
+T6-N-swap-shuf 200 0.35 approach
+T6-K-orig-base 200 0.28 approach
+T6-K-orig-dist 200 0.28 approach
+T6-K-swap-base 200 0.22 approach
+T6-K-orig-shuf 200 0.41 approach
+T6-K-swap-dist 200 0.25 approach
+T6-K-swap-shuf 200 0.23 approach
+T1o: n=12 {"wall-side":10,"other":1,"open-side":1} wallMass=0.64 goodMass=- retreatP=0.04
+T1o-N: n=6 {"wall-side":4,"other":1,"open-side":1} wallMass=0.57 goodMass=- retreatP=0.07
+T1o-orig: n=6 {"wall-side":5,"other":1} wallMass=0.64 goodMass=- retreatP=0.05
+T1o-swap: n=6 {"wall-side":5,"open-side":1} wallMass=0.63 goodMass=- retreatP=0.04
+T1o-K: n=6 {"wall-side":6} wallMass=0.70 goodMass=- retreatP=0.01
+T1mo: n=12 {"open-side":4,"wall-side":8} wallMass=0.56 goodMass=- retreatP=0.04
+T1mo-N: n=6 {"open-side":4,"wall-side":2} wallMass=0.40 goodMass=- retreatP=0.07
+T1mo-orig: n=6 {"open-side":2,"wall-side":4} wallMass=0.58 goodMass=- retreatP=0.03
+T1mo-swap: n=6 {"wall-side":4,"open-side":2} wallMass=0.54 goodMass=- retreatP=0.05
+T1mo-K: n=6 {"wall-side":6} wallMass=0.72 goodMass=- retreatP=0.01
+T2o: n=12 {"move, wall <=1":10,"move, open behind":1,"non-move":1} wallMass=0.50 goodMass=- retreatP=0.14
+T2o-N: n=6 {"move, wall <=1":6} wallMass=0.56 goodMass=- retreatP=0.11
+T2o-orig: n=6 {"move, wall <=1":6} wallMass=0.54 goodMass=- retreatP=0.14
+T2o-swap: n=6 {"move, wall <=1":4,"move, open behind":1,"non-move":1} wallMass=0.46 goodMass=- retreatP=0.14
+T2o-K: n=6 {"move, wall <=1":4,"move, open behind":1,"non-move":1} wallMass=0.43 goodMass=- retreatP=0.18
+T6: n=12 {"good":12} wallMass=- goodMass=0.81 retreatP=0.04
+T6-N: n=6 {"good":6} wallMass=- goodMass=0.77 retreatP=0.06
+T6-orig: n=6 {"good":6} wallMass=- goodMass=0.80 retreatP=0.03
+T6-swap: n=6 {"good":6} wallMass=- goodMass=0.82 retreatP=0.05
+T6-K: n=6 {"good":6} wallMass=- goodMass=0.85 retreatP=0.01
+
+calls=48 ok=48 inputTokens=168924 usd(at 0.10000000149011612/M)=0.0169
+latency p50=0.243 p95=0.399
+T1o-N-orig-base: m1_left [wall-side] wallMass=0.70 retreatP=0.01 top: m1_left=0.48 m1_backleft=0.22 m1_right=0.15 m1_away=0.06 lat=0.31
+T1o-N-orig-dist: m1_left [wall-side] wallMass=0.77 retreatP=0.00 top: m1_left=0.65 m1_right=0.14 m1_backleft=0.12 m1_backright=0.04 lat=0.34
+T1o-N-swap-base: m1_left [wall-side] wallMass=0.59 retreatP=0.01 top: m1_left=0.47 m1_backright=0.17 m1_right=0.12 m1_backleft=0.12 lat=0.21
+T1o-N-orig-shuf: retreat_0_-1 [other] wallMass=0.36 retreatP=0.24 top: retreat_0_-1=0.24 m1_backleft=0.21 m1_left=0.15 m1_backright=0.10 lat=0.46
+T1o-N-swap-dist: m1_left [wall-side] wallMass=0.71 retreatP=0.01 top: m1_left=0.54 m1_backleft=0.17 m1_right=0.11 m1_away=0.08 lat=0.21
+T1o-N-swap-shuf: m1_backright [open-side] wallMass=0.30 retreatP=0.18 top: m1_backright=0.20 retreat_0_-1=0.18 m1_right=0.17 m1_backleft=0.15 lat=0.21
+T1o-K-orig-base: m1_left [wall-side] wallMass=0.62 retreatP=0.01 top: m1_left=0.45 m1_right=0.25 m1_backleft=0.17 m1_backright=0.06 lat=0.23
+T1o-K-orig-shuf: m1_left [wall-side] wallMass=0.67 retreatP=0.02 top: m1_left=0.50 m1_backleft=0.17 m1_backright=0.12 m1_right=0.07 lat=0.22
+T1o-K-orig-dist: m1_left [wall-side] wallMass=0.74 retreatP=0.00 top: m1_left=0.56 m1_backleft=0.18 m1_right=0.14 m1_backright=0.08 lat=0.28
+T1o-K-swap-base: m1_left [wall-side] wallMass=0.64 retreatP=0.00 top: m1_left=0.51 m1_right=0.19 m1_backleft=0.13 m1_backright=0.12 lat=0.23
+T1o-K-swap-dist: m1_left [wall-side] wallMass=0.77 retreatP=0.00 top: m1_left=0.66 m1_right=0.13 m1_backleft=0.11 m1_backright=0.07 lat=0.24
+T1o-K-swap-shuf: m1_left [wall-side] wallMass=0.77 retreatP=0.04 top: m1_left=0.58 m1_backleft=0.19 m1_right=0.09 m1_backright=0.05 lat=0.22
+T1mo-N-orig-base: m1_left [open-side] wallMass=0.44 retreatP=0.00 top: m1_left=0.45 m1_right=0.41 m1_backleft=0.06 m1_away=0.03 lat=0.28
+T1mo-N-orig-dist: m1_right [wall-side] wallMass=0.51 retreatP=0.00 top: m1_right=0.50 m1_left=0.40 m1_backleft=0.05 m1_away=0.01 lat=0.22
+T1mo-N-orig-shuf: m1_left [open-side] wallMass=0.20 retreatP=0.13 top: m1_left=0.59 m1_right=0.20 retreat_0_-1=0.13 m3_backleft=0.06 lat=0.21
+T1mo-N-swap-base: m1_right [wall-side] wallMass=0.50 retreatP=0.02 top: m1_right=0.38 m1_left=0.20 m1_away=0.12 m1_backright=0.12 lat=0.21
+T1mo-N-swap-dist: m1_left [open-side] wallMass=0.48 retreatP=0.00 top: m1_left=0.46 m1_right=0.44 m1_backright=0.04 m1_backleft=0.03 lat=0.35
+T1mo-N-swap-shuf: m1_left [open-side] wallMass=0.24 retreatP=0.24 top: m1_left=0.38 retreat_0_-1=0.24 m1_right=0.24 m3_backleft=0.10 lat=0.29
+T1mo-K-orig-base: m1_right [wall-side] wallMass=0.81 retreatP=0.01 top: m1_right=0.73 m1_left=0.10 m1_backright=0.08 m1_backleft=0.03 lat=0.26
+T1mo-K-orig-dist: m1_right [wall-side] wallMass=0.71 retreatP=0.01 top: m1_right=0.61 m1_left=0.16 m1_backright=0.10 m1_backleft=0.03 lat=0.31
+T1mo-K-orig-shuf: m1_right [wall-side] wallMass=0.79 retreatP=0.01 top: m1_right=0.69 m1_backright=0.10 m1_left=0.10 wait=0.05 lat=0.22
+T1mo-K-swap-base: m1_right [wall-side] wallMass=0.65 retreatP=0.00 top: m1_right=0.62 m1_left=0.27 m1_backleft=0.05 m1_backright=0.03 lat=0.21
+T1mo-K-swap-shuf: m1_backright [wall-side] wallMass=0.66 retreatP=0.01 top: m1_backright=0.36 m1_right=0.30 m1_left=0.13 m1_backleft=0.08 lat=0.22
+T1mo-K-swap-dist: m1_right [wall-side] wallMass=0.69 retreatP=0.00 top: m1_right=0.67 m1_left=0.27 m1_backright=0.02 m1_backleft=0.02 lat=0.28
+T2o-N-orig-dist: m1_away [move, wall <=1] wallMass=0.67 retreatP=0.06 top: m1_away=0.57 m1_left=0.13 m1_backleft=0.10 retreat_0_-1=0.06 lat=0.35
+T2o-N-orig-base: m1_away [move, wall <=1] wallMass=0.64 retreatP=0.17 top: m1_away=0.60 retreat_0_-1=0.17 m1_left=0.08 m1_right=0.04 lat=0.37
+T2o-N-orig-shuf: m1_backleft [move, wall <=1] wallMass=0.44 retreatP=0.06 top: m1_backleft=0.32 m1_left=0.23 m1_backright=0.12 m1_away=0.12 lat=0.22
+T2o-N-swap-base: m1_away [move, wall <=1] wallMass=0.54 retreatP=0.13 top: m1_away=0.40 m1_backright=0.16 m1_backleft=0.14 retreat_0_-1=0.13 lat=0.26
+T2o-N-swap-dist: m1_away [move, wall <=1] wallMass=0.59 retreatP=0.06 top: m1_away=0.55 m1_backright=0.18 m1_left=0.10 retreat_0_-1=0.06 lat=0.23
+T2o-N-swap-shuf: m1_backleft [move, wall <=1] wallMass=0.51 retreatP=0.17 top: m1_backleft=0.38 retreat_0_-1=0.17 m1_left=0.15 m1_away=0.13 lat=0.22
+T2o-K-orig-base: m1_away [move, wall <=1] wallMass=0.54 retreatP=0.18 top: m1_away=0.44 retreat_0_-1=0.18 m1_left=0.10 m1_backleft=0.10 lat=0.21
+T2o-K-orig-dist: m1_away [move, wall <=1] wallMass=0.45 retreatP=0.07 top: m1_away=0.39 m1_left=0.36 hit=0.07 retreat_0_-1=0.07 lat=0.24
+T2o-K-orig-shuf: m1_backleft [move, wall <=1] wallMass=0.51 retreatP=0.32 top: m1_backleft=0.36 retreat_0_-1=0.32 m1_away=0.15 m1_left=0.06 lat=0.24
+T2o-K-swap-dist: m1_backright [move, open behind] wallMass=0.26 retreatP=0.01 top: m1_backright=0.27 m1_away=0.23 m1_left=0.23 hit=0.18 lat=0.22
+T2o-K-swap-base: m1_away [move, wall <=1] wallMass=0.42 retreatP=0.14 top: m1_away=0.36 m1_backright=0.17 m1_left=0.15 retreat_0_-1=0.14 lat=0.50
+T2o-K-swap-shuf: retreat_0_-1 [non-move] wallMass=0.42 retreatP=0.36 top: retreat_0_-1=0.36 m1_away=0.25 m1_backleft=0.17 m1_left=0.08 lat=0.29
+T6-N-orig-base: approach [good] goodMass=0.73 retreatP=0.08 top: approach=0.56 m1_toward=0.17 retreat_0_-1=0.08 m1_away=0.06 lat=0.36
+T6-N-orig-dist: approach [good] goodMass=0.69 retreatP=0.05 top: approach=0.55 m1_toward=0.14 wait=0.08 retreat_0_-1=0.05 lat=0.22
+T6-N-swap-base: approach [good] goodMass=0.67 retreatP=0.18 top: approach=0.63 retreat_0_-1=0.18 m1_toward=0.04 m1_away=0.03 lat=0.29
+T6-N-orig-shuf: approach [good] goodMass=0.87 retreatP=0.01 top: approach=0.63 m1_toward=0.24 hold=0.08 retreat_0_-1=0.01 lat=0.35
+T6-N-swap-dist: approach [good] goodMass=0.75 retreatP=0.04 top: approach=0.63 m1_toward=0.12 m1_away=0.04 retreat_0_-1=0.04 lat=0.22
+T6-N-swap-shuf: approach [good] goodMass=0.91 retreatP=0.01 top: approach=0.79 m1_toward=0.12 hold=0.03 m1_away=0.02 lat=0.35
+T6-K-orig-base: approach [good] goodMass=0.93 retreatP=0.01 top: approach=0.87 m1_toward=0.06 m1_away=0.02 m1_left=0.01 lat=0.28
+T6-K-orig-dist: approach [good] goodMass=0.76 retreatP=0.02 top: approach=0.69 m1_toward=0.07 m1_away=0.03 m1_left=0.03 lat=0.28
+T6-K-swap-base: approach [good] goodMass=0.86 retreatP=0.01 top: approach=0.76 m1_toward=0.10 m1_away=0.02 m1_right=0.02 lat=0.22
+T6-K-orig-shuf: approach [good] goodMass=0.84 retreatP=0.01 top: approach=0.63 m1_toward=0.21 m3_backright=0.04 m1_away=0.03 lat=0.41
+T6-K-swap-dist: approach [good] goodMass=0.81 retreatP=0.02 top: approach=0.75 m1_toward=0.06 m1_backright=0.03 m1_away=0.02 lat=0.25
+T6-K-swap-shuf: approach [good] goodMass=0.90 retreatP=0.01 top: approach=0.83 m1_toward=0.07 m3_backleft=0.02 m1_away=0.02 lat=0.23

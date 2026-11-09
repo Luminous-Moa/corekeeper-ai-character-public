@@ -1,0 +1,98 @@
+{
+  "node": {
+    "class": "사용자 결정 요약",
+    "evidence": [
+      {
+        "anchor": "대상 소실로 실행할 수 없어진 경우에는",
+        "doc": "cancel",
+        "end": 7,
+        "line": 7,
+        "path": "../2026-11-07-행동취소-판단주체.md",
+        "sha256": "ca61d145994daad38418e54424420605a7265126f7078f473326bf0a8001e2d0",
+        "start": 7
+      },
+      {
+        "anchor": "AI가 명시적으로 계속·중단·전환할 수 있게 한다.",
+        "doc": "common",
+        "end": 10,
+        "line": 10,
+        "path": "../2026-11-07-공통실행-합의.md",
+        "sha256": "2866a7305147d95bd2f9b96b2cbe6635c51cd93266584726d6a8b3d9b1eb96a4",
+        "start": 10
+      },
+      {
+        "anchor": "새 응답을 기다리는 동안 실행 가능한 선택을 이어 간다.",
+        "doc": "common",
+        "end": 13,
+        "line": 13,
+        "path": "../2026-11-07-공통실행-합의.md",
+        "sha256": "2866a7305147d95bd2f9b96b2cbe6635c51cd93266584726d6a8b3d9b1eb96a4",
+        "start": 13
+      }
+    ],
+    "id": "pol.ai-action-control",
+    "sourceLocations": [
+      {
+        "end": 7,
+        "path": "../2026-11-07-행동취소-판단주체.md",
+        "start": 7
+      },
+      {
+        "end": 10,
+        "path": "../2026-11-07-공통실행-합의.md",
+        "start": 10
+      },
+      {
+        "end": 13,
+        "path": "../2026-11-07-공통실행-합의.md",
+        "start": 13
+      }
+    ],
+    "status": "2026-11-07 합의",
+    "summary": "수량·시간·진척·호출 실패를 관측으로 넘긴다. 대상이 사라지면 이유를 보고하며 새 AI 선택과 사용자의 직접 중지를 따른다.",
+    "title": "AI가 행동의 계속·중단·전환을 선택",
+    "type": "정책"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 8,
+          "path": "../2026-11-07-공통실행자료/contract.md",
+          "start": 8
+        }
+      ],
+      "from": "pol.ai-action-control",
+      "kind": "구현 계약",
+      "to": "R.stop-action",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "end": 7,
+          "path": "../2026-11-07-행동취소-판단주체.md",
+          "start": 7
+        },
+        {
+          "end": 10,
+          "path": "../2026-11-07-공통실행-합의.md",
+          "start": 10
+        },
+        {
+          "end": 13,
+          "path": "../2026-11-07-공통실행-합의.md",
+          "start": 13
+        }
+      ],
+      "from": "P.valid-action",
+      "kind": "정책으로 구체화",
+      "to": "pol.ai-action-control",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "activity": {
+    "class": "A-inferred",
+    "doc": "A4/inferences.md",
+    "id": "ACT-A-01",
+    "inference": true,
+    "layer": "A",
+    "nextActivities": [],
+    "source": {
+      "document": "A4/inferences.md",
+      "section": "ACT-A-01 연결 준비 여부 확인"
+    },
+    "sourceLocations": [
+      {
+        "end": 25,
+        "path": "A/A4/inferences.md",
+        "start": 7
+      }
+    ],
+    "summary": "처음 온 운영자가 health와 루트 응답을 읽고 연결 준비 완료의 근거를 찾지만 다음 조치를 정하지 못한다.",
+    "title": "처음 온 운영자가 health와 루트 응답을 읽고 연결 준비 완료의 근거를 찾지만 다음 조치를 정하지 못한다.",
+    "type": "유저 활동"
+  },
+  "elements": [
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#1",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "lines": [
+            1,
+            6
+          ],
+          "rawFile": "raw/isolated-health.headers.txt"
+        },
+        "number": "1",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 6,
+            "path": "A/raw/isolated-health.headers.txt",
+            "start": 1
+          }
+        ],
+        "summary": "HTTP 응답 헤더",
+        "title": "HTTP 응답 헤더",
+        "type": "화면요소",
+        "visibleValue": "HTTP/1.1 200 OK\nContent-Type: application/json; charset=utf-8\nDate: Thu, 05 Nov 2026 01:03:42 GMT\nConnection: keep-alive\nKeep-Alive: timeout=5\nTransfer-Encoding: chunked"
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#1",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#2",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/ok",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "2",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "ok",
+        "title": "ok",
+        "type": "화면요소",
+        "visibleValue": false
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#2",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#3",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/members",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "3",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "members",
+        "title": "members",
+        "type": "화면요소",
+        "visibleValue": {
+          "claude": {
+            "authMethod": null,
+            "authNote": "",
+            "cli": "claude",
+            "found": false,
+            "login": false,
+            "maxPct": null,
+            "ok": false,
+            "quotaNote": "",
+            "quotaReadAt": 0,
+            "skip": false,
+            "skipAbovePct": 85,
+            "skipWhy": null,
+            "subscription": null,
+            "subscriptionOk": false,
+            "weekPct": null,
+            "weekResets": null,
+            "windows": null
+          },
+          "gemini": {
+            "authMethod": null,
+            "authNote": "",
+            "cli": "agy",
+            "found": false,
+            "login": false,
+            "maxPct": null,
+            "ok": false,
+            "quotaNote": "",
+            "quotaReadAt": 0,
+            "skip": true,
+            "skipAbovePct": 85,
+            "skipWhy": "usage unknown ()",
+            "subscription": null,
+            "subscriptionOk": false,
+            "weekPct": null,
+            "weekResets": null,
+            "windows": null
+          },
+          "gpt": {
+            "authMethod": null,
+            "authNote": "",
+            "cli": "codex",
+            "found": false,
+            "login": false,
+            "maxPct": null,
+            "ok": false,
+            "quotaNote": "",
+            "quotaReadAt": 0,
+            "skip": true,
+            "skipAbovePct": 85,
+            "skipWhy": "usage unknown ()",
+            "subscription": null,
+            "subscriptionOk": false,
+            "weekPct": null,
+            "weekResets": null,
+            "windows": null
+          },
+          "grok": {
+            "authMethod": null,
+            "authNote": "",
+            "cli": "grok",
+            "found": false,
+            "login": false,
+            "maxPct": null,
+            "ok": false,
+            "quotaNote": "",
+            "quotaReadAt": 0,
+            "skip": true,
+            "skipAbovePct": 85,
+            "skipWhy": "usage unknown ()",
+            "subscription": null,
+            "subscriptionOk": false,
+            "weekPct": null,
+            "weekResets": null,
+            "windows": null
+          }
+        }
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#3",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#3-1",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/members/claude",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "3-1",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "claude",
+        "title": "claude",
+        "type": "화면요소",
+        "visibleValue": {
+          "authMethod": null,
+          "authNote": "",
+          "cli": "claude",
+          "found": false,
+          "login": false,
+          "maxPct": null,
+          "ok": false,
+          "quotaNote": "",
+          "quotaReadAt": 0,
+          "skip": false,
+          "skipAbovePct": 85,
+          "skipWhy": null,
+          "subscription": null,
+          "subscriptionOk": false,
+          "weekPct": null,
+          "weekResets": null,
+          "windows": null
+        }
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#3-1",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#3-2",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/members/gpt",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "3-2",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "gpt",
+        "title": "gpt",
+        "type": "화면요소",
+        "visibleValue": {
+          "authMethod": null,
+          "authNote": "",
+          "cli": "codex",
+          "found": false,
+          "login": false,
+          "maxPct": null,
+          "ok": false,
+          "quotaNote": "",
+          "quotaReadAt": 0,
+          "skip": true,
+          "skipAbovePct": 85,
+          "skipWhy": "usage unknown ()",
+          "subscription": null,
+          "subscriptionOk": false,
+          "weekPct": null,
+          "weekResets": null,
+          "windows": null
+        }
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#3-2",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#3-3",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/members/gemini",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "3-3",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "gemini",
+        "title": "gemini",
+        "type": "화면요소",
+        "visibleValue": {
+          "authMethod": null,
+          "authNote": "",
+          "cli": "agy",
+          "found": false,
+          "login": false,
+          "maxPct": null,
+          "ok": false,
+          "quotaNote": "",
+          "quotaReadAt": 0,
+          "skip": true,
+          "skipAbovePct": 85,
+          "skipWhy": "usage unknown ()",
+          "subscription": null,
+          "subscriptionOk": false,
+          "weekPct": null,
+          "weekResets": null,
+          "windows": null
+        }
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#3-3",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#3-4",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/members/grok",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "3-4",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "grok",
+        "title": "grok",
+        "type": "화면요소",
+        "visibleValue": {
+          "authMethod": null,
+          "authNote": "",
+          "cli": "grok",
+          "found": false,
+          "login": false,
+          "maxPct": null,
+          "ok": false,
+          "quotaNote": "",
+          "quotaReadAt": 0,
+          "skip": true,
+          "skipAbovePct": 85,
+          "skipWhy": "usage unknown ()",
+          "subscription": null,
+          "subscriptionOk": false,
+          "weekPct": null,
+          "weekResets": null,
+          "windows": null
+        }
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#3-4",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-02#4",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/busy",
+          "line": 1,
+          "rawFile": "raw/isolated-health.body.txt"
+        },
+        "number": "4",
+        "observedCondition": "OBS-04의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-02 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 155,
+            "path": "A/A2/screens.md",
+            "start": 74
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-health.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "busy",
+        "title": "busy",
+        "type": "화면요소",
+        "visibleValue": []
+      },
+      "featureIds": [
+        "ai-bridge:GET /v1/health"
+      ],
+      "featureRelations": [
+        {
+          "evidence": "A/raw/isolated-health.meta.json",
+          "from": "ai-bridge:GET /v1/health",
+          "observation": "OBS-04",
+          "to": "BRG-02#4",
+          "type": "기능→화면요소",
+          "traversal": "reverse: 결과 출력의 생산자 조회"
+        }
+      ]
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-03#1",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "lines": [
+            1,
+            6
+          ],
+          "rawFile": "raw/isolated-not-found.headers.txt"
+        },
+        "number": "1",
+        "observedCondition": "OBS-05의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-03 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 188,
+            "path": "A/A2/screens.md",
+            "start": 180
+          },
+          {
+            "end": 6,
+            "path": "A/raw/isolated-not-found.headers.txt",
+            "start": 1
+          }
+        ],
+        "summary": "HTTP 응답 헤더",
+        "title": "HTTP 응답 헤더",
+        "type": "화면요소",
+        "visibleValue": "HTTP/1.1 404 Not Found\nContent-Type: application/json; charset=utf-8\nDate: Thu, 05 Nov 2026 01:04:10 GMT\nConnection: keep-alive\nKeep-Alive: timeout=5\nTransfer-Encoding: chunked"
+      },
+      "featureIds": [],
+      "featureRelations": []
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-03#2",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/ok",
+          "line": 1,
+          "rawFile": "raw/isolated-not-found.body.txt"
+        },
+        "number": "2",
+        "observedCondition": "OBS-05의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-03 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 188,
+            "path": "A/A2/screens.md",
+            "start": 180
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-not-found.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "ok",
+        "title": "ok",
+        "type": "화면요소",
+        "visibleValue": false
+      },
+      "featureIds": [],
+      "featureRelations": []
+    },
+    {
+      "element": {
+        "class": "A-observed-output",
+        "doc": "A2/screens.md",
+        "id": "BRG-03#3",
+        "interaction": "출력 읽기; 직접 조작 관측 없음",
+        "layer": "A",
+        "location": {
+          "jsonPointer": "/error",
+          "line": 1,
+          "rawFile": "raw/isolated-not-found.body.txt"
+        },
+        "number": "3",
+        "observedCondition": "OBS-05의 기록된 실행·요청 조건에서 관측",
+        "source": {
+          "document": "A2/screens.md",
+          "section": "BRG-03 화면요소"
+        },
+        "sourceLocations": [
+          {
+            "end": 188,
+            "path": "A/A2/screens.md",
+            "start": 180
+          },
+          {
+            "end": 1,
+            "path": "A/raw/isolated-not-found.body.txt",
+            "start": 1
+          }
+        ],
+        "summary": "error",
+        "title": "error",
+        "type": "화면요소",
+        "visibleValue": "not found"
+      },
+      "featureIds": [],
+      "featureRelations": []
+    }
+  ],
+  "features": [
+    {
+      "feature": {
+        "endLine": 134,
+        "file": "Tools/ai-bridge/bridge.mjs",
+        "id": "ai-bridge:GET /v1/health",
+        "kind": "API",
+        "layer": "B",
+        "line": 134,
+        "meaningAuthority": "LLM interpretation of pinned source; kept separate from extracted graph",
+        "method": "GET",
+        "name": "ai-bridge:GET /v1/health",
+        "path": "/v1/health",
+        "sourceLocations": [
+          {
+            "end": 134,
+            "path": "B/snapshot/Tools/ai-bridge/bridge.mjs",
+            "start": 134
+          }
+        ],
+        "summary": "브리지에 보관된 멤버별 사전 점검 상태와 처리 중 멤버를 반환한다.",
+        "type": "기능"
+      },
+      "tree": [
+        "ai-bridge:GET /v1/health — 브리지에 보관된 멤버별 사전 점검 상태와 처리 중 멤버를 반환한다.",
+        "[조회 한도: 깊이 12, 코드 800개]",
+        "  code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health — GET /v1/health",
+        "    [B 추출 경계 기록 1개] health (전체: B/boundaries.json)",
+        "    call code:Tools/ai-bridge/preflight.mjs#health@3942 — health",
+        "      [B 추출 경계 기록 5개] Object.fromEntries, Object.keys, Object.keys(MEMBERS).map (전체: B/boundaries.json)",
+        "      callback code:Tools/ai-bridge/preflight.mjs#anonymous@4026 — anonymous",
+        "        call code:Tools/ai-bridge/preflight.mjs#memberHealth@3334 — memberHealth",
+        "      callback code:Tools/ai-bridge/preflight.mjs#anonymous@4105 — anonymous",
+        "    call code:Tools/ai-bridge/bridge.mjs#send@9521 — send",
+        "      [B 추출 경계 기록 3개] JSON.stringify, res.end, res.writeHead (전체: B/boundaries.json)",
+        "  code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.HealthProbe() — HealthProbe",
+        "    [B 추출 경계 기록 2개] UnityWebRequest.Get, _health.SendWebRequest (전체: B/boundaries.json)",
+        "    call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Log(string) — Log",
+        "      [B 추출 경계 기록 4개] Debug.Log, msg.StartsWith, msg.StartsWith (전체: B/boundaries.json)",
+        "      call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Who — Who",
+        "        call code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.InScope — InScope",
+        "      call code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.Write(string) — Write",
+        "        [B 추출 경계 기록 2개] _w.Write, _w.WriteLine (전체: B/boundaries.json)",
+        "        call code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.InScope — InScope [이미 펼침]",
+        "        call code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.ToggleLog(bool) — ToggleLog",
+        "          [B 추출 경계 기록 5개] Path.Combine, .Dispose, .Flush (전체: B/boundaries.json)",
+        "          write → data:Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path — Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path",
+        "          call code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.Dir — Dir",
+        "            [B 추출 경계 기록 1개] Path.Combine (전체: B/boundaries.json)",
+        "          call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Log(string) — Log [이미 펼침]",
+        "          call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.LogError(string, System.Exception) — LogError",
+        "            [B 추출 경계 기록 1개] Debug.LogError (전체: B/boundaries.json)",
+        "            call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Who — Who [이미 펼침]",
+        "          call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Log(string) — Log [이미 펼침]",
+        "        call code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.LogError(string, System.Exception) — LogError [이미 펼침]"
+      ],
+      "data": [
+        {
+          "code": "code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.ToggleLog(bool)",
+          "expression": "StreamWriter",
+          "file": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs",
+          "from": "code:Assets/AIPlayerSpike/Scripts/AIDecisions.cs#AITestSwitches.ToggleLog(bool)",
+          "line": 161,
+          "to": "data:Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path",
+          "type": "write",
+          "target": {
+            "id": "data:Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path",
+            "layer": "B",
+            "locator": "path",
+            "locatorKind": "expression",
+            "name": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs:path",
+            "operation": "stream-open-writer",
+            "type": "데이터"
+          }
+        }
+      ],
+      "truncated": false
+    }
+  ],
+  "gaps": [
+    {
+      "element": "BRG-03#1",
+      "reason": "연결된 기계 추출 입구 없음; 미관측/미구현/추출 경계를 확인"
+    },
+    {
+      "element": "BRG-03#2",
+      "reason": "연결된 기계 추출 입구 없음; 미관측/미구현/추출 경계를 확인"
+    },
+    {
+      "element": "BRG-03#3",
+      "reason": "연결된 기계 추출 입구 없음; 미관측/미구현/추출 경계를 확인"
+    }
+  ]
+}

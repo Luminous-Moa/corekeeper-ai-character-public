@@ -1,0 +1,1034 @@
+[
+  {
+    "kind": "attack",
+    "key": "attack:67076"
+  },
+  {
+    "kind": "attack",
+    "key": "attack:67303"
+  },
+  {
+    "kind": "attack",
+    "key": "attack:67435"
+  },
+  {
+    "kind": "attack",
+    "key": "attack:67720"
+  },
+  {
+    "kind": "approach",
+    "key": "approach:67720"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:왼쪽:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:오른쪽:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:왼쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:오른쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:왼쪽 뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67720:오른쪽 뒤:1"
+  },
+  {
+    "kind": "approach",
+    "key": "approach:67076"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:왼쪽:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:왼쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:오른쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:왼쪽 뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67076:오른쪽 뒤:1"
+  },
+  {
+    "kind": "approach",
+    "key": "approach:67435"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67435:뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67435:왼쪽:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67435:오른쪽:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67435:왼쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67435:왼쪽 뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67435:오른쪽 뒤:1"
+  },
+  {
+    "kind": "approach",
+    "key": "approach:67303"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67303:앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67303:뒤:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67303:왼쪽:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67303:왼쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67303:오른쪽 앞:1"
+  },
+  {
+    "kind": "step",
+    "key": "step:enemy67303:왼쪽 뒤:1"
+  },
+  {
+    "kind": "away",
+    "key": "away:near"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-4,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-5,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:7,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-9,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-10,8"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:8,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-8,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:7,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-7,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-10,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:9,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-9,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-11,8"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:8,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-8,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:12,7"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-10,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:10,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:11,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-11,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:9,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-9,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:12,8"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:13,7"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:11,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-11,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-10,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:10,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:12,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:13,8"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:11,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:12,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:14,7"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:13,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:14,8"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:12,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:13,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:14,9"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:13,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:14,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:14,-11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:14,11"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:22,-42"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:23,-42"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:28,39"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:22,-43"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:24,-42"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:23,-43"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:24,-43"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:25,-43"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:25,-45"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:51,-20"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:52,-22"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:52,-23"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:56,10"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:58,4"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-50,-30"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:43,42"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:60,6"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:61,3"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:61,4"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:61,8"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:44,43"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:62,2"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:62,5"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-13,-67"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-12,-68"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:26,64"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:6,-71"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:7,-71"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:12,77"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:13,77"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:64,58"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:67,55"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:45,75"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:74,49"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:74,52"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:75,51"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-92,-22"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-92,-23"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-94,-18"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-94,-19"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-93,-25"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-94,-21"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-95,-18"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-94,-23"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-95,-19"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-38,89"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-95,-20"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-95,-22"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-95,-24"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-46,89"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-47,89"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-48,89"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-48,90"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-46,93"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-103,-14"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-103,-15"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-41,97"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-41,98"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-44,98"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-42,99"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-47,97"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-41,100"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-42,100"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-36,104"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:66,89"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-110,-17"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-110,-18"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:71,86"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-111,-17"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-42,104"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:88,70"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-43,104"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:88,71"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-113,7"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-43,105"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:55,100"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:89,72"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-55,106"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-54,107"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-56,106"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:58,105"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:58,106"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:83,88"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-5,121"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:84,88"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-54,109"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-4,122"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-56,109"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:75,97"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:50,114"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:82,94"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:51,114"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:50,115"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:81,96"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:51,115"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:49,116"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:60,111"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:52,115"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:51,116"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:50,117"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-4,133"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-5,133"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-1,134"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-3,134"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-4,134"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-90,105"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-85,111"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-91,107"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-91,108"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-90,109"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-23,140"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-91,109"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-110,91"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-94,108"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-91,111"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-94,109"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-26,142"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-27,142"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-28,142"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-44,138"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-29,142"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-27,143"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-28,143"
+  },
+  {
+    "kind": "dig",
+    "key": "dig:-29,143"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:4,10"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-4,10"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-5,10"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:2,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-2,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:7,9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:3,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-3,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:6,10"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:4,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-9,8"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:8,9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-8,9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-10,7"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-7,10"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:11,6"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:6,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-6,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:9,9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-11,7"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:11,7"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:12,6"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-12,6"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:10,9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:11,8"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-12,7"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-13,6"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:13,6"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-12,8"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:13,-7"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-12,9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:14,6"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:14,-7"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-11,11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-12,10"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-13,-9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-14,-8"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:14,-8"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:14,-9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:-14,-9"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:13,-11"
+  },
+  {
+    "kind": "mine",
+    "key": "mine:14,-10"
+  },
+  {
+    "kind": "wait",
+    "key": "wait"
+  },
+  {
+    "kind": "life_nav",
+    "key": "life_nav:2:open:"
+  },
+  {
+    "kind": "finish_goal",
+    "key": "control:finish"
+  },
+  {
+    "kind": "request_plan",
+    "key": "control:plan"
+  },
+  {
+    "kind": "explore",
+    "key": "travel:explore:0,0:1,0"
+  },
+  {
+    "kind": "explore",
+    "key": "travel:explore:0,0:-1,0"
+  },
+  {
+    "kind": "explore",
+    "key": "travel:explore:0,0:0,1"
+  },
+  {
+    "kind": "explore",
+    "key": "travel:explore:0,0:0,-1"
+  },
+  {
+    "kind": "gather_group",
+    "key": "gather:mine:2,11|mine:3,11|mine:4,10|mine:4,11"
+  },
+  {
+    "kind": "gather_group",
+    "key": "gather:mine:-10,7|mine:-11,11|mine:-11,7|mine:-12,10|mine:-12,6|mine:-12,7|mine:-12,8|mine:-12,9|mine:-13,6|mine:-2,11|mine:-3,11|mine:-4,10|mine:-5,10|mine:-6,11|mine:-7,10|mine:-8,9|mine:-9,8"
+  },
+  {
+    "kind": "gather_group",
+    "key": "gather:mine:10,9|mine:11,6|mine:11,7|mine:11,8|mine:12,6|mine:13,6|mine:14,6|mine:6,10|mine:6,11|mine:7,9|mine:8,9|mine:9,9"
+  },
+  {
+    "kind": "gather_group",
+    "key": "gather:mine:13,-11|mine:13,-7|mine:14,-10|mine:14,-7|mine:14,-8|mine:14,-9"
+  },
+  {
+    "kind": "gather_group",
+    "key": "gather:mine:-13,-9|mine:-14,-8|mine:-14,-9"
+  },
+  {
+    "kind": "expedition_nav",
+    "key": "expedition_nav:0:open:"
+  },
+  {
+    "kind": "inventory_menu",
+    "key": "inventory-menu:4:root:enter:인벤토리에서 물품 분류와 가능한 조작 고르기"
+  }
+]

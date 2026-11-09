@@ -1,0 +1,8 @@
+{
+ "status": 400,
+ "body": {
+  "ok": false,
+  "error": "unknown member",
+  "detail": "members: claude, gpt, gemini, grok"
+ }
+}

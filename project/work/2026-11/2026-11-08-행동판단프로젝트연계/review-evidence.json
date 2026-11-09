@@ -1,0 +1,1457 @@
+{
+  "started": "2026-11-08T05:28:02.736Z",
+  "pins": [
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-05-지식그래프-실화면\\D\\graph.json",
+      "sha256": "81c76ad6ab202d32651a454139030a40eae1f07126f3307e8fca4151c81d2359"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단프로젝트연계\\link.mjs",
+      "sha256": "8a587b8b7aa5a087d579323f9733359556a1f556027573be51fa5e3e2d085a28"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단프로젝트연계\\topics.mjs",
+      "sha256": "bdb35977a1e71e0feffed1a0a06c3cd1f759907cae91e44dbb7bceed8ff69002"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임행동-그래프\\published\\graph.json",
+      "sha256": "94ab86d02ae1c6b2d276e72fa1f3bb6eafac26a1a44618d9400a20b45e8e8120"
+    }
+  ],
+  "commands": [
+    {
+      "name": "R.game-topic.craft-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.craft"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 62157
+    },
+    {
+      "name": "R.game-topic.craft-source",
+      "args": [
+        "source",
+        "game:completion:full-d:powered-presentation:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#query_electrical_crafting_progress"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 18105
+    },
+    {
+      "name": "R.game-topic.cook-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.cook"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 197108
+    },
+    {
+      "name": "R.game-topic.cook-source",
+      "args": [
+        "source",
+        "game:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 226988
+    },
+    {
+      "name": "R.game-topic.farm-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.farm"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 9286
+    },
+    {
+      "name": "R.game-topic.farm-source",
+      "args": [
+        "source",
+        "game:D102:cases:case"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 5332
+    },
+    {
+      "name": "R.game-topic.inventory-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.inventory"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 78625
+    },
+    {
+      "name": "R.game-topic.inventory-source",
+      "args": [
+        "source",
+        "game:completion:B:new-quick-swap-torch:v2"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 9249
+    },
+    {
+      "name": "R.game-topic.maintenance-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.maintenance"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 121647
+    },
+    {
+      "name": "R.game-topic.maintenance-source",
+      "args": [
+        "source",
+        "game:base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 12521
+    },
+    {
+      "name": "R.game-topic.mining-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.mining"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 4956
+    },
+    {
+      "name": "R.game-topic.mining-source",
+      "args": [
+        "source",
+        "game:completion:full-d:critter-after-pilot-dig"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 11669
+    },
+    {
+      "name": "R.game-topic.move-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.move"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 4329
+    },
+    {
+      "name": "R.game-topic.move-source",
+      "args": [
+        "source",
+        "game:completion:B:new-move-player"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 6265
+    },
+    {
+      "name": "R.game-topic.place-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.place"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 245922
+    },
+    {
+      "name": "R.game-topic.place-source",
+      "args": [
+        "source",
+        "game:completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 13710
+    },
+    {
+      "name": "R.game-topic.combat-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.combat"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 38882
+    },
+    {
+      "name": "R.game-topic.combat-source",
+      "args": [
+        "source",
+        "game:beam"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 65775
+    },
+    {
+      "name": "R.game-topic.food-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.food"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 49576
+    },
+    {
+      "name": "R.game-topic.food-source",
+      "args": [
+        "source",
+        "game:bed-sleep"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 7891
+    },
+    {
+      "name": "R.game-topic.animals-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.animals"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 21929
+    },
+    {
+      "name": "R.game-topic.animals-source",
+      "args": [
+        "source",
+        "game:animal-cage"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 69186
+    },
+    {
+      "name": "R.game-topic.capture-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.capture"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 15412
+    },
+    {
+      "name": "R.game-topic.capture-source",
+      "args": [
+        "source",
+        "game:bug-net"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 2253
+    },
+    {
+      "name": "R.game-topic.fish-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.fish"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 1991
+    },
+    {
+      "name": "R.game-topic.fish-source",
+      "args": [
+        "source",
+        "game:completion:B:fishing-50-0"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 22460
+    },
+    {
+      "name": "R.game-topic.trade-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.trade"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 3619
+    },
+    {
+      "name": "R.game-topic.trade-source",
+      "args": [
+        "source",
+        "game:completion:gap:ordinary-merchant-buy-v1"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 87804
+    },
+    {
+      "name": "R.game-topic.vehicle-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.vehicle"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 1630
+    },
+    {
+      "name": "R.game-topic.vehicle-source",
+      "args": [
+        "source",
+        "game:boat"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 7080
+    },
+    {
+      "name": "R.game-topic.portal-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.portal"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 10010
+    },
+    {
+      "name": "R.game-topic.portal-source",
+      "args": [
+        "source",
+        "game:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 13444
+    },
+    {
+      "name": "R.game-topic.electric-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.electric"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 66213
+    },
+    {
+      "name": "R.game-topic.electric-source",
+      "args": [
+        "source",
+        "game:completion:full-d:ancient-electricity:CAB-2ebcba97367158c9b08f790c25d642c9:-7658880460584646847"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 7949
+    },
+    {
+      "name": "R.game-topic.interact-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.interact"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 17771
+    },
+    {
+      "name": "R.game-topic.interact-source",
+      "args": [
+        "source",
+        "game:big-larva"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 7080
+    },
+    {
+      "name": "R.game-topic.lifecycle-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.lifecycle"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 1037
+    },
+    {
+      "name": "R.game-topic.lifecycle-source",
+      "args": [
+        "source",
+        "game:completion:essential:player-death-armor-cost-v1"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 5581
+    },
+    {
+      "name": "R.game-topic.environment-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.environment"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 30485
+    },
+    {
+      "name": "R.game-topic.environment-source",
+      "args": [
+        "source",
+        "game:completion:full-d:contents-time:supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441#change_variation_after_time"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 9136
+    },
+    {
+      "name": "R.game-topic.hazards-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.hazards"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 3095
+    },
+    {
+      "name": "R.game-topic.hazards-source",
+      "args": [
+        "source",
+        "game:completion:A:block-fire-mortar-9305-v1"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 19135
+    },
+    {
+      "name": "R.game-topic.debug-behavior",
+      "args": [
+        "behavior",
+        "R.game-topic.debug"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 853
+    },
+    {
+      "name": "R.game-topic.debug-source",
+      "args": [
+        "source",
+        "game:completion:B:debug-noclip"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 10037
+    },
+    {
+      "name": "detail-door",
+      "args": [
+        "show",
+        "game:door"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 153427,
+      "fieldCount": 9,
+      "ruleCount": 0
+    },
+    {
+      "name": "detail-completion_B_melee-pick-2-0_cost-followup-v1",
+      "args": [
+        "show",
+        "game:completion:B:melee-pick-2-0:cost-followup-v1"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 42068,
+      "fieldCount": 13,
+      "ruleCount": 0
+    },
+    {
+      "name": "detail-cooking_0",
+      "args": [
+        "show",
+        "game:cooking:0"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 1379,
+      "fieldCount": 0,
+      "ruleCount": 0
+    },
+    {
+      "name": "detail-D102_cases_case",
+      "args": [
+        "show",
+        "game:D102:cases:case"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 15549,
+      "fieldCount": 18,
+      "ruleCount": 0
+    },
+    {
+      "name": "variation-target",
+      "args": [
+        "game",
+        "target",
+        "4776"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 11811
+    },
+    {
+      "name": "variation-zero",
+      "args": [
+        "game",
+        "target",
+        "4776",
+        "--variation",
+        "0"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 3013
+    },
+    {
+      "name": "remaining-gaps",
+      "args": [
+        "game",
+        "gaps",
+        "4600"
+      ],
+      "status": 0,
+      "evidenceReuse": "앞선 독립 실조회 결과. 정본 원문 불변 및 현재 origin 재대조.",
+      "stdoutBytes": 1322446
+    },
+    {
+      "name": "legacy-show",
+      "args": [
+        "legacy",
+        "show",
+        "F.action-select"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 3833
+    },
+    {
+      "name": "existing-source",
+      "args": [
+        "source",
+        "P.original-request"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 1302
+    },
+    {
+      "name": "existing-feature",
+      "args": [
+        "feature",
+        "slash:ai"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 331951
+    },
+    {
+      "name": "final-check",
+      "args": [
+        "check"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 77101
+    },
+    {
+      "name": "label-without-origin",
+      "args": [
+        "show",
+        "game:verb:cooking"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 1546
+    },
+    {
+      "name": "label-to-claim-source",
+      "args": [
+        "game",
+        "source",
+        "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking"
+      ],
+      "status": 0,
+      "stderr": "",
+      "stdoutBytes": 226988
+    }
+  ],
+  "topics": [
+    {
+      "id": "R.game-topic.craft",
+      "title": "제작·가공",
+      "planning": [
+        "P.life-tree-first-scope",
+        "P.unrestricted-work"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AICraft.cs#AICraft.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)"
+      ],
+      "targets": 670,
+      "sample": "game:completion:full-d:powered-presentation:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#query_electrical_crafting_progress",
+      "origin": {
+        "normalizedValueSha256": "fa10261e4a94bed3b956012917c64687d9d017731785f7911614b207ca43c766",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/powered-presentation-helper/output2/cases.json",
+        "pointer": "/cases/5"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "assetEvidence",
+        "sourceSpecific",
+        "codeEvidence",
+        "priorClaimIds",
+        "relationLinks",
+        "priorEvidence",
+        "relatedReviewedCases"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.cook",
+      "title": "요리",
+      "planning": [
+        "P.life-tree-first-scope"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AICook.cs#AICook.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)"
+      ],
+      "targets": 6646,
+      "sample": "game:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking",
+      "origin": {
+        "normalizedValueSha256": "ae34d97134b55ea06b19918b5e141c7a3cbeea58c54143f5747f432b9c54dcee",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172"
+      },
+      "valueKeys": [
+        "action",
+        "assetEvidence",
+        "conditions",
+        "evidenceLevel",
+        "failureBranches",
+        "id",
+        "ingredientRelation",
+        "inputProcessingConsumer",
+        "objectId",
+        "result",
+        "rule",
+        "sourceKey",
+        "unknown",
+        "variation"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.farm",
+      "title": "농사·성장·물",
+      "planning": [
+        "P.life-tree-first-scope",
+        "P.unrestricted-space"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs#AIFarm.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)",
+        "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs#FarmSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 91,
+      "sample": "game:D102:cases:case",
+      "origin": {
+        "normalizedValueSha256": "2dbdfa906edad9f7e97d2a8095aeceac171e686e7fe3cec7c6b2ed23942d67b0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "roles",
+        "sourceKey",
+        "objectId",
+        "variation",
+        "sourceEvidence",
+        "authoringEvidence",
+        "graphicalClass",
+        "graphicalComponentKey",
+        "entry",
+        "transitions",
+        "outcomes",
+        "failures",
+        "boundaries"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.inventory",
+      "title": "가방·장비·보관·회수",
+      "planning": [
+        "P.bag-equipment"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)",
+        "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventorySkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPickupSkill.cs#PickupSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 885,
+      "sample": "game:completion:B:new-quick-swap-torch:v2",
+      "origin": {
+        "normalizedValueSha256": "7faeadd6c61d3446db6e7471f9f727f87de52bbea78a63cfcd70d5b6ded97144",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/control-new-inputs-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "build",
+        "status",
+        "runtimeTested",
+        "priorClaimIds",
+        "codeEvidence",
+        "id",
+        "action",
+        "roles",
+        "reusedConsumer",
+        "conditions",
+        "transitions",
+        "boundaries",
+        "priorCase"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.maintenance",
+      "title": "수리·강화",
+      "planning": [
+        "P.maintenance",
+        "P.maintenance-single"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#AIMaintenance.ExactCandidate(World, Entity, AIObservation, string, LifeSelection)",
+        "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#MaintenanceSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 1257,
+      "sample": "game:base:B::CAB-2ebcba97367158c9b08f790c25d642c9:-1017010194669319066|repair",
+      "origin": {
+        "normalizedValueSha256": "a22943ed43f3d1e10a465ccc6b4e78ce233a20bc7e7afc4876b8fd544747b1f0",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/1/payload/extraction.json/records/154"
+      },
+      "valueKeys": [
+        "action",
+        "conditions",
+        "consumer",
+        "defaultPrimaryCandidates",
+        "defaultPrimaryIsThisSource",
+        "evidenceLevel",
+        "failure",
+        "id",
+        "inputs",
+        "levelBufferConverterGate",
+        "objectId",
+        "result",
+        "rule",
+        "sourceEvidence",
+        "sourceKey",
+        "unresolved",
+        "variation"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.mining",
+      "title": "채굴·채집",
+      "planning": [
+        "P.expedition"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIMineSkill.cs#MineSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGatherSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 37,
+      "sample": "game:completion:full-d:critter-after-pilot-dig",
+      "origin": {
+        "normalizedValueSha256": "97fa8140c705e76ad44bddf0c8e39e247be4017df398f7d3238240e8ad14c05b",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/followups-v2/cases.json",
+        "pointer": "/cases/1"
+      },
+      "valueKeys": [
+        "schemaVersion",
+        "build",
+        "runtimeTested",
+        "status",
+        "assetEvidence",
+        "priorClaimIds",
+        "relationLinks",
+        "codeEvidence",
+        "id",
+        "action",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.move",
+      "title": "이동·문·다리·장소",
+      "planning": [
+        "P.expedition-navigation",
+        "P.expedition-blocked"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AITravel.cs#TravelSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlaces.cs#PlaceTilesSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 37,
+      "sample": "game:completion:B:new-move-player",
+      "origin": {
+        "normalizedValueSha256": "4000418672885d12ead705a3a641a59f2d026c403560bc851c5cab312d5f7061",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+        "pointer": "/cases/2"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "roles",
+        "typedEndpoints",
+        "priorClaimIds",
+        "conditions",
+        "transitions",
+        "boundaries",
+        "codeEvidence",
+        "reviewDelta"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.place",
+      "title": "설치·도색·기지",
+      "planning": [
+        "P.base-example",
+        "P.unrestricted-space"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlace.cs#PlaceSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlaces.cs#PlaceTilesSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 2690,
+      "sample": "game:completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1013322647008637010",
+      "origin": {
+        "normalizedValueSha256": "97e9fa70b986f42073a99bd8505a16090a25a229d3e611c022386c1a9dbdf967",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/place-objects-v3-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "scope",
+        "runtimeTested",
+        "roles",
+        "entry",
+        "sourceValues",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "sharedFollowup",
+        "assetEvidence",
+        "codeEvidence",
+        "priorClaimIds",
+        "relationLinks"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.combat",
+      "title": "전투·공격·피해",
+      "planning": [
+        "P.field-choice",
+        "P.unrestricted-support"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIAttackSkill.cs#AttackSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AICombatOptions.cs#AICombatOptions.Candidates(World, Entity, AIObservation, string)",
+        "code:Assets/AIPlayerSpike/Scripts/AIWeaponInput.cs#AIWeaponInput.Build(AIWeaponUseControl, float2, float2, int, bool, bool, bool, bool, bool, out bool, bool, int, int)"
+      ],
+      "targets": 505,
+      "sample": "game:beam",
+      "origin": {
+        "normalizedValueSha256": "3e46a4074b58f614ddd7a0cc84bc6645dd9332d97de8f20169a4b45ed779b4e1",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/12"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "runtimeTested",
+        "status",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "priorClaimIds",
+        "relationLinks",
+        "assetEvidence",
+        "codeEvidence"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.food",
+      "title": "섭취·휴식",
+      "planning": [
+        "P.life"
+      ],
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AICombat.cs#EatSkill.Tick(World, Entity, float)"
+      ],
+      "targets": 562,
+      "sample": "game:bed-sleep",
+      "origin": {
+        "normalizedValueSha256": "f23893ced41c61da10aac8d913953385e255545f93827d23c2201e7d227666bb",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/17"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "runtimeTested",
+        "status",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "priorClaimIds",
+        "relationLinks",
+        "assetEvidence",
+        "codeEvidence"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.animals",
+      "title": "동물·펫・번식",
+      "planning": [
+        "P.life"
+      ],
+      "code": [],
+      "targets": 244,
+      "sample": "game:animal-cage",
+      "origin": {
+        "normalizedValueSha256": "509df7b60f008048bb7d54cf914de5162a7022b6c5b70ed41380f1746e725045",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/animal-helper/generated/cases.json",
+        "pointer": "/cases/1"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "scope",
+        "runtimeTested",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "assetEvidence",
+        "codeEvidence",
+        "priorClaimIds",
+        "relationLinks"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.capture",
+      "title": "벌레·포획",
+      "planning": [
+        "P.life"
+      ],
+      "code": [],
+      "targets": 160,
+      "sample": "game:bug-net",
+      "origin": {
+        "normalizedValueSha256": "457df05442b04bd06b8d0c314096029c941391881192a3898d6da858eae3c671",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/19"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "runtimeTested",
+        "status",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "priorClaimIds",
+        "relationLinks",
+        "assetEvidence",
+        "codeEvidence"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.fish",
+      "title": "낚시",
+      "planning": [
+        "P.life"
+      ],
+      "code": [],
+      "targets": 18,
+      "sample": "game:completion:B:fishing-50-0",
+      "origin": {
+        "normalizedValueSha256": "a84a9b1be45a42606f4a223f3f20d3f1658404260714b74f4b7fe373f679e106",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/fishing-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "scope",
+        "roles",
+        "entry",
+        "sourceValues",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "assetEvidence",
+        "codeEvidence",
+        "priorClaimIds",
+        "relationLinks",
+        "tableEvidence"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.trade",
+      "title": "상점·거래",
+      "planning": [
+        "P.life"
+      ],
+      "code": [],
+      "targets": 36,
+      "sample": "game:completion:gap:ordinary-merchant-buy-v1",
+      "origin": {
+        "normalizedValueSha256": "4f1453ebff76e829daa0685657aea5ddaa6f774e9ef16219d07c9711d1d9ac38",
+        "path": "../2026-11/2026-11-07-행동그래프공백보완/merchant/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "schemaVersion",
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "scope",
+        "roles",
+        "productRelations",
+        "conditions",
+        "entry",
+        "transitions",
+        "negativeCases",
+        "outcomes",
+        "boundaries",
+        "sourcePins",
+        "codeEvidence",
+        "applicability",
+        "priorCoverage",
+        "priorEvidence",
+        "relationLinks"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.vehicle",
+      "title": "차량·보트",
+      "planning": [
+        "P.expedition"
+      ],
+      "code": [],
+      "targets": 12,
+      "sample": "game:boat",
+      "origin": {
+        "normalizedValueSha256": "6041856372e854537fc38603d6393c06faffedbdecb2374effc931e43733fb60",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/18"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "runtimeTested",
+        "status",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "priorClaimIds",
+        "relationLinks",
+        "assetEvidence",
+        "codeEvidence"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.portal",
+      "title": "포탈·지도",
+      "planning": [
+        "P.expedition-navigation",
+        "P.spatial"
+      ],
+      "code": [],
+      "targets": 96,
+      "sample": "game:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-148034108279632797#teleport_from_portal",
+      "origin": {
+        "normalizedValueSha256": "317377899dee56370aca4681916755f7688cf68237018a29dcb54f1a71aafc82",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/59"
+      },
+      "valueKeys": [
+        "action",
+        "assetEvidence",
+        "conditions",
+        "evidenceLevel",
+        "failureBranches",
+        "id",
+        "inputProcessingConsumer",
+        "objectId",
+        "result",
+        "ruleRef",
+        "sourceKey",
+        "unknown",
+        "variation"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.electric",
+      "title": "전기·자동화",
+      "planning": [
+        "P.base-example",
+        "P.life"
+      ],
+      "code": [],
+      "targets": 571,
+      "sample": "game:completion:full-d:ancient-electricity:CAB-2ebcba97367158c9b08f790c25d642c9:-7658880460584646847",
+      "origin": {
+        "normalizedValueSha256": "c1c6f6a49da8f9aa7c103f36ab6165452c8296ab9a0fb00ad8bfa52b42c4f680",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/ancient-v2/cases.json",
+        "pointer": "/cases/3"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "assetEvidence",
+        "codeEvidence",
+        "priorClaimIds",
+        "relationLinks"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.interact",
+      "title": "월드 상호작용·꾸미기",
+      "planning": [
+        "P.life",
+        "P.base-example"
+      ],
+      "code": [],
+      "targets": 198,
+      "sample": "game:big-larva",
+      "origin": {
+        "normalizedValueSha256": "6919fed2c85660cd57b21cd3e55f95a33ef1346123cd667404bcb7f21260d5f0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+        "pointer": "/cases/6"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "runtimeTested",
+        "status",
+        "scope",
+        "roles",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "priorClaimIds",
+        "relationLinks",
+        "assetEvidence",
+        "codeEvidence"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.lifecycle",
+      "title": "사망·부활",
+      "planning": [
+        "P.result"
+      ],
+      "code": [],
+      "targets": 3,
+      "sample": "game:completion:essential:player-death-armor-cost-v1",
+      "origin": {
+        "normalizedValueSha256": "b0c2b8d51c3bf847425fbea297a60f60598ff6cd4dfcc64ea1bc009a94c5db34",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value"
+      },
+      "valueKeys": [
+        "summary",
+        "conditions",
+        "flow",
+        "results",
+        "failures",
+        "boundary",
+        "codeReferences",
+        "sourceEvidence",
+        "existingReuse"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.environment",
+      "title": "환경·변형·스폰",
+      "planning": [
+        "P.observation"
+      ],
+      "code": [],
+      "targets": 395,
+      "sample": "game:completion:full-d:contents-time:supp:C::CAB-2ebcba97367158c9b08f790c25d642c9:-2368512232396417441#change_variation_after_time",
+      "origin": {
+        "normalizedValueSha256": "b03338fc75ed3c0994bc2344b9aff7d8e71b7f28c985241baa0f886e4a91dc90",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/contents-time/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "scope",
+        "roles",
+        "parameters",
+        "assetEvidence",
+        "codeEvidence",
+        "priorClaimIds",
+        "relationLinks",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "entry"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.hazards",
+      "title": "환경·적 공격의 위험",
+      "planning": [
+        "P.observation",
+        "P.field-choice"
+      ],
+      "code": [],
+      "targets": 28,
+      "sample": "game:completion:A:block-fire-mortar-9305-v1",
+      "origin": {
+        "normalizedValueSha256": "41a1732c48fffb35c0350be4fae0ba072fe37ca349b3dfa5ccbc2ef05bdbeab9",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/A/projectile-helper26/9305-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "scope",
+        "roles",
+        "typedEndpoints",
+        "entry",
+        "conditions",
+        "transitions",
+        "outcomes",
+        "negativeCases",
+        "boundaries",
+        "assetEvidence",
+        "codeEvidence",
+        "sharedConsumers",
+        "priorClaimIds",
+        "relationLinks"
+      ],
+      "sourceStatus": 0
+    },
+    {
+      "id": "R.game-topic.debug",
+      "title": "원본 디버그 동작",
+      "planning": [
+        "P.game-first"
+      ],
+      "code": [],
+      "targets": 2,
+      "sample": "game:completion:B:debug-noclip",
+      "origin": {
+        "normalizedValueSha256": "75b2ac51469bc1d01c34da54ce6b5966c3785120888915e45f0991a38e570495",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/noclip-input-v2-replay-1/cases.json",
+        "pointer": "/cases/0"
+      },
+      "valueKeys": [
+        "id",
+        "action",
+        "build",
+        "status",
+        "runtimeTested",
+        "priorClaimIds",
+        "roles",
+        "typedEndpoints",
+        "conditions",
+        "transitions",
+        "boundaries",
+        "codeEvidence",
+        "reusedMovement"
+      ],
+      "sourceStatus": 0
+    }
+  ],
+  "population": {
+    "canonicalNodes": 251417,
+    "foreignNodes": 19122,
+    "uniqueForeign": 19122,
+    "mismatches": [],
+    "missingSelected": [],
+    "unmatched": [],
+    "unclassified": []
+  },
+  "variationSources": [
+    {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319",
+      "variation": 3
+    },
+    {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713",
+      "variation": 0
+    },
+    {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456",
+      "variation": 1
+    },
+    {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816",
+      "variation": 2
+    }
+  ],
+  "check": {
+    "ok": true,
+    "errors": [],
+    "stale": []
+  },
+  "labelPath": {
+    "label": "game:verb:cooking",
+    "labelHasOrigin": false,
+    "incomingRelation": "uses_label",
+    "claim": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking",
+    "sourceOrigin": {
+      "normalizedValueSha256": "ae34d97134b55ea06b19918b5e141c7a3cbeea58c54143f5747f432b9c54dcee",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/3/payload/extraction.json/records/172"
+    }
+  },
+  "ended": "2026-11-08T05:28:29.374Z",
+  "pinChanges": []
+}

@@ -1,0 +1,388 @@
+
+// 사용자 지시: 임의 제약 해제. 구현/검증/본반영 지위는 별도 참고에서 갱신한다.
+Object.assign(documents,{
+  "unrestrictionAgreement": {
+    "layer": "재기획",
+    "path": "../2026-11-07-제약해제/00-agreement.md"
+  },
+  "unrestrictionCriteria": {
+    "layer": "참고",
+    "path": "../2026-11-07-제약해제/01-acceptance.md"
+  },
+  "unrestrictionAudit": {
+    "layer": "참고",
+    "path": "../2026-11-07-제약감사/보고.md"
+  },
+  "unrestrictionKnowledge": {
+    "layer": "참고",
+    "path": "../2026-11-07-제약감사/05-지식해금과채집허용.md"
+  },
+  "unrestrictionInfo": {
+    "layer": "참고",
+    "path": "../2026-11-07-제약해제/info.md"
+  }
+});
+nodes.push(...[
+  {
+    "id": "P.unrestricted-actions",
+    "title": "임의 행동·정보 제약 전반 해제",
+    "layer": "재기획",
+    "status": "사용자 지시·구현 진행",
+    "summary": "감사의 수량·계획·지시·후보·정보·공간 및 지원행동 제한을 전반 해제한다. 사용자 목표이며 구현 완료나 새 실게임 성공을 뜻하지 않는다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "사용자는 감사에서 현재 제약으로 보고한 항목을 전반적으로 해제하라고 지시했다."
+      }
+    ]
+  },
+  {
+    "id": "P.unrestricted-work",
+    "title": "큰 작업량·긴 계획·열린 부탁을 보존",
+    "layer": "재기획",
+    "status": "사용자 지시·구현 진행",
+    "summary": "채집30·제작10·배치30, 계획 단계·열린 부탁 개수의 임의 상한을 없애고 총량/원래 부탁을 실행 묶음과 구분한다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "id": "P.unrestricted-choice",
+    "title": "생활 페이지·후보 압축과 목표/허기 기반 숨김 해제",
+    "layer": "재기획",
+    "status": "사용자 지시·구현 진행",
+    "summary": "생활 분류를 유지하며5개 페이지 제한을 없앤다. 옛 방위별 탐험 대표 압축과 목표 밖 채집 후보 숨김을 제거하고 합의된 이동과 연결한다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "생활 분류 기능 자체 대신"
+      }
+    ]
+  },
+  {
+    "id": "P.unrestricted-space",
+    "title": "기지·농장·장거리의 고정 공간상한 해제",
+    "layer": "재기획",
+    "status": "사용자 지시·새 공간정책 미정",
+    "summary": "기지/농장 고정범위와 장거리 이동 거절을 해제한다. 새 거점 구역이나 농장 배치 정책을 이 지시로 임의 확정하지 않는다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "새로 거점·농장 정책을 임의로 정하지 않는다."
+      }
+    ]
+  },
+  {
+    "id": "P.unrestricted-information",
+    "title": "보고·대화·기억검색의 임의 잘림 해제",
+    "layer": "재기획",
+    "status": "사용자 지시·구현 진행",
+    "summary": "상위 계획과 현장 선택에 필요한 정보가 top-N/글자수만으로 누락되지 않게 한다. 캐릭터가 모르는 지식을 공개하는 변경은 아니다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "후보와 정보의 잘림"
+      }
+    ]
+  },
+  {
+    "id": "P.unrestricted-support",
+    "title": "지원 행동 유형도 정상 실행과 실제 결과까지 확대",
+    "layer": "재기획",
+    "status": "사용자 추가 지시·구현 진행",
+    "summary": "도구/무기 및 특정 적 전용 제어 제한을 미구현이란 이유로 제외하지 않는다. 이름만 노출하지 않고 선택→정상 입력→실제 결과 관측을 연결한다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "사용자 추가 확인으로 사용자 부탁 수·계획 길이·장거리 이동·지원 행동 범위를 모두 포함한다."
+      }
+    ]
+  },
+  {
+    "id": "P.unrestricted-guards",
+    "title": "지식공개·소유권·비용·실제 게임조건 유지",
+    "layer": "재기획",
+    "status": "합의·유지 조건",
+    "summary": "본 것·보유품·본 제작대의 레시피/재료로 공개하는 지식정책을 유지한다. 게임 슬롯/충돌/재료·정상요청·사용자예산/구독·중복실행방지는 별도 의미다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "실제 게임 물품/슬롯/충돌/재료 조건,"
+      }
+    ]
+  },
+  {
+    "id": "R.unrestriction-audit",
+    "title": "해제 판단의 현행5a 감사와 지식해금 구분",
+    "layer": "참고",
+    "status": "참고·정적 조사",
+    "summary": "제약 위치와 성격을 찾은 감사다. 지식 공개와 별도 gather 고정목록임을 확인했고, 과거8/14 후보 cap은 이미 제거돼 있었음을 구분한다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionAudit",
+        "anchor": "# AI의 계획·선택·정보 제약 감사 결과"
+      }
+    ]
+  },
+  {
+    "id": "R.unrestriction-candidate",
+    "title": "격리 제약해제 후보와 완료 판단 기준",
+    "layer": "참고",
+    "status": "참고·구현중·미수용·미실게임",
+    "summary": "격리 ai-remove-restrictions-20261107 후보를 구현/검수 중이다. 후보 SHA와 실제 테스트의 별도 증거가 있어야 구현을 수용할 수 있다. 본 반영·설치·게임 성공은 미확정이다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionCriteria",
+        "anchor": "# 완료 판단 기준"
+      }
+    ]
+  },
+  {
+    "id": "R.unrestriction-info",
+    "title": "정보·기억·채팅 해제의 오프라인 후보검증",
+    "layer": "참고",
+    "status": "참고·정보영역 자체검증·통합수용대기",
+    "summary": "목차·검색·경험·대화·전투정보 잘림을 제거한 후보 자체검증이다. memgraph84/recall41/retention7과experience ALL PASS를 보고했다. 전체 통합·독립검수·게임 성공으로 확대하지 않는다.",
+    "evidence": [
+      {
+        "doc": "unrestrictionInfo",
+        "anchor": "## 검증"
+      }
+    ]
+  }
+]);
+edges.push(...[
+  {
+    "from": "P.execution",
+    "to": "P.unrestricted-actions",
+    "type": "사용자 지시에 따른 실행범위 갱신",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "사용자는 감사에서"
+      }
+    ]
+  },
+  {
+    "from": "P.noncombat-choice",
+    "to": "P.unrestricted-choice",
+    "type": "현장 선택을 임의 개수·목표필터로 제한하지 않음",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "P.unrestricted-work",
+    "type": "해제 범위와 유지 조건",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "P.unrestricted-choice",
+    "type": "해제 범위와 유지 조건",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "P.unrestricted-space",
+    "type": "해제 범위와 유지 조건",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "P.unrestricted-information",
+    "type": "해제 범위와 유지 조건",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "P.unrestricted-support",
+    "type": "해제 범위와 유지 조건",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "범위:"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "P.unrestricted-guards",
+    "type": "해제 범위와 유지 조건",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "실제 게임 물품/슬롯/충돌/재료 조건,"
+      }
+    ]
+  },
+  {
+    "from": "P.original-request",
+    "to": "P.unrestricted-work",
+    "type": "긴 계획·여러 부탁도 원래 목적 보존",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "사용자 추가 확인으로"
+      }
+    ]
+  },
+  {
+    "from": "P.knowledge",
+    "to": "P.unrestricted-guards",
+    "type": "캐릭터 공개 지식은 유지",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "사람 시야와 본 것·보유품·본 제작대 레시피/재료로 지식 공개를 여는 정책은 유지한다."
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "R.unrestriction-audit",
+    "type": "참고: 해제 전 활성 제약 조사",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAudit",
+        "anchor": "# AI의 계획·선택·정보 제약 감사 결과"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-actions",
+    "to": "R.unrestriction-candidate",
+    "type": "참고: 후보의 완료 판단 경계",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionCriteria",
+        "anchor": "# 완료 판단 기준"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-information",
+    "to": "R.unrestriction-info",
+    "type": "참고: 정보영역 후보의 자체검증",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionInfo",
+        "anchor": "## 검증"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-choice",
+    "to": "R.life-tree-spec",
+    "type": "참고: 과거 페이지 정책의 대체 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "생활 분류 기능 자체 대신"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-choice",
+    "to": "R.bag-cap-audit",
+    "type": "참고: 과거 페이지 정책의 대체 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "생활 분류 기능 자체 대신"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-choice",
+    "to": "R.bag-life-consumers",
+    "type": "참고: 과거 페이지 정책의 대체 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "생활 분류 기능 자체 대신"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-choice",
+    "to": "R.maintenance-consumers",
+    "type": "참고: 과거 페이지 정책의 대체 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "unrestrictionAgreement",
+        "anchor": "생활 분류 기능 자체 대신"
+      }
+    ]
+  }
+]);
+for(const update of [
+  {
+    "id": "R.life-tree-spec",
+    "title": "과거 생활 트리 첫 단위의 승인 명세",
+    "status": "참고·과거 승인명세·페이지정책 대체",
+    "summary": "당시 임시 커서·단계 페이지·대상 재검증·부분 결과의 승인 명세다. 페이지 제한은 P.unrestricted-choice의 새 지시로 대체하며, 조회/실행·진척 분리와 실제 재검증 의미는 유지한다."
+  },
+  {
+    "id": "R.bag-cap-audit",
+    "title": "과거39 후보 상한과 소비자 제한 구별",
+    "status": "참고·과거39 적용판정·해제범위 확대",
+    "summary": "당시 현장 후보 cap을 없애고 보고/기억/로그를 별도 유지한 판정이다. 현재 정보잘림 해제는 P.unrestricted-information을 따르며, 호출비용·지식공개·실제게임조건과의 구분은 유지한다."
+  },
+  {
+    "id": "R.bag-life-consumers",
+    "title": "과거39 생활·가방 소비자 계약 통합",
+    "status": "참고·과거39 통합계약",
+    "summary": "당시 가방 무페이지·생활 페이지 보존의 통합 판단이다. 현재 생활 페이지의 유지 정책은 P.unrestricted-choice의 새 해제 지시로 대체된다. pending·진척·몸행동 보존 의미는 이어 쓴다."
+  },
+  {
+    "id": "R.maintenance-consumers",
+    "title": "과거5a 정비와 생활·가방 소비자 경계",
+    "status": "참고·과거5a 통합기준",
+    "summary": "5a 통합 당시 생활 페이지·직접실행과 가방 메뉴의 소비자 경계를 기록한다. 현재 페이지 제한의 제거는 P.unrestricted-choice를 따른다. pending·정확 슬롯·실제 결과의 의미는 별도 유지 조건이다."
+  }
+]){ const item=nodes.find(n=>n.id===update.id); if(!item)throw Error("Historical node absent "+update.id); Object.assign(item,update); }

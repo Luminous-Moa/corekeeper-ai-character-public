@@ -1,0 +1,155 @@
+﻿02:37:40 L2 start: backup
+02:38:29 build rf-S7 e0c671b installed (26 .cs, differ 0, BuildAndInstall done exit 0); switches testcmds.on decisionlog.on; lowgfx 30; bridge-logs copied from base
+02:38:41 launch game via steam
+02:40:35 game quit by itself ~02:39:40 right after title screen Enter ('Got quit request'); cause unknown; relaunching once
+02:41:32 likely cause of first quit: Enter on title activated remembered '종료' menu item; using clicks now
+02:42:31 new world rftest seed 917121490949 mode 일반 default, slot 7: create clicked
+02:43:08 in world rftest, world id 5023709494eccd572844e129f61c9356
+02:44:07 S1 /ai on
+sent /ai on
+[AIPlayerSpike] t=217.5 @Claude stage PlayerSpawned -> Walking
+02:44:19 S1-reset round 1
+sent /ai goal follow
+[AIPlayerSpike] t=221.4 @Claude GOAL set rev=1 source=host: 호스트 따라가기 (start count 0)
+sent /ai goal
+[AIPlayerSpike] t=229.5 @Claude chat reply: AI 목표: 호스트 따라가기 · 위쪽 LLM 끔(호출 0, 적용 0, 버림 0, 실패 0, 지연 중앙값 -) · 이번 접속 호출 3(적용 3, 버림 0, 실패 0, 미리 묻기 0·씀 0) ·지연 중앙값 0.43초 p95 2.26초 · 이달 모두 48191회
+sent /ai off
+TIMEOUT stage .* -> Disabled|chat reply
+sent /ai on
+[AIPlayerSpike] t=278.2 @Claude stage PlayerSpawned -> Walking
+sent /ai goal
+[AIPlayerSpike] t=283.1 @Claude chat reply: AI 목표: 없음 · 위쪽 LLM 끔(호출 0, 적용 0, 버림 0, 실패 0, 지연 중앙값 -) · 이번 접속 호출 0(적용 0, 버림 0, 실패 0, 미리 묻기 0·씀 0) ·지연 중앙값 0.00초 p95 0.00초 · 이달 모두 48192회 $9.3560(그중 
+02:45:31 S1-reset round 2
+sent /ai goal follow
+[AIPlayerSpike] t=293.5 @Claude GOAL set rev=2 source=host: 호스트 따라가기 (start count 0)
+sent /ai goal
+TIMEOUT chat reply: AI 목표
+sent /ai off
+[AIPlayerSpike] t=319.4 @Claude chat reply: AI 기다리기 취소: AI leaving (turned off by host (/ai off)) (0.4초)
+sent /ai on
+[AIPlayerSpike] t=335.3 @Claude stage PlayerSpawned -> Walking
+sent /ai goal
+[AIPlayerSpike] t=340.2 @Claude chat reply: AI 목표: 없음 · 위쪽 LLM 끔(호출 0, 적용 0, 버림 0, 실패 0, 지연 중앙값 -) · 이번 접속 호출 0(적용 0, 버림 0, 실패 0, 미리 묻기 0·씀 0) ·지연 중앙값 0.00초 p95 0.00초 · 이달 모두 48204회 $9.3571(그중 
+02:46:29 S1-reset: r1 goal t=229.5 -> off -> on -> 없음 t=283.1; r2 goal t=301.6 -> off t=319.4 -> on -> 없음 t=340.2; rev 1->2
+02:46:30 S2 goal dirt 5
+sent /ai goal dirt 5
+[AIPlayerSpike] t=371.2 @Claude GOAL done rev=3: 흙벽 블록(WallDirtBlock) 5개 모으기 (5/5) after 19.2s, calls this session 7
+02:46:54 S3 goal tin 3
+sent /ai goal tin 3
+TIMEOUT GOAL (done|stalled|ended)
+sent /ai stop
+02:52:02 S4 goal craft WoodenWorkBench 1
+sent /ai goal craft WoodenWorkBench 1
+[AIPlayerSpike] t=700.4 @Claude GOAL done rev=7: WoodenWorkBench(WoodenWorkBench) 1개 만들기 (1/1) after 14.1s, calls this session 169
+sent /ai stop
+02:52:26 S5 goal follow (host walks east then west)
+sent /ai goal follow
+sent /ai stop
+02:53:33 S6 self-defence: arena go + spawn 3 (no goal)
+sent /ai claude arena go
+sent /ai arena spawn 3
+TIMEOUT SELF-DEFENCE #[0-9]+ end
+02:56:23 S7 close fight with a goal: spawn 3 MushroomEnemy 5 explore
+sent /ai arena spawn 3 MushroomEnemy 5 explore
+sent /ai stop
+02:58:04 S8 down: spawn 1 MushroomBrute (no goal)
+sent /ai arena spawn 1 MushroomBrute
+TIMEOUT DOWN #
+TIMEOUT stood up again
+03:02:15 S11 goal home
+sent /ai goal home
+[AIPlayerSpike] t=1337.9 @Claude GOAL done rev=14: 기지로 돌아가기 (기지 (0,0) 코어(정하지 않아 기본값) 도착(2.0칸)) after 41.1s, calls this session 720
+sent /ai stop
+03:03:03 scenarios 2-8, 11 done
+03:03:13 NOPATH: /ai goto 0 40 (expected unreachable through walls)
+sent /ai goto 0 40
+[AIPlayerSpike] t=1355.2 @Claude SKILL 걷기 FAILED after 0.0s: reason='목표 칸이 걸을 수 없는 곳(wall)' start=(1.33,-1.14) end=(1.33,-1.14) facts=[target=좌표 (0,40) top=wall]
+03:03:49 NOPATH try 2: /ai goto 150 150 (far, unloaded)
+sent /ai goto 150 150
+[AIPlayerSpike] t=1392.4 @Claude SKILL 걷기 FAILED after 1.0s: reason='길 없음(게임 길찾기: 타일·물체 고려) (길찾기 game-bfs)' start=(1.33,-1.14) end=(1.33,-1.14) facts=[target=좌표 (150,150) top=ground; nav=game-bfs stuck=0 replans=0]
+03:04:00 NOPATH ok: SKILL 걷기 FAILED '길 없음(게임 길찾기…)' t=1392.4 -> BRAIN: no path to (150,150); OUTCOME-MISMATCH 0
+03:04:17 S9 real bridge started (claude week 58%)
+03:04:17 S9 goal auto (real bridge, claude)
+sent /ai goal auto
+[AIPlayerSpike] t=1423.0 @Claude PLANNER: report #1 APPLY decision=set goal=gather Wood 10 why='가방이 흙벽으로 가득. 나무로 상자·도구를 만들어야 정리와 다음 단계가 가능. 가깝고 안전한 일.' after 3.9s
+[AIPlayerSpike] t=1432.5 @Claude GOAL done rev=16: 나무(Wood) 10개 모으기 (10/10) after 9.5s, calls this session 727
+03:04:35 S9 bridge off
+[AIPlayerSpike] t=1434.7 @Claude PLANNER: bridge not reachable (Failed to receive data) after 2.3s
+TIMEOUT GOAL free time rev
+03:06:36 S9 bridge on again
+[AIPlayerSpike] t=1681.8 @Claude PLANNER: upper LLM answers again (was: 브리지에 닿지 않음(꺼져 있음?))
+[AIPlayerSpike] t=1702.4 @Claude PLANNER: report #5 APPLY decision=set goal=gather CopperOre 10 why='기억한 구리 87곳. 구리 주괴로 솥·더 좋은 곡괭이·무기를 만들려면 구리가 먼저 필요' after 3.9s
+03:09:05 S9 stop
+sent /ai stop
+03:09:08 S9 done
+03:09:21 S10 fake bridge up: fake-bridge listening on http://127.0.0.1:8331 (6 steps, log C:\Dev\_scratch\refactor-runs\L2\fake-requests.jsonl)
+03:09:21 S10 goal auto
+sent /ai goal auto
+[AIPlayerSpike] t=1723.1 @Claude PLANNER: upper LLM unavailable (limit: usage 99% > 85% (fake bridge)); auto stays on, asking again in 120s
+[AIPlayerSpike] t=1843.2 @Claude PLANNER: report #7 answer after 0.0s code=200 error=parse body={"ok":false,"member":"claude","cli":"fake","model":null,"effort":null,"ms":5,"report_id":7,"goal_rev":20,"answer":null,"raw":"this is not json","error":"parse","detail":"no-json","prompt_chars":0,"turn_ch
+TIMEOUT PLANNER: report #[0-9]+ APPLY decision=set goal=follow
+[AIPlayerSpike] t=2023.3 @Claude GOAL done rev=24: 호스트 따라가기 (3 minutes, upper-LLM follow) after 180.0s
+TIMEOUT code=409
+TIMEOUT answer DROPPED
+[AIPlayerSpike] t=2148.4 @Claude PLANNER: report #12 APPLY decision=hold goal=   why='fake bridge step 6' after 0.0s
+[AIPlayerSpike] t=2268.5 @Claude PLANNER: report #13 sent trigger=hold_recheck rev=22 reportChars=4524 buildMs=5.2: {"trigger":"hold_recheck","goal":{"source":"llm:claude#8","text":"호스트 따라가기"},"why_ended":"3분 따라감","events":[],"me":{"hp":"100/100","hunger":52,"hand":"WoodMiningP
+TIMEOUT APPLY decision=hold
+03:19:32 S10 stop
+sent /ai stop
+03:19:34 S10 done
+03:19:48 XS fake bridge (stall-seq) up: fake-bridge listening on http://127.0.0.1:8331 (2 steps, log C:\Dev\_scratch\refactor-runs\L2\fake-stall-requests.jsonl)
+03:19:48 XS goal auto
+sent /ai goal auto
+TIMEOUT PLANNER: report #[0-9]+ (APPLY|answer DROPPED)
+03:20:57 XS nonew on
+sent /ai nonew
+[AIPlayerSpike] t=2433.0 @Claude GOAL stalled rev=28: TinOre(TinOre) 3개 모으기 (0/3): 모을 방법이 없음 — 보이는 목표 품목 벽 0개(닿는 것), 파 들어갈 수 있는 목표 광석·물체 0개, 기억한 목표 광석 0곳(갈 길이 있는 것 0개), 탐험할 새 구역 없
+TIMEOUT trigger=goal_stalled
+03:21:49 XS stop
+sent /ai stop
+sent /ai nonew
+[AIPlayerSpike] t=2474.7 @Claude TEST-ONLY nonew: pretend nothing unseen = False
+03:21:59 XS done
+03:22:08 XS ok: line 10293 GOAL stalled (llm:claude#14 gather TinOre 3) -> 10296 EXP blocked/no_source -> 10298 PLANNER report #15 trigger=goal_stalled -> hold
+03:22:41 XB BodyCan-false setup: take tools/food/wood, fill bag
+sent /ai take WoodMiningPick
+sent /ai take WoodSword
+sent /ai take Mushroom
+sent /ai take Wood
+sent /ai inv
+03:25:27 XB bag full (0 empty of 40), no pick/weapon; /ai goal tin 3
+sent /ai goal tin 3
+[AIPlayerSpike] t=2689.7 @Claude BRAIN: blocked targets: 캐기·파기 9개 뺌: 곡괭이가 없고 손 칸 10칸이 모두 차 있으며 가방에도 빈 칸이 없어 맨손으로도 캘 수 없음(가방이나 손 칸을 비우면 됨)
+[AIPlayerSpike] t=2734.8 @Claude GOAL stalled rev=32: 주석 광석(TinOre) 3개 모으기 (0/3): 모을 방법이 없음 — 보이는 목표 품목 벽 0개(닿는 것), 파 들어갈 수 있는 목표 광석·물체 0개, 기억한 목표 광석 0곳(갈 길이 있는 것 0개), 캐기·파기 �
+sent /ai stop
+sent /ai take WallDirtBlock
+sent /ai give WoodMiningPick
+sent /ai give WoodSword
+sent /ai give Mushroom 5
+03:27:51 XB ok: BRAIN blocked 캐기·파기 N개 뺌 t=2689.7..2734.8 (17 lines); ASM-OUT noBody>0 & bodyCan false 51 builds; SEND 2689-2712 no mine/root/attack/break (dig only with 0 walls = no pick needed); AI placed WoodenWorkBench t=2712 freeing a slot -> mine/attack back briefly; GOAL stalled rev=32 t=2734.8 with 캐기·파기 불가 memo. Doable false in 18 builds (#1214-, close-fight, gather goal, t=2692-2708). Then restored tools (take dirt, give pick/sword/mushroom)
+03:27:57 S12 /ai all on
+sent /ai all on
+sent /ai claude goal dirt 5
+sent /ai gpt goal follow
+sent /ai gemini goal wood 3
+sent /ai grok goal home
+sent /ai
+sent /ai claude goal explore
+sent /ai gemini goal dirt 8
+sent /ai grok goal follow
+03:30:01 S13 real bridge all members (claude 58%, gpt 5%, gemini 12.1%, grok 0%); /ai all goal auto
+sent /ai all goal auto
+03:33:10 S13: only Gemini asked (others still had host goals explore/follow); /ai all stop then /ai all goal auto
+sent /ai all stop
+sent /ai all goal auto
+03:36:53 S5 check: decisionlog.on removed for 90s (SEND plans/n/cached on vs off)
+03:38:24 decisionlog.on back (Player.log lines 21234-23156 off)
+03:40:03 end: /ai all stop, bridge off, /ai off
+sent /ai all stop
+sent /ai off
+03:41:55 rftest deleted in-game (slot 7 empty)
+03:42:08 game quit from main menu
+03:42:39 restore run
+03:42:43 relaunch check
+03:43:57 relaunch check: no CloudSyncDown re-download; registry re-imported; final verify
+03:50:14 9-L2.md written; runs/L2 copied

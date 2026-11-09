@@ -1,0 +1,47 @@
+{
+  "node": {
+    "evidenceLevel": "conditional_static_calculation",
+    "id": "cooking:0",
+    "kind": "cooking_pair",
+    "origin": {
+      "normalizedValueSha256": "cecc11e01700fdf1384c537aa8111021fff4fbf15237a398ec9032bbcfe4c9a6",
+      "path": "../2026-11/2026-11-07-행동전체추출/D-outcomes/cooking-pairs.json",
+      "pointer": "/pairs/0"
+    },
+    "value": {
+      "condition": "Runtime selected primary prefab matches source candidate; input slot requirements, amounts, output and timer checks pass.",
+      "inputObjectIds": [
+        1645,
+        1645
+      ],
+      "inputSourceKeys": [
+        "CAB-2ebcba97367158c9b08f790c25d642c9:4084347551827135648",
+        "CAB-2ebcba97367158c9b08f790c25d642c9:4084347551827135648"
+      ],
+      "outputObjectId": 9504,
+      "outputVariation": 107808365,
+      "primaryObjectId": 1645,
+      "secondaryObjectId": 1645
+    }
+  },
+  "fields": [],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "produces_id_conditionally",
+      "target": "object:9504",
+      "kind": "object_id_reference",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "cooking_input_0",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4084347551827135648"
+    ],
+    [
+      "cooking_input_1",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:4084347551827135648"
+    ]
+  ]
+}

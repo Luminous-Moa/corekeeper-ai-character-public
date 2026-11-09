@@ -1,0 +1,20 @@
+requests 16
+celeris (celeris-1.1-decision): answers 32/32, latency p50 202ms p95 566ms max 568ms, tokens/call 1698, est. $0.000217
+
+id	options	logged	celeris
+sent.jsonl:1	6	-	c5 2/2
+sent.jsonl:2	3	-	c3 2/2
+sent.jsonl:3	3	-	c3 2/2
+sent.jsonl:4	8	-	c8 2/2
+sent.jsonl:5	4	-	c2 2/2
+sent.jsonl:6	7	-	c4 2/2
+sent.jsonl:7	11	-	c1 2/2
+sent.jsonl:8	11	-	c3 2/2
+sent.jsonl:9	8	-	c1 2/2
+sent.jsonl:10	8	-	c2 2/2
+sent.jsonl:11	6	-	c6 2/2
+sent.jsonl:12	6	-	c4 2/2
+sent.jsonl:13	8	-	c2 2/2
+sent.jsonl:14	4	-	c2 2/2
+sent.jsonl:15	4	-	c3 2/2
+sent.jsonl:16	8	-	c5 2/2

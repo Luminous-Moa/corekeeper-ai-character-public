@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "checkedFor": "1.3.0.7-5554 (Steam build 26332184)",
+  "about": "Hand-written game rules (not item data): base safety, spawning, enemy paths, wall breaking. Each rule: level = how it is known (game = game data or code, web = web sources, user = told by the user, estimate = inferred, not measured; '+' joins), src = where. objects = ObjectID names the rule is about (shown with how/uses of that object). Research: session 코어키퍼-AI-캐릭터 work/2026-11/2026-11-05-코어-안전지대/1-게임조사.md, 4-지식그래프-규칙.md.",
+  "levels": { "game": "게임 데이터", "web": "웹", "user": "사용자", "estimate": "추정", "measured": "실측" },
+  "rules": [
+    {
+      "id": "spawn-floor",
+      "topics": ["스폰", "생성", "다시 생김", "재스폰", "스폰 바닥", "바닥", "이끼", "번데기", "곰팡이 흙", "슬라임", "기지", "안전", "spawn"],
+      "text": "적은 '스폰 바닥' 위에서만 다시 생긴다: 이끼류(돌이끼·무성한 이끼·도시 이끼·점토 이끼·계곡 이끼·헝클어진 이끼·이끼 낀 흙), 번데기, 곰팡이 흙, 슬라임 점액류, 크리스털 껍데기, 협곡 산호, 녹슨 더미. 예외로 곰팡이 지대·사막·바다는 맨땅에서도 생긴다.",
+      "level": "game+web",
+      "src": ["Conf/Spawn/Respawn", "WorldGen.EnvironmentalObjects.dll SpawnEnvironmentObjectsPeriodicallySystem", "Steam 가이드 2846860078"],
+      "objects": ["StoneCavelingMoss", "NatureCavelingMoss", "CityCavelingMoss", "ClayCavelingMoss", "DesertCavelingMoss", "ExcavationVoidMoss", "MossGrowth", "Chrysalis", "FungalGrowth", "GroundSlime", "GroundPoisonSlime", "GroundSlipperySlime", "GroundLavaSlime", "CrystalCrust", "WinglingMoss", "ExcavationMoss"]
+    },
+    {
+      "id": "spawn-floor-enemies",
+      "topics": ["스폰", "어떤 적", "바닥", "이끼", "번데기", "곰팡이 흙", "슬라임", "버섯인간 야수", "동굴인", "애벌레", "spawn"],
+      "text": "바닥별로 다시 생기는 적: 곰팡이 흙 → 버섯인간·버섯인간 야수, 돌이끼 → 동굴인·동굴인 주술사·동굴인 야수, 무성한 이끼 → 동굴인 정원사·사냥꾼, 번데기 → 애벌레·거대한 애벌레, 슬라임 점액 → 슬라임, 크리스털 껍데기 → 흉내진드기, 협곡 산호 → 날개박쥐, 녹슨 더미 → 지오봇.",
+      "level": "game",
+      "src": ["Conf/Spawn/Respawn"],
+      "objects": ["FungalGrowth", "StoneCavelingMoss", "NatureCavelingMoss", "Chrysalis", "GroundSlime", "CrystalCrust", "WinglingMoss", "ExcavationMoss", "MushroomBrute", "CavelingBrute"]
+    },
+    {
+      "id": "spawn-light",
+      "topics": ["빛", "광원", "횃불", "밝기", "스폰", "기지", "안전", "light"],
+      "text": "빛은 적이 생기는 것과 관계없다(스폰 판정에 빛 검사가 없음). 횃불은 놓인 그 한 칸만 물체로 차지해서 막는다. 기지 안 광원은 보기 위한 것이다.",
+      "level": "game+web",
+      "src": ["SpawnEnvironmentObjectsPeriodicallySystem(빛 검사 없음)", "Steam 가이드 2846860078 FAQ", "geekchamp"],
+      "objects": ["Torch"]
+    },
+    {
+      "id": "spawn-top-tile",
+      "topics": ["스폰", "바닥재", "덮기", "맨 위 타일", "바닥", "기지", "안전", "floor"],
+      "text": "스폰은 칸의 맨 위 타일만 본다. 나무·돌 바닥재를 깔면 그 칸의 이끼·번데기·곰팡이 흙·맨땅 스폰이 막힌다. 바닥재·울타리·벽·물체가 맨 위에 있는 칸에서는 생기지 않는다.",
+      "level": "game+web",
+      "src": ["TileTypeUtility.GetSurfacePriority", "Steam 가이드 2846860078"],
+      "objects": ["WoodFloor", "StoneFloor"]
+    },
+    {
+      "id": "spawn-slime-cover",
+      "topics": ["슬라임", "슬라임 점액", "바닥재", "덮기", "깔개", "고정되지 않은 바닥재", "스폰"],
+      "text": "슬라임 점액은 바닥재보다 위에 오는 타일이라 바닥재로 덮어도 맨 위로 남는다(덮어도 슬라임이 계속 생길 수 있음). 깔개·고정되지 않은 바닥재·울타리·벽은 슬라임보다 위다. 실게임 확인은 아직 없다.",
+      "level": "estimate",
+      "src": ["TileTypeUtility.GetSurfacePriority(슬라임 750 > 바닥재 730)"],
+      "objects": ["GroundSlime", "Rug", "LooseFlooring"]
+    },
+    {
+      "id": "spawn-object-blocks",
+      "topics": ["스폰", "물체", "횃불", "상자", "가구", "막기"],
+      "text": "칸에 물체(횃불·상자·가구 등)가 있으면 그 칸에서는 스폰하지 않는다. 함정이 막는지는 확인하지 않았다.",
+      "level": "game+web",
+      "src": ["SpawnEnvironmentObjectsPeriodicallySystem", "Steam 가이드 2846860078"],
+      "objects": ["Torch"]
+    },
+    {
+      "id": "spawn-core-radius",
+      "topics": ["코어", "코어 근처", "스폰", "거리", "기지", "안전", "core"],
+      "text": "코어(월드 원점 0,0)에서 12타일 안에서는 적이 주기적으로 다시 생기지 않는다(월드가 처음 생길 때 적 영역도 20타일 밖에만 깔림). 다만 바깥에서 걸어 들어오는 적은 막지 않는다.",
+      "level": "game",
+      "src": ["Constants.sqrDistanceFromCoreToAllowSpawningEnvironment = 144", "…Enemies = 400"],
+      "objects": ["TheCore"]
+    },
+    {
+      "id": "spawn-player-distance",
+      "topics": ["스폰", "플레이어", "거리", "6타일", "200타일"],
+      "text": "플레이어 6타일 안에는 적이 생기지 않고, 모든 플레이어에게서 200타일 넘게 떨어진 칸은 스폰 검사를 건너뛴다. AI 캐릭터가 이 '플레이어'로 세어지는지는 확인하지 않았다.",
+      "level": "game+web",
+      "src": ["SpawnEnvironmentObjectsPeriodicallySystem(distancesq < 36, 200)", "Steam 가이드 2846860078", "0.3.3 패치노트"],
+      "objects": []
+    },
+    {
+      "id": "spawn-period",
+      "topics": ["스폰", "주기", "얼마나 자주", "15분", "16칸"],
+      "text": "16×16 칸마다 약 15분에 한 번 스폰 검사를 한다. 그 칸 안에 맞는 스폰 바닥이 대부분 6장(버섯류 4장) 이상 있어야 생기고, 한 번에 보통 1마리, 같은 종류가 이미 있으면 1마리마다 확률이 1/5로 준다.",
+      "level": "game+web",
+      "src": ["SpawnEnvironmentObjectsPeriodicallySystem", "Steam 가이드 2846860078", "Steam 4764332864594339765"],
+      "objects": []
+    },
+    {
+      "id": "spawn-enclosure",
+      "topics": ["벽", "둘러싸기", "스폰", "기지", "안전", "기존 적"],
+      "text": "벽으로 둘러쌌는지는 스폰 조건이 아니다. 벽 안이라도 스폰 바닥이 남아 있으면 생기고, 벽 밖에서 생긴 적은 길이 있으면 걸어 들어온다. 이미 있는 적은 바닥을 바꿔도 사라지지 않는다.",
+      "level": "game+web",
+      "src": ["SpawnEnvironmentObjectsPeriodicallySystem", "geekchamp"],
+      "objects": []
+    },
+    {
+      "id": "floor-remove-tool",
+      "topics": ["스폰 바닥", "없애기", "걷어내기", "캐기", "삽", "괭이", "이끼", "번데기", "곰팡이 흙", "슬라임", "기지", "안전", "shovel", "hoe"],
+      "text": "스폰 바닥은 삽이나 괭이로 캐서 없앨 수 있다: 맨 위가 이끼류·번데기·곰팡이 흙·크리스털 껍데기 같은 '번데기류' 타일이거나 슬라임 점액인 칸. 면역 타일 위에서는 캐지지 않는다.",
+      "level": "user+game",
+      "src": ["사용자(2026-11-05)", "PlacementHandlerDigging(삽·괭이 모두 chrysalis·groundSlime 타일을 캠)"],
+      "objects": ["WoodShovel", "CopperShovel", "TinShovel", "IronShovel", "WoodHoe", "CopperHoe", "TinHoe", "IronHoe", "FungalGrowth", "StoneCavelingMoss", "Chrysalis", "GroundSlime"]
+    },
+    {
+      "id": "floor-remove-attack",
+      "topics": ["스폰 바닥", "없애기", "공격", "때리기", "버섯 바닥", "곰팡이 흙", "이끼", "번데기", "슬라임"],
+      "text": "이끼류·번데기·곰팡이 흙(버섯 바닥)·크리스털 껍데기 같은 바닥은 체력 2, 피해 감소 0이라 공격으로도 부서진다. 슬라임 점액은 체력이 999999999라 때려서는 없어지지 않으니 삽·괭이로 걷어낸다.",
+      "level": "user+game",
+      "src": ["사용자(2026-11-05, 버섯 바닥은 공격으로 캐짐)", "knowledge-dump hp·red", "TileTypeUtility.IsDamageableTile"],
+      "objects": ["FungalGrowth", "StoneCavelingMoss", "Chrysalis", "CrystalCrust", "GroundSlime"]
+    },
+    {
+      "id": "floor-place-danger",
+      "topics": ["스폰 바닥", "놓기", "깔기", "이끼", "번데기", "슬라임", "기지", "주의"],
+      "text": "캐서 얻은 스폰 바닥(이끼·번데기·곰팡이 흙·슬라임 점액 등)은 다시 깔 수 있는 물건이다. 기지 안에 깔면 그 자리가 적이 생기는 바닥이 된다.",
+      "level": "game+web",
+      "src": ["knowledge-dump(type PlaceablePrefab)", "Steam 3875968032466771791"],
+      "objects": ["StoneCavelingMoss", "Chrysalis", "FungalGrowth", "GroundSlime"]
+    },
+    {
+      "id": "enemy-path",
+      "topics": ["적", "길찾기", "들어오기", "막기", "벽", "울타리", "구덩이", "해자", "물", "문", "기지", "안전", "나는 적"],
+      "text": "걷는 적은 벽·울타리·구덩이·물·큰 뿌리·닫힌 문을 지나갈 수 없는 칸으로 본다. 열린 문·출입구는 지나간다. 나는 적(날개박쥐·용암 나비·반딧불)은 울타리·구덩이·물을 넘고 벽에만 막힌다.",
+      "level": "game+web",
+      "src": ["PathFindSystem", "Steam 4845400399765941342", "Steam 4210371957568162920"],
+      "objects": ["WoodFence", "StoneFence", "WoodDoor", "StoneDoor", "WoodFenceGate", "StoneFenceGate"]
+    },
+    {
+      "id": "diagonal-gap",
+      "topics": ["대각선", "틈", "빈틈", "막기", "벽", "블록", "둘러싸기", "길찾기", "기지", "안전"],
+      "text": "블록 두 개가 대각선으로만 맞닿은 틈은 지나갈 수 없다. 그래서 둘레를 막을 때 대각선으로 이어진 블록도 막힌 줄로 친다. 적의 길찾기도 위·아래·왼쪽·오른쪽 네 방향으로만 움직인다.",
+      "level": "user+game",
+      "src": ["사용자(2026-11-05)", "PathFindSystem.GetShuffledCardinalDirections(네 방향만)"],
+      "objects": []
+    },
+    {
+      "id": "fill-water",
+      "topics": ["물", "메우기", "블록", "놓기", "해자", "길", "기지"],
+      "text": "물 위에 블록을 놓아 메울 수 있다. 게임 코드에는 물체마다 '물 위에 놓기 가능' 표시가 있고(용암은 따로), 어떤 블록에 그 표시가 있는지는 확인하지 않았다.",
+      "level": "user+game",
+      "src": ["사용자(2026-11-05)", "PlacementHandler(canPlaceOnWater·canBePlacedOnLava·canPlaceOnPit)"],
+      "objects": ["WallDirtBlock", "WallStoneBlock"]
+    },
+    {
+      "id": "door-enemy",
+      "topics": ["문", "출입구", "적", "열기", "부수기", "기지"],
+      "text": "적이 문을 여는 동작은 게임 코드에서 찾지 못했다(적은 닫힌 문을 열지 못하는 것으로 봄). 문·출입구는 체력 2, 피해 감소 0의 물체이고, 어떤 적이 문을 때리는지는 모른다.",
+      "level": "estimate",
+      "src": ["PathFindSystem(닫힌 문 = 막힘)", "knowledge-dump hp·red"],
+      "objects": ["WoodDoor", "StoneDoor", "WoodFenceGate", "StoneFenceGate"]
+    },
+    {
+      "id": "wall-break-ways",
+      "topics": ["벽", "부수기", "파괴", "돌진", "폭발", "적", "기지", "보수"],
+      "text": "적이 벽을 부수는 방식: (1) 쫓다가 부딪힌 벽·물체 때리기 — 5대 안에 깰 수 있을 때만(적 타일 피해 − 벽 피해 감소 ≥ 벽 체력/5) (2) 돌진(버섯인간 야수 등) (3) 타일 피해가 붙은 근접 공격(동굴인 야수, 바닥도 맞음) (4) 폭발 (5) 보스. (2)~(4)에는 5대 조건이 없다. 면역 타일·큰 벽·흑요석은 부서지지 않는다. 어느 적이 (1)~(3)을 하는지는 적 프리팹의 타일 피해 값(ObjectPropertiesCD: 부딪힌 것 때리기 -302465456, 근접 -1854640576(-2072102458이 있을 때), 돌진 1689738466(2130508658이 있을 때))으로 정해진다. 실측: 동굴인(Caveling)도 둘레 벽을 부순다(caveling-breaks-walls).",
+      "level": "game",
+      "src": ["DamageObjectStateRequest", "ChargeAttackStateSystem", "MeleeAttackStateSystem", "ExplosionDamageSystem", "TileDamageSystem"],
+      "objects": []
+    },
+    {
+      "id": "wall-no-drop",
+      "topics": ["벽", "부서짐", "떨굼", "보수", "재료", "기지"],
+      "text": "적이 부순 벽·뿌리는 아이템을 떨구지 않는다. 보수할 벽 재료는 미리 따로 모아 둬야 한다.",
+      "level": "game+web",
+      "src": ["skipWallAndRootsLootDropOnDestroy = true", "Steam 4845400399762249752"],
+      "objects": []
+    },
+    {
+      "id": "wall-strength",
+      "topics": ["벽", "강도", "체력", "단단한 벽", "돌 블록", "나무 벽", "울타리", "기지", "재료"],
+      "text": "벽 강도(체력/피해 감소): 진흙 블록 135/1, 나무 벽 150/1, 점토 블록 179/22, 캔 돌 블록·벽돌 벽 300/55, 진홍색 벽 550/135, 갈락사이트 벽 850/355, 흑요석 블록은 적 타일 피해를 받지 않음. 울타리는 체력 10. 초반에는 캔 돌 블록을 그대로 벽으로 놓는 편이 나무 벽보다 단단하다.",
+      "level": "game",
+      "src": ["knowledge-dump hp·red", "TileDamageSystem(흑요석 예외)"],
+      "objects": ["WallDirtBlock", "WallWoodBlock", "WallStoneBlock", "WallStoneBricksBlock", "WoodFence", "StoneFence"]
+    },
+    {
+      "id": "brute-breaks-walls",
+      "topics": ["버섯인간 야수", "돌진", "벽", "부수기", "기지"],
+      "text": "버섯인간 야수는 돌진으로 벽을 부순다(우리 실측: 벽에 부딪히면 반경 약 1.5칸 벽이 부서짐, 흙벽 방). 흙 등급 벽은 한 번에 깨지고 돌 이상은 대체로 버틴다는 보고가 있다.",
+      "level": "game+web",
+      "src": ["실측 2026-11-05 전투 단계 0", "fandom Shrooman_Brute(검색 요약)", "Steam 4845400399765941342"],
+      "objects": ["MushroomBrute"]
+    },
+    {
+      "id": "caveling-brute-breaks",
+      "topics": ["동굴인 야수", "벽", "바닥", "부수기", "기지"],
+      "text": "동굴인 야수는 근접 공격의 타일 피해로 대부분의 벽과 바닥 덮개를 부순다. 돌이끼에서 드물게 다시 생긴다.",
+      "level": "game+web",
+      "src": ["MeleeAttackStateSystem(걷는 칸 제외 없음)", "atma.gg Caveling_Brute(검색 요약)", "Steam 3462732305087370620"],
+      "objects": ["CavelingBrute", "StoneCavelingMoss"]
+    },
+    {
+      "id": "caveling-breaks-walls",
+      "topics": ["동굴인", "벽", "부수기", "기지", "둘레"],
+      "text": "동굴인(Caveling)은 벽을 부순다. 실측(2026-11-06, 흙 블록·자연 벽 둘레): 1마리가 소환 1초 뒤 자연 벽, 2.5초 뒤 놓은 흙 블록 벽을 부수고, 수십 초 안에 둘레 14곳을 뚫었다. 어느 방식(부딪힌 것 때리기·근접 타일 피해)인지와 그 값은 아직 게임 데이터로 보지 않았다(다음 실측의 'EDGE tile damage Caveling' 로그).",
+      "level": "measured",
+      "src": ["실측 2026-11-06 코어-안전지대 20-실측 N1 (t=858.6, 860.1, 947.9)"],
+      "objects": ["Caveling"]
+    },
+    {
+      "id": "other-breakers",
+      "topics": ["벽", "부수기", "폭탄 딱정벌레", "애벌레", "보스", "횃불", "기지"],
+      "text": "폭탄 딱정벌레는 자폭으로 벽을 부수고, 애벌레가 벽·횃불을 부순다는 보고, 일부 보스가 다리·블록을 부순다는 보고가 있다(각각 출처 하나).",
+      "level": "web",
+      "src": ["Steam 599640035961089783", "Steam 5179725348513576407", "Steam 4845400399762249752"],
+      "objects": ["BombScarab"]
+    },
+    {
+      "id": "early-defense-materials",
+      "topics": ["재료", "제작", "울타리", "문", "횃불", "벽", "바닥재", "함정", "작업대", "구리 주괴", "기지", "초반"],
+      "text": "초반 방어물: 횃불은 손 제작(나무 1 → 3개). 기본 작업대에서 나무 울타리(나무 2 → 2개), 나무 벽(나무 1 + 진흙 블록 1 → 2개), 나무 바닥재(나무 1 → 2개), 나무 가시 함정(나무 3). 나무 문(나무 4 + 구리 주괴 2)과 나무 울타리 출입구(나무 2 + 구리 주괴 1)는 구리 주괴가 든다. 캔 진흙 블록·돌 블록은 제작 없이 바로 벽으로 놓는다.",
+      "level": "game",
+      "src": ["knowledge-dump 레시피"],
+      "objects": ["Torch", "WoodFence", "WallWoodBlock", "WoodFloor", "WoodSpikeTrap", "WoodDoor", "WoodFenceGate", "WoodenWorkBench", "WallDirtBlock", "WallStoneBlock"]
+    },
+    {
+      "id": "core-no-place",
+      "topics": ["코어", "코어 근처", "놓기", "놓을 수 없음", "기지", "면역", "core"],
+      "text": "코어 둘레에는 물건을 놓을 수 없는 칸이 있다(코어 바로 옆 칸에 솥 놓기가 실패한 기록). 게임 코드에서 '면역 타일' 위에는 대부분의 물건을 놓을 수 없고, 그 칸은 적·폭발의 타일 피해도 받지 않으며 삽·괭이질도 안 된다. 코어가 면역 구역을 만드는지와 그 넓이는 확인하지 않았다. 벽은 그 구역 바깥에 둘러야 한다.",
+      "level": "user+estimate",
+      "src": ["사용자(2026-11-05)", "리팩토링 L2 Player.log 솥 놓기 실패 (-1,0)·(0,-1)·(1,0)", "PlacementHandler.IsNonAllowedImmuneTilePlacement", "ImmunityZoneSystem"],
+      "objects": ["TheCore"]
+    },
+    {
+      "id": "base-practice",
+      "topics": ["기지", "안전", "지키기", "방법", "해자", "함정", "문", "벽"],
+      "text": "사람들이 기지를 지키는 흔한 방법: 기지 안과 입구 주변의 스폰 바닥을 걷어내거나 덮기, 돌 이상 재질로 벽 두르기, 입구를 줄이고 문 달기, 벽 바깥에 구덩이·물 해자(걷는 적의 길을 끊음. 나는 적·원거리 적·점프하는 슬라임은 못 막음), 문 앞 가시 함정. 넓히면 새로 들어온 칸의 스폰 바닥을 다시 치운다.",
+      "level": "web",
+      "src": ["Steam 가이드 2846860078", "geekchamp", "Steam 4764333047772742900", "Steam 599640035961089783", "Steam 4845400399765941342"],
+      "objects": ["WoodSpikeTrap", "SpikeTrap"]
+    },
+    {
+      "id": "ranged-over-fence",
+      "topics": ["울타리", "원거리", "탄", "투사체", "기지"],
+      "text": "울타리는 낮은 충돌체라 원거리 적의 탄이 넘어올 수 있다. 울타리·출입구 안쪽에 벽을 두어 탄을 막으라는 조언이 있다.",
+      "level": "web+estimate",
+      "src": ["Steam 4764333047772742900", "IsLowCollider(울타리)"],
+      "objects": ["WoodFence", "StoneFence"]
+    },
+    {
+      "id": "no-raids",
+      "topics": ["습격", "웨이브", "밤", "기지", "이벤트"],
+      "text": "기지를 노리는 습격·웨이브 이벤트는 게임 코드에서 찾지 못했다(없는 것으로 봄). 적은 스폰 바닥에서 생기거나 바깥에서 걸어 들어온다.",
+      "level": "estimate",
+      "src": ["decompile 검색 raid·invasion·horde·ambush"],
+      "objects": []
+    },
+    {
+      "id": "placed-object-pickup",
+      "topics": ["놓은 물체", "치우기", "회수", "부수기", "다시 놓기", "횃불", "문", "울타리 출입구", "곡괭이", "칼", "무기", "pickup"],
+      "text": "직접 놓은 물체(문·횃불·울타리 출입구 등)는 두 번 쳐서 부수면 아이템이 가방으로 돌아오고, 다시 놓을 수 있다. 다만 칼 같은 근접 무기를 들고 치면 맞지 않는다(근접 무기는 뿌리·부서지는 물체·풀 등 정해진 것만 맞힌다). 곡괭이나 빈손으로 쳐야 한다. 같은 휘두름에 적이 맞으면 그때도 물체는 맞지 않는다.",
+      "level": "user+game",
+      "src": ["사용자(2026-11-05): 놓은 물체는 공격 2번에 부서져 가방으로 돌아옴", "PlayerController.TryDealDamageToAnyEntity: 근접 무기면 canOnlyHitCertainObjects(EntityUtility.EvaluateCanOnlyHitCertainObjects)", "단계 2 실측: 칼로 친 문·횃불은 체력 2→2"],
+      "objects": ["WoodDoor", "Torch", "WoodFenceGate"]
+    },
+    {
+      "id": "door-between-walls",
+      "topics": ["문", "문 달기", "출입구", "벽", "울타리 출입구", "기지", "door"],
+      "text": "문은 양옆(동서 또는 남북)이 벽인 칸에만 놓인다. 양옆이 바닥이면 게임이 놓기를 받지 않는다. 울타리 출입구도 같은 규칙으로 본다(추정).",
+      "level": "game+estimate",
+      "src": ["단계 2 실측(10-단계2-측정.md): 열린 칸 두 곳 거절, 양옆 벽을 놓은 뒤 놓임; 울타리 출입구는 열린 자리 3곳 거절"],
+      "objects": ["WoodDoor", "WoodFenceGate"]
+    }
+  ]
+}

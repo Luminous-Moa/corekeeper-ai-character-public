@@ -1,0 +1,14 @@
+DIFF mod (27 lines)
+   => 046C044403694067 \ModManifest.json
+   => ADA12C08785FB31F \Scripts\Scripts\AIBrain.Candidates.cs
+   => 416D038D9249C887 \Scripts\Scripts\AIBrain.cs
+   => 5CAE6861D1A3B33F \Scripts\Scripts\AIBrain.Loop.cs
+   => 6B087CA9550BC27C \Scripts\Scripts\AIBrain.Preparation.cs
+   => 73070C7273F9D61C \Scripts\Scripts\AIDecisionsApi.cs
+   => E46F6C3A00730189 \Scripts\Scripts\AIExpedition.cs
+   => 26B5F39A11571A74 \Scripts\Scripts\AIGathering.cs
+same aiplayers (53 files)
+same localsteam (268 files)
+same remote (49 files)
+same registry
+verify: 1 difference group(s)

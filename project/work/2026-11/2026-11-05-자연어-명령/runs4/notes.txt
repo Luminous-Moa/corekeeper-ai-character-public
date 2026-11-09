@@ -1,0 +1,25 @@
+21:15:45 start
+21:16:44 installed 7fcef73 cs=36 diff=0
+21:17:21 usage before captured (chatroom server not running)
+21:18:00 bridge up (KG 3187 nodes)
+21:18:12 launching game
+21:20:35 world nltest slot 7, host char 4 clicked
+21:21:00 in world eeefc536
+21:21:11 sent /ai all on
+21:21:46 sent @모두 wood->bench->pick->sword
+21:22:46 sent @Claude copper after plan (defer test)
+21:23:02 sent @Claude question
+21:23:19 sent @ChatGPT question (deferred #1 open)
+21:23:48 letting play run
+21:28:10 coordinator: input paused for user (no keyboard/mouse from here)
+21:28:57 observed: Grok plan done while report #3 in flight -> owed, keep answer -> plan_done sent once (M1 keep branch)
+21:48:17 coordinator: user done, input resumed
+21:48:34 /ai stop sent right after: [AIPlayerSpike] t=1809.0 @Grok PLANNER: report #21 sent trigger=periodic rev=49 
+21:49:56 sent @Grok question after stop
+21:52:35 sent @Grok question after stop (retry, focus)
+21:58:07 brought game to front (user ok), sent @Grok question after stop
+21:58:30 sent /ai off at t~2408.8
+21:59:25 usage after captured
+22:00:02 save and exit clicked
+22:00:47 quit clicked, game closed; bridge stopped
+22:02:02 restore verify 0; reinstalled 7fcef73 cs=36 diff=0

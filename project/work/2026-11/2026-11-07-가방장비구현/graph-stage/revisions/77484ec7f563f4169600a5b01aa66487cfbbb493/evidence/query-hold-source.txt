@@ -1,0 +1,2 @@
+== ../2026-11-07-가방장비구현/inventory-spec.md:9-9 sha256=cbc95c787f4ba713a7a1763d29c26098085cf3e43cd5be1f3e06940dfd513d41
+9: 손 선택: 가방 물품은 AI가 고른 구체 핫바칸으로 Swap하고, 기존 핫바 물품을 출발 슬롯으로 돌려보낸 것을 관측한다. 핫바 물품은 BodyInput.slot으로 선택하고 EquippedObjectCD.equippedSlotIndex/containedObject를 확인한다. 성공한 정상 곡괭이·근접무기는 각각 캐릭터별 명시 선택으로 보존한다. 이후 내구도 변화는 허용하되 slot/objectID/variation/auxData가 바뀌거나 파손되면 자동 대체하지 않고 이유를 반환한다.

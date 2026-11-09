@@ -1,0 +1,88 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "# 가방·장비 선택 트리 독립 검수",
+        "doc": "bagFinalReview",
+        "end": 1,
+        "line": 1,
+        "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+        "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+        "start": 1
+      }
+    ],
+    "id": "R.bag-review",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 1,
+        "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+        "start": 1
+      }
+    ],
+    "status": "참고·독립검수 통과, 공식반영/실게임 미수용",
+    "summary": "별도 고정 checkout의 메뉴394/0·연결102/102·compile0/0과 소스/상한 경계를 검수했다. Core1204/protocol118/Loop55/primitive67은 b1 독립 실행과 입력 불변 대응으로 구별한다. Unity/source export의 완료 로그·해시도 대조했다.",
+    "title": "741 트리 소스·오프라인 및 빌드 근거 독립 검수",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 가방·장비 선택 트리 독립 검수",
+          "doc": "bagFinalReview",
+          "end": 1,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+          "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+          "start": 1
+        }
+      ],
+      "from": "R.bag-navigation",
+      "id": "E123",
+      "kind": "참고: 새 메뉴 경계 독립 재현",
+      "to": "R.bag-review",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 가방·장비 선택 트리 독립 검수",
+          "doc": "bagFinalReview",
+          "end": 1,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+          "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+          "start": 1
+        }
+      ],
+      "from": "R.bag-validation",
+      "id": "E121",
+      "kind": "참고: 실제 독립 검수와 수용 범위",
+      "to": "R.bag-review",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 741 Unity·SDK 후보 산출물 읽기 대조 완료",
+          "doc": "bagFinalReview",
+          "end": 90,
+          "line": 82,
+          "path": "../2026-11-07-가방장비구현/review-tree-741.md",
+          "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+          "start": 82
+        }
+      ],
+      "from": "R.bag-source-export",
+      "id": "E124",
+      "kind": "참고: 원시 해시·줄끝 차이의 독립 대조",
+      "to": "R.bag-review",
+      "type": "reference"
+    }
+  ]
+}

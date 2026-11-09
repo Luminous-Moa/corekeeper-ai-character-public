@@ -1,0 +1,737 @@
+
+// 채집·이동·귀환 최종 합의/사용자 조명후속 결정과7af8f91의 정적·오프라인 근거.
+Object.assign(documents,{
+  "expeditionAgreement": {
+    "layer": "재기획",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+    "originalPath": "../2026-11-07-채집이동귀환-확정합의.md"
+  },
+  "expeditionRoles": {
+    "layer": "재기획",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+    "originalPath": "../2026-11-07-채집이동귀환-역할판단.md"
+  },
+  "expeditionBehaviorGraph": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionBehaviorGraph.md",
+    "originalPath": "../../게임행동-그래프/README.md"
+  },
+  "expeditionDirection": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionDirection.md",
+    "originalPath": "../../채집이동귀환-구현자료/direction.md"
+  },
+  "expeditionDirectionAcceptance": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionDirectionAcceptance.md",
+    "originalPath": "../../채집이동귀환-구현자료/graph/direction-acceptance.md"
+  },
+  "expeditionVisionInvestigation": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionVisionInvestigation.md",
+    "originalPath": "../../채집이동귀환-구현자료/vision-authority-investigation.md"
+  },
+  "expeditionFirstReview": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFirstReview.md",
+    "originalPath": "../../채집이동귀환-구현자료/review.md"
+  },
+  "expeditionLightDecision": {
+    "layer": "재기획",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md",
+    "originalPath": "../2026-11-08-채집이동귀환-조명후속분리.md"
+  },
+  "expeditionHandoff": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+    "originalPath": "../../채집이동귀환-구현자료/graph-handoff.md"
+  },
+  "expeditionValidation": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionValidation.md",
+    "originalPath": "../../채집이동귀환-구현자료/validation.md"
+  },
+  "expeditionCoverage": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionCoverage.md",
+    "originalPath": "../../채집이동귀환-구현자료/coverage.md"
+  },
+  "expeditionFinalReview": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionFinalReview.md",
+    "originalPath": "../../채집이동귀환-구현자료/review.md"
+  },
+  "expeditionIntegration": {
+    "layer": "참고",
+    "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionIntegration.json",
+    "originalPath": "../../채집이동귀환-구현자료/integration.json"
+  }
+});
+nodes.push(...[
+  {
+    "id": "P.expedition",
+    "title": "채집·이동·귀환과 후속 작업을 하나의 흐름으로 연결",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "이번 외출의 목적·현장 판단·실제 확보량·귀환 목적·후속 작업을 연결한다. 원정은 새 목표 계층이 아니며 원래 부탁과 중간 작업의 완료를 구별한다.",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-choice",
+    "title": "구체 행동 직접 선택과 얕은 대상 탐색 병행",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "눈앞의 묶음과 이미 정해진 이동은 바로 선택하고 다른 대상·장소는 분류를 좁힌다. 탐색 중 유효 행동을 유지하고 메뉴 취소를 몸 동작·부탁 취소와 구별한다.",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 1. 선택 트리와 직접 실행 병행"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-sidework",
+    "title": "곁일 여부와 범위는 판단모델이 결정",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "고정 비율·개수·시간으로 곁일 정책을 대신하지 않는다. 원래 작업과 진척, 지연·가방·위험·재방문 비용을 판단에 제공하고 곁일 뒤 재개 맥락을 보존한다. 중요한 계획 변경은 기존 상위 재계획에 연결한다.",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 2. 곁일은 판단모델에 위임"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-bundle",
+    "title": "선택 당시 보이는 자연스러운 묶음을 고정해 연속 실행",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "벽 광맥·식물·바닥 아이템의 같은 종류 대상 묶음과 개별 선택을 지원한다. 선택 범위의 접근·채집·회수는 연속 실행하되 새 발견은 다음 선택으로 제공하고 대상 수와 실제 확보량을 구별한다.",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 채집물 전반의 기본 선택 단위 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-return",
+    "title": "실제 누적량과 귀환 목적·원작업 재개를 연결",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "임의 목표량 상한은 별도 제약해제 합의에 따르며 목표량과 실행 묶음을 분리한다. 단순 목표 달성과 명시 상한을 구별하고 귀환 뒤 보관·강화·원작업을 이어 간다. 새 발견만으로 귀환을 자동 연장하지 않는다.",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-navigation",
+    "title": "통로 탐색과 알려진 목적지 이동을 구별",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "통로 탐색과 알려진 목적지 이동을 구별하고 개인 관측 통행기억·재관측을 사용한다. 외길·유효 목적지 경로는 매칸/매갈림길 재선택을 요구하지 않는다. 이번 수용은 기존 화면범위 시야이며 조명·어둠의 사람동일시야는 사용자 결정으로 후속 분리한다.",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 이동 방식 합의와 현장 호출 기준"
+      },
+      {
+        "doc": "expeditionLightDecision",
+        "anchor": "사용자 결정:"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-lookahead",
+    "title": "응답 지연에 맞춰 다음 갈림길 방향만 선행 질문",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "캐릭터 기준 일정 범위에서 다음 갈림길 방향을 준비하고 실제 전환 시 재검증한다. 늦으면 미선택 갈래로 들어가지 않는다. 구체 거리는 실제 속도·응답시간에 맞춰 정하며 숨은 자원·위험을 공개하는 예외가 아니다.",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 4. 선행 질문과 채집 묶음"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-blocked",
+    "title": "막힘의 사실과 실제 가능한 수단을 모델에게 제공",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "선택한 이동을 수행하는 조향은 코드가 맡는다. 걷기가 막히면 원래 목적·이유·알거나 모르는 사실과 실행 가능한 수단을 제시한다. 새 수단은 Jev가 선택하며 미지 통로를 확정 귀환 우회로로 단정하지 않는다.",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 이동 중 막힘 처리 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-report",
+    "title": "이탈 전 미검토 기회와 작업 전제 상실을 자동 보고",
+    "layer": "재기획",
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "현장을 떠날 때 미검토 관련 기회가 있거나 작업 전제가 깨지고 맡겨진 범위에 대안이 없으면 상위에 자동 보고한다. 같은 사실의 중복 요청을 억제하고 후속 사실을 모으며 대기 중 판단·유효 행동을 유지하고 응답을 재검증한다.",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 채집 자동 호출과 응답 중 현장 판단 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-behavior-graph",
+    "title": "구현 준비 당시 조회한126판 행동 판단 그래프",
+    "layer": "참고",
+    "status": "참고·당시126 게시본·개발용 정적 근거",
+    "summary": "구현 준비 당시 검수된126묶음·2460사례에서 대상→행위/처리→조건·결과·실패→원문을 조회했다. 후속 게시본 전체를 이번 구현의 검증으로 승계하지 않는다. 실제 사용한 조회는 R.expedition-game-evidence를 따른다. 게임 행동 전수완료·런타임 연결·실게임 성공의 뜻이 아니다.",
+    "evidence": [
+      {
+        "doc": "expeditionBehaviorGraph",
+        "anchor": "## 현재 게시본"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-direction",
+    "title": "기존 실행·계획을 재사용하는 채집·이동·원정 책임",
+    "layer": "참고",
+    "status": "참고·HEAD 수용 방향·구현결과 별도 참고",
+    "summary": "AIGathering 고정묶음, AITravel 탐색/목적지, AIExpedition 관측/맥락/선택의 책임을 기존 후보·AIActions·AISkill·AIPlanner에 연결하는 방향을 HEAD가 수용했다. 실제7af8f91 결과는 구현·오프라인·최종검수 참고를 따르며 조명시야는 후속 분리다.",
+    "evidence": [
+      {
+        "doc": "expeditionDirection",
+        "anchor": "## 연결 구조"
+      },
+      {
+        "doc": "expeditionDirection",
+        "anchor": "## 검증"
+      },
+      {
+        "doc": "expeditionDirectionAcceptance",
+        "anchor": "## HEAD 수용 메시지"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-observed-map",
+    "title": "캐릭터·월드별 정확 관측 통행기억의 필요성 수용",
+    "layer": "참고",
+    "status": "참고·7af8f91 구현·조명 후속",
+    "summary": "캐릭터·월드별 정확 관측 통행기억과 재관측 갱신을 구현했다. 4x4 coarse 기억을 정확 통로로 승격하지 않는다. 방향 선행조회는 일반 지도·자원·위험에 기록하지 않는다. 일반 관측은 기존 화면범위이며 조명 경계는 사용자 결정으로 후속 분리한다.",
+    "evidence": [
+      {
+        "doc": "expeditionDirectionAcceptance",
+        "anchor": "## 정확 관측 통행기억에 대한 추가 수용"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-vision-gap",
+    "title": "조명·어둠의 사람동일시야는 사용자 결정으로 후속 분리",
+    "layer": "참고",
+    "status": "참고·R1 미해결·후속 분리 확정",
+    "summary": "실제 조명은 호스트 GPU 렌더에 의존하고 AI별 광도 확보는 추가 아키텍처/실게임 검증이 필요하다. 사용자는 이번 채집·이동·귀환을 기존 화면범위로 수용하고 조명 시야를 후속으로 분리했다. R1 해결이나 CPU근사/오프스크린 구조 확정을 뜻하지 않는다.",
+    "evidence": [
+      {
+        "doc": "expeditionVisionInvestigation",
+        "anchor": "## HEAD에 반환하는 판단"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-first-review",
+    "title": "최초 후보의 보완 요구 이력",
+    "layer": "참고",
+    "status": "참고·과거 1차/2차 발견 이력",
+    "summary": "93a8bbc의 R1~R7 및 e1cedcf의 R4/R5 잔여경로 발견을 보존한다. 현재 R2~R7은 7af8f91 최종검수 수용을 따르고 R1은 사용자 결정으로 후속 분리한다. 이력의 선택대기 문구를 현재 미결 승인상태로 재적용하지 않는다.",
+    "evidence": [
+      {
+        "doc": "expeditionFirstReview",
+        "anchor": "## 발견 사항"
+      }
+    ]
+  },
+  {
+    "id": "P.expedition-light-followup",
+    "title": "이번 행동 구현은 화면범위 시야로 수용하고 조명은 후속 분리",
+    "status": "사용자 결정·현재 범위",
+    "summary": "이번7af8f91 채집·이동·귀환은 기존 화면범위 관측으로 수용한다. 사람과 같은 조명·어둠 시야 R1은 해결이 아닌 별도 후속이며 CPU근사/오프스크린 방식은 정하지 않았다. 설치·실게임·외부 모델 보류를 유지한다.",
+    "layer": "재기획",
+    "evidence": [
+      {
+        "doc": "expeditionLightDecision",
+        "anchor": "사용자 결정:"
+      },
+      {
+        "doc": "expeditionLightDecision",
+        "anchor": "- 이번 수용 범위는"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-implementation",
+    "title": "7af8f91 채집·이동·원정 생산 구현",
+    "status": "참고·공식 통합·오프라인 수용",
+    "summary": "직접/트리 선택·고정 묶음과 실제 확보·개인 통행기억·방향선행 선택·곁일/원작업·자동상위보고·귀환후속을 기존 실행과 계획에 연결했다. max_count/max_order는 사용자 명시 조건의 소유·수명이며 일반 목표량 상한이 아니다.",
+    "layer": "참고",
+    "evidence": [
+      {
+        "doc": "expeditionHandoff",
+        "anchor": "## 최종 7af8f91 앵커 보정·추가"
+      },
+      {
+        "doc": "expeditionCoverage",
+        "anchor": "|합의|구현 앵커|검증 근거|남은 경계|"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-offline",
+    "title": "실제 생산 경로의 원정·후속 보고·조건 수명 검증",
+    "status": "참고·오프라인 실행·미실게임",
+    "summary": "execution92는 실제 Apply→body/관측→RequestReplan/Report/pending·HTTP payload와 finish_goal→OnGoalEnded→다음tick→StartNextStep→SetGoalFrom을 실행했다. gather61/native14/travel43/navigator9/producer11와 관련 회귀·전체 .NET/Unity compile을 연결한다. 물리/ECS와 외부 transport는 fixture 경계다.",
+    "layer": "참고",
+    "evidence": [
+      {
+        "doc": "expeditionValidation",
+        "anchor": "## 대표 생산 경로"
+      },
+      {
+        "doc": "expeditionValidation",
+        "anchor": "## Unity와 소스 동일성"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-final-review",
+    "title": "7af8f91의 R2~R7 수정과 생산 경로 독립 수용",
+    "status": "참고·독립 수용·조명 후속·미실게임",
+    "summary": "최종 독립검수에서 R2~R7 수정과 추가 중대블로커 부재를 확인했다. 시야 R1은 검수 당시 미해결이었고 이후 사용자가 후속 분리했다. 이전 Unity 로그 대신 최종v2 CompileCheck ok/exit0만 확인했다.",
+    "layer": "참고",
+    "evidence": [
+      {
+        "doc": "expeditionFinalReview",
+        "anchor": "## 3차 최종 코드 검수 · 7af8f91e5d26e4fd9ce5996809ae41e213340118"
+      },
+      {
+        "doc": "expeditionFinalReview",
+        "anchor": "### 직접 검증 결과와 한계"
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-integration",
+    "title": "공식 ai-character 7af8f91 통합과 기존 변경 보존",
+    "status": "참고·공식 소스 통합",
+    "summary": "HEAD가 기존5cc에서7af8f91로 fast-forward 통합했다. 기존 사용자 dirty 파일 해시를 보존했고 설치·실게임을 실행하지 않았다. 그래프 코드층은 이 정확 커밋에서 재생성한다.",
+    "layer": "참고",
+    "evidence": [
+      {
+        "doc": "expeditionIntegration",
+        "anchor": "\"afterHead\""
+      },
+      {
+        "doc": "expeditionIntegration",
+        "anchor": "\"originalDirtyPreserved\""
+      }
+    ]
+  },
+  {
+    "id": "R.expedition-game-evidence",
+    "title": "실제 조회한 채굴·문·다리의 정적 게임 근거",
+    "status": "참고·게시본 조회 원문·미실게임",
+    "summary": "곡괭이 정상입력·피해·드롭 조건, 문 variation/toggle, 다리 pit/water 배치조건·소비·결과의 정확 source를 개발 근거로 사용했다. 최신 행동그래프 전체를 복제하거나 게임 성공으로 승격하지 않으며 이 작업은 해당 그래프를 수정하지 않는다.",
+    "layer": "참고",
+    "evidence": [
+      {
+        "doc": "expeditionHandoff",
+        "anchor": "## 사용한 게임행동 그래프 조회와 원문근거"
+      }
+    ]
+  }
+]);
+edges.push(...[
+  {
+    "from": "P.execution",
+    "to": "P.expedition",
+    "type": "선택된 행동 실행을 채집·이동·귀환 흐름으로 구체화",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결"
+      }
+    ]
+  },
+  {
+    "from": "P.original-request",
+    "to": "P.expedition",
+    "type": "중간 작업과 원래 부탁 보존",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-choice",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 1. 선택 트리와 직접 실행 병행"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-sidework",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 2. 곁일은 판단모델에 위임"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-bundle",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 채집물 전반의 기본 선택 단위 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-return",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-navigation",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 이동 방식 합의와 현장 호출 기준"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-lookahead",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 4. 선행 질문과 채집 묶음"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-blocked",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 이동 중 막힘 처리 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-report",
+    "type": "채집·이동·귀환 합의의 구성",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 채집 자동 호출과 응답 중 현장 판단 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "from": "P.unrestricted-work",
+    "to": "P.expedition-return",
+    "type": "상한 해제와 실제 실행 묶음·귀환 의미 연결",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결"
+      }
+    ]
+  },
+  {
+    "from": "P.valid-action",
+    "to": "P.expedition-report",
+    "type": "계획 응답 대기 중에도 유효 실행과 판단 유지",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionRoles",
+        "anchor": "## 채집 자동 호출과 응답 중 현장 판단 — 사용자 합의"
+      }
+    ]
+  },
+  {
+    "from": "P.field-choice",
+    "to": "P.expedition-sidework",
+    "type": "현장 재량을 모델 판단에 위임",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionAgreement",
+        "anchor": "## 2. 곁일은 판단모델에 위임"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "R.expedition-behavior-graph",
+    "type": "참고: 실제 행동 조건·결과·실패의 개발 근거",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionBehaviorGraph",
+        "anchor": "## 현재 게시본"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "R.expedition-direction",
+    "type": "참고: 합의를 구현하는 책임과 연결 구조",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionDirection",
+        "anchor": "## 연결 구조"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-bundle",
+    "to": "R.expedition-direction",
+    "type": "참고: 고정 묶음 생산 실행 경로",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionDirection",
+        "anchor": "## 검증"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-navigation",
+    "to": "R.expedition-direction",
+    "type": "참고: 이동 의도와 기존 실행 재사용",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionDirection",
+        "anchor": "## 연결 구조"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-navigation",
+    "to": "R.expedition-observed-map",
+    "type": "참고: 개인 관측 통행기억의 개발 방향",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionDirectionAcceptance",
+        "anchor": "## 정확 관측 통행기억에 대한 추가 수용"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-navigation",
+    "to": "R.expedition-vision-gap",
+    "type": "참고: 동일 시야 구현의 조명 미해결",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionVisionInvestigation",
+        "anchor": "## HEAD에 반환하는 판단"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-bundle",
+    "to": "R.expedition-vision-gap",
+    "type": "참고: 채집 일반 관측에도 같은 시야 경계 적용 필요",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionVisionInvestigation",
+        "anchor": "## HEAD에 반환하는 판단"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "R.expedition-first-review",
+    "type": "참고: 최초 후보의 독립 보완 요구",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionFirstReview",
+        "anchor": "## 발견 사항"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "P.expedition-light-followup",
+    "type": "이번 수용의 사용자 조정 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionLightDecision",
+        "anchor": "사용자 결정:"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-navigation",
+    "to": "P.expedition-light-followup",
+    "type": "관측 시야의 현재 수용 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionLightDecision",
+        "anchor": "- 이번 수용 범위는"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-light-followup",
+    "to": "R.expedition-vision-gap",
+    "type": "참고: 후속 조명 과제의 원본 조사",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionVisionInvestigation",
+        "anchor": "## HEAD에 반환하는 판단"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition-light-followup",
+    "to": "R.expedition-first-review",
+    "type": "참고: 과거 시야 선택대기의 후속 결정",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionLightDecision",
+        "anchor": "- [독립 검수]"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "R.expedition-implementation",
+    "type": "참고: 확정 범위의 실제 코드",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionHandoff",
+        "anchor": "## 최종 7af8f91 앵커 보정·추가"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "R.expedition-final-review",
+    "type": "참고: 최종 구현의 독립 수용",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionFinalReview",
+        "anchor": "## 3차 최종 코드 검수"
+      }
+    ]
+  },
+  {
+    "from": "P.expedition",
+    "to": "R.expedition-integration",
+    "type": "참고: 공식 소스 통합",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionIntegration",
+        "anchor": "\"afterHead\""
+      }
+    ]
+  },
+  {
+    "from": "R.expedition-implementation",
+    "to": "R.expedition-offline",
+    "type": "참고: 실제 생산 경로 검증",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionValidation",
+        "anchor": "## 대표 생산 경로"
+      }
+    ]
+  },
+  {
+    "from": "R.expedition-implementation",
+    "to": "R.expedition-final-review",
+    "type": "참고: 독립 검수 범위",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionFinalReview",
+        "anchor": "## 3차 최종 코드 검수"
+      }
+    ]
+  },
+  {
+    "from": "R.expedition-implementation",
+    "to": "R.expedition-game-evidence",
+    "type": "참고: 사용한 게임 규칙 원문",
+    "class": "해석",
+    "evidence": [
+      {
+        "doc": "expeditionHandoff",
+        "anchor": "## 사용한 게임행동 그래프 조회와 원문근거"
+      }
+    ]
+  }
+]);

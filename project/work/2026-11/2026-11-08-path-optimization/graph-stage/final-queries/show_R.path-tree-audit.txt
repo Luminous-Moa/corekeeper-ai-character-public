@@ -1,0 +1,97 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 결론",
+        "doc": "pathTreeAudit",
+        "end": 9,
+        "line": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+        "sha256": "647d48bb4f9b4869cf5218453c0bf3e1f66539083464c21c3879492f98a89341",
+        "start": 5
+      },
+      {
+        "anchor": "## 합의와 범위",
+        "doc": "pathTreeAudit",
+        "end": 16,
+        "line": 11,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+        "sha256": "647d48bb4f9b4869cf5218453c0bf3e1f66539083464c21c3879492f98a89341",
+        "start": 11
+      },
+      {
+        "anchor": "## 후속 검수에 넘기는 판단",
+        "doc": "pathTreeAudit",
+        "end": 81,
+        "line": 75,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+        "sha256": "647d48bb4f9b4869cf5218453c0bf3e1f66539083464c21c3879492f98a89341",
+        "start": 75
+      }
+    ],
+    "id": "R.path-tree-audit",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 9,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+        "start": 5
+      },
+      {
+        "end": 16,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+        "start": 11
+      },
+      {
+        "end": 81,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+        "start": 75
+      }
+    ],
+    "status": "참고·기존 트리 존재 확인·생산 연결 결함",
+    "summary": "세 트리가 이미 구현되어 있었다. 닫힌 원정 트리의 전체 직접 후보 뒤에 open을 붙여 첫 요청이255를 넘으면 탐색 진입도 실패했다. dig kind 뒤의 전 leaf도 단일 요청을 초과했다. 기존 직접 실행·얕은 탐색·모든 후보 접근·현재 행동 보존 계약에 맞춰 진입과 leaf 준비를 연결한다. 화면 안 lExplore는BFS 거리를 재사용하고7526 fr만 목적지별터널 반복이었다.",
+    "title": "기존 생활·가방·채집이동 트리의 전송 연결 감사",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 결론",
+          "doc": "pathTreeAudit",
+          "end": 9,
+          "line": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+          "sha256": "647d48bb4f9b4869cf5218453c0bf3e1f66539083464c21c3879492f98a89341",
+          "start": 5
+        }
+      ],
+      "from": "P.path-optimization",
+      "id": "E210",
+      "kind": "참고: 기존 트리와 전송 연결",
+      "to": "R.path-tree-audit",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 합의와 범위",
+          "doc": "pathTreeAudit",
+          "end": 16,
+          "line": 11,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+          "sha256": "647d48bb4f9b4869cf5218453c0bf3e1f66539083464c21c3879492f98a89341",
+          "start": 11
+        }
+      ],
+      "from": "P.expedition-choice",
+      "id": "E211",
+      "kind": "참고: 기존 직접 실행과 얕은 탐색 합의 대조",
+      "to": "R.path-tree-audit",
+      "type": "reference"
+    }
+  ]
+}

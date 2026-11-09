@@ -1,0 +1,542 @@
+{
+  "node": {
+    "action": "cooking",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "code_linked",
+    "facts": {},
+    "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking",
+    "kind": "claim",
+    "label": "cooking",
+    "origin": {
+      "normalizedValueSha256": "ae34d97134b55ea06b19918b5e141c7a3cbeea58c54143f5747f432b9c54dcee",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/3/payload/extraction.json/records/172"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "ruleLabelWithoutLocalObject": "cooking",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "bf36ef2cb66a51d032ddb5c3ee6b4aa66ae2f47e6eb3c8befc8d9fee947b5f6c",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172/conditions"
+      },
+      "value": "Two accepted tag-24 inputs with amounts >= recipe amount; valid primary prefab ingredient component, output matches resulting ID/variation or is empty, output amount <=9999, active automaton and timer references."
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "assetEvidence",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "17526bbf37e5b09d02303ac4a2b1453c8f77f7a3207b14bf76a0926eae0b6bcf",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172/assetEvidence"
+      },
+      "value": [
+        {
+          "class": "CookingPot",
+          "component": {
+            "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+            "data": {
+              "XScaler": {
+                "m_FileID": 0,
+                "m_PathID": "-2294629007442674197"
+              },
+              "animator": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "buildingSpecificUISettings": [],
+              "conditionEffectsHandler": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "conditionsEffectsSettings": {
+                "stunEffectOffset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "craftingCategoryWindowInfos": [],
+              "defaultUISettings": {
+                "craftingUIBackgroundVariation": 0,
+                "titles": [
+                  {
+                    "mRTL_ConvertNumbers": 0,
+                    "mRTL_IgnoreArabicFix": 0,
+                    "mRTL_MaxLineLength": 0,
+                    "mTerm": "cooking",
+                    "m_DontLocalizeParameters": 0
+                  }
+                ]
+              },
+              "electricitySprite": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "gameObjectsToRandomlyFlip": [],
+              "hasDisableableParticles": 0,
+              "hideRecipes": 0,
+              "indirectLightEmitters": [],
+              "interactable": {
+                "m_FileID": 0,
+                "m_PathID": "5568053260114886123"
+              },
+              "lighEmitter": {
+                "m_FileID": 0,
+                "m_PathID": "4434535478382067179"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-4948589398555066901"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3694987460066048716"
+              },
+              "m_spriteObjectOrientationHash": 0,
+              "objectVariants": [],
+              "optionalHealthBar": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalLightOptimizer": {
+                "m_FileID": 0,
+                "m_PathID": "-3242186142563795477"
+              },
+              "outlineControllers": [],
+              "paintableOptions": {
+                "spriteColorTints": [],
+                "spriteRenderers": [],
+                "spriteSheetSkins": []
+              },
+              "particleOptions": {
+                "particleSpawnLocations": [],
+                "particlesToDisableOnLowQuality": [],
+                "particlesToSpawn": []
+              },
+              "previousHealth": 0,
+              "reskinOptions": [],
+              "shadow": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "smoke": {
+                "m_FileID": 0,
+                "m_PathID": "9178778742208560619"
+              },
+              "soundOptions": {
+                "deathSfx": {
+                  "value": 1045606711
+                },
+                "soundsToPlay": [],
+                "takeDamageSfx": {
+                  "value": 926580047
+                }
+              },
+              "spriteObjects": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "-4699397060255973909"
+                },
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "578817386978901483"
+                },
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "6147801124522982891"
+                }
+              ],
+              "spritesToRandomlyFlip": [],
+              "useSharedTransformAnimations": 1
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8223864755170147819",
+            "pathId": "8223864755170147819",
+            "rawByteSha256": "5cec883885308f5ae3f353524036da4bbac951cf809a670ee885a68a359940af",
+            "script": {
+              "assembly": "Pug.Objects",
+              "class": "CookingPot",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8223864755170147819",
+          "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-4948589398555066901",
+          "gameObjectName": "CookingPot",
+          "linkKind": "graphicalRef"
+        },
+        {
+          "class": "InventoryAuthoring",
+          "component": {
+            "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+            "data": {
+              "addLootFromTable": 0,
+              "autoTransferEnabled": 0,
+              "canOnlyContainOneItemPerSlot": 0,
+              "cantAddObjectsToInventory": 0,
+              "itemsInInventory": [],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "9003931216530651095"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-2030443079484458392"
+              },
+              "maxExtraSize": 0,
+              "objectsGetLockedInPlace": 0,
+              "sizeX": 1,
+              "sizeY": 2,
+              "slotRequirements": [
+                {
+                  "acceptsObjectIds": [],
+                  "acceptsObjectsWithTags": [
+                    24
+                  ],
+                  "denyLegendaryRarity": 0,
+                  "dontShowAnyHint": 0,
+                  "requirementAppliesToAllSlots": 1,
+                  "showInfoText": 0
+                }
+              ]
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8991571519986218967",
+            "pathId": "8991571519986218967",
+            "rawByteSha256": "7fb27df8deb090668bd932effb3a8aeb4045ba1a5babf0df15ed7b338bb83ca5",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "InventoryAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8991571519986218967",
+          "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:9003931216530651095",
+          "gameObjectName": "CookingPotEntity",
+          "linkKind": "authoringRef"
+        },
+        {
+          "class": "CraftingAuthoring",
+          "component": {
+            "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+            "data": {
+              "allInventoryIsForSingleCraft": 1,
+              "canCraftObjects": [
+                {
+                  "allowCraftingNone": 0,
+                  "amount": 1,
+                  "craftingConsumesEntityAmount": 0,
+                  "craftingTime": 0.0,
+                  "entityAmountToConsume": 0,
+                  "hasPrerequisites": 0,
+                  "moddedObjectID": "",
+                  "objectID": 9500,
+                  "prerequisites": {
+                    "birdBossKilled": 0,
+                    "contentBundleAbsent": {
+                      "hasValue": 0,
+                      "value": {
+                        "m_address": {
+                          "m_high": "0",
+                          "m_low": "0"
+                        }
+                      }
+                    },
+                    "contentBundlePresent": {
+                      "hasValue": 0,
+                      "value": {
+                        "m_address": {
+                          "m_high": "0",
+                          "m_low": "0"
+                        }
+                      }
+                    },
+                    "hydraBossDesertKilled": 0,
+                    "hydraBossNatureKilled": 0,
+                    "hydraBossSeaKilled": 0,
+                    "octopusBossKilled": 0,
+                    "scarabBossKilled": 0
+                  }
+                }
+              ],
+              "craftingType": 3,
+              "extractableType": 0,
+              "includeCraftedObjectsFromBuildings": [],
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "9003931216530651095"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "913624977925417530"
+              },
+              "minMaxRandomDefaultCraftingTime": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "minMaxRandomDefaultExtractedOutputAmount": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "showLoopEffectOnOutputSlot": 0
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1917353380141283287",
+            "pathId": "1917353380141283287",
+            "rawByteSha256": "77eb3e8791ae7f6eb5e6cbda24965e5e1160cb2c684b90a4dd1efda7d4ef78bd",
+            "script": {
+              "assembly": "Pug.ECS.Authoring",
+              "class": "CraftingAuthoring",
+              "namespace": ""
+            },
+            "type": "MonoBehaviour"
+          },
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1917353380141283287",
+          "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:9003931216530651095",
+          "gameObjectName": "CookingPotEntity",
+          "linkKind": "authoringRef"
+        },
+        {
+          "class": "AutomatedCrafterAuthoring",
+          "component": {
+            "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "9003931216530651095"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-4014876384332337385"
+              }
+            },
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1414842162472798249",
+            "pathId": "-1414842162472798249",
+            "rawByteSha256": "87c2fbfd38b16ee8a27e3be553e16bc02687a6b75728e51c7e5a47e2f14bd1a0",
+            "script": {
+              "assembly": "Pug.Automation.Authoring",
+              "class": "AutomatedCrafterAuthoring",
+              "namespace": "Pug.Automation"
+            },
+            "type": "MonoBehaviour"
+          },
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1414842162472798249",
+          "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:9003931216530651095",
+          "gameObjectName": "CookingPotEntity",
+          "linkKind": "authoringRef"
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failureBranches",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking/failure/failureBranches",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "e3bfb27ad1d38fd85901e00f6ecf118f6d3fa9afaac95c13120aa6f5971bb19d",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172/failureBranches"
+      },
+      "value": "Inactive, no recipe, stale timer, missing input or incompatible/full output prevents successful consumption."
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputProcessingConsumer",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking/flow/inputProcessingConsumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "80fcbfe0842b660c9ca4c137f2c3d93fbb5762df61b5d2fecdc0362b8a8ea407",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172/inputProcessingConsumer"
+      },
+      "value": "InventorySlotUI right click moves inputs; PugAutomationStartCraftSystem -> PugTimerSystem -> PugAutomationCraftingSystem -> InventoryUtility.CanCraft/Craft rechecks and consumes."
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "54f73d008b951a17199933b4e0374011d1807a99850da1aecfeb938733473777",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172/result"
+      },
+      "value": "On successful craft subtract recipe amount from each input; output primary turnsIntoFood with encoded variation and recipe amount."
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unknown",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking/unknown/unknown",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "4a97b95bcd24936a6c45dd36cd632f0baa923e1377d9eb6aa7fd89e6f57f10d9",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/172/unknown"
+      },
+      "value": "Actual tick, DB primary-prefab resolution, input acceptance and execution unobserved; source candidates do not prove runtime DB availability."
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "has_completion",
+      "target": "reviewed-claim:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105#cooking",
+      "kind": "conditional_application",
+      "action": "cooking_pot"
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:cooking",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-2106314794829400105"
+    ]
+  ]
+}

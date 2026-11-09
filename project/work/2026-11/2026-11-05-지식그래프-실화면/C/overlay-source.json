@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "authority": "C 문서 선언 원본. 생성 그래프 직접 수정 아님. 모든 doc/evidence 경로는 실화면 BASE 기준.",
+  "status": "C1-C5 complete for bounded live-screen follow-up; C3 partial-goal-success reflected",
+  "baseCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+  "installedSourceCommit": "76563bf3ac3af56241bb796c6510ad7e96c3ccd7",
+  "nodes": [
+    {
+      "id": "CKAI-ACT-01",
+      "type": "유저 활동",
+      "title": "동료가 와 있는지·무엇 하는지 알아보기",
+      "summary": "월드의 이름표·AI 목록·최근 메시지로 동료의 존재와 최근 행동을 부분적으로 확인한다.",
+      "doc": "C/활동-동료확인.md",
+      "source": {
+        "document": "C/활동-동료확인.md",
+        "section": "동료가 와 있는지·무엇 하는지 알아보기"
+      },
+      "class": "기존 의도와 실제 화면 관측의 통합 해석",
+      "observationStatus": "A1 /ai와 C3 재현 성공; A3 명령 발견 실패; 현재 목표·동료별 행동 귀속 미확인",
+      "nextActivityIds": []
+    },
+    {
+      "id": "CKAI-UI-ACT-01",
+      "type": "유저 활동",
+      "title": "AI 정보 조회와 작은 채팅 읽기",
+      "summary": "AI 정보 조회와 작은 채팅 읽기",
+      "doc": "C/ui-20261106/ui-flow.md",
+      "source": {
+        "document": "C/ui-20261106/ui-flow.md",
+        "section": "AI 정보와 작은 채팅 출력"
+      }
+    },
+    {
+      "id": "CKAI-UI-01",
+      "type": "화면",
+      "title": "AI 선택과 정보 패널",
+      "summary": "AI 선택과 정보 패널",
+      "doc": "C/ui-20261106/ui-flow.md",
+      "source": {
+        "document": "C/ui-20261106/ui-flow.md",
+        "section": "AI 정보와 작은 채팅 출력"
+      }
+    },
+    {
+      "id": "CKAI-UI-02",
+      "type": "화면",
+      "title": "기본 채팅의 작은 출력",
+      "summary": "기본 채팅의 작은 출력",
+      "doc": "C/ui-20261106/ui-flow.md",
+      "source": {
+        "document": "C/ui-20261106/ui-flow.md",
+        "section": "AI 정보와 작은 채팅 출력"
+      }
+    },
+    {
+      "id": "CKAI-UI-01#select",
+      "type": "화면요소",
+      "title": "AI 선택부",
+      "summary": "AI 선택부",
+      "doc": "C/ui-20261106/ui-flow.md",
+      "source": {
+        "document": "C/ui-20261106/ui-flow.md",
+        "section": "AI 정보와 작은 채팅 출력"
+      }
+    },
+    {
+      "id": "CKAI-UI-01#details",
+      "type": "화면요소",
+      "title": "스킬과 실제 착용 장비",
+      "summary": "스킬과 실제 착용 장비",
+      "doc": "C/ui-20261106/ui-flow.md",
+      "source": {
+        "document": "C/ui-20261106/ui-flow.md",
+        "section": "AI 정보와 작은 채팅 출력"
+      }
+    },
+    {
+      "id": "CKAI-UI-02#output",
+      "type": "화면요소",
+      "title": "작은 한국어 AI 발언",
+      "summary": "작은 한국어 AI 발언",
+      "doc": "C/ui-20261106/ui-flow.md",
+      "source": {
+        "document": "C/ui-20261106/ui-flow.md",
+        "section": "AI 정보와 작은 채팅 출력"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-01#1",
+      "type": "유저 활동→화면요소",
+      "scope": "종료 월드 확인",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-01#1-1",
+      "type": "유저 활동→화면요소",
+      "scope": "이름표 확인",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2",
+      "type": "유저 활동→화면요소",
+      "scope": "최근 로그; A1 과거 로그와 A3/C3 다른 시점 구별",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2-2",
+      "type": "유저 활동→화면요소",
+      "scope": "A1 공격 완료 로그 관측; 이 활동이 전투를 실행한 것 아님",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2-3",
+      "type": "유저 활동→화면요소",
+      "scope": "A1 물러나기 로그 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2-4",
+      "type": "유저 활동→화면요소",
+      "scope": "A1 기다리기 로그 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2-5",
+      "type": "유저 활동→화면요소",
+      "scope": "A1 자기 방어 종료 로그 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2-6",
+      "type": "유저 활동→화면요소",
+      "scope": "제출 /ai 에코 확인; 게임 출력",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#2-7",
+      "type": "유저 활동→화면요소",
+      "scope": "상태 목록 확인",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-02#3",
+      "type": "유저 활동→화면요소",
+      "scope": "/ai 입력·제출과 입력 닫힘",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-03#10",
+      "type": "유저 활동→화면요소",
+      "scope": "관측된 우회 분기; 기본 재현 흐름 아님",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-03#10-1",
+      "type": "유저 활동→화면요소",
+      "scope": "접속자 Luminous 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-03#10-2",
+      "type": "유저 활동→화면요소",
+      "scope": "접속자 Claude 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-03#7",
+      "type": "유저 활동→화면요소",
+      "scope": "A3 우회 분기; AI 목표 발견 실패",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-03#12",
+      "type": "유저 활동→화면요소",
+      "scope": "A3 SPACE 선택 안내 사용",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-04#2-1",
+      "type": "유저 활동→화면요소",
+      "scope": "A3 관리자 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKAI-04#3-1",
+      "type": "유저 활동→화면요소",
+      "scope": "A3 차단 없음 관측",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKHUD-01#5",
+      "type": "유저 활동→화면요소",
+      "scope": "퀵슬롯 선택 상태 확인",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKHUD-01#5-1",
+      "type": "유저 활동→화면요소",
+      "scope": "A1/A3 복원 및 C3 유지",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-ACT-01",
+      "target": "CKHUD-01#5-10",
+      "type": "유저 활동→화면요소",
+      "scope": "A1/A3 휠 부수 효과; 기본 재현 흐름에서 제외",
+      "evidence": "C/활동-동료확인.md"
+    },
+    {
+      "source": "CKAI-02#3",
+      "target": "slash:ai",
+      "type": "화면요소→기능",
+      "scope": "인자 없는 /ai를 Return으로 제출한 경우만. 빈 입력/취소 초안 제외",
+      "evidence": "C/화면-기능-원문.md",
+      "evidenceSources": [
+        "A1/observations.json",
+        "A2/manifest.json",
+        "B/existing-node-mapping.json",
+        "C3/flow-check.md"
+      ],
+      "matchBasis": "명령 문자열·출력 문구·동일 본문 분기 대조",
+      "runtimeTrace": false
+    },
+    {
+      "source": "slash:ai",
+      "target": "CKAI-02#2-7",
+      "type": "기능→화면요소",
+      "scope": "인자 없는 /ai의 AI 상태 목록 결과; 게임 에코와 구별",
+      "evidence": "C/화면-기능-원문.md",
+      "evidenceSources": [
+        "A1/screen-states.md",
+        "A2/manifest.json",
+        "B/existing-node-mapping.json",
+        "C3/flow-check.md"
+      ],
+      "matchBasis": "StatusAll/Reply 출력과 A1/C3 응답 대응; queue/외부 renderer 경계",
+      "runtimeTrace": false
+    },
+    {
+      "source": "CKAI-UI-ACT-01",
+      "type": "유저 활동→화면요소",
+      "target": "CKAI-UI-01#select",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-ACT-01",
+      "type": "유저 활동→화면요소",
+      "target": "CKAI-UI-01#details",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-ACT-01",
+      "type": "유저 활동→화면요소",
+      "target": "CKAI-UI-02#output",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-01",
+      "type": "화면→화면요소",
+      "target": "CKAI-UI-01#select",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-01",
+      "type": "화면→화면요소",
+      "target": "CKAI-UI-01#details",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-02",
+      "type": "화면→화면요소",
+      "target": "CKAI-UI-02#output",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-01#select",
+      "type": "화면요소→기능",
+      "target": "hook:AIInfoPanel.OnGUI",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-01#details",
+      "type": "화면요소→기능",
+      "target": "hook:AIInfoPanel.OnGUI",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    },
+    {
+      "source": "CKAI-UI-02#output",
+      "type": "화면요소→기능",
+      "target": "hook:AIChatScreenLayer.OnGUI",
+      "evidence": "C/ui-20261106/ui-flow.md"
+    }
+  ],
+  "existingNodeAnnotations": [
+    {
+      "id": "CORE-01",
+      "supplementDocument": "C/통합기획.md",
+      "note": "기존 의도·정책 유지; 동료 존재·상태 목록 관측 추가, 전체 플레이 가치 검증 아님"
+    },
+    {
+      "id": "JOURNEY-01",
+      "supplementDocument": "C/통합기획.md",
+      "note": "이미 실행 중인 월드의 동료 확인 분기 추가; 필수 순서/재방문 동기 확정 없음"
+    },
+    {
+      "id": "IA-01",
+      "supplementDocument": "C/통합기획.md",
+      "note": "기존 HTTP 출력 유지; A2 정본 5화면 추가"
+    },
+    {
+      "id": "UA-01",
+      "supplementDocument": "C/원문-대응-차이.md",
+      "note": "참여시키기 의도 유지. 새 CKAI-ACT-01은 존재·행동 확인 목적. 참여/저장 성공 전체 미검증"
+    }
+  ],
+  "screenAnnotations": [
+    {
+      "id": "CKAI-01",
+      "iaGroup": "플레이 공간"
+    },
+    {
+      "id": "CKAI-02",
+      "iaGroup": "채팅과 AI 안내"
+    },
+    {
+      "id": "CKAI-03",
+      "iaGroup": "게임 관리"
+    },
+    {
+      "id": "CKAI-04",
+      "iaGroup": "게임 관리"
+    },
+    {
+      "id": "CKHUD-01",
+      "iaGroup": "공통 표시"
+    }
+  ],
+  "reconciliation": [
+    {
+      "sourceId": "CKAI-CORE-01",
+      "canonicalId": "CORE-01",
+      "action": "partial-inference-supplement; preserve A4 source"
+    },
+    {
+      "sourceId": "CKAI-JOURNEY-01",
+      "canonicalId": "JOURNEY-01",
+      "action": "partial-inference-supplement; preserve A4 source"
+    },
+    {
+      "sourceId": "CKAI-IA-01",
+      "canonicalId": "IA-01",
+      "action": "observed-screen-supplement; preserve old HTTP and A4 source"
+    },
+    {
+      "sourceId": "CKAI-ACT-01",
+      "canonicalId": "CKAI-ACT-01",
+      "action": "C activity adopts A4 same purpose, preserves detours, refines executable flow after C3"
+    }
+  ],
+  "policyDisposition": "A2 표시 규칙은 status/authority를 그대로 후보로 보존; 기존 사용자 정책 대체/신설 없음",
+  "evidenceReferences": [
+    "agreement.md",
+    "A1/manifest.json",
+    "A1/screen-states.md",
+    "A2/manifest.json",
+    "A3/new-user.md",
+    "A4/manifest.json",
+    "B/code-version-mapping.md",
+    "B/existing-node-mapping.json",
+    "B/version-evidence.json",
+    "C3/flow-check.md",
+    "C/C4-반영.md",
+    "C/refactor-20261106/observations.json",
+    "C/refactor-20261106/15-unity-and-live.md",
+    "C/refactor-20261106/install-result.json",
+    "C/refactor-20261106/installed-source-sha256.json",
+    "C/refactor-20261106/down-t600-619.txt",
+    "C/refactor-20261106/18-review-live-observation.md",
+    "C/refactor-20261106/persistence-comparison.json",
+    "C/refactor-20261106/restore.log",
+    "C/refactor-20261106/restored-state.json",
+    "C/refactor-20261106/cloud-after-exit.txt",
+    "C/refactor-20261106/Player-first.log",
+    "C/refactor-20261106/Player-second.log",
+    "C/refactor-20261106/rejoin-members.png",
+    "C/refactor-20261106/tablet-viewonly-restored.png",
+    "C/refactor-20261106/tablet-end-disconnected.png",
+    "C/refactor-20261106/restore-after-cleanup-retry.log",
+    "C/refactor-20261106/mousekeys-before.json",
+    "C/refactor-20261106/mousekeys-after.json",
+    "C/refactor-20261106/cloud-cleanup-retry.txt",
+    "C/refactor-20261106/tablet-final-disconnected.png",
+    "../2026-11-06-선택지개선/03-live-validation.md",
+    "../2026-11-06-선택지개선/06-live-evidence-review.md",
+    "C/ui-20261106/observations.json",
+    "C/ui-20261106/00-agreement.md",
+    "C/ui-20261106/04-live-verification.md",
+    "C/ui-20261106/08-acceptance.md",
+    "C/ui-20261106/07-chat-screen-review.md",
+    "C/ui-20261106/34-fixture-equipped-panel-avatar.png",
+    "C/ui-20261106/38-final-chat-real-ai-reply.png",
+    "C/ui-20261106/43-final-skills.png",
+    "C/ui-20261106/chat-installed-source-check.json",
+    "C/ui-20261106/fixture-equipment-source-raw.log",
+    "C/ui-20261106/final-chat-row-measurement.json",
+    "C/ui-20261106/fixture-undo-verification.json",
+    "C/ui-20261106/ui-flow.md"
+  ],
+  "boundaries": [
+    "코드 그래프 902721e(2026-11-06 책임 분리 리팩토링 staged 후보); 과거 화면 관측 당시 설치 소스 76563bf는 유지. 파일 이동 전 경로를 명시하여 정확한 소스 구간으로 대응(B/remap-base.mjs): 51개 중 39개 동일, 12개 변경. 상세 변경 ID는 B/existing-node-mapping.json. 동일 구간은 새 빌드 실행 또는 함수 trace 증명이 아니다. 신규 실게임 근거는 별도 기록 전까지 연결하지 않는다.",
+    "게임 본체 채팅/메뉴/플레이어 관리/이름표·HUD renderer는 외부 경계. 가짜 기능/화면→renderer/navigate 간선 없음",
+    "Reply queue와 다음 Update/FlushReplies를 하나의 직접 call로 꾸미지 않음",
+    "전투 로그 관측은 해당 전투 함수 실행/정책 충족/전체 실행판 coverage 증명 아님",
+    "/ai inv 행동 중단 가능; /ai mem 초기화·저장·마이그레이션 가능. 둘 다 미실행",
+    "인자명 화면 전사는 A2 최종 판독 불확실; 코드 <멤버>로 화면을 덮지 않음",
+    "b25099f 선택지 개선의 새 실게임 근거는 ../2026-11-06-선택지개선/03-live-validation.md 및 06-live-evidence-review.md: 자연 폭발벽 후보2건의 위험문구 전달·일반 흙 경로 구분, 동일속도 ETA 계산 및 대표 선택→실행을 확인했다. 필요한 줍기 경계·직접캐기/계속하기/본대안 위험 전수·생존전략 개선은 이 실게임으로 입증하지 않았다. 설치는 시험 후 복원되어 현재 설치판을 뜻하지 않는다.",
+    "11eb461 UI 흡수 관측은 uiRuntimeObservations에 별도 수록한다. 작은 출력 본문/읽기 전용 패널과 시험 장착 fixture의 표시 확인이며 자동착용·행동 변경이 아니다. 입력행/멘션 힌트의 기존 크기, OS IME 조합·다중버튼·다른 해상도 미시험을 보존한다.",
+    "이번 가방·장비 격리 코드 기준 39b22df96dffe869ab0ccd474b18d31462b71d70; 컴파일/오프라인 검사만 근거로 사용한다. 과거 UI11eb461/리팩토링902721e 관측은 역사적 커밋에만 적용하며 이 후보의 실게임 확인·최종수용을 뜻하지 않는다."
+  ],
+  "unresolved": [
+    "CKAI-C-U01 명령 발견 경로",
+    "CKAI-C-U02 동료 귀속·목표/행동 구분",
+    "CKAI-C-U03 메시지 가독성·보존",
+    "CKAI-C-U04 휠 입력 부수 효과",
+    "CKAI-C-U05 조회 부수 효과"
+  ],
+  "c3": {
+    "input": "C/C3-input.md",
+    "report": "C3/flow-check.md",
+    "reflection": "C/C4-반영.md",
+    "result": "/ai 조회 및 참여 상태 확인 성공; 행동 종류 부분 이해; 동료 귀속·현재 목표 미확인"
+  },
+  "refactorObservationSource": "C/refactor-20261106/observations.json",
+  "historicalRefactorObservationCommit": "902721ec505df42d74d0b2d245ed34a049faadad",
+  "uiObservationSource": "C/ui-20261106/observations.json",
+  "historicalUiObservationCommit": "11eb461ae122f404acec94563c086b09e002987c"
+}

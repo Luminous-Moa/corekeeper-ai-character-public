@@ -1,0 +1,5 @@
+answers 307; continue answers dropped because the action had ended: 29 (9.4% of answers)
+standing gap after a short/composite action ended by itself -> next start: n 99, p50 0.10 p95 0.60 mean 0.20 s, sum 19.6 s
+hit again: queued 65, next swing APPLY 41
+left/right picks: {"tie":11,"differs":22,"alone":30} by side {"tie":{"left":11,"right":0},"differs":{"left":14,"right":8},"alone":{"left":21,"right":9}}
+kill intent spawns 6

@@ -1,0 +1,6 @@
+requests 66; providers celeris=celeris-1.1-decision $0.004/M; reps 2; calls 132 (cap 600)
+requests 66
+celeris (celeris-1.1-decision): answers 132/132, latency p50 219ms p95 274ms max 713ms, tokens/call 2909, est. $0.001536
+
+id	options	logged	celeris
+stuck-S2.jsonl:1	15	-	c11 2/2

@@ -1,0 +1,76 @@
+00:07:57 S1 /ai on
+00:08:38 S1 /ai on
+00:09:12 S2 goal dirt 5
+00:09:30 S3 goal tin 3
+00:16:44 S3 ended by timeout 420s (no stall/done; still working on tin prep)
+00:16:48 S4 goal craft WoodenWorkBench 1
+00:21:14 S4 craft WoodenWorkBench timeout 240s; AI down 7 times near the core (MushroomBrute/Slime) in 15 min -> world ai2 is a poor environment for goal scenarios; switching to a new world (user permission). This part = L0a (ai2, partial: S1-S4)
+00:22:23 new world: name rftest, seed 917121490949, mode 일반 (default world settings), slot 7
+00:23:05 L0 proper in rftest, world id c80d2fec746ff32c0ef946db28990874, Player.log t=1088.8
+00:23:05 S1 /ai on
+00:24:36 S2 goal dirt 5
+sent /ai goal dirt 5
+[AIPlayerSpike] t=1216.2 @Claude GOAL done rev=11: 흙벽 블록(WallDirtBlock) 5개 모으기 (5/5) after 19.0s, calls this session 6
+00:25:00 S3 goal tin 3
+sent /ai goal tin 3
+[AIPlayerSpike] t=1309.7 @Claude GOAL stalled rev=13: 주석 광석(TinOre) 3개 모으기 (0/3): 모을 방법이 없음 — 보이는 목표 품목 벽 0개(닿는 것), 파 들어갈 수 있는 목표 광석·물체 0개, 기억한 목표 광석 0곳(갈 길이 있는 것 0개), 탐험할 새 구
+sent /ai stop
+00:26:37 S4 goal craft WoodenWorkBench 1
+sent /ai goal craft WoodenWorkBench 1
+[AIPlayerSpike] t=1363.8 @Claude GOAL done rev=15: WoodenWorkBench(WoodenWorkBench) 1개 만들기 (1/1) after 43.3s, calls this session 99
+sent /ai stop
+00:27:32 S5 goal follow (host walks east then west)
+sent /ai goal follow
+sent /ai stop
+00:28:40 S6 self-defence: arena go + spawn 3 (no goal)
+sent /ai claude arena go
+sent /ai arena spawn 3
+[AIPlayerSpike] t=1463.7 @Claude SELF-DEFENCE #6 end: no enemy within 8 tiles and no damage for 3s; 7.1s, calls 13, hp 100->100, downs 0
+00:29:07 S7 close fight with a goal: spawn 3 MushroomEnemy 5 explore
+sent /ai arena spawn 3 MushroomEnemy 5 explore
+sent /ai stop
+00:30:47 S8 down: spawn 1 MushroomBrute (no goal)
+sent /ai arena spawn 1 MushroomBrute
+TIMEOUT DOWN #
+TIMEOUT stood up again
+00:34:59 S11 goal home
+sent /ai goal home
+[AIPlayerSpike] t=1862.3 @Claude GOAL done rev=29: 기지로 돌아가기 (기지 (0,0) 코어(정하지 않아 기본값) 도착(1.9칸)) after 42.3s, calls this session 306
+sent /ai stop
+00:35:47 scenarios 2-8, 11 done
+00:36:31 S9 goal auto (real bridge, claude)
+sent /ai goal auto
+[AIPlayerSpike] t=1915.9 @Claude PLANNER: report #1 APPLY decision=set goal=craft WoodMiningPick 1 why='곡괭이가 없어 채굴이 막힘. 나무 4/4로 바로 만들 수 있고, 체력이 34라 코어 근처에서 하는 일이 안전함' after 3.9s
+[AIPlayerSpike] t=1933.2 @Claude PLANNER: report #2 APPLY decision=set goal=gather Wood 10 why='체력 34라 먼 탐험은 위험. 나무가 0이라 횃불·상자·괭이 등 거의 모든 제작이 막혀 있어 근처에서 나무부터 확보' after 16.8s
+00:36:56 S9 bridge off
+[AIPlayerSpike] t=1944.0 @Claude PLANNER: bridge not reachable (Cannot connect to destination host) after 2.1s
+TIMEOUT GOAL free time rev
+00:39:09 S9 bridge on again
+[AIPlayerSpike] t=2191.4 @Claude PLANNER: upper LLM answers again (was: 브리지에 닿지 않음(꺼져 있음?))
+[AIPlayerSpike] t=2221.1 @Claude PLANNER: report #6 APPLY decision=set goal=gather Mushroom 3 why='체력 34에 자연 회복이 없음. 바로 옆 버섯을 모으는 가까운 목표라면 그동안 가방의 회복 버섯을 먹을 수 있음' after 7.9s
+00:41:45 S9 stop
+sent /ai stop
+00:41:47 S9 done
+00:42:01 S10 fake bridge up: fake-bridge listening on http://127.0.0.1:8331 (6 steps, log C:\Dev\_scratch\refactor-runs\L0\fake-requests.jsonl)
+00:42:01 S10 goal auto
+sent /ai goal auto
+[AIPlayerSpike] t=2242.1 @Claude PLANNER: upper LLM unavailable (limit: usage 99% > 85% (fake bridge)); auto stays on, asking again in 120s
+[AIPlayerSpike] t=2362.2 @Claude PLANNER: report #8 answer after 0.0s code=200 error=parse body={"ok":false,"member":"claude","cli":"fake","model":null,"effort":null,"ms":5,"report_id":8,"goal_rev":26,"answer":null,"raw":"this is not json","error":"parse","detail":"no-json","prompt_chars":0,"turn_ch
+TIMEOUT PLANNER: report #[0-9]+ APPLY decision=set goal=follow
+[AIPlayerSpike] t=2542.2 @Claude GOAL done rev=41: 호스트 따라가기 (3 minutes, upper-LLM follow) after 180.0s
+TIMEOUT code=409
+TIMEOUT answer DROPPED
+TIMEOUT APPLY decision=hold
+[AIPlayerSpike] t=2787.5 @Claude PLANNER: report #14 sent trigger=hold_recheck rev=28 reportChars=4302 buildMs=4.4: {"trigger":"hold_recheck","goal":{"source":"llm:claude#9","text":"호스트 따라가기"},"why_ended":"3분 따라감","events":[],"me":{"hp":"75/100","hunger":90,"hand":"Mushroom","c
+TIMEOUT APPLY decision=hold
+00:52:13 S10 stop
+sent /ai stop
+00:52:15 S10 done
+00:52:24 end: /ai off, save and exit, quit
+sent /ai off
+True
+gclicked 340,1532
+True
+gclicked 240,1414
+00:52:50 game closed
+00:53:11 collected: AIPlayers AIPlayers-ai2-after Player.log decisions-000848.log 

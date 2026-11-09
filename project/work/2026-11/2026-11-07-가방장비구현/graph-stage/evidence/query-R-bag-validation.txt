@@ -1,0 +1,62 @@
+== ../2026-11-07-가방장비구현/implementation-status.md:1-61 sha256=fac4b1c042b8bf68f97ac68b250be01894f8cc89e418a36009a35dc9aa83dad7
+1: # 가방·장비 구현 검증 범위
+2: 
+3: 현재 격리 코드 체크포인트는 `741532fcc57ffc549ac155a8261f5e25c966902f`다. 역사적 flat 단독 기능판 `309522644543f196348e642b0e8c352acc4ba918`와 공통 실행 `685dde4d27dd91a782a14d8ae33fb576160fa578`를 구별한다.
+4: 
+5: 741 고정판의 생산자 컴파일0/0·메뉴 역할348/0, 독립 메뉴394/0·연결102/102와 최신 compile0/0, 자체 Unity exit0/CompileCheck:ok/설치없는SDK source export 완료 근거를 고정했다. 독립 Core1204/protocol118/Loop55/primitive67은 b1에서 실행했고741 diff가 메뉴 위치 역할에 한정되어 관련 입력 불변을 확인한 근거다. 연결검사는 요청구성19·navigation17·정상Swap1이며 World/소비상태는 대역/수동공급이다. SDK 후보는101 .cs+manifest의 소스패키지이며 producer/export raw101일치, review raw92+EOL-only9를 구별한다. 공식 적용·실게임·실제외부모델·바이너리배포 수용은 아니다. HEAD 후속 결정: 최신 공식 c4 생활 트리와741 가방을 합친 코드/기획 후보가 필요하므로 이 판은 검증된 중간 결과로 보존한다. 최신 공식에 직접 적용하지 않는다.
+6: 
+7: 이번 가방·장비 판은 미실게임이며 최종 수용이 아니다. 게임 인벤토리 소비자·실제 UI 입력·드롭/수령 타이밍을 실행한 근거는 없다. 최소 World 어댑터는 수동 상태 변화로 실제 제품 어댑터를 검사한 범위다. 컴파일/오프라인 통과를 실제 슬롯 교환·수령 성공이나 최종 수용으로 승격하지 않는다.
+8: 
+9: 기존 UI11eb461·리팩토링902721e·화면76563bf 실게임 근거는 원래 커밋과 관측 범위로 보존하며 이번 코드의 실행 확인으로 읽지 않는다. flat 774/1fc 검수와 774 Unity도 새 트리 통과로 승계하지 않는다. 원래 부탁의 완료는 상위 order=done, 작업단계는 공통 finish_goal, 현재 몸 중지는 stop_action, 가방 메뉴 전체 취소는 선택 상태만 닫는 것으로 구별한다.
+10: 
+11: 입력 원문/로그와 SHA-256는 implementation-evidence.json에 있다. evidenceAppliesToFinalRevision은 고정 소스판 대응 여부일 뿐 최종 수용 여부가 아니다.
+12: 
+13: - agreement.md — 사용자 합의 원문; code=null; pinnedRevision=false; sha256=0ce0661b37dc40b2fb26a3a5623c5964ba8dca60adad82a3eac5a63215d37886
+14: - tree-agreement.md — 사용자 합의 원문; code=null; pinnedRevision=false; sha256=6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811
+15: - tree-spec.md — 명세·정적 조사/구현 범위 기록; code=null; pinnedRevision=false; sha256=dce9decb47ed57c9c6e7278a86302b90456020d0bafdce627f238bda960b200e
+16: - inventory-category-cap-audit.md — 명세·정적 조사/구현 범위 기록; code=null; pinnedRevision=false; sha256=28aacd933901811340ecd3382fdd0382e82367a4ac6b46dbc29e88769d3f23a0
+17: - cap-removal-spec.md — 명세·정적 조사/구현 범위 기록; code=null; pinnedRevision=false; sha256=4325181e4c12e68868885119715fb2e7d806674acaf7ec5b167e6537246ec1b0
+18: - tree-cap-result.md — 명세·정적 조사/구현 범위 기록; code=null; pinnedRevision=false; sha256=e6beff71f9fc00e558d885a0e4dfef2cb961461328a5c383f670e17da21a9a10
+19: - tree-design-review.md — 설계 독립검토;구현 수용 아님; code=null; pinnedRevision=false; sha256=1086ec282712a2810efc208d0637590fed272cb1a1498148b258993eb17bd46f
+20: - tree-checkpoint-compile.log — 생산자 체크포인트 오프라인 검사;b1 원검사(역사적 로그); code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=1f509bff2519018b963f90f07c94621e6ba88810bc3e13cbb63f1fd51cc36d76
+21: - tree-checkpoint-core.log — 생산자 체크포인트 오프라인 검사;b1 원검사(역사적 로그); code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=7398eb389f2f2f37b337310ad4c43c8ee11d2a71dbdeb6e0bd92b4895465415d
+22: - tree-checkpoint-protocol.log — 생산자 체크포인트 오프라인 검사;b1 원검사(역사적 로그); code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=66908eb26e9acd3e75f4fe14135030f36020baf65f7e3eb1c42d9fa2f944a1ed
+23: - tree-loop-execution.log — 실제 Loop/공통 입구 소스 링크 검사;World/모델 대역;b1 원검사(역사적 로그); code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=d721349dc5dc4a3ddf450e10244a3d556614d09d193b6ff3e5c41347077a17af
+24: - tree-menu-adapter/results.log — 메뉴·Inventory 소스 링크 단독 어댑터;게임 소비자 미실행;b1 원검사(역사적 로그); code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=be3729f5c380e0aa1e61785c8dbe4dd0742742295d96b668137c8d0c78fa68d8
+25: - tree-menu-adapter/payloads.json — 현재 노드 메뉴 샘플;단독 어댑터 구성;실제 모델 호출 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=ec3c9f0a221b36451cf93e2294ab2fcd924930eb9a56d37ec605d4b5cd6d7836
+26: - tree-menu-adapter/Program.cs — 단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=d6d555ca3ddf721bebc0af12ae76be523d9074a60d755040ae2d70bb45095039
+27: - tree-menu-adapter/Stubs.cs — 단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=2f6a29203ec4dc60b08f6100eca780eb7f79298adccaf7f5b65f9463eb96b2a6
+28: - tree-menu-adapter/TreeMenu.csproj — 단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=022d3aafbb9feeb36b2e45c869ce271725c20e1dc6fb34e22c7ea01a0cdbda91
+29: - tree-menu-engine.md — 소스 모듈 설명/현재 노드 예시;실게임 근거 아님; code=null; pinnedRevision=false; sha256=b1adbfa7790718cf59ecab247deceae4003ba32891dcdad00029407d89a82cb3
+30: - tree-menu-payload-example.md — 소스 모듈 설명/현재 노드 예시;실게임 근거 아님; code=null; pinnedRevision=false; sha256=422d77f017192381421845387f081b7c7946bf1fdc2e393564d93fff525594e7
+31: - tree-menu-adapter/role-results.log — 741 생산자 단독 메뉴 역할 회귀348/0;원326과 별도; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=385654c715ae9bf422b62b6c2b3025ae1462cd5802c531f5592ad9168a45fcb8
+32: - tree-menu-role-compile.log — 741 생산자 컴파일0경고·0오류; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=b1c801c6ec07e71874b9fb531a0bb9722422682a2144992d37298784612ce6f2
+33: - tree-connected/run.ps1 — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=27022b08598afdb54892cdc99b527db1b6a9c928ab5696c0e1464340c539cf52
+34: - tree-connected/Connected.csproj — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=db0f80e9fda37ca19235ad9bf46abd39d88cc3f0bcf7299522f746bef74d40e7
+35: - tree-connected/Program.cs — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=4c2da8adad4d2241a7ae97b27f09c273e150b539d3c6842f177c586ed42d539b
+36: - tree-connected/Stubs.cs — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=f76938bc2964373dcfd60281cbf0da0bf1962e3bc49d790b32648e5718022b6e
+37: - tree-connected/Boundary.cs — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=08f318fb44afa565f28130c4666ec27d2e0a4785940d2ada59c3198e5ca4b82f
+38: - tree-connected/Production.cs — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=b213ae79ce018af30f7a5e7e7fe8fdfd6b5bcb52bac6873cc6bd992ea2d85074
+39: - tree-connected/source-pin.json — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=5ae97522ddd0ed4ebbdd3740dd6929268a237d4b577b7863dc3edf2cd3d56bb3
+40: - tree-connected/results.log — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=b6f994976f8df74ac50a057b510fc74dc74c2fbd10c8e3517ee33315c531cad2
+41: - tree-connected/connected-trace.json — 741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=bebb200f61efa9e3f355e17f55f210070884365a320a8d9b72e5ca62d96325d9
+42: - tree-implementation.md — 현재 고정판 구현/검증/실게임 준비 원문; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=920250a73e3821bf24576886bee8db84e01470d0c9e3168ed88208423af6b3a6
+43: - tree-validation.md — 현재 고정판 구현/검증/실게임 준비 원문; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=7ebbd8cbfbeb3511ddfa65686c3617c49fcadcb297791aaf4c05ecef999b89ad
+44: - tree-runtime-plan.md — 현재 고정판 구현/검증/실게임 준비 원문; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=df99966f37f2e29ced304d8d66de9514e1cfed3d4e2d2a6890504632ab0ca140
+45: - tree-final-unity-input.json — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=a551413fc37856ac06bd664ed1c726641e1a5a046761bb05781e125d27a3a34d
+46: - tree-final-unity-exit.json — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=d0c0d3478d8ecf64cdeed09c4418e1c1701035aae87b191c96012ce8645bf1f9
+47: - tree-final-unity-export.log — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=c9e1b2f5f5e7830d5d071d3a774d602b5f0f4de0b5684f4da17a8b9fbbf9789f
+48: - tree-artifact-manifest.json — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=2d2c94fda2503ba3045bb7e361d04f588009d95b0c77c268f71e85e3a57fb975
+49: - tree-package.json — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=21c5195abff937be72e228e90e1b4f6d0bd37794728725a807f31852f51f3687
+50: - BagCandidateExport.cs — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=2d0485fcee977b9db749269f01115690628fbc41e3ef7b3dc2fc79b6b6bc1a22
+51: - tree-validation-continuity.json — 741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=d1ce6506e1e191cbb7460200ba262b42690b3f1b0d55694898c5ca68d99ebd91
+52: - independent-review/compile-741.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=99bbdad7cd11f477f54ea81e24405393f46f12c961c708af733bb951c84daf7d
+53: - independent-review/menu-741.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=c103688d2560c4e3168944384fa78fa48380307ebb44024df1c9956d84de2dd3
+54: - independent-review/connected.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=394f549f8280b20bfff482fbe017f6533d9443881af7970962811c5be4307cf4
+55: - independent-review/741532f-input-pin.json — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=444f945fa5d92d60d5001c52cb84670927f6107cd7f93516eeaf7d49dd10582a
+56: - independent-review/export-source-verification.json — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=41f9d4ef8e3455995283abc6a160445c19cda68b640d3db412e8e04b55b7123f
+57: - independent-review/core.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=5485151db7ed3f715cab4ab8e855e1ddb171a02a324e14f38a19e825148063ea
+58: - independent-review/protocol.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=16cfbe91aa70b5f471b6e45d0f95b7bc61b2d7bbe05f125c49782df269f22544
+59: - independent-review/execution.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=f2c37098ca6272bab269e649b371717cab45fda0a11b8519d719c53e34b3145f
+60: - independent-review/primitive.log — 독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음; code=b1facaaef2afd66af321db66fc4b5d00725af5ce; pinnedRevision=false; sha256=c6ab31eae48434c5c5e3ad48599ccf3b1172509619b7addb6b291f1d898bd16b
+61: - review-tree-741.md — 741 불변 독립 검수 사본;코드/오프라인/빌드PASS,새공식직접적용불가·통합대기·graph최종수용미완료; code=741532fcc57ffc549ac155a8261f5e25c966902f; pinnedRevision=true; sha256=c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91

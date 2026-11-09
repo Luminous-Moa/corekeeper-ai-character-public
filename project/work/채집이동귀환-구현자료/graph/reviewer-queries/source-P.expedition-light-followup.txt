@@ -1,0 +1,4 @@
+== ../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md:3-3 sha256=60183ff66401a2cbb03d7c765d8d27b95dfb516b4ff0acafa2478b50ad81089b
+3: 사용자 결정: “조명 시야는 후속으로 분리”.
+== ../../채집이동귀환-구현자료/graph/final-source-pins/expeditionLightDecision.md:7-7 sha256=60183ff66401a2cbb03d7c765d8d27b95dfb516b4ff0acafa2478b50ad81089b
+7: - 이번 수용 범위는 `7af8f91e5d26e4fd9ce5996809ae41e213340118`의 채집·이동·귀환 구현과 기존 화면 범위 관측이다. 조명·어둠의 실제 사람 시야 동일성을 완료로 주장하지 않는다.

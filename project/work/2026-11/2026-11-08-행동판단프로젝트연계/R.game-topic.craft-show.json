@@ -1,0 +1,384 @@
+{
+  "node": {
+    "action": "recipe_configuration",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "asset_link",
+    "facts": {},
+    "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration",
+    "kind": "claim",
+    "label": "recipe_configuration",
+    "origin": {
+      "normalizedValueSha256": "c04eb1525a7cc62b9df82616a0d773bc4a4e034af8ef74aa99210b3dea015fe6",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/3/payload/extraction.json/records/129"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "ruleLabelWithoutLocalObject": "recipe_configuration",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "2843791ae589e13234bf9ec1a8f935628768d91083f9104b731953561c037aef",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129/conditions"
+      },
+      "value": "Authored CraftingAuthoring settings only; per-type consumer and runtime availability require separate proof."
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "assetEvidence",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "3fd509216c93dc750d8f44c3a12e69c0a57f10c656422c6112d50d8f1b7189de",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129/assetEvidence"
+      },
+      "value": [
+        {
+          "component": {
+            "class": "CraftingAuthoring",
+            "component": {
+              "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+              "data": {
+                "allInventoryIsForSingleCraft": 0,
+                "canCraftObjects": [
+                  {
+                    "allowCraftingNone": 0,
+                    "amount": 1,
+                    "craftingConsumesEntityAmount": 1,
+                    "craftingTime": 0.0,
+                    "entityAmountToConsume": 2,
+                    "hasPrerequisites": 0,
+                    "moddedObjectID": "",
+                    "objectID": 1651,
+                    "prerequisites": {
+                      "birdBossKilled": 0,
+                      "contentBundleAbsent": {
+                        "hasValue": 0,
+                        "value": {
+                          "m_address": {
+                            "m_high": "0",
+                            "m_low": "0"
+                          }
+                        }
+                      },
+                      "contentBundlePresent": {
+                        "hasValue": 0,
+                        "value": {
+                          "m_address": {
+                            "m_high": "0",
+                            "m_low": "0"
+                          }
+                        }
+                      },
+                      "hydraBossDesertKilled": 0,
+                      "hydraBossNatureKilled": 0,
+                      "hydraBossSeaKilled": 0,
+                      "octopusBossKilled": 0,
+                      "scarabBossKilled": 0
+                    }
+                  }
+                ],
+                "craftingType": 4,
+                "extractableType": 0,
+                "includeCraftedObjectsFromBuildings": [],
+                "m_Enabled": 1,
+                "m_GameObject": {
+                  "m_FileID": 0,
+                  "m_PathID": "5964344316707895400"
+                },
+                "m_Name": "",
+                "m_Script": {
+                  "m_FileID": 1,
+                  "m_PathID": "913624977925417530"
+                },
+                "minMaxRandomDefaultCraftingTime": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "minMaxRandomDefaultExtractedOutputAmount": {
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "showLoopEffectOnOutputSlot": 0
+              },
+              "key": "CAB-2ebcba97367158c9b08f790c25d642c9:4534054271164708968",
+              "pathId": "4534054271164708968",
+              "rawByteSha256": "eee92f8e37e73fa247e8610303d777aedaa59d5d5f03405b5f2f2c6eb6986090",
+              "script": {
+                "assembly": "Pug.ECS.Authoring",
+                "class": "CraftingAuthoring",
+                "namespace": ""
+              },
+              "type": "MonoBehaviour"
+            },
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:4534054271164708968",
+            "gameObjectKey": "CAB-2ebcba97367158c9b08f790c25d642c9:5964344316707895400",
+            "gameObjectName": "CamelEntity",
+            "linkKind": "authoringRef"
+          },
+          "resolvedRecipes": [
+            {
+              "fromCraftingComponent": "CAB-2ebcba97367158c9b08f790c25d642c9:4534054271164708968",
+              "productSources": [
+                {
+                  "materialSourceKeys": {},
+                  "requiredObjectsToCraft": [],
+                  "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-422946632327991340",
+                  "variation": 0
+                }
+              ],
+              "productStatus": "source_candidates_found",
+              "recipe": {
+                "allowCraftingNone": 0,
+                "amount": 1,
+                "craftingConsumesEntityAmount": 1,
+                "craftingTime": 0.0,
+                "entityAmountToConsume": 2,
+                "hasPrerequisites": 0,
+                "moddedObjectID": "",
+                "objectID": 1651,
+                "prerequisites": {
+                  "birdBossKilled": 0,
+                  "contentBundleAbsent": {
+                    "hasValue": 0,
+                    "value": {
+                      "m_address": {
+                        "m_high": "0",
+                        "m_low": "0"
+                      }
+                    }
+                  },
+                  "contentBundlePresent": {
+                    "hasValue": 0,
+                    "value": {
+                      "m_address": {
+                        "m_high": "0",
+                        "m_low": "0"
+                      }
+                    }
+                  },
+                  "hydraBossDesertKilled": 0,
+                  "hydraBossNatureKilled": 0,
+                  "hydraBossSeaKilled": 0,
+                  "octopusBossKilled": 0,
+                  "scarabBossKilled": 0
+                }
+              }
+            }
+          ],
+          "unresolvedIncludedPointers": []
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failureBranches",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration/failure/failureBranches",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "8bc0aa2ad2aac3d9467f24bb1558cc442a644429973f5cb3829db0151fc11a1c",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129/failureBranches"
+      },
+      "value": "Unresolved pointers and missing product source candidates are retained."
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputProcessingConsumer",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration/flow/inputProcessingConsumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "89991f1e0139d18227c396f40de48fc95b716efec8e05eadcbde032f70de5529",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129/inputProcessingConsumer"
+      },
+      "value": "InventoryConverter direct recipes and one-level included building direct recipe lists."
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "e6421b511c29c563c984a6b8c3cb436667fb1473e1e4b518520c9c6fb01a5434",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129/result"
+      },
+      "value": "Product and material source relations are candidates, not an assertion of successful production."
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/D-outcomes",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/D-outcomes",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unknown",
+      "id": "base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration/unknown/unknown",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "d01bc8fc15541eab758e0e222817666948ee4beffba7740ecf65581676122b18",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/3/payload/extraction.json/records/129/unknown"
+      },
+      "value": "For non-verified consumers, execution semantics and output remain unconfirmed."
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "has_configuration_review",
+      "target": "reviewed-claim:base:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#recipe_configuration",
+      "kind": "source_configuration_review",
+      "action": null
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:recipe_configuration",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888"
+    ],
+    [
+      "related_prior_source_record",
+      "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#automatic_recipe_result"
+    ],
+    [
+      "supplements",
+      "supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-1025676704570836888#automatic_recipe_result"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+== S6b
+    L2 corpus C:\Dev\_scratch\refactor-runs\L2\asm-L2.log
+  [OK] L1 corpus: 2406 builds, 0 recursed, 0 incomplete (expected 864 / 10 / 0)
+  [OK] L1 corpus replay: 2406 builds exactly the same as the old code, 0 different
+    (covered: close-fight set 344, 15 items after the cut 130, failure memory 1993, recent switch 2071, no goal 581)
+  [OK] hand record H1 BodyCan false drops mine and dig
+  [OK] hand record H2 Doable false leaves the next goal step as the break-off option
+  [OK] hand record H3 Doable false everywhere: no break-off option, then a twice-failed attack left out
+  [OK] replay refuses a value the old code did not evaluate (asked for a value the old code did not evaluate: id 3)
+ALL CHECKS OK (6)

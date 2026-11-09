@@ -1,0 +1,183 @@
+{
+  "origin": {
+    "normalizedValueSha256": "6041856372e854537fc38603d6393c06faffedbdecb2374effc931e43733fb60",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+    "pointer": "/cases/18"
+  },
+  "value": {
+    "id": "boat",
+    "action": "board_steer_leave",
+    "build": "26332184",
+    "runtimeTested": false,
+    "status": "reused_pass_pending_review",
+    "scope": "6580 and 6581, two claims per action",
+    "roles": [
+      {
+        "role": "conditional_controlled_boat",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490",
+        "objectId": 6580,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "CanBeControlledByOtherEntityAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2190400328624832202",
+            "rawByteSha256": "8fb2869d1472accbe6d4d09b91ec91574a71e074d7f42d6a2c60243c065d9f65",
+            "line": 6218,
+            "pointers": [
+              "/1922/links/1/matches/0/components/13"
+            ],
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3328761155053187388"
+              }
+            }
+          },
+          {
+            "class": "BoatAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1573361327431156022",
+            "rawByteSha256": "c1684bfd3f72bf69efd59b765e13aa5dd6ebdd6b4ecbcd2fe90b75d3a8f7235a",
+            "line": 45977,
+            "pointers": [
+              "/1922/links/1/matches/0/components/17"
+            ],
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "8501545785753600310"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3634153730015137814"
+              },
+              "speedMultiplier": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "role": "conditional_controlled_boat",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702",
+        "objectId": 6581,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "class": "CanBeControlledByOtherEntityAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8417186842720825082",
+            "rawByteSha256": "8dbbb4d8b61a69898431259ac75fb9ca9d1b3e66a356249fc83ed23b75397ccc",
+            "line": 38336,
+            "pointers": [
+              "/1923/links/1/matches/0/components/13"
+            ],
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2131044300972781306"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "-3328761155053187388"
+              }
+            }
+          },
+          {
+            "class": "BoatAuthoring",
+            "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:323434596352102662",
+            "rawByteSha256": "06a392f8006587bca951f3f881b626ef2432468b6cba5768a2fd2acc560b2277",
+            "line": 54520,
+            "pointers": [
+              "/1923/links/1/matches/0/components/17"
+            ],
+            "data": {
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-2131044300972781306"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3634153730015137814"
+              },
+              "speedMultiplier": 1.2999999523162842
+            }
+          }
+        ]
+      }
+    ],
+    "entry": "unoccupied selected use -> BoatRiding",
+    "conditions": [
+      "valid player state and unoccupied control; boat entity and Simulate",
+      "movement input for steering; interact and speed gate plus walkable clear destination for exit"
+    ],
+    "transitions": [
+      {
+        "from": "board",
+        "to": "control and player position at boat",
+        "refs": [
+          "Interaction.CoreKeeper/Interaction/TriggerUseControllableSystem.cs:51-98",
+          "Pug.Other/PlayerState/BoatRiding.cs:29-42"
+        ]
+      },
+      {
+        "from": "steering",
+        "to": "PlayerMovementForce and physics velocity impulse",
+        "refs": [
+          "Pug.Other/PlayerVelocityCalculationSystem.cs:364-383",
+          "Pug.Other/PlayerState/BoatRiding.cs:72-95",
+          "Pug.Other/PlayerMovementSystem.cs:132-139"
+        ]
+      },
+      {
+        "from": "exit input",
+        "to": "Walk request and controlled reference release, optional position write",
+        "refs": [
+          "Pug.Other/PlayerState/BoatRiding.cs:50-70,98-150",
+          "Pug.Other/PlayerState/ControllingStateCommon.cs"
+        ]
+      }
+    ],
+    "outcomes": [
+      "source-specific speed multiplier 1 or approximately 1.3 contributes to movement, force then impulse; displacement is not guaranteed",
+      "on valid exit candidate requests Walk and consumes interaction; ExitState rechecks historical collision before position write and restores hunger/force/orientation"
+    ],
+    "negativeCases": [
+      "occupied or invalid control",
+      "exit speed too high or no walkable clear neighbor prevents Walk request",
+      "exit recheck may fail after state transition and then position is not moved"
+    ],
+    "boundaries": [
+      "actual input, collision, trajectory and result not observed"
+    ],
+    "priorClaimIds": [
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board",
+      "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702#board",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#leave_boat",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#steer_boat",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702#leave_boat",
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702#steer_boat"
+    ],
+    "relationLinks": "role-links.json",
+    "assetEvidence": "coverage.json",
+    "codeEvidence": "2026-11-07-행동전체추출/review/A-review.md and 2026-11-07-상호작용미결보강/review/A-review.md"
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "priorResearchRoot": "../2026-11",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+    "sessionWorkRoot": ".."
+  }
+}

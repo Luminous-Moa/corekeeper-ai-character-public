@@ -1,0 +1,254 @@
+model=gpt-6-luna (from C:\Users\<USER>\AppData\LocalLow\Pugstorm\Core Keeper\AIPlayers\decisions-settings.json); variants=84; reps=5; conc=2
+  S1-N-14-swap: candidates=13 inputChars=1452
+  S1-N-14-numeric: candidates=13 inputChars=1452
+  S1-N-14-shuffle: candidates=13 inputChars=1452
+  S1-N-20-swap: candidates=17 inputChars=1452
+  S1-N-20-numeric: candidates=17 inputChars=1452
+  S1-N-20-shuffle: candidates=17 inputChars=1452
+  S1-K-14-swap: candidates=13 inputChars=1538
+  S1-K-14-numeric: candidates=13 inputChars=1538
+  S1-K-14-shuffle: candidates=13 inputChars=1538
+  S1-K-20-swap: candidates=17 inputChars=1538
+  S1-K-20-numeric: candidates=17 inputChars=1538
+  S1-K-20-shuffle: candidates=17 inputChars=1538
+  S2-N-14-swap: candidates=13 inputChars=1457
+  S2-N-14-numeric: candidates=13 inputChars=1457
+  S2-N-14-shuffle: candidates=13 inputChars=1457
+  S2-N-20-swap: candidates=17 inputChars=1457
+  S2-N-20-numeric: candidates=17 inputChars=1457
+  S2-N-20-shuffle: candidates=17 inputChars=1457
+  S2-K-14-swap: candidates=13 inputChars=1543
+  S2-K-14-numeric: candidates=13 inputChars=1543
+  S2-K-14-shuffle: candidates=13 inputChars=1543
+  S2-K-20-swap: candidates=17 inputChars=1543
+  S2-K-20-numeric: candidates=17 inputChars=1543
+  S2-K-20-shuffle: candidates=17 inputChars=1543
+  S3-N-14-swap: candidates=13 inputChars=1386
+  S3-N-14-numeric: candidates=13 inputChars=1386
+  S3-N-14-shuffle: candidates=13 inputChars=1386
+  S3-N-20-swap: candidates=17 inputChars=1386
+  S3-N-20-numeric: candidates=17 inputChars=1386
+  S3-N-20-shuffle: candidates=17 inputChars=1386
+  S3-K-14-swap: candidates=13 inputChars=1472
+  S3-K-14-numeric: candidates=13 inputChars=1472
+  S3-K-14-shuffle: candidates=13 inputChars=1472
+  S3-K-20-swap: candidates=17 inputChars=1472
+  S3-K-20-numeric: candidates=17 inputChars=1472
+  S3-K-20-shuffle: candidates=17 inputChars=1472
+  S4-N-14-swap: candidates=14 inputChars=1387
+  S4-N-14-numeric: candidates=14 inputChars=1387
+  S4-N-14-shuffle: candidates=14 inputChars=1387
+  S4-N-20-swap: candidates=18 inputChars=1387
+  S4-N-20-numeric: candidates=18 inputChars=1387
+  S4-N-20-shuffle: candidates=18 inputChars=1387
+  S4-K-14-swap: candidates=14 inputChars=1473
+  S4-K-14-numeric: candidates=14 inputChars=1473
+  S4-K-14-shuffle: candidates=14 inputChars=1473
+  S4-K-20-swap: candidates=18 inputChars=1473
+  S4-K-20-numeric: candidates=18 inputChars=1473
+  S4-K-20-shuffle: candidates=18 inputChars=1473
+  S5-N-14-swap: candidates=13 inputChars=1390
+  S5-N-14-numeric: candidates=13 inputChars=1390
+  S5-N-14-shuffle: candidates=13 inputChars=1390
+  S5-N-20-swap: candidates=17 inputChars=1390
+  S5-N-20-numeric: candidates=17 inputChars=1390
+  S5-N-20-shuffle: candidates=17 inputChars=1390
+  S5-K-14-swap: candidates=13 inputChars=1476
+  S5-K-14-numeric: candidates=13 inputChars=1476
+  S5-K-14-shuffle: candidates=13 inputChars=1476
+  S5-K-20-swap: candidates=17 inputChars=1476
+  S5-K-20-numeric: candidates=17 inputChars=1476
+  S5-K-20-shuffle: candidates=17 inputChars=1476
+  S6-N-14-swap: candidates=14 inputChars=1474
+  S6-N-14-numeric: candidates=14 inputChars=1474
+  S6-N-14-shuffle: candidates=14 inputChars=1474
+  S6-N-20-swap: candidates=18 inputChars=1474
+  S6-N-20-numeric: candidates=18 inputChars=1474
+  S6-N-20-shuffle: candidates=18 inputChars=1474
+  S6-K-14-swap: candidates=14 inputChars=1560
+  S6-K-14-numeric: candidates=14 inputChars=1560
+  S6-K-14-shuffle: candidates=14 inputChars=1560
+  S6-K-20-swap: candidates=18 inputChars=1560
+  S6-K-20-numeric: candidates=18 inputChars=1560
+  S6-K-20-shuffle: candidates=18 inputChars=1560
+  S7-N-14-swap: candidates=13 inputChars=1395
+  S7-N-14-numeric: candidates=13 inputChars=1395
+  S7-N-14-shuffle: candidates=13 inputChars=1395
+  S7-N-20-swap: candidates=17 inputChars=1395
+  S7-N-20-numeric: candidates=17 inputChars=1395
+  S7-N-20-shuffle: candidates=17 inputChars=1395
+  S7-K-14-swap: candidates=13 inputChars=1481
+  S7-K-14-numeric: candidates=13 inputChars=1481
+  S7-K-14-shuffle: candidates=13 inputChars=1481
+  S7-K-20-swap: candidates=17 inputChars=1481
+  S7-K-20-numeric: candidates=17 inputChars=1481
+  S7-K-20-shuffle: candidates=17 inputChars=1481
+2/84 S1-N-14-swap rep1 200 0.36s m1_right
+3/84 S1-N-14-numeric rep1 200 0.39s m1_left
+4/84 S1-N-14-shuffle rep1 200 0.24s m1_left
+5/84 S1-N-20-swap rep1 200 0.27s m1_right
+6/84 S1-N-20-numeric rep1 200 0.29s m1_left
+7/84 S1-N-20-shuffle rep1 200 0.28s m1_left
+8/84 S1-K-14-numeric rep1 200 0.22s m1_left
+9/84 S1-K-14-swap rep1 200 0.32s m1_right
+10/84 S1-K-14-shuffle rep1 200 0.22s m1_left
+11/84 S1-K-20-swap rep1 200 0.28s m3_right
+12/84 S1-K-20-numeric rep1 200 0.25s m1_left
+13/84 S1-K-20-shuffle rep1 200 0.34s m1_left
+14/84 S2-N-14-swap rep1 200 0.24s m1_right
+15/84 S2-N-14-numeric rep1 200 0.20s m1_left
+16/84 S2-N-14-shuffle rep1 200 0.21s m1_left
+17/84 S2-N-20-swap rep1 200 0.23s m1_right
+18/84 S2-N-20-numeric rep1 200 0.36s m1_left
+19/84 S2-N-20-shuffle rep1 200 0.29s m1_right
+20/84 S2-K-14-swap rep1 200 0.37s m1_backright
+21/84 S2-K-14-numeric rep1 200 0.28s m1_left
+22/84 S2-K-20-swap rep1 200 0.26s m1_backright
+23/84 S2-K-14-shuffle rep1 200 0.33s m1_backright
+24/84 S2-K-20-shuffle rep1 200 0.22s m3_left
+25/84 S2-K-20-numeric rep1 200 0.28s m1_left
+26/84 S3-N-14-numeric rep1 200 0.21s hit
+27/84 S3-N-14-swap rep1 200 0.29s hit
+28/84 S3-N-14-shuffle rep1 200 0.30s hit
+29/84 S3-N-20-numeric rep1 200 0.20s hit
+30/84 S3-N-20-swap rep1 200 0.53s hit
+31/84 S3-N-20-shuffle rep1 200 0.20s hit
+32/84 S3-K-14-swap rep1 200 0.29s hit
+33/84 S3-K-14-numeric rep1 200 0.22s hit
+34/84 S3-K-20-swap rep1 200 0.30s hit
+35/84 S3-K-14-shuffle rep1 200 0.55s hit
+36/84 S3-K-20-numeric rep1 200 0.22s hit
+37/84 S3-K-20-shuffle rep1 200 0.21s hit
+38/84 S4-N-14-swap rep1 200 0.35s approach
+39/84 S4-N-14-numeric rep1 200 0.19s approach
+40/84 S4-N-14-shuffle rep1 200 0.31s retreat_0_-1
+41/84 S4-N-20-swap rep1 200 0.44s retreat_0_-1
+42/84 S4-N-20-numeric rep1 200 0.39s retreat_0_-1
+43/84 S4-N-20-shuffle rep1 200 0.24s approach
+44/84 S4-K-14-swap rep1 200 0.21s approach
+45/84 S4-K-14-numeric rep1 200 0.25s approach
+46/84 S4-K-14-shuffle rep1 200 0.21s m1_toward
+47/84 S4-K-20-swap rep1 200 0.29s FAIL 
+48/84 S4-K-20-numeric rep1 200 0.29s approach
+49/84 S4-K-20-shuffle rep1 200 0.24s approach
+50/84 S5-N-14-swap rep1 200 0.21s m1_away
+51/84 S5-N-14-numeric rep1 200 0.21s m1_away
+52/84 S5-N-14-shuffle rep1 200 0.20s m1_backleft
+53/84 S5-N-20-swap rep1 200 0.29s m1_away
+54/84 S5-N-20-numeric rep1 200 0.22s m1_away
+55/84 S5-N-20-shuffle rep1 200 0.29s retreat_0_-1
+56/84 S5-K-14-swap rep1 200 0.27s m1_away
+57/84 S5-K-14-shuffle rep1 200 0.23s m3_backleft
+58/84 S5-K-14-numeric rep1 200 0.26s m1_away
+59/84 S5-K-20-swap rep1 200 0.21s retreat_0_-1
+60/84 S5-K-20-numeric rep1 200 0.21s m1_away
+61/84 S5-K-20-shuffle rep1 200 0.26s retreat_0_-1
+62/84 S6-N-14-swap rep1 200 0.36s m1_left
+63/84 S6-N-14-numeric rep1 200 0.33s m1_left
+64/84 S6-N-14-shuffle rep1 200 0.49s m3_backleft
+65/84 S6-N-20-swap rep1 200 0.40s m1_left
+66/84 S6-N-20-numeric rep1 200 0.26s m1_left
+67/84 S6-N-20-shuffle rep1 200 0.21s m1_left
+68/84 S6-K-14-swap rep1 200 0.21s m1_left
+69/84 S6-K-14-numeric rep1 200 0.22s m1_left
+70/84 S6-K-14-shuffle rep1 200 0.46s m1_right
+71/84 S6-K-20-swap rep1 200 0.52s m1_left
+72/84 S6-K-20-numeric rep1 200 0.25s m1_left
+73/84 S6-K-20-shuffle rep1 200 0.22s m1_frontright
+74/84 S7-N-14-swap rep1 200 0.23s retreat_0_-1
+75/84 S7-N-14-numeric rep1 200 0.26s retreat_0_-1
+76/84 S7-N-14-shuffle rep1 200 0.29s eat_Mushroom
+77/84 S7-N-20-swap rep1 200 0.35s eat_Mushroom
+78/84 S7-N-20-numeric rep1 200 0.38s retreat_0_-1
+79/84 S7-N-20-shuffle rep1 200 0.30s retreat_0_-1
+80/84 S7-K-14-swap rep1 200 0.22s m1_away
+81/84 S7-K-14-numeric rep1 200 0.27s eat_Mushroom
+82/84 S7-K-14-shuffle rep1 200 0.21s eat_Mushroom
+83/84 S7-K-20-numeric rep1 200 0.31s eat_Mushroom
+84/84 S7-K-20-swap rep1 200 0.46s retreat_0_-1
+84/84 S7-K-20-shuffle rep1 200 0.44s eat_Mushroom
+perturb: n=84 같은 선택 52; 종류별 {"swap":{"n":28,"same":13,"classSame":23},"numeric":{"n":28,"same":25,"classSame":25},"shuffle":{"n":28,"same":14,"classSame":25}}; 후보 수별 {"14":{"n":42,"same":26,"classSame":36},"20":{"n":42,"same":26,"classSame":37}}
+S1-N-14-swap: m1_left(good) → m1_right(good) 바뀜 p(now)=0.71 p(base key) 0.68→0.26 lat=0.36
+S1-N-14-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.72 p(base key) 0.68→0.72 lat=0.39
+S1-N-14-shuffle: m1_left(good) → m1_left(good) 같음 p(now)=0.54 p(base key) 0.68→0.54 lat=0.24
+S1-N-20-swap: m1_left(good) → m1_right(good) 바뀜 p(now)=0.30 p(base key) 0.44→0.18 lat=0.27
+S1-N-20-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.35 p(base key) 0.44→0.35 lat=0.29
+S1-N-20-shuffle: m1_left(good) → m1_left(good) 같음 p(now)=0.74 p(base key) 0.44→0.74 lat=0.28
+S1-K-14-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.67 p(base key) 0.82→0.67 lat=0.22
+S1-K-14-swap: m1_left(good) → m1_right(good) 바뀜 p(now)=0.55 p(base key) 0.82→0.36 lat=0.32
+S1-K-14-shuffle: m1_left(good) → m1_left(good) 같음 p(now)=0.41 p(base key) 0.82→0.41 lat=0.22
+S1-K-20-swap: m1_left(good) → m3_right(other) 바뀜 p(now)=0.28 p(base key) 0.44→0.12 lat=0.28
+S1-K-20-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.53 p(base key) 0.44→0.53 lat=0.25
+S1-K-20-shuffle: m1_left(good) → m1_left(good) 같음 p(now)=0.44 p(base key) 0.44→0.44 lat=0.34
+S2-N-14-swap: m1_left(good) → m1_right(good) 바뀜 p(now)=0.58 p(base key) 0.66→0.14 lat=0.24
+S2-N-14-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.71 p(base key) 0.66→0.71 lat=0.20
+S2-N-14-shuffle: m1_left(good) → m1_left(good) 같음 p(now)=0.58 p(base key) 0.66→0.58 lat=0.21
+S2-N-20-swap: m1_left(good) → m1_right(good) 바뀜 p(now)=0.40 p(base key) 0.34→0.24 lat=0.23
+S2-N-20-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.47 p(base key) 0.34→0.47 lat=0.36
+S2-N-20-shuffle: m1_left(good) → m1_right(good) 바뀜 p(now)=0.35 p(base key) 0.34→0.02 lat=0.29
+S2-K-14-swap: m1_left(good) → m1_backright(good) 바뀜 p(now)=0.42 p(base key) 0.72→0.17 lat=0.37
+S2-K-14-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.71 p(base key) 0.72→0.71 lat=0.28
+S2-K-20-swap: m1_left(good) → m1_backright(good) 바뀜 p(now)=0.36 p(base key) 0.44→0.13 lat=0.26
+S2-K-14-shuffle: m1_left(good) → m1_backright(good) 바뀜 p(now)=0.45 p(base key) 0.72→0.27 lat=0.33
+S2-K-20-shuffle: m1_left(good) → m3_left(good) 바뀜 p(now)=0.82 p(base key) 0.44→0.02 lat=0.22
+S2-K-20-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.47 p(base key) 0.44→0.47 lat=0.28
+S3-N-14-numeric: hit(good) → hit(good) 같음 p(now)=0.79 p(base key) 0.56→0.79 lat=0.21
+S3-N-14-swap: hit(good) → hit(good) 같음 p(now)=0.61 p(base key) 0.56→0.61 lat=0.29
+S3-N-14-shuffle: hit(good) → hit(good) 같음 p(now)=0.74 p(base key) 0.56→0.74 lat=0.30
+S3-N-20-numeric: hit(good) → hit(good) 같음 p(now)=0.70 p(base key) 0.57→0.70 lat=0.20
+S3-N-20-swap: hit(good) → hit(good) 같음 p(now)=0.55 p(base key) 0.57→0.55 lat=0.53
+S3-N-20-shuffle: hit(good) → hit(good) 같음 p(now)=0.55 p(base key) 0.57→0.55 lat=0.20
+S3-K-14-swap: hit(good) → hit(good) 같음 p(now)=0.80 p(base key) 0.92→0.80 lat=0.29
+S3-K-14-numeric: hit(good) → hit(good) 같음 p(now)=0.93 p(base key) 0.92→0.93 lat=0.22
+S3-K-20-swap: hit(good) → hit(good) 같음 p(now)=0.72 p(base key) 0.74→0.72 lat=0.30
+S3-K-14-shuffle: hit(good) → hit(good) 같음 p(now)=0.98 p(base key) 0.92→0.98 lat=0.55
+S3-K-20-numeric: hit(good) → hit(good) 같음 p(now)=0.81 p(base key) 0.74→0.81 lat=0.22
+S3-K-20-shuffle: hit(good) → hit(good) 같음 p(now)=0.44 p(base key) 0.74→0.44 lat=0.21
+S4-N-14-swap: retreat(bad) → approach(good) 바뀜 p(now)=0.19 p(base key) 0.20→0.16 lat=0.35
+S4-N-14-numeric: retreat(bad) → approach(good) 바뀜 p(now)=0.26 p(base key) 0.20→0.22 lat=0.19
+S4-N-14-shuffle: retreat(bad) → retreat(bad) 같음 p(now)=0.48 p(base key) 0.20→0.48 lat=0.31
+S4-N-20-swap: retreat(bad) → retreat(bad) 같음 p(now)=0.20 p(base key) 0.20→0.20 lat=0.44
+S4-N-20-numeric: retreat(bad) → retreat(bad) 같음 p(now)=0.22 p(base key) 0.20→0.22 lat=0.39
+S4-N-20-shuffle: retreat(bad) → approach(good) 바뀜 p(now)=0.29 p(base key) 0.20→0.10 lat=0.24
+S4-K-14-swap: approach(good) → approach(good) 같음 p(now)=0.27 p(base key) 0.25→0.27 lat=0.21
+S4-K-14-numeric: approach(good) → approach(good) 같음 p(now)=0.29 p(base key) 0.25→0.29 lat=0.25
+S4-K-14-shuffle: approach(good) → m1_toward(good) 바뀜 p(now)=0.28 p(base key) 0.25→0.23 lat=0.21
+S4-K-20-swap: retreat(bad) → FAIL(other) 바뀜 p(now)=0.00 p(base key) 0.24→0.00 lat=0.29
+S4-K-20-numeric: retreat(bad) → approach(good) 바뀜 p(now)=0.21 p(base key) 0.24→0.10 lat=0.29
+S4-K-20-shuffle: retreat(bad) → approach(good) 바뀜 p(now)=0.15 p(base key) 0.24→0.11 lat=0.24
+S5-N-14-swap: m1_away(-) → m1_away(-) 같음 p(now)=0.41 p(base key) 0.41→0.41 lat=0.21
+S5-N-14-numeric: m1_away(-) → m1_away(-) 같음 p(now)=0.37 p(base key) 0.41→0.37 lat=0.21
+S5-N-14-shuffle: m1_away(-) → m1_backleft(-) 바뀜 p(now)=0.37 p(base key) 0.41→0.05 lat=0.20
+S5-N-20-swap: m1_away(-) → m1_away(-) 같음 p(now)=0.29 p(base key) 0.35→0.29 lat=0.29
+S5-N-20-numeric: m1_away(-) → m1_away(-) 같음 p(now)=0.27 p(base key) 0.35→0.27 lat=0.22
+S5-N-20-shuffle: m1_away(-) → retreat(-) 바뀜 p(now)=0.18 p(base key) 0.35→0.13 lat=0.29
+S5-K-14-swap: m1_away(-) → m1_away(-) 같음 p(now)=0.23 p(base key) 0.26→0.23 lat=0.27
+S5-K-14-shuffle: m1_away(-) → m3_backleft(-) 바뀜 p(now)=0.24 p(base key) 0.26→0.13 lat=0.23
+S5-K-14-numeric: m1_away(-) → m1_away(-) 같음 p(now)=0.35 p(base key) 0.26→0.35 lat=0.26
+S5-K-20-swap: m1_away(-) → retreat(-) 바뀜 p(now)=0.21 p(base key) 0.26→0.14 lat=0.21
+S5-K-20-numeric: m1_away(-) → m1_away(-) 같음 p(now)=0.28 p(base key) 0.26→0.28 lat=0.21
+S5-K-20-shuffle: m1_away(-) → retreat(-) 바뀜 p(now)=0.32 p(base key) 0.26→0.06 lat=0.26
+S6-N-14-swap: m1_left(good) → m1_left(good) 같음 p(now)=0.29 p(base key) 0.61→0.29 lat=0.36
+S6-N-14-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.55 p(base key) 0.61→0.55 lat=0.33
+S6-N-14-shuffle: m1_left(good) → m3_backleft(good) 바뀜 p(now)=0.30 p(base key) 0.61→0.04 lat=0.49
+S6-N-20-swap: m1_left(good) → m1_left(good) 같음 p(now)=0.36 p(base key) 0.41→0.36 lat=0.40
+S6-N-20-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.38 p(base key) 0.41→0.38 lat=0.26
+S6-N-20-shuffle: m1_left(good) → m1_left(good) 같음 p(now)=0.34 p(base key) 0.41→0.34 lat=0.21
+S6-K-14-swap: m1_left(good) → m1_left(good) 같음 p(now)=0.45 p(base key) 0.67→0.45 lat=0.21
+S6-K-14-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.60 p(base key) 0.67→0.60 lat=0.22
+S6-K-14-shuffle: m1_left(good) → m1_right(good) 바뀜 p(now)=0.56 p(base key) 0.67→0.39 lat=0.46
+S6-K-20-swap: m1_left(good) → m1_left(good) 같음 p(now)=0.47 p(base key) 0.45→0.47 lat=0.52
+S6-K-20-numeric: m1_left(good) → m1_left(good) 같음 p(now)=0.32 p(base key) 0.45→0.32 lat=0.25
+S6-K-20-shuffle: m1_left(good) → m1_frontright(good) 바뀜 p(now)=0.36 p(base key) 0.45→0.06 lat=0.22
+S7-N-14-swap: m1_away(other) → retreat(good) 바뀜 p(now)=0.28 p(base key) 0.26→0.21 lat=0.23
+S7-N-14-numeric: m1_away(other) → retreat(good) 바뀜 p(now)=0.36 p(base key) 0.26→0.16 lat=0.26
+S7-N-14-shuffle: m1_away(other) → eat(good) 바뀜 p(now)=0.50 p(base key) 0.26→0.06 lat=0.29
+S7-N-20-swap: retreat(good) → eat(good) 바뀜 p(now)=0.24 p(base key) 0.31→0.22 lat=0.35
+S7-N-20-numeric: retreat(good) → retreat(good) 같음 p(now)=0.29 p(base key) 0.31→0.29 lat=0.38
+S7-N-20-shuffle: retreat(good) → retreat(good) 같음 p(now)=0.32 p(base key) 0.31→0.32 lat=0.30
+S7-K-14-swap: eat(good) → m1_away(other) 바뀜 p(now)=0.27 p(base key) 0.40→0.15 lat=0.22
+S7-K-14-numeric: eat(good) → eat(good) 같음 p(now)=0.34 p(base key) 0.40→0.34 lat=0.27
+S7-K-14-shuffle: eat(good) → eat(good) 같음 p(now)=0.49 p(base key) 0.40→0.49 lat=0.21
+S7-K-20-numeric: eat(good) → eat(good) 같음 p(now)=0.32 p(base key) 0.27→0.32 lat=0.31
+S7-K-20-swap: eat(good) → retreat(good) 바뀜 p(now)=0.27 p(base key) 0.27→0.03 lat=0.46
+S7-K-20-shuffle: eat(good) → eat(good) 같음 p(now)=0.29 p(base key) 0.27→0.29 lat=0.44

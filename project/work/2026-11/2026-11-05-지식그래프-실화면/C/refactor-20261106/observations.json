@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "902721ec505df42d74d0b2d245ed34a049faadad",
+  "status": "final-report-synced-cloud-trial-world-deletion-outstanding",
+  "authority": "Supplemental observations from the HEAD-owned final-code live report; no new function trace, policy-wide pass or promotion of historical evidence.",
+  "historicalEvidence": {
+    "screenInstalledSourceCommit": "76563bf3ac3af56241bb796c6510ad7e96c3ccd7",
+    "inferenceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0",
+    "unchanged": true
+  },
+  "testWorld": {
+    "id": "97b88eb024da6d5794f65879c2592dcc",
+    "name": "rfmaint1106",
+    "slot": 7,
+    "userWorlds": "1-6 excluded per report"
+  },
+  "inputs": [
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/install-result.json",
+      "stagedPath": "C/refactor-20261106/install-result.json",
+      "sha256": "dce641481d9a733e650f81cf94c72cdbf00ec5d43f8059b20d2c53ecfed2ffd4",
+      "bytes": 378
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/installed-source-sha256.json",
+      "stagedPath": "C/refactor-20261106/installed-source-sha256.json",
+      "sha256": "45c436fc667f42c83dbd32392ff363c0e107735f05f83f8f26e2c4c1137b5f90",
+      "bytes": 23100
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/down-t600-619.txt",
+      "stagedPath": "C/refactor-20261106/down-t600-619.txt",
+      "sha256": "a27b5fe32814186fe545925e66bf3c99e9246b7ae7e317b7255978b508e9bb16",
+      "bytes": 79073
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/persistence-comparison.json",
+      "stagedPath": "C/refactor-20261106/persistence-comparison.json",
+      "sha256": "6e52115207c57d61a9e307d95fa9860de384b5b5a614b55077b4c61d693b48ed",
+      "bytes": 2975
+    },
+    {
+      "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/리팩토링-20261106/18-review-live-observation.md",
+      "stagedPath": "C/refactor-20261106/18-review-live-observation.md",
+      "sha256": "fc1f958fe57a2ef4ae42a0b525250c220df549f04a80dbb080edd24540efffe5",
+      "bytes": 6679
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/restore.log",
+      "stagedPath": "C/refactor-20261106/restore.log",
+      "sha256": "8951c6c3826b3cf6a8d06caa549ccfe4a591c1aee5c433a64d17b7e09ba35bbc",
+      "bytes": 296
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/restored-state.json",
+      "stagedPath": "C/refactor-20261106/restored-state.json",
+      "sha256": "75468c1f79d7e50b05e544e0d65f2607967dda140b790837412a9a20f9440229",
+      "bytes": 894
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/cloud-after-exit.txt",
+      "stagedPath": "C/refactor-20261106/cloud-after-exit.txt",
+      "sha256": "5a0b8d3dfd018cf0ad97e4c56f718c6eb637c81daf3a0c746ef2f10d868fb59e",
+      "bytes": 3899
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/Player-first.log",
+      "stagedPath": "C/refactor-20261106/Player-first.log",
+      "sha256": "c3821cdd65c449381f6df8020e4f445f291e2bc2f390e6c45acf157950f61336",
+      "bytes": 404534
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/Player-second.log",
+      "stagedPath": "C/refactor-20261106/Player-second.log",
+      "sha256": "80789b955b1bd7bba3aff69e97c92d129c9951160b9acdb1dfefc5dcb49ba60a",
+      "bytes": 42700
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/rejoin-members.png",
+      "stagedPath": "C/refactor-20261106/rejoin-members.png",
+      "sha256": "36020a367d4f94172987890f0c8e9a8848ecd8c01b13ed89ecd551e049f59509",
+      "bytes": 86035
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/tablet-viewonly-restored.png",
+      "stagedPath": "C/refactor-20261106/tablet-viewonly-restored.png",
+      "sha256": "0312ff14fdce28a3cd6ae4a0d6548388ee3e7860880c16d1c750040b766558bf",
+      "bytes": 45361
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/tablet-end-disconnected.png",
+      "stagedPath": "C/refactor-20261106/tablet-end-disconnected.png",
+      "sha256": "ed911167c33854f059d79e48658e3aeb72f3320b0036609eaecde34713330038",
+      "bytes": 172646
+    },
+    {
+      "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/리팩토링-20261106/15-unity-and-live.md",
+      "stagedPath": "C/refactor-20261106/15-unity-and-live.md",
+      "sha256": "5b09a387725610760ae97d344ce193c82c35270c5e54b5e5e2fa0f5ec2fa2409",
+      "bytes": 19835
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/restore-after-cleanup-retry.log",
+      "stagedPath": "C/refactor-20261106/restore-after-cleanup-retry.log",
+      "sha256": "8951c6c3826b3cf6a8d06caa549ccfe4a591c1aee5c433a64d17b7e09ba35bbc",
+      "bytes": 296
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/mousekeys-before.json",
+      "stagedPath": "C/refactor-20261106/mousekeys-before.json",
+      "sha256": "f687691857a12e2882bf121dec80cec1ab9ce9cdfcf5d6524e46fea3955e7a79",
+      "bytes": 118
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/mousekeys-after.json",
+      "stagedPath": "C/refactor-20261106/mousekeys-after.json",
+      "sha256": "f687691857a12e2882bf121dec80cec1ab9ce9cdfcf5d6524e46fea3955e7a79",
+      "bytes": 118
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/cloud-cleanup-retry.txt",
+      "stagedPath": "C/refactor-20261106/cloud-cleanup-retry.txt",
+      "sha256": "56ff7289d5709fa826b636f7d83f120d10b2cd1c24219333e4189cd35536e2d0",
+      "bytes": 3595
+    },
+    {
+      "originalPath": "C:/Dev/_scratch/refactor-maint-live-20261106/tablet-final-disconnected.png",
+      "stagedPath": "C/refactor-20261106/tablet-final-disconnected.png",
+      "sha256": "2f6b6517cdf5bcf990ffe865e3c327eae6647e6ad9cac0fa64699376e1602791",
+      "bytes": 171498
+    }
+  ],
+  "observations": [
+    {
+      "id": "RF902-plan-craft-place-next",
+      "status": "observed",
+      "capability": "Actual natural-language plan, place/craft completion and next-goal selection",
+      "developmentCapabilities": [
+        "F.chat-mention",
+        "F.llm-goal",
+        "F.plan-queue",
+        "F.place-goal",
+        "F.craft",
+        "F.exp-memory"
+      ],
+      "relatedProductFeatures": [
+        "slash:ai"
+      ],
+      "evidence": {
+        "document": "C/refactor-20261106/15-unity-and-live.md",
+        "section": "3.1",
+        "times": [
+          "t426.2",
+          "t441.6",
+          "t444.4",
+          "t445.0",
+          "t458.2"
+        ],
+        "playerLog": "C/refactor-20261106/Player-first.log"
+      },
+      "facts": [
+        "Actual Gemini report1 selected place CopperAnvil base then craft CopperSword 1.",
+        "Anvil placement and memory, sword inventory +1 and CopperBar -5, two EXP goal runs completed.",
+        "plan_done report2 selected gather Wood 15."
+      ],
+      "boundary": "Testcmd supplied anvil and bars. This one sequence does not verify every recipe, station path, memory retrieval, goal kind or real-model provider."
+    },
+    {
+      "id": "RF902-members-stop",
+      "status": "observed",
+      "capability": "Multiple members, host goal replacement and all-stop",
+      "developmentCapabilities": [
+        "F.multi-ai",
+        "F.goal-cmd",
+        "F.host-orders",
+        "F.action-select"
+      ],
+      "relatedProductFeatures": [
+        "slash:ai"
+      ],
+      "evidence": {
+        "document": "C/refactor-20261106/15-unity-and-live.md",
+        "section": "3.1",
+        "times": [
+          "t503.1",
+          "t659.4"
+        ],
+        "playerLog": "C/refactor-20261106/Player-first.log"
+      },
+      "facts": [
+        "Untargeted /ai stop dropped pending report4 and turned auto off.",
+        "Gemini explore rev11/source host; ChatGPT Wood100 rev1/source host replaced by follow rev2.",
+        "/ai all stop cancelled both goals and Gemini tunnel skill; final first-process log comparison confirms DECISION SEND 0 after t659.4 through process end."
+      ],
+      "boundary": "Upper bridge intentionally stopped at16:57:27. Subsequent upper connection failures are test environment state, not established regression. This scenario does not verify every late response or interruption permutation."
+    },
+    {
+      "id": "RF902-own-door",
+      "status": "observed",
+      "capability": "Remember own door, open, cross, close and arrive",
+      "developmentCapabilities": [
+        "F.my-door",
+        "F.door-pass",
+        "F.place-goal",
+        "F.skill-goto"
+      ],
+      "relatedProductFeatures": [
+        "slash:ai"
+      ],
+      "evidence": {
+        "document": "C/refactor-20261106/15-unity-and-live.md",
+        "section": "3.1",
+        "times": [
+          "t786.8",
+          "t816.1",
+          "t816.4",
+          "t817.6",
+          "t819.1"
+        ],
+        "playerLog": "C/refactor-20261106/Player-first.log"
+      },
+      "facts": [
+        "WoodDoor placed at (0,-5) and remembered as my door without edge plan.",
+        "Goto (0,-2) detected own door, opened once, crossed, closed once and arrived."
+      ],
+      "boundary": "Fixture used arena go (also replenishes health/weapon), dig (already clear, walls0) and supplied door. One A* replan after door close was observed; not classified as baseline regression. Does not cover every door ownership/overlap/corridor case. No movetrace CSV was generated: instrumentation is Claude-only and active members were GPT/Gemini. Door timing is supported by Player logs, not frame-level CSV."
+    },
+    {
+      "id": "RF902-save-reentry",
+      "status": "observed",
+      "capability": "Normal save, complete process exit, same-world reentry and restoration",
+      "developmentCapabilities": [
+        "F.ai-char-save",
+        "F.explore-memory",
+        "F.my-door",
+        "F.multi-ai"
+      ],
+      "relatedProductFeatures": [
+        "slash:ai"
+      ],
+      "evidence": {
+        "document": "C/refactor-20261106/15-unity-and-live.md",
+        "section": "3.2",
+        "comparison": "C/refactor-20261106/persistence-comparison.json",
+        "firstProcessLog": "C/refactor-20261106/Player-first.log",
+        "secondProcessLog": "C/refactor-20261106/Player-second.log",
+        "rejoinScreenshot": "C/refactor-20261106/rejoin-members.png"
+      },
+      "facts": [
+        "First process t941.3 saved both characters on ECS unload; normal menu exit completed and process0 confirmed at17:05:48.",
+        "A new process started17:05:59; same slot7/world and host character4 reentered. At second-process t161.5 GPT/Gemini autojoined using existing GUIDs/inventory without another /ai on.",
+        "Recorded comparison after save/exit versus rejoin: 15 fields per member,30/30 same: characterGuid, inventory, inventoryObjectNames, inventoryAuxData, skills, seen, visited, oreXY, oreId, stationId, stationXY, stationPlaced, edgeMyDoors, edgeDoors and drops. Participation settings also matched.",
+        "Without fresh supply or placement, /ai gemini goto0 -8 at second-process t238.6→242.4 opened restored own door(0,-5) once, crossed, closed once and completed in3.8s."
+      ],
+      "boundary": "Observed save/reentry subset, not every persistent field or every scenario. Arena testcmd had replaced CopperSword with WoodSword before final save; that difference is not save loss. Trial-world deletion/Cloud cleanup is separately outstanding below."
+    },
+    {
+      "id": "RF902-down-unclassified",
+      "status": "observed-cause-unresolved-no-new-refactor-blocker-identified",
+      "capability": "Death, automatic revival and subsequent goal reassessment",
+      "developmentCapabilities": [
+        "F.vitals",
+        "F.skill-dig",
+        "F.action-select"
+      ],
+      "relatedProductFeatures": [],
+      "evidence": {
+        "document": "C/refactor-20261106/15-unity-and-live.md",
+        "section": "3.1",
+        "diagnostic": "C/refactor-20261106/down-t600-619.txt",
+        "times": [
+          "t605.9"
+        ],
+        "review": "C/refactor-20261106/18-review-live-observation.md"
+      },
+      "facts": [
+        "Gemini health100→-1, DOWN1 during tunnel, revival after5.1s.",
+        "Prior tunnel plan included WallNaturalExplosiveBlock2; visible enemy/projectile diagnostic did not identify a cause."
+      ],
+      "boundary": "Explosion wall remains a cause candidate; not proven cause, normal outcome or safety-policy success. No same-scene baseline run or complete damage-source trace was supplied. The review did not change code or require a new game run.",
+      "reviewConclusion": "HEAD accepted limited a07166f..902721e source/log review: relevant mining/tunnel/damage instrumentation behavior preserved; no evidence identifying a new refactor regression blocker. Actual damage source remains unresolved."
+    }
+  ],
+  "limitations": [
+    "Capability-specific observations only; development confirmed-line signatures remain unchanged.",
+    "Historical76563bf screen observations and e82eb87 inference retain their original scope; supplemental current-code observations do not rewrite them.",
+    "Water bridges, threats behind closed doors, chunk unload/door disappearance and all other historical scenarios were not exhaustively repeated.",
+    "No complete function trace/coverage, policy-wide pass or runtime performance speedup is asserted.",
+    "DOWN actual damage source remains unresolved; limited review found no evidence identifying a new refactor regression blocker.",
+    "movetrace CSV was not generated; door observation uses actual Player logs.",
+    "Final local restoration after cleanup retry verified0differences at17:36:28. Trial-world Cloud deletion is deferred by user to a separate task; actual redownload was observed. NumLock prior actual toggle state is unobserved."
+  ],
+  "environmentRestoration": {
+    "status": "local-and-registry-restoration-verified-cloud-trial-deletion-incomplete",
+    "evidence": [
+      "C/refactor-20261106/15-unity-and-live.md#4",
+      "C/refactor-20261106/restore.log",
+      "C/refactor-20261106/restored-state.json",
+      "C/refactor-20261106/cloud-after-exit.txt",
+      "C/refactor-20261106/tablet-viewonly-restored.png",
+      "C/refactor-20261106/tablet-end-disconnected.png"
+    ],
+    "verified": {
+      "modFiles": 54,
+      "aiPlayersFiles": 43,
+      "localSteamFiles": 248,
+      "remoteFiles": 40,
+      "registrySame": true,
+      "differenceGroups": 0,
+      "gameUnityBridgeStopped": true,
+      "localTrialFilesAbsent": true,
+      "actualUsagePreserved": true,
+      "foldRemoteViewOnlyRestored": true,
+      "foldRemoteDisconnected": true
+    },
+    "outstanding": {
+      "trialWorld": "rfmaint1106",
+      "uiSlot": 7,
+      "fileIndex": 6,
+      "worldId": "97b88eb024da6d5794f65879c2592dcc",
+      "status": "deferred-to-separate-user-task-game-ui-and-cloud-deletion-incomplete",
+      "reason": "FoldRemote refused PC input even after one normal reconnect; documented Windows UI tools could not hold the deletion control. Further environment debugging stopped per HEAD.",
+      "cloudEvidence": "17:20:43–44 Upload OK for worldinfos/6.worldinfo, worlds/6.world.gzip and worldgenparams/6.json; local restore is not server deletion proof.",
+      "requiredFollowup": "Only on a separate user request, delete this trial world using a working normal UI and confirm Cloud deletion; user worlds1–6 excluded."
+    },
+    "finalFollowup": {
+      "reportSection": "5.1",
+      "time": "2026-11-06T17:36:28+09:00",
+      "userDecision": "Stop cleanup attempts and finish; trial-world deletion will be a separate user-requested task.",
+      "restoration": "mod54/AIPlayers43/localsteam248/remote40/registry identical,verify0; game/Unity stopped, no world entry/product test/model/bridge run during cleanup retry.",
+      "inputState": "MouseKeys collected settings Flags62/MaximumSpeed/TimeToMaximumSpeed/CtrlSpeed unchanged; no activation observed. Numpad button-DOWN/release was not executed. NumLock actual prior toggle state was not captured, so equality is not claimed.",
+      "foldRemote": "Input mode unchanged; used only for capture, then normally disconnected.",
+      "cloudState": "Trial-world3files were actually redownloaded on17:31:03–04. Direct documented drag also failed to delete. Server deletion remains incomplete.",
+      "evidence": [
+        "C/refactor-20261106/15-unity-and-live.md#5.1",
+        "C/refactor-20261106/restore-after-cleanup-retry.log",
+        "C/refactor-20261106/mousekeys-before.json",
+        "C/refactor-20261106/mousekeys-after.json",
+        "C/refactor-20261106/cloud-cleanup-retry.txt",
+        "C/refactor-20261106/tablet-final-disconnected.png"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+== ../2026-11-08-path-optimization/graph-stage/source-pins/agreement.md:5-5 sha256=a1ed7bf0656a9144741b43004243acd9953153d089af38ad61b693eedc8843ae
+5: 목표는 Gemini 응답 이후 후보 준비에서 발생한 중복 경로 계산과 캐시 전체삭제, 수천 목적지의 동기 처리를 개선하여 게임이 장시간 멈추는 원인을 해소하는 것이다.
+== ../2026-11-08-path-optimization/graph-stage/source-pins/agreement.md:7-7 sha256=a1ed7bf0656a9144741b43004243acd9953153d089af38ad61b693eedc8843ae
+7: 모든 후보와 행동 선택권, 선택 전 필요한 위험 정보, 도구·문·목적지 예외, 지식 공개 및 정상 게임 조건을 보존한다. 기존 합의에 따라 후보 상한·목표별 숨김·대표지점 압축을 임의로 복원하지 않는다.

@@ -1,0 +1,198 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 3. 목표량·귀환·후속 작업 연결",
+        "doc": "expeditionAgreement",
+        "end": 38,
+        "line": 30,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+        "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+        "start": 30
+      }
+    ],
+    "id": "P.expedition-return",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 38,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+        "start": 30
+      }
+    ],
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "임의 목표량 상한은 별도 제약해제 합의에 따르며 목표량과 실행 묶음을 분리한다. 단순 목표 달성과 명시 상한을 구별하고 귀환 뒤 보관·강화·원작업을 이어 간다. 새 발견만으로 귀환을 자동 연장하지 않는다.",
+    "title": "실제 누적량과 귀환 목적·원작업 재개를 연결",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.ActiveLimits()",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.BindPlanLimits(System.Collections.Generic.List<PlanStep>, System.Collections.Generic.List<HostOrder>)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.Observe(World, Entity)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGathering.LimitReason(World, Entity, AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGathering.cs#AIGathering.WallLimit(World, Entity, int2, string)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnGoalEnded(World, Entity, string, string, string, string)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.SetGoalFrom(World, Entity, string, string, int, string, string, int, int, string, string, int, int)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 38,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition-return",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.StartNextStep(World, Entity, float)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 3. 목표량·귀환·후속 작업 연결",
+          "doc": "expeditionAgreement",
+          "end": 38,
+          "line": 30,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+          "start": 30
+        }
+      ],
+      "from": "P.expedition",
+      "id": "E181",
+      "kind": "채집·이동·귀환 합의의 구성",
+      "to": "P.expedition-return",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 3. 목표량·귀환·후속 작업 연결",
+          "doc": "expeditionAgreement",
+          "end": 38,
+          "line": 30,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+          "start": 30
+        }
+      ],
+      "from": "P.unrestricted-work",
+      "id": "E186",
+      "kind": "상한 해제와 실제 실행 묶음·귀환 의미 연결",
+      "to": "P.expedition-return",
+      "type": "reference"
+    }
+  ]
+}

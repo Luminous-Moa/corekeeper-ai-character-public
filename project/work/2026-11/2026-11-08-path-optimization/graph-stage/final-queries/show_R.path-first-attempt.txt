@@ -1,0 +1,78 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 1차 실기 결과",
+        "doc": "pathFirstLive",
+        "end": 40,
+        "line": 28,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-validation.md",
+        "sha256": "c33b5e5c62ac0fd27967bf59d3929f4fec70b24324bc6ac250d0e6f16a5825f4",
+        "start": 28
+      },
+      {
+        "anchor": "## 1차 실기 최종 요청·정상 종료·복원",
+        "doc": "pathFirstLive",
+        "end": 62,
+        "line": 51,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-validation.md",
+        "sha256": "c33b5e5c62ac0fd27967bf59d3929f4fec70b24324bc6ac250d0e6f16a5825f4",
+        "start": 51
+      },
+      {
+        "anchor": "## 판정",
+        "doc": "pathReview",
+        "end": 17,
+        "line": 13,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-final.md",
+        "sha256": "ecaa911e6bafec074359a337828c55830d0c2773a58e3da6782342099a0c54ad",
+        "start": 13
+      }
+    ],
+    "id": "R.path-first-attempt",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 40,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-validation.md",
+        "start": 28
+      },
+      {
+        "end": 62,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-validation.md",
+        "start": 51
+      },
+      {
+        "end": 17,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/review-final.md",
+        "start": 13
+      }
+    ],
+    "status": "참고·과거 후보·실기 미통과·복원 완료",
+    "summary": "오프라인과 Unity 검수 뒤 ai2를 시험했다. 7526 frontier 준비가147.9초·54.6초CPU 후 위협 변화로 취소됐고 별도258개 전투 요청은255 API 상한으로HTTP400이었다. UI118~120fps는 유지됐으나 성공 응답·몸실행은 미확인이다. 설치·월드·자료·레지스트리·시험스위치는 시험 전과 차이0으로 복원했다.",
+    "title": "2a0112d 프레임 분산 후보의 1차 실기 미통과",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 1차 실기 결과",
+          "doc": "pathFirstLive",
+          "end": 40,
+          "line": 28,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-validation.md",
+          "sha256": "c33b5e5c62ac0fd27967bf59d3929f4fec70b24324bc6ac250d0e6f16a5825f4",
+          "start": 28
+        }
+      ],
+      "from": "P.path-optimization",
+      "id": "E209",
+      "kind": "참고: 1차 실기 실패와 복원",
+      "to": "R.path-first-attempt",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+º∫∞¯: «¡∑ŒººΩ∫(PID 34604)∞° ¡æ∑·µ«æ˙Ω¿¥œ¥Ÿ.
+01:32:09 S10 fake bridge up: fake-bridge listening on http://127.0.0.1:8331 (6 steps, log C:\Dev\_scratch\refactor-runs\L1\fake-requests.jsonl)
+01:32:09 S10 goal auto
+sent /ai goal auto
+[AIPlayerSpike] t=1818.7 @Claude PLANNER: upper LLM unavailable (limit: usage 99% > 85% (fake bridge)); auto stays on, asking again in 120s
+[AIPlayerSpike] t=1938.7 @Claude PLANNER: report #9 answer after 0.0s code=200 error=parse body={"ok":false,"member":"claude","cli":"fake","model":null,"effort":null,"ms":5,"report_id":9,"goal_rev":20,"answer":null,"raw":"this is not json","error":"parse","detail":"no-json","prompt_chars":0,"turn_ch
+TIMEOUT PLANNER: report #[0-9]+ APPLY decision=set goal=follow
+[AIPlayerSpike] t=2118.8 @Claude GOAL done rev=27: Ìò∏Ïä§Ìä∏ Îî∞ÎùºÍ∞ÄÍ∏∞ (3 minutes, upper-LLM follow) after 180.0s
+TIMEOUT code=409
+TIMEOUT answer DROPPED
+[AIPlayerSpike] t=2244.0 @Claude PLANNER: report #14 APPLY decision=hold goal=   why='fake bridge step 6' after 0.0s
+[AIPlayerSpike] t=2364.0 @Claude PLANNER: report #15 sent trigger=hold_recheck rev=22 reportChars=4730 buildMs=4.4: {"trigger":"hold_recheck","goal":{"source":"llm:claude#10","text":"Ìò∏Ïä§Ìä∏ Îî∞ÎùºÍ∞ÄÍ∏∞"},"why_ended":"3Î∂Ñ Îî∞ÎùºÍ∞ê","events":[],"me":{"hp":"105/100","hunger":77,"hand":"None","cor
+TIMEOUT APPLY decision=hold
+01:42:20 S10 stop
+sent /ai stop
+º∫∞¯: «¡∑ŒººΩ∫(PID 18244)∞° ¡æ∑·µ«æ˙Ω¿¥œ¥Ÿ.
+01:42:22 S10 done

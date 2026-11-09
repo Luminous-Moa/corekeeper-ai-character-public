@@ -1,0 +1,4 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><LangVersion>8.0</LangVersion><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings></PropertyGroup>
+<ItemGroup><Compile Include="../../Assets/AIPlayerSpike/Scripts/AICook.cs" Link="Production/AICook.cs" /></ItemGroup>
+</Project>

@@ -1,0 +1,157 @@
+{
+  "scope": "Evidence actually read for six bounded supplements; graph publication input is immutable baseline246 copy.",
+  "graph": {
+    "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동판단필수보완/baseline-246/graph.json",
+    "sha256": "cd39047d5814cf565d1a071ed41bd89c15fec025b1de76b6a714df3f31bfcbad"
+  },
+  "files": [
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/A/condition-effect-table-crosswalk-v2/condition-effect-table-crosswalk.json",
+      "sha256": "5d3905eb829fab8cf807c9d3f9139e6def84ee59d52a5b4d09f718538d6a0528"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동그래프추가기록/discovery/residual-B/new-bounded-findings-evidence.json",
+      "sha256": "df80a692e1dd819809307d577cabe7e62969babd9d31c72351cc23f3bbb99138"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동그래프추가기록/discovery/residual-D/specific-static-attribution-candidates.json",
+      "sha256": "27cf4fbdc581812e15f04b72b347e8460869857b79f1749586eab15daf634b46"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동그래프추가기록/discovery/residual-report.md",
+      "sha256": "6a5e62f258fe14f38e163483e27a6c0d41cea50078227b31c4cdea0af65c2dd2"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동판단필수보완/00-agreement.md",
+      "sha256": "257383d28e570eb3a18f495c2fabd326017e20a459030e70afbc87e0f383a1fc"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동판단필수보완/baseline-246/graph.json",
+      "sha256": "cd39047d5814cf565d1a071ed41bd89c15fec025b1de76b6a714df3f31bfcbad"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동판단필수보완/six/build_six.py",
+      "sha256": "62531f81c9d76affd1349d161589044e5e739fb00b43796c758cf621b935b7ca"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-08-행동판단필수보완/six/revision-206-before.json",
+      "sha256": "de7e5995f2c2589c9a57a0878010b566e48f860b6d3875d0d90d4c303d604308"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/ConditionEffect.cs",
+      "sha256": "d4949f2c6f748bd995e57eaad386b7d08870d25eeedfe15ce108956c55c048bd"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/ConditionID.cs",
+      "sha256": "f5b47f158b3d48e8bb7a8d934857d3e7116da08920ae9eb58ec5d2c6d439e7f6"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/ObjectID.cs",
+      "sha256": "9e8c46bf33b5030392aab2512acf4fe391d2986624b3754822c7403f91c91bc3"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/OffHandMechanic.cs",
+      "sha256": "1ead9bffe10f65e9463a3b2b4da88d56ac2b73d9e162f792f3b373d85b23a96e"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+      "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/AuraDistanceOverrideConverter.cs",
+      "sha256": "1248f740ebcc00be8d21263881e02bc51c00d696c0c67874418bd702ca4104cc"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/MovementSpeedConverter.cs",
+      "sha256": "036c5f4ceb1d8a96a956f2e2ec3bb319a382b2072ab95f877cbe65363ee83d6a"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/OffHandConverter.cs",
+      "sha256": "a55966f4dc84ef00fc42b3cc0e93aac0810ce65830fdc24eafaaafa3e95263fa"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/RangeAttackStateConverter.cs",
+      "sha256": "e3388afbd3abfb9ab0eacc8526bd73d7ed516a644b2c2645e48c21a125d7383e"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/SupportConditionsConverter.cs",
+      "sha256": "8d4cbce3e6c6417adcbfffa34ea4e5482c50f5411557bdc8cb63a44a614bc8a2"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AttackSystem.cs",
+      "sha256": "a7938e8c736e1c7a873a4ffc2f8de39ca53686a3a424c4a0e7ce1aadfe767c0d"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+      "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/BeamWeaponSlot.cs",
+      "sha256": "e0574759aa5a1076e90089a567ea0a6b6e88137831107ab96e5c1bf5176ed894"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ClearInputOnStunnedSystem.cs",
+      "sha256": "4324e25f196b8d9d33bb4d3630548395eba151c46e31495264b60796bdb463df"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/DealDamageFromConditionSystem.cs",
+      "sha256": "bed5bb3fee84f61542c75750c23b8a0f5b76bd1ef8f5d522a1b52c8d0df3495c"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+      "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerController.cs",
+      "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+      "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/OffHandEquipmentUpdateSystem.cs",
+      "sha256": "c208c839e792095447fd02332e2e810b5380df3aec4531bf0fba7237ad7c3582"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+      "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerVelocityCalculationSystem.cs",
+      "sha256": "550f48d95dfefe1c262bb3bfad6d25f8be45bccf31291b89f08eca082bd663ce"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProjectileSystem.cs",
+      "sha256": "90d385da6f4da3625ea76cfc2482ef8db9f4de82ca1c2e4f0584f5d5c87ce5c4"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RangeAttackStateSystem.cs",
+      "sha256": "1a1c64b3e41ee02dd69823b2656b10be7bb7a179e3874c3c299f55757f1e5a4c"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SetPlayerDirectionSystem.cs",
+      "sha256": "97f507e5115076901eaa1d2c1644b730ef8df376d5a51169e5d9cd01c0c0dc9e"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+      "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/UpdateMovementSpeedSystem.cs",
+      "sha256": "662b5dd67625556d08037f96a2d2131f520e21a7ec84446b1863c420ed5c54aa"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/final/collection.json",
+      "sha256": "34207afb4a63bfaaaff0a90c726c32882c4494a38cc0d7cc2f0dcbdc4ad83fb8"
+    },
+    {
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+      "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77"
+    },
+    {
+      "path": "C:/Users/<USER>/.codex/plugins/cache/head-agent-core/head-context/0.9.6/skills/start-job/SKILL.md",
+      "sha256": "f652b35d9ee1827a49f1b505836b62d60c3f2b8eec1a49f01535f931aa93274a"
+    }
+  ]
+}

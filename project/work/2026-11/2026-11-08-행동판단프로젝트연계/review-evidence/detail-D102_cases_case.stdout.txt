@@ -1,0 +1,391 @@
+{
+  "node": {
+    "action": "conditional_sprinkler_water",
+    "conditional": true,
+    "evidenceContext": {
+      "fixedCodeRoot": "../게임원본-상호작용/code",
+      "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler",
+      "researchRoot": "../2026-11/2026-11-07-행동결과완결"
+    },
+    "id": "D102:cases:case",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "2dbdfa906edad9f7e97d2a8095aeceac171e686e7fe3cec7c6b2ed23942d67b0",
+      "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+      "pointer": "/cases/0"
+    },
+    "producerStatus": "pending_independent_review",
+    "recordFormat": "scoped_additional_record",
+    "roleBindings": [
+      {
+        "conditional": true,
+        "objectId": 6653,
+        "role": "sprinkler_source",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3112227893429093780",
+        "variation": 0
+      }
+    ],
+    "runtimeTested": false,
+    "scope": "Previously independently accepted exact detail and source-to-designated-consumer linkage only; conditional static evidence; no runtime success or whole-source completion.",
+    "selectionContext": {
+      "origin": {
+        "normalizedValueSha256": "6865b9913d9bbc47af10dca31a8d4dd7c34c1b01faffc6c98cedb1ff8c4631f7",
+        "path": "../2026-11/2026-11-08-행동그래프추가기록/selection.json",
+        "pointer": "/groups/1/artifacts/0/items/0"
+      },
+      "originalKind": "case",
+      "sourceBindings": [
+        {
+          "objectId": 6653,
+          "role": "sprinkler_source",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3112227893429093780",
+          "variation": 0
+        }
+      ]
+    },
+    "sourceComplete": false,
+    "status": "independent_pass"
+  },
+  "fields": [
+    {
+      "relation": "has_evidence",
+      "field": "action",
+      "id": "D102:cases:case/evidence/action",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "fe8a1b9b5891da9d6cf568e2b8f664923509b1a44a7379591a2ccab5e62b7b5d",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/action"
+      },
+      "value": "conditional_sprinkler_water"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "authoringEvidence",
+      "id": "D102:cases:case/evidence/authoringEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "3863c9f1c4f1dd6eceff19ad2a4c38c2c8b0b19f8b4f47404562e5a59825b9ef",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/authoringEvidence"
+      },
+      "value": {
+        "data": {
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "6098032726540597868"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "3020913871297963637"
+          }
+        },
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-6355672039067043220",
+        "line": 27654,
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+        "rawByteSha256": "4f410b355e01bd28f97c782d1918337f96675051266343837a3a9fa287bf8c10",
+        "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77"
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "build",
+      "id": "D102:cases:case/evidence/build",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "3323ae33cc165f66e9e0a76bea5a6be0a1eb4ab79765c9f45e8721afea4d5c56",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/build"
+      },
+      "value": "26332184"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "failures",
+      "id": "D102:cases:case/evidence/failures",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "9585102ebd5e530dded8029b3e3c8c50db75b5bb276749d3d3df946273e0d20e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/failures"
+      },
+      "value": [
+        "Missing required singleton, source component or eligible tilled tile; positive timer; prior conflicting tile update, no matching submap, needed-tile restrictions or failed ECB playback may prevent world-layer write.",
+        "View creation, OnShow/OnHide, coroutine scheduling, particle quality and renderer are runtime conditions. Disabled-entity inclusion does not establish every disabled object is instantiated or active."
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "graphicalClass",
+      "id": "D102:cases:case/evidence/graphicalClass",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "ed01cffd5b2823b2d022f4f46dfd99acf9009faaa464a89abb0bec2811d8b6eb",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/graphicalClass"
+      },
+      "value": "Sprinkler"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "graphicalComponentKey",
+      "id": "D102:cases:case/evidence/graphicalComponentKey",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "22c8dc247bcb5e7b26338939368fa7aacaba8bb74aefcef6ec7803604299e22e",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/graphicalComponentKey"
+      },
+      "value": "CAB-2ebcba97367158c9b08f790c25d642c9:-7845826632466734182"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "id",
+      "id": "D102:cases:case/evidence/id",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "a785638153042ff4f96e156456021779436ea0e61619306a62bda86bb2394de5",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/id"
+      },
+      "value": "sprinkler:CAB-2ebcba97367158c9b08f790c25d642c9:-3112227893429093780"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "objectId",
+      "id": "D102:cases:case/evidence/objectId",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "ab7646bc6b485b2d61e0744b65f8ad1c8e19f6221338b02e2a5adf42798abcd7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/objectId"
+      },
+      "value": 6653
+    },
+    {
+      "relation": "has_evidence",
+      "field": "roles",
+      "id": "D102:cases:case/evidence/roles",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "18d88d80853bbee1a54c8da949a7c09fbc1c4c5298b462bdfb13feb9b0f41ce7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/roles"
+      },
+      "value": [
+        {
+          "objectId": 6653,
+          "role": "sprinkler_source",
+          "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3112227893429093780",
+          "variation": 0
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "runtimeTested",
+      "id": "D102:cases:case/evidence/runtimeTested",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "2ed27c1421e6928dbe13dbfdb5c59e1045b30341fe7ebe05700006bc5ac572c0",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/runtimeTested"
+      },
+      "value": false
+    },
+    {
+      "relation": "has_evidence",
+      "field": "sourceEvidence",
+      "id": "D102:cases:case/evidence/sourceEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "6cd80454803b9e07ac5ddceee768522e8a80b1d5a8803b7c99607b3c87803ec7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/sourceEvidence"
+      },
+      "value": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+        "pointer": "/1976",
+        "rawByteSha256": "1159cbe4e38042f109aa8e8102a6ebdba67521c4a3a01dfc78263d78bc3b308c",
+        "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "field": "sourceKey",
+      "id": "D102:cases:case/evidence/sourceKey",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "94e435abf7321c723a357624c17702a4d6e669bf5e22867fc09debe6533a7fd8",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/sourceKey"
+      },
+      "value": "CAB-2ebcba97367158c9b08f790c25d642c9:-3112227893429093780"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "status",
+      "id": "D102:cases:case/evidence/status",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "dda9dc7a3226ac6ba6fa558b7a7c2b27ca46a68bd194e3fea122eeffbae9e5de",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/status"
+      },
+      "value": "pending_independent_review"
+    },
+    {
+      "relation": "has_evidence",
+      "field": "variation",
+      "id": "D102:cases:case/evidence/variation",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/variation"
+      },
+      "value": 0
+    },
+    {
+      "relation": "has_flow",
+      "field": "entry",
+      "id": "D102:cases:case/flow/entry",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "a1233bf62b68ff63aba9dece1b855395c4af4260b2f1ba258134e0aca6d0f818",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/entry"
+      },
+      "value": "Conditional converted live source with SprinklerCD and LocalTransform; query includes disabled entities. InitialLoadingDoneCD, TileUpdateBuffer and BeginSimulation ECB singleton required. Runtime schedule, tile and physics state unobserved."
+    },
+    {
+      "relation": "has_flow",
+      "field": "transitions",
+      "id": "D102:cases:case/flow/transitions",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "8ef50e53f2e1e7b87dde26dc0bb534aa9cba5d36da9c82df2fbacf7bc5daabc7",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/transitions"
+      },
+      "value": [
+        {
+          "from": "converted_authoring",
+          "text": "Converter initializes timer with random [0.5,1) seconds.",
+          "to": "initial_timer"
+        },
+        {
+          "from": "elapsed_timer",
+          "text": "If timer>0 subtract delta and return even on crossing zero. Otherwise set random [1,2) seconds, iterate 24 offsets in the -2..2 square excluding (0,0), round each transformed coordinate; only existing dugUpGround type49 without wateredGround type50 queues TileUpdateBuffer Add of type50 preserving dug-up tileset.",
+          "to": "water_tile_request"
+        },
+        {
+          "from": "tile_request",
+          "text": "ECB buffer append must play back. TileUpdate filtering handles clear/duplicate conditions. Server ApplyAdd locates matching submap, checks needed/invalid tile types, then sets or adds layer bit when editor or allowed in playing mode; otherwise with DB may schedule a drop if obtainable. For wateredGround needed types are ground or dugUpGround; invalid types list is empty. Reuse only this accepted tile consumer portion of B watering-can case.",
+          "to": "conditional_submap_write"
+        },
+        {
+          "from": "graphical_show",
+          "text": "OnShow starts particles, random rotation and a coroutine rotating every 0.3 seconds. OnHide stops coroutine and particles; OnSpawn adjusts emission/collision by particle-quality setting. These visual callbacks and scene availability are independent of proof of tile write.",
+          "to": "conditional_particles"
+        }
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "outcomes",
+      "id": "D102:cases:case/result/outcomes",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "1d1dc69d1d90a61a5c277e0fee74cb4223aa4c7dc9b00db441c55a09c7ca2052",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/outcomes"
+      },
+      "value": [
+        {
+          "conditional": true,
+          "endpointType": "conditional_tile_update",
+          "tileType": 50,
+          "tileset": "copied from dugUpGround"
+        },
+        {
+          "conditional": true,
+          "endpointType": "conditional_submap_layer_bit",
+          "tileType": 50
+        },
+        {
+          "conditional": true,
+          "endpointType": "conditional_local_particle_and_rotation"
+        }
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundaries",
+      "id": "D102:cases:case/unknown/boundaries",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "35f0284ff01c5969e12fcd74997ed23f8f2b471edf26aaf3c611fa2e72c33904",
+        "path": "../2026-11/2026-11-07-행동결과완결/full/D/sprinkler/cases.json",
+        "pointer": "/cases/0/boundaries"
+      },
+      "value": [
+        "24 offset iterations are not a proof of 24 distinct world tiles or writes; coordinate rounding, prior tile state, filtering and submap checks affect results.",
+        "The B watering-can evidence reuses only common tile-consumer behavior, not a claim that the sprinkler consumes water or inventory."
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:recording:D102-designated-detail",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "conditional_local_particle_and_rotation",
+      "target": "D102:cases:outcome:2",
+      "kind": "runtime_role_endpoint",
+      "action": null
+    },
+    {
+      "relation": "conditional_submap_layer_bit",
+      "target": "D102:cases:outcome:1",
+      "kind": "runtime_role_endpoint",
+      "action": null
+    },
+    {
+      "relation": "conditional_tile_update",
+      "target": "D102:cases:outcome:0",
+      "kind": "runtime_role_endpoint",
+      "action": null
+    },
+    {
+      "relation": "uses_designated_tile_consumer",
+      "target": "D102:rules:common",
+      "kind": "configuration_consumer",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "case_evidence",
+      "D102:cases:outcome:0"
+    ],
+    [
+      "case_evidence",
+      "D102:cases:outcome:1"
+    ],
+    [
+      "case_evidence",
+      "D102:cases:outcome:2"
+    ],
+    [
+      "sprinkler_source",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-3112227893429093780"
+    ]
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "node": {
+    "action": "unlock_by_contained_object",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "code_linked",
+    "facts": {},
+    "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object",
+    "kind": "claim",
+    "label": "unlock_by_contained_object",
+    "origin": {
+      "normalizedValueSha256": "259256deedf8bd915bf4cbd0522d0012343e75a7b2a9f2baab23d3df0a488bed",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/2/payload/extraction.json/records/42"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "adbd4244d2647db466402d6ae3788e1d43fa345af56eb943620bda1d20ffc152",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42/conditions"
+      },
+      "value": {
+        "inventorySlot": {
+          "addLootFromTable": 0,
+          "autoTransferEnabled": 0,
+          "canOnlyContainOneItemPerSlot": 1,
+          "cantAddObjectsToInventory": 0,
+          "itemsInInventory": [],
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "4264367569285601213"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2030443079484458392"
+          },
+          "maxExtraSize": 0,
+          "objectsGetLockedInPlace": 1,
+          "sizeX": 1,
+          "sizeY": 1,
+          "slotRequirements": [
+            {
+              "acceptsObjectIds": [
+                221
+              ],
+              "acceptsObjectsWithTags": [],
+              "denyLegendaryRarity": 0,
+              "dontShowAnyHint": 0,
+              "requirementAppliesToAllSlots": 1,
+              "showInfoText": 0
+            }
+          ]
+        },
+        "minimumPresence": "at least one matching object in contained buffer; quantity check is not consumed here",
+        "requiredObjectId": 221
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "assetEvidence",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "67776b4f24a76bd09988497bbccf7f5132db9947ba1456545e93822f307887c9",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42/assetEvidence"
+      },
+      "value": [
+        {
+          "data": {
+            "addItemsToNewObject": [],
+            "addLootFromTableToNewObject": 283,
+            "alsoRemoveCollider": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4264367569285601213"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "5960033488801256991"
+            },
+            "objectID": 221,
+            "playEffectOnReinstantiate": 109,
+            "reinstantiateToNewObjectId": 220,
+            "revertToVariationZeroWhenNotContaining": 0,
+            "variationToChangeTo": 0
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-1501839037595068483",
+          "rawByteSha256": "87b322371b8fb311bdc122d0d156ac4e4c98709898a00895cf157ef4cf3d9d70"
+        },
+        {
+          "data": {
+            "addLootFromTable": 0,
+            "autoTransferEnabled": 0,
+            "canOnlyContainOneItemPerSlot": 1,
+            "cantAddObjectsToInventory": 0,
+            "itemsInInventory": [],
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "4264367569285601213"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-2030443079484458392"
+            },
+            "maxExtraSize": 0,
+            "objectsGetLockedInPlace": 1,
+            "sizeX": 1,
+            "sizeY": 1,
+            "slotRequirements": [
+              {
+                "acceptsObjectIds": [
+                  221
+                ],
+                "acceptsObjectsWithTags": [],
+                "denyLegendaryRarity": 0,
+                "dontShowAnyHint": 0,
+                "requirementAppliesToAllSlots": 1,
+                "showInfoText": 0
+              }
+            ]
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:3998730237198325693",
+          "rawByteSha256": "43cd54baa03145b5dfb50f8ff9c8ec7bd58fdc7c06633a51a36c86667f605caf"
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failureBranches",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object/failure/failureBranches",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "649185904db625671f3f16e104905ff6580239599250cc8dc70e82aae78ab5fd",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42/failureBranches"
+      },
+      "value": [
+        "different ID fails slot requirement",
+        "no matching buffer item -> no replacement"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputProcessingConsumer",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object/flow/inputProcessingConsumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "d2a4e9f01028c0a3da1e38e647108655667f88abb78ffecefcb3d4c5b496c5d0",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42/inputProcessingConsumer"
+      },
+      "value": "UI inventory move requests -> MoveAmount -> TryMove -> ChangeVariationWhenContainingObjectSystem"
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "76a9638300e2930706fe94c71879641d3f109c2ed0c7b371dc4023e35f560cb4",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42/result"
+      },
+      "value": {
+        "convertedItems": [],
+        "effect": 109,
+        "lootTable": 283,
+        "oldEntity": "destroy marked; ordinary loot drop suppressed on transformation",
+        "replacementObjectId": 220,
+        "replacementVariation": 0,
+        "serializedAddItems": []
+      }
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unknown",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object/unknown/unknown",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "5c022cc327fee032ad9b19cfcf2f37a2d76f9459db4cbae45f3583f3efe26977",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/42/unknown"
+      },
+      "value": [
+        "actual request/tick and cleanup",
+        "runtime DB selects item settings and converter skips missing IDs",
+        "new loot outcome",
+        "no claim of one-item decrement in replacement branch"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "relation": "governed_by",
+      "node": {
+        "dataset": "base",
+        "evidenceContext": {
+          "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+          "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+          "originalReferenceContext": {
+            "codeRoot": "../../../게임원본-상호작용/code",
+            "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+            "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+            "rawRoot": "../../../게임원본-상호작용"
+          },
+          "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+          "resolvedReferenceContext": {
+            "codeRoot": "../게임원본-상호작용/code",
+            "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+            "rawRoot": "../게임원본-상호작용"
+          },
+          "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+        },
+        "facts": {
+          "priorReviewedCase": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동20건수집\\C-conditions\\cases\\chest\\action.md"
+        },
+        "group": "C",
+        "id": "rule:base:C:containment",
+        "kind": "rule",
+        "name": "containment",
+        "origin": {
+          "normalizedValueSha256": "dc69f8ddbb7c0ad2fbc418d6987e485721f0baccd45aff5640d8e35baccb4c1d",
+          "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "pointer": "/groups/2/payload/extraction.json/rules/containment"
+        }
+      },
+      "fields": [
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "codeFiles",
+          "id": "rule:base:C:containment/evidence/codeFiles",
+          "kind": "evidence",
+          "origin": {
+            "normalizedValueSha256": "7ae7e651ac9b602a1dc91520b611c8c8fa35c0395c2285ddd710c3f7165fe972",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/2/payload/extraction.json/rules/containment/codeFiles"
+          },
+          "value": [
+            "Pug.ECS.Conversion/InventoryConverter.cs",
+            "Pug.ECS.Conversion/ChangeVariationWhenContainingObjectConverter.cs",
+            "Pug.Other/ChangeVariationWhenContainingObjectSystem.cs",
+            "Pug.Other/Inventory/InventoryUtility.cs",
+            "Pug.Other/AddRandomLootSystem.cs",
+            "Pug.Other/DropLootSystem.cs"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation": "has_completion",
+      "target": "reviewed-claim:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851#unlock_by_contained_object",
+      "kind": "conditional_application",
+      "action": "containment_replacement"
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:unlock_by_contained_object",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1266126225237878851"
+    ]
+  ]
+}

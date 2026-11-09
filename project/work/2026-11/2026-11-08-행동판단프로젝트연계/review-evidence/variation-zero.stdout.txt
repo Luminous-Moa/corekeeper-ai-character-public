@@ -1,0 +1,91 @@
+{
+  "total": 1,
+  "shown": 1,
+  "truncated": false,
+  "sources": [
+    {
+      "id": "source:CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713",
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713",
+      "objectId": 4776,
+      "variation": 0,
+      "names": [
+        "GalaxiteDoor"
+      ],
+      "claims": [
+        {
+          "id": "base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713#toggle_door",
+          "dataset": "base",
+          "action": "toggle_door",
+          "rowKind": "extracted_action_or_stage",
+          "evidenceLevel": "code_linked"
+        },
+        {
+          "id": "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713#0",
+          "dataset": "initial",
+          "action": "place",
+          "rowKind": "reported_interaction",
+          "evidenceLevel": "code_linked"
+        }
+      ],
+      "historicalGapStatements": 2,
+      "coverageDispositions": [],
+      "note": "No claim means not recorded, not impossible.",
+      "relatedActions": [
+        {
+          "relation": "conditional_interactable_door",
+          "id": "door",
+          "action": "toggle_door",
+          "status": "reused_pass_pending_review",
+          "conditional": true,
+          "reviewStatus": "independent_pass"
+        },
+        {
+          "relation": "input_for",
+          "id": "completion:B:place-object:CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713",
+          "action": "place",
+          "status": "static_path_research_awaits_independent_review",
+          "conditional": true,
+          "reviewStatus": "independent_pass"
+        },
+        {
+          "relation": "conditional_target_variation_candidate",
+          "id": "door",
+          "action": "toggle_door",
+          "status": "reused_pass_pending_review",
+          "conditional": true,
+          "reviewStatus": "independent_pass",
+          "bindingEvidence": [
+            "catalog-binding:B-world-tools122:7"
+          ]
+        }
+      ],
+      "relatedApplications": [],
+      "relatedRoles": [
+        {
+          "relation": "conditional_incoming_damage_reduction_configuration",
+          "id": "gap-role:damage-reduction-applications-v3:501",
+          "status": "independent_pass",
+          "conditional": true
+        },
+        {
+          "relation": "conditional_player_object_damage_candidate",
+          "id": "record:A:U001:roles:329",
+          "status": "independent_pass",
+          "conditional": true
+        },
+        {
+          "relation": "health_regeneration_source",
+          "id": "D095:applications:application:625",
+          "status": "independent_pass",
+          "conditional": true
+        }
+      ],
+      "relatedConfigurations": [],
+      "relatedRoleLinks": [],
+      "roleClassifications": [],
+      "relatedGapAssessments": [],
+      "relatedRecordedEvidence": [],
+      "essentialDecisionEvidence": []
+    }
+  ]
+}

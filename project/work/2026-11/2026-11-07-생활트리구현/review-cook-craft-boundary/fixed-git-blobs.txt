@@ -1,0 +1,8 @@
+858cb0356a14a2a6c59b7308f74278474aa634c9  Assets/AIPlayerSpike/Scripts/AICraft.cs
+281b719ee468fb7f08ff1719f580264fe15dd6b9  Assets/AIPlayerSpike/Scripts/AIInventory.cs
+456f75f2e31cba1116e3c5c013ff5b2f64213022  Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs
+f396fcf7e465327ec6df35cd6f9e119f05cff538  Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs
+c8802d294f2f2e41ebca60a8d475402d3c6a47ae  Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs
+c1b4d5b8e01ac889fe1938a6c8ed59c6a3d4acb4  Tools/life-craft-tests/Stubs.cs
+fc05afe7d9e8e32be8c56a91cee921d74fa4d62e  Tools/life-craft-tests/Program.cs
+2088289895bf483443bb2610e21c13e1daec8198  Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs

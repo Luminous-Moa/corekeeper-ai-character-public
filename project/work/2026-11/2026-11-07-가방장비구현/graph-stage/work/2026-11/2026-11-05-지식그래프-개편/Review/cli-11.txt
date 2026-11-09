@@ -1,0 +1,24 @@
+== B/snapshot/Tools/ai-bridge/memgraph.mjs:587-609 sha256=87da12542593c093a13098e96b023e6da33098d7f64a63972064b174724e1e77
+587: export function runQueries(ctx, queries, { maxQ = 3, limit = LIMITS.search } = {}) {
+588:   const list = Array.isArray(queries) ? queries : [];
+589:   const log = [], parts = [];
+590:   if (!list.length) return { text: 'recall은 질의 객체 1~3개의 배열(예: [{"q":"about","target":"o:3050"}])', log: [{ q: null, err: 'empty', hits: 0, chars: 0 }] };
+591:   const head = header(ctx);
+592:   const n = Math.min(maxQ, list.length);
+593:   const share = Math.floor((limit - head.length - 80) / n);
+594:   list.slice(0, maxQ).forEach((q, i) => {
+595:     const r = runQuery(ctx, q);
+596:     let t = r.text;
+597:     if (t.length > share) {
+598:       const keep = [];
+599:       for (const l of t.split('\n')) { if (keep.join('\n').length + l.length + 1 > share - 40) break; keep.push(l); }
+600:       t = `${keep.join('\n')}\n…(이 질의 몫에서 잘림: 그 질의만 따로 하면 더 봄)`;
+601:     }
+602:     parts.push(`(${i + 1}) ${JSON.stringify(q)}\n${t}`);
+603:     log.push({ q: q?.q ?? null, target: q?.target ?? q?.key ?? q?.place ?? q?.id ?? q?.text ?? null, hits: r.hits, chars: r.text.length, err: r.err || null });
+604:   });
+605:   if (list.length > maxQ) parts.push(`(질의 ${list.length}개 가운데 앞의 ${maxQ}개만 함. 한 번에 ${maxQ}개까지)`);
+606:   let text = `${head}\n${parts.join('\n')}`;
+607:   if (text.length > limit) text = text.slice(0, limit - 30) + '\n…(검색 결과 상한에서 잘림)';
+608:   return { text, log };
+609: }

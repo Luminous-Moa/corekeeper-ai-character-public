@@ -1,0 +1,2 @@
+V0: #641 {"gather_group":2} | #654 {"retreat":1,"gather_group":1} | #661 {"gather_group":1,"expedition_nav:branch":1} | #700 {"gather_group":2} | #710 {"gather_group":2}
+V1: #641 {"expedition_nav:branch":2} | #654 {"expedition_nav:branch":2} | #661 {"expedition_nav:branch":2} | #700 {"life_nav:branch":1,"life_nav:close":1} | #710 {"life_nav:branch":2}

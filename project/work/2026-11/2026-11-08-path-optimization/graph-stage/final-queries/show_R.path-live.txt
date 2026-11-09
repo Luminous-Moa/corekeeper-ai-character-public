@@ -1,0 +1,99 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 2차 대표 실기 · 43c3817",
+        "doc": "pathLiveFinal",
+        "end": 69,
+        "line": 65,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "sha256": "5c11461c55028c37133fc3d976fe8710831d7ed8b2fdc878039da9138c02f458",
+        "start": 65
+      },
+      {
+        "anchor": "### 프레임과 남은 재준비 지연",
+        "doc": "pathLiveFinal",
+        "end": 92,
+        "line": 87,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "sha256": "5c11461c55028c37133fc3d976fe8710831d7ed8b2fdc878039da9138c02f458",
+        "start": 87
+      },
+      {
+        "anchor": "### 판정 범위",
+        "doc": "pathLiveFinal",
+        "end": 96,
+        "line": 94,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "sha256": "5c11461c55028c37133fc3d976fe8710831d7ed8b2fdc878039da9138c02f458",
+        "start": 94
+      }
+    ],
+    "functionTraceObserved": false,
+    "id": "R.path-live",
+    "layer": "참고",
+    "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+    "sourceLocations": [
+      {
+        "end": 69,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "start": 65
+      },
+      {
+        "end": 92,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "start": 87
+      },
+      {
+        "end": 96,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "start": 94
+      }
+    ],
+    "status": "참고·대표 실기 수용·약9~18초 잔여 지연",
+    "summary": "갑옷 상위 응답 t203.9→29개 선택지 SEND t212.8→APPLY t213.1과 실제 이동을 관측했다. 전체 SEND/API 사용31회, 응답 파싱31회, RESULT 로그29개, HTTP 실패0, 후보19~56개, START18/DONE12다.118.4~120fps를 유지했으나 장애물 변경 취소26회와 약9~18초 재준비 지연이 남았다.7526개 대상의 실게임 전수 메뉴 탐색, 갑옷 최종 제작·전달과 채집 확보는 확인하지 않았다. 전체 leaf 방문은 오프라인 근거다.",
+    "title": "43c3817 ai2 대표 요청·응답·행동과 잔여 재준비 지연",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 2차 대표 실기 · 43c3817",
+          "doc": "pathLiveFinal",
+          "end": 69,
+          "line": 65,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+          "sha256": "5c11461c55028c37133fc3d976fe8710831d7ed8b2fdc878039da9138c02f458",
+          "start": 65
+        }
+      ],
+      "from": "R.path-implementation",
+      "id": "E217",
+      "kind": "참고: 같은43c3817 실기 관측",
+      "to": "R.path-live",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "HEAD가 정정 전달한 대표 관측",
+          "doc": "pathAcceptance",
+          "end": 7,
+          "line": 7,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "sha256": "0555e074a2b3a9ab035afc65c961ae2a831fefc17554c3520f507cad2d85db7a",
+          "start": 7
+        }
+      ],
+      "from": "P.path-optimization",
+      "id": "E215",
+      "kind": "참고: 대표 실기 관측과 잔여 지연",
+      "to": "R.path-live",
+      "type": "reference"
+    }
+  ]
+}

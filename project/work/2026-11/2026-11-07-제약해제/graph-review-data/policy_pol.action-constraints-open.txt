@@ -1,0 +1,42 @@
+[
+  {
+    "node": {
+      "class": "사용자 결정 요약",
+      "evidence": [
+        {
+          "anchor": "사용자는 감사에서 현재 제약으로 보고한 항목을 전반적으로 해제하라고 지시했다.",
+          "doc": "unrestrictionAgreement",
+          "end": 3,
+          "line": 3,
+          "path": "../2026-11-07-제약해제/00-agreement.md",
+          "sha256": "b4a7802b204a92cb0f9b8af9ea96123ddd326509a0685b415f25673a8e6a766a",
+          "start": 3
+        }
+      ],
+      "id": "pol.action-constraints-open",
+      "sourceLocations": [
+        {
+          "end": 3,
+          "path": "../2026-11-07-제약해제/00-agreement.md",
+          "start": 3
+        }
+      ],
+      "status": "사용자 지시·구현 수용은 별도",
+      "summary": "감사의 수량·계획·지시·후보·정보·공간 및 지원행동 제한을 전반 해제한다. 사용자 목표이며 구현 완료나 새 실게임 성공을 뜻하지 않는다.",
+      "title": "임의 행동·정보 제약 전반 해제",
+      "type": "정책"
+    },
+    "applications": [],
+    "sources": [
+      {
+        "path": "../2026-11-07-제약해제/00-agreement.md",
+        "start": 3,
+        "end": 3,
+        "sha256": "b4a7802b204a92cb0f9b8af9ea96123ddd326509a0685b415f25673a8e6a766a",
+        "text": "3: 사용자는 감사에서 현재 제약으로 보고한 항목을 전반적으로 해제하라고 지시했다. 채집 허용 고정목록은 게임 지식 공개와 별개인 것으로 확인돼 제거 대상이다. 사람 시야와 본 것·보유품·본 제작대 레시피/재료로 지식 공개를 여는 정책은 유지한다."
+      }
+    ]
+  }
+]
+
+STDERR

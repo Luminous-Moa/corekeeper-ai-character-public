@@ -1,0 +1,203 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 적용 범위 확인",
+        "doc": "observationUpperReview",
+        "end": 15,
+        "line": 9,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+        "start": 9
+      },
+      {
+        "anchor": "## 원부탁 보존과 재보고",
+        "doc": "observationUpperReview",
+        "end": 23,
+        "line": 17,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+        "start": 17
+      },
+      {
+        "anchor": "## 직접 재실행한 주요 검사",
+        "doc": "observationUpperReview",
+        "end": 41,
+        "line": 25,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+        "start": 25
+      }
+    ],
+    "id": "R.observation-upper-completion",
+    "layer": "참고",
+    "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+    "sourceLocations": [
+      {
+        "end": 15,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "start": 9
+      },
+      {
+        "end": 23,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "start": 17
+      },
+      {
+        "end": 41,
+        "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+        "start": 25
+      }
+    ],
+    "status": "참고·20b1aced 추가 경계·오프라인/Unity 수용",
+    "summary": "새 set 계획 전체가 거절되고 현재 유효 목표가 활성 계획 source와 같으며 같은 미완료 원부탁을 done으로 갱신할 때 적용 전 보류한다. 후속 단계 또는 재관측한 마지막 단계의 미완료를 근거로 원부탁·목표·몸·계획을 유지하고 상위에 다시 보고한다. source/goal revision/원부탁 ID/실제 사실 키 집합으로 같은 모순의 반복 보고를 억제한다. 무관한 done과 defer/drop/answered, 유효 새 계획과 비계량 마지막 목표의 기존 권한은 유지한다.",
+    "title": "거절된 새 계획과 동일 미완료 원부탁 done의 부분 적용 보호",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 9
+        },
+        {
+          "end": 23,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 17
+        },
+        {
+          "end": 41,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-upper-completion",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.CompletionPending(World, Entity, float, out string)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 9
+        },
+        {
+          "end": 23,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 17
+        },
+        {
+          "end": 41,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-upper-completion",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnOrder(World, Entity, float, PlanAnswerJ, bool, bool, string, out string, out string)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 9
+        },
+        {
+          "end": 23,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 17
+        },
+        {
+          "end": 41,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-upper-completion",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.ReportCompletionConflict(World, Entity, string, string)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 15,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 9
+        },
+        {
+          "end": 23,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 17
+        },
+        {
+          "end": 41,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "start": 25
+        }
+      ],
+      "from": "R.observation-upper-completion",
+      "kind": "관측·재판단 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "20b1aced7594a47eacb4be060405bcb53d38f48f",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.RequestReplan(World, Entity, string)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 적용 범위 확인",
+          "doc": "observationUpperReview",
+          "end": 15,
+          "line": 9,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+          "start": 9
+        }
+      ],
+      "from": "P.observation-completion-check",
+      "id": "E225",
+      "kind": "참고: 같은 미완료 원부탁의 상위 완료 모순 보호",
+      "to": "R.observation-upper-completion",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 판정",
+          "doc": "observationUpperReview",
+          "end": 7,
+          "line": 5,
+          "path": "../2026-11-08-observation-redecision/graph-stage/source-pins/review-upper-completion.md",
+          "sha256": "fd0f3040ab9066d254c66d012ad6c7e4ec0066ed07d823e0c2c7c43c11cd5981",
+          "start": 5
+        }
+      ],
+      "from": "R.observation-review",
+      "id": "E228",
+      "kind": "참고: 최종 추가 경계 독립 검수",
+      "to": "R.observation-upper-completion",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "origin": {
+    "normalizedValueSha256": "1fa6cd6e2580d40bd89c9d0150ba1023c1cbf8d665bedebb033e6193b5a41655",
+    "path": "../2026-11/2026-11-07-행동전체추출/D-outcomes/cooking-pairs.json",
+    "pointer": "/pairs/1"
+  },
+  "value": {
+    "condition": "Runtime selected primary prefab matches source candidate; input slot requirements, amounts, output and timer checks pass.",
+    "inputObjectIds": [
+      1645,
+      1646
+    ],
+    "inputSourceKeys": [
+      "CAB-2ebcba97367158c9b08f790c25d642c9:4084347551827135648",
+      "CAB-2ebcba97367158c9b08f790c25d642c9:-8991506851073593004"
+    ],
+    "outputObjectId": 9504,
+    "outputVariation": 107873901,
+    "primaryObjectId": 1646,
+    "secondaryObjectId": 1645
+  },
+  "evidenceContext": null
+}

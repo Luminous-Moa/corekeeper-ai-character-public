@@ -1,0 +1,50 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 사용한 게임행동 그래프 조회와 원문근거",
+        "doc": "expeditionHandoff",
+        "end": 36,
+        "line": 28,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+        "sha256": "387b2e070f6a5d13d2dd816a7d74d846a486f6f5a050a5f5b490759b97791425",
+        "start": 28
+      }
+    ],
+    "id": "R.expedition-game-evidence",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 36,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+        "start": 28
+      }
+    ],
+    "status": "참고·게시본 조회 원문·미실게임",
+    "summary": "곡괭이 정상입력·피해·드롭 조건, 문 variation/toggle, 다리 pit/water 배치조건·소비·결과의 정확 source를 개발 근거로 사용했다. 최신 행동그래프 전체를 복제하거나 게임 성공으로 승격하지 않으며 이 작업은 해당 그래프를 수정하지 않는다.",
+    "title": "실제 조회한 채굴·문·다리의 정적 게임 근거",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 사용한 게임행동 그래프 조회와 원문근거",
+          "doc": "expeditionHandoff",
+          "end": 36,
+          "line": 28,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionHandoff.md",
+          "sha256": "387b2e070f6a5d13d2dd816a7d74d846a486f6f5a050a5f5b490759b97791425",
+          "start": 28
+        }
+      ],
+      "from": "R.expedition-implementation",
+      "id": "E206",
+      "kind": "참고: 사용한 게임 규칙 원문",
+      "to": "R.expedition-game-evidence",
+      "type": "reference"
+    }
+  ]
+}

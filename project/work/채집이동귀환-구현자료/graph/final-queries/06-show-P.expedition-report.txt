@@ -1,0 +1,134 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 채집 자동 호출과 응답 중 현장 판단 — 사용자 합의",
+        "doc": "expeditionRoles",
+        "end": 58,
+        "line": 52,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+        "sha256": "9a9100dcb23941f8d194a6562938db3a3622603954831c134ec50079bf2d631f",
+        "start": 52
+      }
+    ],
+    "id": "P.expedition-report",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 58,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+        "start": 52
+      }
+    ],
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "현장을 떠날 때 미검토 관련 기회가 있거나 작업 전제가 깨지고 맡겨진 범위에 대안이 없으면 상위에 자동 보고한다. 같은 사실의 중복 요청을 억제하고 후속 사실을 모으며 대기 중 판단·유효 행동을 유지하고 응답을 재검증한다.",
+    "title": "이탈 전 미검토 기회와 작업 전제 상실을 자동 보고",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 58,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 52
+        }
+      ],
+      "from": "P.expedition-report",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.AfterBuild(World, Entity, System.Collections.Generic.List<AICandidate>, bool)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 58,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 52
+        }
+      ],
+      "from": "P.expedition-report",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.Choosing(World, Entity, AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 58,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 52
+        }
+      ],
+      "from": "P.expedition-report",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanReport.cs#AIPlanReport.ReportJson(World, Entity, string, out int)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 58,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "start": 52
+        }
+      ],
+      "from": "P.expedition-report",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "7af8f91e5d26e4fd9ce5996809ae41e213340118",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.RequestReplan(World, Entity, string)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 채집 자동 호출과 응답 중 현장 판단 — 사용자 합의",
+          "doc": "expeditionRoles",
+          "end": 58,
+          "line": 52,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "sha256": "9a9100dcb23941f8d194a6562938db3a3622603954831c134ec50079bf2d631f",
+          "start": 52
+        }
+      ],
+      "from": "P.expedition",
+      "id": "E185",
+      "kind": "채집·이동·귀환 합의의 구성",
+      "to": "P.expedition-report",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 채집 자동 호출과 응답 중 현장 판단 — 사용자 합의",
+          "doc": "expeditionRoles",
+          "end": 58,
+          "line": 52,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionRoles.md",
+          "sha256": "9a9100dcb23941f8d194a6562938db3a3622603954831c134ec50079bf2d631f",
+          "start": 52
+        }
+      ],
+      "from": "P.valid-action",
+      "id": "E187",
+      "kind": "계획 응답 대기 중에도 유효 실행과 판단 유지",
+      "to": "P.expedition-report",
+      "type": "reference"
+    }
+  ]
+}

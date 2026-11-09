@@ -1,0 +1,15 @@
+{
+  "time": "2026-11-06T12:16:50.257Z",
+  "beforeSha": "e5a557e74228785fa4de936a7f4863b268c54ed5cb6a7cea6cfda58f9c9dd903",
+  "afterSha": "d797d5c1b7074e5504f681a59b1cf33a1068a5f2c0ba5197f749a326289799cb",
+  "originalSha": "d797d5c1b7074e5504f681a59b1cf33a1068a5f2c0ba5197f749a326289799cb",
+  "sameRawOriginal": true,
+  "sameSemanticOriginal": true,
+  "changedFields": [
+    "inventory[5,51,4,53,7,54]",
+    "inventoryObjectNames[same]",
+    "health 116 -> 100",
+    "maxHealth 116 -> 100"
+  ],
+  "otherFieldsPreserved": true
+}

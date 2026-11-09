@@ -1,0 +1,586 @@
+{
+  "collectedUtc": "2026-11-05T05:19:45.907029+00:00",
+  "baseCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0",
+  "runCandidateCommit": "76563bf3ac3af56241bb796c6510ad7e96c3ccd7",
+  "combatCheckoutHead": "e87866e02bfc2ce55864f0f6abd254e83e0662ac",
+  "productDiffRunToHead": [],
+  "graphSha256": "f8e78b98382e2f29751d29e6be2d8fc37109da88ae8a409dfa8751eb434d6957",
+  "analysisFiles": [
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIActions.cs",
+      "baseSha256": "2828cc923180b5af87af741761f3e0f34e9b27ac7a43d73d4906dd43d32441fa",
+      "runSha256": "27246b65074c83c5996ffd0315c169fa18834ab29a5893f3c4c7d00e90cabe14",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "baseSha256": "45e770a9bd838eafd111646203e3d512491d94766e7141736db7485e03e51c03",
+      "runSha256": "45e770a9bd838eafd111646203e3d512491d94766e7141736db7485e03e51c03",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "baseSha256": "c72fa64a41fced61a971a73abc7629de7b01ed29475dd9d99aa5a68cc55d5235",
+      "runSha256": "c72fa64a41fced61a971a73abc7629de7b01ed29475dd9d99aa5a68cc55d5235",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseSha256": "219b545c760aaa9168f886987694bac962e9d4172da3331f35466505c19e0e71",
+      "runSha256": "228358153f8cfc34b0b51e69519a38fa792ca1c07fa1596145c88cb41d273f27",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs",
+      "baseSha256": "78cd9aac247d037e8a0f495a3aacb94e6a16e8c463922ce4cf260beb5b3397b6",
+      "runSha256": "38bd05661fd3503c8c3ce497176b37736032ed99265938691fb6a79b95026506",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs",
+      "baseSha256": "37dce7641c7e64a654d998603dbb72068ad30812ae6e0d20898c1a9ac1d2658e",
+      "runSha256": "12cb055c6360801ed6bc25a55fdede01baf04a239affcff63a15ea99bf831f35",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs",
+      "baseSha256": "99e56ca6834ce5b0c7a9e9951c63f65e3ff69bd7b6e6d051eb0d4f9bcdf45768",
+      "runSha256": "99e56ca6834ce5b0c7a9e9951c63f65e3ff69bd7b6e6d051eb0d4f9bcdf45768",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "baseSha256": "5e4eaad70198dd2e88dcdb1f66f1fdd55d71a2a13fa5fcec7f3b97b58c04ba74",
+      "runSha256": "39df32c46cc42e51d3bf60dd929392f4b27a4a7bf97413d1efc562981d9abefe",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AICombat.cs",
+      "baseSha256": "0aa6ff8814545160f50b39c0f4cba149b174176196195c0ff607b86516c95295",
+      "runSha256": "92c7c73c8a04f481b7c6b6c8129b2be15df9390beaea66ce4d0024ecf7028e2a",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+      "baseSha256": "683ae1bf07a2b9dca8af8f4dcd5073b0d20627e8f1c57ef7ffe8bff865398721",
+      "runSha256": "683ae1bf07a2b9dca8af8f4dcd5073b0d20627e8f1c57ef7ffe8bff865398721",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AICraft.cs",
+      "baseSha256": "ca2fef657cd044d7ac5fb780d94b7c5a11acee1870bed0870e7170e1c14ca942",
+      "runSha256": "ca2fef657cd044d7ac5fb780d94b7c5a11acee1870bed0870e7170e1c14ca942",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs",
+      "baseSha256": "e2b1167c99b6b29133d100929b218bd840f8dd512d35c59df461a85b284b87e2",
+      "runSha256": "04d53cf48483a02f8793d45a1ab8941f82be1ff96e035823cb6b85444e962cdd",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "baseSha256": "efa77b24ec80d92ab06c58fb1b813bac9fcc8b433f2373c625843848b828bd2c",
+      "runSha256": "efa77b24ec80d92ab06c58fb1b813bac9fcc8b433f2373c625843848b828bd2c",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "baseSha256": "8d1c1458236e3c92e04b7a79f1a1ec15f30d10e8d96e53fbc5fc3a7b3480ffe0",
+      "runSha256": "8d1c1458236e3c92e04b7a79f1a1ec15f30d10e8d96e53fbc5fc3a7b3480ffe0",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIExperience.cs",
+      "baseSha256": "8b8d74cfd3db56f647db0026f53da68dacc228cba4c48209667d088cc2706c21",
+      "runSha256": "8b8d74cfd3db56f647db0026f53da68dacc228cba4c48209667d088cc2706c21",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "baseSha256": "7143dfbde57d93e660fdf39359ae71848098a96fb9603a77016d56600022880a",
+      "runSha256": "9a65e17d80439d072ad63ba3f5347678ef0f812f01f2035f8b26affb8d727b26",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "baseSha256": "7923cff68492408be82a9d11e876d0c020a28f2f50c3b6960a181e93f89ed9e3",
+      "runSha256": "7923cff68492408be82a9d11e876d0c020a28f2f50c3b6960a181e93f89ed9e3",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "baseSha256": "d869e82b8fc04cabe473d68f18cb1a90269805f25c5966d52c9bc2556b39d753",
+      "runSha256": "d869e82b8fc04cabe473d68f18cb1a90269805f25c5966d52c9bc2556b39d753",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "baseSha256": "a5f42a552548ac64fbaacd9e56d5050d361bcc737599d883619881286d0027e4",
+      "runSha256": "a5f42a552548ac64fbaacd9e56d5050d361bcc737599d883619881286d0027e4",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs",
+      "baseSha256": "c6fb9102f3c8aa23f17c92110eb4b84f02c5f2e9928e61b26df35cb79e02bcb4",
+      "runSha256": "c6fb9102f3c8aa23f17c92110eb4b84f02c5f2e9928e61b26df35cb79e02bcb4",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "baseSha256": "d2c7be9e787c1c4f54bd620b3ca6ffaacedc40bb6f8d9d4a7f8fb4e4e69d0cf3",
+      "runSha256": "d2c7be9e787c1c4f54bd620b3ca6ffaacedc40bb6f8d9d4a7f8fb4e4e69d0cf3",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseSha256": "38976c95d61cfcc13cb0da5b9a3bf1e83f9346a37db671706d64da096c0c2fe8",
+      "runSha256": "6fe179c25394caa7361d29b6d5f3932a1cf20f50f339d2f5ae22d54e63be4b28",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs",
+      "baseSha256": "ffdce51ca8de354c8aa620c1a3d3542615a190246e1254944ce74b2f95ce8fd8",
+      "runSha256": "8e646e5f45449e772279fac32d935bb869ba08cc0903cddb192a2126c0804cb5",
+      "sameGitBytes": false,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs",
+      "baseSha256": "d775b0a9e001097b15c5b15773fc65375319bd0b3a9e3941487a05f98b84013b",
+      "runSha256": "d775b0a9e001097b15c5b15773fc65375319bd0b3a9e3941487a05f98b84013b",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs",
+      "baseSha256": "bcc1d1e3ab5c60a146f1e247531fdb4ca4fbb5846d14157c85d1b11185d139bd",
+      "runSha256": "bcc1d1e3ab5c60a146f1e247531fdb4ca4fbb5846d14157c85d1b11185d139bd",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs",
+      "baseSha256": "c8c2b1794dbbe6392cddfbd93f101056551466a86c86978dd33274b79f4a44b8",
+      "runSha256": "c8c2b1794dbbe6392cddfbd93f101056551466a86c86978dd33274b79f4a44b8",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+      "baseSha256": "7a5b25156f21534895beb854931e2034d5eeb0786c507e5dfb177d50c2624ff2",
+      "runSha256": "7a5b25156f21534895beb854931e2034d5eeb0786c507e5dfb177d50c2624ff2",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Tools/ai-bridge/bridge.mjs",
+      "baseSha256": "ba0da3c59bfa3a130fbd4203a363664991637bf95309b94ab54eb14c0134243d",
+      "runSha256": "ba0da3c59bfa3a130fbd4203a363664991637bf95309b94ab54eb14c0134243d",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Tools/ai-bridge/memgraph.mjs",
+      "baseSha256": "87da12542593c093a13098e96b023e6da33098d7f64a63972064b174724e1e77",
+      "runSha256": "87da12542593c093a13098e96b023e6da33098d7f64a63972064b174724e1e77",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Tools/ai-bridge/plan.mjs",
+      "baseSha256": "d7a59993a995efdba4589e3dd72fff02306fcd7ef78d64728face9f735e95616",
+      "runSha256": "d7a59993a995efdba4589e3dd72fff02306fcd7ef78d64728face9f735e95616",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Tools/ai-bridge/preflight.mjs",
+      "baseSha256": "0a3ce65ad3e4638527dcb7d3da9c036d30bcc781b63bbcc4c3fd28022e9d0bc0",
+      "runSha256": "0a3ce65ad3e4638527dcb7d3da9c036d30bcc781b63bbcc4c3fd28022e9d0bc0",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Tools/ai-bridge/protocol.mjs",
+      "baseSha256": "0c85b549f3fda1165cfff766b29a043be465fed87bded896c395a0beeac06367",
+      "runSha256": "0c85b549f3fda1165cfff766b29a043be465fed87bded896c395a0beeac06367",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    },
+    {
+      "file": "Tools/ai-bridge/recall-loop.mjs",
+      "baseSha256": "e6da25d42ca1bba367be9122aad5edfee6ba39c40e46de982c981011a8a1e17f",
+      "runSha256": "e6da25d42ca1bba367be9122aad5edfee6ba39c40e46de982c981011a8a1e17f",
+      "sameGitBytes": true,
+      "snapshotMatchesBase": true,
+      "runCheckoutNormalizedEqualsCommit": true
+    }
+  ],
+  "installedScripts": [
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIActions.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIActions.cs",
+      "installedSha256": "27246b65074c83c5996ffd0315c169fa18834ab29a5893f3c4c7d00e90cabe14",
+      "runCommitSha256": "27246b65074c83c5996ffd0315c169fa18834ab29a5893f3c4c7d00e90cabe14",
+      "normalizedSha256": "27246b65074c83c5996ffd0315c169fa18834ab29a5893f3c4c7d00e90cabe14",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.072000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIAgents.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "installedSha256": "b36ad330d01905d9bad5e7df4718f704ad9ed01054062069819e416e25a9dc01",
+      "runCommitSha256": "45e770a9bd838eafd111646203e3d512491d94766e7141736db7485e03e51c03",
+      "normalizedSha256": "45e770a9bd838eafd111646203e3d512491d94766e7141736db7485e03e51c03",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.061000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBase.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "installedSha256": "4cd55648115be5ca71a2e2945aec900872e857a288acff2372474dbd97d7b8a4",
+      "runCommitSha256": "c72fa64a41fced61a971a73abc7629de7b01ed29475dd9d99aa5a68cc55d5235",
+      "normalizedSha256": "c72fa64a41fced61a971a73abc7629de7b01ed29475dd9d99aa5a68cc55d5235",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.051000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBodySkills.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "installedSha256": "1a1d376372c9fc407191117245459cccfffd1080b92c152d8b88abdcda64af74",
+      "runCommitSha256": "228358153f8cfc34b0b51e69519a38fa792ca1c07fa1596145c88cb41d273f27",
+      "normalizedSha256": "228358153f8cfc34b0b51e69519a38fa792ca1c07fa1596145c88cb41d273f27",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.040000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.Candidates.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIBrain.Candidates.cs",
+      "installedSha256": "38bd05661fd3503c8c3ce497176b37736032ed99265938691fb6a79b95026506",
+      "runCommitSha256": "38bd05661fd3503c8c3ce497176b37736032ed99265938691fb6a79b95026506",
+      "normalizedSha256": "38bd05661fd3503c8c3ce497176b37736032ed99265938691fb6a79b95026506",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.028000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "installedSha256": "39df32c46cc42e51d3bf60dd929392f4b27a4a7bf97413d1efc562981d9abefe",
+      "runCommitSha256": "39df32c46cc42e51d3bf60dd929392f4b27a4a7bf97413d1efc562981d9abefe",
+      "normalizedSha256": "39df32c46cc42e51d3bf60dd929392f4b27a4a7bf97413d1efc562981d9abefe",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.017000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.Loop.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs",
+      "installedSha256": "12cb055c6360801ed6bc25a55fdede01baf04a239affcff63a15ea99bf831f35",
+      "runCommitSha256": "12cb055c6360801ed6bc25a55fdede01baf04a239affcff63a15ea99bf831f35",
+      "normalizedSha256": "12cb055c6360801ed6bc25a55fdede01baf04a239affcff63a15ea99bf831f35",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:16.006000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIBrain.Prep.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs",
+      "installedSha256": "c752ceea8ac5678d66946f1e48bc1805a74919bb3d5673c5d76a5e98379063a8",
+      "runCommitSha256": "99e56ca6834ce5b0c7a9e9951c63f65e3ff69bd7b6e6d051eb0d4f9bcdf45768",
+      "normalizedSha256": "99e56ca6834ce5b0c7a9e9951c63f65e3ff69bd7b6e6d051eb0d4f9bcdf45768",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.995000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIChargeWatch.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIChargeWatch.cs",
+      "installedSha256": "6069e5bde5cbe9c674d091450bb2eed96917b58c18411feb31e87535b0a9ea4e",
+      "runCommitSha256": "6069e5bde5cbe9c674d091450bb2eed96917b58c18411feb31e87535b0a9ea4e",
+      "normalizedSha256": "6069e5bde5cbe9c674d091450bb2eed96917b58c18411feb31e87535b0a9ea4e",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.983000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICombat.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AICombat.cs",
+      "installedSha256": "7f68cc5c13bb40207331d49cd028370f159e897e02a8e446e3f33700f2f32426",
+      "runCommitSha256": "92c7c73c8a04f481b7c6b6c8129b2be15df9390beaea66ce4d0024ecf7028e2a",
+      "normalizedSha256": "92c7c73c8a04f481b7c6b6c8129b2be15df9390beaea66ce4d0024ecf7028e2a",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.971000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICook.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AICook.cs",
+      "installedSha256": "452f870dc8b0714b87403152bfeb8c37a642d783044458d79a6240dbdf2a93e8",
+      "runCommitSha256": "683ae1bf07a2b9dca8af8f4dcd5073b0d20627e8f1c57ef7ffe8bff865398721",
+      "normalizedSha256": "683ae1bf07a2b9dca8af8f4dcd5073b0d20627e8f1c57ef7ffe8bff865398721",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.960000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AICraft.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AICraft.cs",
+      "installedSha256": "55cb3171f5a24ba39ea3fe58256731a3e2664b816dbfcec8b2409608199fc16b",
+      "runCommitSha256": "ca2fef657cd044d7ac5fb780d94b7c5a11acee1870bed0870e7170e1c14ca942",
+      "normalizedSha256": "ca2fef657cd044d7ac5fb780d94b7c5a11acee1870bed0870e7170e1c14ca942",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.950000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIDecisions.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIDecisions.cs",
+      "installedSha256": "04d53cf48483a02f8793d45a1ab8941f82be1ff96e035823cb6b85444e962cdd",
+      "runCommitSha256": "04d53cf48483a02f8793d45a1ab8941f82be1ff96e035823cb6b85444e962cdd",
+      "normalizedSha256": "04d53cf48483a02f8793d45a1ab8941f82be1ff96e035823cb6b85444e962cdd",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.939000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIDecisionsApi.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "installedSha256": "60a75c0fd70e74604d600fe5b5f2dc5ebd00b5e3b55a386ae629640ebb695556",
+      "runCommitSha256": "efa77b24ec80d92ab06c58fb1b813bac9fcc8b433f2373c625843848b828bd2c",
+      "normalizedSha256": "efa77b24ec80d92ab06c58fb1b813bac9fcc8b433f2373c625843848b828bd2c",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.927000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIExpCore.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "installedSha256": "ca3d66a95bda7b79317aaf53d1873b4265dfc778a32fa74f18c657ef1d662da1",
+      "runCommitSha256": "8d1c1458236e3c92e04b7a79f1a1ec15f30d10e8d96e53fbc5fc3a7b3480ffe0",
+      "normalizedSha256": "8d1c1458236e3c92e04b7a79f1a1ec15f30d10e8d96e53fbc5fc3a7b3480ffe0",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.917000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIExperience.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIExperience.cs",
+      "installedSha256": "44c71b84c72641a37e0bd3d8deed3c11a3d8e30f432855bc355e9d9ad20a2e1d",
+      "runCommitSha256": "8b8d74cfd3db56f647db0026f53da68dacc228cba4c48209667d088cc2706c21",
+      "normalizedSha256": "8b8d74cfd3db56f647db0026f53da68dacc228cba4c48209667d088cc2706c21",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.906000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIExplore.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "installedSha256": "9a65e17d80439d072ad63ba3f5347678ef0f812f01f2035f8b26affb8d727b26",
+      "runCommitSha256": "9a65e17d80439d072ad63ba3f5347678ef0f812f01f2035f8b26affb8d727b26",
+      "normalizedSha256": "9a65e17d80439d072ad63ba3f5347678ef0f812f01f2035f8b26affb8d727b26",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.894000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIFarm.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "installedSha256": "ca3ba870b893cde3b596a8c67e27d3b4443b2ec0e1fc556526bfb8a523622957",
+      "runCommitSha256": "7923cff68492408be82a9d11e876d0c020a28f2f50c3b6960a181e93f89ed9e3",
+      "normalizedSha256": "7923cff68492408be82a9d11e876d0c020a28f2f50c3b6960a181e93f89ed9e3",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.883000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIGoals.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "installedSha256": "2ea9e76e7b1c9713d07a9a7b16fd905270896cc275d80ce9f1b0b01cdde25d4a",
+      "runCommitSha256": "d869e82b8fc04cabe473d68f18cb1a90269805f25c5966d52c9bc2556b39d753",
+      "normalizedSha256": "d869e82b8fc04cabe473d68f18cb1a90269805f25c5966d52c9bc2556b39d753",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.872000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIKnowledge.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "installedSha256": "c588d24d8f7885756d5c21f38f5ccf6b1802584b05b7dd5f1d41185825ee03eb",
+      "runCommitSha256": "a5f42a552548ac64fbaacd9e56d5050d361bcc737599d883619881286d0027e4",
+      "normalizedSha256": "a5f42a552548ac64fbaacd9e56d5050d361bcc737599d883619881286d0027e4",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.862000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlanner.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "installedSha256": "2433ab5691cb34828fda35ffb13536576d94b8299c1c587941c859acd4a07b13",
+      "runCommitSha256": "d2c7be9e787c1c4f54bd620b3ca6ffaacedc40bb6f8d9d4a7f8fb4e4e69d0cf3",
+      "normalizedSha256": "d2c7be9e787c1c4f54bd620b3ca6ffaacedc40bb6f8d9d4a7f8fb4e4e69d0cf3",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.851000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlanReport.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIPlanReport.cs",
+      "installedSha256": "08cfd2fee2385759dd9e7f1fe35fdd7efcd6ed2e9968ada1164ec42b4379920a",
+      "runCommitSha256": "c6fb9102f3c8aa23f17c92110eb4b84f02c5f2e9928e61b26df35cb79e02bcb4",
+      "normalizedSha256": "c6fb9102f3c8aa23f17c92110eb4b84f02c5f2e9928e61b26df35cb79e02bcb4",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.840000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIPlayerSpikeMod.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "installedSha256": "6fe179c25394caa7361d29b6d5f3932a1cf20f50f339d2f5ae22d54e63be4b28",
+      "runCommitSha256": "6fe179c25394caa7361d29b6d5f3932a1cf20f50f339d2f5ae22d54e63be4b28",
+      "normalizedSha256": "6fe179c25394caa7361d29b6d5f3932a1cf20f50f339d2f5ae22d54e63be4b28",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.829000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\AIShortSkills.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/AIShortSkills.cs",
+      "installedSha256": "b5d3f19d29d6f9f2c500a04c424fbdd304afefa9b2f830a48b2659debf524620",
+      "runCommitSha256": "b5d3f19d29d6f9f2c500a04c424fbdd304afefa9b2f830a48b2659debf524620",
+      "normalizedSha256": "b5d3f19d29d6f9f2c500a04c424fbdd304afefa9b2f830a48b2659debf524620",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.818000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AICandidateAssembler.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/Core/AICandidateAssembler.cs",
+      "installedSha256": "de2cb1c9eb6a437bd708d59d263de5a5661aa53fad1b84bb3ccd75a9b3615aa3",
+      "runCommitSha256": "8e646e5f45449e772279fac32d935bb869ba08cc0903cddb192a2126c0804cb5",
+      "normalizedSha256": "8e646e5f45449e772279fac32d935bb869ba08cc0903cddb192a2126c0804cb5",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.807000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIChargeMath.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/Core/AIChargeMath.cs",
+      "installedSha256": "b5cf24fe7cc5c69b6f94acef6928fcf3b5ce0da2d7ae7cea2f8ba606ef6a6312",
+      "runCommitSha256": "b5cf24fe7cc5c69b6f94acef6928fcf3b5ce0da2d7ae7cea2f8ba606ef6a6312",
+      "normalizedSha256": "b5cf24fe7cc5c69b6f94acef6928fcf3b5ce0da2d7ae7cea2f8ba606ef6a6312",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.796000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIOutcomes.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs",
+      "installedSha256": "117729c8af0db05da4307e98ad977a905253872c3fb85a43b19ddc35e5a46c16",
+      "runCommitSha256": "d775b0a9e001097b15c5b15773fc65375319bd0b3a9e3941487a05f98b84013b",
+      "normalizedSha256": "d775b0a9e001097b15c5b15773fc65375319bd0b3a9e3941487a05f98b84013b",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.784000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlanInbox.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/Core/AIPlanInbox.cs",
+      "installedSha256": "a56c18795db94fa2a2a843c95b4c73db6b62bf992941007284e3bdb78c3bf0e1",
+      "runCommitSha256": "bcc1d1e3ab5c60a146f1e247531fdb4ca4fbb5846d14157c85d1b11185d139bd",
+      "normalizedSha256": "bcc1d1e3ab5c60a146f1e247531fdb4ca4fbb5846d14157c85d1b11185d139bd",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.773000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIPlanProtocol.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs",
+      "installedSha256": "c19098881e625079157bb38a5dfadb6c7adde61e2a30780c937c4455aef914cb",
+      "runCommitSha256": "c8c2b1794dbbe6392cddfbd93f101056551466a86c86978dd33274b79f4a44b8",
+      "normalizedSha256": "c8c2b1794dbbe6392cddfbd93f101056551466a86c86978dd33274b79f4a44b8",
+      "equalRaw": false,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.760000+00:00"
+    },
+    {
+      "installed": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Core Keeper\\CoreKeeper_Data\\StreamingAssets\\Mods\\AIPlayerSpike\\Scripts\\Scripts\\Core\\AIRunGate.cs",
+      "source": "Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs",
+      "installedSha256": "e33277bc657f9c9af6928f516ae9027d75d6533f3ca7df47f0ac0e404f65140c",
+      "runCommitSha256": "e33277bc657f9c9af6928f516ae9027d75d6533f3ca7df47f0ac0e404f65140c",
+      "normalizedSha256": "e33277bc657f9c9af6928f516ae9027d75d6533f3ca7df47f0ac0e404f65140c",
+      "equalRaw": true,
+      "equalNormalized": true,
+      "lastWriteUtc": "2026-11-05T01:01:15.745000+00:00"
+    }
+  ],
+  "manifestSha256": "b11fe95ea3ffd438cfdc17ac99d28201e77cc721e8e547a71cef4aacf4ce3c52",
+  "manifestFileCount": 30,
+  "manifestEqualsR3cBuildLog": true,
+  "buildLog": "C:\\Dev\\CoreKeeperModSDK-combat-s2\\Logs\\headless-build-R3c.log",
+  "buildLogSha256": "8818ebf8cc847f0bd99ade828177532bebbe2ba2ec93dfb79872d3c39b44f539",
+  "limitations": [
+    "Installed disk script identity does not prove loaded in-memory assembly identity.",
+    "Comparison normalizes CRLF to LF separately; raw hashes retained.",
+    "Current runtime world, settings and character values were not read."
+  ]
+}

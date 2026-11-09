@@ -1,0 +1,174 @@
+{
+  "healthDoesNotReachPlan": true,
+  "healthReachableFunctions": [
+    "code:Tools/ai-bridge/bridge.mjs#route:GET /v1/health",
+    "code:Tools/ai-bridge/bridge.mjs#send@9516",
+    "code:Tools/ai-bridge/preflight.mjs#anonymous@4026",
+    "code:Tools/ai-bridge/preflight.mjs#anonymous@4105",
+    "code:Tools/ai-bridge/preflight.mjs#health@3942",
+    "code:Tools/ai-bridge/preflight.mjs#memberHealth@3334"
+  ],
+  "questions": [
+    {
+      "question": "캐릭터 상태 조회 처리와 읽는 데이터",
+      "entry": "slash:ai",
+      "path": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusText()"
+      ],
+      "readPath": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusText()",
+        "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)"
+      ],
+      "reads": [
+        {
+          "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+          "type": "read",
+          "to": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+          "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+          "line": 40,
+          "expression": "File.Exists"
+        },
+        {
+          "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+          "type": "read",
+          "to": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+          "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+          "line": 41,
+          "expression": "File.ReadAllText"
+        }
+      ]
+    },
+    {
+      "question": "호스트 목표 입력과 자율 목표의 구분",
+      "entry": "slash:ai",
+      "path": [
+        "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+        "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)"
+      ],
+      "autonomyEntry": "hook:AIPlayerSpikeMod.Update",
+      "freeTimeCode": null,
+      "freeTimeRemoved": "공식 0c8a3e8에서 자유 시간 동작(FreeTime·FreeTimeReason·FreeStoreCandidates)이 제거됨. GoalKind.Free 열거값은 저장 숫자 보존용으로 남음. 목표가 없으면 IdleHold가 판단 호출을 쉬게 한다.",
+      "idleHoldCode": "code:Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs#AIRunGate.IdleHold(bool, bool, bool, bool, bool, bool, bool, bool)",
+      "idleHoldPath": [
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+        "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/Core/AIRunGate.cs#AIRunGate.IdleHold(bool, bool, bool, bool, bool, bool, bool, bool)"
+      ],
+      "evidence": {
+        "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+        "hostCallLines": [
+          125,
+          132,
+          141,
+          153,
+          174,
+          188
+        ],
+        "hostInterruptionLines": [
+          193
+        ],
+        "llmSourceFile": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+        "llmSetGoalLines": [
+          744
+        ],
+        "llmHostProtectionFunction": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(World, Entity, string)",
+        "idleHoldCallFile": "Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs",
+        "idleHoldCallLines": [
+          298
+        ],
+        "linesComputedFromSnapshot": true
+      },
+      "note": "source host/llm is code data; no new feature ID invented for higher-level goal activity"
+    },
+    {
+      "question": "기억 검색 결과 생성",
+      "entry": "ai-bridge:POST /v1/plan",
+      "path": [
+        "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+        "code:Tools/ai-bridge/plan.mjs#plan@1665",
+        "code:Tools/ai-bridge/memgraph.mjs#runQueries@38589"
+      ],
+      "runQueryPath": [
+        "code:Tools/ai-bridge/memgraph.mjs#runQueries@38589",
+        "code:Tools/ai-bridge/memgraph.mjs#anonymous@38963",
+        "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066"
+      ],
+      "registryTargets": [
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qAbout@26437",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        },
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qFind@37192",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        },
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qFollow@33745",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        },
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qGame@35414",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        },
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qGoal@28811",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        },
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qNear@30756",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        },
+        {
+          "from": "code:Tools/ai-bridge/memgraph.mjs#runQuery@38066",
+          "to": "code:Tools/ai-bridge/memgraph.mjs#qWhen@32859",
+          "type": "reference",
+          "kind": "callback",
+          "file": "Tools/ai-bridge/memgraph.mjs",
+          "line": 578,
+          "resolution": "finite-object-registry-potential",
+          "possible": true
+        }
+      ]
+    }
+  ]
+}

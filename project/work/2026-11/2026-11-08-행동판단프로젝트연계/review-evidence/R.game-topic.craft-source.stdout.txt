@@ -1,0 +1,393 @@
+{
+  "origin": {
+    "normalizedValueSha256": "fa10261e4a94bed3b956012917c64687d9d017731785f7911614b207ca43c766",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/D/powered-presentation-helper/output2/cases.json",
+    "pointer": "/cases/5"
+  },
+  "value": {
+    "id": "completion:full-d:powered-presentation:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#query_electrical_crafting_progress",
+    "action": "query_electrical_crafting_progress",
+    "build": "26332184",
+    "status": "investigated_pending_independent_review",
+    "runtimeTested": false,
+    "scope": "Exact source and graphical consumer; shown/queried/requested result only.",
+    "roles": [
+      {
+        "role": "subject",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061",
+        "objectId": 6660,
+        "variation": 0,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/2002",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "4a599e8ccb8a0942fe328f242a6427094dc7e7b0234d22d8ef07953cdbc735d0"
+        }
+      },
+      {
+        "role": "conditional_display_or_query_subject",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061",
+        "objectId": 6660,
+        "variation": 0,
+        "conditional": true,
+        "origin": {
+          "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+          "pointer": "/2002",
+          "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+          "rawByteSha256": "4a599e8ccb8a0942fe328f242a6427094dc7e7b0234d22d8ef07953cdbc735d0"
+        }
+      }
+    ],
+    "entry": {
+      "input": "CraftingBuilding.OnSpawn constructs CraftingHandler, which caches ElectricityCD presence; graphical classes inherit CraftingBuilding. Use sets active crafting handler and opens inventory UI."
+    },
+    "conditions": [
+      "IsCrafting returns false on insufficient required power; otherwise buffer exists, slot index less than length and timeLeftToCraft>0. HasStartedCrafting accepts timeLeft>=0 and, when not actively crafting, nonzero normalized progress."
+    ],
+    "transitions": [
+      {
+        "from": "powered_state_or_runtime_query",
+        "to": "display_query_or_audio_request",
+        "text": "When an appropriate UI slot updates for the active handler, InventoryProgressSlotUI/OutputSlotUI set overlay to 1-normalized elapsed when started, otherwise 0; loop effect requires started+actively crafting+CraftingVisualCD flag. Crafting UI may show/pulse its power icon; optional world sprite is skipped when null. AutoCrafter state change calls OnActive/OnInactive animation hooks.",
+        "refs": [
+          "Pug.Other/CraftingHandler.cs:55-146",
+          "Pug.Other/CraftingHandler.cs:208-287",
+          "Pug.Other/CraftingBuilding.cs:125-200",
+          "Pug.Other/CraftingBuilding.cs:219-231",
+          "Pug.Other/CraftingBuilding.cs:254-262",
+          "Pug.Other/InventoryProgressSlotUI.cs:15-39",
+          "Pug.Other/OutputSlotUI.cs:16-40",
+          "Pug.Other/ExtractResourcesCraftingUI.cs:55-84",
+          "Pug.Other/ProcessResourcesCraftingUI.cs:125-145",
+          "Pug.Other/CraftingBuilding.cs:204-208",
+          "Pug.Other/Extractor.cs:1-108",
+          "Pug.Objects/TableSaw.cs:60-95"
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "conditional",
+        "text": "When an appropriate UI slot updates for the active handler, InventoryProgressSlotUI/OutputSlotUI set overlay to 1-normalized elapsed when started, otherwise 0; loop effect requires started+actively crafting+CraftingVisualCD flag. Crafting UI may show/pulse its power icon; optional world sprite is skipped when null. AutoCrafter state change calls OnActive/OnInactive animation hooks."
+      },
+      {
+        "kind": "conditional",
+        "text": "Extractor OnActive plays active sprite, enables particles and optionally requests looping audio; OnInactive defers off-state and stops audio. Applies only when AutoCrafter state changes and its hooks execute."
+      }
+    ],
+    "negativeCases": [
+      {
+        "input": "Failure or alternate condition",
+        "expected": "Missing timer/recipe or zero denominator causes false or zero normalized progress; negative indices are not explicitly guarded. Query/animation does not consume ingredients or prove output."
+      }
+    ],
+    "boundaries": [
+      "Fixed raw and decompiled build are static evidence; actual entity state, graphical binding, UI visibility, animation or audio playback was not observed. Display/query is not proof of gameplay effect. Independent review pending."
+    ],
+    "assetEvidence": {
+      "objects": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+        "pointer": "/2002",
+        "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1",
+        "rawByteSha256": "4a599e8ccb8a0942fe328f242a6427094dc7e7b0234d22d8ef07953cdbc735d0"
+      },
+      "components": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+        "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+        "authoring": {
+          "line": 22965,
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-543826468403519581",
+          "rawByteSha256": "b47856781985e66bbf294e228b3f71b78cce35eb0b352df82c8ad1e1e49e6ef3",
+          "selected": {
+            "blocksElectricity": 0,
+            "circuitConnectionMode": 0,
+            "circuitType": 0,
+            "direction": {
+              "x": 0,
+              "y": 0
+            },
+            "isLever": 0,
+            "isWire": 0,
+            "levelUseCurrentVariationAsInactive": 0,
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "-6037273521949286493"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "-3508808338460747394"
+            },
+            "sourceEnergy": 0
+          }
+        },
+        "graphical": [
+          {
+            "line": 14312,
+            "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-3756150209546138277",
+            "rawByteSha256": "962c1a0140be9780774d9657bf9572dd16f7e9522b2dc85692b41f96107b80b6",
+            "class": "Shredder",
+            "selected": {
+              "XScaler": {
+                "m_FileID": 0,
+                "m_PathID": "-7332283427683218085"
+              },
+              "activeParticles": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "5413702031177567579"
+                }
+              ],
+              "animator": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "buildingSpecificUISettings": [],
+              "conditionEffectsHandler": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "conditionsEffectsSettings": {
+                "stunEffectOffset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "craftingCategoryWindowInfos": [],
+              "defaultUISettings": {
+                "craftingUIBackgroundVariation": 1,
+                "titles": [
+                  {
+                    "mRTL_ConvertNumbers": 0,
+                    "mRTL_IgnoreArabicFix": 0,
+                    "mRTL_MaxLineLength": 0,
+                    "mTerm": "Salvaging",
+                    "m_DontLocalizeParameters": 0
+                  }
+                ]
+              },
+              "electricitySprite": {
+                "m_FileID": 0,
+                "m_PathID": "5325834485988019547"
+              },
+              "gameObjectsToRandomlyFlip": [],
+              "hasDisableableParticles": 0,
+              "hideRecipes": 0,
+              "indirectLightEmitters": [],
+              "interactable": {
+                "m_FileID": 0,
+                "m_PathID": "4774793106133699931"
+              },
+              "m_Enabled": 1,
+              "m_GameObject": {
+                "m_FileID": 0,
+                "m_PathID": "-21439389058314917"
+              },
+              "m_Name": "",
+              "m_Script": {
+                "m_FileID": 1,
+                "m_PathID": "3402524992992388759"
+              },
+              "m_spriteObjectOrientationHash": 0,
+              "objectVariants": [],
+              "optionalHealthBar": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "optionalLightOptimizer": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "outlineControllers": [],
+              "overrideOutputSprite": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "paintableOptions": {
+                "spriteColorTints": [],
+                "spriteRenderers": [],
+                "spriteSheetSkins": []
+              },
+              "particleOptions": {
+                "particleSpawnLocations": [],
+                "particlesToDisableOnLowQuality": [],
+                "particlesToSpawn": []
+              },
+              "previousHealth": 0,
+              "recipeSprite": {
+                "m_FileID": 0,
+                "m_PathID": "232244708538634117"
+              },
+              "recipeUIHoverDesc": {
+                "mRTL_ConvertNumbers": 0,
+                "mRTL_IgnoreArabicFix": 0,
+                "mRTL_MaxLineLength": 0,
+                "mTerm": "SalvageButtonDesc",
+                "m_DontLocalizeParameters": 0
+              },
+              "recipeUITitle": {
+                "mRTL_ConvertNumbers": 0,
+                "mRTL_IgnoreArabicFix": 0,
+                "mRTL_MaxLineLength": 0,
+                "mTerm": "SalvageButton",
+                "m_DontLocalizeParameters": 0
+              },
+              "reskinOptions": [],
+              "sfxTableElement": {
+                "value": -137194432
+              },
+              "shadow": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "soundOptions": {
+                "deathSfx": {
+                  "value": 1045606711
+                },
+                "soundsToPlay": [],
+                "takeDamageSfx": {
+                  "value": 926580047
+                }
+              },
+              "spriteObjects": [
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "1997178831361494363"
+                },
+                {
+                  "m_FileID": 0,
+                  "m_PathID": "0"
+                }
+              ],
+              "spritesToRandomlyFlip": [],
+              "useSharedTransformAnimations": 1
+            }
+          }
+        ]
+      }
+    },
+    "sourceSpecific": {
+      "electricitySpriteSerialized": {
+        "m_FileID": 0,
+        "m_PathID": "5325834485988019547"
+      },
+      "worldIndicatorAssigned": true
+    },
+    "codeEvidence": {
+      "Pug.Other/CraftingHandler.cs:55-146": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingHandler.cs",
+        "sha256": "8f9511fc8adf346b765a465fb4690322f23ba21c2772151a6c2d288a90da3cc4",
+        "start": 55,
+        "end": 146
+      },
+      "Pug.Other/CraftingHandler.cs:208-287": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingHandler.cs",
+        "sha256": "8f9511fc8adf346b765a465fb4690322f23ba21c2772151a6c2d288a90da3cc4",
+        "start": 208,
+        "end": 287
+      },
+      "Pug.Other/CraftingBuilding.cs:125-200": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingBuilding.cs",
+        "sha256": "c657b78d563c02a95f213c5da047c009ba8e0e49590a31b54b02c04036b2867d",
+        "start": 125,
+        "end": 200
+      },
+      "Pug.Other/CraftingBuilding.cs:219-231": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingBuilding.cs",
+        "sha256": "c657b78d563c02a95f213c5da047c009ba8e0e49590a31b54b02c04036b2867d",
+        "start": 219,
+        "end": 231
+      },
+      "Pug.Other/CraftingBuilding.cs:254-262": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingBuilding.cs",
+        "sha256": "c657b78d563c02a95f213c5da047c009ba8e0e49590a31b54b02c04036b2867d",
+        "start": 254,
+        "end": 262
+      },
+      "Pug.Other/InventoryProgressSlotUI.cs:15-39": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\InventoryProgressSlotUI.cs",
+        "sha256": "57b6373113c2ec84a34c3ac78efae241d36ba2a21a4fee7c8e724fdedb46fa18",
+        "start": 15,
+        "end": 39
+      },
+      "Pug.Other/OutputSlotUI.cs:16-40": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\OutputSlotUI.cs",
+        "sha256": "cc60bcebca0cf443597a3253a985b504ddd017026def2084e2a7b8035eba57cc",
+        "start": 16,
+        "end": 40
+      },
+      "Pug.Other/ExtractResourcesCraftingUI.cs:55-84": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ExtractResourcesCraftingUI.cs",
+        "sha256": "d6a183465745ece0bd01e3e077834183395ea43b38b6edcfb7dafcc1d37180c8",
+        "start": 55,
+        "end": 84
+      },
+      "Pug.Other/ProcessResourcesCraftingUI.cs:125-145": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ProcessResourcesCraftingUI.cs",
+        "sha256": "9cd9d5b07cdc987a595cf7d435012fdb67f0fdfb85a6a123eccb5cbeffcb80f9",
+        "start": 125,
+        "end": 145
+      },
+      "Pug.Other/CraftingBuilding.cs:204-208": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingBuilding.cs",
+        "sha256": "c657b78d563c02a95f213c5da047c009ba8e0e49590a31b54b02c04036b2867d",
+        "start": 204,
+        "end": 208
+      },
+      "Pug.Other/Extractor.cs:1-108": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Extractor.cs",
+        "sha256": "b5fad34286c04433a14339fdbef5f8063957f36b9d058747bec2931c62ce912d",
+        "start": 1,
+        "end": 108
+      },
+      "Pug.Objects/TableSaw.cs:60-95": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Objects\\TableSaw.cs",
+        "sha256": "daa82e6353e594fa19d3e436245d910e91983dd5acf1619327fb4070771ae708",
+        "start": 60,
+        "end": 95
+      },
+      "Pug.Automation.Components/Pug.Automation/ElectricityCD.cs": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Automation.Components\\Pug.Automation\\ElectricityCD.cs",
+        "sha256": "c873961c068d213e15756b98cfc346ad478f37fe51b4872018935cd30c07bc93",
+        "scope": "class/inheritance or power predicate"
+      },
+      "Pug.Objects/Shredder.cs": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Objects\\Shredder.cs",
+        "sha256": "d900c484c2d491fd2542f70e590f870d65fd192f4374b8046f95f046e7150f37",
+        "scope": "class/inheritance or power predicate"
+      },
+      "Pug.Other/Extractor.cs": {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Extractor.cs",
+        "sha256": "b5fad34286c04433a14339fdbef5f8063957f36b9d058747bec2931c62ce912d",
+        "scope": "class/inheritance or power predicate"
+      }
+    },
+    "priorClaimIds": [
+      "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#query_electrical_crafting_progress"
+    ],
+    "relationLinks": [
+      {
+        "relation": "qualifies",
+        "target": "supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#query_electrical_crafting_progress"
+      }
+    ],
+    "priorEvidence": {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-상호작용미결보강\\A-actions\\extraction.json",
+      "sha256": "be33b383f27c41dc169628def64f8bcda85b9fe949cf7140ad65bbb284a5d5db",
+      "recordId": "CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#query_electrical_crafting_progress"
+    },
+    "relatedReviewedCases": [
+      {
+        "caseId": "completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:-3316231852115796061#automatic_extract_result",
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\D\\production-v2\\cases.json",
+        "sha256": "8007726e210416d8f32c23b5e0505b939352d087a64024cf100a740dae29db18",
+        "review": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\review\\full-D-production26\\report-v2.md",
+        "reviewSha256": "11f5d3995ad5e92e2b3825a75af4307abf6dbe2eaba4edf7f77657d1b9d66474"
+      }
+    ]
+  },
+  "evidenceContext": null
+}

@@ -1,0 +1,2399 @@
+{
+  "authority": "Existing machine IDs and AST ranges reused; exact source segment comparison only. No new graph nodes or inferred runtime edges.",
+  "baseCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+  "runCandidateCommit": "76563bf3ac3af56241bb796c6510ad7e96c3ccd7",
+  "nodes": [
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.All",
+      "file": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "baseLines": [
+        74,
+        80
+      ],
+      "sourceTextSha256": "3becc169b76ebdcfd2c7d012387a9438fdffccc3a61492d1e7142112d24654bd",
+      "exactSegmentMatchesInRun": [
+        63
+      ],
+      "runLines": [
+        63,
+        69
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.Find(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "baseLines": [
+        141,
+        154
+      ],
+      "sourceTextSha256": "b8b6224d32e529d30600655ebda9cd99dd3f9f1065a730c82028a71841a43880",
+      "exactSegmentMatchesInRun": [
+        130
+      ],
+      "runLines": [
+        130,
+        143
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AITeammates.Summary(System.Collections.Generic.List<SeenPlayer>)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIAgents.cs",
+      "baseLines": [
+        340,
+        346
+      ],
+      "sourceTextSha256": "e497d9dd4d47eec412d97792a29ca4d9464cf2ead0e89c5c0855471e0377942e",
+      "exactSegmentMatchesInRun": [
+        329
+      ],
+      "runLines": [
+        329,
+        335
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBase.cs#StoreSkill.Summary(World, Entity, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "baseLines": [
+        1105,
+        1105
+      ],
+      "sourceTextSha256": "f28a9f93181ca2377dcfca7f99a0fa854254031b7daa85a81709bff550784edd",
+      "exactSegmentMatchesInRun": [
+        973
+      ],
+      "runLines": [
+        973,
+        973
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        19,
+        382
+      ],
+      "sourceTextSha256": "751fac93708e9cb6bf849b8791ef44587eb5bf3b691d3c53155932da46ea9abb",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.IsSkillCommand(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        461,
+        475
+      ],
+      "sourceTextSha256": "9644fb718c2088b6aae1ab0ebe5ceca6e05f2b316cb07c61d2bda01f031c6b58",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.IsTestCommand(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        476,
+        476
+      ],
+      "sourceTextSha256": "c94cd27f2daeb8d856c4ac55fdce0dda3b773ec3012707429ab48671877a35dd",
+      "exactSegmentMatchesInRun": [
+        710
+      ],
+      "runLines": [
+        710,
+        710
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.TestCommandsOn",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        478,
+        478
+      ],
+      "sourceTextSha256": "5b443982e72c3bf52b0eb38246e764df7d214bef7c7d78f53b082f742e457519",
+      "exactSegmentMatchesInRun": [
+        712
+      ],
+      "runLines": [
+        712,
+        712
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.TestSwitchPath",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        477,
+        477
+      ],
+      "sourceTextSha256": "3d7f7cace0dcf5561a699f78a904c69fe757408d5ec33d998b778527260d5d70",
+      "exactSegmentMatchesInRun": [
+        711
+      ],
+      "runLines": [
+        711,
+        711
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryCounts(World, Entity)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        813,
+        829
+      ],
+      "sourceTextSha256": "4dec28f2f49b05d5b4bc5e4fdf3f536ac1dff9fc374660feaae1ac40008ea54d",
+      "exactSegmentMatchesInRun": [
+        1014
+      ],
+      "runLines": [
+        1014,
+        1030
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        356,
+        386
+      ],
+      "sourceTextSha256": "923e27ead276f331eea8f0af529222242a354cf86dd29f4963146d3f6b8ad978",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.TestCommands",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        468,
+        474
+      ],
+      "sourceTextSha256": "8884cbd00c231f22eb4fdad1e963e5bb3f135602026dda0542043ea008c0155a",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "baseLines": [
+        454,
+        454
+      ],
+      "sourceTextSha256": "2b792d181ca0fba09c9bbde6a398de35aa137fecfeb6e16c5d79966ae48e9b5e",
+      "exactSegmentMatchesInRun": [
+        402
+      ],
+      "runLines": [
+        402,
+        402
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.Settings()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "baseLines": [
+        142,
+        142
+      ],
+      "sourceTextSha256": "d654d391ce6a1b354bf411b279e5d86d77e69970984f479c4d574314f134492f",
+      "exactSegmentMatchesInRun": [
+        134
+      ],
+      "runLines": [
+        134,
+        134
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "baseLines": [
+        458,
+        469
+      ],
+      "sourceTextSha256": "7a6f93badda95a140484efa7ce91da5f10a59168d452d59621ab226b9c60b4b2",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.CreateNewCharacter(string, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        106,
+        166
+      ],
+      "sourceTextSha256": "9118e58e74d8b85047ad38847c1fdc18535b38a2e659239104339927c10911c1",
+      "exactSegmentMatchesInRun": [
+        1647
+      ],
+      "runLines": [
+        1647,
+        1707
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.CreateServerCopy()",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        97,
+        101
+      ],
+      "sourceTextSha256": "9a0f40515e4330d9759581b9a69d055278ff1f4d49ff2238e4575af316c83fe5",
+      "exactSegmentMatchesInRun": [
+        1638
+      ],
+      "runLines": [
+        1638,
+        1642
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.DistinctLook(PlayerCustomizationTableDataBlock, PlayerCustomization, PlayerCustomization)",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        213,
+        250
+      ],
+      "sourceTextSha256": "82c68d067584e209ebb84e285cb95a9bcd337640437b874d7ceda5c5b1c2cf9f",
+      "exactSegmentMatchesInRun": [
+        1754
+      ],
+      "runLines": [
+        1754,
+        1791
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.FilePath(string, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        39,
+        42
+      ],
+      "sourceTextSha256": "346b6143b7b4781622911ccfdb5857fff73ad5364e5401c17c296847e7c0a465",
+      "exactSegmentMatchesInRun": [
+        1580
+      ],
+      "runLines": [
+        1580,
+        1583
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        63,
+        94
+      ],
+      "sourceTextSha256": "9ee58c976ef96be2b13968d41e4552720f9503fcfeeb6b8c73a7a7916af4ca57",
+      "exactSegmentMatchesInRun": [
+        1604
+      ],
+      "runLines": [
+        1604,
+        1635
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Summary(CharacterData)",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        252,
+        261
+      ],
+      "sourceTextSha256": "e17bdb6cf7ccba86ced1b732d4a70f10209c6bcfa5416e576a5eb5dbf44c5b7e",
+      "exactSegmentMatchesInRun": [
+        1793
+      ],
+      "runLines": [
+        1793,
+        1802
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "baseLines": [
+        142,
+        157
+      ],
+      "sourceTextSha256": "a1d2b2127ad3502dde46c21f7138f752eb95f9539de25785621bcdf07657aed2",
+      "exactSegmentMatchesInRun": [
+        137
+      ],
+      "runLines": [
+        137,
+        152
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIDrops.cs#AIDrops.Summary()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIDrops.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "baseLines": [
+        66,
+        71
+      ],
+      "sourceTextSha256": "ddcad62bd4b51a98a68e50391278f11b63d94bce4d65097e2a61a2d5224378f7",
+      "exactSegmentMatchesInRun": [
+        476
+      ],
+      "runLines": [
+        476,
+        481
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "baseLines": [
+        575,
+        643
+      ],
+      "sourceTextSha256": "6c2ff21ff70c4b7fe365cec00829a8f930d43cc189dd105d58e0da5946374c9b",
+      "exactSegmentMatchesInRun": [
+        580
+      ],
+      "runLines": [
+        580,
+        648
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs#FarmSkill.Summary(World, Entity, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "baseLines": [
+        1346,
+        1352
+      ],
+      "sourceTextSha256": "b0d7ab6269778d89780ac3ae7a8ce3aee786b083cf73facd96d9106af0b43d75",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "baseLines": [
+        80,
+        190
+      ],
+      "sourceTextSha256": "8c9abec7e8535893e172962be69a6cb6f0d5adb11b1b5258a9951dc5085643fd",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.Settings()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "baseLines": [
+        53,
+        53
+      ],
+      "sourceTextSha256": "c6d4e1a73a86b1dc5272dd8cfab8ceface1958b6e512e44729ee6d2836981342",
+      "exactSegmentMatchesInRun": [
+        44
+      ],
+      "runLines": [
+        44,
+        44
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.StatusText(World, Entity)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "baseLines": [
+        54,
+        54
+      ],
+      "sourceTextSha256": "76f9e7fed4f4abffd68d59e603a881b3f70aef0ae6d5602d8d4a2ba90f08b61e",
+      "exactSegmentMatchesInRun": [
+        45
+      ],
+      "runLines": [
+        45,
+        45
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIKnowledge.cs#AIKnowledge.Ensure()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "baseLines": [
+        109,
+        141
+      ],
+      "sourceTextSha256": "ef976e2a3039499de60d28c1a45b846421f7418d555c5e50484387b2a4646078",
+      "exactSegmentMatchesInRun": [
+        69
+      ],
+      "runLines": [
+        69,
+        101
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ensure()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "baseLines": [
+        159,
+        201
+      ],
+      "sourceTextSha256": "b059d96e206dfb432ca5b14d9237ce18f9f7eb8605b262f5eed241b7dba2e042",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Load()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "baseLines": [
+        418,
+        418
+      ],
+      "sourceTextSha256": "c6a81f961c566ff0a39a9fc493d2e58601f1db6a8a4037745352106a07b57b93",
+      "exactSegmentMatchesInRun": [
+        398
+      ],
+      "runLines": [
+        398,
+        398
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Summary()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "baseLines": [
+        436,
+        440
+      ],
+      "sourceTextSha256": "2b2cd2a5c1fe288de0e73842348e9ba26832bd69ab7a3176ea8753547442a06d",
+      "exactSegmentMatchesInRun": [
+        416
+      ],
+      "runLines": [
+        416,
+        420
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.StatusText()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+      "baseLines": [
+        163,
+        173
+      ],
+      "sourceTextSha256": "f7c1a6a4c2d06f1afdd2c240ae2f34236e7ce2129f94a6b10360243bee4a5fc6",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.DefaultAgent()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        128,
+        133
+      ],
+      "sourceTextSha256": "a0f625b72c560e1dd86f9a6d9262482f04b90addb7a0fada385b8486fa8384f1",
+      "exactSegmentMatchesInRun": [
+        481
+      ],
+      "runLines": [
+        481,
+        486
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        136,
+        210
+      ],
+      "sourceTextSha256": "4ee64a14f73993db4ce05708e189dc260209146039db8fe0d5640332edc41a2b",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.FlushReplies()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        264,
+        285
+      ],
+      "sourceTextSha256": "73b1647efa055f86cb3a8ef59123bb6ccf986bf5af13fc9b529eacb30872ab26",
+      "exactSegmentMatchesInRun": [
+        682
+      ],
+      "runLines": [
+        682,
+        703
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.IsAiCommand(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        212,
+        217
+      ],
+      "sourceTextSha256": "8ac84c159a493651ba349cbc276eb01018e2ed2583ebe1dc4eb05fda9111b461",
+      "exactSegmentMatchesInRun": [
+        572
+      ],
+      "runLines": [
+        572,
+        577
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        253,
+        262
+      ],
+      "sourceTextSha256": "13e8e666cad748525492d310deb06ef20c73deb9930079ec393e47f57c657fbd",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        219,
+        234
+      ],
+      "sourceTextSha256": "5ce33d8fe888dbc04f23e962c714b40747b35aa0c328ca923962a2f98b6aa8dd",
+      "exactSegmentMatchesInRun": [
+        637
+      ],
+      "runLines": [
+        637,
+        652
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        242,
+        252
+      ],
+      "sourceTextSha256": "85160b4712f249e69d9b8816cfd91598d7bfeb0f180852646a6c0b236dc060d2",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusText()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        236,
+        240
+      ],
+      "sourceTextSha256": "6f8f1da44dd13312063dd6b676a54d6e738d3568d45ad22d3295946801b71687",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        27,
+        94
+      ],
+      "sourceTextSha256": "85ee853126564c4adcf53364f3386e04ed9a52522b96e51e69759026ef570130",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        520,
+        582
+      ],
+      "sourceTextSha256": "ece9a986b0c29025d032b991d5763121cbe2c0690a27b8c37d02a078a2cf27bf",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        243,
+        278
+      ],
+      "sourceTextSha256": "d7646d94983f14231af7c23fc6fa6397b4da6efe42d50bb5b203467b247fb64d",
+      "exactSegmentMatchesInRun": [],
+      "runLines": null,
+      "sameSourceSegment": false
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        107,
+        124
+      ],
+      "sourceTextSha256": "3134dd15dfd627d0477a82d95cf00cc766823ab4dec719b8134f5c64a0ef1d88",
+      "exactSegmentMatchesInRun": [
+        1446
+      ],
+      "runLines": [
+        1446,
+        1463
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        71,
+        83
+      ],
+      "sourceTextSha256": "325ff775846b6f2979bdd73f2e1e9c554d8541435ca4a70b26c6f4f7598d19c5",
+      "exactSegmentMatchesInRun": [
+        1410
+      ],
+      "runLines": [
+        1410,
+        1422
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.Summary(World, Entity, string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AITunnel.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIExplore.cs",
+      "baseLines": [
+        1125,
+        1131
+      ],
+      "sourceTextSha256": "c7ff07d62d488c580966d9eb053e6fec0ba2cda443566f5e2fc1e080df5e6b72",
+      "exactSegmentMatchesInRun": [
+        1088
+      ],
+      "runLines": [
+        1088,
+        1094
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        33,
+        53
+      ],
+      "sourceTextSha256": "801aaeba11b5bf9aee8bd9a3669aa01e97f2f2c0496f50d4e37f15dea7ec842d",
+      "exactSegmentMatchesInRun": [
+        1502
+      ],
+      "runLines": [
+        1502,
+        1522
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.PathFor(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        81,
+        84
+      ],
+      "sourceTextSha256": "41b20f688e6969707c20ea8a46201b0acc9f65102f60434140fb7a68c0133147",
+      "exactSegmentMatchesInRun": [
+        1550
+      ],
+      "runLines": [
+        1550,
+        1553
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs#InvSkill.Start(World, Entity, float)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+      "baseLines": [
+        65,
+        91
+      ],
+      "sourceTextSha256": "6cfd2c32dd3ecf7e0c225b06cde6b08c954449eec12ff9eadb3ba172577bd7fc",
+      "runLines": [
+        1937,
+        1963
+      ],
+      "sameSourceSegment": true
+    },
+    {
+      "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step2_NameAndPrepareInput(World)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "runFile": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "baseLines": [
+        924,
+        968
+      ],
+      "sourceTextSha256": "280a4327a2e7932c31e851905038ef796258bd352946eb5b5240ee5c765aaed0",
+      "runLines": [
+        1078,
+        1122
+      ],
+      "sameSourceSegment": true
+    }
+  ],
+  "features": [
+    {
+      "id": "hook:AIPlayerSpikeMod.CanBeUnloaded",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikeMod.CanBeUnloaded",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 224,
+      "registration": "IMod interface"
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.EarlyInit",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikeMod.EarlyInit",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 193,
+      "registration": "IMod interface"
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.Init",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikeMod.Init",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 216,
+      "registration": "IMod interface"
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.ModObjectLoaded",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikeMod.ModObjectLoaded",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 220,
+      "registration": "IMod interface"
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.Shutdown",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikeMod.Shutdown",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 229,
+      "registration": "IMod interface"
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.Update",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikeMod.Update",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 243,
+      "registration": "IMod interface"
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 107,
+      "registration": "Harmony patch registered via AccessTools.Method"
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.ChatSendPrefix",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikePatches.ChatSendPrefix",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 71,
+      "registration": "Harmony patch registered via AccessTools.Method"
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 59,
+      "registration": "Harmony patch registered via AccessTools.Method"
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 99,
+      "registration": "Harmony patch registered via AccessTools.Method"
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 89,
+      "registration": "Harmony patch registered via AccessTools.Method"
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+      "type": "기능",
+      "kind": "hook",
+      "name": "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 64,
+      "registration": "Harmony patch registered via AccessTools.Method"
+    },
+    {
+      "id": "slash:ai",
+      "type": "기능",
+      "kind": "slash command",
+      "name": "slash:ai",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 27,
+      "selector": "IsAiCommand /ai; subcommands handled within one request dispatcher"
+    }
+  ],
+  "existingEdges": [
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBase.cs#StoreSkill.Summary(World, Entity, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryCounts(World, Entity)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBase.cs",
+      "line": 1105,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 117,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 125,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 128,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 137,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 138,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 26,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 30,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 38,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 42,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 55,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 60,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 66,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 84,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.StartSkill(World, Entity, AISkill, float)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 93,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 81,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Summary()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 346,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Summary()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 347,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 104,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 116,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 123,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 127,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 135,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 159,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 178,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 180,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 182,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 200,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 202,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 208,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 224,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 231,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 244,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 247,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 261,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 277,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 285,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 294,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 312,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 314,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 318,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 331,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 338,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 341,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 346,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 372,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 375,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 378,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 46,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 75,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 76,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs",
+      "line": 95,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "line": 454,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.Settings()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "line": 142,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryCounts(World, Entity)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "line": 463,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.Settings()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "line": 468,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.StatusText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+      "line": 468,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.CreateNewCharacter(string, string)",
+      "type": "reference",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.DistinctLook(PlayerCustomizationTableDataBlock, PlayerCustomization, PlayerCustomization)",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 122,
+      "resolution": "single-Roslyn-candidate-with-semantic-error",
+      "possible": true
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.CreateNewCharacter(string, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 81,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.FilePath(string, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 65,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Summary(CharacterData)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 77,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Summary(CharacterData)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 84,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:legacy",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 69,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:path",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 73,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs#AICharacterStore.Prepare(string, string, string)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:path",
+      "file": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs",
+      "line": 75,
+      "expression": "File.ReadAllText"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:p",
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "line": 148,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:p",
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "line": 148,
+      "expression": "File.ReadAllText"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()",
+      "type": "write",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:Dir",
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "line": 154,
+      "expression": "Directory.CreateDirectory"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs#AIDecisionsApi.Settings()",
+      "type": "write",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:p",
+      "file": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs",
+      "line": 154,
+      "expression": "File.WriteAllText"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:GoalsPath",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "line": 600,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:GoalsPath",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "line": 601,
+      "expression": "File.ReadLines"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:GoalsPath",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "line": 607,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:StateBak",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "line": 584,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:StatePath",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "line": 583,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIExpCore.cs#ExpRecorder.Load(ExpCond)",
+      "type": "write",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:Dir",
+      "file": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs",
+      "line": 577,
+      "expression": "Directory.CreateDirectory"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIFarm.cs#FarmSkill.Summary(World, Entity, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryCounts(World, Entity)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIFarm.cs",
+      "line": 1351,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.StatusText(World, Entity)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 85,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 100,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 105,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 118,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 119,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 122,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 124,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 126,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 130,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 133,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 140,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 142,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 148,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 152,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 154,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 166,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 169,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 171,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 173,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 175,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 182,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 189,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 85,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 94,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.Settings()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.Settings()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 53,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.StatusText(World, Entity)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.StatusText(World, Entity)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+      "line": 54,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs#InvSkill.Start(World, Entity, float)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIInspectSkills.cs",
+      "line": 88,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIKnowledge.cs#AIKnowledge.Ensure()",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIKnowledge.cs:s.path",
+      "file": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "line": 121,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIKnowledge.cs#AIKnowledge.Ensure()",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIKnowledge.cs:s.path",
+      "file": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs",
+      "line": 123,
+      "expression": "File.ReadAllText"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ensure()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIDrops.cs#AIDrops.Summary()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "line": 197,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ensure()",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIMemory.cs:_path",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "line": 171,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ensure()",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIMemory.cs:_path",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "line": 173,
+      "expression": "File.ReadAllText"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Load()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ensure()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "line": 418,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Summary()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMemory.cs#AIMemory.Ensure()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIMemory.cs",
+      "line": 438,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 203,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.IsSkillCommand(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 195,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.IsTestCommand(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 139,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.TestCommandsOn",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 139,
+      "resolution": "property-access"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.TestCommandsOn",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 207,
+      "resolution": "property-access"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.Commands.cs#AIBody.TestSwitchPath",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 141,
+      "resolution": "property-access"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 142,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 157,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 164,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 169,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 179,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 186,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 199,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 207,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 169,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 179,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 186,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 199,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 157,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 249,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 248,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusText()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StageText()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 239,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusText()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 238,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.Find(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 63,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIAgents.cs#AIAgent.Find(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 70,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.DefaultAgent()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 80,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 89,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.IsAiCommand(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 30,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.IsAiCommand(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 35,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 51,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.Reply(string, ChatKind, string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 75,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.StatusAll()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 75,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+      "type": "reference",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData)",
+      "kind": "framework-invoked",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 542,
+      "resolution": "AccessTools.Method typeof+constant/nameOf"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+      "type": "reference",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+      "kind": "framework-invoked",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 545,
+      "resolution": "AccessTools.Method typeof+constant/nameOf"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.FlushReplies()",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 275,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 76,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AITunnel.cs#TunnelSkill.Summary(World, Entity, string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBody.cs#AIBody.InventoryCounts(World, Entity)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AITunnel.cs",
+      "line": 1127,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.PathFor(string)",
+      "type": "reference",
+      "kind": "call",
+      "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "line": 37,
+      "resolution": "semantic"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+      "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "line": 40,
+      "expression": "File.Exists"
+    },
+    {
+      "from": "code:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs#AIWorldSettings.Members(string)",
+      "type": "read",
+      "to": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+      "file": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs",
+      "line": 41,
+      "expression": "File.ReadAllText"
+    },
+    {
+      "from": "hook:AIPlayerSpikeMod.Update",
+      "type": "기능→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+      "line": 243
+    },
+    {
+      "from": "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+      "type": "기능→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 107
+    },
+    {
+      "from": "hook:AIPlayerSpikePatches.ChatSendPrefix",
+      "type": "기능→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+      "line": 71
+    },
+    {
+      "from": "slash:ai",
+      "type": "기능→코드",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs",
+      "line": 27
+    }
+  ],
+  "dataNodes": [
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:legacy",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:legacy",
+      "locator": "legacy",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:path",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AICharacterStore.cs:path",
+      "locator": "path",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:Dir",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:Dir",
+      "locator": "Dir",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:p",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIDecisionsApi.cs:p",
+      "locator": "p",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:Dir",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs:Dir",
+      "locator": "Dir",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:GoalsPath",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs:GoalsPath",
+      "locator": "GoalsPath",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:StateBak",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs:StateBak",
+      "locator": "StateBak",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIExpCore.cs:StatePath",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIExpCore.cs:StatePath",
+      "locator": "StatePath",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIKnowledge.cs:s.path",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIKnowledge.cs:s.path",
+      "locator": "s.path",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIMemory.cs:_path",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIMemory.cs:_path",
+      "locator": "_path",
+      "locatorKind": "expression"
+    },
+    {
+      "id": "data:Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+      "type": "데이터",
+      "name": "Assets/AIPlayerSpike/Scripts/AIWorldSettings.cs:p",
+      "locator": "p",
+      "locatorKind": "expression"
+    }
+  ]
+}

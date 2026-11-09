@@ -1,0 +1,71 @@
+# rounds 6 walls in map 91
+
+## R1 t0=882.6 spawn (-26,36) -> down 15s
+start: go -30,36 (spawn 54.5s after go), look -30.00,36.00 100/100 65, sword 88, food 3
+end: sword 85, food 1, down -29.0,37.6 hunger 88
+AI took 3 hits, 132 hp: 2.3s 100->43 | 8.5s 58->8 | 15.0s 25->0
+brute: explicit hits 3, 1-dmg 3 (100%), big 0 sum 0; hidden drops 1 sum 1 [7.9~8.2s -1]; hp end 537, healed 0 [], dealt 4
+  big drops (time, size, AI-brute distance within 0.5 s): 
+decisions: SEND 46, RESULT 45 (180/min), {"attack":11,"eat":8,"away_near":26}, status {"APPLY":39,"HOLD":4,"DISCARD:":2}, latency p50 0.23 p95 0.37 max 1.69, $0.005595
+skills started {"공격":3,"먹기":2,"거리 벌리기":2}, switches 2 (emergency 2), PLANNER lines 0
+
+## R2 t0=1069.8 spawn (-26,36) -> down 26.9s
+start: go -30,36 (spawn 18.3s after go), look -30.00,36.00 100/100 70, sword 88, food 1
+end: sword 78, food 0, down -26.0,45.1 hunger 79
+AI took 3 hits, 154 hp: 2.8s 100->42 | 14.5s 71->20 | 26.9s 45->0
+brute: explicit hits 10, 1-dmg 6 (60%), big 4 sum 272; hidden drops 3 sum 70 [2.8~3.3s -31, 15.3~15.6s -38, 26.5~26.8s -1]; hp end 193, healed 0 [], dealt 348
+  big drops (time, size, AI-brute distance within 0.5 s): 3.3s hidden -31 d=1.1 | 11.7s -93 d=4.4 | 11.9s -107 d=3.3 | 12.5s -36 d=0.77 | 15.0s -36 d=0.8 | 15.6s hidden -38 d=1
+  segment +2.8s len 0.5s: 1 events (1 hidden) 31 dmg; AI hit before: 2.8s 100->42; brute (-30.84,36.02) 0.4s old, wall 1.7; AI (-32.81,36) 0.4s old, wall 0.5
+  segment +11.7s len 0.8s: 3 events (0 hidden) 236 dmg; AI hit before: 없음(-4~+1초); brute (-28.68,41.13) 0.3s old, wall 0.4; AI (-24.32,44.63) 0.3s old, wall 2.1
+  segment +15s len 0.6s: 2 events (1 hidden) 74 dmg; AI hit before: 14.5s 71->20; brute (-28.63,41.16) 0.5s old, wall 0.3; AI (-26.71,42.26) 0.5s old, wall 0.8
+decisions: SEND 91, RESULT 90 (201/min), {"away_near":49,"attack":26,"eat":1,"wait":14}, status {"APPLY":84,"HOLD":6}, latency p50 0.23 p95 0.37 max 0.83, $0.011154
+skills started {"거리 벌리기":5,"공격":5,"먹기":1,"기다리기":4}, switches 7 (emergency 1), PLANNER lines 0
+
+## R3 t0=1157 spawn (-26,36) -> down 9s
+start: go -30,36 (spawn 19.5s after go), look -30.00,36.00 100/100 70, sword 88, food 0
+end: sword 84, food 0, down -28.0,36.0 hunger 69
+AI took 2 hits, 100 hp: 3.1s 100->40 | 9.0s 40->0
+brute: explicit hits 2, 1-dmg 0 (0%), big 2 sum 62; hidden drops 2 sum 63 [4.2~4.5s -30, 4.5~5.1s -33]; hp end 445, healed 0 [], dealt 125
+  big drops (time, size, AI-brute distance within 0.5 s): 3.2s -32 d=0.5 | 4.5s hidden -30 d=1.3 | 4.5s -30 d=1.3 | 5.1s hidden -33 d=1.8
+  segment +3.2s len 1.9s: 4 events (2 hidden) 125 dmg; AI hit before: 3.1s 100->40; brute (-32.25,35.99) 0.5s old, wall 0.6; AI (-33.65,36) 0.5s old, wall 0
+decisions: SEND 25, RESULT 24 (160/min), {"away_near":18,"attack":5,"wait":1}, status {"APPLY":19,"DISCARD:":3,"HOLD":2}, latency p50 0.27 p95 0.57 max 0.77, $0.002925
+skills started {"거리 벌리기":3,"공격":3,"기다리기":1}, switches 4 (emergency 1), PLANNER lines 0
+
+## R4 t0=1199.9 spawn (-26,36) -> down 10s
+start: go -30,36 (spawn 19.2s after go), look -30.00,36.00 100/100 70, sword 88, food 0
+end: sword 83, food 0, down -30.8,35.0 hunger 69
+AI took 2 hits, 100 hp: 3.3s 100->44 | 10.0s 44->0
+brute: explicit hits 3, 1-dmg 1 (33%), big 2 sum 65; hidden drops 2 sum 67 [4.5~4.7s -36, 5.3~5.5s -31]; hp end 407, healed 0 [], dealt 133
+  big drops (time, size, AI-brute distance within 0.5 s): 3.7s -32 d=1.2 | 4.1s -33 d=1 | 4.7s hidden -36 d=0.4 | 5.5s hidden -31 d=0.6
+  segment +3.7s len 1.8s: 4 events (2 hidden) 132 dmg; AI hit before: 3.3s 100->44; brute (-33.97,35.96) 0.7s old, wall 0; AI (-35.06,36) 0.7s old, wall 0.6
+decisions: SEND 30, RESULT 29 (174/min), {"away_near":21,"attack":8}, status {"APPLY":22,"DISCARD:":4,"HOLD":3}, latency p50 0.23 p95 0.43 max 0.63, $0.003575
+skills started {"거리 벌리기":3,"공격":3}, switches 3 (emergency 0), PLANNER lines 0
+
+## R5 t0=1243 spawn (-26,36) -> down 36.2s
+start: go -30,36 (spawn 18.5s after go), look -30.00,36.00 100/100 70, sword 88, food 0
+end: sword 85, food 0, down -26.3,36.4 hunger 68
+AI took 2 hits, 100 hp: 9.5s 100->37 | 36.2s 37->0
+brute: explicit hits 3, 1-dmg 2 (67%), big 1 sum 36; hidden drops 1 sum 1 [8.5~8.7s -1]; hp end 539, healed 37 [26.9~27.2s +37], dealt 39
+  big drops (time, size, AI-brute distance within 0.5 s): 9.3s -36 d=1
+  segment +9.3s len 0s: 1 events (0 hidden) 36 dmg; AI hit before: 9.5s 100->37; brute (-33.53,36.47) 0.8s old, wall 0; AI (-32.17,35.3) 0.8s old, wall 0.3
+decisions: SEND 115, RESULT 115 (191/min), {"away_near":55,"attack":12,"wait":48}, status {"APPLY":110,"DISCARD:":3,"HOLD":2}, latency p50 0.27 p95 0.37 max 0.47, $0.013166
+skills started {"거리 벌리기":5,"공격":2,"기다리기":8}, switches 4 (emergency 0), PLANNER lines 0
+
+## R6 t0=1312.2 spawn (-26,36) -> down 26.7s
+start: go -30,36 (spawn 18.1s after go), look -30.00,36.00 100/100 70, sword 88, food 0
+end: sword 65, food 0, down -26.7,37.4 hunger 67
+AI took 2 hits, 100 hp: 14.8s 100->44 | 26.7s 44->0
+brute: explicit hits 22, 1-dmg 12 (55%), big 10 sum 344; hidden drops 4 sum 68 [4.2~4.5s -33, 6.9~7.3s -1, 7.8~8.1s -1, 23.8~24.0s -33]; hp end 183, healed 0 [], dealt 424
+  big drops (time, size, AI-brute distance within 0.5 s): 4.5s hidden -33 d=0.9 | 4.5s -33 d=0.9 | 4.9s -36 d=0.9 | 5.3s -35 d=0.9 | 5.7s -35 d=0.88 | 6.0s -36 d=0.9 | 6.4s -36 d=0.9 | 6.8s -35 d=0.88 | 12.4s -30 d=0.9 | 24.0s hidden -33 d=1.2 | 24.0s -33 d=1.2 | 24.4s -35 d=1.2
+  segment +4.2s len 2.6s: 8 events (1 hidden) 279 dmg; AI hit before: 없음(-4~+1초); brute (-36,36) 0.3s old, wall 1.5; AI (-32.37,35) 0.5s old, wall 0.1
+  segment +12.4s len 0s: 1 events (0 hidden) 30 dmg; AI hit before: 없음(-4~+1초); brute (-33.06,37.13) 0.1s old, wall 0.4; AI (-32.17,37) 0.1s old, wall 0.6
+  segment +23.8s len 0.6s: 3 events (1 hidden) 101 dmg; AI hit before: 없음(-4~+1초); brute (-25.88,36.58) 0s old, wall 0; AI (-27.24,37.69) 0s old, wall 0.7
+decisions: SEND 84, RESULT 83 (187/min), {"away_near":39,"attack":42,"wait":2}, status {"APPLY":75,"HOLD":3,"DISCARD:":4,"QUEUED":1}, latency p50 0.27 p95 0.37 max 0.67, $0.010393
+skills started {"거리 벌리기":4,"공격":4,"기다리기":1}, switches 5 (emergency 1), PLANNER lines 0
+
+## total
+results: {"down":6}
+brute explicit hits 43, 1-dmg 24 (56%) sum 24, big 19 sum 779, hidden drops 13 sum 270, dealt 1073, healed 37, segments 9
+AI hits taken 14, hp 686
+decisions RESULT 386, {"attack":104,"eat":9,"away_near":208,"wait":65}, $0.046808
+latency all rounds p50 0.27 p95 0.37 max 1.69 n 386

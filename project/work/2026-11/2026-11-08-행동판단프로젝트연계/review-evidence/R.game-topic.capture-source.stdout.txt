@@ -1,0 +1,65 @@
+{
+  "origin": {
+    "normalizedValueSha256": "457df05442b04bd06b8d0c314096029c941391881192a3898d6da858eae3c671",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated/cases.json",
+    "pointer": "/cases/19"
+  },
+  "value": {
+    "id": "bug-net",
+    "action": "catch_critter_request",
+    "build": "26332184",
+    "runtimeTested": false,
+    "status": "reused_pass_pending_review",
+    "scope": "BugNet 18:0 with runtime CritterCD candidate; prior Firefly result is one conditional example",
+    "roles": [
+      {
+        "role": "tool",
+        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7095871049192168085",
+        "objectId": 18,
+        "variation": 0,
+        "conditional": true,
+        "origin": [
+          {
+            "role": "tool",
+            "objectPointer": "/16",
+            "sourceRawByteSha256": "367e8a1c830cb5704b520a5e4f92960049a4528e67c900394abecfe63c7b43cd",
+            "objectType": 606
+          }
+        ]
+      }
+    ],
+    "entry": "see exact independently reviewed prior case",
+    "conditions": "prior case gates; source identity verified",
+    "transitions": [
+      {
+        "from": "input",
+        "to": "conditional consumer",
+        "refs": [
+          "2026-11-07-행동20건수집/D-outcomes/cases/firefly/action.md"
+        ]
+      }
+    ],
+    "outcomes": [
+      "prior static case only; follow referenced result and conditions"
+    ],
+    "negativeCases": [
+      "failed prior-case gates"
+    ],
+    "boundaries": [
+      "runtime execution and other target variants not observed"
+    ],
+    "priorClaimIds": [
+      "initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7095871049192168085#0"
+    ],
+    "relationLinks": "role-links.json",
+    "assetEvidence": "coverage.json",
+    "codeEvidence": "2026-11-07-행동20건수집/D-outcomes/cases/firefly/action.md"
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "priorResearchRoot": "../2026-11",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/world-tools-helper-v2/generated",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결",
+    "sessionWorkRoot": ".."
+  }
+}

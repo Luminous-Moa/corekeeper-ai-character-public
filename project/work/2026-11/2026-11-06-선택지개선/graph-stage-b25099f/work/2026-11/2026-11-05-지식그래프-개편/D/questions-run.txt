@@ -1,0 +1,1679 @@
+[
+  {
+    "question": "캐릭터 상태 조회는 어떻게 처리하고 무엇을 읽나?",
+    "sourceNodes": 5,
+    "userPathGaps": [
+      {
+        "activity": "UA-01",
+        "reason": "연결된 출력 요소 없음"
+      }
+    ],
+    "reachable": [
+      {
+        "feature": "slash:ai",
+        "codeCount": 739,
+        "truncated": true,
+        "selectedSourceReachability": [
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusAll()",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 454,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusAll()",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusText()",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 509,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusText()",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIWorldSettings.Members(string)",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 454,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusAll()",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusAll()",
+                "kind": "call",
+                "line": 666,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIWorldSettings.Members(string)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIWorldSettings.PathFor(string)",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 454,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusAll()",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.StatusAll()",
+                "kind": "call",
+                "line": 666,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIWorldSettings.Members(string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIWorldSettings.Members(string)",
+                "kind": "call",
+                "line": 1505,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIWorldSettings.PathFor(string)",
+                "type": "reference"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question": "호스트 목표와 자율 목표 결정의 코드 차이는?",
+    "sourceNodes": 7,
+    "userPathGaps": [
+      {
+        "activity": "UA-02",
+        "reason": "연결된 출력 요소 없음"
+      }
+    ],
+    "reachable": [
+      {
+        "feature": "slash:ai",
+        "codeCount": 739,
+        "truncated": true,
+        "selectedSourceReachability": [
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 548,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "kind": "call",
+                "line": 324,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 379,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 548,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "kind": "call",
+                "line": 324,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 379,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 144,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Check(World, Entity, PlanAnswerJ, float, out RejectKind)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.CheckReason(World, Entity, PlanAnswerJ, float, out bool)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Enable(World, Entity)",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 548,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "kind": "call",
+                "line": 324,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 379,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 135,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Enable(World, Entity)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(string)",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "slash:ai",
+                "line": 412,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 548,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "kind": "call",
+                "line": 324,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 379,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 144,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "kind": "call",
+                "line": 196,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(string)",
+                "type": "reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "feature": "hook:AIPlayerSpikeMod.Update",
+        "codeCount": 800,
+        "truncated": true,
+        "selectedSourceReachability": [
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 312,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+                "kind": "framework-invoked",
+                "line": 732,
+                "resolution": "AccessTools.Method typeof+constant/nameOf",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+                "kind": "call",
+                "line": 1414,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 548,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "kind": "call",
+                "line": 324,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 379,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 370,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "kind": "call",
+                "line": 1161,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 163,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 306,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "kind": "call",
+                "line": 353,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "kind": "call",
+                "line": 380,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 370,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "kind": "call",
+                "line": 1161,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 163,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 306,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Check(World, Entity, PlanAnswerJ, float, out RejectKind)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 370,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "kind": "call",
+                "line": 1161,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 163,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 306,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "kind": "call",
+                "line": 321,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Check(World, Entity, PlanAnswerJ, float, out RejectKind)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.CheckReason(World, Entity, PlanAnswerJ, float, out bool)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 370,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "kind": "call",
+                "line": 1161,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 163,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 306,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "kind": "call",
+                "line": 321,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Check(World, Entity, PlanAnswerJ, float, out RejectKind)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Check(World, Entity, PlanAnswerJ, float, out RejectKind)",
+                "kind": "call",
+                "line": 362,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.CheckReason(World, Entity, PlanAnswerJ, float, out bool)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Enable(World, Entity)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 312,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.InstallPatches()",
+                "kind": "framework-invoked",
+                "line": 732,
+                "resolution": "AccessTools.Method typeof+constant/nameOf",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+                "kind": "call",
+                "line": 1414,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+                "kind": "call",
+                "line": 465,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Dispatch(World, string, string[], int)",
+                "kind": "call",
+                "line": 548,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.HandleCommand(World, Entity, string, string[])",
+                "kind": "call",
+                "line": 324,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 379,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+                "kind": "call",
+                "line": 135,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Enable(World, Entity)",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(string)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": [
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "hook:AIPlayerSpikeMod.Update",
+                "line": 223,
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+                "kind": "call",
+                "line": 236,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Tick(bool, World)",
+                "kind": "call",
+                "line": 370,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Step3_Drive(World)",
+                "kind": "call",
+                "line": 1161,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBodySkills.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBodySkills.cs#AIBody.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 163,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Tick(World, Entity, float)",
+                "kind": "call",
+                "line": 306,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIPlanner.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+                "kind": "call",
+                "line": 353,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIBrain.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIBrain.cs#AIBrain.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "kind": "call",
+                "line": 380,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "type": "reference"
+              },
+              {
+                "file": "Assets/AIPlayerSpike/Scripts/AIGoals.cs",
+                "from": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+                "kind": "call",
+                "line": 196,
+                "resolution": "semantic",
+                "to": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(string)",
+                "type": "reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "feature": "ai-bridge:POST /v1/plan",
+        "codeCount": 540,
+        "truncated": true,
+        "selectedSourceReachability": [
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.HandleGoalCommand(World, Entity, string[])",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIGoals.cs#AIGoals.SetGoal(World, Entity, GoalKind, ObjectID, string, int, string)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Apply(World, Entity, float, PlanReply, float)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Check(World, Entity, PlanAnswerJ, float, out RejectKind)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.CheckReason(World, Entity, PlanAnswerJ, float, out bool)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.Enable(World, Entity)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Assets/AIPlayerSpike/Scripts/AIPlanner.cs#AIPlanner.OnHostGoal(string)",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question": "기억 검색 결과는 어디에서 생성되는가?",
+    "sourceNodes": 23,
+    "userPathGaps": [
+      {
+        "activity": "UA-06",
+        "reason": "연결된 출력 요소 없음"
+      }
+    ],
+    "reachable": [
+      {
+        "feature": "ai-bridge:POST /v1/plan",
+        "codeCount": 540,
+        "truncated": true,
+        "selectedSourceReachability": [
+          {
+            "id": "code:Tools/ai-bridge/memgraph.mjs#context@11913",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 46,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/memgraph.mjs#context@11913",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/memgraph.mjs#runQueries@38199",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 53,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/memgraph.mjs#runQueries@38199",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/memgraph.mjs#runQuery@37567",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 53,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/memgraph.mjs#runQueries@38199",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/memgraph.mjs",
+                "from": "code:Tools/ai-bridge/memgraph.mjs#runQueries@38199",
+                "kind": "callback",
+                "line": 594,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/memgraph.mjs#anonymous@38674",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/memgraph.mjs",
+                "from": "code:Tools/ai-bridge/memgraph.mjs#anonymous@38674",
+                "kind": "call",
+                "line": 595,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/memgraph.mjs#runQuery@37567",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#PrefetchStore@7677",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@2649",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 67,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "kind": "call",
+                "line": 96,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#composeTurn@2515",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#composeTurn@2515",
+                "kind": "callback",
+                "line": 49,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@2649",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@3388",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@3669",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@6863",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 94,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/protocol.mjs#envelope@1806",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/protocol.mjs",
+                "from": "code:Tools/ai-bridge/protocol.mjs#envelope@1806",
+                "kind": "call",
+                "line": 34,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallSummary@6785",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#recallSummary@6785",
+                "kind": "callback",
+                "line": 129,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@6863",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@6888",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 94,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/protocol.mjs#envelope@1806",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/protocol.mjs",
+                "from": "code:Tools/ai-bridge/protocol.mjs#envelope@1806",
+                "kind": "call",
+                "line": 34,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallSummary@6785",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#recallSummary@6785",
+                "kind": "callback",
+                "line": 129,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@6863",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@6863",
+                "kind": "callback",
+                "line": 129,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@6888",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@7446",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "callback",
+                "line": 143,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/bridge.mjs#anonymous@10220",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#anonymous@10220",
+                "kind": "call",
+                "line": 147,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#childrenOf@7408",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#childrenOf@7408",
+                "kind": "callback",
+                "line": 136,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@7446",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#anonymous@7739",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#childrenOf@7408",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "callback",
+                "line": 143,
+                "resolution": "inline-argument",
+                "to": "code:Tools/ai-bridge/bridge.mjs#anonymous@10220",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#anonymous@10220",
+                "kind": "call",
+                "line": 147,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#childrenOf@7408",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#composeTurn@2515",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 67,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "kind": "call",
+                "line": 96,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#composeTurn@2515",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#constructor@7712",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#firstJson@1290",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 67,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "kind": "call",
+                "line": 101,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#firstJson@1290",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#giveBack@8117",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#out@4122",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 67,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/recall-loop.mjs",
+                "from": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "kind": "call",
+                "line": 100,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#out@4122",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#put@7820",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 67,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallLoop@3051",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#recallSummary@6785",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 94,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/protocol.mjs#envelope@1806",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/protocol.mjs",
+                "from": "code:Tools/ai-bridge/protocol.mjs#envelope@1806",
+                "kind": "call",
+                "line": 34,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#recallSummary@6785",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#reportTurn@1974",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 65,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#reportTurn@1974",
+                "type": "reference"
+              }
+            ]
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#take@7960",
+            "inDisplayedTree": false,
+            "shortestPathLimit32": null
+          },
+          {
+            "id": "code:Tools/ai-bridge/recall-loop.mjs#usageSum@8295",
+            "inDisplayedTree": true,
+            "shortestPathLimit32": [
+              {
+                "endLine": 152,
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "ai-bridge:POST /v1/plan",
+                "line": 135,
+                "to": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "type": "기능→코드"
+              },
+              {
+                "file": "Tools/ai-bridge/bridge.mjs",
+                "from": "code:Tools/ai-bridge/bridge.mjs#route:POST /v1/plan",
+                "kind": "call",
+                "line": 149,
+                "resolution": "direct-returned-function",
+                "to": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "type": "reference"
+              },
+              {
+                "file": "Tools/ai-bridge/plan.mjs",
+                "from": "code:Tools/ai-bridge/plan.mjs#plan@1665",
+                "kind": "call",
+                "line": 88,
+                "resolution": "lexical-binding",
+                "to": "code:Tools/ai-bridge/recall-loop.mjs#usageSum@8295",
+                "type": "reference"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

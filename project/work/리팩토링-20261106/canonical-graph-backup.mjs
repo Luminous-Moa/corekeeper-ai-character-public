@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+const W='C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work',T=W+'/리팩토링-20261106',S=T+'/graph-stage',B=T+'/canonical-graph-before-apply';
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex'),read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+if(fs.existsSync(B))throw Error('Backup already exists; do not overwrite');
+const original=read(S+'/canonical-before.json'),changed=original.filter(f=>!fs.existsSync(f.path)||hash(f.path)!==f.sha256);if(changed.length)throw Error('Canonical changed since staging: '+JSON.stringify(changed.map(f=>f.path)));
+const saved=[];const copyFile=p=>{const rel=path.relative(W,p).replaceAll('\\','/');if(rel.startsWith('../'))throw Error('outside canonical work');const dst=B+'/work/'+rel;fs.mkdirSync(path.dirname(dst),{recursive:true});fs.copyFileSync(p,dst);const sha=hash(p);if(hash(dst)!==sha)throw Error('Backup hash mismatch '+p);saved.push({source:p,backup:dst,sha256:sha,bytes:fs.statSync(p).size});};
+for(const f of original)copyFile(f.path);
+const copyTree=dir=>{for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isSymbolicLink())throw Error('Unexpected symlink '+p);if(e.isDirectory())copyTree(p);else if(e.isFile())copyFile(p);}};
+const P=W+'/2026-11/2026-11-05-지식그래프-개편';for(const d of ['snapshot','runtime-package'])copyTree(P+'/B/'+d);
+fs.writeFileSync(B+'/manifest.json',JSON.stringify({canonicalBaselineFilesChecked:original.length,changed:[],files:saved},null,2)+'\n');
+console.log(JSON.stringify({backup:B,baselineChecked:original.length,changes:0,files:saved.length,bytes:saved.reduce((a,f)=>a+f.bytes,0)}));

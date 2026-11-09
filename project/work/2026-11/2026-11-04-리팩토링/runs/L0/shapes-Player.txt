@@ -1,0 +1,65 @@
+  4856  BRAIN |  | BRAIN
+  2326  DECISION ## parsed with fallback reader | type choice tokens bodyChars | DECISION
+  1915  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT APPLY
+   877  DECISION ## SEND | rev trigger goal candidates inputChars prep motion players | DECISION SEND
+   855  SKILL |  | SKILL START
+   784  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set swarm players | DECISION SEND
+   546  SKILL | pos target dist mode stuck | SKILL
+   502  SKILL | reason start end facts | SKILL DONE
+   413  SKILL |  | SKILL
+   342  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set players | DECISION SEND
+   251  DECISION ## SEND | rev trigger goal candidates inputChars prep motion | DECISION SEND
+   245  SKILL | tileHp pos state near | SKILL
+   240  SKILL | reason start end facts | SKILL CANCELLED
+   211  SWITCH |  | SWITCH
+   175  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT HOLD
+   168  DECISION ## held switch APPLY |  | DECISION APPLY
+   128  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT DISCARD
+   108  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT QUEUED
+    87  SWITCH |  | SWITCH REVERSAL
+    73  SKILL | reason start end facts wall | SKILL CANCELLED
+    55  DECISION ## queued answer APPLY at skill end |  | DECISION APPLY
+    53  DECISION ## queued answer dropped |  | DECISION
+    52  EXP |  | EXP
+    50  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set | DECISION SEND
+    48  COMBAT ## start |  | COMBAT
+    48  COMBAT ## end |  | COMBAT
+    48  COMBAT ## result |  | COMBAT MID-MOTION
+    44  DECISION ## FULL | input | DECISION FULL
+    28  SKILL | me myHp d hp | SKILL
+    25  SKILL | reason start end facts wall obj hp reduction ore stand tool slot | SKILL DONE
+    18  SKILL | d | SKILL
+    17  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set swarm | DECISION SEND
+    17  DECISION ## SEND | rev trigger goal candidates inputChars prep motion swarm players | DECISION SEND
+    15  DECISION ## dropped |  | DECISION
+    15  GOAL cleared | rev | GOAL
+    14  VITALS |  | VITALS
+    14  GOAL set | rev source | GOAL
+    14  PLANNER | trigger rev reportChars buildMs | PLANNER
+    12  PLANNER | code error body | PLANNER
+    10  SKILL | reason start end facts wall | SKILL DONE
+     8  PLANNER | decision goal why | PLANNER APPLY
+     7  SELF-DEFENCE ## start |  | SELF-DEFENCE
+     7  VITALS |  | VITALS DOWN
+     7  GOAL done | rev | GOAL
+     7  SKILL | hp d | SKILL
+     6  PLANNER |  | PLANNER
+     5  SELF-DEFENCE ## end |  | SELF-DEFENCE
+     5  SKILL | reason start end facts | SKILL FAILED
+     5  DECISION ## SEND | rev trigger goal candidates inputChars prep motion swarm | DECISION SEND
+     5  PLANNER |  | PLANNER LLM
+     4  DECISION ## held switch replaced by ## |  | DECISION
+     3  DECISION ## held switch dropped |  | DECISION
+     3  TEST-ONLY arena spawn |  | TEST-ONLY
+     3  GOAL free time | rev | GOAL LLM
+     2  REFLEX ON | running | REFLEX
+     2  REFLEX OFF | running | REFLEX OFF
+     2  DECISION ## HTTP # | net error | DECISION HTTP
+     2  GOAL free time ends after # |  | GOAL
+     1  Id |  | 
+     1  TEST-ONLY decisionlog |  | TEST-ONLY
+     1  GOAL stalled | rev | GOAL
+     1  TEST-ONLY arena go |  | TEST-ONLY
+     1  GOAL done | rev | GOAL LLM
+     1  PLANNER |  | PLANNER DROPPED
+     1  GOAL free time ends after # |  | GOAL LLM

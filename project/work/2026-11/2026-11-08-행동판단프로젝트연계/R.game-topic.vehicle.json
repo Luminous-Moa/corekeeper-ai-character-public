@@ -1,0 +1,48 @@
+{
+  "id": "R.game-topic.vehicle",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [],
+      "counts": {
+        "action_completion": 3,
+        "claim": 6,
+        "verb": 3
+      },
+      "id": "R.game-topic.vehicle",
+      "labels": [
+        "board",
+        "board_steer_leave",
+        "steer_boat",
+        "leave_boat",
+        "control_vehicle",
+        "honk"
+      ],
+      "planning": [
+        "P.expedition"
+      ],
+      "title": "차량·보트",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#board",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702#board",
+        "game:boat",
+        "game:completion:B:new-control-vehicle:v2",
+        "game:completion:B:new-honk:v2",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#leave_boat",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-3981483068804300490#steer_boat",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702#leave_boat",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:8963677311157309702#steer_boat",
+        "game:verb:board",
+        "game:verb:leave_boat",
+        "game:verb:steer_boat"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

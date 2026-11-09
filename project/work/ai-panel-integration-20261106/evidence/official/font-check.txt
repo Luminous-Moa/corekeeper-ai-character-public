@@ -1,0 +1,3 @@
+FONT CHECK OK: 11369 glyphs, 10px cell, 64742 compressed bytes, deterministic artifact
+Command: node Tools/ui-font/build.mjs --check
+Exit: 0

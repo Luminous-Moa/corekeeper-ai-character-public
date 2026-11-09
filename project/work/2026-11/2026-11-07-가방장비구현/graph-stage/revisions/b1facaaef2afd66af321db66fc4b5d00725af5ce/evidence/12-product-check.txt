@@ -1,0 +1,817 @@
+{
+  "ok": true,
+  "structuralErrors": [],
+  "stale": [],
+  "baselineDrift": {
+    "baseline": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+    "workingTreeHead": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+    "warning": "기준 이후 작업트리 HEAD 변경. 고정 snapshot 원문 조회는 유효함."
+  },
+  "validation": {
+    "D1": {
+      "matches": [
+        {
+          "basis": "submitted command and state-list source correspondence",
+          "command": "/ai",
+          "evidence": [
+            "../2026-11-05-지식그래프-실화면/A1/observations.json",
+            "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+            "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json"
+          ],
+          "featureId": "slash:ai",
+          "inputId": "CKAI-02#3",
+          "observation": "A1/04-ai-help",
+          "outputId": "CKAI-02#2-7",
+          "runtimeTrace": false
+        },
+        {
+          "basis": "independent user flow repeat; state-list visual confirmation",
+          "command": "/ai",
+          "evidence": [
+            "../2026-11-05-지식그래프-실화면/C3/flow-check.md",
+            "../2026-11-05-지식그래프-실화면/C3/04-ai-response.png"
+          ],
+          "featureId": "slash:ai",
+          "inputId": "CKAI-02#3",
+          "observation": "C3/04-ai-response",
+          "outputId": "CKAI-02#2-7",
+          "runtimeTrace": false
+        }
+      ],
+      "reconciliation": [
+        {
+          "action": "partial-inference-supplement; preserve A4 source",
+          "canonicalId": "CORE-01",
+          "sourceId": "CKAI-CORE-01"
+        },
+        {
+          "action": "partial-inference-supplement; preserve A4 source",
+          "canonicalId": "JOURNEY-01",
+          "sourceId": "CKAI-JOURNEY-01"
+        },
+        {
+          "action": "observed-screen-supplement; preserve old HTTP and A4 source",
+          "canonicalId": "IA-01",
+          "sourceId": "CKAI-IA-01"
+        },
+        {
+          "action": "C activity adopts A4 same purpose, preserves detours, refines executable flow after C3",
+          "canonicalId": "CKAI-ACT-01",
+          "sourceId": "CKAI-ACT-01"
+        }
+      ],
+      "structuralErrors": [],
+      "unexecuted": [
+        {
+          "command": "/ai Claude",
+          "evidence": "../2026-11-05-지식그래프-실화면/A1/observations.json",
+          "reason": "draft cancelled; not a request"
+        },
+        {
+          "commands": [
+            "/ai inv",
+            "/ai mem",
+            "/ai goal"
+          ],
+          "reason": "code-only branches, not executed"
+        }
+      ],
+      "unmatched": [
+        {
+          "id": "CKAI-01#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-01#1-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-01#1-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#1-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#1-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#2",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-1",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-2",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-3",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-4",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-5",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-6",
+          "reason": "게임 채팅 에코; 모드 Reply 출력으로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-03#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#6",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#7",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#8",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#9",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#10",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#10-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#10-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#11",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#12",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#6",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-6",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-7",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-8",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-9",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-10",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#2-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#3-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        }
+      ]
+    },
+    "D2": {
+      "frontBoundary": "게임 ChatSendMessage를 모드 hook으로 가로챔. 게임 프론트 코드와 HTTP/IPC/실행 trace 없음.",
+      "observedFeatures": [
+        "slash:ai"
+      ],
+      "observedInput": "CKAI-02#3",
+      "staticEntry": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "unobservedFeatures": [
+        "ai-bridge:startup:bridge.mjs.module",
+        "cli:HeadlessSdk.BuildAndInstall",
+        "cli:HeadlessSdk.CompileCheck",
+        "cli:HeadlessSdk.CreateMod",
+        "cli:HeadlessSdk.ImportGameFiles",
+        "hook:AIChatScreenLayer.OnGUI",
+        "hook:AIInfoPanel.OnGUI",
+        "hook:AIPlayerSpikeMod.CanBeUnloaded",
+        "hook:AIPlayerSpikeMod.EarlyInit",
+        "hook:AIPlayerSpikeMod.Init",
+        "hook:AIPlayerSpikeMod.ModObjectLoaded",
+        "hook:AIPlayerSpikeMod.Shutdown",
+        "hook:AIPlayerSpikeMod.Update",
+        "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+        "hook:AIPlayerSpikePatches.ChatSendPrefix",
+        "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+        "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+        "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+        "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+        "hook:ThinClientDriverConstructor.CreateClientDriver",
+        "hook:ThinClientDriverConstructor.CreateServerDriver"
+      ],
+      "verdict": "A1와 C3 입력/출력 및 B 동일 소스 구간 대조. 런타임 함수 coverage 또는 죽은 코드 판정 아님."
+    },
+    "D4": {
+      "corePolicyReview": "기존 정책·의도 유지; A2 표시규칙 후보 6개 지위 유지. C/통합기획.md",
+      "elementsWithFeatureButNoActivity": [],
+      "journey": "C3 흐름 성공/부분 이해를 C4 반영. 새 활동 다음 활동 ID 없음; 기존 저니 필수 단계로 추가하지 않음",
+      "navigation": "실제 Return/Escape 및 A3 플레이어 관리 진입 관측. 게임 navigate 코드 외부 경계; 동선 부재로 판정하지 않음",
+      "screenPolicy": "A2 manifest 표시규칙을 동일 문자열로 적재; 문서 화면 정책 절을 source로 연결",
+      "screensWithoutActivity": [
+        "BRG-01",
+        "BRG-04",
+        "BRG-05"
+      ]
+    },
+    "D5": {
+      "correctionRule": "원본/파서 수정 후 재생성. JSON 직접 수정 금지",
+      "notObserved": [
+        "전체 게임 상태",
+        "목표/가방/기억 명령",
+        "캐릭터 저장·재입장",
+        "실제 함수 trace",
+        "전체 전투판 코드 추출"
+      ],
+      "remaining": [
+        "CKAI-C-U01 명령 발견 경로",
+        "CKAI-C-U02 동료 귀속·목표/행동 구분",
+        "CKAI-C-U03 메시지 가독성·보존",
+        "CKAI-C-U04 휠 입력 부수 효과",
+        "CKAI-C-U05 조회 부수 효과"
+      ]
+    },
+    "bagImplementation": {
+      "acceptance": "격리 체크포인트. 독립검수·최종 수용·공식 적용은 별도 HEAD 판단이다.",
+      "accepted": false,
+      "checkpoint": true,
+      "commonExecutionCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "currentSourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+      "evidenceKind": "compile/offline/source-review; not live game",
+      "gameConsumerExecuted": false,
+      "historicalFlatFeatureCommit": "309522644543f196348e642b0e8c352acc4ba918",
+      "inputs": [
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "agreement.md",
+          "kind": "사용자 합의 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/agreement.md",
+          "sha256": "0ce0661b37dc40b2fb26a3a5623c5964ba8dca60adad82a3eac5a63215d37886",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/agreement.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-agreement.md",
+          "kind": "사용자 합의 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-agreement.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-spec.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-spec.md",
+          "sha256": "dce9decb47ed57c9c6e7278a86302b90456020d0bafdce627f238bda960b200e",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-spec.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "inventory-category-cap-audit.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/inventory-category-cap-audit.md",
+          "sha256": "28aacd933901811340ecd3382fdd0382e82367a4ac6b46dbc29e88769d3f23a0",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/inventory-category-cap-audit.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "cap-removal-spec.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/cap-removal-spec.md",
+          "sha256": "4325181e4c12e68868885119715fb2e7d806674acaf7ec5b167e6537246ec1b0",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/cap-removal-spec.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-cap-result.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-cap-result.md",
+          "sha256": "e6beff71f9fc00e558d885a0e4dfef2cb961461328a5c383f670e17da21a9a10",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-cap-result.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-design-review.md",
+          "kind": "설계 독립검토;구현 수용 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-design-review.md",
+          "sha256": "1086ec282712a2810efc208d0637590fed272cb1a1498148b258993eb17bd46f",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-design-review.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-checkpoint-compile.log",
+          "kind": "생산자 체크포인트 오프라인 검사",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-checkpoint-compile.log",
+          "sha256": "1f509bff2519018b963f90f07c94621e6ba88810bc3e13cbb63f1fd51cc36d76",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-checkpoint-compile.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-checkpoint-core.log",
+          "kind": "생산자 체크포인트 오프라인 검사",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-checkpoint-core.log",
+          "sha256": "7398eb389f2f2f37b337310ad4c43c8ee11d2a71dbdeb6e0bd92b4895465415d",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-checkpoint-core.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-checkpoint-protocol.log",
+          "kind": "생산자 체크포인트 오프라인 검사",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-checkpoint-protocol.log",
+          "sha256": "66908eb26e9acd3e75f4fe14135030f36020baf65f7e3eb1c42d9fa2f944a1ed",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-checkpoint-protocol.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-loop-execution.log",
+          "kind": "실제 Loop/공통 입구 소스 링크 검사;World/모델 대역",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-loop-execution.log",
+          "sha256": "d721349dc5dc4a3ddf450e10244a3d556614d09d193b6ff3e5c41347077a17af",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-loop-execution.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/results.log",
+          "kind": "메뉴·Inventory 소스 링크 단독 어댑터;게임 소비자 미실행",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/results.log",
+          "sha256": "be3729f5c380e0aa1e61785c8dbe4dd0742742295d96b668137c8d0c78fa68d8",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/results.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/payloads.json",
+          "kind": "현재 노드 메뉴 샘플;단독 어댑터 구성;실제 모델 호출 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/payloads.json",
+          "sha256": "ec3c9f0a221b36451cf93e2294ab2fcd924930eb9a56d37ec605d4b5cd6d7836",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/payloads.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/Program.cs",
+          "kind": "단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/Program.cs",
+          "sha256": "d6d555ca3ddf721bebc0af12ae76be523d9074a60d755040ae2d70bb45095039",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/Program.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/Stubs.cs",
+          "kind": "단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/Stubs.cs",
+          "sha256": "2f6a29203ec4dc60b08f6100eca780eb7f79298adccaf7f5b65f9463eb96b2a6",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/Stubs.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/TreeMenu.csproj",
+          "kind": "단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/TreeMenu.csproj",
+          "sha256": "022d3aafbb9feeb36b2e45c869ce271725c20e1dc6fb34e22c7ea01a0cdbda91",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/TreeMenu.csproj"
+        }
+      ],
+      "liveGameObserved": false,
+      "schemaVersion": 1,
+      "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+      "sourceDocument": "../2026-11-07-가방장비구현/implementation-evidence.json",
+      "validation": {
+        "actualLoop": {
+          "passed": 55,
+          "scope": "실제 Loop/공통 제어 입구 소스 링크;World·모델응답 대역"
+        },
+        "compile": {
+          "errors": 0,
+          "passed": true,
+          "warnings": 0
+        },
+        "connectedTrace": {
+          "status": "진행 중"
+        },
+        "core": {
+          "passed": 1204
+        },
+        "externalModel": {
+          "called": false
+        },
+        "independentReview": {
+          "status": "진행 중;체크포인트 미수용"
+        },
+        "isolatedMenu": {
+          "failed": 0,
+          "passed": 326,
+          "scope": "실제 menu/inventory 소스;fake World·큐·수동 결과;별도 단독검사"
+        },
+        "liveGame": {
+          "observed": false
+        },
+        "protocol": {
+          "passed": 118
+        },
+        "unity": {
+          "status": "트리판 미실행;774 Unity 승계금지"
+        }
+      }
+    },
+    "baseline": {
+      "D1": {
+        "matches": [
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "200",
+            "featureId": "ai-bridge:GET /v1/health",
+            "match": "exact method/path",
+            "method": "GET",
+            "observationId": "OBS-04",
+            "outputId": "BRG-02",
+            "path": "/v1/health",
+            "rawBody": "A/raw/isolated-health.body.txt",
+            "rawHeaders": "A/raw/isolated-health.headers.txt",
+            "rawMeta": "A/raw/isolated-health.meta.json",
+            "runtimeTraceObserved": false,
+            "status": 200,
+            "url": "http://127.0.0.1:18331/v1/health"
+          },
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "400",
+            "featureId": "ai-bridge:POST /v1/plan",
+            "match": "exact method/path",
+            "method": "POST",
+            "observationId": "OBS-06",
+            "outputId": "BRG-04",
+            "path": "/v1/plan",
+            "rawBody": "A/raw/isolated-unknown-member.body.txt",
+            "rawHeaders": "A/raw/isolated-unknown-member.headers.txt",
+            "rawMeta": "A/raw/isolated-unknown-member.meta.json",
+            "requestBody": "A/requests/unknown-member.json",
+            "runtimeTraceObserved": false,
+            "status": 400,
+            "url": "http://127.0.0.1:18331/v1/plan"
+          },
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "500",
+            "featureId": "ai-bridge:POST /v1/plan",
+            "match": "exact method/path",
+            "method": "POST",
+            "observationId": "OBS-07",
+            "outputId": "BRG-05",
+            "path": "/v1/plan",
+            "rawBody": "A/raw/isolated-malformed.body.txt",
+            "rawHeaders": "A/raw/isolated-malformed.headers.txt",
+            "rawMeta": "A/raw/isolated-malformed.meta.json",
+            "requestBody": "A/requests/malformed.json",
+            "runtimeTraceObserved": false,
+            "status": 500,
+            "url": "http://127.0.0.1:18331/v1/plan"
+          }
+        ],
+        "mergeLog": [
+          {
+            "action": "preserve as inference evidence; exclude from authoritative product nodes",
+            "authoritativeId": "JOURNEY-01",
+            "inferredId": "JOURNEY-A-01"
+          },
+          {
+            "action": "preserve as inference evidence; exclude from authoritative product nodes",
+            "authoritativeId": "IA-01",
+            "inferredId": "IA-A-01"
+          },
+          {
+            "action": "preserve as inference evidence; exclude from authoritative product nodes",
+            "authoritativeId": "CORE-01",
+            "inferredId": "CORE-A-01"
+          }
+        ],
+        "structuralErrors": [],
+        "unmatched": [
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "404",
+            "method": "GET",
+            "observationId": "OBS-05",
+            "outputId": "BRG-03",
+            "path": "/",
+            "rawBody": "A/raw/isolated-not-found.body.txt",
+            "rawHeaders": "A/raw/isolated-not-found.headers.txt",
+            "rawMeta": "A/raw/isolated-not-found.meta.json",
+            "reason": "No exact declared endpoint. 404 is not a missing feature by itself.",
+            "status": 404,
+            "url": "http://127.0.0.1:18331/"
+          }
+        ]
+      },
+      "D2": {
+        "observedFeatures": [
+          "ai-bridge:GET /v1/health",
+          "ai-bridge:POST /v1/plan"
+        ],
+        "unobservedFeatures": [
+          "ai-bridge:startup:bridge.mjs.module",
+          "cli:HeadlessSdk.BuildAndInstall",
+          "cli:HeadlessSdk.CompileCheck",
+          "cli:HeadlessSdk.CreateMod",
+          "cli:HeadlessSdk.ImportGameFiles",
+          "hook:AIChatScreenLayer.OnGUI",
+          "hook:AIInfoPanel.OnGUI",
+          "hook:AIPlayerSpikeMod.CanBeUnloaded",
+          "hook:AIPlayerSpikeMod.EarlyInit",
+          "hook:AIPlayerSpikeMod.Init",
+          "hook:AIPlayerSpikeMod.ModObjectLoaded",
+          "hook:AIPlayerSpikeMod.Shutdown",
+          "hook:AIPlayerSpikeMod.Update",
+          "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+          "hook:AIPlayerSpikePatches.ChatSendPrefix",
+          "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+          "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+          "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+          "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+          "hook:ThinClientDriverConstructor.CreateClientDriver",
+          "hook:ThinClientDriverConstructor.CreateServerDriver",
+          "slash:ai"
+        ],
+        "verdict": "요청 메서드/경로의 정적 입구와 응답 관측을 대조. 실행 trace/게임 프론트 조작 연결은 미관측; 죽은 코드로 단정하지 않음"
+      },
+      "D4": {
+        "corePolicyReview": "C 원문 기반 판정 및 C 확인 목록 참조; 문자열 비교로 의미 충돌을 판정하지 않음",
+        "elementsWithFeatureButNoActivity": [],
+        "journey": "활동 다음 순서와 저니는 C 원문으로 대조; 실제 게임 동선 확인 유예",
+        "navigation": "HTTP 출력/게임 화면 미관측 범위는 navigate 동선 검증 대상 아님. 실화면 확인 유예.",
+        "screenPolicy": "C의 표시 정책 원문/노드 비교는 C 검사 보고와 함께 확인",
+        "screensWithoutActivity": [
+          "BRG-01",
+          "BRG-04",
+          "BRG-05"
+        ]
+      },
+      "D5": {
+        "correctionRule": "문서/추출 규칙 수정 → A/B/C 재적재 → D 재생성. 생성물 직접 수정 금지",
+        "userDeferred": [
+          "게임 화면 탐색/화면 원본·위치 매칭/실게임 처음 사용자 검증"
+        ]
+      }
+    },
+    "supplementalRuntime": {
+      "currentSourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+      "document": "../2026-11-05-지식그래프-실화면/C/refactor-20261106/observations.json",
+      "evidenceAppliesToCurrentRevision": false,
+      "functionTraceObserved": false,
+      "observations": [
+        {
+          "boundary": "Testcmd supplied anvil and bars. This one sequence does not verify every recipe, station path, memory retrieval, goal kind or real-model provider.",
+          "capability": "Actual natural-language plan, place/craft completion and next-goal selection",
+          "developmentCapabilities": [
+            "F.chat-mention",
+            "F.llm-goal",
+            "F.plan-queue",
+            "F.place-goal",
+            "F.craft",
+            "F.exp-memory"
+          ],
+          "id": "RF902-plan-craft-place-next",
+          "status": "observed"
+        },
+        {
+          "boundary": "Upper bridge intentionally stopped at16:57:27. Subsequent upper connection failures are test environment state, not established regression. This scenario does not verify every late response or interruption permutation.",
+          "capability": "Multiple members, host goal replacement and all-stop",
+          "developmentCapabilities": [
+            "F.multi-ai",
+            "F.goal-cmd",
+            "F.host-orders",
+            "F.action-select"
+          ],
+          "id": "RF902-members-stop",
+          "status": "observed"
+        },
+        {
+          "boundary": "Fixture used arena go (also replenishes health/weapon), dig (already clear, walls0) and supplied door. One A* replan after door close was observed; not classified as baseline regression. Does not cover every door ownership/overlap/corridor case. No movetrace CSV was generated: instrumentation is Claude-only and active members were GPT/Gemini. Door timing is supported by Player logs, not frame-level CSV.",
+          "capability": "Remember own door, open, cross, close and arrive",
+          "developmentCapabilities": [
+            "F.my-door",
+            "F.door-pass",
+            "F.place-goal",
+            "F.skill-goto"
+          ],
+          "id": "RF902-own-door",
+          "status": "observed"
+        },
+        {
+          "boundary": "Observed save/reentry subset, not every persistent field or every scenario. Arena testcmd had replaced CopperSword with WoodSword before final save; that difference is not save loss. Trial-world deletion/Cloud cleanup is separately outstanding below.",
+          "capability": "Normal save, complete process exit, same-world reentry and restoration",
+          "developmentCapabilities": [
+            "F.ai-char-save",
+            "F.explore-memory",
+            "F.my-door",
+            "F.multi-ai"
+          ],
+          "id": "RF902-save-reentry",
+          "status": "observed"
+        },
+        {
+          "boundary": "Explosion wall remains a cause candidate; not proven cause, normal outcome or safety-policy success. No same-scene baseline run or complete damage-source trace was supplied. The review did not change code or require a new game run.",
+          "capability": "Death, automatic revival and subsequent goal reassessment",
+          "developmentCapabilities": [
+            "F.vitals",
+            "F.skill-dig",
+            "F.action-select"
+          ],
+          "id": "RF902-down-unclassified",
+          "status": "observed-cause-unresolved-no-new-refactor-blocker-identified"
+        }
+      ],
+      "sameRevision": false,
+      "sourceCommit": "902721ec505df42d74d0b2d245ed34a049faadad",
+      "status": "final-report-synced-cloud-trial-world-deletion-outstanding"
+    },
+    "uiRuntime": {
+      "currentSourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+      "document": "../2026-11-05-지식그래프-실화면/C/ui-20261106/observations.json",
+      "evidenceAppliesToCurrentRevision": false,
+      "functionTraceObserved": false,
+      "limitations": [
+        "No OS IME composition test",
+        "No simultaneous mouse buttons test",
+        "No extra resolution live test",
+        "No quantitative performance benchmark"
+      ],
+      "observations": [
+        {
+          "boundary": "Actual Korean AI reply 43~44 to24 capture px, 7s+1s fade; input and mention hint remain native size. IME composition not exercised.",
+          "capability": "작은 기본 채팅 출력",
+          "developmentCapabilities": [
+            "F.chat-compact-screen"
+          ],
+          "id": "UI-CHAT-11eb461",
+          "relatedProductFeatures": [
+            "hook:AIChatScreenLayer.OnGUI"
+          ],
+          "status": "observed"
+        },
+        {
+          "boundary": "Skill XP conversion, empty slots, explicit three-slot armor fixture, off/on clearing/restoring. Fixture is test data, not product auto-equip.",
+          "capability": "스킬·착용 장비 읽기",
+          "developmentCapabilities": [
+            "F.ai-info-ui"
+          ],
+          "id": "UI-INFO-11eb461",
+          "relatedProductFeatures": [
+            "hook:AIInfoPanel.OnGUI"
+          ],
+          "status": "observed"
+        }
+      ],
+      "sameRevision": false,
+      "sourceCommit": "11eb461ae122f404acec94563c086b09e002987c",
+      "status": "accepted-bounded-live-verification"
+    }
+  }
+}

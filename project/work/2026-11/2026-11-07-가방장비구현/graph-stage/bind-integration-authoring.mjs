@@ -1,0 +1,21 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),P='work/2026-11/2026-11-07-기획연결',G='work/지식그래프',L='work/2026-11/2026-11-05-지식그래프-실화면',read=p=>fs.readFileSync(path.join(stage,p),'utf8'),write=(p,s)=>fs.writeFileSync(path.join(stage,p),s);
+let features=read(G+'/기획/기능.md').split('\n').filter(line=>!/^\| `AIInventory\.(Candidates|ChestCandidates|DropCandidates|IsChosen)` \|/.test(line)).join('\n');
+function addAnchors(id,extra){features=features.replace(new RegExp('(### '+id.replaceAll('.','\\.')+' [\\s\\S]*?)(?=\\n### |\\n## |$)'),block=>block.replace(/^- 코드 앵커: (.*)$/m,(_,current)=>'- 코드 앵커: '+[...new Set([...current.split(',').map(x=>x.trim()),...extra])].join(', ')));}
+addAnchors('F.action-select',['AIGoalFeatures.AddCandidates','AIInventory.Candidates','AIInventory.CandidatesFor']);addAnchors('F.life-tree',['AILife.LeaveNavigation','AILife.NavStale']);addAnchors('F.bag-navigation',['AILife.LeaveNavigation','AILife.Compose','AILife.NavStale']);
+write(G+'/기획/기능.md',features+'\n<!-- 통합판: AIInventory.Candidates/ChestCandidates는 생활의 명시 storage binding·준비 경로에서 사용한다. 공개 root의 무조건 flat 목록과 구별하며741의 dead 분류를 승계하지 않는다. -->\n');
+let policy=read(G+'/기획/정책.md');if(!policy.includes('통합 소비자 메모'))policy+='\n## 통합 소비자 메모\n\n생활의 별도 승인된 손실없는 페이지와 읽기 전용 held/queued 보존은 가방의 무페이지·새 선택 권한 처리와 다른 소비자 계약이다. 작업 수량 예산과 선택지 개수 cap은 다르다. integration-agreement.md의 HEAD 통합 판단을 참고하며 사용자 직접 원문으로 승격하지 않는다.\n';write(G+'/기획/정책.md',policy);
+let source=read(P+'/source.mjs');if(!source.includes('R.bag-life-consumers'))source+=`
+documents.bagIntegration={layer:'참고',path:'../2026-11-07-가방장비구현/integration-agreement.md'};
+nodes.push(n('R.bag-life-consumers','생활·가방의 별도 소비자 계약 통합','참고·HEAD 통합 판단, 새 사용자 원문 아님','가방은 분류/보유 물품 무페이지·무상한, 생활은 손실없는 페이지와 읽기전용 held/queued 보존을 유지한다. 메뉴 소유권 전환은 cursor/token만 정리하고 생활 Progress/Runs·작업 수량·현재 몸/목표/부탁은 지우지 않는다. 생활 known-target 직접 실행을 가방 root 선택으로 강제 대체하지 않는다.','bagIntegration','## 서로 다른 탐색 계약에 대한 통합 판단',[ev('bagIntegration','## 유지할 합의')]));
+edges.push(e('P.bag-no-cut','R.bag-life-consumers','참고: 별도 승인 소비자의 손실없는 페이지와 구별','bagIntegration','## 서로 다른 탐색 계약에 대한 통합 판단'),e('P.bag-navigation','R.bag-life-consumers','참고: 메뉴 소유권·선택권한 전환','bagIntegration','## 서로 다른 탐색 계약에 대한 통합 판단'),e('P.life-tree','R.bag-life-consumers','참고: 생활 직접실행·진척 의미 보존','bagIntegration','## 유지할 합의'),e('P.life-tree-count','R.bag-life-consumers','참고: 작업 수량은 후보 개수 상한과 별개','bagIntegration','## 유지할 합의'),e('R.bag-life-consumers','R.bag-validation','참고: 실제 같은 통합판의 검증 범위','bagStatus','# 가방·장비 구현 검증 범위'));
+`;write(P+'/source.mjs',source);
+const file=L+'/D/bag-source.mjs';let b=read(file);b=b.replace("start:29","start:25");b=b.replace("const targets=g.nodes.filter(n=>n.type==='코드'&&n.kind==='MethodDeclaration'&&n.signature?.startsWith(symbol+'('));\n  if(targets.length!==1)throw Error('No-cut code anchor missing/ambiguous: '+symbol);\n  add('R.bag-cap-audit',targets[0].id,'후보 개수 상한 제거 구현 위치(정적)',g.nodes.find(n=>n.id==='R.bag-cap-audit').evidence);","const targets=g.nodes.filter(n=>n.type==='코드'&&n.kind==='MethodDeclaration'&&(n.signature?.startsWith(symbol+'(')||n.signature?.startsWith(symbol+'<')));\n  if(targets.length===0)throw Error('No-cut code anchor missing: '+symbol);\n  for(const target of targets)add('R.bag-cap-audit',target.id,'후보 개수 상한 제거 구현 위치(정적)',g.nodes.find(n=>n.id==='R.bag-cap-audit').evidence);");
+if(!b.includes('// Integrated consumer anchors'))b=b.replace(' return [evidencePath,',`
+ // Integrated consumer anchors. Static source correspondence, no runtime trace inference.
+ for(const symbol of ['AILife.Compose','AILife.NavStale','AILife.LeaveNavigation','AILife.Resolve','AILife.Remaining','AIInventory.CandidatesFor','AIInventory.ExactCandidate','AIGoalFeatures.AddCandidates','AIBrain.Apply','AIBrain.InventoryChoiceSurface']){
+  const targets=g.nodes.filter(n=>n.type==='코드'&&n.kind==='MethodDeclaration'&&n.signature?.startsWith(symbol+'('));if(targets.length!==1)throw Error('Integrated consumer anchor missing/ambiguous: '+symbol);
+  add('R.bag-life-consumers',targets[0].id,'동일 통합판의 소비자·권한·수량 구현 위치(정적)',g.nodes.find(n=>n.id==='R.bag-life-consumers').evidence);
+ }
+ return [evidencePath,`);write(file,b);
+console.log('Preserved official life source; bound separate inventory/life contracts and integrated code anchors.');

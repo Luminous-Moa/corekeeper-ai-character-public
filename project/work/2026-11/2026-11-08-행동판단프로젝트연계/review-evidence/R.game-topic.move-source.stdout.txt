@@ -1,0 +1,116 @@
+{
+  "origin": {
+    "normalizedValueSha256": "4000418672885d12ead705a3a641a59f2d026c403560bc851c5cab312d5f7061",
+    "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1/cases.json",
+    "pointer": "/cases/2"
+  },
+  "value": {
+    "id": "completion:B:new-move-player",
+    "action": "move_player",
+    "build": "26332184",
+    "status": "static_path_research_awaits_independent_review",
+    "runtimeTested": false,
+    "roles": [],
+    "typedEndpoints": [
+      {
+        "id": "runtime:player",
+        "type": "runtime_entity",
+        "role": "actor"
+      },
+      {
+        "id": "runtime:movement-input",
+        "type": "runtime_input",
+        "role": "input"
+      },
+      {
+        "id": "runtime:physics",
+        "type": "runtime_simulation",
+        "role": "consumer"
+      }
+    ],
+    "priorClaimIds": [],
+    "conditions": [
+      "플레이어 입력과 movement/health/state, transform 및 물리 query 구성요소가 유효하고 Walk 상태 경로가 실행",
+      "사망, 수면 조건, 악기 연주, IgnoreAllInput, 생성 또는 낚시 캐스팅과 기타 상태별 이동 차단은 별도 적용"
+    ],
+    "transitions": [
+      {
+        "from": "movement axes",
+        "to": "clientInput.movementDirection",
+        "text": "입력 차단이 없으면 수평·수직 CHARACTER_MOVEMENT 축을 ProcessMovementInput에 전달한다. 크기 0.25 미만은 0, 그 외 방향은 각도별 snap table을 쓰고 해당 table 방향이 0이면 원본을 정규화한다. 크기 0.75 미만은 방향의 0.4배, 그 이상은 방향 그대로다. 입력이 차단되면 movementDirection은 0이다. tick을 설정해 ClientInputData와 최신 frame에 전달하며 MoveFaster held도 별도 버튼으로 보낸다.",
+        "refs": [
+          "Pug.Other/SendClientInputSystem.cs:245-258,296,335-356",
+          "Pug.Other/PlayerController.cs:2774-2794"
+        ]
+      },
+      {
+        "from": "movement input",
+        "to": "adjusted velocity",
+        "text": "movementDirection의 길이가 1보다 크면 정규화한다. 죽음·조건부 수면·특정 상태 및 비god 배치 상태면 목표 속도 0, 아니면 방향을 목표 속도로 쓴다. 상태·snare·속도 조건, 보트/탈것/안장 배율과 주변 force, warmup/windup 배율 및 코너 보정이 적용된다. godMode에서는 MoveFaster held가 유효할 때 3배, 아닐 때 1배의 별도 분기다.",
+        "refs": [
+          "Pug.Other/PlayerVelocityCalculationSystem.cs:273-360,363-405"
+        ]
+      },
+      {
+        "from": "Walk state",
+        "to": "physical impulse",
+        "text": "Walk는 adjustedMovementVelocity에 목줄 힘과 조건부 미끄럼을 반영하고 방향 전환 지연, 장착 아이템 이동 배율, 적과 겹침 방지 힘을 계산해 PlayerMovementForceCD를 쓴다. PlayerMovementSystem은 force 길이/60의 선형 impulse를 질량에 따라 PhysicsVelocity에 적용한다. 충돌·시뮬레이션과 실제 위치는 runtime에 결정된다.",
+        "refs": [
+          "Pug.Other/PlayerState/Walk.cs:39-70,86-94",
+          "Pug.Other/PlayerMovementSystem.cs:132-140"
+        ]
+      },
+      {
+        "from": "post physics movement",
+        "to": "running skill request",
+        "text": "Walk의 물리 후 단계에서 목표 이동 속도 제곱이 0.01보다 클 때 tick 시작 위치와 현재 위치의 거리만큼 누적한다. 누적이 1보다 커질 때 1을 빼고 Running skill 1 요청을 보낸다. 서버·스킬 버퍼·상한 조건을 통과해야 실제 진행도가 기록된다.",
+        "refs": [
+          "Pug.Other/PlayerState/Walk.cs:72-84",
+          "Pug.Other/AddSkillValueSystem.cs:124-151"
+        ]
+      }
+    ],
+    "boundaries": [
+      "보행과 차량/보트/탈것의 제어 상태는 분리한다",
+      "고정 entity source가 아닌 runtime player의 조건부 경로",
+      "실제 이동·기술 증가 미관측",
+      "독립 검수 전"
+    ],
+    "codeEvidence": [
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerVelocityCalculationSystem.cs",
+        "sha256": "550f48d95dfefe1c262bb3bfad6d25f8be45bccf31291b89f08eca082bd663ce"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\Walk.cs",
+        "sha256": "619d5b2057f8c8fde0e8c714782f4b00dcadf21fdebe50970fd420abcd212638"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerMovementSystem.cs",
+        "sha256": "9a202041ebb6ccad42ebedc94b2c8dd343db6179d93618cc3ff8b0961f7329c8"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AddSkillValueSystem.cs",
+        "sha256": "dc50328ea964f3a795c6e3d1469ba68797703dfba24c1314bd32d98d5e8a54b0"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+        "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+      },
+      {
+        "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SendClientInputSystem.cs",
+        "sha256": "139f98acb3c9e53abecd7911421be5f642f6769282590b30a70e577431e04146"
+      }
+    ],
+    "reviewDelta": {
+      "priorReport": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\review\\movement-wall\\movement-v2-wall-v1-report.md",
+      "sha256": "efdfde134d66f653da56ebbe9192652c8ee04fa9baa4bc12c3285f8d16086461",
+      "status": "corrections_await_independent_review"
+    }
+  },
+  "evidenceContext": {
+    "fixedCodeRoot": "../게임원본-상호작용/code",
+    "recordDirectory": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/player-movement-inputs-v3-replay-1",
+    "researchRoot": "../2026-11/2026-11-07-행동결과완결"
+  }
+}

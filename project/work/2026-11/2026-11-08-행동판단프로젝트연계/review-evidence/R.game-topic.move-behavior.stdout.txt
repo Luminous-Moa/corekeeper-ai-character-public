@@ -1,0 +1,77 @@
+{
+  "id": "R.game-topic.move",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [
+        "code:Assets/AIPlayerSpike/Scripts/AIGotoSkill.cs#GotoSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AITravel.cs#TravelSkill.Tick(World, Entity, float)",
+        "code:Assets/AIPlayerSpike/Scripts/AIPlaces.cs#PlaceTilesSkill.Tick(World, Entity, float)"
+      ],
+      "counts": {
+        "action_completion": 6,
+        "claim": 29,
+        "verb": 2
+      },
+      "id": "R.game-topic.move",
+      "labels": [
+        "move_player",
+        "toggle_door",
+        "toggle_scene_door",
+        "grapple_offhand_input_aim_request",
+        "offhand_dash"
+      ],
+      "planning": [
+        "P.expedition-navigation",
+        "P.expedition-blocked"
+      ],
+      "title": "이동·문·다리·장소",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1186199750272212319#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1706125376271783713#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-1740097864709986456#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2215303966424015842#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-2524690453239067#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4501222490903795255#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-4937970075249920798#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5007901266009501367#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5020078570993396436#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5571680734746599032#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-5595960035363197757#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6494215759462462820#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-6839364857902395916#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7489877281178189849#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:-7600185308003671168#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:2459589687045816398#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:4337170394235963870#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5380959825951833328#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5762387272797354848#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:5887550651480487397#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6424560797989025989#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:6970437196385199#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7122170361253635708#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7450584677095146843#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:7982685884360593425#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8216565673799162816#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8463478218944124356#toggle_door",
+        "game:base:A::CAB-2ebcba97367158c9b08f790c25d642c9:8986054333669421817#toggle_door",
+        "game:completion:B:new-move-player",
+        "game:completion:essential:dash8340-8341-v1",
+        "game:completion:essential:grapple-input-aim-v1",
+        "game:door",
+        "game:scene-door",
+        "game:supp:A::CAB-2ebcba97367158c9b08f790c25d642c9:-8467324617677133197#toggle_scene_door",
+        "game:verb:toggle_door",
+        "game:verb:toggle_scene_door",
+        "game:completion:B:place-tile:CAB-2ebcba97367158c9b08f790c25d642c9:-1592303294285069928"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

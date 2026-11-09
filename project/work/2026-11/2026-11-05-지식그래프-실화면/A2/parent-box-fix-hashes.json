@@ -1,0 +1,89 @@
+﻿{
+    "reason":  "Parent containment visibility correction",
+    "changed_files":  [
+                          {
+                              "file":  "E02.annotated.html",
+                              "sha256":  "D6B26098077FF1D73B8A43C24CE5178C58E2FEBE980697EBF63A4D67A6C7A637"
+                          },
+                          {
+                              "file":  "E02.annotated.png",
+                              "sha256":  "902DFE7AEA8879C5AE20361FCE5FA0FC6E9B807D146F6A097BED6C915B6F38CC"
+                          },
+                          {
+                              "file":  "E03.annotated.html",
+                              "sha256":  "E0FA78EE293D159A640D94032AF4ED5D6F5E547D584DFD65951F0F5275C9C457"
+                          },
+                          {
+                              "file":  "E03.annotated.png",
+                              "sha256":  "C972E3F54A03DFF1DD8DC423629DBA6D7E2673898399A7AAD0CBE376E7DC26E0"
+                          },
+                          {
+                              "file":  "E04.annotated.html",
+                              "sha256":  "E8EEABB87EF6DD711DD05E2A352C3A70655712201D59BFF83889835C6B132F73"
+                          },
+                          {
+                              "file":  "E04.annotated.png",
+                              "sha256":  "F9A605FB6F3E1051D1CFEA4F83D47C8F80C81EFF918C8467B57E0C679BB123F9"
+                          },
+                          {
+                              "file":  "E05.annotated.html",
+                              "sha256":  "3807880763E93C77FF895F8253826538BB193212299C6D4B386AA565E5A7F5B8"
+                          },
+                          {
+                              "file":  "E05.annotated.png",
+                              "sha256":  "ABAB8BF1634BD7FCFBFD585DFA3BCB1019EBE54C488719C309ED734912BB382B"
+                          },
+                          {
+                              "file":  "E06.annotated.html",
+                              "sha256":  "4DBDCCA80CFEED0E3C8D012C46D1C520FD9C993D6003206C763A230CA266E7A8"
+                          },
+                          {
+                              "file":  "E06.annotated.png",
+                              "sha256":  "73B8932F069262478E69D150351257885A2B6509E3D6080EF0CB355BBE474702"
+                          },
+                          {
+                              "file":  "E07.annotated.html",
+                              "sha256":  "71D1FD7EFE8404479317D297AA9A1E8571D77B4C7789A7AB8E43D94EE1A9FC7B"
+                          },
+                          {
+                              "file":  "E07.annotated.png",
+                              "sha256":  "080F1E794F0C02878B08DD2A499F2C07AE76775F422F925438EFDCC89E6D5238"
+                          },
+                          {
+                              "file":  "E08.annotated.html",
+                              "sha256":  "C87A37D80CDCA11CE40B322F13689547E26205404F19FEA19B2074F7DFB29F92"
+                          },
+                          {
+                              "file":  "E08.annotated.png",
+                              "sha256":  "2F0ABBEBD4D34DEE30CAE66CFCE88A0CB1EDEA7D2370589AEF049E97E305C167"
+                          },
+                          {
+                              "file":  "E09.annotated.html",
+                              "sha256":  "B7DD39D07BA904F59C6BAFD41E74E0B1F50B21216088F625BA201788A2B930BD"
+                          },
+                          {
+                              "file":  "E09.annotated.png",
+                              "sha256":  "60FDBD9ABF97A7A9D7B403D00CECFF80DA371E5F3245545DAB76A6DC7F7F9765"
+                          },
+                          {
+                              "file":  "E10.annotated.html",
+                              "sha256":  "6CEE1C9AD35DA7EC62787A926596E8835E6AAB67849F28EFC7FE21CBB1024017"
+                          },
+                          {
+                              "file":  "E10.annotated.png",
+                              "sha256":  "2AB9B43D1F68F7F1FF4350DD5A171E41DBAAA4F28D385438E5B969B8F04EC825"
+                          },
+                          {
+                              "file":  "manifest.json",
+                              "sha256":  "EFCCA234A7B0BF89A363450911AF4891A0916B40BF8A4362470D65434F1A3293"
+                          },
+                          {
+                              "file":  "validation.json",
+                              "sha256":  "338D594D3733464E6B2FB3240DEF47C2ABAC6B4A5750A420830546F1A8D9468F"
+                          }
+                      ],
+    "containment_checked":  94,
+    "containment_failures":  [
+
+                             ]
+}

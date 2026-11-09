@@ -1,0 +1,21 @@
+// Freeze the exact pilot scenario/lookup/prompt contract without making model calls.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const sourceFile=path.join(dir,'..','run.mjs');
+const src=fs.readFileSync(sourceFile,'utf8');
+const cut=(a,b)=>{const i=src.indexOf(a),j=src.indexOf(b,i);if(i<0||j<0)throw Error('Source boundary absent: '+a);return src.slice(i,j);};
+const prefix=`import fs from 'node:fs';\nimport path from 'node:path';\nimport crypto from 'node:crypto';\nimport {performance} from 'node:perf_hooks';\nimport {fileURLToPath} from 'node:url';\nimport * as M from 'file:///C:/Dev/CoreKeeperModSDK/Tools/ai-bridge/memgraph.mjs';\nconst ROOT=path.dirname(fileURLToPath(import.meta.url));\nconst write=(f,obj)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,typeof obj==='string'?obj:JSON.stringify(obj,null,2));};\nconst ms=t=>+(performance.now()-t).toFixed(3);\nconst DATA=path.join(ROOT,'fixtures');\nconst game=M.loadGame(M.DEFAULT_KG);\nif(!game)throw Error('Game name index absent');\n`;
+const fixture=cut('const cond =','if(mode===\'fixture\')');
+const upperBase=cut('const upperBase=','async function upperCall');
+const briefExpr=cut('  const brief=upperBase+','  const turn=JSON.stringify');
+const choices=cut('function choices(', 'async function choose(');
+const accept=cut('function accept(', 'const wanted=');
+const core=prefix+'const indexStarted=performance.now();\n'+fixture+'\nconst fixtureIndexMs=+(performance.now()-indexStarted).toFixed(3);\n'+upperBase+'\nfunction modelBrief(route,reason){\n'+briefExpr+'  return brief;\n}\n'+choices+accept+'\nexport {scenes,queryDefs,search,choices,accept,modelBrief,fixtureIndexMs};\n';
+fs.writeFileSync(path.join(dir,'core.mjs'),core);
+fs.copyFileSync(sourceFile,path.join(dir,'pilot-source.mjs.txt'));
+const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
+fs.writeFileSync(path.join(dir,'contract.json'),JSON.stringify({sourceFile,sourceSha256:sha(src),coreSha256:sha(core),unchangedSections:{fixtureAndLookup:sha(fixture),upperBase:sha(upperBase),briefExpression:sha(briefExpr),decisionsChoices:sha(choices),originalAcceptance:sha(accept)},note:'Generated exact sections from pilot. Original acceptance preserved, separate audit marks s3-B boundary. No model calls.'},null,2));
+console.log(JSON.stringify({prepared:true,core:path.join(dir,'core.mjs'),sha256:sha(core)}));

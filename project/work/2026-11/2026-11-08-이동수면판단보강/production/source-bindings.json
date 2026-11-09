@@ -1,0 +1,423 @@
+{
+  "bindings": [
+    {
+      "objectId": 6551,
+      "variation": 0,
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7937923918425634137",
+      "objectPointer": "/1920",
+      "sourceRawByteSha256": "abf2263b78923baf386415534cc57305c2b66af47a0e2fe54c610e750cce0070",
+      "prefabInfo": {
+        "authoring": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "authoringRef": {
+          "m_address": {
+            "m_high": "-8995944242560474854",
+            "m_low": "-6141529875527916947"
+          }
+        },
+        "graphicalRef": {
+          "m_address": {
+            "m_high": "8073213298163089275",
+            "m_low": "-264542721010923948"
+          }
+        },
+        "prefab": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        }
+      },
+      "components": [
+        {
+          "pointer": "/1920/links/1/matches/0/components/13",
+          "linkKind": "authoringRef",
+          "linkAddress": [
+            "-6141529875527916947",
+            "-8995944242560474854"
+          ],
+          "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2622741978066832039",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1088015966352951975",
+          "class": "MinecartAuthoring"
+        }
+      ]
+    },
+    {
+      "objectId": 8373,
+      "variation": 0,
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:1753535845213101411",
+      "objectPointer": "/2292",
+      "sourceRawByteSha256": "614d11e85d391dacdba24a52ed8675bd78798defc40b894d6e42aad28d7eefca",
+      "prefabInfo": {
+        "authoring": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "authoringRef": {
+          "m_address": {
+            "m_high": "-1383898748127226342",
+            "m_low": "5171432312862341960"
+          }
+        },
+        "graphicalRef": {
+          "m_address": {
+            "m_high": "0",
+            "m_low": "0"
+          }
+        },
+        "prefab": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        }
+      },
+      "components": [
+        {
+          "pointer": "/2292/links/1/matches/0/components/5",
+          "linkKind": "authoringRef",
+          "linkAddress": [
+            "5171432312862341960",
+            "-1383898748127226342"
+          ],
+          "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6613728040975621475",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8086246993890663779",
+          "class": "OffHandAuthoring"
+        }
+      ]
+    },
+    {
+      "objectId": 8374,
+      "variation": 0,
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6907783803396625453",
+      "objectPointer": "/2293",
+      "sourceRawByteSha256": "dc3ca61aef3b74bdd9cb108ce48afbff544c0e3815741c496ece64e4bb27c38a",
+      "prefabInfo": {
+        "authoring": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "authoringRef": {
+          "m_address": {
+            "m_high": "4792646465366524616",
+            "m_low": "3563667709181365054"
+          }
+        },
+        "graphicalRef": {
+          "m_address": {
+            "m_high": "0",
+            "m_low": "0"
+          }
+        },
+        "prefab": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        }
+      },
+      "components": [
+        {
+          "pointer": "/2293/links/1/matches/0/components/5",
+          "linkKind": "authoringRef",
+          "linkAddress": [
+            "3563667709181365054",
+            "4792646465366524616"
+          ],
+          "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-678199301658897363",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8475872364087153709",
+          "class": "OffHandAuthoring"
+        }
+      ]
+    },
+    {
+      "objectId": 9609,
+      "variation": 0,
+      "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:3667643087846801758",
+      "objectPointer": "/2943",
+      "sourceRawByteSha256": "7fc6b329e0b5373c99e1aa2ad9dce73a286c2b37efcf6077daf8127e0d774b4c",
+      "prefabInfo": {
+        "authoring": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        },
+        "authoringRef": {
+          "m_address": {
+            "m_high": "7931985056571917144",
+            "m_low": "4275168971101703117"
+          }
+        },
+        "graphicalRef": {
+          "m_address": {
+            "m_high": "0",
+            "m_low": "0"
+          }
+        },
+        "prefab": {
+          "m_FileID": 0,
+          "m_PathID": "0"
+        }
+      },
+      "components": [
+        {
+          "pointer": "/2943/links/1/matches/0/components/2",
+          "linkKind": "authoringRef",
+          "linkAddress": [
+            "4275168971101703117",
+            "7931985056571917144"
+          ],
+          "prefabKey": "CAB-2ebcba97367158c9b08f790c25d642c9:8608776451752165726",
+          "componentKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-799469916712369826",
+          "class": "GivesConditionsWhenConsumedAuthoring"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "line": 36118,
+      "value": {
+        "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+        "data": {
+          "Values": [
+            {
+              "conditionData": {
+                "conditionID": 8,
+                "duration": 0,
+                "value": 50,
+                "valueMultiplier": 5
+              },
+              "conditionDataWhenCooked": {
+                "conditionID": 8,
+                "duration": 0,
+                "value": 100,
+                "valueMultiplier": 5
+              }
+            },
+            {
+              "conditionData": {
+                "conditionID": 210,
+                "duration": 5,
+                "value": 1,
+                "valueMultiplier": 1
+              },
+              "conditionDataWhenCooked": {
+                "conditionID": 210,
+                "duration": 5,
+                "value": 2,
+                "valueMultiplier": 1
+              }
+            }
+          ],
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "8608776451752165726"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2597862750463866410"
+          }
+        },
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-799469916712369826",
+        "pathId": "-799469916712369826",
+        "rawByteSha256": "9f245f919d215a612c2b40883b4430151f554682b7c36acb166a93e551148796",
+        "script": {
+          "assembly": "Pug.ECS.Authoring",
+          "class": "GivesConditionsWhenConsumedAuthoring",
+          "namespace": ""
+        },
+        "type": "MonoBehaviour"
+      }
+    },
+    {
+      "line": 43429,
+      "value": {
+        "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+        "data": {
+          "currentSpeed": 0,
+          "isBreaking": 0,
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "2622741978066832039"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-5894930117592308359"
+          },
+          "maxSpeed": 800
+        },
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:1088015966352951975",
+        "pathId": "1088015966352951975",
+        "rawByteSha256": "818e1f2f3a6bb4fdc6819602e58eae4a66099dc9f8ab5a21bc6f574e67798aa4",
+        "script": {
+          "assembly": "Pug.ECS.Authoring",
+          "class": "MinecartAuthoring",
+          "namespace": ""
+        },
+        "type": "MonoBehaviour"
+      }
+    },
+    {
+      "line": 79520,
+      "value": {
+        "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+        "data": {
+          "cooldown": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "cooldownSFX": 117,
+          "entityMono": {
+            "m_FileID": 0,
+            "m_PathID": "1753535845213101411"
+          },
+          "level": {
+            "m_FileID": 0,
+            "m_PathID": "-2071874823831790237"
+          },
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "6613728040975621475"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2286063635015556382"
+          },
+          "mechanic": 7,
+          "mechanicCurve": {
+            "m_Curve": [
+              {
+                "inSlope": 0,
+                "inWeight": 0,
+                "outSlope": 0,
+                "outWeight": 0.3333333432674408,
+                "time": 0,
+                "value": 0,
+                "weightedMode": 0
+              },
+              {
+                "inSlope": 0.001712328870780766,
+                "inWeight": 0.3333333432674408,
+                "outSlope": 0.001712328870780766,
+                "outWeight": 0.9999999403953552,
+                "time": 0.20000000298023224,
+                "value": 0,
+                "weightedMode": 0
+              },
+              {
+                "inSlope": 1.25,
+                "inWeight": 0.3333333432674408,
+                "outSlope": 1.25,
+                "outWeight": 0,
+                "time": 1,
+                "value": 1,
+                "weightedMode": 0
+              }
+            ],
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_RotationOrder": 4
+          },
+          "mechanicMultiplier": 7,
+          "mechanicValue": 7,
+          "minMaxTime": {
+            "x": 0.10000000149011612,
+            "y": 0.6000000238418579
+          }
+        },
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8086246993890663779",
+        "pathId": "8086246993890663779",
+        "rawByteSha256": "e071e78e46590ae41247d07b42cdfda62b64ea302c17e3e1ad98e8a0a6b5f323",
+        "script": {
+          "assembly": "Pug.ECS.Authoring",
+          "class": "OffHandAuthoring",
+          "namespace": ""
+        },
+        "type": "MonoBehaviour"
+      }
+    },
+    {
+      "line": 81520,
+      "value": {
+        "assetFile": "CAB-2ebcba97367158c9b08f790c25d642c9",
+        "data": {
+          "cooldown": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "cooldownSFX": 117,
+          "entityMono": {
+            "m_FileID": 0,
+            "m_PathID": "6907783803396625453"
+          },
+          "level": {
+            "m_FileID": 0,
+            "m_PathID": "-4966841952655174611"
+          },
+          "m_Enabled": 1,
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": "-678199301658897363"
+          },
+          "m_Name": "",
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": "-2286063635015556382"
+          },
+          "mechanic": 7,
+          "mechanicCurve": {
+            "m_Curve": [
+              {
+                "inSlope": 0,
+                "inWeight": 0,
+                "outSlope": 0,
+                "outWeight": 0.3333333432674408,
+                "time": 0,
+                "value": 0,
+                "weightedMode": 0
+              },
+              {
+                "inSlope": 0.001712328870780766,
+                "inWeight": 0.3333333432674408,
+                "outSlope": 0.001712328870780766,
+                "outWeight": 0.9999999403953552,
+                "time": 0.20000000298023224,
+                "value": 0,
+                "weightedMode": 0
+              },
+              {
+                "inSlope": 1.25,
+                "inWeight": 0.3333333432674408,
+                "outSlope": 1.25,
+                "outWeight": 0,
+                "time": 1,
+                "value": 1,
+                "weightedMode": 0
+              }
+            ],
+            "m_PostInfinity": 2,
+            "m_PreInfinity": 2,
+            "m_RotationOrder": 4
+          },
+          "mechanicMultiplier": 10,
+          "mechanicValue": 10,
+          "minMaxTime": {
+            "x": 0.10000000149011612,
+            "y": 0.6000000238418579
+          }
+        },
+        "key": "CAB-2ebcba97367158c9b08f790c25d642c9:8475872364087153709",
+        "pathId": "8475872364087153709",
+        "rawByteSha256": "14f1a2bf0d5d2f24164623c1c8e763e77f6ad6f1d17756878248c8faac44b697",
+        "script": {
+          "assembly": "Pug.ECS.Authoring",
+          "class": "OffHandAuthoring",
+          "namespace": ""
+        },
+        "type": "MonoBehaviour"
+      }
+    }
+  ]
+}

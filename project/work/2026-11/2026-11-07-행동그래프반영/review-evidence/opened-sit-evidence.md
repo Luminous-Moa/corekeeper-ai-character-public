@@ -1,0 +1,12 @@
+# A 규칙과 공통 소비자 근거
+
+기준 코드는 입력 provenance의 고정 해시로 확인한다. 아래 코드 경로의 루트 R은 게임원본-상호작용/code다. 사례 문서의 상대 참조는 원래 20건 작업 A-actions/cases/<사례> 기준이며, 해당 문서는 그 위치의 독립 검수된 원본과 해시가 동일하다. 각 레코드는 실제 source의 authoring·graphical 컴포넌트, 원문 SHA 및 설정을 보존한다.
+
+- 공통: Interaction/Interaction/UpdateSelectedInteractableSystem.cs:174-229,590-621,677-691,984-1002; SetInteractorInputSystem.cs:126-130; TriggerUseInteractionSystem.cs:139-166; Pug.Other/Interaction/InteractablePostConverter.cs:13-83,136-176. 각각 개별 InteractableObject 설정에 따른 선택 조건과 입력, 사용 버퍼다. 활성 상호작용 객체의 subIndex 0을 확인했다. 단 정상 bake·월드 선정과 입력은 조건이다.
+- 앉기: Pug.ECS.Conversion/SittableConverter.cs:7-35는 SittableObject의 physical 및 네 leave Transform.position을 읽고 사용 버퍼를 생성한다. SittableObject.cs에 선언된 해당 참조를 12개 source에서 개별 추적하고 부모 Transform까지 원문 저장했다. 12개 graphical 클래스는 모두 직접 SittableObject를 상속하며, CavelingChair/Toilet/Throne 및 EasterMeadowStool의 override는 OnDeath뿐이다. Interaction.CoreKeeper/Interaction/TriggerUseControllableSystem.cs:51-98, Pug.Other/PlayerState/Sitting.cs와 ControllingStateCommon.cs는 대상 미점유, subIndex 0, 상태와 제어 경로를 처리한다. 좌표는 localPosition을 world position으로 곧바로 단정하지 않는다.
+- 침대: BedConverter.cs, OccupiableConverter.cs와 Pug.Other/ClaimBedSystem.cs:202-360, PlayerState/Sleep.cs:11-83은 개별 슬롯과 소유·적·접근·수면을 소비한다. 회복 조건 추가는 체력 회복 확정이 아니다.
+- 문: Interaction.CoreKeeper.Converters/Interaction/ChangeVariationTriggerConverter.cs와 Interaction.CoreKeeper/Interaction/TriggerSetVariationSystem.cs:145-157은 버퍼와 Simulate가 있는 경우 현재 DB 설정의 variationToToggleTo를 쓴다. Pug.ECS.Conversion/DoorConverter.cs와 Pug.Other/ColliderVariationSystem.cs:144-151은 changesColliderByVariation에 따른 collider 교체를 처리하고 Pug.Other/PathFindSystem.cs:1404-1444는 변형 1/3을 열린 것으로 취급한다. NonPaintableDoor는 WoodDoor를 상속하고 추가 override가 없다. 각 source의 PhysicsShapeAuthoring과 목표 변형 source를 보존하며 동일 ID/variation 중복 source의 실행시 선택은 미결이며 CustomScenePrefabAuthoring을 가진 source는 장면 override 미결로 제외한다.
+- 레버: 같은 변형 trigger와 Pug.Automation.Conversion/Pug.Automation/ElectricityConverter.cs, Pug.Automation/Pug.Automation/PugElectricityInstantiateSystem.cs:845-869,82-103,242-313 및 Pug.Automation/Pug.Automation/PugElectricitySystem.cs:1354-1432,1493-1546은 개별 sourceEnergy, isLever, inactive 설정에 따른 조건부 전원 재구성·전력 기록이다. 회로의 차단·방향·전력 소진이 경로를 제한하며 부하의 작동을 보장하지 않는다.
+- 배: Pug.ECS.Conversion/BoatConverter.cs와 CanBeControlledByOtherEntityConverter.cs, TriggerUseControllableSystem.cs:51-98, Pug.Other/PlayerState/BoatRiding.cs:29-42는 개별 속도 설정 및 조건부 탑승·제어를 잇는다. 물 조종·안전 하선 완결 주장은 없다.
+
+코드 경로 및 라인의 완전한 검수 근거는 기존 개별 사례와 review/A-review.md에 있으며 runtime_tested는 없다.

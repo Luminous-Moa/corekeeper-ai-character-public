@@ -1,0 +1,8 @@
+﻿ M Assets/ModSDK/GameVersionRegistry.asset
+ M Assets/Resources/ConditionsTable.asset
+ M Assets/Resources/ConditionsTable.asset.meta
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+ M ProjectSettings/ProjectSettings.asset
+ M ProjectSettings/ShaderGraphSettings.asset
+?? Assets/Plugins/CoreKeeper/

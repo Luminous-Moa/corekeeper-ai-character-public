@@ -1,0 +1,343 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "- M2 회수 불가 pending:",
+        "doc": "gapAgreement",
+        "end": 39,
+        "line": 39,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 39
+      },
+      {
+        "anchor": "따질지 넘어갈지는 LLM이 정한다.",
+        "doc": "gapAgreement",
+        "end": 39,
+        "line": 39,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 39
+      },
+      {
+        "anchor": "대장간 파괴·식별 불가면 모른다는 사실을 그대로 전한다.",
+        "doc": "gapAgreement",
+        "end": 39,
+        "line": 39,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 39
+      }
+    ],
+    "id": "P.maintenance-abandon",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 39,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 39
+      },
+      {
+        "end": 39,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 39
+      },
+      {
+        "end": 39,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 39
+      }
+    ],
+    "status": "합의·사용자 정정 반영",
+    "summary": "대장간이 없거나 입력 칸이 비어 맡긴 장비를 돌려받을 수 없으면 판단 모델에 그 사실과 포기 선택지를 준다. 포기하면 pending을 지우고 상위 LLM에 어떤 장비를 어느 대장간에서 잃었는지와 가져간 것으로 보이는 사람(사라진 순간 대장간 근처 플레이어 추정, 추정임 명시)을 알린다. 대장간 파괴·식별 불가면 모른다는 사실을 그대로 전한다. 따질지 넘어갈지는 LLM이 정하며 따지라는 지시는 넣지 않는다.",
+    "title": "회수 불가 정비 장비: 판단 모델의 포기 → 상위 LLM에 상황 알림",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "개발 참고 색인",
+      "evidence": [
+        {
+          "end": 25,
+          "path": "../2026-11-08-행동판단프로젝트연계/topics.mjs",
+          "start": 1
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "관련 게임 규칙 검토",
+      "runtimeTrace": false,
+      "to": "R.game-topic.maintenance",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#AIMaintenance.Abandon(World, Entity, MaintenanceRequest)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#AIMaintenance.AbandonCandidate(World, Entity, AIMaintenance.State)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#AIMaintenance.LostWho(AIMaintenance.Pending)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#AIMaintenance.ObserveLoss(World, Entity, AIMaintenance.Pending)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#AIMaintenance.PlayersNear(World, Entity, int2)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        },
+        {
+          "end": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIMaintenance.cs#MaintenanceAbandonSkill.Tick(World, Entity, float)",
+      "type": "reference"
+    },
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "- M2 회수 불가 pending:",
+          "doc": "gapAgreement",
+          "end": 39,
+          "line": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 39
+        },
+        {
+          "anchor": "따질지 넘어갈지는 LLM이 정한다.",
+          "doc": "gapAgreement",
+          "end": 39,
+          "line": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 39
+        },
+        {
+          "anchor": "대장간 파괴·식별 불가면 모른다는 사실을 그대로 전한다.",
+          "doc": "gapAgreement",
+          "end": 39,
+          "line": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "kind": "현재 결정의 정책 요약",
+      "to": "pol.maintenance-abandon",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "#### L8.",
+          "doc": "gapReview",
+          "end": 114,
+          "line": 112,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review.md",
+          "sha256": "a425c138d5931029ae9b4051214182f28d8581c28b44ae8fd93e6af8174c473c",
+          "start": 112
+        }
+      ],
+      "from": "P.maintenance-abandon",
+      "id": "E249",
+      "kind": "참고: 포기 범위 밖의 막힘",
+      "to": "Q.maintenance-unreachable",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "- M2 회수 불가 pending:",
+          "doc": "gapAgreement",
+          "end": 39,
+          "line": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 39
+        }
+      ],
+      "from": "P.gap-maintenance",
+      "id": "E237",
+      "kind": "회수 불가 pending의 출구",
+      "to": "P.maintenance-abandon",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "- M2 회수 불가 pending:",
+          "doc": "gapAgreement",
+          "end": 39,
+          "line": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 39
+        }
+      ],
+      "from": "P.maintenance-pending",
+      "id": "E238",
+      "kind": "자기 pending 수명의 후속 결정",
+      "to": "P.maintenance-abandon",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "따질지 넘어갈지는 LLM이 정한다.",
+          "doc": "gapAgreement",
+          "end": 39,
+          "line": 39,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 39
+        }
+      ],
+      "from": "P.agency",
+      "id": "E239",
+      "kind": "상위 LLM이 대응을 스스로 정함",
+      "to": "P.maintenance-abandon",
+      "type": "reference"
+    }
+  ]
+}

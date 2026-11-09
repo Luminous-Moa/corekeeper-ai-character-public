@@ -1,0 +1,118 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 1. 선택 트리와 직접 실행 병행",
+        "doc": "expeditionAgreement",
+        "end": 21,
+        "line": 16,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+        "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+        "start": 16
+      }
+    ],
+    "id": "P.expedition-choice",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 21,
+        "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+        "start": 16
+      }
+    ],
+    "status": "사용자 합의·구현 수용 별도",
+    "summary": "눈앞의 묶음과 이미 정해진 이동은 바로 선택하고 다른 대상·장소는 분류를 좁힌다. 탐색 중 유효 행동을 유지하고 메뉴 취소를 몸 동작·부탁 취소와 구별한다.",
+    "title": "구체 행동 직접 선택과 얕은 대상 탐색 병행",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 21,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 16
+        }
+      ],
+      "from": "P.expedition-choice",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIBrain.Loop.cs#AIBrain.Apply(World, Entity, float, AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 21,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 16
+        }
+      ],
+      "from": "P.expedition-choice",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.Compose(World, Entity, AIObservation, System.Collections.Generic.List<AICandidate>, ExpeditionQuery)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 21,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "start": 16
+        }
+      ],
+      "from": "P.expedition-choice",
+      "kind": "채집·이동·귀환 최종 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "43c3817fc1a36142c8591fb087ed867665633fe1",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIExpedition.cs#AIExpedition.Navigate(AICandidate)",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 합의와 범위",
+          "doc": "pathTreeAudit",
+          "end": 16,
+          "line": 11,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/existing-tree-audit.md",
+          "sha256": "647d48bb4f9b4869cf5218453c0bf3e1f66539083464c21c3879492f98a89341",
+          "start": 11
+        }
+      ],
+      "from": "P.expedition-choice",
+      "id": "E211",
+      "kind": "참고: 기존 직접 실행과 얕은 탐색 합의 대조",
+      "to": "R.path-tree-audit",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 1. 선택 트리와 직접 실행 병행",
+          "doc": "expeditionAgreement",
+          "end": 21,
+          "line": 16,
+          "path": "../../채집이동귀환-구현자료/graph/final-source-pins/expeditionAgreement.md",
+          "sha256": "9f4a88d0797b7ba7339557b6c85548cf8ebe13313644cbb2376fcaa8235286bd",
+          "start": 16
+        }
+      ],
+      "from": "P.expedition",
+      "id": "E178",
+      "kind": "채집·이동·귀환 합의의 구성",
+      "to": "P.expedition-choice",
+      "type": "reference"
+    }
+  ]
+}

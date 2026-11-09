@@ -1,0 +1,119 @@
+reports sent by member and trigger: {"Claude":{"host_said":6,"fight_end":3,"periodic":2,"goal_stalled":4,"goal_done":3,"plan_done":3,"back_up":1},"Gemini":{"host_said":4,"goal_done":11,"back_up":2,"plan_done":4,"periodic":1,"fight_end":1,"goal_stalled":2}}
+Claude: periodic gaps after the previous report (s): 123, 125
+Gemini: periodic gaps after the previous report (s): 135
+applied answers by decision: {"Claude":{"set":14,"keep":5,"hold":1},"Gemini":{"set":20,"keep":4}}
+dropped answers: 1 Claude 오래된 답: 목표 수정 번호가 바뀜(19→20)
+fights recorded: 32; fight_end triggers: 4
+  fight Claude 0초 전 끝, 8초: MushroomBrute, MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 50/100. 이 월드 전적: MushroomBrute 싸움 1번 중 쓰러짐 0번, MushroomEnemy 싸움 1번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 7초: MushroomEnemy 2, MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 26, 끝 체력 43/100. 이 월드 전적: MushroomEnemy 싸움 2번 중 쓰러짐 0번, MushroomBrute 싸움 2번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 9초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 24, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 1번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 10초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 79/100. 이 월드 전적: MushroomEnemy 싸움 3번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 19초: MushroomBrute 2, MushroomEnemy 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 24, 끝 체력 76/100. 이 월드 전적: MushroomBrute 싸움 1번 중 쓰러짐 0번, MushroomEnemy 싸움 2번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 9초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 25, 끝 체력 54/100. 이 월드 전적: MushroomEnemy 싸움 4번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 7초: CavelingShaman, CavelingBrute 2. 쓰러진 적 없음. 나 쓰러짐 1번, 받은 피해 100, 끝 체력 100/100(다시 일어난 뒤). 이 월드 전적: CavelingShaman 싸움 1번 중 쓰러짐 1번, CavelingBrute 싸움 1번 
+  fight Claude 0초 전 끝, 8초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 26, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 5번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 18초: MushroomEnemy, MushroomBrute. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 27, 끝 체력 73/100. 이 월드 전적: MushroomEnemy 싸움 6번 중 쓰러짐 0번, MushroomBru
+  fight Claude 0초 전 끝, 4초: MushroomBrute 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 62, 끝 체력 23/100. 이 월드 전적: MushroomBrute 싸움 4번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 62초: MushroomEnemy, MushroomBrute. 쓰러진 적 MushroomEnemy 1, MushroomBrute 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 3번 중 쓰러
+  fight Gemini 0초 전 끝, 2초: MushroomBrute 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomBrute 싸움 3번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 8초: MushroomEnemy 4. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 25, 끝 체력 75/100. 이 월드 전적: MushroomEnemy 싸움 4번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 10초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 49/100. 이 월드 전적: MushroomEnemy 싸움 5번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 4초: SlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 49/100. 이 월드 전적: SlimeBlob 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: MushroomBrute 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 56/100. 이 월드 전적: MushroomBrute 싸움 4번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: MushroomBrute 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 90/100. 이 월드 전적: MushroomBrute 싸움 5번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 13초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 25, 끝 체력 55/100. 이 월드 전적: MushroomEnemy 싸움 7번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 21초: MushroomBrute 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 96/100. 이 월드 전적: MushroomBrute 싸움 6번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 3초: MushroomBrute 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 55/100. 이 월드 전적: MushroomBrute 싸움 5번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 3초: SlimeBlob 2, AggressiveSlimeBlob. 쓰러진 적 SlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 20, 끝 체력 35/100. 이 월드 전적: SlimeBlob 싸움 1번 중 쓰러짐 0번, AggressiveSlimeB
+  fight Claude 0초 전 끝, 8초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 60/100. 이 월드 전적: MushroomEnemy 싸움 8번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 10초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 76/100. 이 월드 전적: MushroomEnemy 싸움 9번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 15초: SlimeBlob 4, AggressiveSlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 96/100. 이 월드 전적: SlimeBlob 싸움 2번 중 쓰러짐 0번, AggressiveSlimeBlob 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 96/100. 이 월드 전적: MushroomEnemy 싸움 6번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 70/100. 이 월드 전적: MushroomEnemy 싸움 7번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 6초: SlimeBlob 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 86/100. 이 월드 전적: SlimeBlob 싸움 2번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 4초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 75/100. 이 월드 전적: MushroomBrute 싸움 7번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 6초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 156/100. 이 월드 전적: MushroomBrute 싸움 6번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 24초: MushroomBrute 2. 쓰러진 적 MushroomBrute 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomBrute 싸움 8번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 7초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 156/100. 이 월드 전적: MushroomBrute 싸움 7번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 4초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomBrute 싸움 9번 중 쓰러짐 0번
+downs: Gemini, Gemini, Claude
+ORDER changes:
+  Claude: host instruction '@Claude 버섯한테 덜 맞게 나무 방어구 한 벌 맞춰 와' 받음 -> 따름 (report #1, 7s after it was given): 호스트 지시. 나무가 0이라 먼저 모으고, 작업대는 게임 쪽이 만들며 방어구를 차례로 만든다
+  Gemini: host instruction '@Gemini 구리 곡괭이 하나 만들어 줘' 받음 -> 따름 (report #1, 14s after it was given): 호스트의 구리 곡괭이 제작 요청을 따르기 위해 제작 목표 설정(게임 쪽이 작업대 및 재료 수집 자동 진행)
+  Gemini: host instruction '@Gemini 지금 뭐 하고 있어?' 받음 -> 끝남 (report #3, 97s after it was given): 호스트가 요청했던 구리 곡괭이 제작을 마쳤으므로 지시 완료 처리하고, 기본 자원인 나무를 보충함
+  Claude: host instruction '@Claude 1분만 지금 자리에서 멈춰서 기다려 줘' 받음 -> 따름 (report #5, 3s after it was given): 호스트가 1분만 제자리에서 기다리라고 함. 적이 없고 체력 79라 안전함. 지금 계획은 그 뒤에 다시 이어 감
+  Claude: host instruction '@Claude 1분만 지금 자리에서 멈춰서 기다려 줘' 따름 -> 미룸 (report #5, 3s after it was given): hold: 호스트가 1분만 제자리에서 기다리라고 함. 적이 없고 체력 79라 안전함. 지금 계획은 그 뒤에 다시 이어 감
+  Claude: host instruction '@Claude 1분만 지금 자리에서 멈춰서 기다려 줘' 미룸 -> 끝남 (report #6, 129s after it was given): 기다림 지시는 2분 지나 끝남. 멈춘 방어구 계획을 다시 이어 감
+  Gemini: 'follow' of report #9 not applied (it saw instruction #3, now #4)
+  Gemini: host instruction '@Gemini 아니다, 횃불 말고 나무 10개만 더 모아 줘' 받음 -> 따름 (report #10, 24s after it was given): 호스트의 변경 요청(횃불 대신 나무 10개 더 모으기)을 반영하여 마지막 단계를 나무 10개 채집으로 변경
+  Claude: host instruction '@Claude 지금 체력 얼마야?' 받음 -> 끝남 (report #8, 127s after it was given): 체력 질문에 답함. 방어구 계획은 끝났고 가방에 흙·모래 블록이 많으니 기지 상자에 넣어 정리함
+PROBLEM reports: 3
+  [AIPlayerSpike] t=1002.5 @Claude PROBLEM Claude (report #15, trigger goal_stalled): 빈 밭 3칸과 씨앗 3개가 있는데 밭 일이 '할 일 없음'으로 막힘 | say: 씨앗 심기가 이상하게 막혔어. 대신 나무랑 구리 더 모아서 장비 준비할게!
+  [AIPlayerSpike] t=1162.1 @Claude PROBLEM Claude (report #17, trigger goal_stalled): 밭 빈 칸 4·씨앗 4개가 있는데 farm이 '할 일 없음'으로 두 번 막힘 | say: 씨앗이랑 빈 밭이 있는데 심기가 또 막혔어. 대신 버섯 모아서 수프 끓일게!
+  [AIPlayerSpike] t=1391.3 @Claude PROBLEM Claude (report #21, trigger goal_stalled): 빈 밭 4칸과 RootSeed 3개가 있는데 씨앗 심기가 3번째 막힘 | say: 빈 밭이랑 씨앗이 있는데 심기가 또 막혔어. 상자 구리로 구리 모루부터 만들게!
+chat lines shown 61, hidden (status) 1076
+shown kinds: {"other":4,"say-or-named":57}
+  shown: AI Claude 켜짐: 3초 뒤 들어옵니다. 이 월드에 저장됨.
+  shown: [Gemini] AI Gemini 켜짐: 3초 뒤 들어옵니다. 이 월드에 저장됨.
+  shown: [Claude] 좋아! 나무 30개 모아서 투구→갑옷→바지 순서로 맞춰 올게. 체력이 반이라 조심할게
+  shown: [Gemini] 구리 곡괭이 만들 준비해서 바로 제작할게!
+  shown: [Claude] 지금 나무 모으는 중이야(30개). 다 모으면 투구→갑옷→바지 순서로 만들 거야!
+  shown: [Gemini] 호스트님이 요청하신 구리 곡괭이 만들려고 필요한 재료랑 작업대 준비하고 있어요!
+  shown: [Claude] 버섯들한테 좀 맞았어(43/100). 음식 먹으면서 나무 계속 모을게!
+  shown: [Claude] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: [Claude] 응 괜찮아! 체력 79까지 올렸고 나무 28/30이야. 곧 방어구 만들기 시작할게
+  shown: [Gemini] 호스트님, 요청하신 구리 곡괭이 제작 완료했어요! 다음 작업을 위해 나무 모아올게요.
+  shown: [Gemini] 나무는 충분히 모았으니, 장비 업그레이드를 위해 구리 광석을 더 캐올게요!
+  shown: [Claude] 알았어, 여기서 멈춰서 기다릴게! 나무는 28/30이야.
+  shown: [Gemini] 앗, 광석 캐러 가다 쓰러졌네요! 체력 다 찼으니 다시 구리 광석 캐러 갈게요.
+  shown: [Gemini] 구리 광석 10개 다 캤어요! 기지로 돌아가서 상자에 정리하고 구리 장비 만들 준비할게요.
+  shown: [Gemini] 기지에 도착했어요! 캐온 구리 광석을 주괴로 제련하고 상자를 만들어 정리할게요.
+  shown: [Gemini] 정리 완료! 방어구가 없어서 위험하니 나무를 모아서 기본 나무 방어구 세트를 맞출게요.
+  shown: [Claude] 1분 넘게 기다렸으니 다시 나무 모으고 나무 방어구 만들게!
+  shown: [Claude] AI: 판단 호출 실패(HTTP 503 ), 3.0초 뒤 다시 시도합니다.
+  shown: [Gemini] AI: 판단 호출 실패(HTTP 503 ), 3.0초 뒤 다시 시도합니다.
+  shown: [Gemini] 네! 지금 나무 방어구 만드는 계획 뒤에 횃불 5개 제작까지 이어서 해둘게요.
+  shown: [Gemini] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: [Gemini] 네! 횃불 대신 방어구 만들고 나서 나무 10개 더 모아둘게요.
+  shown: [Claude] 위쪽 LLM을 지금 쓸 수 없음(브리지에 닿지 않음(꺼져 있음?)). 2분 뒤 다시 묻고, 그동안 목표가 없으면 자유 시간으로 행동 판단기가 고릅니다.
+  shown: [Gemini] 위쪽 LLM을 지금 쓸 수 없음(브리지에 닿지 않음(꺼져 있음?)). 2분 뒤 다시 묻고, 그동안 목표가 없으면 자유 시간으로 행동 판단기가 고릅니다.
+  shown: [Claude] 체력 54/100이야! 나무 방어구 세트는 다 만들었고, 이제 기지에 가서 짐 정리할게.
+  shown: [Claude] 상자 정리가 안 돼서 대신 구리 캐러 갈게. 체력은 버섯 먹으면서 채울게!
+  shown: [Claude] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: [시험용] Claude 경기장 (-2,-10)로 순간이동, 체력 가득, 새 WoodSword 21번 칸
+  shown: [시험용] 경기장: 적 0 치움, MushroomBrute 2마리
+  shown: [Gemini] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: [Gemini] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: [Claude] 구리 11개 캤어! 코어 쪽 용광로에서 주괴로 녹이고 구리 곡괭이 만들게.
+  shown: [Gemini] 동굴인들을 피해 코어에서 다시 일어났어요! 나무 10개 마저 모아갈게요.
+  shown: [Gemini] 나무 10개 다 모았어요! 가방이 차서 기지 상자에 짐 정리부터 해둘게요.
+  shown: [Claude] 구리 곡괭이 만들었어! 버섯 야수한테 많이 맞아서 체력 34야. 솥에 버섯 수프 끓여서 회복할게.
+  shown: [Gemini] 상자 정리 끝냈어요! 다음 장비 만들 구리 광석 10개 캐 올게요.
+  shown: [Claude] 수프 다 됐어, 체력 80이야! 이제 괭이 만들어서 기지 옆에 뿌리 씨앗 심어 볼게.
+  shown: [Gemini] 구리 광석 10개 다 캤어요! 기지 상자에 넣고 올게요.
+  shown: [Gemini] 상자에 구리 넣어뒀어요! 이제 나무 바지까지 만들어 방어구 세트 완성할게요.
+  shown: [Gemini] 나무 방어구 다 갖췄어요! 구리 장비 만들 광석 더 모아올게요.
+  shown: [Claude] 씨앗 심기가 이상하게 막혔어. 대신 나무랑 구리 더 모아서 장비 준비할게!
+  shown: [Gemini] 버섯인간들 정리하면서 구리 광석 계속 캐고 있어요!
+  shown: [Gemini] 구리 광석 10개 다 캤어요! 가방 비우러 기지 상자에 넣고 올게요.
+  shown: [Gemini] 체력이랑 배고픔 챙길 겸 솥에서 버섯 수프 하나 끓여 둘게요!
+  shown: [Claude] 구리랑 나무 다 모았어! 기지 상자에 넣고, 씨앗 심기 한 번 더 해 볼게.
+  shown: [Gemini] 내 솥이 없어서 요리가 막혔네요! 장비 만들 구리 광석 10개 더 캐 올게요.
+  shown: [Claude] 씨앗이랑 빈 밭이 있는데 심기가 또 막혔어. 대신 버섯 모아서 수프 끓일게!
+  shown: [Claude] 슬라임한테 좀 맞았어(35/100). 근처 버섯만 줍고 기지 솥으로 갈게.
+  shown: [Gemini] 구리 광석 다 캤어요! 기지 상자에 넣고 도구랑 장비 만들 나무 좀 더 해올게요.
+  shown: [Claude] 수프 4그릇 챙겼어! 이제 구리 모루 만들어서 무기 바꿔 볼게.
+  shown: [Gemini] 모아온 나무 상자에 넣고, 기지 솥에서 버섯 수프 끓여서 체력 채울게요!
+  shown: [Claude] 슬라임한테 한 번 쓰러졌어. 나무는 상자에 26개 있으니 밭에 씨앗 심고 바로 구리 모루 만들게!
+  shown: [Gemini] 수프 2그릇 챙겼어요! 가방에 씨앗 있으니 기지 밭 먼저 일구고 심어둘게요.
+  shown: [Claude] 빈 밭이랑 씨앗이 있는데 심기가 또 막혔어. 상자 구리로 구리 모루부터 만들게!
+  shown: [Claude] 구리 모루 완성했어! 구리 무기 만들 광석을 더 캐 올게.
+  shown: [Gemini] 밭은 씨앗 다 자랄 때까지 두고, 장비 만들 나무 10개 더 해올게요!
+  shown: [Claude] AI 목표 해제(/ai stop). 판단 호출 없음.
+  shown: [Gemini] AI 목표 해제(/ai stop). 판단 호출 없음.
+  shown: [Gemini] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: AI Claude 꺼짐: 저장하고 나갔습니다. 이 월드에 저장됨.
+  shown: [Gemini] AI Gemini 꺼짐: 저장하고 나갔습니다. 이 월드에 저장됨.
+hidden kinds: {"AI 목표(위쪽 LLM)":34,"AI 걷기 완료":83,"AI 부수기 완료":6,"other":163,"AI 캐기 완료":61,"AI 걷기 취소":19,"AI 뿌리 캐기":117,"AI 짧은 이동":97,"AI 거리 벌리기":34,"AI 사거리까지 접근":2,"AI 복합 행동":15,"AI 공격 취소":30,"AI 먹기 완료":11,"AI 물러나기 취소":4,"AI 공격 완료":16,"AI 파들어가기 완료":55,"AI 만들기 완료":29,"AI 목표 완료":38,"AI 기다리기 완료":19,"AI 파들어가기 실패":5,"AI 쓰러짐 #1":2,"AI 파들어가기 취소":39,"AI 놓기 완료":5,"AI 상자에 넣기":8,"AI 한 번":25,"AI 쓰러짐 #2":1,"AI 목표 멈춤":6,"AI 캐기 취소":12,"AI 제자리 유지":8,"AI 자기 방어":24,"AI 만들기 취소":1,"AI 먹기 취소":2,"AI 기다리기 취소":13,"AI 상자에서 꺼내기":13,"AI 요리하기 완료":4,"AI 요리 꺼내기":6,"AI 밭 일구기":5,"AI 씨앗 심기":25,"AI 물 채우기":9,"AI 물러나기 완료":16,"AI 물 주기":6,"AI 놓기 실패":2,"AI 부수기 취소":6}
+bridge claude: 21 decisions (21 ok), input 302278 (cached 170380), output 8792, per decision input 14394 output 419, mean 6s, by trigger {"host_said":5,"fight_end":3,"periodic":2,"goal_stalled":4,"goal_done":3,"plan_done":3,"back_up":1}
+bridge gemini: 24 decisions (24 ok), input 362340 (cached 0), output 3421, per decision input 15098 output 143, mean 14.6s, by trigger {"host_said":4,"goal_done":11,"back_up":2,"plan_done":4,"fight_end":1,"goal_stalled":2}

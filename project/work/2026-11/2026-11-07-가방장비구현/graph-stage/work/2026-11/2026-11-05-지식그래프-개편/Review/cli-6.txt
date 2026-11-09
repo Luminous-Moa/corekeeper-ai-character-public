@@ -1,0 +1,50 @@
+{
+  "class": "해석",
+  "doc": "기획/기능.md:258",
+  "id": "F.action-select",
+  "kind": "제품",
+  "lineHash": "2af2040ea5ff",
+  "observe": "Player.log \"DECISION #n SEND|RESULT … APPLY|DISCARD\", \"DECISION #n SEND (prefetch)\", \"… QUEUED\", \"DECISION #n queued answer APPLY at skill end\", \"COST cap reached\", \"BRAIN: AI is down|back up\"; AIPlayers/decisions-usage.json",
+  "sources": [
+    {
+      "path": "work/2026-11/2026-11-04-전투-선택지.md",
+      "quote": "GOAL done rev=3: 구리 광석(CopperOre) 3개 모으기 (4/3) after 41.4s, calls this session 45",
+      "status": "ok"
+    },
+    {
+      "path": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "DECISION #1 RESULT choice=c3 (캐기 — 벽 WallDirtBlock (0,-18) 1.3칸 ...) top=[c3=0.93, c4=0.03, c5=0.02] confidence=0.92 latency=0.27s tokens=1085 cached=0 cost=$0.000109 APPLY",
+      "status": "ok"
+    },
+    {
+      "path": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "| 지연 | 중앙값 **0.22초**, p95 0.27초(1차, 74회) · 0.63초(2차, 49회), 최대 0.81초. 첫 빌드에서 첫 호출 하나 2.04초. |",
+      "status": "ok"
+    },
+    {
+      "path": "work/2026-11/2026-11-03-행동판단-연결-구현.md",
+      "quote": "SKILL 캐기 DONE after 12.8s: reason='벽 (-13,-25) 부숨 · 가방 CopperOre +1 · 땅에 남은 것 WallDirtBlockx1 d=0.6'",
+      "status": "ok"
+    },
+    {
+      "path": "work/2026-11/2026-11-03-파들어가기-탐색기억.md",
+      "quote": "상태: 이번 접속 호출 16(적용 16, 버림 0, 실패 0) · 지연 중앙값 0.22초 p95 0.34초 · 이달 298회 $0.0257 / 상한 $200",
+      "status": "ok"
+    },
+    {
+      "path": "work/2026-11/2026-11-04-이동-드득거림.md",
+      "quote": "미리 묻기: 최종 빌드 탐험에서 15번 모두 사용(`DECISION #13 queued answer APPLY at skill end (0.51s after asking)` 등)",
+      "status": "ok"
+    },
+    {
+      "path": "work/2026-11/2026-11-04-견고성-정리.md",
+      "quote": "| 후(robust4·robust5 빌드 합) | 29 | 0.2초 | 0.21초 |",
+      "status": "ok"
+    }
+  ],
+  "status": "실게임 확인",
+  "summary": "OpenAI Decisions(`POST /v1/decisions`, gpt-6-luna, choice 질문 하나)가 후보 하나를 고르고 맞는 기술을 시작한다. 요청은 캐릭터당 하나, `UnityWebRequest`로 게임 스레드를 막지 않는다. 기술이 없을 때(끝난 직후) 바로 부르고, 기술이 도는 중에는 새 적이 보이거나 체력이 15 넘게 줄 때만 최소 2.5초 간격으로 부른다. 분당 30회 상한. 응답은 목표 수정 번호·대상 유효성·나이(8초)를 보고 어긋나면 버린다. 실패는 3초 뒤 다시, 3번 연속이면 목표를 멈춘다. AI가 쓰러져 있으면 부르지 않는다. 비용은 응답 토큰으로 세어 월 상한(설정 파일 200달러, 코드 기본 70달러)에 닿으면 멈춘다. 후보가 기다리기 하나뿐이면 부르지 않는다(choice 질문은 선택지가 둘 이상이어야 해서 400이 난다). 키는 OPENAI_API_KEY(프로세스 또는 사용자 환경 변수)에서 읽고 쓰지 않는다. 기술이 스스로 끝나기 0.4초 전(`EtaSeconds`)이면 \"곧 끝남\"으로 한 번 미리 묻고(계속하기·곧 부술 벽은 빼고), 답은 그 기술이 완료로 끝날 때만 다시 유효성을 보고 쓴다(실패·취소·다른 판단이면 버림). 고를 후보가 없으면 미리 묻지 않는다. 전투 기술(공격·거리 벌리기·물러나기·먹기)도 관찰로 잴 수 있는 끝(마지막 한 대, 시간 상한, 도착, 먹은 뒤 1초)이면 미리 묻는다. 공격의 미리 묻기에서는 곧 죽을 그 적을 후보에서 뺀다.",
+  "title": "현장 행동 고르기",
+  "type": "기능",
+  "verifiedLine": "dde39d7ee5ad"
+}

@@ -1,0 +1,50 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "#### G3.",
+        "doc": "gapReview5",
+        "end": 143,
+        "line": 130,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review-5.md",
+        "sha256": "962a3f3ac91597ad98990e3e322721a7d6fbbbb6bf718419045b41cfd4da9389",
+        "start": 130
+      }
+    ],
+    "id": "Q.choice-total-limit",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 143,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review-5.md",
+        "start": 130
+      }
+    ],
+    "status": "미정",
+    "summary": "상자 쪽 후보는 생산자마다 40개 이하로 묶였지만 최악 합계 약 125개에 상한 없는 벽 캐기·줍기·탐험·둘레 목록이 더해지면 한 요청이 255개를 넘어 판단 요청이 나가지 않을 수 있다. 이번 작업 전부터 있던 조립 구조 문제이며 해결 방식은 정하지 않았다. 사용자 판단 대기다.",
+    "title": "한 판단 요청의 전체 후보 합계 255 초과 가능성",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "#### G3.",
+          "doc": "gapReview5",
+          "end": 143,
+          "line": 130,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/review-5.md",
+          "sha256": "962a3f3ac91597ad98990e3e322721a7d6fbbbb6bf718419045b41cfd4da9389",
+          "start": 130
+        }
+      ],
+      "from": "P.choice-gaps",
+      "id": "E248",
+      "kind": "참고: 남은 조립 구조 문제",
+      "to": "Q.choice-total-limit",
+      "type": "reference"
+    }
+  ]
+}

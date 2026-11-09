@@ -1,0 +1,121 @@
+[
+  {
+    "node": {
+      "class": "결정",
+      "id": "pol.bag-boundary",
+      "rule": "가방·장비 작업에서 / AI는 / 삭제(trash)를 하지 않는다. 상자 접근 부분(자기 상자 접근 범위 유지, 상자 자원 공유 없음)은 pol.bag-boundary-chests로 떼어 내 대체됨으로 두었고 현재 기준은 pol.chests-shared다.",
+      "sourceLocations": [
+        {
+          "end": 1001,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 994
+        }
+      ],
+      "status": "합의",
+      "summary": "가방·장비 작업에서 / AI는 / 삭제(trash)를 하지 않는다. 상자 접근 부분(자기 상자 접근 범위 유지, 상자 자원 공유 없음)은 pol.bag-boundary-chests로 떼어 내 대체됨으로 두었고 현재 기준은 pol.chests-shared다.",
+      "title": "명시 이동 경계(상자 부분은 대체됨)",
+      "type": "정책"
+    },
+    "applications": [
+      {
+        "class": "해석",
+        "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+        "evidence": [
+          {
+            "end": 1001,
+            "path": "../../지식그래프/기획/정책.md",
+            "start": 994
+          }
+        ],
+        "from": "pol.bag-boundary",
+        "kind": "정책의 능력 적용 위치",
+        "to": "R.bag-drop",
+        "type": "reference"
+      },
+      {
+        "class": "해석",
+        "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+        "evidence": [
+          {
+            "end": 1001,
+            "path": "../../지식그래프/기획/정책.md",
+            "start": 994
+          }
+        ],
+        "from": "pol.bag-boundary",
+        "kind": "정책의 능력 적용 위치",
+        "to": "R.bag-equip",
+        "type": "reference"
+      },
+      {
+        "class": "해석",
+        "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+        "evidence": [
+          {
+            "end": 1001,
+            "path": "../../지식그래프/기획/정책.md",
+            "start": 994
+          }
+        ],
+        "from": "pol.bag-boundary",
+        "kind": "정책의 능력 적용 위치",
+        "to": "R.bag-give",
+        "type": "reference"
+      },
+      {
+        "class": "해석",
+        "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+        "evidence": [
+          {
+            "end": 1001,
+            "path": "../../지식그래프/기획/정책.md",
+            "start": 994
+          }
+        ],
+        "from": "pol.bag-boundary",
+        "kind": "정책의 능력 적용 위치",
+        "to": "R.bag-hold",
+        "type": "reference"
+      },
+      {
+        "class": "해석",
+        "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+        "evidence": [
+          {
+            "end": 1001,
+            "path": "../../지식그래프/기획/정책.md",
+            "start": 994
+          }
+        ],
+        "from": "pol.bag-boundary",
+        "kind": "정책의 능력 적용 위치",
+        "to": "R.bag-store",
+        "type": "reference"
+      },
+      {
+        "class": "해석",
+        "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+        "evidence": [
+          {
+            "end": 1001,
+            "path": "../../지식그래프/기획/정책.md",
+            "start": 994
+          }
+        ],
+        "from": "pol.bag-boundary",
+        "kind": "정책의 능력 적용 위치",
+        "to": "R.bag-take",
+        "type": "reference"
+      }
+    ],
+    "sources": [
+      {
+        "path": "../../지식그래프/기획/정책.md",
+        "start": 994,
+        "end": 1001,
+        "sha256": "f735b45bb59ed99c6e2aa709f769c5570a5001dcc23d11f546aa8bea36d03630",
+        "text": "994: ### pol.bag-boundary — 명시 이동 경계(상자 부분은 대체됨)\n995: - 규칙: 가방·장비 작업에서 / AI는 / 삭제(trash)를 하지 않는다. 상자 접근 부분(자기 상자 접근 범위 유지, 상자 자원 공유 없음)은 pol.bag-boundary-chests로 떼어 내 대체됨으로 두었고 현재 기준은 pol.chests-shared다.\n996: - 등급: 사용자 결정\n997: - 확정도: 확정\n998: - 종류: 처리\n999: - 날짜: 2026-11-07\n1000: - 근거: work/2026-11/2026-11-07-가방장비구현/agreement.md \"경계: 자기 상자 접근 범위 유지. 원거리 공격·조준과 시설 제작·수리·강화는 다른 담당의 범위다. 삭제(trash), 자원 공유 정책 변경은 포함하지 않는다.\"\n1001: - 메모: 2026-11-08 사용자 결정으로 상자 부분은 pol.chests-shared가 대체했다. 옛 상자 규칙 원문은 pol.bag-boundary-chests(대체됨)에 남겼다. trash 삭제를 제공하지 않는 경계는 유지한다."
+      }
+    ]
+  }
+]

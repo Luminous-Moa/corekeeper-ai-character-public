@@ -1,0 +1,27 @@
+19:28:54 backup done (mod=5433992 before install)
+19:29:24 installed 9d3ea90 cs=35 diff=0
+19:30:36 bridge up (KG_DATA main repo)
+19:31:21 launching game via steam://rungameid/1621690
+19:31:31 game launched pid 69800
+19:32:53 world nltest slot 7, host char 4 clicked
+19:33:18 in world (world id eeefc536â€¦)
+sent /ai all on
+19:33:52 /ai all on: 4 AIs walking
+19:33:56 hint shot @g
+sent: @¸ğµÎ ¹ö¼¸ÇÑÅ× ´ú ¸Â°Ô °¢ÀÚ ³ª¹« ¹æ¾î±¸ ÇÑ ¹ú¾¿ ¸ÂÃß°í, ³¡³ª¸é ±¸¸® °î±ªÀÌµµ ¸¸µé¾î µÖ
+19:34:06 sent @ëª¨ë‘ armor+pick
+19:35:26 NOTE: first @ëª¨ë‘ (t=161.2) DID arrive (console only showed garbled); waitlog missed it (started after send). Resent at t=197.4 -> same instruction twice
+19:34:42 sent @ëª¨ë‘ armor+pick (utf8)
+19:35:36 sent @Claude question (N1)
+19:35:41 sent @Grok question
+19:36:02 sent @ChatGPT wait 1 min (N2)
+19:38:26 chat shot 02
+sent /ai stop
+19:52:17 sent /ai stop (no member)
+sent /ai off
+19:53:06 sent /ai off
+19:53:56 usage after captured
+19:54:13 save and exit clicked
+19:54:41 quit clicked, game closed
+19:55:24 restore done
+19:56:15 reinstalled 9d3ea90 cs=35 diff=0

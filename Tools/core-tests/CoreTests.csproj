@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Offline checks of the mod's Unity-free core (refactor plan 2-계획.md, A.3): every .cs under
+       Assets/AIPlayerSpike/Scripts/Core plus AIExpCore.cs (ExpJson). A Core file that uses UnityEngine, Unity.* or a
+       game type does not compile here, so this project also guards that Core stays Unity-free.
+       LangVersion 8 like Tools/compile-check (no C# 9-only syntax in mod code).
+       dotnet run -c Release (in this folder); exit code = number of failed checks -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="*.cs" />
+    <Compile Include="..\..\Assets\AIPlayerSpike\Scripts\Core\**\*.cs" LinkBase="Core" />
+    <Compile Include="..\..\Assets\AIPlayerSpike\Scripts\AIExpCore.cs" Link="AIExpCore.cs" />
+    <None Include="fixtures\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

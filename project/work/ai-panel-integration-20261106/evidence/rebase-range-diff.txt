@@ -1,0 +1,14 @@
+﻿1:  e5ce309 ! 1:  dc523e6 Add compact Korean chat font and read-only AI information panel
+    @@ Assets/AIPlayerSpike/Scripts/Core/AIUiPointerCapture.cs.meta (new)
+     
+      ## Tools/core-tests/Program.cs ##
+     @@ Tools/core-tests/Program.cs: public static class Program
+    -             ("G3md", MyDoorTests.Run),
+                  ("FADE", ChatFadeTests.Run),
+                  ("CW", ContinueWarningTests.Run),
+    +             ("CHOICE", ChoiceFactsTests.Run),
+     +            ("UI", UiPointerTests.Run),
+              };
+              foreach (var g in groups)
+2:  3bb470d = 2:  f1c4b0b Preserve deterministic embedded font bytes across checkouts
+3:  ecc8a88 = 3:  2762495 Capture mouse click edges even when released between input polls

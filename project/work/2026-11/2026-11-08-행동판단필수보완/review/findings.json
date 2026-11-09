@@ -1,0 +1,1063 @@
+{
+  "independentEvidence": [
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\independent-checks.json",
+      "sha256": "ed4dfbf3e39f15bf5dabc91b707cf61e8483b9061dcfce40bfdfbddb6859c19a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\receipt-probe.json",
+      "sha256": "a950112a2c6564a7c0731a2390ebc080902f59ea916bc3099c191b835b3733b8"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\supplement-replay.json",
+      "sha256": "47c54ff1fcb100f4427641866ce97931623bcb61aa9abef6398cfda31e2bd99c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\original-table-check.json",
+      "sha256": "fd3e1befc8195c12e93a0d1a89c7fbebbb1cf937d961577753041d0d9a535162"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\entrypoint-show-check.json",
+      "sha256": "50ec2fdad2cff516ac1003d8a5fc140ea0815345f59e85bc5fe5a7944828ef74"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\206-revision-delta.json",
+      "sha256": "5dc4d3febab0c81a6bfabda40efe418ebbb592b668cf8a8e09c9fda1b9d6b5b6"
+    }
+  ],
+  "openFindings": [],
+  "pendingPublicationSteps": [
+    "Exact accepted rebuild and canonical CLI verification.",
+    "Two deterministic rebuilds and physical published manifest verification.",
+    "Separate independent review of published accepted bytes."
+  ],
+  "plannedPublicationSwitches": [
+    {
+      "logicalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임행동-그래프\\publication.json",
+      "reviewedTemplate": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\publication.config.json",
+      "sha256": "bbd5ba883a1886228ebcc070e7f1b974892dfe59d9894b4ff546cd0e3f0ae8bd"
+    }
+  ],
+  "recordsReviewed": 12,
+  "report": {
+    "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\review\\report.md",
+    "sha256": "22d59c8f9dade0ed09da74b2a842bfb26cb93036b5d429dc57355746401ab704"
+  },
+  "resolvedFindings": [
+    "Receipt validates findings own independent_pass and exact contract plus report hash.",
+    "Default summary exposes exact decision payload including optional costs and conditional/sourceComplete/runtime flags.",
+    "Condition206 records exact asymmetric faction call direction and flag-dependent timer calls.",
+    "Detonator input predicates are self-contained and preserve actual ItemIsBroken predicate."
+  ],
+  "reviewedCandidateDirectory": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\candidate-review-v3",
+  "reviewedCandidateHashes": {
+    "coverage.json": "75ce5b614e9ef208a417f3a576e68c93df3f066cd33e35ac6f46c85f3c210620",
+    "graph.json": "5137cd2fd345dba0df09bd3866ae652f9ea94f4aeff9a82281efc47fdd358f16",
+    "manifest.json": "0a801604ffbdb7329efb124b436c6d242445f38446d6f45a19bda1edaff7cccc"
+  },
+  "reviewedContractSha256": "a35eb25f02f4f64223542126eb7be64d09d4c8ad8cb16841fce50fd8bf10753f",
+  "runtimeTested": false,
+  "scopeGroups": 10,
+  "sourceAndGenerationEvidence": [
+    {
+      "group": "grapple8373-8374",
+      "id": "completion:essential:grapple-input-aim-v1",
+      "materialEvidence": [
+        {
+          "endLine": 79520,
+          "id": "hook8373",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 79520
+        },
+        {
+          "endLine": 81520,
+          "id": "hook8374",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 81520
+        },
+        {
+          "endLine": 66295,
+          "id": "cool8373",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 66295
+        },
+        {
+          "endLine": 8778,
+          "id": "cool8374",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 8778
+        },
+        {
+          "endLine": 11,
+          "id": "offhand-enum",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/OffHandMechanic.cs",
+          "sha256": "1ead9bffe10f65e9463a3b2b4da88d56ac2b73d9e162f792f3b373d85b23a96e",
+          "startLine": 1
+        },
+        {
+          "endLine": 22,
+          "id": "offhand-convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/OffHandConverter.cs",
+          "sha256": "a55966f4dc84ef00fc42b3cc0e93aac0810ce65830fdc24eafaaafa3e95263fa",
+          "startLine": 6
+        },
+        {
+          "endLine": 233,
+          "id": "input",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/OffHandEquipmentUpdateSystem.cs",
+          "sha256": "c208c839e792095447fd02332e2e810b5380df3aec4531bf0fba7237ad7c3582",
+          "startLine": 190
+        },
+        {
+          "endLine": 1174,
+          "id": "interaction",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba",
+          "startLine": 1111
+        },
+        {
+          "endLine": 60,
+          "id": "enter",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 15
+        },
+        {
+          "endLine": 323,
+          "id": "aim-request",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 255
+        },
+        {
+          "endLine": 530,
+          "id": "update",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 521
+        }
+      ],
+      "reviewerObservation": "두 hook raw entityMono/기계7/거리7·10/쿨다운0.8·0.6, 입력 상태 gate, mouse/pad 방향 차이, hit와 무관한 timer/index write 및 NothingHit의 Walk 조건을 직접 대조했다. 이동 성공을 추가하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "lightning9135",
+      "id": "completion:essential:lightning-chain-target-v1",
+      "materialEvidence": [
+        {
+          "endLine": 24,
+          "id": "order",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+          "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25",
+          "startLine": 21
+        },
+        {
+          "endLine": 346,
+          "id": "first",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+          "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25",
+          "startLine": 246
+        },
+        {
+          "endLine": 418,
+          "id": "chain",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+          "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25",
+          "startLine": 347
+        },
+        {
+          "endLine": 482,
+          "id": "first-helper",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+          "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25",
+          "startLine": 420
+        },
+        {
+          "endLine": 525,
+          "id": "chain-helper",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+          "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25",
+          "startLine": 484
+        },
+        {
+          "endLine": 554,
+          "id": "active",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChainBeamTargetsSystem.cs",
+          "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25",
+          "startLine": 528
+        },
+        {
+          "endLine": 1174,
+          "id": "interaction",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba",
+          "startLine": 1111
+        },
+        {
+          "endLine": 42,
+          "id": "beam-cost",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/BeamWeaponSlot.cs",
+          "sha256": "e0574759aa5a1076e90089a567ea0a6b6e88137831107ab96e5c1bf5176ed894",
+          "startLine": 13
+        },
+        {
+          "endLine": 54335,
+          "id": "beam-source",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 54335
+        },
+        {
+          "endLine": 71221,
+          "id": "beam-cooldown",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 71221
+        }
+      ],
+      "reviewerObservation": "전체 Execute, ray/sphere 첫 표적 helper, chain helper를 대조했다. 초기 endpoint와 firstHitEntity 구분, 양 collision world, 후보/홉 사이 유지되는 hitWall, 최대3 chain, cooldown elapsed tick1+nonpartial 공격 조건을 보존했다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "effect58",
+      "id": "completion:essential:effect58-input-direction-v1",
+      "materialEvidence": [
+        {
+          "endLine": 17,
+          "id": "clear-order",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ClearInputOnStunnedSystem.cs",
+          "sha256": "4324e25f196b8d9d33bb4d3630548395eba151c46e31495264b60796bdb463df",
+          "startLine": 13
+        },
+        {
+          "endLine": 60,
+          "id": "clear-query",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ClearInputOnStunnedSystem.cs",
+          "sha256": "4324e25f196b8d9d33bb4d3630548395eba151c46e31495264b60796bdb463df",
+          "startLine": 54
+        },
+        {
+          "endLine": 130,
+          "id": "clear",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ClearInputOnStunnedSystem.cs",
+          "sha256": "4324e25f196b8d9d33bb4d3630548395eba151c46e31495264b60796bdb463df",
+          "startLine": 124
+        },
+        {
+          "endLine": 22,
+          "id": "direction-order",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SetPlayerDirectionSystem.cs",
+          "sha256": "97f507e5115076901eaa1d2c1644b730ef8df376d5a51169e5d9cd01c0c0dc9e",
+          "startLine": 15
+        },
+        {
+          "endLine": 78,
+          "id": "direction-query",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SetPlayerDirectionSystem.cs",
+          "sha256": "97f507e5115076901eaa1d2c1644b730ef8df376d5a51169e5d9cd01c0c0dc9e",
+          "startLine": 69
+        },
+        {
+          "endLine": 150,
+          "id": "direction",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SetPlayerDirectionSystem.cs",
+          "sha256": "97f507e5115076901eaa1d2c1644b730ef8df376d5a51169e5d9cd01c0c0dc9e",
+          "startLine": 144
+        },
+        {
+          "endLine": 64,
+          "id": "effect-enum",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/ConditionEffect.cs",
+          "sha256": "d4949f2c6f748bd995e57eaad386b7d08870d25eeedfe15ce108956c55c048bd",
+          "startLine": 58
+        }
+      ],
+      "reviewerObservation": "두 job의 실제 query/order와 Execute를 대조했다. buttonSetMask만0, 상태·reorientation·effect58 gate 뒤 facingDirection copy라는 범위가 정확하다. ConditionID58과 혼동하거나 movement zero를 추가하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "condition39-6839",
+      "id": "completion:essential:condition39-source6839-v1",
+      "materialEvidence": [
+        {
+          "endLine": 62,
+          "id": "convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/SupportConditionsConverter.cs",
+          "sha256": "8d4cbce3e6c6417adcbfffa34ea4e5482c50f5411557bdc8cb63a44a614bc8a2",
+          "startLine": 23
+        },
+        {
+          "endLine": 153,
+          "id": "summary",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 113
+        },
+        {
+          "endLine": 453,
+          "id": "map",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 432
+        },
+        {
+          "endLine": 643,
+          "id": "table",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/A/condition-effect-table-crosswalk-v2/condition-effect-table-crosswalk.json",
+          "sha256": "5d3905eb829fab8cf807c9d3f9139e6def84ee59d52a5b4d09f718538d6a0528",
+          "startLine": 617
+        },
+        {
+          "endLine": 63569,
+          "id": "source",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 63569
+        },
+        {
+          "endLine": 65557,
+          "id": "level",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 65557
+        },
+        {
+          "endLine": 20988,
+          "id": "speed-source",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 20988
+        },
+        {
+          "endLine": 202,
+          "id": "level-condition",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 155
+        },
+        {
+          "endLine": 835,
+          "id": "scaling",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 824
+        },
+        {
+          "endLine": 421,
+          "id": "cap",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 390
+        },
+        {
+          "endLine": 11,
+          "id": "speed-convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/MovementSpeedConverter.cs",
+          "sha256": "036c5f4ceb1d8a96a956f2e2ec3bb319a382b2072ab95f877cbe65363ee83d6a",
+          "startLine": 5
+        },
+        {
+          "endLine": 252,
+          "id": "speed-query",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/UpdateMovementSpeedSystem.cs",
+          "sha256": "662b5dd67625556d08037f96a2d2131f520e21a7ec84446b1863c420ed5c54aa",
+          "startLine": 240
+        },
+        {
+          "endLine": 35,
+          "id": "speed-write",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/UpdateMovementSpeedSystem.cs",
+          "sha256": "662b5dd67625556d08037f96a2d2131f520e21a7ec84446b1863c420ed5c54aa",
+          "startLine": 31
+        },
+        {
+          "endLine": 1445,
+          "id": "multiplier",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "startLine": 1431
+        }
+      ],
+      "reviewerObservation": "6839 자신의 초기39, active AreaLevel7, 음수 base-50·multiplier5·seeded scaling, summary 부호 보존/하한-900, nonplayer speed20*(1+effect2/1000) 소비를 대조했다. 피해자 slow로 전용하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "condition102-3101",
+      "id": "completion:essential:condition102-source3101-v1",
+      "materialEvidence": [
+        {
+          "endLine": 62,
+          "id": "convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/SupportConditionsConverter.cs",
+          "sha256": "8d4cbce3e6c6417adcbfffa34ea4e5482c50f5411557bdc8cb63a44a614bc8a2",
+          "startLine": 23
+        },
+        {
+          "endLine": 153,
+          "id": "summary",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 113
+        },
+        {
+          "endLine": 453,
+          "id": "map",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 432
+        },
+        {
+          "endLine": 877,
+          "id": "table",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/A/condition-effect-table-crosswalk-v2/condition-effect-table-crosswalk.json",
+          "sha256": "5d3905eb829fab8cf807c9d3f9139e6def84ee59d52a5b4d09f718538d6a0528",
+          "startLine": 851
+        },
+        {
+          "endLine": 21595,
+          "id": "source",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 21595
+        },
+        {
+          "endLine": 65260,
+          "id": "range-source",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 65260
+        },
+        {
+          "endLine": 64147,
+          "id": "level",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 64147
+        },
+        {
+          "endLine": 59,
+          "id": "range-convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/RangeAttackStateConverter.cs",
+          "sha256": "e3388afbd3abfb9ab0eacc8526bd73d7ed516a644b2c2645e48c21a125d7383e",
+          "startLine": 7
+        },
+        {
+          "endLine": 235,
+          "id": "range-gate",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RangeAttackStateSystem.cs",
+          "sha256": "1a1c64b3e41ee02dd69823b2656b10be7bb7a179e3874c3c299f55757f1e5a4c",
+          "startLine": 179
+        },
+        {
+          "endLine": 305,
+          "id": "shoot",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RangeAttackStateSystem.cs",
+          "sha256": "1a1c64b3e41ee02dd69823b2656b10be7bb7a179e3874c3c299f55757f1e5a4c",
+          "startLine": 238
+        },
+        {
+          "endLine": 385,
+          "id": "spawn-call",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RangeAttackStateSystem.cs",
+          "sha256": "1a1c64b3e41ee02dd69823b2656b10be7bb7a179e3874c3c299f55757f1e5a4c",
+          "startLine": 367
+        },
+        {
+          "endLine": 410,
+          "id": "end",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RangeAttackStateSystem.cs",
+          "sha256": "1a1c64b3e41ee02dd69823b2656b10be7bb7a179e3874c3c299f55757f1e5a4c",
+          "startLine": 405
+        },
+        {
+          "endLine": 2381,
+          "id": "spawn",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "startLine": 2331
+        },
+        {
+          "endLine": 2763,
+          "id": "inherit",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "startLine": 2740
+        },
+        {
+          "endLine": 20,
+          "id": "inherit-test",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 14
+        },
+        {
+          "endLine": 1917,
+          "id": "stun",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "startLine": 1902
+        },
+        {
+          "endLine": 1235,
+          "id": "damage-out",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AttackSystem.cs",
+          "sha256": "a7938e8c736e1c7a873a4ffc2f8de39ca53686a3a424c4a0e7ce1aadfe767c0d",
+          "startLine": 1194
+        },
+        {
+          "endLine": 185,
+          "id": "level-value",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 155
+        },
+        {
+          "endLine": 439,
+          "id": "stun-base",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 434
+        },
+        {
+          "endLine": 835,
+          "id": "value-scale",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 824
+        },
+        {
+          "endLine": 345,
+          "id": "projectile-attack",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProjectileSystem.cs",
+          "sha256": "90d385da6f4da3625ea76cfc2482ef8db9f4de82ca1c2e4f0584f5d5c87ce5c4",
+          "startLine": 323
+        }
+      ],
+      "reviewerObservation": "3101 raw range9222:0과 firing owner 전달을 직접 대조했다. level 재계산, inherited102→59, ranged chance/receiver58·60/지속시간 factor, damage gate 뒤 NewConditionsBuffer append를 확인했다. pet1270의 producer identity를 전용하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "condition206-four-aura",
+      "id": "completion:essential:condition206-four-source-aura-v1",
+      "materialEvidence": [
+        {
+          "endLine": 62,
+          "id": "convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/SupportConditionsConverter.cs",
+          "sha256": "8d4cbce3e6c6417adcbfffa34ea4e5482c50f5411557bdc8cb63a44a614bc8a2",
+          "startLine": 23
+        },
+        {
+          "endLine": 153,
+          "id": "summary",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 113
+        },
+        {
+          "endLine": 453,
+          "id": "map",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 432
+        },
+        {
+          "endLine": 1045,
+          "id": "table",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-행동결과완결/full/A/condition-effect-table-crosswalk-v2/condition-effect-table-crosswalk.json",
+          "sha256": "5d3905eb829fab8cf807c9d3f9139e6def84ee59d52a5b4d09f718538d6a0528",
+          "startLine": 1019
+        },
+        {
+          "endLine": 40971,
+          "id": "s1355",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 40971
+        },
+        {
+          "endLine": 15215,
+          "id": "s5875",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 15215
+        },
+        {
+          "endLine": 82911,
+          "id": "s5942",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 82911
+        },
+        {
+          "endLine": 57045,
+          "id": "s5953",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 57045
+        },
+        {
+          "endLine": 2389,
+          "id": "level1355",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 2389
+        },
+        {
+          "endLine": 23637,
+          "id": "level5875",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 23637
+        },
+        {
+          "endLine": 8714,
+          "id": "level5942",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 8714
+        },
+        {
+          "endLine": 16836,
+          "id": "level5953",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 16836
+        },
+        {
+          "endLine": 5352,
+          "id": "radius5875",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 5352
+        },
+        {
+          "endLine": 46837,
+          "id": "radius5942",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/raw/components.jsonl",
+          "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77",
+          "startLine": 46837
+        },
+        {
+          "endLine": 117,
+          "id": "converter-support",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/SupportConditionsConverter.cs",
+          "sha256": "8d4cbce3e6c6417adcbfffa34ea4e5482c50f5411557bdc8cb63a44a614bc8a2",
+          "startLine": 80
+        },
+        {
+          "endLine": 413,
+          "id": "aura-enable",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SummarizeConditionsSystem.cs",
+          "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d",
+          "startLine": 379
+        },
+        {
+          "endLine": 26,
+          "id": "aura-query",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 22
+        },
+        {
+          "endLine": 214,
+          "id": "register",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 164
+        },
+        {
+          "endLine": 446,
+          "id": "receiver-query",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 440
+        },
+        {
+          "endLine": 631,
+          "id": "read206",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 554
+        },
+        {
+          "endLine": 661,
+          "id": "drop-source",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 655
+        },
+        {
+          "endLine": 745,
+          "id": "apply207",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 724
+        },
+        {
+          "endLine": 1177,
+          "id": "faction",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 1147
+        },
+        {
+          "endLine": 1228,
+          "id": "schedule",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AuraConditionsSystem.cs",
+          "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89",
+          "startLine": 1182
+        },
+        {
+          "endLine": 10,
+          "id": "radius-convert",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/AuraDistanceOverrideConverter.cs",
+          "sha256": "1248f740ebcc00be8d21263881e02bc51c00d696c0c67874418bd702ca4104cc",
+          "startLine": 5
+        },
+        {
+          "endLine": 726,
+          "id": "condition-base",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 724
+        },
+        {
+          "endLine": 835,
+          "id": "scaling",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.ConditionExtensions/ConditionExtensions.cs",
+          "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5",
+          "startLine": 824
+        },
+        {
+          "endLine": 1426,
+          "id": "tick",
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/DealDamageFromConditionSystem.cs",
+          "sha256": "bed5bb3fee84f61542c75750c23b8a0f5b76bd1ef8f5d522a1b52c8d0df3495c",
+          "startLine": 1387
+        }
+      ],
+      "reviewerObservation": "4개 exact raw source와 level, 반경 override11·7, marker 활성, 등록 emitter→receiver와 갱신 receiver→emitter의 실제 faction 호출, max206·면역243·조건207, radio flag에 종속된 timer 생성/삭제, due tick 뒤 effect96 검사 순서를 대조했다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "breeding",
+      "id": "completion:essential:breed-downstream-cow1300-v1",
+      "materialEvidence": [
+        {
+          "endLine": 198,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/BreedStateSystem.cs",
+          "sha256": "a3e2aa5a911897c1b33f359e4c371a8cb6c0a495930da0586c621263f4d50f74",
+          "startLine": 155
+        },
+        {
+          "endLine": 26,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Components/BreedStateCD.cs",
+          "sha256": "c2baefc2f85ee3f02538c0f187d9ba396292359f2f5a10b0f05c151b8529fd49",
+          "startLine": 3
+        },
+        {
+          "endLine": 33,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/BreedStateConverter.cs",
+          "sha256": "068301a72de867e6f15af4dc846dacda42aee959c2d7d4fb5d49a735a42e21e4",
+          "startLine": 5
+        },
+        {
+          "endLine": 193,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "startLine": 155
+        }
+      ],
+      "reviewerObservation": "Cow1300 raw80056의 baby1304/Meals30/variation weights와 converter, Breed 진입 후 LeaveState 및 partner·양 Meals 재검증, CreateEntity 요청 후 양 Meals reset을 대조했다. null prefab 뒤에도 reset 예약이 남는 경계를 확인했다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "dash",
+      "id": "completion:essential:dash8340-8341-v1",
+      "materialEvidence": [
+        {
+          "endLine": 232,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/OffHandEquipmentUpdateSystem.cs",
+          "sha256": "c208c839e792095447fd02332e2e810b5380df3aec4531bf0fba7237ad7c3582",
+          "startLine": 190
+        },
+        {
+          "endLine": 60,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 15
+        },
+        {
+          "endLine": 23,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/OffHandConverter.cs",
+          "sha256": "a55966f4dc84ef00fc42b3cc0e93aac0810ce65830fdc24eafaaafa3e95263fa",
+          "startLine": 5
+        },
+        {
+          "endLine": 11,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/OffHandMechanic.cs",
+          "sha256": "1ead9bffe10f65e9463a3b2b4da88d56ac2b73d9e162f792f3b373d85b23a96e",
+          "startLine": 1
+        },
+        {
+          "endLine": 158,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 127
+        },
+        {
+          "endLine": 545,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 504
+        },
+        {
+          "endLine": 228,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/PlayerDashingRoutineSystem.cs",
+          "sha256": "b355ea6b3c114870b3d7499dd795eb2da9521c120bf3eee83456a36d29a32dee",
+          "startLine": 207
+        },
+        {
+          "endLine": 25,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/CooldownConverter.cs",
+          "sha256": "1ca766cbdfa40f7ef7d785cc243460c456b0c1d6131b0f5aadd3f05524bec4b8",
+          "startLine": 5
+        }
+      ],
+      "reviewerObservation": "두 raw authoring과 cooldown, input/ItemIsBroken gate, 보존되는 initial direction, condition205 timer, 현재 offhand·speed·corner smoothing·push-out force, 만료 Walk를 대조했다. 고정 거리/면역을 추가하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "detonator",
+      "id": "completion:essential:minion-detonator8330-8331-v1",
+      "materialEvidence": [
+        {
+          "endLine": 232,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/OffHandEquipmentUpdateSystem.cs",
+          "sha256": "c208c839e792095447fd02332e2e810b5380df3aec4531bf0fba7237ad7c3582",
+          "startLine": 190
+        },
+        {
+          "endLine": 60,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 15
+        },
+        {
+          "endLine": 23,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/OffHandConverter.cs",
+          "sha256": "a55966f4dc84ef00fc42b3cc0e93aac0810ce65830fdc24eafaaafa3e95263fa",
+          "startLine": 5
+        },
+        {
+          "endLine": 11,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/OffHandMechanic.cs",
+          "sha256": "1ead9bffe10f65e9463a3b2b4da88d56ac2b73d9e162f792f3b373d85b23a96e",
+          "startLine": 1
+        },
+        {
+          "endLine": 7235,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba",
+          "startLine": 7224
+        },
+        {
+          "endLine": 103,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 84
+        },
+        {
+          "endLine": 545,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/UseOffHand.cs",
+          "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1",
+          "startLine": 504
+        },
+        {
+          "endLine": 138,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/PlayerMinionDetonatingSystem.cs",
+          "sha256": "a99271c801d948ca8d2ea31c84119bef7978ffe0f7e607844664eaaba5915978",
+          "startLine": 132
+        },
+        {
+          "endLine": 187,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/MinionHandlerSystem.cs",
+          "sha256": "6f5b1511b6442208e7e772ffa939967621acbb73e7919363f264f9f19e8ce22a",
+          "startLine": 155
+        },
+        {
+          "endLine": 519,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/MinionHandlerSystem.cs",
+          "sha256": "6f5b1511b6442208e7e772ffa939967621acbb73e7919363f264f9f19e8ce22a",
+          "startLine": 503
+        },
+        {
+          "endLine": 1407,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/MinionHandlerSystem.cs",
+          "sha256": "6f5b1511b6442208e7e772ffa939967621acbb73e7919363f264f9f19e8ce22a",
+          "startLine": 1399
+        },
+        {
+          "endLine": 1460,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/MinionHandlerSystem.cs",
+          "sha256": "6f5b1511b6442208e7e772ffa939967621acbb73e7919363f264f9f19e8ce22a",
+          "startLine": 1451
+        },
+        {
+          "endLine": 1574,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/MinionHandlerSystem.cs",
+          "sha256": "6f5b1511b6442208e7e772ffa939967621acbb73e7919363f264f9f19e8ce22a",
+          "startLine": 1541
+        }
+      ],
+      "reviewerObservation": "소유 tracked minion에만 세 flag 설정, 공통 dismissal, skip/death-effect 조건, 소비 시점 현재 offhand mechanicValue 또는1, int damage/tileDamage 설정을 대조했다. 활성 시 배율 고정이나 폭발 성공을 추가하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "death",
+      "id": "completion:essential:player-death-grave-inventory-v1",
+      "materialEvidence": [
+        {
+          "endLine": 182,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/SpawnGraveForDeadPlayerSystem.cs",
+          "sha256": "0d696a23fbcf45d9e5fbf85f7aa3bbd69228b5645726dc6d1c5d16262c0afe3d",
+          "startLine": 160
+        },
+        {
+          "endLine": 134,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/InitMoveInventorySystem.cs",
+          "sha256": "24d3e8979c9a654828f42570f156293aeee26040282b74c9baf12c6fd14e92a0",
+          "startLine": 123
+        },
+        {
+          "endLine": 382,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 357
+        },
+        {
+          "endLine": 824,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 797
+        },
+        {
+          "endLine": 913,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 911
+        },
+        {
+          "endLine": 1003,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+          "startLine": 959
+        },
+        {
+          "endLine": 193,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/EntityUtility.cs",
+          "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b",
+          "startLine": 155
+        }
+      ],
+      "reviewerObservation": "health/state gate, 모든 mode의 grave 요청, casual 무이전/일반 slot10/hardcore slot0, MoveInventory 유효성·IgnoreTransfer·occupied destination·source clear 조건을 대조했다. object6002는 대상 문맥이며 catalog source를 player producer로 승격하지 않았다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "death",
+      "id": "completion:essential:player-death-armor-cost-v1",
+      "materialEvidence": [
+        {
+          "endLine": 177,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/CheckForDeadPlayerSystem.cs",
+          "sha256": "4412f25db6f09a425cb906191ac535199f7aa899db763ffecdc10e35e012c50c",
+          "startLine": 153
+        },
+        {
+          "endLine": 717,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs",
+          "sha256": "a48f532753b98c50731a8c473d83c36fe0f6ec586b08520991401201ce2f4ade",
+          "startLine": 652
+        },
+        {
+          "endLine": 382,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 357
+        },
+        {
+          "endLine": 807,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 797
+        },
+        {
+          "endLine": 855,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 850
+        },
+        {
+          "endLine": 473,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+          "startLine": 464
+        }
+      ],
+      "reviewerObservation": "nonhardcore server의 percentage+=0.15, armor 세 slot, damage만 지우는 보존/무적 분기, 최소flat1+round(maxDurability*누적percentage), 같은ID SetAmount 및 별도 weapon replacement 경계를 대조했다.",
+      "verdict": "PASS"
+    },
+    {
+      "group": "death",
+      "id": "completion:essential:player-death-respawn-gates-v1",
+      "materialEvidence": [
+        {
+          "endLine": 53,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/Death.cs",
+          "sha256": "9b7abcd6ac9de01fc895a4a1336db036c6ac50f002770e427f01ab4a814fc265",
+          "startLine": 14
+        },
+        {
+          "endLine": 94,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/Death.cs",
+          "sha256": "9b7abcd6ac9de01fc895a4a1336db036c6ac50f002770e427f01ab4a814fc265",
+          "startLine": 82
+        },
+        {
+          "endLine": 142,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerState/Death.cs",
+          "sha256": "9b7abcd6ac9de01fc895a4a1336db036c6ac50f002770e427f01ab4a814fc265",
+          "startLine": 122
+        },
+        {
+          "endLine": 7004,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerController.cs",
+          "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba",
+          "startLine": 6988
+        },
+        {
+          "endLine": 1362,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AttackPlayerSystem.cs",
+          "sha256": "7b44354da8d11617fe426a70d699310521db734667a04875751f2f1d89f295ec",
+          "startLine": 1355
+        },
+        {
+          "endLine": 1477,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/AttackPlayerSystem.cs",
+          "sha256": "7b44354da8d11617fe426a70d699310521db734667a04875751f2f1d89f295ec",
+          "startLine": 1469
+        }
+      ],
+      "reviewerObservation": "permakill gate, timer5/6와1, spawnedPlayer 1회 guard, 기존 bed/default 위치, HP/hunger70/respawn tick/면역요청, hit gate 및 Exit를 대조했다. 영구 면역/세이브 삭제/실제 복귀 성공을 추가하지 않았다.",
+      "verdict": "PASS"
+    }
+  ],
+  "status": "independent_pass",
+  "verdict": "PASS",
+  "wholeScopeComplete": false
+}

@@ -1,0 +1,253 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "## 상자 열림 모드",
+        "doc": "gapAgreement",
+        "end": 59,
+        "line": 49,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 49
+      },
+      {
+        "anchor": "AI가 상자를 연 상태이면, 그 판단 요청의 선택지를 그 상자 안의 일로 제한한다.",
+        "doc": "gapAgreement",
+        "end": 50,
+        "line": 50,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 50
+      },
+      {
+        "anchor": "연 상자가 쓸모없으면",
+        "doc": "gapAgreement",
+        "end": 56,
+        "line": 56,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 56
+      }
+    ],
+    "id": "P.chest-open-mode",
+    "layer": "재기획",
+    "sourceLocations": [
+      {
+        "end": 59,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 49
+      },
+      {
+        "end": 50,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 50
+      },
+      {
+        "end": 56,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 56
+      }
+    ],
+    "status": "합의·사용자 결정",
+    "summary": "상자를 연 상태의 판단 요청은 그 상자 안 물건 꺼내기, 내 가방·파우치·착용 물건 넣기, 이 상자 빠른 쌓기·정렬, 닫기만 제공한다. 다른 목록은 붙이지 않고 닫기를 고르면 원래 선택면으로 돌아간다. 상자가 없어지거나 보이지 않거나 손닿는 거리를 벗어나면 모드를 풀고 전투 상태에 들어가면 상자를 닫는다. 연 상자가 쓸모없으면(가득 참·원하는 물건 없음) 닫은 뒤 다음 판단에서 기억 내용을 반영한 구역 대표 상자로 이어진다.",
+    "title": "상자 열림 모드: 연 상자의 일과 닫기만 선택",
+    "type": "기획 항목"
+  },
+  "out": [
+    {
+      "class": "개발 참고 색인",
+      "evidence": [
+        {
+          "end": 25,
+          "path": "../2026-11-08-행동판단프로젝트연계/topics.mjs",
+          "start": 1
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "kind": "관련 게임 규칙 검토",
+      "runtimeTrace": false,
+      "to": "R.game-topic.inventory",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 59,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 49
+        },
+        {
+          "end": 50,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 50
+        },
+        {
+          "end": 56,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 56
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIChestMode.cs#AIChestMode.Active(World, Entity, int, int, System.Func<int, int, int>, out Entity)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 59,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 49
+        },
+        {
+          "end": 50,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 50
+        },
+        {
+          "end": 56,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 56
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIChestMode.cs#AIChestMode.End(string)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 59,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 49
+        },
+        {
+          "end": 50,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 50
+        },
+        {
+          "end": 56,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 56
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs#AIInventoryMenu.ChestModeCandidates(World, Entity, AIObservation, string, Entity)",
+      "type": "reference"
+    },
+    {
+      "class": "코드 대응",
+      "evidence": [
+        {
+          "end": 59,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 49
+        },
+        {
+          "end": 50,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 50
+        },
+        {
+          "end": 56,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "start": 56
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "kind": "빈 선택지 구현 위치",
+      "runtimeTrace": false,
+      "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs#AIInventoryMenu.LeaveChestMode(string)",
+      "type": "reference"
+    },
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 상자 열림 모드",
+          "doc": "gapAgreement",
+          "end": 59,
+          "line": 49,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 49
+        },
+        {
+          "anchor": "AI가 상자를 연 상태이면, 그 판단 요청의 선택지를 그 상자 안의 일로 제한한다.",
+          "doc": "gapAgreement",
+          "end": 50,
+          "line": 50,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 50
+        },
+        {
+          "anchor": "연 상자가 쓸모없으면",
+          "doc": "gapAgreement",
+          "end": 56,
+          "line": 56,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 56
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "kind": "현재 결정의 정책 요약",
+      "to": "pol.chest-open-mode",
+      "type": "reference"
+    },
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "상자 열림 모드와의 관계:",
+          "doc": "gapAgreement",
+          "end": 45,
+          "line": 45,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 45
+        }
+      ],
+      "from": "P.chest-open-mode",
+      "id": "E246",
+      "kind": "전투 상태 진입 때만 상자 모드 종료",
+      "to": "P.combat-entry",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "## 상자 열림 모드",
+          "doc": "gapAgreement",
+          "end": 59,
+          "line": 49,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 49
+        }
+      ],
+      "from": "P.gap-bag",
+      "id": "E245",
+      "kind": "상자를 연 동안의 선택면",
+      "to": "P.chest-open-mode",
+      "type": "reference"
+    }
+  ]
+}

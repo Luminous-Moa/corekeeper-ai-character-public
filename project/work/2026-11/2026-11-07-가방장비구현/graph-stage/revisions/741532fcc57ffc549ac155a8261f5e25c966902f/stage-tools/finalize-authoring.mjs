@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),pin=JSON.parse(fs.readFileSync(path.join(stage,'final-pin.json'),'utf8'));
+const read=p=>fs.readFileSync(path.join(stage,p),'utf8'),write=(p,s)=>fs.writeFileSync(path.join(stage,p),s);
+for(const rel of ['work/지식그래프/기획/기능.md','patch-sources.mjs'])write(rel,read(rel).replaceAll('상태: 구현·오프라인 검증, 실게임 미확인','상태: 구현됨·미확인').replaceAll('추적 물품의 수령 대상·소실과 수령자 일치 품목 증가가 함께 관측된 경우만 완료 사실로 기록한다.','추적 바닥 물품의 지정 수령 요청과 실제 감소량=수령자 일치 품목 증가량이 함께 관측된 수량만 기록한다.').replaceAll('이번에는 코드와 오프라인 시험만 확인했다.','이번에는 코드와 오프라인 시험만 확인했다. 실게임 미확인이다.'));
+for(const rel of ['work/2026-11/2026-11-07-기획연결/source.mjs','work/2026-11/2026-11-05-지식그래프-실화면/D/bag-source.mjs','capabilities-source.json'])write(rel,read(rel).replaceAll('추적 물품의 수령 대상·소실과 수령자 일치 품목 증가가 함께 관측된 경우만 완료 사실로 기록한다.','추적 바닥 물품의 지정 수령 요청과 실제 감소량=수령자 일치 품목 증가량이 함께 관측된 수량만 기록한다.'));
+write('queries.mjs',read('queries.mjs').replace("n.status.includes('실게임 미확인')","n.status==='구현됨·미확인'"));
+const rel='work/2026-11/2026-11-05-지식그래프-개편/B/validation-review.json';
+const review=JSON.parse(read(rel)),g=JSON.parse(read('work/2026-11/2026-11-05-지식그래프-개편/B/code.graph.json'));
+const checks=[['AIInventory.Candidates(','명시 item/slot/where 필터와 후보별 Stale 재검사, 자동 최고 장비 정책 없음'],['AIInventory.TryChosenHand(','선택 핫바 신원·파손·용도 확인, 조용한 대체 없음'],['AIInventory.ChestCandidates(','자기 상자와 실제 관측 품목/목적 슬롯 후보'],['AIInventory.DropCandidates(','명시 내려놓기/지정 수령 후보이며 Give 수령자 부재 시 후보 없음'],['InventorySkill.Tick(','Swap 한 번 요청 후 양 슬롯 관측, 3초 경과는 ObserveOnce로 전달'],['AIInventory.Stale(','목표·슬롯·품목·소유·수령자 재검사'],['InventorySwapProgress.Observe(','Requested와 양 슬롯 완전 교환 일치만 관측 완료'],['AIInventoryRules.ObservedDelivery(','지정 pickup 요청과 실제 바닥 감소량=수령 증가량 동시 검증']];
+review.bagPinnedReview={sourceCommit:pin.sourceCommit,method:'이번 변경의 대표 원본 선언/본문 표본 대조. 역사적 무작위 표본 결과와 별도 보존.',runtimeTraceObserved:false,samples:checks.map(([prefix,reason])=>{const n=g.nodes.find(n=>n.signature?.startsWith(prefix));if(!n)throw Error(prefix);const text=read('work/2026-11/2026-11-05-지식그래프-개편/B/snapshot/'+n.file).slice(n.start,n.end);if(!text.includes(n.name))throw Error('source mismatch');return{id:n.id,file:n.file,lineStart:n.lineStart,lineEnd:n.lineEnd,result:'pass',reason};})};
+write(rel,JSON.stringify(review,null,2)+'\n');

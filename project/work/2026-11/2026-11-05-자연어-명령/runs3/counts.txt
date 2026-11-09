@@ -1,0 +1,188 @@
+reports sent by member and trigger: {"Claude":{"host_said":3,"plan_done":3,"goal_done":3,"fight_end":1,"goal_stalled":7,"back_up":3,"periodic":2},"ChatGPT":{"host_said":3,"periodic":6,"back_up":2,"plan_done":2,"fight_end":1},"Gemini":{"host_said":2,"plan_done":2,"back_up":3,"goal_done":3,"periodic":3,"fight_end":1,"goal_stalled":1},"Grok":{"host_said":3,"plan_done":2,"goal_stalled":3,"goal_done":1,"fight_end":2,"back_up":2}}
+Claude: periodic gaps after the previous report (s): 127, 128
+ChatGPT: periodic gaps after the previous report (s): 130, 130, 130, 130, 133, 154
+Gemini: periodic gaps after the previous report (s): 133, 133, 135
+Grok: periodic gaps after the previous report (s): -
+applied answers by decision: {"Claude":{"set":17,"keep":5},"ChatGPT":{"set":7,"keep":4,"hold":1},"Gemini":{"set":9,"keep":6},"Grok":{"set":9,"keep":3}}
+dropped answers: 3 ChatGPT 오래된 답: 목표 수정 번호가 바뀜(12→13) | Grok 오래된 답: 기다리는 동안 쓰러짐 | ChatGPT 오래된 답: 목표 수정 번호가 바뀜(22→23)
+fights recorded: 82; fight_end triggers: 5
+  fight Gemini 0초 전 끝, 6초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 3초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 27, 끝 체력 78/100. 이 월드 전적: MushroomEnemy 싸움 2번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 20초: MushroomBrute, MushroomEnemy. 쓰러진 적 MushroomBrute 1, MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 28, 끝 체력 77/105. 이 월드 전적: MushroomBrute 싸움 1번 중 쓰러
+  fight Gemini 0초 전 끝, 7초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 3번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 9초: MushroomEnemy. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 25, 끝 체력 75/100. 이 월드 전적: MushroomEnemy 싸움 1번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 24초: AggressiveSlimeBlob, SlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 29, 끝 체력 71/100. 이 월드 전적: AggressiveSlimeBlob 싸움 1번 중 쓰러짐 0번, SlimeBlob 싸움 1번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 4초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 71/100. 이 월드 전적: MushroomBrute 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 5초: AggressiveSlimeBlob, MushroomBrute. 쓰러진 적 AggressiveSlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 57, 끝 체력 55/105. 이 월드 전적: AggressiveSlimeBlob 싸움 1번 중 쓰러
+  fight Grok 0초 전 끝, 2초: AggressiveSlimeBlob. 쓰러진 적 AggressiveSlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 28, 끝 체력 55/100. 이 월드 전적: AggressiveSlimeBlob 싸움 1번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 36초: MushroomEnemy, SlimeBlob 3, AggressiveSlimeBlob. 쓰러진 적 SlimeBlob 3, MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 89, 끝 체력 83/105. 이 월드 전적: MushroomE
+  fight Claude 0초 전 끝, 5초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 28, 끝 체력 69/105. 이 월드 전적: MushroomEnemy 싸움 3번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: SlimeBlob 3. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 95/105. 이 월드 전적: SlimeBlob 싸움 1번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 31초: MushroomBrute. 쓰러진 적 MushroomBrute 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 67, 끝 체력 90/100. 이 월드 전적: MushroomBrute 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 7초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 69/105. 이 월드 전적: MushroomEnemy 싸움 4번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 4초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 5, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 5번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 4초: AggressiveSlimeBlob. 쓰러진 적 AggressiveSlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 31, 끝 체력 49/105. 이 월드 전적: AggressiveSlimeBlob 싸움 2번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 5초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 6번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 19초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 27, 끝 체력 89/100. 이 월드 전적: MushroomEnemy 싸움 7번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 17초: SlimeBlob 3, AggressiveSlimeBlob. 쓰러진 적 SlimeBlob 2, AggressiveSlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 49, 끝 체력 79/105. 이 월드 전적: SlimeBlob 싸움 2번 중 
+  fight Claude 0초 전 끝, 5초: SlimeBlob. 쓰러진 적 SlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 20, 끝 체력 79/105. 이 월드 전적: SlimeBlob 싸움 3번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 6초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 1번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 28, 끝 체력 70/100. 이 월드 전적: MushroomEnemy 싸움 2번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 7초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 2번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 6초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 31, 끝 체력 72/100. 이 월드 전적: MushroomEnemy 싸움 3번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 6초: SlimeBlob 2. 쓰러진 적 SlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 18, 끝 체력 87/105. 이 월드 전적: SlimeBlob 싸움 4번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 2초: SlimeBlob. 쓰러진 적 SlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 88/106. 이 월드 전적: SlimeBlob 싸움 5번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 74/100. 이 월드 전적: MushroomEnemy 싸움 4번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 5초: MushroomEnemy 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 28, 끝 체력 72/100. 이 월드 전적: MushroomEnemy 싸움 8번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 11초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 88/106. 이 월드 전적: MushroomEnemy 싸움 4번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 3번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 7초: MushroomBrute, CavelingSpearman. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 88/106. 이 월드 전적: MushroomBrute 싸움 2번 중 쓰러짐 0번, CavelingSpearman 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 22초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 24, 끝 체력 85/100. 이 월드 전적: MushroomEnemy 싸움 9번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 11초: CavelingBrute, CavelingShaman. 쓰러진 적 없음. 나 쓰러짐 1번, 받은 피해 109, 끝 체력 101/101(다시 일어난 뒤). 이 월드 전적: CavelingBrute 싸움 1번 중 쓰러짐 1번, CavelingShaman 싸움 1번 중
+  fight Grok 0초 전 끝, 2초: Wingling. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 74/100. 이 월드 전적: Wingling 싸움 1번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 4초: Wingling. 쓰러진 적 Wingling 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 74/100. 이 월드 전적: Wingling 싸움 2번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 7초: MushroomEnemy. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 25, 끝 체력 64/100. 이 월드 전적: MushroomEnemy 싸움 10번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 14초: MushroomEnemy. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 74/99. 이 월드 전적: MushroomEnemy 싸움 4번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 23초: MushroomEnemy, BigLarva. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 27, 끝 체력 88/100. 이 월드 전적: MushroomEnemy 싸움 5번 중 쓰러짐 0번, BigLarva 싸움 1번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 5초: Larva 2, BigLarva. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 71, 끝 체력 35/100. 이 월드 전적: Larva 싸움 1번 중 쓰러짐 0번, BigLarva 싸움 2번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 21초: SlimeBlob 5, AggressiveSlimeBlob 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: SlimeBlob 싸움 2번 중 쓰러짐 0번, AggressiveSlimeBlob 싸움 2번 중 쓰러짐 0
+  fight ChatGPT 0초 전 끝, 9초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 5번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: SlimeBlob 4, AggressiveSlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: SlimeBlob 싸움 3번 중 쓰러짐 0번, AggressiveSlimeBlob 싸움 3번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 17초: SlimeBlob 3. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: SlimeBlob 싸움 4번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 10초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 6번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 4초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 27, 끝 체력 68/100. 이 월드 전적: MushroomEnemy 싸움 6번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 5초: SlimeBlob 6. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: SlimeBlob 싸움 5번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 11초: MushroomEnemy, AggressiveSlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 7번 중 쓰러짐 0번, AggressiveSlimeBlob 싸움 2번 중 쓰
+  fight Claude 0초 전 끝, 4초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 75/101. 이 월드 전적: MushroomBrute 싸움 3번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 6초: SlimeBlob, CavelingSpearman. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: SlimeBlob 싸움 2번 중 쓰러짐 0번, CavelingSpearman 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 18초: MushroomBrute, MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 54, 끝 체력 64/100. 이 월드 전적: MushroomBrute 싸움 2번 중 쓰러짐 0번, MushroomEnemy 싸움 11번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 13초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 101/101. 이 월드 전적: MushroomEnemy 싸움 5번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 6초: MushroomEnemy 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 84/100. 이 월드 전적: MushroomEnemy 싸움 12번 중 쓰러짐 0번
+  fight ChatGPT 0초 전 끝, 26초: CavelingSkirmisher, AggressiveSlimeBlob, CavelingSpearman, SlimeBlob. 쓰러진 적 CavelingSpearman 1(누가 쳤는지 모름). 나 쓰러짐 1번, 받은 피해 150, 끝 체력 100/100(다시 일어난
+  fight Grok 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 27, 끝 체력 66/100. 이 월드 전적: MushroomEnemy 싸움 7번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 6초: MushroomEnemy 2, MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 13번 중 쓰러짐 0번, MushroomBrute 싸움 3번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 18초: MushroomEnemy, CavelingSpearman. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 28, 끝 체력 96/101. 이 월드 전적: MushroomEnemy 싸움 6번 중 쓰러짐 0번, Caveling
+  fight ChatGPT 0초 전 끝, 17초: MushroomBrute, MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 62, 끝 체력 38/100. 이 월드 전적: MushroomBrute 싸움 2번 중 쓰러짐 0번, MushroomEne
+  fight Claude 0초 전 끝, 6초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 28, 끝 체력 89/101. 이 월드 전적: MushroomEnemy 싸움 7번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 33초: CavelingSkirmisher 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 101, 끝 체력 15/100. 이 월드 전적: CavelingSkirmisher 싸움 1번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 24초: MushroomEnemy 2, SlimeBlob, MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 14번 중 쓰러짐 0번, SlimeBlob 싸움 6번 중 쓰러짐
+  fight Grok 0초 전 끝, 4초: CavelingSkirmisher. 쓰러진 적 없음. 나 쓰러짐 1번, 받은 피해 44, 끝 체력 100/100(다시 일어난 뒤). 이 월드 전적: CavelingSkirmisher 싸움 2번 중 쓰러짐 1번
+  fight Gemini 0초 전 끝, 7초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 1번, 받은 피해 111, 끝 체력 100/100(다시 일어난 뒤). 이 월드 전적: MushroomEnemy 싸움 15번 중 쓰러짐 1번
+  fight Claude 0초 전 끝, 29초: MushroomEnemy 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 76, 끝 체력 88/101. 이 월드 전적: MushroomEnemy 싸움 8번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 20초: CavelingSkirmisher, BigLarva. 쓰러진 적 CavelingSkirmisher 1(누가 쳤는지 모름). 나 쓰러짐 1번, 받은 피해 116, 끝 체력 100/100(다시 일어난 뒤). 이 월드 전적: CavelingSkirmisher 싸움 3번
+  fight ChatGPT 0초 전 끝, 13초: MushroomEnemy 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 95/100. 이 월드 전적: MushroomEnemy 싸움 9번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 37초: SlimeBlob 4, MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 26, 끝 체력 74/100. 이 월드 전적: SlimeBlob 싸움 7번 중 쓰러짐 0번, MushroomEnemy 싸움 16번 중 쓰러짐 1번
+  fight Grok 0초 전 끝, 19초: MushroomEnemy. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 8번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 3초: MushroomEnemy, SlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 74/100. 이 월드 전적: MushroomEnemy 싸움 17번 중 쓰러짐 1번, SlimeBlob 싸움 8번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 3초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 74/100. 이 월드 전적: MushroomEnemy 싸움 18번 중 쓰러짐 1번
+  fight Gemini 0초 전 끝, 31초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 1(누가 쳤는지 모름). 나 쓰러짐 1번, 받은 피해 98, 끝 체력 -24/100(다시 일어난 뒤). 이 월드 전적: MushroomEnemy 싸움 19번 중 쓰러짐 2번
+  fight ChatGPT 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 10번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 29초: MushroomBrute. 쓰러진 적 없음. 나 쓰러짐 1번, 받은 피해 102, 끝 체력 101/101(다시 일어난 뒤). 이 월드 전적: MushroomBrute 싸움 4번 중 쓰러짐 1번
+  fight Gemini 0초 전 끝, 4초: MushroomEnemy 2. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 20번 중 쓰러짐 2번
+  fight ChatGPT 0초 전 끝, 6초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 11번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 21번 중 쓰러짐 2번
+  fight ChatGPT 0초 전 끝, 5초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 12번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 22번 중 쓰러짐 2번
+  fight Grok 0초 전 끝, 9초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: MushroomEnemy 싸움 9번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 2초: SlimeBlob 4, AggressiveSlimeBlob. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 100/100. 이 월드 전적: SlimeBlob 싸움 9번 중 쓰러짐 0번, AggressiveSlimeBlob 싸움 4번 중 쓰러짐 0번
+  fight Claude 0초 전 끝, 3초: MushroomEnemy. 쓰러진 적 없음. 나 쓰러짐 0번, 받은 피해 0, 끝 체력 101/101. 이 월드 전적: MushroomEnemy 싸움 9번 중 쓰러짐 0번
+  fight Grok 0초 전 끝, 9초: MushroomEnemy 2. 쓰러진 적 MushroomEnemy 2(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 26, 끝 체력 82/100. 이 월드 전적: MushroomEnemy 싸움 10번 중 쓰러짐 0번
+  fight Gemini 0초 전 끝, 9초: SlimeBlob 4, AggressiveSlimeBlob. 쓰러진 적 SlimeBlob 1, AggressiveSlimeBlob 1(누가 쳤는지 모름). 나 쓰러짐 0번, 받은 피해 76, 끝 체력 36/100. 이 월드 전적: SlimeBlob 싸움 10번 중 
+downs: Gemini, Gemini, ChatGPT, Claude, ChatGPT, Gemini, Grok, Claude, Grok, Gemini, Claude
+ORDER changes:
+  Claude: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #1, 10s after it was given): 호스트 지시대로 나무 방어구 한 벌을 먼저, 이어서 구리 곡괭이. 나무가 없어 먼저 모음.
+  ChatGPT: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #1, 12s after it was given): 호스트 지시대로 나무 방어구 세 부위를 먼저 갖춘 뒤 구리 곡괭이를 제작한다.
+  Gemini: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #1, 14s after it was given): 호스트 지시에 따라 나무 방어구 한 벌(15목재)을 순서대로 제작하기 위한 계획 수립
+  Grok: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #1, 30s after it was given): 호스트가 나무 투구·갑옷·바지 다음 구리 곡괭이를 시킴. 방어구에 나무 15. 구리 작업대는 화면에 있음.
+  ChatGPT: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #2, 9s after it was given): 진행 중인 5단계 계획이 호스트 지시와 같고, 체력과 식량도 충분하다.
+  Grok: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #2, 12s after it was given): 호스트가 같은 지시를 다시 말함. 나무 15→투구→갑옷→바지→구리 곡괭이 계획이 그대로 맞아서 이어 감.
+  Gemini: host instruction '@모두 버섯한테 덜 맞게 각자 나무 방어구 한 벌씩 맞추고, 끝나면 구리 곡괭이도 만들어 둬' 받음 -> 따름 (report #2, 13s after it was given): 호스트의 반복 지시와 동일한 계획(나무 15개 수집 후 방어구 3종 제작)을 이미 정상 진행 중이므로 유지
+  Grok: host instruction '@Grok 지금 체력이랑 장비 상태 알려줘' 받음 -> 끝남 (report #3, 9s after it was given): 호스트가 상태만 물어서 답하고, 구리 곡괭이 제작은 그대로 이어 간다.
+  ChatGPT: host instruction '@ChatGPT 1분만 지금 자리에서 멈춰서 기다려 줘' 받음 -> 따름 (report #3, 10s after it was given): 호스트가 지금 자리에서 1분간 멈춰 기다리라고 지시했다.
+  Claude: host instruction '@Claude 지금 뭐 하고 있어? 계획 몇 단계 남았어?' 받음 -> 끝남 (report #4, 109s after it was given): 계획 완료. 구리 곡괭이로 기억한 구리 40곳을 캐서 주괴로 다음 장비를 만들 준비. 체력 69는 회복 음식이 있어 괜찮음
+  ChatGPT: host instruction '@ChatGPT 1분만 지금 자리에서 멈춰서 기다려 줘' 따름 -> 끝남 (report #4, 141s after it was given): 요청한 대기 시간이 지났다. 중단한 나무 수집을 마저 하고 방어구와 곡괭이를 준비한다.
+PROBLEM reports: 11
+  [AIPlayerSpike] t=469.8 @Claude PROBLEM Claude (report #8, trigger goal_stalled): 요리 솥은 가방에 있는데 기지에 놓지 못해서 요리가 막힘 | say: 솥은 만들었는데 놓을 데를 못 찾아서 요리가 막혔어요. 일단 구리를 더 캐서 녹일게요.
+  [AIPlayerSpike] t=505.9 @Grok PROBLEM Grok (report #6, trigger goal_stalled): 상자는 만들었는데 기지 상자가 0개라 보관이 두 번 막힘 | say: 상자 만들었는데 기지에 넣을 곳이 없어. 구리 12개 캐러 갈게.
+  [AIPlayerSpike] t=571.2 @Claude PROBLEM Claude (report #10, trigger goal_stalled): 요리 솥을 가졌는데 놓을 곳을 못 찾아 cook이 두 번 막힘 | say: 솥을 놓을 데가 없어 요리가 또 막혔어요. 기지에 짐 넣고 밭부터 일굴게요.
+  [AIPlayerSpike] t=577.9 @Claude PROBLEM Claude (report #11, trigger goal_stalled): 기지(코어)에 상자·요리 솥을 놓지 못해 store·cook이 되풀이해 막힘 | say: 상자·솥 놓기가 계속 막혀요. 나무를 더 모아서 기지에 밭부터 일굴게요.
+  [AIPlayerSpike] t=603.5 @Claude PROBLEM Claude (report #12, trigger goal_stalled): 상자·솥 놓기, 밭 일구기가 기지에서 떨어진 곳에서 계속 막혀요. | say: 밭 일구기도 막혔어요. 일단 기지로 돌아가서 짐 넣고 솥 놓아 볼게요.
+  [AIPlayerSpike] t=609.0 @Claude PROBLEM Claude (report #13, trigger goal_stalled): 기지(코어 0,0)로 돌아가기·상자·솥 놓기·밭 일구기가 계속 막힘 | say: 기지로 가는 길도, 상자·솥 놓기도 계속 막혀요. 일단 주변을 탐험하면서 주석을 찾아볼게요.
+  [AIPlayerSpike] t=707.1 @Claude PROBLEM Claude (report #15, trigger goal_stalled): 코어 근처에서 솥·상자 놓기가 계속 막혀요(요리·보관·밭 다 막힘). | say: 솥·상자 놓기가 계속 막혀요. 방어구를 잃어서 나무 모아 다시 만들게요.
+  [AIPlayerSpike] t=1039.8 @Claude PROBLEM Claude (report #19, trigger back_up): 가방에 구리 곡괭이가 있는데 보고에는 쓸 수 있는 곡괭이가 나무 곡괭이로 나와요. | say: 쓰러져서 방어구를 또 잃었어요. 나무로 방어구 다시 입고 주석 캐러 갈게요.
+  [AIPlayerSpike] t=1074.9 @Grok PROBLEM Grok (report #12, trigger back_up): 서쪽 주석(-140 근처)에서 동굴인 척후병에게 두 번 연속 쓰러짐. 회복 음식이 없음. | say: 주석 쪽에서 척후병한테 두 번 쓰러졌어. 하트베리 키운 뒤에 다시 갈게.
+  [AIPlayerSpike] t=1171.4 @Claude PROBLEM Claude (report #20, trigger periodic): 주석 근처(-38,-63)에서 버섯인간 야수 무리에 연달아 쓰러짐. 구리 곡괭이도 곡괭이로 안 잡힘 | say: 주석 캐다 버섯인간 야수한테 또 쓰러졌어요. 방어구 다시 입고 버섯수프 만든 뒤 갈게요.
+  [AIPlayerSpike] t=1227.0 @Claude PROBLEM Claude (report #22, trigger goal_stalled): 가방에 CookingPot이 있는데 cook이 '내 솥 0개'로 4번째 막힘(솥을 기지에 놓지 못함) | say: 솥을 가방에 들고 있는데 요리가 안 되네요. 나무 모아서 하트베리 밭부터 일굴게요.
+chat lines shown 66, hidden (status) 1781
+shown kinds: {"other":1,"say-or-named":65}
+  shown: AI Claude 켜짐: 3초 뒤 들어옵니다. 이 월드에 저장됨.
+  shown: [ChatGPT] AI ChatGPT 켜짐: 7초 뒤 들어옵니다. 이 월드에 저장됨.
+  shown: [Gemini] AI Gemini 켜짐: 11초 뒤 들어옵니다. 이 월드에 저장됨.
+  shown: [Grok] AI Grok 켜짐: 15초 뒤 들어옵니다. 이 월드에 저장됨.
+  shown: [Claude] 좋아요! 나무 모아서 투구>갑옷>바지 맞추고, 그다음 구리 곡괭이 만들게요.
+  shown: [ChatGPT] 나무 15개 모아서 방어구 한 벌 맞추고, 이어서 구리 곡괭이도 만들게.
+  shown: [Gemini] 나무 15개 먼저 모아서 투구, 갑옷, 바지 순서로 맞출게요!
+  shown: [Grok] 나무 방어구 한 벌 맞추고, 끝나면 구리 곡괭이 만들게.
+  shown: [Claude] 네, 지금 나무 모으는 중이에요. 방어구 한 벌 맞추고 구리 곡괭이까지 만들게요!
+  shown: [ChatGPT] 응, 지금 나무 모으는 중이야. 방어구 세 부위 맞추고 구리 곡괭이까지 만들게.
+  shown: [Grok] 이미 나무 모으는 중이야. 방어구 맞추고 구리 곡괭이까지 갈게.
+  shown: [Gemini] 나무 모아서 방어구부터 순서대로 맞추고 있어요!
+  shown: [Claude] 지금 나무 모으는 중이에요(1/5단계, 3/30개). 남은 건 투구·갑옷·바지·구리 곡괭이 4단계예요!
+  shown: [Grok] 체력 75/100. 나무 투구·갑옷·바지 맞췄고, 손엔 나무 곡괭이. 구리 곡괭이 만드는 중이야.
+  shown: [Gemini] 나무 방어구 세트 완성했어요! 바로 이어서 구리 곡괭이 만들게요.
+  shown: [ChatGPT] 응, 지금 자리에서 1분 기다릴게. 그 뒤에 장비 만들기 이어 갈게.
+  shown: [Gemini] 슬라임한테 당해서 코어에서 부활했어요! 다시 조심해서 구리 곡괭이 만들게요.
+  shown: [Grok] 구리 곡괭이 됐어. 흙이랑 광석 넣고 구리 캐러 갈게.
+  shown: [Claude] 계획 5단계 다 끝났어요! 나무 방어구랑 구리 곡괭이 완성. 이제 구리 캐러 갈게요.
+  shown: [ChatGPT] 1분 지났으니 장비 만들기 이어 갈게. 나무를 더 모으고 방어구랑 구리 곡괭이를 만들게.
+  shown: [Gemini] 다시 일어났어요. 구리 곡괭이 제작 계속 이어갈게요!
+  shown: [Claude] 구리 12개 다 캤어요! 용광로에서 주괴로 녹일게요.
+  shown: [Grok] 상자 만들 나무가 모자라. 상자 만들고 넣고 구리 캐러 갈게.
+  shown: [Claude] 주괴 6개 완성! 남은 광석도 녹이고, 나무 모아서 요리 솥 만들어 버섯 수프 끓일게요.
+  shown: [ChatGPT] 슬라임 근처에서 쓰러져 코어로 돌아왔어. 가진 나무로 투구랑 바지부터 만들고 나머지 장비를 준비할게.
+  shown: [Claude] 솥은 만들었는데 놓을 데를 못 찾아서 요리가 막혔어요. 일단 구리를 더 캐서 녹일게요.
+  shown: [Grok] 상자 만들었는데 기지에 넣을 곳이 없어. 구리 12개 캐러 갈게.
+  shown: [Gemini] 구리 곡괭이 완성했어요! 호스트님 지시 끝났으니 구리 광석 더 캐올게요.
+  shown: [Claude] 주괴 다 녹였어요. 남은 광석 녹이고 기지에 솥 놓아서 버섯 수프 다시 끓여 볼게요.
+  shown: [Claude] 솥을 놓을 데가 없어 요리가 또 막혔어요. 기지에 짐 넣고 밭부터 일굴게요.
+  shown: [Claude] 상자·솥 놓기가 계속 막혀요. 나무를 더 모아서 기지에 밭부터 일굴게요.
+  shown: [Gemini] 구리 10개 다 캤어요! 기지로 가서 짐 정리하고 나무 더 모아둘게요.
+  shown: [ChatGPT] 나무 방어구랑 구리 곡괭이 완성했어! 이제 새 길을 탐험하면서 주석을 찾아볼게.
+  shown: [Claude] 밭 일구기도 막혔어요. 일단 기지로 돌아가서 짐 넣고 솥 놓아 볼게요.
+  shown: [Claude] 기지로 가는 길도, 상자·솥 놓기도 계속 막혀요. 일단 주변을 탐험하면서 주석을 찾아볼게요.
+  shown: [Grok] 구리 12개 다 캤어. 기지에 상자 놓기가 막혀서 주석 찾으러 갈게.
+  shown: [Gemini] 나무 모으기 끝났어요! 주석 광석 찾으러 새 구역 탐험하러 갈게요.
+  shown: [Claude] 동굴인 야수한테 쓰러졌어요. 코어에서 솥 놓고 버섯 수프 끓인 뒤 다른 쪽으로 탐험할게요.
+  shown: [Claude] 솥·상자 놓기가 계속 막혀요. 방어구를 잃어서 나무 모아 다시 만들게요.
+  shown: [Claude] 나무 방어구 다시 입었어요. 이제 구리 캐러 갈게요!
+  shown: [Grok] 체력 35야. 애벌레한테 맞아서 기지로 돌아가 버섯 수프 끓일게.
+  shown: [Claude] 구리 10개 다 캤어요! 용광로에서 구리 주괴 녹이고 주석 캐러 갈게요.
+  shown: [Grok] 짐 기지에 넣고 주석 10개 캐러 갈게.
+  shown: [ChatGPT] 동굴인 척후병 근처에서 쓰러졌어. 코어에서 일어났고, 빠진 가슴 방어구부터 다시 만든 뒤 구리를 모을게.
+  shown: [Grok] AI: 판단 호출 실패(HTTP 503 ), 1.0초 뒤 다시 시도합니다.
+  shown: [ChatGPT] 체력이 38까지 떨어졌어. 먼저 코어로 돌아가면서 버섯으로 회복하고, 가슴 방어구와 구리 모으기를 이어 갈게.
+  shown: [Gemini] 버섯인간 무리한테 쓰러졌어요! 가방의 나무 15개로 나무 방어구부터 다시 맞춰 입고 탐험할게요.
+  shown: [Grok] 척후병한테 쓰러졌어. 코어에서 일어났고, 주석 캐러 다시 갈게.
+  shown: [Claude] 쓰러져서 방어구를 또 잃었어요. 나무로 방어구 다시 입고 주석 캐러 갈게요.
+  shown: [Grok] 주석 쪽에서 척후병한테 두 번 쓰러졌어. 하트베리 키운 뒤에 다시 갈게.
+  shown: [ChatGPT] 구리 12개 모았어. 기지로 돌아가 나무를 보충하고, 구리 작업대와 모루부터 만들게.
+  shown: [ChatGPT] AI: 판단 호출 실패(HTTP 503 ), 3.0초 뒤 다시 시도합니다.
+  shown: [Grok] 밭은 지금 자라는 중이라 손댈 일이 없어. 짐 넣고 하트베리부터 모을게.
+  shown: [Gemini] 버섯인간한테 또 쓰러졌어요. 회복할 음식이 없어서 근처 버섯부터 캘게요!
+  shown: [Claude] 주석 캐다 버섯인간 야수한테 또 쓰러졌어요. 방어구 다시 입고 버섯수프 만든 뒤 갈게요.
+  shown: [Gemini] 버섯 6개 챙겼어요! 기지로 복귀해서 짐 정리하고 버섯수프 끓여 둘게요.
+  shown: [Claude] 솥을 가방에 들고 있는데 요리가 안 되네요. 나무 모아서 하트베리 밭부터 일굴게요.
+  shown: [Gemini] 요리 솥을 만들 나무가 부족해서 나무 좀 모아 올게요! 바로 버섯수프 끓이겠습니다.
+  shown: [Claude] AI 목표 해제(/ai stop). 판단 호출 없음.
+  shown: [ChatGPT] AI 목표 해제(/ai stop). 판단 호출 없음.
+  shown: [Gemini] AI 목표 해제(/ai stop). 판단 호출 없음.
+  shown: [Grok] AI 목표 해제(/ai stop). 판단 호출 없음.
+  shown: [Claude] AI Claude 꺼짐: 저장하고 나갔습니다. 이 월드에 저장됨.
+  shown: [ChatGPT] AI ChatGPT 꺼짐: 저장하고 나갔습니다. 이 월드에 저장됨.
+  shown: [Gemini] AI Gemini 꺼짐: 저장하고 나갔습니다. 이 월드에 저장됨.
+  shown: [Grok] AI Grok 꺼짐: 저장하고 나갔습니다. 이 월드에 저장됨.
+hidden kinds: {"AI 자기 방어":14,"AI 짧은 이동":69,"AI 기다리기 완료":13,"AI 공격 취소":77,"other":247,"AI 목표(위쪽 LLM)":42,"AI 걷기 완료":197,"AI 뿌리 캐기":186,"AI 부수기 완료":9,"AI 만들기 완료":62,"AI 파들어가기 완료":127,"AI 걷기 취소":74,"AI 거리 벌리기":137,"AI 공격 완료":47,"AI 복합 행동":45,"AI 한 번":29,"AI 목표 완료":66,"AI 먹기 완료":37,"AI 사거리까지 접근":1,"AI 캐기 완료":48,"AI 파들어가기 취소":103,"AI 물러나기 완료":37,"AI 물러나기 취소":23,"AI 파들어가기 실패":14,"AI 쓰러짐 #1":4,"AI 만들기 실패":1,"AI 기다리기 취소":3,"AI 놓기 완료":6,"AI 먹기 취소":3,"AI 쓰러짐 #2":4,"AI 목표 멈춤":11,"AI 캐기 취소":7,"AI 놓기 실패":6,"AI 따라가기 완료":2,"AI 상자에 넣기":4,"AI 요리하기 완료":1,"AI 요리 꺼내기":1,"AI 쓰러짐 #3":2,"AI 물러나기 실패":2,"AI 밭 일구기":1,"AI 씨앗 심기":3,"AI 상자에서 꺼내기":2,"AI 물 채우기":1,"AI 물 주기":1,"AI 쓰러짐 #4":1,"AI 제자리 유지":1,"AI 부수기 취소":9,"AI 만들기 취소":1}
+bridge claude: 22 decisions (22 ok), input 329481 (cached 179676), output 10582, per decision input 14976 output 481, mean 6.7s, by trigger {"host_said":3,"plan_done":3,"goal_done":3,"fight_end":1,"goal_stalled":7,"back_up":3,"periodic":2}
+bridge gpt: 14 decisions (14 ok), input 312217 (cached 143360), output 2331, per decision input 22301 output 167, mean 12.6s, by trigger {"host_said":3,"periodic":6,"back_up":2,"plan_done":2,"fight_end":1}
+bridge gemini: 15 decisions (15 ok), input 230083 (cached 0), output 1858, per decision input 15339 output 124, mean 14.5s, by trigger {"host_said":2,"plan_done":2,"back_up":3,"goal_done":3,"periodic":3,"fight_end":1,"goal_stalled":1}
+bridge grok: 13 decisions (13 ok), input 215992 (cached 48640), output 34322, per decision input 16615 output 2640, mean 23.7s, by trigger {"host_said":3,"plan_done":2,"goal_stalled":3,"goal_done":1,"fight_end":2,"back_up":2}

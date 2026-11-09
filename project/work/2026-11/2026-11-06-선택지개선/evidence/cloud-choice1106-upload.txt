@@ -1,0 +1,4 @@
+﻿[2026-11-06 20:07:52] [AppID 1621690] Upload OK for file worlds/7.world.gzip
+[2026-11-06 20:07:52] [AppID 1621690] Upload OK for file worldgenparams/7.json
+[2026-11-06 20:07:52] [AppID 1621690] Upload OK for file worldinfos/7.worldinfo
+[2026-11-06 20:07:53] [AppID 1621690] Upload complete, result OK

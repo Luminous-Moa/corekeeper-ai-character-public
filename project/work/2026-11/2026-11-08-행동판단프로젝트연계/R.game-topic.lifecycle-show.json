@@ -1,0 +1,221 @@
+{
+  "node": {
+    "action": "player_death_armor_durability",
+    "conditional": true,
+    "evidenceContext": {
+      "fixedCodeRoot": "../게임원본-상호작용/code",
+      "recordDirectory": "../2026-11/2026-11-08-행동판단필수보완/four"
+    },
+    "id": "completion:essential:player-death-armor-cost-v1",
+    "kind": "action_completion",
+    "origin": {
+      "normalizedValueSha256": "b0c2b8d51c3bf847425fbea297a60f60598ff6cd4dfcc64ea1bc009a94c5db34",
+      "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+      "pointer": "/records/4/value"
+    },
+    "recordFormat": "essential_decision_connection",
+    "roleBindings": [],
+    "runtimeTested": false,
+    "scope": "death",
+    "sourceComplete": false,
+    "status": "independent_pass"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "field": "conditions",
+      "id": "completion:essential:player-death-armor-cost-v1/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "17e65af54e9f5074c1b8fbe75af8d008a6742ff178c1e32e4d2dd200c9422500",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/conditions"
+      },
+      "value": [
+        "health<=0 and no SpawningFromCore/Death; SetNextState(Death,nextStateLocked=true) is requested.",
+        "Only !hardcore && isServer enables ReduceDurabilityOfAllEquipmentTriggerCD and increments its percentage by0.15. Other accumulated damage/percentage may also be present.",
+        "Armor consumer targets helmSlotIndex,breastSlotIndex,pantsSlotIndex only. Each slot must have amount>0 and primary prefab DurabilityCD."
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "codeReferences",
+      "id": "completion:essential:player-death-armor-cost-v1/evidence/codeReferences",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "4262aa90661695f714d50f59a98bc577591a1016fe81dcee8ee5f3e5fa5e01a0",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/codeReferences"
+      },
+      "value": [
+        {
+          "endLine": 177,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/CheckForDeadPlayerSystem.cs",
+          "sha256": "4412f25db6f09a425cb906191ac535199f7aa899db763ffecdc10e35e012c50c",
+          "startLine": 153
+        },
+        {
+          "endLine": 717,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/PlayerEquipment/ChangeDurabilitySystem.cs",
+          "sha256": "a48f532753b98c50731a8c473d83c36fe0f6ec586b08520991401201ce2f4ade",
+          "startLine": 652
+        },
+        {
+          "endLine": 382,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 357
+        },
+        {
+          "endLine": 807,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 797
+        },
+        {
+          "endLine": 855,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+          "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae",
+          "startLine": 850
+        },
+        {
+          "endLine": 473,
+          "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+          "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a",
+          "startLine": 464
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "existingReuse",
+      "id": "completion:essential:player-death-armor-cost-v1/evidence/existingReuse",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "a2e81a5228ba1e8167f7d8f9e6ec9c9702090a57fbc8cb3fbd8fcf87482b8dcc",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/existingReuse"
+      },
+      "value": [
+        "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions"
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "sourceEvidence",
+      "id": "completion:essential:player-death-armor-cost-v1/evidence/sourceEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "016b100f7b5d675705b669e3ae5cdb15360dc64be4642a50c4b7e6618e8a5b5f",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/sourceEvidence"
+      },
+      "value": [
+        {
+          "nodeId": "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions",
+          "origin": {
+            "normalizedValueSha256": "8540dd0f8e197e24374c8636917dc636ebc48d86ace055e3f95a7c2431d107a1",
+            "path": "../2026-11/2026-11-07-행동결과완결/full/B/evidence/combat-followups-v2-replay-1/cases.json",
+            "pointer": "/cases/65/transitions"
+          }
+        }
+      ]
+    },
+    {
+      "relation": "has_evidence",
+      "field": "summary",
+      "id": "completion:essential:player-death-armor-cost-v1/evidence/summary",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "19f64678c885f6b9099e4981e029200064df20e52d6107b9a75c45c068bbd47f",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/summary"
+      },
+      "value": "Health-zero requests locked Death and, on nonhardcore server, adds0.15 to armor durability percentage. Armor-specific consumer adds flat loss and requests SetAmount; cost is not exactly15percent."
+    },
+    {
+      "relation": "has_failure",
+      "field": "failures",
+      "id": "completion:essential:player-death-armor-cost-v1/failure/failures",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "79704a22d141cb9d5bd5e49fa001083f83cc8fe8439a1d745ac57e165f523a02",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/failures"
+      },
+      "value": [
+        "Hardcore/client path does not produce this death armor percentage increment. Empty/non-durable armor slots are skipped.",
+        "Inventory dispatcher rejection or changed slot objectID can prevent the queued amount write. A break effect is not proof of accepted inventory change."
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "field": "flow",
+      "id": "completion:essential:player-death-armor-cost-v1/flow/flow",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "92cf706f78540279e1a2fa9218b94483d03ec2f48eb7c2c7e8a361f0a2b192c0",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/flow"
+      },
+      "value": [
+        "Consumer disables trigger, copies damage and percentage, then resets trigger to default.",
+        "Condition118 probability, playerInvincibility or godMode can zero damage; damage<3percent of maxHealthWithConditions is also zeroed. These branches do not clear copied percentage.",
+        "If damage!=0 or percentage!=0, fraction=clamp(damage/maxHealthWithConditions,0,1); flatDurabilityLoss=(int)max(1,round(fraction*5)). Thus a lone nonzero death percentage with zero damage still computes flat loss1.",
+        "Each eligible armor slot computes percentLoss=round(maxDurability*percentage), newAmount=max(oldAmount-flatDurabilityLoss-percentLoss,0); queues SetAmount with same objectID and playerEntity. Zero outcome reports break and may request EquipmentBreak effect.",
+        "Reuse existing inventory processing and same-ID SetAmount consumer: valid current inventory and unchanged slot objectID are required before amount is written. This armor helper does not enqueue the weapon helper's TryReplaceBrokenObject."
+      ]
+    },
+    {
+      "relation": "has_result",
+      "field": "results",
+      "id": "completion:essential:player-death-armor-cost-v1/result/results",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "4db74b39a843534ddfa8ec486571ce9f59967565df6720b50d8de26976704935",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/results"
+      },
+      "value": [
+        "Conditional armor cost is round(maxDurability*accumulatedPercentage)+flatLoss capped by current amount; the death producer contribution is0.15, not a guaranteed total percentage or exact15percent current durability.",
+        "Only conditional SetAmount(0 or positive) and possible break effect are established. Existing weapon cost and item replacement semantics stay in their own scope."
+      ]
+    },
+    {
+      "relation": "has_unknown",
+      "field": "boundary",
+      "id": "completion:essential:player-death-armor-cost-v1/unknown/boundary",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "fb3be6bb79e2c88e26fa336e4a09c32f267524edb1d88557c9d79265c0083979",
+        "path": "../2026-11/2026-11-08-행동판단필수보완/four/supplement.json",
+        "pointer": "/records/4/value/boundary"
+      },
+      "value": [
+        "Runtime player has no invented source binding. This is the death producer plus armor branch, not a new weapon-cost rule.",
+        "Exact runtime armor maxima, accumulated trigger values, RNG and accepted inventory writes remain untested."
+      ]
+    }
+  ],
+  "rules": [],
+  "relations": [
+    {
+      "relation": "accepted_by",
+      "target": "acceptance:essential:death",
+      "kind": "review_acceptance",
+      "action": null
+    },
+    {
+      "relation": "reuses_consumer",
+      "target": "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions",
+      "kind": "flow",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_essential_supplement",
+      "completion:B:melee-basic-19001-0:cost-followup-v1/flow/transitions"
+    ]
+  ]
+}

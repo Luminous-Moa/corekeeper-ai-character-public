@@ -1,0 +1,57 @@
+[
+  {
+    "node": {
+      "applicationNote": null,
+      "appliesToCommit": "원문 적용 범위 유지",
+      "certainty": "확정",
+      "class": "결정",
+      "doc": "C/기획/정책-기준.md",
+      "grade": "사용자 결정",
+      "id": "pol.multi-ai",
+      "implementationStatus": "개별 연결 근거 외 구현 충족 미판정",
+      "kind": "처리",
+      "layer": "C",
+      "legacyIds": [
+        "pol.multi-ai"
+      ],
+      "notes": [],
+      "rule": "한 월드에서 / 모드는 / 단톡방 멤버마다 AI 캐릭터 하나씩(여럿) 들일 수 있다. pol.single-ai-first를 대체한다.",
+      "source": {
+        "document": "C/기획/정책-기준.md",
+        "section": "pol.multi-ai"
+      },
+      "sourceLocations": [
+        {
+          "end": 151,
+          "path": "C/기획/정책-기준.md",
+          "start": 144
+        }
+      ],
+      "sources": [
+        {
+          "path": "work/멤버넷-캐릭터/history.md",
+          "quote": "사용자가 HEAD 진행 순서(멤버 넷 포함)를 '네 제안대로'로 확정했으므로 해제된 것으로 기록한다.",
+          "status": "ok"
+        },
+        {
+          "path": "work/전투안정-동료인식/history.md",
+          "quote": "정책 반영: pol.single-ai-first는 해제됐다고 기록한다.",
+          "status": "ok"
+        }
+      ],
+      "summary": "한 월드에서 / 모드는 / 단톡방 멤버마다 AI 캐릭터 하나씩(여럿) 들일 수 있다. pol.single-ai-first를 대체한다.",
+      "title": "단톡방 멤버마다 AI 캐릭터 하나씩, 여럿이 함께",
+      "type": "정책"
+    },
+    "applications": [],
+    "sources": [
+      {
+        "path": "C/기획/정책-기준.md",
+        "start": 144,
+        "end": 151,
+        "sha256": "02f8a895a97c769965d1ba8d7fbab20caf94a1565b64a2585c11dd37b7e6f0b3",
+        "text": "144: ### pol.multi-ai — 단톡방 멤버마다 AI 캐릭터 하나씩, 여럿이 함께\n145: - 규칙: 한 월드에서 / 모드는 / 단톡방 멤버마다 AI 캐릭터 하나씩(여럿) 들일 수 있다. pol.single-ai-first를 대체한다.\n146: - 등급: 사용자 결정\n147: - 확정도: 확정\n148: - 종류: 처리\n149: - 날짜: 2026-11-04\n150: - 근거: work/멤버넷-캐릭터/history.md \"사용자가 HEAD 진행 순서(멤버 넷 포함)를 '네 제안대로'로 확정했으므로 해제된 것으로 기록한다.\"\n151: - 근거: work/전투안정-동료인식/history.md \"정책 반영: pol.single-ai-first는 해제됐다고 기록한다.\""
+      }
+    ]
+  }
+]

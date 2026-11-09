@@ -1,0 +1,88 @@
+{
+  "scope": "A-1 actual UI observation only; no product source inspected",
+  "runtimeCommitReported": "76563bf",
+  "graphCommitReported": "e82eb87",
+  "uiReleasedAt": "2026-11-05T05:19:14.991Z",
+  "entryDocument": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/screen-states.md",
+  "operations": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/observations.json",
+  "screens": [
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/01-world.png",
+      "time": "2026-11-05T05:16:30.467Z",
+      "action": "Activate existing Core Keeper window; observation only"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/02-chat-open.png",
+      "time": "2026-11-05T05:16:37.707Z",
+      "action": "Press Return to open chat command input"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/03-ai-draft.png",
+      "time": "2026-11-05T05:16:45.564Z",
+      "action": "Type /ai into visible chat input; not submitted"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+      "time": "2026-11-05T05:16:51.318Z",
+      "action": "Submit /ai; local help response"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/05-chat-reopen.png",
+      "time": "2026-11-05T05:17:15.943Z",
+      "action": "Reopen chat after /ai response"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/06-target-draft.png",
+      "time": "2026-11-05T05:17:22.013Z",
+      "action": "Type /ai Claude in command input"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/07-target-cancelled.png",
+      "time": "2026-11-05T05:17:31.301Z",
+      "action": "Cancel unsubmitted /ai Claude draft on parent instruction; no command execution"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/08-chat-open-again.png",
+      "time": "2026-11-05T05:18:04.939Z",
+      "action": "Reopen chat for log scroll inspection"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/09-chat-scroll-up.png",
+      "time": "2026-11-05T05:18:11.235Z",
+      "action": "Scroll upward over visible chat log by 600"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/10-chat-closed.png",
+      "time": "2026-11-05T05:18:21.099Z",
+      "action": "Close chat; scroll did not move log and changed selected quick slot from 1 to 0"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/11-slot-restored.png",
+      "time": "2026-11-05T05:18:29.997Z",
+      "action": "Press visible quickslot key 1 to restore original selection; no item use"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/12-game-menu.png",
+      "time": "2026-11-05T05:18:38.084Z",
+      "action": "Open existing game menu with Escape; no settings/exit action"
+    },
+    {
+      "file": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-05-지식그래프-실화면/A1/13-world-final.png",
+      "time": "2026-11-05T05:18:47.087Z",
+      "action": "Close game menu and leave original world view with quickslot 1 selected; end UI input"
+    }
+  ],
+  "observedCommands": [
+    "/ai"
+  ],
+  "cancelledDrafts": [
+    "/ai Claude"
+  ],
+  "unobserved": [
+    "HTTP requests/status codes",
+    "IPC calls",
+    "stream events",
+    "read-only status/bag/goal/memory command syntax"
+  ],
+  "handoffState": "World view; chat closed; menu closed; quickslot 1 selected; game running; no further input"
+}

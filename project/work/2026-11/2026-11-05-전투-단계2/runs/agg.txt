@@ -1,0 +1,20 @@
+brute R1-R6: requests 387, answers 365; candidates p50 19 p95 23 max 31; latency p50 0.27 p95 0.5 max 1.67; tokens p50 4847 p95 7380 max 10706
+   candidates 21+: n 125, latency p50 0.3 p95 0.6, tokens p50 5206
+   candidates 15-20: n 156, latency p50 0.27 p95 0.47, tokens p50 5416
+   candidates 7-14: n 73, latency p50 0.27 p95 0.4, tokens p50 3421
+   candidates <=6: n 11, latency p50 0.3 p95 0.39, tokens p50 1331
+   choices: step_left 58, attack 50, away_near 43, step_away 36, hitnext 32, combo_approach-hit 27, combo_hit-left 25, step_backleft 18, step_right 17, combo_hit-away 14, combo_hit-right 9, eat_Mushroom 9, hit 8, step_backright 6, wait 5, approach 3, hold 3, eat_FoodRation 2
+regression R7: requests 173, answers 173; candidates p50 5 p95 6 max 6; latency p50 0.27 p95 0.37 max 1.62; tokens p50 1595 p95 1897 max 2117
+   candidates <=6: n 173, latency p50 0.27 p95 0.37, tokens p50 1595
+   choices: wait 74, away_near 38, attack 36, eat_Mushroom 25
+R1 down 8.5 answers 16 tokens(incl. dropped est.) 65858 usd 0.00659 dropped 2
+R2 kill 24.0 answers 61 tokens(incl. dropped est.) 323645 usd 0.03236 dropped 4
+R3 kill 35.0 answers 101 tokens(incl. dropped est.) 470066 usd 0.04701 dropped 4
+R4 down 18.1 answers 46 tokens(incl. dropped est.) 273161 usd 0.02732 dropped 3
+R5 kill 25.6 answers 69 tokens(incl. dropped est.) 393541 usd 0.03935 dropped 2
+R6 timeout 120.0 answers 72 tokens(incl. dropped est.) 385025 usd 0.03850 dropped 3
+R7 fight over 58.0 answers 173 tokens(incl. dropped est.) 274070 usd 0.02741 dropped 0
+urgent requests 21 answered 21 latency p50 0.3 p95 0.94 max 1.67 ; send after seen p50 0 max 0
+kept (not dropped) 0
+combo picks 57 reached stage 2 34 cut 43
+combo hit->move stage start after swing start 18 p50 0.133 max 0.133

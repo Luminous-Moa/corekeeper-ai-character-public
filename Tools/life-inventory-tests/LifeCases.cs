@@ -1,0 +1,54 @@
+using Unity.Entities;
+using Unity.Mathematics;
+static partial class Program {
+static void LifeCases() {
+ var(w,p,b)=Setup();var(chest,box)=Chest(w);for(int i=8;i<20;i++)box.Add(default);
+ var inventory=w.EntityManager.GetBuffer<InventoryBuffer>(chest);var config=inventory[0];config.size=20;config.maxSize=20;inventory[0]=config;
+ for(int i=0;i<20;i++)box[i]=Item(ObjectID.Wood,i,10+i);
+ Goal(w,p,new(){kind=GoalKind.Take,item=ObjectID.Wood,count=3,where="chest:1,0"});
+ var selection=new LifeSelection {Branch="inventory",Mode="take",Where="chest:1,0",RequestedCount=3,MatchesGoal=true,Goal=AIGoals.Goal};
+ var closed=AIInventory.LifeEntries(w,p,Observe(w,p),"",selection);
+ Check(closed.Count==1&&closed[0].Candidate?.inventory.mode=="inspect","life chest selection offers only inspect before opening");
+ Start(w,p,closed[0].Candidate.inventory);
+ var slots=AIInventory.LifeEntries(w,p,Observe(w,p),"",selection);
+ Check(slots.Count==20&&slots.Exists(x=>x.Op=="slot"&&x.Id=="17"),"life source axis exposes slots after the former twelve-result cap without merging variation");
+ selection.Slot=17;
+ var leaf=AIInventory.LifeEntries(w,p,Observe(w,p),"",selection)[0].Candidate;
+ var direct=AIInventory.ExactCandidate(w,p,Observe(w,p),"",selection);
+ Check(leaf.key==direct.key&&leaf.inventory.from==17&&leaf.inventory.count==3&&leaf.itemVariation==17,"life tree and direct exact entrance freeze the same late source slot, variation and requested amount");
+ var moving=Start(w,p,leaf.inventory);
+ Check(AICraft.Requests.Last().mode=="move"&&AICraft.Requests.Last().count==3,"life exact leaf queues normal MoveAmount for only the requested quantity");
+ box[17]=Item(ObjectID.Wood,17,24);b[0]=Item(ObjectID.Wood,17,3);moving.Tick(w,p,1);
+ Check(moving.Status==SkillStatus.Done&&moving.ConfirmedReceived==3&&AIInventory.GoalDone(w,p,out _),"life late-slot transfer observes exact main receipt and original goal progress");
+ (w,p,b)=Setup();(chest,box)=Chest(w);box[0]=Item(ObjectID.Wood,0,10);b[0]=Item(ObjectID.Wood,0,5);
+ Goal(w,p,new(){kind=GoalKind.Take,item=ObjectID.Wood,count=1,where="chest:1,0"});
+ selection=new(){Branch="inventory",Mode="store",Where="chest:1,0",Slot=0,RequestedCount=1,MatchesGoal=false};
+ var inspect=AIInventory.CandidatesFor(w,p,Observe(w,p),"",new(){kind=GoalKind.Store,count=1,where="chest:1,0",slot=0},null)[0];Start(w,p,inspect.inventory);
+ leaf=AIInventory.ExactCandidate(w,p,Observe(w,p),"",selection);
+ Check(leaf.inventory.goal==null,"separate life query never binds a temporary request to the current goal");
+ moving=Start(w,p,leaf.inventory);b[0]=Item(ObjectID.Wood,0,4);box[0]=Item(ObjectID.Wood,0,11);moving.Tick(w,p,1);
+ Check(moving.Status==SkillStatus.Done&&!AIInventory.GoalDone(w,p,out _),"separate store receipt leaves the original take goal uncompleted");
+ selection.Mode="take";selection.Slot=0;selection.Goal=AIGoals.Goal;selection.MatchesGoal=true;
+ leaf=AIInventory.ExactCandidate(w,p,Observe(w,p),"",selection);box[0]=Item(ObjectID.Wood,1,11);
+ Check(AIInventory.Stale(w,p,leaf.inventory)!=null,"life execute rejects a source variation replaced after selection instead of substituting");
+ (w,p,b)=Setup();(chest,box)=Chest(w);for(int i=8;i<20;i++)box.Add(default);inventory=w.EntityManager.GetBuffer<InventoryBuffer>(chest);config=inventory[0];config.size=20;config.maxSize=20;inventory[0]=config;box[0]=Item(ObjectID.Wood,0,10);box[17]=Item(ObjectID.CopperOre,2,40);
+ Goal(w,p,new(){kind=GoalKind.Take,item=ObjectID.Wood,count=3,where="chest:1,0"});
+ selection=new(){Branch="inventory",Mode="take",Where="chest:1,0",RequestedCount=3,MatchesGoal=true,Goal=AIGoals.Goal};
+ inspect=AIInventory.LifeEntries(w,p,Observe(w,p),"",selection).Single().Candidate;Start(w,p,inspect.inventory);
+ slots=AIInventory.LifeEntries(w,p,Observe(w,p),"",selection);
+ Check(slots.Exists(x=>x.Id=="17"&&x.Text.Contains("별도 행동")),"explicit Wood goal still exposes the actual Ore slot with separate-action quantity information");
+ selection.Slot=17;leaf=AIInventory.ExactCandidate(w,p,Observe(w,p),"",selection);
+ Check(leaf.itemId==ObjectID.CopperOre&&leaf.itemVariation==2&&leaf.itemCount==1&&!leaf.life.MatchesGoal&&leaf.life.Goal==null&&leaf.inventory.goal==null,"actual source Ore identity resolves before quantity/progress binding and limits a separate take to one");
+ moving=Start(w,p,leaf.inventory);box[17]=Item(ObjectID.CopperOre,2,39);b[leaf.inventory.to]=Item(ObjectID.CopperOre,2,1);moving.Tick(w,p,1);
+ Check(moving.Status==SkillStatus.Done&&moving.ConfirmedReceived==1&&AIInventory.MovedForGoal(AIGoals.Goal)==0,"actual Ore receipt never advances original Wood transfer progress");
+ selection.Slot=0;leaf=AIInventory.ExactCandidate(w,p,Observe(w,p),"",selection);
+ Check(leaf.itemId==ObjectID.Wood&&leaf.itemCount==3&&leaf.life.MatchesGoal&&ReferenceEquals(leaf.inventory.goal,AIGoals.Goal),"actual Wood slot resolves back to the original three-unit remaining request");
+ moving=Start(w,p,leaf.inventory);box[0]=Item(ObjectID.Wood,0,7);b[leaf.inventory.to]=Item(ObjectID.Wood,0,3);moving.Tick(w,p,2);
+ Check(moving.Status==SkillStatus.Done&&AIInventory.MovedForGoal(AIGoals.Goal)==3&&AIInventory.GoalDone(w,p,out _),"actual Wood three-unit receipt advances exactly three and completes only its own goal");
+ (w,p,b)=Setup();(chest,box)=Chest(w);b[0]=Item(ObjectID.Wood,0,10);b[17]=Item(ObjectID.CopperOre,1,20);Goal(w,p,new(){kind=GoalKind.Store,item=ObjectID.Wood,count=3,where="chest:1,0"});selection=new(){Branch="inventory",Mode="store",Where="chest:1,0",Slot=17,RequestedCount=3,MatchesGoal=true,Goal=AIGoals.Goal};
+ inspect=AIInventory.CandidatesFor(w,p,Observe(w,p),"",new(){kind=GoalKind.Store,where="chest:1,0",count=3},AIGoals.Goal).Single();Start(w,p,inspect.inventory);leaf=AIInventory.ExactCandidate(w,p,Observe(w,p),"",selection);
+ Check(leaf.itemCount==1&&leaf.inventory.goal==null&&!leaf.life.MatchesGoal,"separate storage resolves the actual non-goal item before selecting one-unit quantity");
+ moving=Start(w,p,leaf.inventory);b[17]=Item(ObjectID.CopperOre,1,19);box[leaf.inventory.to]=Item(ObjectID.CopperOre,1,1);moving.Tick(w,p,1);
+ Check(moving.Status==SkillStatus.Done&&AIInventory.MovedForGoal(AIGoals.Goal)==0,"separate Ore storage receipt leaves original Wood storage progress unchanged");
+ }
+}

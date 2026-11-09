@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Fast compile check of the mod source (every .cs under Assets/AIPlayerSpike/Scripts, subfolders included) against
+       the installed game's assemblies, read only. Not the game's own compiler: a quick gate before the Unity compile
+       (HeadlessSdk.CompileCheck) and the game's "Successfully compiled AIPlayerSpike".
+       LangVersion 8: the mod already uses C# 8 (AICook.cs:68) and the game compiles it; C# 9-only syntax is refused
+       here on purpose (refactor plan 2-계획.md, 조건).
+       dotnet build Tools/compile-check -c Release   (GameManaged can be overridden with -p:GameManaged=<dir>) -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>CS0436;CS1701;CS1702</NoWarn>
+    <GameManaged Condition="'$(GameManaged)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\CoreKeeper_Data\Managed</GameManaged>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Assets\AIPlayerSpike\Scripts\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="$(GameManaged)\*.dll" Exclude="$(GameManaged)\mscorlib.dll;$(GameManaged)\netstandard.dll;$(GameManaged)\System.dll;$(GameManaged)\System.*.dll;$(GameManaged)\Mono.*.dll;$(GameManaged)\Microsoft.*.dll;$(GameManaged)\mcs.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

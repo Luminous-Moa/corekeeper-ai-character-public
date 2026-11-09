@@ -1,0 +1,16 @@
+﻿06:48:06 backup done (C:\Dev\_scratch\chat-ui2\backup)
+06:48:42 installed 4b4c160 exit0 errorCS0 installed .cs 38, different from 4b4c160: 0; chat-settings written: thinTiny x1 (가)
+06:49:17 launching game (4b4c160)
+06:50:57 in world, char 4
+06:51:06 /ai all on
+06:52:51 fill done A-thinTiny-x1
+06:53:28 settings B: default x0.5
+06:54:42 fill done B-default-x0.5
+06:55:51 probes: lines missing when input reopened
+06:56:42 probe3 settings switch test
+06:57:06 settings B again (default x0.5), fill B2
+06:58:08 fill done B2-default-x0.5
+06:59:52 settings C: thinTiny x0.5
+07:00:33 /ai off
+07:01:43 game closed, Player-run2.log.gz saved
+07:02:00 restore verify 0; installed .cs 36, different from b2fa4cc: 0

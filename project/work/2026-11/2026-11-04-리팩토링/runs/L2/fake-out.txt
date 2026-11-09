@@ -1,0 +1,9 @@
+fake-bridge listening on http://127.0.0.1:8331 (6 steps, log C:\Dev\_scratch\refactor-runs\L2\fake-requests.jsonl)
+fake-bridge: #1 step 1 (429) member=claude report=6 rev=20 trigger=auto_on
+fake-bridge: #2 step 2 (200) member=claude report=7 rev=20 trigger=auto_on
+fake-bridge: #3 step 3 (200) member=claude report=8 rev=20 trigger=retry
+fake-bridge: #4 step 4 (409) member=claude report=9 rev=22 trigger=goal_done
+fake-bridge: #5 step 5 (200) member=claude report=10 rev=22 trigger=goal_done
+fake-bridge: #6 step 6 (200) member=claude report=11 rev=22 trigger=retry
+fake-bridge: #7 step 6 (200) member=claude report=12 rev=22 trigger=hold_recheck
+fake-bridge: #8 step 6 (200) member=claude report=13 rev=22 trigger=hold_recheck

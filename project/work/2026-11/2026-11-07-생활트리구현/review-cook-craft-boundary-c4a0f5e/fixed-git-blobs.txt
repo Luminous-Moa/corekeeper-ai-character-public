@@ -1,0 +1,10 @@
+87a739bbcdf07a6e8d4fd970bd16ccd55654d639  Assets/AIPlayerSpike/Scripts/AICraft.cs
+63988f437ec38f81b75aadb3da59482e5e095ab7  Assets/AIPlayerSpike/Scripts/AIInventory.cs
+456f75f2e31cba1116e3c5c013ff5b2f64213022  Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs
+f396fcf7e465327ec6df35cd6f9e119f05cff538  Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs
+c8802d294f2f2e41ebca60a8d475402d3c6a47ae  Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs
+a304d8639c38d3bcd46785c1e1dd9c1264d5bc09  Assets/AIPlayerSpike/Scripts/AIBrain.Prep.cs
+594cc03b565bf2dbb351a71e0fd9f878b5ad5f60  Tools/life-craft-tests/Stubs.cs
+7d8efa1ceae7a654d9a0536f88a8c180e02d343f  Tools/life-craft-tests/LifeBindingSource.cs
+74957175c63a241ed4ccfc2e31fe39552b45c648  Assets/AIPlayerSpike/Scripts/AICook.cs
+4b7c9e4f995f2c7835078233201e626671e1b74a  Tools/life-cook-tests/Boundary.cs

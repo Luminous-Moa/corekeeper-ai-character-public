@@ -1,0 +1,7 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),pin=JSON.parse(fs.readFileSync(path.join(stage,'final-pin.json'),'utf8')),dest=path.join(stage,'revisions',pin.sourceCommit,'extraction');
+const B='work/2026-11/2026-11-05-지식그래프-개편/B';
+for(const rel of ['final-pin.json','command-results.json',...['code.graph.json','B.graph.json','csharp.raw.json','javascript.raw.json','snapshot.manifest.json','snapshot-verification.json','determinism.json','validation.json','boundaries.json'].map(f=>B+'/'+f),...['01-extract','02-code-build','03-code-verify','04-code-determinism'].map(f=>'evidence/'+f+'.txt')]){const src=path.join(stage,rel),target=path.join(dest,rel);if(!fs.existsSync(src))continue;fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(src,target);}
+fs.writeFileSync(path.join(dest,'경계.md'),'# 중간판 코드 추출 보존\n\n이 판은 flat 후보판의 상자 공간 수정 primitive를 포함한 중간판이다. Git blob·Roslyn/Acorn·결정성 1~4단계만 이번 판으로 확인했다. 개발/제품 그래프와 최종 수용으로 승격하지 않는다. 사용자 승인 item-first 선택 트리의 최종 SHA와 합의를 기다린다. 미실게임이다.\n');
+fs.writeFileSync(path.join(stage,'stage-state.json'),JSON.stringify({status:'새 승인 선택 트리의 최종 SHA·근거 대기',codeExtractionCommit:pin.sourceCommit,currentProductGraphCommit:JSON.parse(fs.readFileSync(path.join(stage,'work/2026-11/2026-11-05-지식그래프-실화면/D/graph.json'),'utf8')).meta.sourceCommit,finalAcceptance:false,canonicalWritten:false},null,2)+'\n');
+console.log('Preserved extraction only '+pin.sourceCommit);

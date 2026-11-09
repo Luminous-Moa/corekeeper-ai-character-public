@@ -1,0 +1,4 @@
+ai-bridge: game graph NOT FOUND (looked in C:\Dev\CoreKeeperModSDK-nl\Tools\knowledge\data ; C:\Dev\CoreKeeperModSDK-kg\Tools\knowledge\data): no game queries, object names only. Set kgData in config.json
+ai-bridge: claude (claude) found=true login=true auth=claude.ai subscription=max usage={"week":66,"week-fable":0} ok 
+ai-bridge: gemini (agy) found=true login=true auth=account login subscription=account usage={"5h":0,"week":12.3} ok 
+ai-bridge listening on http://127.0.0.1:8331

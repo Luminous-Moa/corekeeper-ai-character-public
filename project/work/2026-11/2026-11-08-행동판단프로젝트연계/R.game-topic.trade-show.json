@@ -1,0 +1,695 @@
+{
+  "node": {
+    "action": "buy_vending_item",
+    "dataset": "base",
+    "evidenceContext": {
+      "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+      "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+      "originalReferenceContext": {
+        "codeRoot": "../../../게임원본-상호작용/code",
+        "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+        "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+        "rawRoot": "../../../게임원본-상호작용"
+      },
+      "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+      "resolvedReferenceContext": {
+        "codeRoot": "../게임원본-상호작용/code",
+        "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+        "rawRoot": "../게임원본-상호작용"
+      },
+      "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+    },
+    "evidenceLevel": "code_linked",
+    "facts": {},
+    "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item",
+    "kind": "claim",
+    "label": "buy_vending_item",
+    "origin": {
+      "normalizedValueSha256": "f99faf1f77694369241f7787077109d117f1c6c1826aedd8a8d64a531c22a4a8",
+      "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+      "pointer": "/groups/2/payload/extraction.json/records/50"
+    },
+    "rowKind": "extracted_action_or_stage",
+    "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817"
+  },
+  "fields": [
+    {
+      "relation": "has_condition",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "conditions",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item/condition/conditions",
+      "kind": "condition",
+      "origin": {
+        "normalizedValueSha256": "3052a2bcd61a5497e4c97ed761df9e250c132c04ea0b1e8f4c36ebf9154a8133",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50/conditions"
+      },
+      "value": {
+        "UI": "nonempty product and coins >= calculated price",
+        "products": [
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 9603,
+            "consumerVariation": 0,
+            "index": 0,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 9603,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 3.1500000953674316,
+                "candidateConditionalPrice": 94,
+                "ingredientSources": [],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8480432100032941478"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 9604,
+            "consumerVariation": 0,
+            "index": 1,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 9604,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 2.75,
+                "candidateConditionalPrice": 82,
+                "ingredientSources": [],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-2250625602572987246"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 9605,
+            "consumerVariation": 0,
+            "index": 2,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 9605,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 3.1700000762939453,
+                "candidateConditionalPrice": 95,
+                "ingredientSources": [],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:6431392252953927506"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 9407,
+            "consumerVariation": 0,
+            "index": 3,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 9407,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 1.2000000476837158,
+                "candidateConditionalPrice": 108,
+                "ingredientSources": [
+                  {
+                    "item": {
+                      "amount": 15,
+                      "objectID": 1632
+                    },
+                    "sources": [
+                      {
+                        "rarity": 0,
+                        "sellValue": -1,
+                        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:614923026990120542"
+                      }
+                    ]
+                  }
+                ],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [
+                  {
+                    "amount": 15,
+                    "objectID": 1632
+                  }
+                ],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:556345098491878841"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 9408,
+            "consumerVariation": 0,
+            "index": 4,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 9408,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 1.100000023841858,
+                "candidateConditionalPrice": 99,
+                "ingredientSources": [
+                  {
+                    "item": {
+                      "amount": 15,
+                      "objectID": 1632
+                    },
+                    "sources": [
+                      {
+                        "rarity": 0,
+                        "sellValue": -1,
+                        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:614923026990120542"
+                      }
+                    ]
+                  }
+                ],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [
+                  {
+                    "amount": 15,
+                    "objectID": 1632
+                  }
+                ],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-5401472201186765148"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 9409,
+            "consumerVariation": 0,
+            "index": 5,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 9409,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 1.0800000429153442,
+                "candidateConditionalPrice": 86,
+                "ingredientSources": [
+                  {
+                    "item": {
+                      "amount": 15,
+                      "objectID": 1632
+                    },
+                    "sources": [
+                      {
+                        "rarity": 0,
+                        "sellValue": -1,
+                        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:614923026990120542"
+                      }
+                    ]
+                  }
+                ],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [
+                  {
+                    "amount": 15,
+                    "objectID": 1632
+                  }
+                ],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:2614512721927292962"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 8875,
+            "consumerVariation": 0,
+            "index": 6,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 8875,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 7.5,
+                "candidateConditionalPrice": 2138,
+                "ingredientSources": [
+                  {
+                    "item": {
+                      "amount": 5,
+                      "objectID": 1522
+                    },
+                    "sources": [
+                      {
+                        "rarity": 2,
+                        "sellValue": -1,
+                        "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-6105651072437799997"
+                      }
+                    ]
+                  }
+                ],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 1,
+                "requiredObjectsToCraft": [
+                  {
+                    "amount": 5,
+                    "objectID": 1522
+                  }
+                ],
+                "sellValue": -1,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-8326089344721494419"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 5124,
+            "consumerVariation": 0,
+            "index": 7,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 5124,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 5.300000190734863,
+                "candidateConditionalPrice": 3975,
+                "ingredientSources": [],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 3,
+                "requiredObjectsToCraft": [],
+                "sellValue": 150,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-7172153351325046039"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          },
+          {
+            "consumerAmount": 1,
+            "consumerObjectId": 5122,
+            "consumerVariation": 0,
+            "index": 8,
+            "serializedItem": {
+              "amount": 0,
+              "objectID": 5122,
+              "variation": 0
+            },
+            "sourceVariants": [
+              {
+                "buyValueMultiplier": 3.190000057220459,
+                "candidateConditionalPrice": 3988,
+                "ingredientSources": [],
+                "priceCondition": "selected runtime DB matches this source and no CantBeSold/Legendary/CookedFood exception; float32 Random.CreateFromIndex and math.round",
+                "priceFormulaRef": "vending_price",
+                "rarity": 2,
+                "requiredObjectsToCraft": [],
+                "sellValue": 250,
+                "sourceKey": "CAB-2ebcba97367158c9b08f790c25d642c9:-353066696053816455"
+              }
+            ],
+            "unresolved": "runtime DB selection and exception components; formula retained if price null"
+          }
+        ]
+      }
+    },
+    {
+      "relation": "has_evidence",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "assetEvidence",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item/evidence/assetEvidence",
+      "kind": "evidence",
+      "origin": {
+        "normalizedValueSha256": "c8bcf4c64642d3bd7746bea86bbc79a6bfe5354ed455a76fb9bb1d555e38c489",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50/assetEvidence"
+      },
+      "value": [
+        {
+          "data": {
+            "items": [
+              {
+                "amount": 0,
+                "objectID": 9603,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 9604,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 9605,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 9407,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 9408,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 9409,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 8875,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 5124,
+                "variation": 0
+              },
+              {
+                "amount": 0,
+                "objectID": 5122,
+                "variation": 0
+              }
+            ],
+            "m_Enabled": 1,
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": "5562304862304203425"
+            },
+            "m_Name": "",
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": "2967508877889240413"
+            },
+            "sizeX": 3,
+            "sizeY": 3
+          },
+          "key": "CAB-2ebcba97367158c9b08f790c25d642c9:-8140779137854147935",
+          "rawByteSha256": "0a345c3050288c5ffb47a5ba98438b85ddd67ce86e7aa19995b9bb162635d7a0"
+        }
+      ]
+    },
+    {
+      "relation": "has_failure",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "failureBranches",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item/failure/failureBranches",
+      "kind": "failure",
+      "origin": {
+        "normalizedValueSha256": "56505d8d3813897afe542f4d962434185c5c48e7e02b67ac9c14df6b592b1a46",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50/failureBranches"
+      },
+      "value": [
+        "UI balance insufficient: no request",
+        "read-only nonadmin and invalid/destroyed seller reject",
+        "invalid DB item or price <=0 no normal creation"
+      ]
+    },
+    {
+      "relation": "has_flow",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "inputProcessingConsumer",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item/flow/inputProcessingConsumer",
+      "kind": "flow",
+      "origin": {
+        "normalizedValueSha256": "6f22ed849ddfa0096417a7a305de0a583983ed6149202b340bf1d929b0b9b866",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50/inputProcessingConsumer"
+      },
+      "value": "VendingMachine UI -> Buy request -> tick -> InventoryUpdateSystem -> InventoryUtility.Buy"
+    },
+    {
+      "relation": "has_result",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "result",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item/result/result",
+      "kind": "result",
+      "origin": {
+        "normalizedValueSha256": "60382e601de66ee2882f4ddc115a0b15f041a5af641ae44273653d50df18f563",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50/result"
+      },
+      "value": {
+        "result": "price >0: consume up to coin price then CreateObject(item ID, amount 1, variation 0); no stock decrement",
+        "space": "if no slot, drop may be scheduled"
+      }
+    },
+    {
+      "relation": "has_unknown",
+      "evidenceContext": {
+        "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+        "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+        "originalReferenceContext": {
+          "codeRoot": "../../../게임원본-상호작용/code",
+          "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+          "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../../../게임원본-상호작용"
+        },
+        "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+        "resolvedReferenceContext": {
+          "codeRoot": "../게임원본-상호작용/code",
+          "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+          "rawRoot": "../게임원본-상호작용"
+        },
+        "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+      },
+      "field": "unknown",
+      "id": "base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item/unknown/unknown",
+      "kind": "unknown",
+      "origin": {
+        "normalizedValueSha256": "4e6d17c726690a8913effa43e5414e6fe22cc6f299f5e951159ab67fd5927b8f",
+        "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+        "pointer": "/groups/2/payload/extraction.json/records/50/unknown"
+      },
+      "value": [
+        "consumer does not check short coin-consumption return",
+        "consumption and creation not atomic",
+        "runtime DB, slots and drop existence"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "relation": "governed_by",
+      "node": {
+        "dataset": "base",
+        "evidenceContext": {
+          "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+          "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+          "originalReferenceContext": {
+            "codeRoot": "../../../게임원본-상호작용/code",
+            "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+            "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+            "rawRoot": "../../../게임원본-상호작용"
+          },
+          "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+          "resolvedReferenceContext": {
+            "codeRoot": "../게임원본-상호작용/code",
+            "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+            "rawRoot": "../게임원본-상호작용"
+          },
+          "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+        },
+        "facts": {
+          "priorReviewedCase": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동20건수집\\C-conditions\\cases\\vending\\action.md"
+        },
+        "group": "C",
+        "id": "rule:base:C:vending",
+        "kind": "rule",
+        "name": "vending",
+        "origin": {
+          "normalizedValueSha256": "325aa03235f59febe744718af78a5b5f3abb67a78e43603b2217b1d03f041954",
+          "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+          "pointer": "/groups/2/payload/extraction.json/rules/vending"
+        }
+      },
+      "fields": [
+        {
+          "evidenceContext": {
+            "groupBasePath": "../2026-11/2026-11-07-행동전체추출/C-conditions",
+            "meaning": "Paths here are relative to this graph directory. Evidence strings remain verbatim; use the producer group/reference roots and package manifest to locate them.",
+            "originalReferenceContext": {
+              "codeRoot": "../../../게임원본-상호작용/code",
+              "note": "Original payload IDs and reference strings are unchanged; use manifest structuredFileReferences and original contexts.",
+              "priorSampleRoot": "../../2026-11-07-행동20건수집/C-conditions",
+              "rawRoot": "../../../게임원본-상호작용"
+            },
+            "packageCollection": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "packageManifest": "../2026-11/2026-11-07-행동전체추출/package/manifest.json",
+            "resolvedReferenceContext": {
+              "codeRoot": "../게임원본-상호작용/code",
+              "priorSampleRoot": "../2026-11/2026-11-07-행동20건수집/C-conditions",
+              "rawRoot": "../게임원본-상호작용"
+            },
+            "sharedFixedCodeRoot": "../게임원본-상호작용/code"
+          },
+          "field": "codeFiles",
+          "id": "rule:base:C:vending/evidence/codeFiles",
+          "kind": "evidence",
+          "origin": {
+            "normalizedValueSha256": "97f8e56a9cbfe5d891554aacfe190ccf921a25bedf9180891c5f6cd9373e0f38",
+            "path": "../2026-11/2026-11-07-행동전체추출/package/collection.json",
+            "pointer": "/groups/2/payload/extraction.json/rules/vending/codeFiles"
+          },
+          "value": [
+            "Pug.Other/VendingMachine.cs",
+            "Pug.ECS.Conversion/VendingMachineConverter.cs",
+            "Pug.Other/InventorySlotUI.cs",
+            "Pug.Other/Inventory/InventoryUtility.cs",
+            "Pug.Other/Inventory/InventoryUpdateSystem.cs"
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "relation": "has_completion",
+      "target": "reviewed-claim:base:C::CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817#buy_vending_item",
+      "kind": "conditional_application",
+      "action": "buy_vending_item"
+    },
+    {
+      "relation": "uses_label",
+      "target": "verb:buy_vending_item",
+      "kind": "verb",
+      "action": null
+    }
+  ],
+  "incoming": [
+    [
+      "has_claim",
+      "source:CAB-2ebcba97367158c9b08f790c25d642c9:2565053697021702817"
+    ]
+  ]
+}

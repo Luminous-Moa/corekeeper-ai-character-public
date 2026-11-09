@@ -1,0 +1,169 @@
+{
+  "baselineGraphSha256": "a16c73944d7bc0587640e6760d0d35388cc4ea1adb67b2e9963ecd8990de5713",
+  "groups": [
+    "process_resources"
+  ],
+  "pins": [
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\00-agreement.md",
+      "sha256": "49bd92d453350f38379851a224d21a2c1b36e0fe56288007b3b86949a787cd2d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\baseline-260\\coverage.json",
+      "sha256": "e63c72fb61af78815273a95c35b737906a7038307089f5ddc1729df4782fa6a5"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\baseline-260\\graph.json",
+      "sha256": "a16c73944d7bc0587640e6760d0d35388cc4ea1adb67b2e9963ecd8990de5713"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\baseline-260\\manifest.json",
+      "sha256": "5e28c7fff9cb972574a20781ff47a0fa594d3c1c04d696c96265e4c2da9d75ae"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\compile_contract.py",
+      "sha256": "b687a24af7851bb14185e5d5fa46a37347195fad61a1b207c8a8d8efb898b766"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\install_reviewed.py",
+      "sha256": "0761e19ddd3d30c118b0192a914420facb3ddda17530b56b5b1a4f598924dbe4"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\overlay.py",
+      "sha256": "0efd2de1f73e34ff98930d41c3c8d38aeaabf2361c1a8a687e1276fd9a3886b0"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\production\\static-check.json",
+      "sha256": "15359ea649b2dc95afb07d3a1f04aa1e81bcb96151ea9773d1c2c81335e86e1e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\production\\supplement.json",
+      "sha256": "129db1076fff0c7708076bf029bfee973811f0e9771df85ec2011642ca3818cd"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\publication-before.json",
+      "sha256": "11c85252460fbb1dfea253f944bea3916f9520e7a431a5c31a1c5f7556e2820e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\publication.config.json",
+      "sha256": "97ee39a1886e6fbb9a3c88e35423cd724986b780ef93c63dd22504237cf7ac64"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\verify.py",
+      "sha256": "29241571f3f36c5f204892efd04c6d7d560594c8afd5d9e2c37327ffd9421350"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\history-current\\coverage.json",
+      "sha256": "d61c20ccfaa646c5843ec234af99664c3dc5e5c9b07df8d19298bf871c0f7373"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\history-current\\graph.json",
+      "sha256": "05a9853c09184584df28c48e86e6456e4e46151609db9c7ed5dcb94c94ee3e8d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\history-current\\manifest.json",
+      "sha256": "447960903b65b6ece7fbec606f953053732eaea6f983623840cfbff07ee85f6e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Automation\\Pug.Automation\\PugAutomationCraftingSystem.cs",
+      "sha256": "c9551235a29e84a0a5e42f134f9789cb7078ef67e2142b9e1c4b4b2826f9262c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Automation\\Pug.Automation\\PugAutomationInstantiateSystem.cs",
+      "sha256": "b4cb0108e6e72538428cdcc844dd441ee6c212b0d59ec597e61aaa2ad7d67f5a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Automation\\Pug.Automation\\PugAutomationStartCraftSystem.cs",
+      "sha256": "29fed82705141d5af76cbfcb8ad8d5ad2ba9a12da27cab778c0ce1eee5a19fac"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Automation\\Pug.Automation\\PugAutomationSystem.cs",
+      "sha256": "fe2d79b1c69c5a18bf9be25caa837316e00fe18bba8cc0c86a60d60b0dfeef8c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Automation\\Pug.Automation\\TriggerCrafterChangedSystem.cs",
+      "sha256": "92a9d837dee120320333c12054a6222b8c3e98a05575742883ccc83eb4efc093"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\CraftingType.cs",
+      "sha256": "cd464ecac5822b48b4fc76d3949277b55623c696a1f16d1022b3350189440a31"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\CraftingCD.cs",
+      "sha256": "110147d37f5e332ae9dbeb75f1aabf500c90dc8fb70acda32c96679a444cd1e6"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\InventoryConverter.cs",
+      "sha256": "372fe0868b59dba23eb498c6989e6ff9fda9d5a640a9463f1d716c2a87056205"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CraftingHandler.cs",
+      "sha256": "8f9511fc8adf346b765a465fb4690322f23ba21c2772151a6c2d288a90da3cc4"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\Create.cs",
+      "sha256": "eb1062460a0af763b8850cc3046787939bf4599ef5988ef8c4bb35549cb09b27"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+      "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+      "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ProcessResourcesCraftingUI.cs",
+      "sha256": "9cd9d5b07cdc987a595cf7d435012fdb67f0fdfb85a6a123eccb5cbeffcb80f9"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\RecipeSlotUI.cs",
+      "sha256": "bfb6d41595801fae9666f74267f2381098ba36a824cbf74725c1dbf9a031c21e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UIManager.cs",
+      "sha256": "5a854c6afbc6879521255f0eca25a0ce57314333f3053e494296bd4cf87a5a27"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+      "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\objects.json",
+      "sha256": "8548a1ee100ab1bb772c9db314cf83883c3b904dd0f748cfe50a9bd6b0fc12c1"
+    }
+  ],
+  "records": [
+    {
+      "group": "process_resources",
+      "id": "completion:process-resources:recipe-activation-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\production\\supplement.json",
+      "pointer": "/records/0",
+      "recordSha256": "ce2f95f0923b7a5535764baa35d16b59bec5fbd4416562a5b145cbdb8b4e3e3e"
+    },
+    {
+      "group": "process_resources",
+      "id": "completion:process-resources:material-move-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\production\\supplement.json",
+      "pointer": "/records/1",
+      "recordSha256": "9e8172172101c17f3dfc3f65a743734a7fcf37f1e7b268cc394e1c655dc7afb8"
+    },
+    {
+      "group": "process_resources",
+      "id": "completion:process-resources:craft-timer-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\production\\supplement.json",
+      "pointer": "/records/2",
+      "recordSha256": "bf25a665c2971d760206e17ea42d07c16381aa8c74fc6e7fb0896b24b2e4fbbe"
+    },
+    {
+      "group": "process_resources",
+      "id": "completion:process-resources:output-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-용광로가공판단보강\\production\\supplement.json",
+      "pointer": "/records/3",
+      "recordSha256": "60fb64388bf74f09b8e760eeeb1485cbbdccc99b908418e3315abc500c171f64"
+    }
+  ],
+  "runtimeTested": false,
+  "schemaVersion": 1,
+  "wholeScopeComplete": false
+}

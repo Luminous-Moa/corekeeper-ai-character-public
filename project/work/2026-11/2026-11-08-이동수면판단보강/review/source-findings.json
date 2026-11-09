@@ -1,0 +1,44 @@
+{
+  "independentEvidence": [
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\review\\source-original-checks.json",
+      "sha256": "52aade7558c6e3e6eaa8c3cd4cdece661a693906eff6983e366cea6cd7e76a0d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\review\\source-generation-checks.json",
+      "sha256": "10d2c48ca7d7b1faaa065741afada3ece31c8144d80036e5c5ff9094e1de40c5"
+    }
+  ],
+  "openFindings": [],
+  "pendingPublicationSteps": [
+    "정확 accepted 계약으로 finalize와install의 두 생성 SHA 및 게시 실물 physical pins를 확인한다.",
+    "canonical CLI와 현재 프로젝트 consumer의 실제 최종 연결을 별도 게시 검수한다."
+  ],
+  "plannedPublicationSwitches": [
+    {
+      "logicalPath": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임행동-그래프\\publication.json",
+      "reviewedTemplate": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\publication.config.json",
+      "sha256": "11c85252460fbb1dfea253f944bea3916f9520e7a431a5c31a1c5f7556e2820e"
+    }
+  ],
+  "recordsReviewed": 5,
+  "report": {
+    "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\review\\source-report.md",
+    "sha256": "6109ad51f326e3d1d2fb49df5f2e53aedde641b3963f4016de4fdc64d3cb14de"
+  },
+  "resolvedFindings": [
+    "Minecart !flag3 && speed>200 acceleration covers current-direction or unique perpendicular rail candidate.",
+    "Source-summary and verification select own has_* child fields while preserving reuse links and old essential payload."
+  ],
+  "reviewedCandidateDirectory": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-이동수면판단보강\\candidate-review-v2",
+  "reviewedCandidateHashes": {
+    "coverage.json": "7b66d4c683a148c43fcb8043da6ce74de016d8889543069200703f88a7bef39b",
+    "graph.json": "85bd475a52ce13c3da16f932efeeeec2e42cb53367801a776ffc7b7931a3f44c",
+    "manifest.json": "5e220fcfcfc3d1f2b793af9773afa5e6afd4131bc9b3407f656b7a3c39ac4b9a"
+  },
+  "reviewedContractSha256": "74614162f5aafdbc594318fa5b08f93b02dc23f011cbc2a22ed6edd485d1b743",
+  "runtimeTested": false,
+  "scopeGroups": 4,
+  "status": "independent_pass",
+  "wholeScopeComplete": false
+}

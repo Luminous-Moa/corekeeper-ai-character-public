@@ -1,0 +1,30 @@
+[
+    {
+        "sha256":  "3aa0e230f2752207b42f859cf4c83022bf9fa4b3c2819ce4b5771dcd4e693196",
+        "path":  "D/graph.json"
+    },
+    {
+        "sha256":  "f29daafb11cb852d7c228d33bc93f13662aa80b2f743a7527068dee2ddb87e28",
+        "path":  "D/validation.json"
+    },
+    {
+        "sha256":  "0f6c64f7e7e0895981cd71a4a8c860504e0863da7849bc8200d5c3e31a6e5e21",
+        "path":  "D/report.md"
+    },
+    {
+        "sha256":  "f8e78b98382e2f29751d29e6be2d8fc37109da88ae8a409dfa8751eb434d6957",
+        "path":  "B/code.graph.json"
+    },
+    {
+        "sha256":  "6a89b38fe6365dc2663484085fcffcd1ebb99c03f9f7dd2cf3f1489e5320d793",
+        "path":  "A/graph-A.json"
+    },
+    {
+        "sha256":  "2f6eaf0216987b61c40580b0857dade89874fe3c76cc570269cebe21f5152b9a",
+        "path":  "C/graph-C.json"
+    },
+    {
+        "sha256":  "ced3edfcba074ab4a2b53be2318b2d01bd6c45bc5e58cb5dcc4afd97e30cb4bd",
+        "path":  "preserved/manifest.json"
+    }
+]

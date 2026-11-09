@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><Nullable>disable</Nullable><StartupObject>Program</StartupObject><ImplicitUsings>enable</ImplicitUsings><EnableDefaultCompileItems>false</EnableDefaultCompileItems></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../test-boundaries/ExpeditionBoundary.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIHandCapabilities.cs" Link="AIHandCapabilities.cs" />
+    <Compile Include="*.cs;.generated/*.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIMaintenance*.cs" Link="%(Filename)%(Extension)" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AICraft.cs" Link="AICraft.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIInventory.cs" Link="AIInventory.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIChestAreas.cs" Link="AIChestAreas.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIChestMode.cs" Link="AIChestMode.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIInventoryMenu.cs" Link="AIInventoryMenu.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AISkill.cs" Link="AISkill.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AILife.cs" Link="AILife.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIMaintenanceRules.cs" Link="Core/AIMaintenanceRules.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AILifeTree.cs" Link="Core/AILifeTree.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIPlanProtocol.cs" Link="Core/AIPlanProtocol.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIPlanRules.cs" Link="Core/AIPlanRules.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIGoalKinds.cs" Link="Core/AIGoalKinds.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIOutcomes.cs" Link="Core/AIOutcomes.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs" Link="Core/AIInventoryRules.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIExpCore.cs" Link="AIExpCore.cs" />
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIGoalText.cs" Link="AIGoalText.cs" />
+  </ItemGroup>
+</Project>

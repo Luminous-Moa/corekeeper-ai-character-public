@@ -1,0 +1,11 @@
+== ../2026-11-07-가방장비구현/integration-report.md:32-41 sha256=1935a557cfd0160315190fb4f11c05e4348708133a00d6eeb0f7dcd05abf19eb
+32: ## 빌드·반영 경계
+33: 
+34: 최종39b22df 소스로 Unity 6000.0.59f2와 정상 SDK BuildMod 내보내기를 설치 없는 새 경로에서 실행했다. PID52288, exit0, CompileCheck:ok1건, C# compiler error0이다. [입력](integration/final-39b22df/unity-input.json), [설정](integration/final-39b22df/unity-settings.json), [실행/종료](integration/final-39b22df/unity-exit.json), [로그](integration/final-39b22df/unity-export.log), [소스/출력 비교](integration/final-39b22df/artifact-manifest.json)에 근거가 있다. 103개 C#가 실행 전후 같고 SDK payload와 일치하며 공식c4 소스/HEAD와 기존 설치96파일도 불변이다. settings-after의 입력8개도 모두 같다. 임시 reflection Editor helper와 SDK DLL·설정 입력 hash를 함께 보존했다. 초기7dc 빌드의 후처리 비교 스크립트는 SDK의 정상 Scripts/Scripts 경로를 잘못 예상해 멈췄으나 Unity/SDK 자체 exit0였고, 경로 수정 후 같은 산출물103개를 대조했다. 이 후처리 오류를 제품 컴파일 오류로 세지 않는다. 최종39b22df 빌드는 후처리까지 exit0이다.
+35: 
+36: 새 후보는 [AIPlayerSpike-integrated-39b22df.zip](integration/final-39b22df/AIPlayerSpike-integrated-39b22df.zip), 707242bytes, SHA256 `D8D8E891BFD2CAAEDBA34671958DBFFA21C125BC38246D5E8EA346381D3E107A`이다. [package.json](integration/final-39b22df/package.json)에 대응한다. 정상 SDK의 raw C#103개와 ModManifest가 배포 payload이며 compiler DLL hash `77F57D019747BF37C3C70BFC0A9078E3803D39D784B44AB583F60D93869E3598`는 검증용이다. 최신 bridge brief/protocol도 [후보 폴더](integration/final-39b22df/bridge-candidate.json)에 복사했으며 배포/재시작하지 않았다.
+37: 
+38: 통합 독립 검수에서 열린 생활 cursor가 전투 때 숨은 뒤 가방 진입까지 막는 P2를 확인했다. 중간b1에서 전투 진입을 열고 최종39b22df는 실제 생활 view가 전투로 잠시 숨은 경우 가방 진입을 허용하고 shared Stale/Apply까지 일관되게 연결한다. 비전투 열린 생활의 현재 자식 소유는 유지한다. connected192에는 실제 전투 가방 entry→Stale→Apply→cancel과 몸/목표/생활 잔량/요청0 보존을 포함한다. 7dc181 및 중간 SDK 산출물은 최종39b22df의 증거를 대신하지 않는다.
+39: 
+40: 설치/실게임/외부 모델/bridge 재시작은 수행하지 않았다. 환경용 SDK assembly·프로젝트 설정·임시 Editor helper는 제품 커밋에서 제외했다. 독립 검수·공식 반영 및 게임 재개 판단은 HEAD가 소유한다. [현재 통합 실행 계획](integration-runtime-plan.md)을 따르며 741/7dc 중간 패키지를 현재 후보로 설치하지 않는다.
+41: 최종39b22df는 생활 메뉴가 실제 표시되었는지/전투로 숨겨졌는지를 Compose의 actor별 ViewSuspended에 저장해 공유 guard가 그 값을 읽는다. 단순 근접 적 유무로 전투 적격 조건을 다시 추정하지 않는다. Compose 때 갱신하고 goal/actor Sync·다른 view로 전환 때 false로 초기화한다. 근접하지만 위협 적격이 아닌 적 앞에서 생활 현재 자식 유지, 실제 숨김 때 가방 진입/취소 도달을 192검사에 포함한다.

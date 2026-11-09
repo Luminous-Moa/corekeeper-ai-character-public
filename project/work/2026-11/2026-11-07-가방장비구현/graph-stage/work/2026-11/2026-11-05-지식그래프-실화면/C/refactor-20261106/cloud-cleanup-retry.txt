@@ -1,0 +1,28 @@
+﻿[2026-11-06 17:20:44] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'
+[2026-11-06 17:31:03] [AppID 1621690] Starting sync (AC Launch,down,)
+[2026-11-06 17:31:03] [AppID 1621690] AutoCloud checking local state for user 435751233
+[2026-11-06 17:31:03] [AppID 1621690] (ValidateCache) File 'C:\Program Files (x86)\Steam\userdata\435751233\1621690\remote\saves\3.json' SHA mismatch with cache - setting local changes
+[2026-11-06 17:31:03] [AppID 1621690] (ValidateCache) File 'C:\Program Files (x86)\Steam\userdata\435751233\1621690\remote\maps\3\2.mapparts.gzip' SHA mismatch with cache - setting local changes
+[2026-11-06 17:31:03] [AppID 1621690] (ValidateCache) File 'C:\Program Files (x86)\Steam\userdata\435751233\1621690\remote\worldinfos\6.worldinfo' missing from disk, setting changes in cloud
+[2026-11-06 17:31:03] [AppID 1621690] (ValidateCache) File 'C:\Program Files (x86)\Steam\userdata\435751233\1621690\remote\worlds\6.world.gzip' missing from disk, setting changes in cloud
+[2026-11-06 17:31:03] [AppID 1621690] (ValidateCache) File 'C:\Program Files (x86)\Steam\userdata\435751233\1621690\remote\worldgenparams\6.json' missing from disk, setting changes in cloud
+[2026-11-06 17:31:03] [AppID 1621690] Attempting to sync from local change number '0' to global change number '196' (full)
+[2026-11-06 17:31:03] [AppID 1621690] Need to upload file saves/3.json
+[2026-11-06 17:31:03] [AppID 1621690] Need to upload file maps/3/2.mapparts.gzip
+[2026-11-06 17:31:03] [AppID 1621690] Need to download file worldinfos/6.worldinfo
+[2026-11-06 17:31:03] [AppID 1621690] Need to download file worlds/6.world.gzip
+[2026-11-06 17:31:03] [AppID 1621690] Need to download file worldgenparams/6.json
+[2026-11-06 17:31:04] [AppID 1621690] HTTP download for file 'worldinfos/6.worldinfo' from host 'steamcloudseoul2.blob.core.windows.net', path /cloud/41/09/F9/19/1621690/21A_8_35895A5A_289CF_1.dat, beginning. . .
+[2026-11-06 17:31:04] [AppID 1621690] HTTP download for file 'worldgenparams/6.json' from host 'steamcloud-seoul.storage.googleapis.com', path /41/09/F9/19/1621690/304_6_0A2757F5_32A10_1.dat, beginning. . .
+[2026-11-06 17:31:04] [AppID 1621690] HTTP download for file 'worlds/6.world.gzip' from host 'steamcloudseoul2.blob.core.windows.net', path /cloud/41/09/F9/19/1621690/289_6_30BFE404_E8DF5_2.dat, beginning. . .
+[2026-11-06 17:31:04] [AppID 1621690] HTTP download for file 'worldinfos/6.worldinfo' from host 'steamcloudseoul2.blob.core.windows.net' - Success.
+[2026-11-06 17:31:04] [AppID 1621690] Download OK for file worldinfos/6.worldinfo
+[2026-11-06 17:31:04] [AppID 1621690] HTTP download for file 'worlds/6.world.gzip' from host 'steamcloudseoul2.blob.core.windows.net' - Success.
+[2026-11-06 17:31:04] [AppID 1621690] Download OK for file worlds/6.world.gzip
+[2026-11-06 17:31:04] [AppID 1621690] HTTP download for file 'worldgenparams/6.json' from host 'steamcloud-seoul.storage.googleapis.com' - Success.
+[2026-11-06 17:31:04] [AppID 1621690] Download OK for file worldgenparams/6.json
+[2026-11-06 17:31:04] [AppID 1621690] Download complete, result OK
+[2026-11-06 17:31:04] [AppID 1621690] Successfully synced to ChangeNumber 196
+[2026-11-06 17:31:04] [AppID 1621690] Running AutoCloud on launch. Looking for existing files to watch:
+[2026-11-06 17:31:04] [AppID 1621690] AutoCloud done. Watching 0 files
+[2026-11-06 17:31:04] [AppID 1621690] YldWriteCacheDirectoryToFile - saved to 'C:\Program Files (x86)\Steam/userdata/435751233/1621690/remotecache.vdf'

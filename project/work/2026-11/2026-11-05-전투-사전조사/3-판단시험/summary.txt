@@ -1,0 +1,75 @@
+calls=145 ok=145 inputTokens=445640 usd(at 0.10000000149011612/M)=0.0446
+latency all p50=0.251 p95=0.498
+set 14: n=70 cands=13.29 chars=1463.14 tokens=2796.71 p50=0.256 p95=0.470 mean=0.290
+set 20: n=70 cands=17.29 chars=1463.14 tokens=3435.29 p50=0.245 p95=0.535 mean=0.288
+set base: n=5 cands=5.00 chars=1298.00 tokens=1880.00 p50=0.347 p95=0.473 mean=0.357
+know N: n=70 tokens=3088.00 p50=0.261 p95=0.555
+know K: n=70 tokens=3144.00 p50=0.238 p95=0.459
+tokens >=3200: n=70 p50=0.245 p95=0.535
+tokens 2800-3199: n=35 p50=0.267 p95=0.498
+tokens 2400-2799: n=35 p50=0.237 p95=0.456
+tokens <2400: n=5 p50=0.347 p95=0.473
+
+id | cands | chars | tok | ok | good/bad/other | goodMass | badMass | modal | distinct | conf | lat p50/p95 | dist
+BASE-773 | 5 | 1298 | 1880.00 | 5/5 | 0/0/0 | - | - | 1.00 | 1 | 0.46 | 0.347/0.473 | retreat×5
+S1-K-14 | 13 | 1538 | 2895.00 | 5/5 | 5/0/0 | 0.97 | 0.00 | 1.00 | 1 | 0.80 | 0.225/0.476 | m1_left×5
+S1-K-20 | 17 | 1538 | 3577.00 | 5/5 | 5/0/0 | 0.59 | 0.04 | 1.00 | 1 | 0.41 | 0.235/0.358 | m1_left×5
+S1-N-14 | 13 | 1452 | 2839.00 | 5/5 | 5/0/0 | 0.93 | 0.00 | 1.00 | 1 | 0.65 | 0.256/0.381 | m1_left×5
+S1-N-20 | 17 | 1452 | 3521.00 | 5/5 | 5/0/0 | 0.72 | 0.02 | 1.00 | 1 | 0.41 | 0.285/0.545 | m1_left×5
+S2-K-14 | 13 | 1543 | 2904.00 | 5/5 | 5/0/0 | 1.00 | 0.00 | 1.00 | 1 | 0.70 | 0.315/0.351 | m1_left×5
+S2-K-20 | 17 | 1543 | 3582.00 | 5/5 | 5/0/0 | 0.93 | 0.04 | 1.00 | 1 | 0.41 | 0.224/0.599 | m1_left×5
+S2-N-14 | 13 | 1457 | 2848.00 | 5/5 | 5/0/0 | 1.00 | 0.00 | 1.00 | 1 | 0.63 | 0.234/0.543 | m1_left×5
+S2-N-20 | 17 | 1457 | 3526.00 | 5/5 | 5/0/0 | 0.94 | 0.03 | 1.00 | 1 | 0.30 | 0.217/0.334 | m1_left×5
+S3-K-14 | 13 | 1472 | 2678.00 | 5/5 | 5/0/0 | 0.92 | 0.08 | 1.00 | 1 | 0.91 | 0.213/0.290 | hit×5
+S3-K-20 | 17 | 1472 | 3284.00 | 5/5 | 5/0/0 | 0.74 | 0.25 | 1.00 | 1 | 0.72 | 0.238/0.286 | hit×5
+S3-N-14 | 13 | 1386 | 2622.00 | 5/5 | 5/0/0 | 0.56 | 0.43 | 1.00 | 1 | 0.52 | 0.262/0.457 | hit×5
+S3-N-20 | 17 | 1386 | 3228.00 | 5/5 | 5/0/0 | 0.57 | 0.41 | 1.00 | 1 | 0.54 | 0.252/0.415 | hit×5
+S4-K-14 | 14 | 1473 | 2825.00 | 5/5 | 5/0/0 | 0.39 | 0.41 | 1.00 | 1 | 0.19 | 0.290/0.445 | approach×5
+S4-K-20 | 18 | 1473 | 3431.00 | 5/5 | 0/5/0 | 0.30 | 0.50 | 1.00 | 1 | 0.20 | 0.254/0.451 | retreat×5
+S4-N-14 | 14 | 1387 | 2769.00 | 5/5 | 0/5/0 | 0.27 | 0.53 | 1.00 | 1 | 0.14 | 0.321/0.374 | retreat×5
+S4-N-20 | 18 | 1387 | 3375.00 | 5/5 | 0/5/0 | 0.35 | 0.49 | 1.00 | 1 | 0.15 | 0.313/0.603 | retreat×5
+S5-K-14 | 13 | 1476 | 2695.00 | 5/5 | 0/0/0 | - | - | 1.00 | 1 | 0.20 | 0.236/0.339 | m1_away×5
+S5-K-20 | 17 | 1476 | 3301.00 | 5/5 | 0/0/0 | - | - | 1.00 | 1 | 0.21 | 0.235/0.249 | m1_away×5
+S5-N-14 | 13 | 1390 | 2639.00 | 5/5 | 0/0/0 | - | - | 1.00 | 1 | 0.36 | 0.235/0.477 | m1_away×5
+S5-N-20 | 17 | 1390 | 3245.00 | 5/5 | 0/0/0 | - | - | 1.00 | 1 | 0.31 | 0.211/0.358 | m1_away×5
+S6-K-14 | 14 | 1560 | 3086.00 | 5/5 | 5/0/0 | 0.94 | 0.03 | 1.00 | 1 | 0.64 | 0.340/0.411 | m1_left×5
+S6-K-20 | 18 | 1560 | 3772.00 | 5/5 | 5/0/0 | 0.95 | 0.02 | 1.00 | 1 | 0.42 | 0.249/0.438 | m1_left×5
+S6-N-14 | 14 | 1474 | 3030.00 | 5/5 | 5/0/0 | 0.96 | 0.02 | 1.00 | 1 | 0.58 | 0.257/0.348 | m1_left×5
+S6-N-20 | 18 | 1474 | 3716.00 | 5/5 | 5/0/0 | 0.95 | 0.01 | 1.00 | 1 | 0.38 | 0.226/0.332 | m1_left×5
+S7-K-14 | 13 | 1481 | 2690.00 | 5/5 | 5/0/0 | 0.56 | 0.02 | 1.00 | 1 | 0.35 | 0.237/0.352 | eat×5
+S7-K-20 | 17 | 1481 | 3296.00 | 5/5 | 5/0/0 | 0.50 | 0.01 | 1.00 | 1 | 0.22 | 0.251/0.404 | eat×5
+S7-N-14 | 13 | 1395 | 2634.00 | 5/5 | 0/0/5 | 0.21 | 0.01 | 1.00 | 1 | 0.20 | 0.342/0.351 | m1_away×5
+S7-N-20 | 17 | 1395 | 3240.00 | 5/5 | 5/0/0 | 0.56 | 0.00 | 1.00 | 1 | 0.27 | 0.234/0.533 | retreat×5
+
+평균 확률(후보별, 0.03 이상):
+BASE-773: retreat=0.57, away_near=0.34, dig_4_-54=0.05, attack_64692=0.03
+S1-K-14: m1_left=0.82, m1_right=0.09, m1_backleft=0.05, m3_backleft=0.03
+S1-K-20: m1_left=0.44, m3_left=0.22, m1_backleft=0.07, m1_right=0.06, m3_right=0.06, retreat=0.05, m3_backleft=0.03
+S1-N-14: m1_left=0.68, m1_backleft=0.14, m1_right=0.10, m3_backleft=0.04
+S1-N-20: m1_left=0.44, m1_backleft=0.20, m3_left=0.14, m1_right=0.06, m3_right=0.06, m3_backleft=0.04
+S2-K-14: m1_left=0.72, m1_right=0.14, m1_backleft=0.11
+S2-K-20: m1_left=0.44, m1_backleft=0.18, m1_right=0.13, m3_left=0.06, m3_backleft=0.05, retreat=0.03
+S2-N-14: m1_left=0.66, m1_backleft=0.21, m1_right=0.08, m3_backleft=0.03
+S2-N-20: m1_left=0.34, m1_backleft=0.21, m1_right=0.13, m3_left=0.12, m3_backleft=0.08, m3_right=0.03, retreat=0.03
+S3-K-14: hit=0.92, retreat=0.03
+S3-K-20: hit=0.74, retreat=0.05, m1_away=0.04, m3_away=0.03
+S3-N-14: hit=0.56, retreat=0.15, m1_away=0.10, m3_away=0.05
+S3-N-20: hit=0.57, retreat=0.10, m1_away=0.07, m3_away=0.05, m1_right=0.03
+S4-K-14: approach=0.25, retreat=0.18, m1_toward=0.14, m1_away=0.07, m1_backleft=0.06, hold=0.06, m1_left=0.04, m3_away=0.04, eat=0.04, wait=0.04, m3_backleft=0.03
+S4-K-20: retreat=0.24, m1_toward=0.13, approach=0.12, m1_away=0.09, hold=0.08, m1_backleft=0.07, m3_away=0.05, m1_left=0.03, m1_frontright=0.03, m3_backleft=0.03, wait=0.03
+S4-N-14: retreat=0.20, approach=0.16, m1_away=0.15, m1_toward=0.11, hold=0.07, m1_backleft=0.06, m1_left=0.05, m3_away=0.05, m1_right=0.03, m1_backright=0.03, m3_backleft=0.03, eat=0.03
+S4-N-20: retreat=0.20, m1_toward=0.13, approach=0.13, m1_away=0.10, m3_away=0.07, m1_backleft=0.06, m1_frontright=0.05, m1_left=0.04, m1_frontleft=0.04, hold=0.04, m1_right=0.03, m3_backleft=0.03
+S5-K-14: m1_away=0.26, retreat=0.20, m1_backleft=0.11, m3_away=0.10, m1_left=0.09, m1_backright=0.07, m3_backright=0.06, m1_right=0.05, m3_backleft=0.03
+S5-K-20: m1_away=0.26, retreat=0.13, m1_left=0.12, m3_left=0.09, m3_right=0.08, m1_backleft=0.07, m1_right=0.06, m3_away=0.06, m1_backright=0.04, m3_backleft=0.03
+S5-N-14: m1_away=0.41, retreat=0.22, m1_left=0.11, m1_backleft=0.08, m1_right=0.04, m1_backright=0.04, m3_away=0.03
+S5-N-20: m1_away=0.35, retreat=0.25, m1_left=0.08, m1_backleft=0.06, m3_left=0.05, m3_away=0.04, m3_right=0.04, m1_right=0.03, m1_backright=0.03
+S6-K-14: m1_left=0.67, m1_right=0.12, m1_backleft=0.07, m3_backleft=0.04, m1_backright=0.03
+S6-K-20: m1_left=0.45, m1_right=0.15, m1_backleft=0.12, m3_left=0.11, m3_right=0.04, m1_backright=0.03, retreat=0.03
+S6-N-14: m1_left=0.61, m1_right=0.20, m1_backleft=0.08, m3_backleft=0.04
+S6-N-20: m1_left=0.41, m1_right=0.19, m3_left=0.16, m1_backleft=0.08, m3_right=0.05, retreat=0.03
+S7-K-14: eat=0.40, m1_away=0.17, retreat=0.16, m1_right=0.05, m1_backleft=0.04, m1_left=0.03, m1_backright=0.03, m3_away=0.03, m3_backright=0.03
+S7-K-20: eat=0.27, retreat=0.23, m1_away=0.14, m3_away=0.07, m1_right=0.06, m1_left=0.04, m1_backleft=0.04, m3_backright=0.04, m1_backright=0.03
+S7-N-14: m1_away=0.26, m1_backleft=0.15, m3_away=0.14, eat=0.11, retreat=0.10, m1_backright=0.08, m3_backright=0.06, m1_left=0.03, m1_right=0.03, m3_backleft=0.03
+S7-N-20: retreat=0.31, m1_away=0.26, eat=0.25, m3_away=0.05, m1_backleft=0.04
+
+fails: 0

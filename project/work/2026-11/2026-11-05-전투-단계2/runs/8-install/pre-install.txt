@@ -1,0 +1,27 @@
+2828cc923180b5af AIActions.cs
+45e770a9bd838eaf AIAgents.cs
+c72fa64a41fced61 AIBase.cs
+219b545c760aaa91 AIBodySkills.cs
+78cd9aac247d037e AIBrain.Candidates.cs
+37dce7641c7e64a6 AIBrain.Loop.cs
+99e56ca6834ce5b0 AIBrain.Prep.cs
+5e4eaad70198dd2e AIBrain.cs
+0aa6ff8814545160 AICombat.cs
+683ae1bf07a2b9dc AICook.cs
+ca2fef657cd044d7 AICraft.cs
+e2b1167c99b6b291 AIDecisions.cs
+efa77b24ec80d92a AIDecisionsApi.cs
+8d1c1458236e3c92 AIExpCore.cs
+8b8d74cfd3db56f6 AIExperience.cs
+7143dfbde57d93e6 AIExplore.cs
+7923cff68492408b AIFarm.cs
+d869e82b8fc04cab AIGoals.cs
+a5f42a552548ac64 AIKnowledge.cs
+c6fb9102f3c8aa23 AIPlanReport.cs
+d2c7be9e787c1c4f AIPlanner.cs
+38976c95d61cfcc1 AIPlayerSpikeMod.cs
+ffdce51ca8de354c Core/AICandidateAssembler.cs
+d775b0a9e001097b Core/AIOutcomes.cs
+bcc1d1e3ab5c60a1 Core/AIPlanInbox.cs
+c8c2b1794dbbe639 Core/AIPlanProtocol.cs
+installed .cs 26, different from e82eb87: 0

@@ -1,0 +1,18 @@
+== ../2026-11-07-가방장비구현/tree-validation.md:32-38 sha256=7ebbd8cbfbeb3511ddfa65686c3617c49fcadcb297791aaf4c05ecef999b89ad
+32: ## 빌드와 배포의 구분
+33: 
+34: checkpoint b1의 첫 export 시도는 임시 Editor helper가 SDK assembly를 직접 참조한 오류로 exit1이었다. 제품 오류로 기록하지 않으며 [그 로그](tree-checkpoint-unity-export.log)는 보존했다. 기존 HeadlessSdk와 같은 reflection SDK 호출로 helper만 보완한 뒤741을 새 입력 pin으로 다시 컴파일/export했다.
+35: 
+36: SDK의 실제 배포 payload는101개의 C# 소스와 ModManifest.json이다. Unity의 `Library/ScriptAssemblies/AIPlayerSpike.dll`은 컴파일 증거로 따로 해시를 남겼으며 배포 payload DLL이라고 주장하지 않는다. clone 설정으로 `ModBuilder.BuildMod`의 exportPath만 세션 폴더로 지정했다. 원 SDK 설정 해시도 불변이다.
+37: 
+38: 본 저장소 반영·공식 그래프 적용·bridge 재배포/재시작·설치·게임·외부 모델 시험은 이 상세 실행에서 하지 않았다. [실행 준비](tree-runtime-plan.md)의 실제 게임 흐름 확인이 남는다.
+== ../2026-11-07-가방장비구현/review-tree-741.md:82-90 sha256=c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91
+82: ## 741 Unity·SDK 후보 산출물 읽기 대조 완료
+83: 
+84: 검수자가 Unity/export를 실행한 것이 아니다. tree-final-unity-exit.json은 source741532f/exitCode0/종료UTC2026-11-07 05:10:14.8626270을 기록한다. tree-final-unity-export.log에서 CompileCheck:ok, Successfully built mod, Export complete,no install을 확인했고 CS컴파일오류 패턴은0이었다. tree-final-unity-input.json은101개 제품 C#·SDK입력220·설정5·임시helper해시를 고정한다. 검수 checkout과92개 C# rawhash가 같고9개는CRLF/LF만 달랐다(BOM을 보존한 UTF-8 byte decoding 후 줄끝만 정규화하여 차이0). producer의101개 rawhash와후보source101개 rawhash는 모두입력pin에일치한다. 독립상세결과는 review-repro/export-source-verification.json이다. 다른내용불일치를줄끝차이로뭉개지않았다.
+85: 
+86: SDK 후보는 tree-741532f-candidate/AIPlayerSpike의 C#101개와ModManifest.json,총102파일 source패키지다. manifest files101과실제101개source누락0/입력해시불일치0을확인했다. Unity compiler의Library/ScriptAssemblies/AIPlayerSpike.dll은설치payload와구별한다. Editorhelper도입력manifest해시와일치하며격리산출폴더만사용하는임시helper다. buildBundles=false·buildLinux=false인이번source후보의성공을모든플랫폼/assetbundle빌드성공으로확대하지않는다.
+87: 
+88: AIPlayerSpike-tree-741532f.zip은675666바이트, SHA256 5FE44B67281E10778ACFE95639F2D40611C8E6B0E62D675E341D7503903FC512로tree-package.json과독립일치했다. ZIP을풀거나설치하지않고102개payload파일stream을해시대조해tree-artifact-manifest.json과불일치0을확인했다. ownermanifest의source전후101/설정5/기존설치96파일unchanged표시는모두true이며,이는owner가수집한전후관측이다. 검수자가과거설치상태를독립재현한것으로표시하지않는다.
+89: 
+90: 최종소스·오프라인선택/실행흐름·Unity컴파일·설치없는SDKsource후보범위에서미해소blocking발견은없다. 실제모델선택·서버/게임consumer·사용자월드의장착/보관/전달대표흐름은미검증이며기존실게임보류를유지한다.

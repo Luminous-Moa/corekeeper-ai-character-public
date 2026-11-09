@@ -1,0 +1,65 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "### 공통 규칙",
+        "doc": "gapFixes",
+        "end": 213,
+        "line": 209,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 209
+      },
+      {
+        "anchor": "### 전수 목록",
+        "doc": "gapFixes",
+        "end": 236,
+        "line": 215,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+        "start": 215
+      }
+    ],
+    "id": "R.chest-areas-implementation",
+    "layer": "참고",
+    "sourceCommit": "49bd748a8fcd390fc658166ca662ddb13b5c5c0d",
+    "sourceLocations": [
+      {
+        "end": 213,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 209
+      },
+      {
+        "end": 236,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+        "start": 215
+      }
+    ],
+    "status": "참고·구현 해법·사용자 결정 아님",
+    "summary": "상자 공용으로 기억 상자가 늘어 판단 요청 후보가 255를 넘는 문제를 검수에서 반복 발견해, 상자를 후보로 만드는 생산자 18곳을 공통 규칙으로 묶었다. 40개 이하면 그대로 두고, 넘으면 구역→작은 구역→상자 단계로 나눠 한 단계가 40개 이하가 되게 하며 모든 상자에 닿는다. 후보 상한·페이지는 만들지 않았다. 40이라는 수와 구역 분할은 HEAD·구현 판단이다.",
+    "title": "상자가 많을 때 구역 단계로 나누는 구현 해법(40개 기준)",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "### 공통 규칙",
+          "doc": "gapFixes",
+          "end": 213,
+          "line": 209,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/fixes.md",
+          "sha256": "0ff64fd6d00ee1855618a48239b43902af430c910f8ad201cfeab56cac22b4b7",
+          "start": 209
+        }
+      ],
+      "from": "P.chests-shared",
+      "id": "E255",
+      "kind": "참고: 상자가 많을 때의 구현 해법(사용자 결정 아님)",
+      "to": "R.chest-areas-implementation",
+      "type": "reference"
+    }
+  ]
+}

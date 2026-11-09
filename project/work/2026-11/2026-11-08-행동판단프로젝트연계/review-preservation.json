@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "method": "현재 integrate의 addBehavior 호출만 비활성화한 검수용 사본을 메모리 생성하여 기존 요소와 대조. 변경 전 역사 스냅샷과의 대조가 아님.",
+  "priorNodes": 7870,
+  "priorEdges": 30388,
+  "currentNodes": 27015,
+  "currentEdges": 49591,
+  "allExistingNodeFieldsPreserved": true,
+  "allExistingEdgesPreserved": true,
+  "otherGraphSectionsPreserved": true,
+  "validationPreserved": true,
+  "staleChecks": [
+    "current empty",
+    "synthetic wrong hash detected",
+    "synthetic missing input detected"
+  ]
+}

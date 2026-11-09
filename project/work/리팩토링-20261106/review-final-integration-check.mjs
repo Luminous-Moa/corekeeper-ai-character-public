@@ -1,0 +1,17 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import cp from 'node:child_process';import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url)),repo='C:/Dev/CoreKeeperModSDK',sha='902721ec505df42d74d0b2d245ed34a049faadad';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,'')),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const git=(...a)=>cp.execFileSync('git',['-C',repo,...a],{maxBuffer:20*1024*1024});
+console.log('repo',JSON.stringify({head:git('rev-parse','HEAD').toString().trim(),branch:git('branch','--show-current').toString().trim()}));
+const before=read(path.join(root,'20-before-merge.json')),after=read(path.join(root,'20-after-gates.json'));
+for(const kind of ['dirty','untracked'])console.log('preserve',JSON.stringify({kind,count:before[kind].length,recordedEqual:JSON.stringify(before[kind])===JSON.stringify(after[kind]),changedNow:before[kind].filter(x=>hash(path.join(repo,x.path))!==x.sha256).map(x=>x.path)}));
+const mod='C:/Program Files (x86)/Steam/steamapps/common/Core Keeper/CoreKeeper_Data/StreamingAssets/Mods/AIPlayerSpike';
+const cs=git('ls-tree','-r','--name-only',sha,'Assets/AIPlayerSpike/Scripts').toString().trim().split('\n').filter(x=>x.endsWith('.cs'));
+const normal=b=>b.toString('utf8').replaceAll('\r\n','\n');
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(d,x.name)):[path.join(d,x.name)]);
+const rel=p=>p.replace('Assets/AIPlayerSpike/','Scripts/');
+const installed=walk(mod).filter(x=>x.endsWith('.cs')).map(x=>path.relative(mod,x).replaceAll('\\','/'));
+const manifest=read(path.join(mod,'ModManifest.json')).files.map(x=>x.path);
+console.log('installed',JSON.stringify({cs:cs.length,actual:installed.length,manifest:manifest.length,differences:cs.filter(p=>normal(git('show',sha+':'+p))!==normal(fs.readFileSync(path.join(mod,rel(p))))),mainDifferences:cs.filter(p=>normal(git('show',sha+':'+p))!==normal(fs.readFileSync(path.join(repo,p)))),missing:cs.map(rel).filter(x=>!installed.includes(x)),extra:installed.filter(x=>!cs.map(rel).includes(x)),manifestMissing:manifest.filter(x=>!fs.existsSync(path.join(mod,x))),manifestExtra:manifest.filter(x=>!cs.map(rel).includes(x))}));
+const aiRoot='C:/Users/<USER>/AppData/LocalLow/Pugstorm/Core Keeper/AIPlayers',aiBefore=read('C:/Dev/_scratch/refactor-maint-final-install-20261106/AI-all-before.json');
+console.log('AI preserve',JSON.stringify({count:aiBefore.length,changed:aiBefore.filter(x=>hash(path.join(aiRoot,x.path.replace(/^[/\\]+/,''))).toLowerCase()!==x.sha256.toLowerCase()).map(x=>x.path)}));

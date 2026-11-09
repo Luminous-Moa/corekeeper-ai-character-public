@@ -1,0 +1,1207 @@
+{
+  "checks": [
+    {
+      "anchors": [
+        "IsProcessAutoCrafter",
+        "CraftingType.ProcessResources"
+      ],
+      "endLine": 38,
+      "id": "crafting-cd",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Components/CraftingCD.cs",
+      "startLine": 22,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "ProcessResources"
+      ],
+      "endLine": 14,
+      "id": "crafting-type",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Base/CraftingType.cs",
+      "startLine": 1,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "case CraftingType.ProcessResources:",
+        "processResourcesCraftingUI.ShowCraftingUI()"
+      ],
+      "endLine": 809,
+      "id": "ui-manager",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/UIManager.cs",
+      "startLine": 799,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "hideRecipes",
+        "recipeUI.HideContainerUI()",
+        "recipeUI.ShowContainerUI()"
+      ],
+      "endLine": 83,
+      "id": "pr-ui-show",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+      "startLine": 35,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "requiredObjectsToCraft.Count == 1",
+        "HasMaterialsInCraftingInventoryToCraftRecipe",
+        "Create.ActivateRecipeSlot(activeCraftingHandler.craftingEntity, player.entity, 1, mod1, visibleSlotIndex)"
+      ],
+      "endLine": 109,
+      "id": "pr-ui-activate",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+      "startLine": 93,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "RequiresElectricity()",
+        "HasElectricity()"
+      ],
+      "endLine": 142,
+      "id": "pr-ui-electricity",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/ProcessResourcesCraftingUI.cs",
+      "startLine": 125,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "canActivateCrafting",
+        "timeBetweenCraftsWhenHolding = 0.1f",
+        "ActivateRecipeSlot(inventorySlotIndex, mod1, mod2)"
+      ],
+      "endLine": 131,
+      "id": "recipe-slot-ui",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/RecipeSlotUI.cs",
+      "startLine": 91,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "CraftAction.ActivateRecipeSlot",
+        "int0 = multiplier",
+        "bool0 = mod1",
+        "int1 = recipeIndex"
+      ],
+      "endLine": 450,
+      "id": "create-action",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/Create.cs",
+      "startLine": 438,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "worldIsReadOnly",
+        "adminPrivileges <= 0",
+        "inventories.Add(in craftActionData2.mainInventoryEntity)",
+        "GetNearbyChestsForCraftingByDistance"
+      ],
+      "endLine": 436,
+      "id": "craft-job-inputs",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+      "startLine": 409,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "case CraftAction.ActivateRecipeSlot:",
+        "InventoryUtility.ActivateRecipeSlot("
+      ],
+      "endLine": 464,
+      "id": "craft-job-dispatch",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUpdateSystem.cs",
+      "startLine": 462,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "if (recipeInfo.objectID == ObjectID.None)",
+        "requiredObjectsToCraft.Length == 1",
+        "MoveAllToOrDrop(in inventoryHandlerShared, craftingEntity, 0, playerEntity, 0, -1, position)",
+        "MoveAllToOrDrop(in inventoryHandlerShared, craftingEntity, componentData.outputSlotIndex, playerEntity, 0, -1, position)",
+        "requiredObjectsToCraft[0].amount * 10",
+        "FindAndMoveTo("
+      ],
+      "endLine": 3102,
+      "id": "server-activate",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 3063,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "bufferData.Length > index",
+        "PugDatabase.HasObject"
+      ],
+      "endLine": 2235,
+      "id": "get-recipe-info",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 2214,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "GetAnyMaterialCostMultiplier",
+        "* multiplier",
+        "if (num2 < num)"
+      ],
+      "endLine": 2764,
+      "id": "has-materials",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 2743,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "bufferData2[j].variation == objectData.variation",
+        "num2 -= num3;",
+        "MoveAmount("
+      ],
+      "endLine": 2794,
+      "id": "find-and-move",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 2766,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "ObjectIsValidToPutInInventory",
+        "amount < 9999",
+        "for (int i = 0; i < inventoryBuffer.Length; i++)"
+      ],
+      "endLine": 588,
+      "id": "try-find-slot",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 509,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "TryFindSlotToAddTo(",
+        "if (num == -1)",
+        "GetAmountToMoveToInventory("
+      ],
+      "endLine": 647,
+      "id": "try-move",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 607,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "9999 - objectDataTo.amount"
+      ],
+      "endLine": 2564,
+      "id": "move-amount-cap",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 2549,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "for (int i = otherStartIndex; i < otherEndIndex; i++)",
+        "for (int j = otherStartIndex; j < otherEndIndex; j++)",
+        "DropItem(in inventoryHandlerShared, ourInventoryEntity, indexFrom, int.MaxValue, position)"
+      ],
+      "endLine": 3244,
+      "id": "move-all-or-drop",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 3206,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "isFirstTimeFullyPredictingTick",
+        "EntityUtility.DropNewEntity("
+      ],
+      "endLine": 735,
+      "id": "drop-item",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 695,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "inventoryAutoTransferEnabledLookup.HasComponent(outHits[i].Entity)",
+        "nativeList.Sort()",
+        "math.min(nearbyChestsEntityWithDistanceSorted.Length, maxInventories)"
+      ],
+      "endLine": 3433,
+      "id": "nearby-chests",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 3389,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "10f, 20"
+      ],
+      "endLine": 3799,
+      "id": "nearby-chests-crafting",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 3796,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "objectData2.amount >= 9999",
+        "!entityObjectInfo.isStackable",
+        "canOnlyUseAnyMaterialsWithTag",
+        "* objectToCraft.amount"
+      ],
+      "endLine": 1706,
+      "id": "can-craft",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 1611,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "useCraftingCostMultiplier ? GetAnyMaterialCostMultiplier",
+        "ConsumeObject(",
+        "ConsumeObjectWithTag(",
+        "entityObjectInfo.initialAmount * objectToCraft.amount",
+        "dynamicBuffer2[craftingCD.outputSlotIndex]",
+        "PlayerController.AddSkill(playerEntity, SkillID.Crafting"
+      ],
+      "endLine": 1854,
+      "id": "craft",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 1709,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "autoTransferEnabled",
+        "InventoryAutoTransferEnabledCD"
+      ],
+      "endLine": 202,
+      "id": "converter-auto-transfer",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/InventoryConverter.cs",
+      "startLine": 199,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "SetupCanCraftBuffer(craftingAuthoring)",
+        "outputSlotIndex = AddToBuffer<ContainedObjectsBuffer>(default)"
+      ],
+      "endLine": 328,
+      "id": "converter-output-slot",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.ECS.Conversion/InventoryConverter.cs",
+      "startLine": 278,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "BigEntityCraftingDataChangedTriggerCD",
+        "SetChangedVersionFilter"
+      ],
+      "endLine": 83,
+      "id": "start-craft-query",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationStartCraftSystem.cs",
+      "startLine": 68,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "inventoryEntities.Add(in value)",
+        "InventoryUtility.CanCraft(",
+        "reference2.currentlyCraftingIndex = i",
+        "craftingTimeOverride > 0f",
+        "componentData2.isActive",
+        "math.min(1f, reference.timeLeftToCraft)"
+      ],
+      "endLine": 226,
+      "id": "start-craft",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationStartCraftSystem.cs",
+      "startLine": 180,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "DidChange(ref pugAutomationTypeHandle",
+        "DidChange(ref containedObjectsBufferTypeHandle",
+        "DidOrderChange"
+      ],
+      "endLine": 52,
+      "id": "trigger-changed",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/TriggerCrafterChangedSystem.cs",
+      "startLine": 37,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "!componentData2.isActive",
+        "reference.timeLeftToCraft--",
+        "StartTimer(ecb, entity2, 1f",
+        "InventoryUtility.Craft(in inventoryHandlerShared, value, mainEntityObjectData, inventoryEntities, objectToCraft, 0, componentData4.Position, useCraftingCostMultiplier: false)",
+        "reference2.currentlyCraftingIndex = -1"
+      ],
+      "endLine": 222,
+      "id": "craft-finish",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationCraftingSystem.cs",
+      "startLine": 162,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "hasEnoughElectricityToPowerStuff"
+      ],
+      "endLine": 1125,
+      "id": "automation-active",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationInstantiateSystem.cs",
+      "startLine": 1125,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "ObjectIsValidToPutInInventory",
+        "acceptsObjectsWithTags",
+        "acceptsObjectIds",
+        "SlotRequirementFulfillment.FailedRequirement"
+      ],
+      "endLine": 2455,
+      "id": "object-valid",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 2368,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "public struct RecipeInfo",
+        "requiredObjectsToCraft => _objectInfo.requiredObjectsToCraft"
+      ],
+      "endLine": 36,
+      "id": "recipe-info",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/CraftingHandler.cs",
+      "startLine": 14,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "public static bool CanPickup(",
+        "componentData.outputSlotIndex >= 0",
+        "dynamicBuffer[componentData.outputSlotIndex].objectID == ObjectID.None"
+      ],
+      "endLine": 1574,
+      "id": "can-pickup",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Other/Inventory/InventoryUtility.cs",
+      "startLine": 1562,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "PlacedAtPosition.Add(mover.stop, mover.inventoryEntity)",
+        "DropInEndOfMoveLookup"
+      ],
+      "endLine": 208,
+      "id": "mover-placed",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationSystem.cs",
+      "startLine": 192,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "InventoryUtility.CanPickup(",
+        "StorageAtPosition.TryAdd",
+        "ObjectIsValidToPutInInventory",
+        "Create.MoveOrDropAmount(item, 0, storage.inventoryEntity",
+        "Create.DropAllItems(item"
+      ],
+      "endLine": 2434,
+      "id": "storage-place",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationSystem.cs",
+      "startLine": 2398,
+      "status": "pass"
+    },
+    {
+      "anchors": [
+        "AutomationType.Crafter",
+        "case CraftingType.ProcessResources:",
+        "CraftingTimerTriggerCD",
+        "slotIndex = num4"
+      ],
+      "endLine": 1365,
+      "id": "automation-crafter",
+      "path": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/게임원본-상호작용/code/Pug.Automation/Pug.Automation/PugAutomationInstantiateSystem.cs",
+      "startLine": 1294,
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "-3493388418596782133",
+      "id": "raw-crafting-3905",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "-3493388418596782133",
+      "id": "raw-inventory-3905",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "-3870210828545831005",
+      "id": "raw-crafting-4009",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "-3870210828545831005",
+      "id": "raw-inventory-4009",
+      "status": "pass"
+    },
+    {
+      "checked": {},
+      "class": "ElectricityAuthoring",
+      "gameObject": "-3870210828545831005",
+      "id": "raw-electricity-4009",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "-5581143035285179682",
+      "id": "raw-crafting-4015",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "-5581143035285179682",
+      "id": "raw-inventory-4015",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "-2416314992690142722",
+      "id": "raw-crafting-1200",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "-2416314992690142722",
+      "id": "raw-inventory-1200",
+      "status": "pass"
+    },
+    {
+      "checked": {},
+      "class": "ElectricityAuthoring",
+      "gameObject": "-2416314992690142722",
+      "id": "raw-electricity-1200",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "2415615054703119651",
+      "id": "raw-crafting-4044",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "2415615054703119651",
+      "id": "raw-inventory-4044",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "-621031106254733863",
+      "id": "raw-crafting-4032",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "-621031106254733863",
+      "id": "raw-inventory-4032",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "craftingType": 1
+      },
+      "class": "CraftingAuthoring",
+      "gameObject": "-1800024213135492140",
+      "id": "raw-crafting-4004",
+      "status": "pass"
+    },
+    {
+      "checked": {
+        "autoTransferEnabled": 0,
+        "sizeX": 1,
+        "sizeY": 1
+      },
+      "class": "InventoryAuthoring",
+      "gameObject": "-1800024213135492140",
+      "id": "raw-inventory-4004",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "-3493388418596782133",
+      "id": "raw-storage-3905",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "-1800024213135492140",
+      "id": "raw-storage-4004",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "-3870210828545831005",
+      "id": "raw-storage-4009",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "-5581143035285179682",
+      "id": "raw-storage-4015",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "-621031106254733863",
+      "id": "raw-storage-4032",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "2415615054703119651",
+      "id": "raw-storage-4044",
+      "status": "pass"
+    },
+    {
+      "class": "AutomatedStorageAuthoring",
+      "gameObject": "-2416314992690142722",
+      "id": "raw-storage-1200",
+      "status": "pass"
+    },
+    {
+      "clickSources": [
+        3905,
+        4004,
+        4009,
+        4015,
+        4032
+      ],
+      "coalTags": [
+        38
+      ],
+      "id": "recipe-material-vs-input-slot",
+      "moveSources": [
+        4004,
+        4009,
+        4015,
+        4032
+      ],
+      "status": "pass",
+      "table": {
+        "1200": {
+          "inputSlotAccepts": {
+            "ids": [],
+            "tags": [
+              28
+            ]
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 371,
+              "product": 1221,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1220
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 374,
+              "product": 1224,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1223
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 377,
+              "product": 1227,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1226
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 383,
+              "product": 1233,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1232
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 380,
+              "product": 1230,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1229
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 389,
+              "product": 1239,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1238
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 386,
+              "product": 1236,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1235
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 392,
+              "product": 1242,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1241
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 395,
+              "product": 1245,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1244
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 399,
+              "product": 1249,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1248
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 401,
+              "product": 1251,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1250
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 405,
+              "product": 1255,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1254
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 407,
+              "product": 1257,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1256
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 410,
+              "product": 1260,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1259
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 413,
+              "product": 1263,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1262
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 419,
+              "product": 1269,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1268
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 1800.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 416,
+              "product": 1266,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1265
+                }
+              ]
+            }
+          ]
+        },
+        "3905": {
+          "inputSlotAccepts": {
+            "ids": [],
+            "tags": [
+              17,
+              18
+            ]
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 17,
+              "clickGate": true,
+              "craftingTime": 30.0,
+              "materialAcceptedByInputSlot": false,
+              "objectsIndex": 3095,
+              "product": 10200,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 5192
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 18,
+              "clickGate": true,
+              "craftingTime": 30.0,
+              "materialAcceptedByInputSlot": false,
+              "objectsIndex": 3116,
+              "product": 10206,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 2,
+                  "objectID": 5192
+                }
+              ]
+            }
+          ]
+        },
+        "4004": {
+          "inputSlotAccepts": {
+            "ids": [
+              1500,
+              1505,
+              1510
+            ],
+            "tags": []
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 7.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 348,
+              "product": 1001,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1500
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 12.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 352,
+              "product": 1005,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1505
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 17.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 349,
+              "product": 1002,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1510
+                }
+              ]
+            }
+          ]
+        },
+        "4009": {
+          "inputSlotAccepts": {
+            "ids": [
+              1610,
+              1611,
+              1612,
+              1613
+            ],
+            "tags": []
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 10.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 359,
+              "product": 1030,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1610
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 10.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 360,
+              "product": 1031,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1612
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 10.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 361,
+              "product": 1032,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1613
+                }
+              ]
+            }
+          ]
+        },
+        "4015": {
+          "inputSlotAccepts": {
+            "ids": [
+              1520,
+              1521,
+              1522
+            ],
+            "tags": []
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 22.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 350,
+              "product": 1003,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1520
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 27.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 351,
+              "product": 1004,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1521
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 27.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 353,
+              "product": 1006,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1522
+                }
+              ]
+            }
+          ]
+        },
+        "4032": {
+          "inputSlotAccepts": {
+            "ids": [
+              1523,
+              1524,
+              1525,
+              1526
+            ],
+            "tags": []
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 27.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 354,
+              "product": 1007,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1523
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 27.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 355,
+              "product": 1008,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1524
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 27.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 356,
+              "product": 1009,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1525
+                }
+              ]
+            },
+            {
+              "canOnlyUseAnyMaterialsWithTag": 0,
+              "clickGate": true,
+              "craftingTime": 27.0,
+              "materialAcceptedByInputSlot": true,
+              "objectsIndex": 357,
+              "product": 1010,
+              "requiredObjectsToCraft": [
+                {
+                  "amount": 1,
+                  "objectID": 1526
+                }
+              ]
+            }
+          ]
+        },
+        "4044": {
+          "inputSlotAccepts": {
+            "ids": [],
+            "tags": [
+              29
+            ]
+          },
+          "recipes": [
+            {
+              "canOnlyUseAnyMaterialsWithTag": 29,
+              "clickGate": false,
+              "craftingTime": 10.0,
+              "materialAcceptedByInputSlot": null,
+              "objectsIndex": 358,
+              "product": 1025,
+              "requiredObjectsToCraft": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "count": 7,
+      "id": "process-resources-population",
+      "rawCraftingAuthoringLinesWithCraftingType1": [
+        28914,
+        32584,
+        43743,
+        69100,
+        69335,
+        74095,
+        75121
+      ],
+      "status": "pass"
+    }
+  ],
+  "runtimeTested": false,
+  "status": "pass"
+}

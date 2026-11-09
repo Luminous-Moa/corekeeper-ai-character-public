@@ -1,0 +1,265 @@
+﻿{
+    "schema_version":  1,
+    "status":  "complete_with_observation_limits",
+    "basis":  "A1-A3 actual-screen-derived inference; no existing intent, product code, or existing graph read",
+    "sources":  [
+                    "../A1/screen-states.md",
+                    "../A1/observations.json",
+                    "../A1/manifest.json",
+                    "../A2/index.md",
+                    "../A2/manifest.json",
+                    "../A3/new-user.md",
+                    "../A3/new-user-05-player-management.png"
+                ],
+    "nodes":  [
+                  {
+                      "id":  "CKAI-CORE-01",
+                      "type":  "제품코어",
+                      "document":  "product-core.md"
+                  },
+                  {
+                      "id":  "CKAI-JOURNEY-01",
+                      "type":  "유저저니",
+                      "document":  "user-journey.md"
+                  },
+                  {
+                      "id":  "CKAI-IA-01",
+                      "type":  "IA",
+                      "document":  "ia.md"
+                  },
+                  {
+                      "id":  "CKAI-ACT-01",
+                      "type":  "유저 활동",
+                      "document":  "activity-observe-companion.md"
+                  }
+              ],
+    "ia":  [
+               {
+                   "screen_id":  "CKAI-01",
+                   "name":  "월드",
+                   "ia_group":  "플레이 공간"
+               },
+               {
+                   "screen_id":  "CKAI-02",
+                   "name":  "채팅",
+                   "ia_group":  "채팅과 AI 안내"
+               },
+               {
+                   "screen_id":  "CKAI-03",
+                   "name":  "게임 메뉴",
+                   "ia_group":  "게임 관리"
+               },
+               {
+                   "screen_id":  "CKAI-04",
+                   "name":  "플레이어 관리",
+                   "ia_group":  "게임 관리"
+               },
+               {
+                   "screen_id":  "CKHUD-01",
+                   "name":  "공통 HUD",
+                   "ia_group":  "공통 표시"
+               }
+           ],
+    "activities":  [
+                       {
+                           "id":  "CKAI-ACT-01",
+                           "document":  "activity-observe-companion.md",
+                           "steps":  [
+                                         {
+                                             "id":  "CKAI-ACT-01-S01",
+                                             "action":  "주변 캐릭터와 이름표를 살핀다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-01#1-1"
+                                                                    ],
+                                             "evidence_and_result":  "A1 01-world, A3 첫 화면. Claude 이름을 확인; 이름표만으로 AI 여부를 확정하지 않음"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S02",
+                                             "action":  "Escape로 메뉴를 열고 접속한 이름을 읽는다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-03#10",
+                                                                        "CKAI-03#10-1",
+                                                                        "CKAI-03#10-2"
+                                                                    ],
+                                             "evidence_and_result":  "A1 12-game-menu, A3 2단계. Luminous와 Claude가 보임"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S03",
+                                             "action":  "AI 설명을 찾으려 플레이어 관리를 열어 본다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-03#7",
+                                                                        "CKAI-03#12",
+                                                                        "CKAI-04#2-1",
+                                                                        "CKAI-04#3-1"
+                                                                    ],
+                                             "evidence_and_result":  "A3만 방문. 클릭 후 SPACE로 진입. 관리자/차단 관리여서 원하는 AI 설명을 찾지 못하고 Escape로 돌아옴. A2 E14 추가 원본과 대응"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S04",
+                                             "action":  "월드로 돌아와 Return으로 채팅을 열고 행동 메시지를 읽는다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-02#2",
+                                                                        "CKAI-02#3",
+                                                                        "CKAI-02#2-2",
+                                                                        "CKAI-02#2-3",
+                                                                        "CKAI-02#2-4",
+                                                                        "CKAI-02#2-5"
+                                                                    ],
+                                             "evidence_and_result":  "A1 과거 로그의 개별 메시지, A3 실행 중 자연 발생 메시지. 공격·회피·대기 등을 읽음; 사용자 조작으로 행동을 시킨 것이 아님"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S05",
+                                             "action":  "조회 문법을 찾는다. A1 분기에서는 `/ai`를 제출해 목록을 읽는다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-02#3",
+                                                                        "CKAI-02#2-6",
+                                                                        "CKAI-02#2-7"
+                                                                    ],
+                                             "evidence_and_result":  "A1 03-ai-draft→04-ai-help. Claude 켜짐/들어와 있음 및 다른 이름의 꺼짐 표시; on·off·goal의 일부 안내만 표시. A3에서는 문법을 발견하지 못해 전송 없음"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S06",
+                                             "action":  "더 자세한 조회 경로에서 멈춘다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-02#3",
+                                                                        "CKAI-02#2-7"
+                                                                    ],
+                                             "evidence_and_result":  "A1 `/ai Claude`는 입력만 하고 Escape로 취소. 실행 결과 없음. A3는 빈 입력을 유지"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S07",
+                                             "action":  "이전 안내를 찾으려 로그 위에서 스크롤한다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-02#2",
+                                                                        "CKHUD-01#5",
+                                                                        "CKHUD-01#5-10"
+                                                                    ],
+                                             "evidence_and_result":  "A1·A3 모두 과거 안내를 찾지 못했고 퀵슬롯 1→0 변화 관측. 스크롤 기능이나 입력 전달 구현은 미확인"
+                                         },
+                                         {
+                                             "id":  "CKAI-ACT-01-S08",
+                                             "action":  "입력을 닫고 퀵슬롯을 복원한 뒤 확인을 끝낸다",
+                                             "screen_element_ids":  [
+                                                                        "CKAI-02#3",
+                                                                        "CKHUD-01#5-1",
+                                                                        "CKAI-01#1"
+                                                                    ],
+                                             "evidence_and_result":  "Escape, 숫자 1. 메뉴·입력 닫힘과 1번 선택 복원. A1은 이후 메뉴 확인을 하고 월드로 복귀; A3는 여기서 종료"
+                                         }
+                                     ],
+                           "next_activity_ids":  [
+
+                                                 ],
+                           "observation_result":  "partial",
+                           "limitations":  "A1 /ai response and A3 command-discovery failure are separate paths; no full status, persistent goal, bag, memory or mutation verification"
+                       }
+                   ],
+    "links":  [
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-01#1"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-01#1-1"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2-2"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2-3"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2-4"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2-5"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2-6"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#2-7"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-02#3"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-03#10"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-03#10-1"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-03#10-2"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-03#12"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-03#7"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-04#2-1"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKAI-04#3-1"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKHUD-01#5"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKHUD-01#5-1"
+                  },
+                  {
+                      "source":  "CKAI-ACT-01",
+                      "type":  "유저 활동→화면요소",
+                      "target":  "CKHUD-01#5-10"
+                  }
+              ],
+    "function_links":  [
+
+                       ],
+    "policy_links":  [
+
+                     ]
+}

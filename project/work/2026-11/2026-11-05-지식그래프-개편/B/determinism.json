@@ -1,0 +1,27 @@
+{
+  "method": "Two fresh Roslyn and Acorn extraction runs over exact Git blob snapshot",
+  "equal": true,
+  "first": {
+    "csharp.raw.json": "c3047c22a507afff3633565e1133f9314ffd7d034684b0cfe9f85b18f720e79d",
+    "javascript.raw.json": "fc6f96c9599efa5b26fb9e1acf79df11a53fb4da765fb571177708bd4b68e13e",
+    "code.graph.json": "2c2a423b2119748f6d3a28e048de288b6aef25eabb0c72d70eb88bc1f66ee2c3",
+    "validation.json": "84bd19d83815e5139bd5827baf5746af22490451231b1e7975c32d788a8296ba",
+    "boundaries.json": "68de9c5b1d9b433c624d23e0e5c1cfec9462a4ef7677ac5d0f1b4d71403584cf",
+    "snapshot.manifest.json": "0f42c53fbbcc8e5e179d2f61f72014e7390d78be1748aa493fb743fe2a4ab94a",
+    "call-forms.json": "1d285706c273e1102d990c7f59fe9056a11e668a25a403a44ffca8a9f0ab465a"
+  },
+  "second": {
+    "csharp.raw.json": "c3047c22a507afff3633565e1133f9314ffd7d034684b0cfe9f85b18f720e79d",
+    "javascript.raw.json": "fc6f96c9599efa5b26fb9e1acf79df11a53fb4da765fb571177708bd4b68e13e",
+    "code.graph.json": "2c2a423b2119748f6d3a28e048de288b6aef25eabb0c72d70eb88bc1f66ee2c3",
+    "validation.json": "84bd19d83815e5139bd5827baf5746af22490451231b1e7975c32d788a8296ba",
+    "boundaries.json": "68de9c5b1d9b433c624d23e0e5c1cfec9462a4ef7677ac5d0f1b4d71403584cf",
+    "snapshot.manifest.json": "0f42c53fbbcc8e5e179d2f61f72014e7390d78be1748aa493fb743fe2a4ab94a",
+    "call-forms.json": "1d285706c273e1102d990c7f59fe9056a11e668a25a403a44ffca8a9f0ab465a"
+  },
+  "tools": {
+    "node": "v24.21.0",
+    "dotnet": "10.0.403"
+  },
+  "excluded": "B7 inference and semantic meanings are separately authored input, not extraction output"
+}

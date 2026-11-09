@@ -1,0 +1,6 @@
+requests 98; providers celeris=celeris-1.1-decision $0.004/M; reps 2; calls 196 (cap 600)
+requests 98
+celeris (celeris-1.1-decision): answers 196/196, latency p50 199ms p95 230ms max 602ms, tokens/call 1784, est. $0.001398
+
+id	options	logged	celeris
+c100-S2.jsonl:1	7	-	c7 2/2

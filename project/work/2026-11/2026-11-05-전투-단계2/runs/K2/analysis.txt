@@ -1,0 +1,69 @@
+R1 MushroomBrute 1: kill at +16.8s; brute end hp 0, damage 540 (1-damage 3, big 17 = 537)
+   AI hits: -
+   windows: #1: 7 big hits, 230; #2: 7 big hits, 230; #3: 3 big hits, 77
+   charge #1 -> AI:Claude: not hit, connected after 1.20s run 3.5, first move +0.47s, last pick step:left:2 miss2.0/wall6.5 (2 picks in it)
+   charge #2 -> AI:Claude: not hit, connected after 1.17s run 3.1, first move +0.40s, last pick step:left:1 hit@0.30 (3 picks in it)
+   charge #3 -> AI:Claude: HIT, connected after 0.80s run 1.2, first move +0.73s, last pick step:left:2 miss1.6/wall7.0 (1 picks in it)
+   decisions 44, latency p50 0.27 p95 0.57 max 1.87; candidates p50 21 p95 23 max 24; tokens p50 5014 p95 7586; urgent 3 (request dropped 3)
+   choices: hitnext 15, step_left 9, attack 6, combo_approach-hit 4, hit 4, combo_hit-left 2, step_away 2, combo_hit-right 1, step_backleft 1
+   short action ends: {"짧은 이동 DONE":7,"복합 행동 CANCELLED":6,"한 번 치기 DONE":11,"한 번 치기 CANCELLED":1,"짧은 이동 CANCELLED":1}; start failures 0; discards {"계속할 기술이 이미 끝남":2,"계속하라던 행동이 이미 바뀜":1}; failed calls 0
+   composite picks: combo:approach-hit run #7, combo:hit-left:2 run #9, combo:hit-right:2 run #10, combo:approach-hit run #21, combo:hit-left:2 run #23, combo:approach-hit run #31
+   step move-start along p50 0.13 p95 0.13 (n 8; prior standstill 8)
+R2 MushroomBrute 1: kill at +17.2s; brute end hp 0, damage 540 (1-damage 1, big 16 = 539)
+   AI hits: -
+   windows: #1: 5 big hits, 172; #2: 5 big hits, 173; #3: 6 big hits, 194
+   charge #1 -> AI:Claude: HIT, connected after 1.40s run 4.7, first move +0.37s, last pick combo:approach-hit miss0.6/wall0.0 (2 picks in it)
+   charge #2 -> AI:Claude: not hit, connected after 1.43s run 4.9, first move +0.53s, last pick step:left:2 miss1.7/wall5.0 (2 picks in it)
+   charge #3 -> AI:Claude: not hit, connected after 1.10s run 3, first move +0.40s, last pick step:left:2 miss1.7/wall2.8 (1 picks in it)
+   decisions 51, latency p50 0.27 p95 0.44 max 0.47; candidates p50 21 p95 24 max 24; tokens p50 5274 p95 7894; urgent 3 (request dropped 3)
+   choices: step_left 8, combo_approach-hit 6, combo_hit-left 6, attack 5, step_backright 5, combo_hit-right 4, away_near 3, combo_frontleft_1-hit 3, hit 3, step_frontleft 2, step_right 2, combo_hit-away 2, hitnext 1, step_away 1
+   short action ends: {"짧은 이동 DONE":9,"복합 행동 CANCELLED":14,"복합 행동 FAILED":1,"복합 행동 DONE":2,"한 번 치기 DONE":2,"한 번 치기 CANCELLED":1,"짧은 이동 CANCELLED":1}; start failures 0; discards {"계속할 기술이 이미 끝남":5}; failed calls 0
+   composite picks: combo:approach-hit run #43, combo:approach-hit run #45, combo:frontleft:1-hit run #47, combo:hit-right:2 run #48, combo:hit-right:3 run #49, combo:approach-hit run #58, combo:hit-left:2 run #59, combo:hit-away:2 run #60, combo:hit-left:2 run #61, combo:hit-right:2 run #62, combo:hit-left:2 run #63, combo:approach-hit run #70, combo:hit-left:2 run #71, combo:hit-left:3 run #72, combo:hit-left:2 run #73, combo:hit-right:2 run #74, combo:hit-away:2 run #75
+   step move-start along p50 0.10 p95 0.13 (n 14; prior standstill 14)
+R3 MushroomBrute 1: down at +9.1s; brute end hp 402, damage 138 (1-damage 0, big 4 = 138)
+   AI hits: VITALS: one hit from MushroomBrute took health 44 -> 0 (remembered: this kind can do at le | VITALS: DOWN #1 at (-30.1,40.4) hunger 99; health [12s ago 105, 11s ago 105, 9s ago 105, 8
+   windows: #1: 4 big hits, 138; #2: 0 big hits, 0
+   charge #1 -> AI:Claude: HIT, connected after 1.77s run 6.9, first move +0.47s, last pick attack:56445 miss2.4/wall4.9 (2 picks in it)
+   charge #2 -> AI:Claude: HIT, connected after 1.40s run 4.8, first move +0.40s, last pick attack:56445 miss1.9/wall2.9 (2 picks in it)
+   decisions 26, latency p50 0.27 p95 0.37 max 0.40; candidates p50 21 p95 23 max 24; tokens p50 5386 p95 7506; urgent 2 (request dropped 2)
+   choices: step_left 6, attack 6, combo_approach-hit 3, away_near 3, combo_hit-left 3, step_frontleft 1, approach 1, combo_hit-away 1, step_away 1, step_backleft 1
+   short action ends: {"짧은 이동 DONE":5,"사거리까지 접근 CANCELLED":1,"복합 행동 FAILED":2,"복합 행동 CANCELLED":4}; start failures 1; discards {"계속할 기술이 이미 끝남":3}; failed calls 0
+   composite picks: combo:approach-hit run #88, combo:hit-left:2 run #91, combo:approach-hit run #93, combo:hit-left:2 run #94, combo:hit-away:2 run #95, combo:hit-left:2 run #96
+   step move-start along p50 0.10 p95 0.18 (n 6; prior standstill 6)
+R4 MushroomBrute 1: kill at +18.3s; brute end hp 0, damage 540 (1-damage 3, big 17 = 537)
+   AI hits: -
+   windows: #1: 7 big hits, 233; #2: 6 big hits, 203; #3: 4 big hits, 101
+   charge #1 -> AI:Claude: not hit, connected after 1.93s run 7.5, first move +0.40s, last pick approach:42988 miss2.7/wall1.8 (4 picks in it)
+   charge #2 -> AI:Claude: not hit, connected after 1.90s run 7.7, first move +0.50s, last pick attack:42988 miss1.2/wall1.6 (4 picks in it)
+   charge #3 -> AI:Claude: not hit, connected after 1.97s run 7.8, first move +0.60s, last pick attack:42988 miss1.1/wall4.9 (2 picks in it)
+   decisions 54, latency p50 0.27 p95 0.47 max 0.73; candidates p50 20 p95 22 max 24; tokens p50 5210 p95 7949; urgent 3 (request dropped 3)
+   choices: hitnext 20, step_left 12, attack 8, combo_approach-hit 3, hit 3, approach 2, combo_hit-away 2, step_right 2, combo_hit-right 1, combo_hit-left 1
+   short action ends: {"짧은 이동 DONE":6,"사거리까지 접근 DONE":2,"복합 행동 FAILED":2,"한 번 치기 DONE":13,"한 번 치기 CANCELLED":2,"복합 행동 CANCELLED":3,"복합 행동 DONE":1}; start failures 0; discards {"계속할 기술이 이미 끝남":5,"대상 적이 없음":1}; failed calls 0
+   composite picks: combo:approach-hit run #111, combo:hit-right:2 run #119, combo:hit-away:2 run #120, combo:approach-hit run #125, combo:approach-hit run #137, combo:hit-left:2 run #139
+   step move-start along p50 0.13 p95 0.17 (n 7; prior standstill 7)
+R5 MushroomBrute 1: kill at +18.6s; brute end hp 0, damage 540 (1-damage 2, big 17 = 538)
+   AI hits: -
+   windows: #1: 6 big hits, 198; #2: 7 big hits, 236; #3: 4 big hits, 104
+   charge #1 -> AI:Claude: not hit, connected after 2.20s run 9.3, first move +0.40s, last pick attack:83059 miss2.0/wall7.1 (2 picks in it)
+   charge #2 -> AI:Claude: not hit, connected after 2.29s run 10.1, first move +0.39s, last pick attack:83059 miss1.3/wall5.9 (3 picks in it)
+   charge #3 -> AI:Claude: not hit, connected after 1.23s run 3.8, first move +0.43s, last pick step:left:2 miss1.7/wall2.1 (1 picks in it)
+   decisions 57, latency p50 0.27 p95 0.37 max 0.40; candidates p50 18 p95 22 max 22; tokens p50 4628 p95 7706; urgent 3 (request dropped 3)
+   choices: hitnext 15, step_left 13, attack 11, combo_toward_1-hit 4, combo_approach-hit 4, hit 3, step_right 3, combo_hit-right 1, away_near 1, approach 1, step_toward 1
+   short action ends: {"짧은 이동 DONE":8,"복합 행동 DONE":1,"복합 행동 CANCELLED":3,"한 번 치기 DONE":10,"한 번 치기 CANCELLED":2,"사거리까지 접근 DONE":1}; start failures 0; discards {"계속할 기술이 이미 끝남":7,"계속하라던 행동이 이미 바뀜":1}; failed calls 0
+   composite picks: combo:toward:1-hit run #152, combo:hit-right:2 run #153, combo:approach-hit run #165, combo:approach-hit run #178
+   step move-start along p50 0.13 p95 0.13 (n 8; prior standstill 8)
+R6 MushroomBrute 1: kill at +28.2s; brute end hp 0, damage 540 (1-damage 3, big 16 = 537)
+   AI hits: -
+   windows: #1: 6 big hits, 201; #2: 0 big hits, 0; #3: 7 big hits, 239; #4: 3 big hits, 97
+   charge #1 -> AI:Claude: not hit, connected after 2.40s run 10.6, first move +0.33s, last pick attack:81193 miss0.3/wall1.8 (5 picks in it)
+   charge #2 -> AI:Claude: not hit, connected after 2.37s run 10.4, first move +0.40s, last pick step:left:1 miss1.7/wall5.3 (4 picks in it)
+   charge #3 -> AI:Claude: not hit, connected after 1.77s run 6.9, first move +0.40s, last pick attack:81193 miss1.6/wall3.7 (2 picks in it)
+   charge #4 -> AI:Claude: not hit, connected after 1.73s run 6.7, first move +0.00s, last pick attack:81193 miss2.2/wall2.4 (3 picks in it)
+   decisions 75, latency p50 0.27 p95 0.33 max 0.50; candidates p50 21 p95 24 max 24; tokens p50 5802 p95 7963; urgent 4 (request dropped 4)
+   choices: hitnext 15, step_left 13, attack 12, combo_approach-hit 8, approach 7, step_right 7, hit 5, wait 2, step_backleft 2, step_away 2, combo_hit-away 1, combo_hit-left 1
+   short action ends: {"짧은 이동 DONE":10,"복합 행동 CANCELLED":4,"사거리까지 접근 DONE":3,"사거리까지 접근 CANCELLED":2,"복합 행동 DONE":2,"한 번 치기 DONE":11,"한 번 치기 FAILED":1,"한 번 치기 CANCELLED":1}; start failures 1; discards {"계속할 기술이 이미 끝남":7,"계속하라던 행동이 이미 바뀜":1}; failed calls 0
+   composite picks: combo:approach-hit run #191, combo:approach-hit run #197, combo:hit-away:2 run #198, combo:approach-hit run #216, combo:approach-hit run #230, combo:hit-left:2 run #231
+   step move-start along p50 0.10 p95 0.17 (n 10; prior standstill 10)
+charges at the AI 18: hit 4, dodged 14; with a pick during the charge 18: {"predHit_actHit":0,"predHit_actMiss":1,"predMiss_actHit":4,"predMiss_actMiss":13}
+anticipation -> first move along a chosen move: n 18/18, p50 0.40 p95 0.73 max 0.73
+hit -> move transition (swing start -> first move along): composite n 5 p50 0.27 max 0.31; two single actions n 1 p50 1.13 max 1.13

@@ -1,0 +1,24 @@
+{
+  "sourceCommit": "902721ec505df42d74d0b2d245ed34a049faadad",
+  "mergedByteIdentical": true,
+  "first": "c8b3f8b979c190dc82ee166152c8cc97c3839f052c29d87e015b05fe317d7893",
+  "second": "c8b3f8b979c190dc82ee166152c8cc97c3839f052c29d87e015b05fe317d7893",
+  "coreMatchesTwoRunEvidence": true,
+  "nodes": 5680,
+  "edges": 22105,
+  "sourceTypes": [
+    "유저 활동",
+    "화면",
+    "화면요소",
+    "제품코어",
+    "IA",
+    "유저저니",
+    "정책",
+    "기능",
+    "코드",
+    "데이터",
+    "외부 연결"
+  ],
+  "runtimeVerified": false,
+  "note": "Canonical path extraction after approved merge; supplemental observed runtime evidence remains separately scoped in L."
+}

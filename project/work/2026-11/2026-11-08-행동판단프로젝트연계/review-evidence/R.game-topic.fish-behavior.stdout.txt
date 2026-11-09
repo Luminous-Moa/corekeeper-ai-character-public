@@ -1,0 +1,50 @@
+{
+  "id": "R.game-topic.fish",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [],
+      "counts": {
+        "action_completion": 8,
+        "claim": 8,
+        "verb": 2
+      },
+      "id": "R.game-topic.fish",
+      "labels": [
+        "start_fishing",
+        "automatic_fishing_result"
+      ],
+      "planning": [
+        "P.life"
+      ],
+      "title": "낚시",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:completion:B:fishing-50-0",
+        "game:completion:B:fishing-51-0",
+        "game:completion:B:fishing-52-0",
+        "game:completion:B:fishing-53-0",
+        "game:completion:B:fishing-54-0",
+        "game:completion:B:fishing-55-0",
+        "game:completion:B:fishing-56-0",
+        "game:completion:full-d:production:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:2382209455901869173#automatic_fishing_result",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-1637526761038022533#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-2834793986236348780#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-3741585186545266450#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-4481218627703392936#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-4780971900873628870#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:-7728884740616830480#0",
+        "game:initial:CAB-2ebcba97367158c9b08f790c25d642c9:9048701172362894109#0",
+        "game:supp:D::CAB-2ebcba97367158c9b08f790c25d642c9:2382209455901869173#automatic_fishing_result",
+        "game:verb:automatic_fishing_result",
+        "game:verb:start_fishing"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

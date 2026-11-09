@@ -1,0 +1,2 @@
+V0 (54): continue attack:58196 54 | attack/continue on unreachable enemies: 54/54
+V1 (54): continue attack:58196 24, stop_action 17, follow 7, dig 4, retreat 2 | attack/continue on unreachable enemies: 24/54

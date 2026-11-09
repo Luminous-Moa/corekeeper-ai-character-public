@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "determinism": "canonical sorted keys/nodes/edges; no wall clock",
+    "inputFiles": [
+      "A/graph-A.json",
+      "B/code.graph.json",
+      "C/graph-C.json"
+    ],
+    "schema": "02a-graph-definitions",
+    "sourceCommit": "e82eb87f25641cc7c31e6216f64e20a34e58d0c0",
+    "sources": "254개 (전체 manifest는 graph.json)",
+    "stage": "D"
+  },
+  "counts": {
+    "유저 활동": 9,
+    "화면": 5,
+    "화면요소": 89,
+    "제품코어": 1,
+    "IA": 1,
+    "유저저니": 1,
+    "기능": 22,
+    "코드": 3271,
+    "데이터": 64,
+    "외부 연결": 10,
+    "정책": 43
+  },
+  "nodes": 3516,
+  "edges": 13198,
+  "legacy": {
+    "mapping": "C/legacy-capability-map.json",
+    "notice": "원형 100% 보존. F.*는 기술 능력이며 표준 기능으로 자동 변환하지 않음.",
+    "path": "preserved/legacy/graph/graph.json"
+  },
+  "limitations": [
+    "B 코드 추출층: No Unity/game metadata references: semantic diagnostics and unresolved calls retained",
+    "B 코드 추출층: JS lexical and direct factory wiring only; dynamic dispatch remains boundary",
+    "B 코드 추출층: Runtime trace is not observed in B; requires separate authorized execution evidence",
+    "B 코드 추출층: Source code only; A artifacts and existing planning documents excluded",
+    "실게임 화면 및 컴퓨터 유즈 검증은 사용자 요청으로 유예",
+    "정적 그래프 도달은 실제 실행 증명이 아님. unresolved 호출은 B/boundaries.json",
+    "A의 HTTP 응답은 격리 bridge 관측; 게임/외부 LLM 성공 흐름을 증명하지 않음"
+  ]
+}

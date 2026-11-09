@@ -1,0 +1,30 @@
+{
+  "authority": "LLM interpretation of pinned source; kept separate from extracted graph",
+  "features": {
+    "ai-bridge:GET /v1/health": "브리지에 보관된 멤버별 사전 점검 상태와 처리 중 멤버를 반환한다.",
+    "ai-bridge:POST /v1/plan": "멤버의 보고를 받아 구독 CLI, 기억 검색, 응답 검증을 거쳐 계획 응답을 반환한다.",
+    "ai-bridge:startup:bridge.mjs.module": "브리지 설정·외부 CLI 어댑터·게임 자료를 준비하고 선택된 멤버를 점검한 뒤 로컬 HTTP 서버를 연다.",
+    "cli:HeadlessSdk.BuildAndInstall": "Unity 모드 설정을 읽어 스크립트 모드를 빌드하고 게임의 Mods 경로에 설치한다.",
+    "cli:HeadlessSdk.CompileCheck": "Unity 스크립트 어셈블리 컴파일 상태에 따라 배치 실행을 종료한다.",
+    "cli:HeadlessSdk.CreateMod": "기존 모드 설정을 확인하고 없으면 Unity SDK에서 AIPlayerSpike 모드를 생성한다.",
+    "cli:HeadlessSdk.ImportGameFiles": "Unity SDK에 설치된 게임 경로를 지정하고 게임 파일 가져오기를 호출한다.",
+    "hook:AIPlayerSpikeMod.CanBeUnloaded": "모드를 내릴 수 있는지 묻는 SDK 콜백에 true를 반환한다.",
+    "hook:AIPlayerSpikeMod.EarlyInit": "모드 초기 로드와 월드별 활성화 방식 안내를 로그에 기록한다.",
+    "hook:AIPlayerSpikeMod.Init": "SDK 초기화 콜백을 받으며 현재 구현은 비어 있다.",
+    "hook:AIPlayerSpikeMod.ModObjectLoaded": "SDK 모드 오브젝트 로드 콜백을 받으며 현재 구현은 비어 있다.",
+    "hook:AIPlayerSpikeMod.Shutdown": "캐릭터 연결을 정리하고 설치된 Harmony 패치를 해제한다.",
+    "hook:AIPlayerSpikeMod.Update": "호스트 월드 여부를 확인하고 멤버별 상태 기계와 게임 내 작업을 갱신한다.",
+    "hook:AIPlayerSpikePatches.CharacterDataPostfix": "AI의 spawn 요청일 때 역직렬화된 캐릭터를 해당 AI 저장 자료로 교체한다.",
+    "hook:AIPlayerSpikePatches.ChatSendPrefix": "호스트가 입력한 /ai 명령을 모드 처리기로 넘기고 처리한 메시지는 일반 채팅 전송에서 막는다.",
+    "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix": "게임 서버 네트워크 갱신 앞에서 얇은 클라이언트 패킷을 전달한다.",
+    "hook:AIPlayerSpikePatches.SpawnLambdaPostfix": "캐릭터 spawn 처리 구간 표시를 해제한다.",
+    "hook:AIPlayerSpikePatches.SpawnLambdaPrefix": "spawn 호출 인자에서 현재 캐릭터 생성 요청을 기억한다.",
+    "hook:AIPlayerSpikePatches.UnloadWorldsPrefix": "게임 월드 해제 직전에 모든 AI 연결을 정리한다.",
+    "hook:ThinClientDriverConstructor.CreateClientDriver": "AI의 얇은 클라이언트 월드에 전용 IPC 네트워크 드라이버를 구성한다.",
+    "hook:ThinClientDriverConstructor.CreateServerDriver": "얇은 클라이언트 전용 생성기에 서버 드라이버 생성이 요청되면 예외를 낸다.",
+    "slash:ai": "호스트의 /ai 입력에서 대상 멤버와 하위 명령을 구분하여 상태 조회 또는 조작을 수행한다."
+  },
+  "database": {},
+  "analytics": {},
+  "notes": ["JSON/JSONL 저장과 로컬 기억 이벤트는 데이터이며 DB·분석 계측 이벤트로 승격하지 않는다.", "인게임 큰 활동명은 별도 API 기능을 만들지 않는다. /ai 요청과 SDK 업데이트 입구 아래 내부 코드로 조회한다."]
+}

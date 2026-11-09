@@ -1,0 +1,214 @@
+{
+  "node": {
+    "developmentCapability": "F.bag-store",
+    "evidence": [
+      {
+        "anchor": "## 후속 상자 조작",
+        "doc": "bagSpec",
+        "end": 23,
+        "line": 19,
+        "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+        "sha256": "cbc95c787f4ba713a7a1763d29c26098085cf3e43cd5be1f3e06940dfd513d41",
+        "start": 19
+      },
+      {
+        "anchor": "## Leaf와 목표 진척",
+        "doc": "bagTreeSpec",
+        "end": 29,
+        "line": 25,
+        "path": "../2026-11-07-가방장비구현/tree-spec.md",
+        "sha256": "dce9decb47ed57c9c6e7278a86302b90456020d0bafdce627f238bda960b200e",
+        "start": 25
+      }
+    ],
+    "id": "R.bag-store",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 23,
+        "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+        "start": 19
+      },
+      {
+        "end": 29,
+        "path": "../2026-11-07-가방장비구현/tree-spec.md",
+        "start": 25
+      }
+    ],
+    "status": "참고·구현/오프라인, 실게임 미확인",
+    "summary": "선택한 일반 가방 품목을 자기 상자의 유효 슬롯으로 보관한다. 요청 잔량과 keep을 반영하며 실제 source 감소=destination 증가만 누적한다.",
+    "title": "품목·자기 상자·수량 지정 보관",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 가방·장비 구현 검증 범위",
+          "doc": "bagStatus",
+          "end": 28,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/implementation-status.md",
+          "sha256": "2a64c6054a9d27608c4f6f876cae3c20e7e01d9edb00cc6d2a657b1999c7e5f7",
+          "start": 1
+        }
+      ],
+      "from": "R.bag-store",
+      "id": "E089",
+      "kind": "참고: 검증 범위·미관측",
+      "to": "R.bag-validation",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 검증과 전달",
+          "doc": "bagTree",
+          "end": 47,
+          "line": 39,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 39
+        }
+      ],
+      "from": "R.bag-store",
+      "kind": "현재 메뉴 leaf의 선택·실행 경계",
+      "to": "R.bag-navigation",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 요청 API와 실제 소비",
+          "doc": "bagRules",
+          "end": 22,
+          "line": 11,
+          "path": "../2026-11-07-가방장비구현/transfer-rules.md",
+          "sha256": "f2075a13fe751471b70bab296e2584c857450c247365427bddfa0d26691fc6bf",
+          "start": 11
+        }
+      ],
+      "from": "R.bag-store",
+      "id": "E090",
+      "kind": "참고: 정상 게임 소비 규칙·경계",
+      "to": "R.bag-rules",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "path": "../2026-11-07-가방장비구현/tree-spec.md",
+          "start": 25
+        }
+      ],
+      "from": "R.bag-store",
+      "kind": "구현 앵커(정적, 실행 미확인)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventorySkill.TransferTick(World, Entity, float)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+      "evidence": [
+        {
+          "end": 1002,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 994
+        }
+      ],
+      "from": "pol.bag-boundary",
+      "kind": "정책의 능력 적용 위치",
+      "to": "R.bag-store",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+      "evidence": [
+        {
+          "end": 1010,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 1004
+        }
+      ],
+      "from": "pol.bag-navigation",
+      "kind": "정책의 능력 적용 위치",
+      "to": "R.bag-store",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+      "evidence": [
+        {
+          "end": 1018,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 1012
+        }
+      ],
+      "from": "pol.choice-no-cut",
+      "kind": "정책의 능력 적용 위치",
+      "to": "R.bag-store",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+      "evidence": [
+        {
+          "end": 992,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 986
+        }
+      ],
+      "from": "pol.bag-agency",
+      "kind": "정책의 능력 적용 위치",
+      "to": "R.bag-store",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 실행·모델 연결 조건",
+          "doc": "bagTree",
+          "end": 37,
+          "line": 30,
+          "path": "../2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "start": 30
+        }
+      ],
+      "from": "R.bag-navigation",
+      "id": "E110",
+      "kind": "참고: 최종 leaf에서 재사용하는 조작·관측",
+      "to": "R.bag-store",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 후속 상자 조작",
+          "doc": "bagSpec",
+          "end": 23,
+          "line": 19,
+          "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+          "sha256": "cbc95c787f4ba713a7a1763d29c26098085cf3e43cd5be1f3e06940dfd513d41",
+          "start": 19
+        }
+      ],
+      "from": "P.bag-equipment",
+      "id": "E088",
+      "kind": "참고: 승인 범위의 구현 능력",
+      "to": "R.bag-store",
+      "type": "reference"
+    }
+  ]
+}

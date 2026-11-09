@@ -1,0 +1,133 @@
+{
+  "node": {
+    "developmentCapability": "F.bag-give",
+    "evidence": [
+      {
+        "anchor": "## 후속 내려놓기·전달",
+        "doc": "bagSpec",
+        "end": 29,
+        "line": 25,
+        "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+        "sha256": "cbc95c787f4ba713a7a1763d29c26098085cf3e43cd5be1f3e06940dfd513d41",
+        "start": 25
+      }
+    ],
+    "id": "R.bag-give",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 29,
+        "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+        "start": 25
+      }
+    ],
+    "status": "참고·구현/오프라인, 실게임 미확인",
+    "summary": "보이는 수령자에 접근해 정상 바닥 드롭을 사용한다. 추적 바닥 물품의 지정 수령 요청과 실제 감소량=수령자 일치 품목 증가량이 함께 관측된 수량만 기록한다.",
+    "title": "지정 수령자 전달 결과 관측",
+    "type": "기획 참고"
+  },
+  "out": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "# 가방·장비 구현 검증 범위",
+          "doc": "bagStatus",
+          "end": 22,
+          "line": 1,
+          "path": "../2026-11-07-가방장비구현/implementation-status.md",
+          "sha256": "5a7ba0b07705cc97725605d10727a7ae1d7b1e721ef1d7d759ad816075587051",
+          "start": 1
+        }
+      ],
+      "from": "R.bag-give",
+      "id": "E098",
+      "kind": "참고: 검증 범위·미관측",
+      "to": "R.bag-validation",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 요청 API와 실제 소비",
+          "doc": "bagRules",
+          "end": 22,
+          "line": 11,
+          "path": "../2026-11-07-가방장비구현/transfer-rules.md",
+          "sha256": "f2075a13fe751471b70bab296e2584c857450c247365427bddfa0d26691fc6bf",
+          "start": 11
+        }
+      ],
+      "from": "R.bag-give",
+      "id": "E099",
+      "kind": "참고: 정상 게임 소비 규칙·경계",
+      "to": "R.bag-rules",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+          "start": 1
+        }
+      ],
+      "from": "R.bag-give",
+      "kind": "구현 앵커(정적, 실행 미확인)",
+      "to": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventorySkill.Tick(World, Entity, float)",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "해석",
+      "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+      "evidence": [
+        {
+          "end": 1000,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 994
+        }
+      ],
+      "from": "pol.bag-boundary",
+      "kind": "정책의 능력 적용 위치",
+      "to": "R.bag-give",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "coverage": "관련 구현 위치 색인. 전체 규칙 충족이나 실게임 성공을 보증하지 않음",
+      "evidence": [
+        {
+          "end": 992,
+          "path": "../../지식그래프/기획/정책.md",
+          "start": 986
+        }
+      ],
+      "from": "pol.bag-agency",
+      "kind": "정책의 능력 적용 위치",
+      "to": "R.bag-give",
+      "type": "reference"
+    },
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "## 후속 내려놓기·전달",
+          "doc": "bagSpec",
+          "end": 29,
+          "line": 25,
+          "path": "../2026-11-07-가방장비구현/inventory-spec.md",
+          "sha256": "cbc95c787f4ba713a7a1763d29c26098085cf3e43cd5be1f3e06940dfd513d41",
+          "start": 25
+        }
+      ],
+      "from": "P.bag-equipment",
+      "id": "E097",
+      "kind": "참고: 승인 범위의 구현 능력",
+      "to": "R.bag-give",
+      "type": "reference"
+    }
+  ]
+}

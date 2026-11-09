@@ -1,0 +1,20 @@
+ASM-IN ## {} |  | ASM-IN	S6a recorder (AIDecisions.cs AsmIn :2528), decisionlog.on only — planned new line
+ASM-OUT ## {} |  | ASM-OUT	S6a recorder (AIDecisions.cs AsmOut :2539) — planned new line
+ASM-OUT ## recursed |  | ASM-OUT	S6a recorder, tool-short rebuild (AIDecisions.cs :2463) — planned new line
+SKILL | reason start end facts wall | SKILL FAILED	TunnelSkill failure facts (AIExplore.cs:955, same text in rf-S0); L0 had no tunnel failure (situation)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set set | DECISION SEND	_setLog ' set=close-fight' + ' set=free-time' (AIDecisions.cs :2403/:2413 = rf-S0 :2584/:2594); L0 had no fight during free time (situation)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set set swarm | DECISION SEND	same as above with swarm field (situation)
+DECISION ## INPUT | rev trigger set set running motion input | DECISION INPUT	same _setLog in the INPUT line (situation)
+BRAIN |  | BRAIN LLM	BRAIN only-wait line (unchanged) whose trigger text '자유 시간 시작: 위쪽 LLM에 5초 뒤…' contains LLM (situation)
+TEST-ONLY nonew |  | TEST-ONLY	extra test command used in L1 X2/X3 (not in L0 set)
+GOAL ended | rev | GOAL	explore end branch (AIDecisions.cs :1002 EndGoal), exercised only in L1 X3 with nonew
+// L2 additions (2026-11-05): each code line has the same text in rf-S0 and rf-S7
+SKILL | reason start end facts emptyInFirst40 items equipped | SKILL DONE	InvSkill facts (/ai inv, test command used in L2 BodyCan setup; AIBodySkills.cs:1933 = rf-S0 :1923)
+TEST-ONLY take |  | TEST-ONLY	test command /ai take (L2 BodyCan setup; AIBodySkills.cs:432 = rf-S0 :424)
+TEST-ONLY give |  | TEST-ONLY	test command /ai give (L2 BodyCan setup; AIBodySkills.cs:410 = rf-S0 :402)
+TEST-ONLY decisionlog |  | TEST-ONLY OFF	decisionlog.on removed for 90 s (L2 S5 SEND check; AIDecisions.cs:163 = rf-S0 :2973)
+GOAL | rev | GOAL	gather count fell below the start (Gemini, scenario 13; AIGoals.cs:254 = rf-S0 AIDecisions.cs:739) — situation
+DECISION ## queued answer not used |  | DECISION	queued answer stale (Grok, scenario 13; AIBrain.Loop.cs:411 = rf-S0 AIDecisions.cs:1054) — situation
+SKILL | d d d | SKILL	TunnelSkill child done with items left on the ground (variable list length; AIBodySkills.cs:2185 = rf-S0 :2175) — situation
+SKILL | d d d d d | SKILL	same as above
+SKILL | d d d d d d | SKILL	same as above

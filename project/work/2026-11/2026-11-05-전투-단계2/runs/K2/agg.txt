@@ -1,0 +1,14 @@
+brute R1-R6: requests 328, answers 307; candidates p50 20 p95 24 max 24; latency p50 0.27 p95 0.4 max 1.87; tokens p50 5372 p95 7852 max 8506
+   candidates 7-14: n 14, latency p50 0.24 p95 1.87, tokens p50 3746
+   candidates 15-20: n 158, latency p50 0.27 p95 0.4, tokens p50 4747
+   candidates 21+: n 132, latency p50 0.27 p95 0.4, tokens p50 5495
+   candidates <=6: n 3, latency p50 0.23 p95 0.37, tokens p50 1158
+   choices: hitnext 66, step_left 61, attack 48, combo_approach-hit 28, hit 18, step_right 14, combo_hit-left 13, approach 11, combo_hit-right 7, away_near 7, step_away 6, combo_hit-away 6, step_backright 5, step_backleft 4, combo_toward_1-hit 4, step_frontleft 3, combo_frontleft_1-hit 3, wait 2, step_toward 1
+regression R7: requests 0, answers 0; candidates p50 NaN p95 NaN max -Infinity; latency p50 NaN p95 NaN max -Infinity; tokens p50 NaN p95 NaN max -Infinity
+   choices: 
+R1 kill 16.8 answers 44 usd 0.02543
+R2 kill 17.2 answers 51 usd 0.02966
+R3 down 9.1 answers 26 usd 0.01629
+R4 kill 18.3 answers 54 usd 0.03176
+R5 kill 18.6 answers 57 usd 0.03219
+R6 kill 28.2 answers 75 usd 0.04686

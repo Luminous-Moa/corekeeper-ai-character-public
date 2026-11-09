@@ -1,0 +1,45 @@
+[AIPlayerSpike] t=110.8 PERF 30s: AIs in world 0; frames 3583 (119.4 fps); frame ms avg 8.42 p50 8.33 p95 8.33 p99 8.34 max 150.0; server ticks/s 20.0; mod per AI []
+[AIPlayerSpike] t=140.8 PERF 30s: AIs in world 1; frames 3579 (119.3 fps); frame ms avg 8.38 p50 8.33 p95 8.33 p99 8.33 max 133.3; server ticks/s 19.9; mod per AI [Gemini 3.17ms avg/128.7ms max]
+[AIPlayerSpike] t=144.5 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 239, work 791.8ms
+[AIPlayerSpike] t=151.1 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 782, work 2394.0ms
+[AIPlayerSpike] t=153.3 @Gemini BRAIN: preparation cancelled (idle threat set changed), frames 271, work 843.6ms
+[AIPlayerSpike] t=157.6 @Gemini PLANNER: host said '@Gemini 나에게 입을 갑옷 하나 만들어서 줘.' (instruction #1, open 1)
+[AIPlayerSpike] t=163.8 @Gemini BRAIN: nothing new within one screen; frontier search: expanded 0 tiles in 1 ms, found 0, offered 0
+[AIPlayerSpike] t=163.8 @Gemini BRAIN: preparation cancelled (idle threat set changed), frames 1241, work 3830.6ms
+[AIPlayerSpike] t=164.6 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30492 tiles, 382 ms of work, found 7526
+[AIPlayerSpike] t=166.6 @Gemini BRAIN: preparation cancelled (world, goal or execution changed), frames 311, work 990.3ms
+[AIPlayerSpike] t=170.8 PERF 30s: AIs in world 1; frames 3535 (117.8 fps); frame ms avg 8.49 p50 8.33 p95 8.33 p99 16.67 max 75.0; server ticks/s 20.0; mod per AI [Gemini 3.30ms avg/76.0ms max]
+[AIPlayerSpike] t=177.8 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30492 tiles, 374 ms of work, found 7526
+[AIPlayerSpike] t=192.2 @Gemini BRAIN: preparation cancelled (new goal), frames 3045, work 9411.6ms
+[AIPlayerSpike] t=200.8 PERF 30s: AIs in world 1; frames 3555 (118.5 fps); frame ms avg 8.44 p50 8.33 p95 8.33 p99 16.67 max 91.7; server ticks/s 20.0; mod per AI [Gemini 3.36ms avg/89.1ms max]
+[AIPlayerSpike] t=203.4 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30492 tiles, 373 ms of work, found 7526
+[AIPlayerSpike] t=230.8 PERF 30s: AIs in world 1; frames 3570 (119.0 fps); frame ms avg 8.40 p50 8.33 p95 8.33 p99 8.34 max 58.3; server ticks/s 20.0; mod per AI [Gemini 3.31ms avg/16.4ms max]
+[AIPlayerSpike] t=260.8 PERF 30s: AIs in world 1; frames 3599 (120.0 fps); frame ms avg 8.34 p50 8.33 p95 8.33 p99 8.34 max 16.7; server ticks/s 20.0; mod per AI [Gemini 3.18ms avg/11.2ms max]
+[AIPlayerSpike] t=290.8 PERF 30s: AIs in world 1; frames 3590 (119.7 fps); frame ms avg 8.36 p50 8.33 p95 8.33 p99 8.33 max 66.7; server ticks/s 20.0; mod per AI [Gemini 3.21ms avg/63.2ms max]
+[AIPlayerSpike] t=299.3 @Gemini PLANNER: host said '@Gemini 왜 안움직이니' (instruction #2, open 2)
+[AIPlayerSpike] t=320.8 PERF 30s: AIs in world 1; frames 3573 (119.1 fps); frame ms avg 8.40 p50 8.33 p95 8.33 p99 8.34 max 100.0; server ticks/s 20.0; mod per AI [Gemini 3.22ms avg/16.8ms max]
+[AIPlayerSpike] t=340.1 @Gemini BRAIN: preparation cancelled (idle threat set changed), frames 17647, work 54636.3ms
+[AIPlayerSpike] t=350.3 @Gemini BRAIN: nothing new within one screen; frontier search: expanded 0 tiles in 0 ms, found 0, offered 0
+[AIPlayerSpike] t=350.4 @Gemini BRAIN: nothing new within one screen; frontier search: expanded 0 tiles in 0 ms, found 0, offered 0
+[AIPlayerSpike] t=350.8 PERF 30s: AIs in world 1; frames 3569 (118.9 fps); frame ms avg 8.40 p50 8.33 p95 8.33 p99 8.34 max 33.3; server ticks/s 20.0; mod per AI [Gemini 3.34ms avg/26.6ms max]
+[AIPlayerSpike] t=351.0 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 1285, work 4002.4ms
+[AIPlayerSpike] t=351.2 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30491 tiles, 379 ms of work, found 7526
+[AIPlayerSpike] t=351.2 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 21, work 66.0ms
+[AIPlayerSpike] t=380.8 PERF 30s: AIs in world 1; frames 3583 (119.4 fps); frame ms avg 8.38 p50 8.33 p95 8.33 p99 8.34 max 41.7; server ticks/s 20.0; mod per AI [Gemini 3.36ms avg/41.6ms max]
+[AIPlayerSpike] t=410.8 PERF 30s: AIs in world 1; frames 3590 (119.7 fps); frame ms avg 8.36 p50 8.33 p95 8.33 p99 8.34 max 58.3; server ticks/s 20.0; mod per AI [Gemini 3.31ms avg/60.6ms max]
+[AIPlayerSpike] t=411.9 @Gemini BRAIN: preparation cancelled (idle threat set changed), frames 7260, work 22335.0ms
+[AIPlayerSpike] t=421.8 @Gemini BRAIN: nothing new within one screen; frontier search: expanded 0 tiles in 0 ms, found 0, offered 0
+[AIPlayerSpike] t=422.5 @Gemini DECISION #1 SEND rev=2 trigger='긴급: 새 적 AggressiveSlimeBlob이(가) 바로 옆(0.1칸)' goal='나무(Wood) 10개 모으기' candidates=258 inputChars=22812 prep=3850.8ms[frames 1199, wall 10001.7ms, plans 3617.8 n179 cached345] motion=boundary set=close-fight players=[Luminous(호스트) 서쪽 2.1칸, 체력 바 72/100, 서 있음, 적 AggressiveSlimeBlob이(가) 2.0칸 옆에 있음] (objects 5 (+51 trigger-only, 0 under the AI), blocked tiles 53, large: LarvaBossStatue 3x3 at (-9,5); SlimeBossStatue 3x3 at (-1,9); LarvaHiveBossStatue 3x3 at (7,5); TheCore 5x5 at (-2,2)) | options=258 (full facts in request; decisionlog.on records them)
+[AIPlayerSpike] t=422.7 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30491 tiles, 376 ms of work, found 7526
+[AIPlayerSpike] t=423.2 @Gemini DECISION #1 HTTP 400 net='HTTP/1.1 400 Bad Request' error='{"error":{"message":"Invalid 'questions[0].choices': array too long. Expected an array with maximum length 255, but got an array with length 258 instead.","type":"invalid_request_error","param":"questions[0].choices","code":"array_above_max_length"}}' request='req_58555125c51b484e94f86e6a7214d33f' after 0.71s
+[AIPlayerSpike] t=440.8 PERF 30s: AIs in world 1; frames 3572 (119.1 fps); frame ms avg 8.40 p50 8.33 p95 8.33 p99 8.34 max 16.7; server ticks/s 20.0; mod per AI [Gemini 3.04ms avg/14.4ms max]
+[AIPlayerSpike] t=454.5 @Gemini BRAIN: preparation cancelled (idle threat set changed), frames 3374, work 10454.8ms
+[AIPlayerSpike] t=465.6 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30490 tiles, 370 ms of work, found 7526
+[AIPlayerSpike] t=469.7 @Gemini BRAIN: preparation cancelled (idle threat set changed), frames 1800, work 5562.4ms
+[AIPlayerSpike] t=470.8 PERF 30s: AIs in world 1; frames 3555 (118.5 fps); frame ms avg 8.44 p50 8.33 p95 8.33 p99 16.67 max 58.3; server ticks/s 20.0; mod per AI [Gemini 3.45ms avg/61.5ms max]
+[AIPlayerSpike] t=500.8 PERF 30s: AIs in world 1; frames 3591 (119.7 fps); frame ms avg 8.35 p50 8.33 p95 8.33 p99 8.33 max 25.0; server ticks/s 20.0; mod per AI [Gemini 3.32ms avg/22.9ms max]
+[AIPlayerSpike] t=505.5 @Gemini BRAIN: preparation cancelled (goal cleared), frames 4282, work 13201.0ms
+[AIPlayerSpike] t=505.5 @Gemini GOAL cleared (/ai stop): was '나무(Wood) 10개 모으기' rev=2
+[AIPlayerSpike] t=508.8 @Gemini BRAIN: preparation cancelled (danger changed while preparing), frames 375, work 1172.2ms
+[AIPlayerSpike] t=519.7 @Gemini BRAIN: frontier search done in the background over 77 frames: expanded 30488 tiles, 390 ms of work, found 7526
+[AIPlayerSpike] t=522.2 @Gemini BRAIN: preparation cancelled (reset), frames 1585, work 4881.3ms

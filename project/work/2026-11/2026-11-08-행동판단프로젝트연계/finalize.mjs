@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const folder=path.dirname(fileURLToPath(import.meta.url));
+const read=file=>JSON.parse(fs.readFileSync(path.join(folder,file),'utf8').replace(/^\uFEFF/,''));
+const graph=read('../2026-11-05-지식그래프-실화면/D/graph.json');
+const evidence=read('evidence.json');
+const check=read('final-check.json');
+if(!check.ok)throw Error('final check failed');
+const mining=read('final-mining.json'),move=read('final-move.json');
+if(!mining.topics[0].targets.includes('game:completion:B:melee-pick-2-0:cost-followup-v1'))throw Error('pick reference missing');
+if(!move.topics[0].targets.includes('game:completion:B:place-tile:CAB-2ebcba97367158c9b08f790c25d642c9:-1592303294285069928'))throw Error('bridge reference missing');
+evidence.queryRunProductEdges=evidence.productEdges;
+evidence.productEdges=graph.edges.length;
+for(const row of evidence.topics)row.counts=graph.behaviorLink.topics.find(topic=>topic.id===row.topic).counts;
+evidence.finalChecks={check:'final-check.json',mining:'final-mining.json',move:'final-move.json',ok:check.ok,stale:check.stale,structuralErrors:check.structuralErrors,note:'22주제 원문조회 중 채굴·이동 주제에 기존 정확근거 2간선을 추가했다. 최종 주제조회와 전체 구조·stale를 다시 확인했다.'};
+fs.writeFileSync(path.join(folder,'evidence.json'),JSON.stringify(evidence,null,2)+'\n');
+console.log(JSON.stringify({status:'pass',productEdges:evidence.productEdges,topics:evidence.topics.length}));

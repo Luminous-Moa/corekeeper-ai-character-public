@@ -1,0 +1,322 @@
+{
+  "seed": 20261105,
+  "method": "LCG shuffle of sorted feature IDs; first eight; manual inspection of source in pinned snapshot",
+  "samples": [
+    {
+      "id": "hook:AIPlayerSpikeMod.Init",
+      "handlers": [
+        {
+          "from": "hook:AIPlayerSpikeMod.Init",
+          "type": "기능→코드",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Init()",
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 199
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "AIPlayerSpikeMod.cs:199 empty IMod.Init declaration; no hidden work inferred."
+    },
+    {
+      "id": "hook:AIChatScreenLayer.OnGUI",
+      "handlers": [
+        {
+          "from": "hook:AIChatScreenLayer.OnGUI",
+          "type": "기능→코드",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs#AIChatScreenLayer.OnGUI()",
+          "file": "Assets/AIPlayerSpike/Scripts/AIChatScreenLayer.cs",
+          "line": 131
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "AIChatScreenLayer.cs:131 Repaint/camera guard and owned glyph draw loop; MonoBehaviour.OnGUI registration is an engine message, not a runtime trace."
+    },
+    {
+      "id": "cli:HeadlessSdk.BuildAndInstall",
+      "handlers": [
+        {
+          "from": "cli:HeadlessSdk.BuildAndInstall",
+          "type": "기능→코드",
+          "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.BuildAndInstall()",
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 107
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "HeadlessSdk.cs:107 settings/read/buildBundles=false and reflective BuildMod; external SDK reflection boundary retained."
+    },
+    {
+      "id": "cli:HeadlessSdk.CreateMod",
+      "handlers": [
+        {
+          "from": "cli:HeadlessSdk.CreateMod",
+          "type": "기능→코드",
+          "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.CreateMod()",
+          "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+          "line": 67
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "HeadlessSdk.cs:67 existing-settings guard and reflective CreateNewMod; external SDK boundary retained."
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.EarlyInit",
+      "handlers": [
+        {
+          "from": "hook:AIPlayerSpikeMod.EarlyInit",
+          "type": "기능→코드",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.EarlyInit()",
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 193
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "AIPlayerSpikeMod.cs:193 IMod entry logs host/off default; no behavior beyond source body inferred."
+    },
+    {
+      "id": "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+      "handlers": [
+        {
+          "from": "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+          "type": "기능→코드",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ServerNetworkUpdatePrefix()",
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+          "line": 59
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "AIPlayerSpikePatches.cs:59 delegates Pump; Harmony prefix registration AIPlayerSpikeMod.cs:514 checked."
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.CanBeUnloaded",
+      "handlers": [
+        {
+          "from": "hook:AIPlayerSpikeMod.CanBeUnloaded",
+          "type": "기능→코드",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.CanBeUnloaded()",
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 207
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "AIPlayerSpikeMod.cs:207 IMod boolean entry returns true."
+    },
+    {
+      "id": "hook:AIPlayerSpikeMod.Update",
+      "handlers": [
+        {
+          "from": "hook:AIPlayerSpikeMod.Update",
+          "type": "기능→코드",
+          "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Update()",
+          "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+          "line": 226
+        }
+      ],
+      "sourceCheck": "manual source declaration and entry boundary inspected",
+      "result": "pass",
+      "reason": "AIPlayerSpikeMod.cs:226 hosted-state/member Tick loop, chat layer and info panel Frame calls; independent live evidence stays in D."
+    }
+  ],
+  "corrections": [
+    "Initial 751 unreachable executable nodes exposed omitted property access and implicit dispatch. Added Roslyn property/accessor links, explicit static field initialization, source overrides, and conservative single-candidate edges with possible=true.",
+    "Finite JavaScript Q registry previously cut at f(ctx,q). AST object registration now records all finite callback targets as possible=true.",
+    "Injected named function values in object arguments now produce callback edges; no arbitrary dynamic points-to claim."
+  ],
+  "recheck": "2026-11-05 re-extraction at fc8161b (combat stage 2): same seed and the same eight feature IDs. AIPlayerSpikeMod.cs gained one line at 1406 (UnloadWorldsPrefix calls AIChargeWatch.Reset), so the CharacterDataPostfix, SpawnLambdaPostfix and ChatSendPrefix line numbers moved by +1; registrations 727-732 and the other five samples are unchanged. Re-read in the new snapshot; verdicts unchanged. 2026-11-05 re-extraction at b2fa4cc (natural-language chat): same seed and the same eight feature IDs. AIPlayerSpikeMod.cs grew (mentions, chat output kinds, the ChatWindow.Deactivate patch for Tab at 789-790), so CharacterDataPostfix, SpawnLambdaPostfix, ChatSendPrefix and CreateServerDriver moved and their registrations moved to 779-786; EarlyInit 193, Shutdown 212-217 and the two HeadlessSdk samples (67, 107) are unchanged. Re-read in the new snapshot; verdicts unchanged. 2026-11-06 re-extraction at 99c9a95 (base safety stages 1-3): same seed and the same eight feature IDs. AIPlayerSpikeMod.cs grew 16 lines before the patches class, so CharacterDataPostfix (1520), SpawnLambdaPostfix (1512), ChatSendPrefix (1484-1496) and CreateServerDriver (1464) moved; their bodies are byte-identical to b2fa4cc, registrations 779-786, EarlyInit 193, Shutdown 212-217 and the two HeadlessSdk samples are unchanged. Re-read in the new snapshot; verdicts unchanged. 2026-11-06 re-extraction at 9df72b7 (place goals, after continue-warning 8fd1e34 and door-settle 4238cce): same seed and the same eight feature IDs. AIPlayerSpikeMod.cs grew by 10 lines before the patch classes (ChatWindow.LateUpdate patch registration for the chat fade at 791-793 and Dispatch/Update lines), so CharacterDataPostfix (1530), SpawnLambdaPostfix (1522), ChatSendPrefix (1494-1506) and CreateServerDriver (1474) moved by +10; registrations 779-786, EarlyInit, Shutdown and both HeadlessSdk samples are unchanged. Re-read in the new snapshot; verdicts unchanged. 2026-11-06 re-extraction at a07166f (my-door fixes on 9df72b7): same seed and the same eight feature IDs. The change touches AIEdge*.cs and Core/AIBaseEdge.cs·AIBaseGuard.cs only; AIPlayerSpikeMod.cs and HeadlessSdk.cs are byte-identical, so every sampled line is unchanged. Verdicts unchanged. 2026-11-06 staged re-extraction 902721e: reread all eight declarations and patch registration sources. Four patch/interface declarations moved into AIPlayerSpikePatches.cs, registrations now 517-523; other four remain. No runtime verification is claimed. 2026-11-06 final UI 11eb461: two OnGUI feature roots change deterministic shuffled sample membership. All new eight declarations/boundaries reread; previous samples retained separately. No runtime trace inferred.",
+  "runtime": "unverified in B; independent A execution must be compared in D without feeding A observations into B",
+  "currentSourceCommit": "11eb461ae122f404acec94563c086b09e002987c",
+  "previousSampleReview": {
+    "sourceCommit": "902721ec505df42d74d0b2d245ed34a049faadad",
+    "samples": [
+      {
+        "id": "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+        "result": "pass",
+        "reason": "AIPlayerSpikePatches.cs:107; AI playerGuid guard and character replacement body retained; registration AIPlayerSpikeMod.cs:519-520.",
+        "handlers": [
+          {
+            "from": "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+            "type": "기능→코드",
+            "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.CharacterDataPostfix(ref CharacterData)",
+            "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+            "line": 107
+          }
+        ]
+      },
+      {
+        "id": "cli:HeadlessSdk.CreateMod",
+        "result": "pass-with-boundary",
+        "reason": "HeadlessSdk.cs:67-90; settings/create reflection is an external SDK boundary.",
+        "handlers": [
+          {
+            "from": "cli:HeadlessSdk.CreateMod",
+            "type": "기능→코드",
+            "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.CreateMod()",
+            "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+            "line": 67
+          }
+        ]
+      },
+      {
+        "id": "hook:ThinClientDriverConstructor.CreateServerDriver",
+        "result": "pass",
+        "reason": "AIPlayerSpikePatches.cs:51-54; interface entry throws InvalidOperationException.",
+        "handlers": [
+          {
+            "from": "hook:ThinClientDriverConstructor.CreateServerDriver",
+            "type": "기능→코드",
+            "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#ThinClientDriverConstructor.CreateServerDriver(World, ref NetworkDriverStore, NetDebug)",
+            "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+            "line": 51
+          }
+        ]
+      },
+      {
+        "id": "hook:AIPlayerSpikeMod.EarlyInit",
+        "result": "pass",
+        "reason": "AIPlayerSpikeMod.cs:193-197; IMod entry logs policy, no gameplay state change inferred.",
+        "handlers": [
+          {
+            "from": "hook:AIPlayerSpikeMod.EarlyInit",
+            "type": "기능→코드",
+            "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.EarlyInit()",
+            "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+            "line": 193
+          }
+        ]
+      },
+      {
+        "id": "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+        "result": "pass",
+        "reason": "AIPlayerSpikePatches.cs:99-102 clears InSpawnLambda; registration AIPlayerSpikeMod.cs:517-518.",
+        "handlers": [
+          {
+            "from": "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+            "type": "기능→코드",
+            "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.SpawnLambdaPostfix()",
+            "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+            "line": 99
+          }
+        ]
+      },
+      {
+        "id": "hook:AIPlayerSpikePatches.ChatSendPrefix",
+        "result": "pass",
+        "reason": "AIPlayerSpikePatches.cs:71-83; guard, TryHandleChatCommand forwarding, exception fallback; registration AIPlayerSpikeMod.cs:522-523.",
+        "handlers": [
+          {
+            "from": "hook:AIPlayerSpikePatches.ChatSendPrefix",
+            "type": "기능→코드",
+            "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs#AIPlayerSpikePatches.ChatSendPrefix(string, bool)",
+            "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikePatches.cs",
+            "line": 71
+          }
+        ]
+      },
+      {
+        "id": "cli:HeadlessSdk.BuildAndInstall",
+        "result": "pass-with-boundary",
+        "reason": "HeadlessSdk.cs:107-145; settings/reflection/manifest code preserved; external BuildMod body is not executed by graph extraction.",
+        "handlers": [
+          {
+            "from": "cli:HeadlessSdk.BuildAndInstall",
+            "type": "기능→코드",
+            "to": "code:Assets/HeadlessTools/Editor/HeadlessSdk.cs#HeadlessSdk.BuildAndInstall()",
+            "file": "Assets/HeadlessTools/Editor/HeadlessSdk.cs",
+            "line": 107
+          }
+        ]
+      },
+      {
+        "id": "hook:AIPlayerSpikeMod.Shutdown",
+        "result": "pass",
+        "reason": "AIPlayerSpikeMod.cs:212 onwards; DisposeAll and Harmony.UnpatchSelf boundary retained.",
+        "handlers": [
+          {
+            "from": "hook:AIPlayerSpikeMod.Shutdown",
+            "type": "기능→코드",
+            "to": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs#AIPlayerSpikeMod.Shutdown()",
+            "file": "Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.cs",
+            "line": 212
+          }
+        ]
+      }
+    ]
+  },
+  "bagPinnedReview": {
+    "sourceCommit": "39b22df96dffe869ab0ccd474b18d31462b71d70",
+    "method": "이번 변경의 대표 원본 선언/본문 표본 대조. 역사적 무작위 표본 결과와 별도 보존.",
+    "runtimeTraceObserved": false,
+    "samples": [
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.Candidates(World, Entity, AIObservation, string)",
+        "file": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+        "lineStart": 143,
+        "lineEnd": 214,
+        "result": "pass",
+        "reason": "명시 item/slot/where 필터와 후보별 Stale 재검사, 자동 최고 장비 정책 없음"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.TryChosenHand(World, Entity, bool, out int, out string, out string)",
+        "file": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+        "lineStart": 757,
+        "lineEnd": 765,
+        "result": "pass",
+        "reason": "선택 핫바 신원·파손·용도 확인, 조용한 대체 없음"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.ChestCandidates(World, Entity, AIObservation, string, AIGoal, AIGoal)",
+        "file": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+        "lineStart": 501,
+        "lineEnd": 545,
+        "result": "pass",
+        "reason": "자기 상자와 실제 관측 품목/목적 슬롯 후보"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.DropCandidates(World, Entity, AIObservation, string, AIGoal)",
+        "file": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+        "lineStart": 550,
+        "lineEnd": 563,
+        "result": "pass",
+        "reason": "명시 내려놓기/지정 수령 후보이며 Give 수령자 부재 시 후보 없음"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#InventorySkill.Tick(World, Entity, float)",
+        "file": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+        "lineStart": 809,
+        "lineEnd": 848,
+        "result": "pass",
+        "reason": "Swap 한 번 요청 후 양 슬롯 관측, 3초 경과는 ObserveOnce로 전달"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/AIInventory.cs#AIInventory.Stale(World, Entity, AIInventoryMove)",
+        "file": "Assets/AIPlayerSpike/Scripts/AIInventory.cs",
+        "lineStart": 602,
+        "lineEnd": 661,
+        "result": "pass",
+        "reason": "목표·슬롯·품목·소유·수령자 재검사"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs#InventorySwapProgress.Observe(InventoryStamp, InventoryStamp)",
+        "file": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs",
+        "lineStart": 23,
+        "lineEnd": 27,
+        "result": "pass",
+        "reason": "Requested와 양 슬롯 완전 교환 일치만 관측 완료"
+      },
+      {
+        "id": "code:Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs#AIInventoryRules.ObservedDelivery(int, int, bool, bool, int, int)",
+        "file": "Assets/AIPlayerSpike/Scripts/Core/AIInventoryRules.cs",
+        "lineStart": 54,
+        "lineEnd": 58,
+        "result": "pass",
+        "reason": "지정 pickup 요청과 실제 바닥 감소량=수령 증가량 동시 검증"
+      }
+    ]
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "baselineGraphSha256": "cd39047d5814cf565d1a071ed41bd89c15fec025b1de76b6a714df3f31bfcbad",
+  "groups": [
+    "grapple8373-8374",
+    "lightning9135",
+    "effect58",
+    "condition39-6839",
+    "condition102-3101",
+    "condition206-four-aura",
+    "breeding",
+    "dash",
+    "detonator",
+    "death"
+  ],
+  "pins": [
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\A\\condition-effect-table-crosswalk-v2\\condition-effect-table-crosswalk.json",
+      "sha256": "5d3905eb829fab8cf807c9d3f9139e6def84ee59d52a5b4d09f718538d6a0528"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\animal-helper\\generated\\cases.json",
+      "sha256": "33f788d481ef53958f429c2a37a4e14a6218215fe3502cd6c1953a0c46f70d19"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\combat-followups-v2-replay-1\\cases.json",
+      "sha256": "d404bfa493321e8a02724b1add3449a24dcacd230ca308c7a3949e0d31dab317"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\player-movement-inputs-v3-replay-1\\cases.json",
+      "sha256": "41483d3e92ac7f6a0e2471df7f22c58bb07a5d178c39facac1720a2f59ce167f"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\evidence\\summon-v2-replay-1\\cases.json",
+      "sha256": "c4eac0abb11054c8648ea3ab19aae7f0904d5c74f7311abe177957dd4a6e00ad"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\B\\world-tools-helper-v2\\generated\\cases.json",
+      "sha256": "6c2285223285c4a938ec6ae4cfd6cdbd0c91f7042bef420ba38883fcbc2ba02a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\animal-toggles-v2.json",
+      "sha256": "97509517f3046e6828bbe07d013915d1434a883959dc2e66ffc22bec16a71aa2"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\container-rule-v2.json",
+      "sha256": "438eb7fec9ca978fe34f709cc8a135494786c4a36133a2e349f448d8872c7fa9"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-07-행동결과완결\\full\\C\\gear-rule-v2.json",
+      "sha256": "7fc1008580d1a7f178e484bcb95bc2bc61cadf19e13c9b7d8e086576944c5ee5"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\B\\evidence\\code-evidence.json",
+      "sha256": "5653e64bcebfe2c2048e63700367e992f4c065c2c9f6536d2cd278cfd6f2f3d4"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\B\\evidence\\exact-alias-stage-scan.json",
+      "sha256": "94ce7125cc91114d91c3b3c7775d0d779afaa5e4ed7a69fbaf73a59b83a558cc"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\B\\evidence\\graph-source-neighborhood.json",
+      "sha256": "c9bde4f3ad6f63fef2a0eb8dbe55a1179efa0ee93b465d99c262c19c58ea98c0"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\B\\evidence\\raw-components.json",
+      "sha256": "7f7c6b8b9854ba8a44c5b77ba57dbcd49b5f1ef13990a39bc0c4ca7c8c26dd8c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\B\\evidence\\raw-objects.json",
+      "sha256": "5576e2bee2fefae1bbdc08fa54963121758ca6922e611372a02ce511cd71a9a3"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\B\\evidence\\rules.json",
+      "sha256": "f10df1ee54d6567ca00434da44cec240b4f2e9cfd53529f9dd3b365a6591b81f"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\D\\breed-source-candidates.json",
+      "sha256": "6e21e6ea006eef63f1fefc1476a6f6c561db64f7dcd2ad516452f50b4a17de54"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\D\\code-excerpts.txt",
+      "sha256": "1565fa02f28604bc59ac355729b544ce092f26c1f9873244991f01a5f8f7dd91"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\D\\code-pins.json",
+      "sha256": "9d286efb14b289cb7e4516bf2ea053f8dfcbf8203cb38035dac10a652ac19af0"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\D\\compared-nodes.json",
+      "sha256": "57c57cf708375d938c809e04ba0d139180423d8ec884c7457b73d223eb110001"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\D\\cow-breed-authoring.json",
+      "sha256": "f8001e61d4a99e0667bf3c176bd6775a896bb229b641d0514f139610c5d42ec2"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\D\\report.md",
+      "sha256": "21034b4d5f36e891f1b3da4856a89bdaaa83ac50a199f87bad07242c3e10161d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\E\\code-excerpts.txt",
+      "sha256": "34f4ae60d7e588f68fdff9f2220c4905119fefb638a82b28b81837546ee34bea"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\E\\code-pins.json",
+      "sha256": "6b424b52fec28f9c5aeb7e3ff5b24759d9ba84c14a4e2aafe051e2c2e35da84c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\E\\current-comparison-exact.json",
+      "sha256": "50ade4c8bebbb2014e93e1680daada94b312de15273d42a05b1aa8211fbcc156"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\areas\\E\\report.md",
+      "sha256": "a0c67ec79c6738e494e1cfd2f47cbb04703f0084e702f2911def2ccc73b0612a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\recovery\\report.md",
+      "sha256": "20c1f1d6bb76e714dbee6e6ce7c830c90be624e45890ee1e82497a8f7c8b12fc"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프미포함점검\\review\\recovery-independent.md",
+      "sha256": "74f8ffd9c114520a8c806c74e87ce21d82344eb5b47b24b411781c8610fc5129"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프추가기록\\discovery\\residual-B\\new-bounded-findings-evidence.json",
+      "sha256": "df80a692e1dd819809307d577cabe7e62969babd9d31c72351cc23f3bbb99138"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프추가기록\\discovery\\residual-D\\specific-static-attribution-candidates.json",
+      "sha256": "27cf4fbdc581812e15f04b72b347e8460869857b79f1749586eab15daf634b46"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프추가기록\\discovery\\residual-report.md",
+      "sha256": "6a5e62f258fe14f38e163483e27a6c0d41cea50078227b31c4cdea0af65c2dd2"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프추가기록\\history-current\\coverage.json",
+      "sha256": "4dbd45ab39684089bc86508b7f05c369b30df5fd26dfc5da4a1d05e08547c412"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프추가기록\\history-current\\graph.json",
+      "sha256": "ce39acaa9a89712c34071e72937f5f2660c38bd082abd39069874fb0429f2d2a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동그래프추가기록\\history-current\\manifest.json",
+      "sha256": "55fc4a347ab1cb08f42ee5f93bafa07b2a9864d67c3bb7347f711cf17a2114b0"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\00-agreement.md",
+      "sha256": "257383d28e570eb3a18f495c2fabd326017e20a459030e70afbc87e0f383a1fc"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\baseline-246\\coverage.json",
+      "sha256": "aaf6c1249dc6f61e92d06c27953e153fcf484bf318fe0c99f80c5dede05e2431"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\baseline-246\\graph.json",
+      "sha256": "cd39047d5814cf565d1a071ed41bd89c15fec025b1de76b6a714df3f31bfcbad"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\baseline-246\\manifest.json",
+      "sha256": "b0476cee72806b389f5ac2b27162ee2e7004c0e1e5941e3de5a7ca54c34770f5"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\compile_contract.py",
+      "sha256": "2fa5a566fd892462fc3484f1cb12be90149d60d99371b8b3ee75faa49183a688"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\pins.json",
+      "sha256": "15e65ee90b2463c7958ef8f6512fe496d6ca9b073cc5938efe9c4edcd76a9c79"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\produce.py",
+      "sha256": "b059f5b1556f5d388be96da96d0878565236fe662cf92900a4cad528aab0eb78"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\report.md",
+      "sha256": "2c7545eac7052593edce6aca4def88f97ed055ef4c655723aea347a40d7d83ec"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\static-check.json",
+      "sha256": "84e8715de31275b27fc92ca1098f44b7d12161a4bc1b15a313e586fe186156b8"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "sha256": "defd64fa1d9cac5567968af6f9bd934726c03eb8581a54959f1883be7e0bbaa6"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\install_reviewed.py",
+      "sha256": "949da0fd608e76ae69d58f7a3d0d654fa2bab6153ba7faa9766783b09bf9beba"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\overlay.py",
+      "sha256": "fa1c634ec1ca12482acd71e490278220ff28deff49c5e7b2ec05c8def23d9db2"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\publication-before.json",
+      "sha256": "71eaed3ed82b843b1efbec61d03ef0f51fc0321ce4b220a6f5476e7b7c019445"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\publication.config.json",
+      "sha256": "bbd5ba883a1886228ebcc070e7f1b974892dfe59d9894b4ff546cd0e3f0ae8bd"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\build_six.py",
+      "sha256": "62531f81c9d76affd1349d161589044e5e739fb00b43796c758cf621b935b7ca"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\pins.json",
+      "sha256": "c715737eaa668326dc9c8614e9b9ba3da4fa20e73f0195ef2a44549a33480224"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\report.md",
+      "sha256": "1926fd9bb51233069ea1334a99374b8a105bd98b643d380cf0065b3b3566f561"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\revision-206-before.json",
+      "sha256": "de7e5995f2c2589c9a57a0878010b566e48f860b6d3875d0d90d4c303d604308"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\static-check.json",
+      "sha256": "50eeb6d66d198bcf7846e5ddd118ccbd95877d0af53e2070d16f72fb7d6a62a5"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "sha256": "9b711be20d51f665c50c0da2d7cdf990bf108f8d46405c95a1194e30c6622805"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\verify.py",
+      "sha256": "bb9b347190681144c9569cd0c7fc226917847946b93f5319046c312c0ae18fb1"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\ConditionEffect.cs",
+      "sha256": "d4949f2c6f748bd995e57eaad386b7d08870d25eeedfe15ce108956c55c048bd"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\ConditionID.cs",
+      "sha256": "f5b47f158b3d48e8bb7a8d934857d3e7116da08920ae9eb58ec5d2c6d439e7f6"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\ObjectID.cs",
+      "sha256": "9e8c46bf33b5030392aab2512acf4fe391d2986624b3754822c7403f91c91bc3"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Base\\OffHandMechanic.cs",
+      "sha256": "1ead9bffe10f65e9463a3b2b4da88d56ac2b73d9e162f792f3b373d85b23a96e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\BreedStateCD.cs",
+      "sha256": "c2baefc2f85ee3f02538c0f187d9ba396292359f2f5a10b0f05c151b8529fd49"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Components\\PlayerState\\DeathStateCD.cs",
+      "sha256": "6f8cee3783b29906b1b21a61895fc4469f0d40aa4bb29b83f7f3624f583e27cb"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.ConditionExtensions\\ConditionExtensions.cs",
+      "sha256": "5bb0f215eb4ccb63e8b99a353f29b981d964dea0f02a813fe6df3b840af22aa5"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\AuraDistanceOverrideConverter.cs",
+      "sha256": "1248f740ebcc00be8d21263881e02bc51c00d696c0c67874418bd702ca4104cc"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\BreedStateConverter.cs",
+      "sha256": "068301a72de867e6f15af4dc846dacda42aee959c2d7d4fb5d49a735a42e21e4"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\CooldownConverter.cs",
+      "sha256": "1ca766cbdfa40f7ef7d785cc243460c456b0c1d6131b0f5aadd3f05524bec4b8"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\MovementSpeedConverter.cs",
+      "sha256": "036c5f4ceb1d8a96a956f2e2ec3bb319a382b2072ab95f877cbe65363ee83d6a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\OffHandConverter.cs",
+      "sha256": "a55966f4dc84ef00fc42b3cc0e93aac0810ce65830fdc24eafaaafa3e95263fa"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\RangeAttackStateConverter.cs",
+      "sha256": "e3388afbd3abfb9ab0eacc8526bd73d7ed516a644b2c2645e48c21a125d7383e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.ECS.Conversion\\SupportConditionsConverter.cs",
+      "sha256": "8d4cbce3e6c6417adcbfffa34ea4e5482c50f5411557bdc8cb63a44a614bc8a2"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AttackPlayerSystem.cs",
+      "sha256": "7b44354da8d11617fe426a70d699310521db734667a04875751f2f1d89f295ec"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AttackSystem.cs",
+      "sha256": "a7938e8c736e1c7a873a4ffc2f8de39ca53686a3a424c4a0e7ce1aadfe767c0d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\AuraConditionsSystem.cs",
+      "sha256": "ea21f4cddf7a12056102d4383a97f5fe01307bf6369ee4e866f7eeedad3e2a89"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\BeamWeaponSlot.cs",
+      "sha256": "e0574759aa5a1076e90089a567ea0a6b6e88137831107ab96e5c1bf5176ed894"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\BreedStateSystem.cs",
+      "sha256": "a3e2aa5a911897c1b33f359e4c371a8cb6c0a495930da0586c621263f4d50f74"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\CheckForDeadPlayerSystem.cs",
+      "sha256": "4412f25db6f09a425cb906191ac535199f7aa899db763ffecdc10e35e012c50c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ClearInputOnStunnedSystem.cs",
+      "sha256": "4324e25f196b8d9d33bb4d3630548395eba151c46e31495264b60796bdb463df"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\DealDamageFromConditionSystem.cs",
+      "sha256": "bed5bb3fee84f61542c75750c23b8a0f5b76bd1ef8f5d522a1b52c8d0df3495c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\EntityUtility.cs",
+      "sha256": "b54971fc4148c2f2fade480cb614d6d2e24b3f84b0d56a46f0a942ac3205667b"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\InitMoveInventorySystem.cs",
+      "sha256": "24d3e8979c9a654828f42570f156293aeee26040282b74c9baf12c6fd14e92a0"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUpdateSystem.cs",
+      "sha256": "49bc996ddeb739ce3d37e5b0ec401360de9d6753f1a4852971d6c2cdb2f4e1ae"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\Inventory\\InventoryUtility.cs",
+      "sha256": "998a57df2de7d83f05dce7414f8ab401021ccc788938d5797480abc3b8864c5a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\MinionHandlerSystem.cs",
+      "sha256": "6f5b1511b6442208e7e772ffa939967621acbb73e7919363f264f9f19e8ce22a"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerController.cs",
+      "sha256": "024fe37bb34449371a0f1777fe2ff6b2f1be2c0514b3a10b818419031cc212ba"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\ChainBeamTargetsSystem.cs",
+      "sha256": "cef25594a00894f5cb61818d96be8cf3882ac45813ac90eaf055dc3d97023a25"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\ChangeDurabilitySystem.cs",
+      "sha256": "a48f532753b98c50731a8c473d83c36fe0f6ec586b08520991401201ce2f4ade"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\OffHandEquipmentUpdateSystem.cs",
+      "sha256": "c208c839e792095447fd02332e2e810b5380df3aec4531bf0fba7237ad7c3582"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\PlayerDashingRoutineSystem.cs",
+      "sha256": "b355ea6b3c114870b3d7499dd795eb2da9521c120bf3eee83456a36d29a32dee"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerEquipment\\PlayerMinionDetonatingSystem.cs",
+      "sha256": "a99271c801d948ca8d2ea31c84119bef7978ffe0f7e607844664eaaba5915978"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\Death.cs",
+      "sha256": "9b7abcd6ac9de01fc895a4a1336db036c6ac50f002770e427f01ab4a814fc265"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerState\\UseOffHand.cs",
+      "sha256": "36a66aa6dadb6e0b287c0ab1a4cde037147f9aee1fa70818f9d9f5f5e59a26b1"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\PlayerVelocityCalculationSystem.cs",
+      "sha256": "550f48d95dfefe1c262bb3bfad6d25f8be45bccf31291b89f08eca082bd663ce"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\ProjectileSystem.cs",
+      "sha256": "90d385da6f4da3625ea76cfc2482ef8db9f4de82ca1c2e4f0584f5d5c87ce5c4"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\RangeAttackStateSystem.cs",
+      "sha256": "1a1c64b3e41ee02dd69823b2656b10be7bb7a179e3874c3c299f55757f1e5a4c"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SetPlayerDirectionSystem.cs",
+      "sha256": "97f507e5115076901eaa1d2c1644b730ef8df376d5a51169e5d9cd01c0c0dc9e"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SpawnGraveForDeadPlayerSystem.cs",
+      "sha256": "0d696a23fbcf45d9e5fbf85f7aa3bbd69228b5645726dc6d1c5d16262c0afe3d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\SummarizeConditionsSystem.cs",
+      "sha256": "2a2d5d5e20293617ff2906fd7260f0d8e64438d605ddcc1fa502d7f11ab32e3d"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\code\\Pug.Other\\UpdateMovementSpeedSystem.cs",
+      "sha256": "662b5dd67625556d08037f96a2d2131f520e21a7ec84446b1863c420ed5c54aa"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\final\\collection.json",
+      "sha256": "34207afb4a63bfaaaff0a90c726c32882c4494a38cc0d7cc2f0dcbdc4ad83fb8"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임원본-상호작용\\raw\\components.jsonl",
+      "sha256": "d98d39c33066d453d823efd9f0c7c00611c7e033674bbe1a70e01bd4943abd77"
+    },
+    {
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\게임행동-그래프\\legacy_graph.py",
+      "sha256": "c92a52296ab88338342d3bc25d0f1b79f37ca1e346cf6a46597c59b4dcc673fe"
+    },
+    {
+      "path": "C:\\Users\\<USER>\\.codex\\plugins\\cache\\head-agent-core\\head-context\\0.9.6\\skills\\start-job\\SKILL.md",
+      "sha256": "f652b35d9ee1827a49f1b505836b62d60c3f2b8eec1a49f01535f931aa93274a"
+    }
+  ],
+  "records": [
+    {
+      "group": "grapple8373-8374",
+      "id": "completion:essential:grapple-input-aim-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "pointer": "/records/0",
+      "recordSha256": "82a6e96b0105d9fcd0811c3d3294f163d07008e8bd2c605a4d1f3c910fe07bf3"
+    },
+    {
+      "group": "lightning9135",
+      "id": "completion:essential:lightning-chain-target-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "pointer": "/records/1",
+      "recordSha256": "f5583885521cd1189cea989fc58226a648dc727801140d77b112c13afcdc3857"
+    },
+    {
+      "group": "effect58",
+      "id": "completion:essential:effect58-input-direction-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "pointer": "/records/2",
+      "recordSha256": "e6c9aa3500c8c2fec5308351eba1afb274bb050625d17ac57467607e67fd9a21"
+    },
+    {
+      "group": "condition39-6839",
+      "id": "completion:essential:condition39-source6839-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "pointer": "/records/3",
+      "recordSha256": "b9e835d72821c6516952b694c450b560f56fa29bc48a5e7686cc84574c6769a1"
+    },
+    {
+      "group": "condition102-3101",
+      "id": "completion:essential:condition102-source3101-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "pointer": "/records/4",
+      "recordSha256": "484e990c4fae2c4b82a26335d11fc0ed0184c9823e76c8cdff9eca5c26fa3e48"
+    },
+    {
+      "group": "condition206-four-aura",
+      "id": "completion:essential:condition206-four-source-aura-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\six\\supplement.json",
+      "pointer": "/records/5",
+      "recordSha256": "b108a22070085d7b48e7b17416fc3fbfd3c81f8091a15762b56e30b83a37d109"
+    },
+    {
+      "group": "breeding",
+      "id": "completion:essential:breed-downstream-cow1300-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "pointer": "/records/0",
+      "recordSha256": "828b03e38a349b00600d9539fd6ec8755b3cb2ede0d480b1fcfb985a90a04cd2"
+    },
+    {
+      "group": "dash",
+      "id": "completion:essential:dash8340-8341-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "pointer": "/records/1",
+      "recordSha256": "af788fff1c32d92c68b621ae2bcc6fa4454797f12daa02fd90cc9db6d0976736"
+    },
+    {
+      "group": "detonator",
+      "id": "completion:essential:minion-detonator8330-8331-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "pointer": "/records/2",
+      "recordSha256": "a4418228b33d9bd0f77413e877806be1a337c7c63ec009ca311d36ce906ffdc1"
+    },
+    {
+      "group": "death",
+      "id": "completion:essential:player-death-grave-inventory-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "pointer": "/records/3",
+      "recordSha256": "e196a0b09951f34daca5529cd5a4c55cb7589c95bd6164de931f2e97f640a402"
+    },
+    {
+      "group": "death",
+      "id": "completion:essential:player-death-armor-cost-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "pointer": "/records/4",
+      "recordSha256": "175622bd773b57cfbad3f4ee16422af388611472b6017c896c0599d080d9104c"
+    },
+    {
+      "group": "death",
+      "id": "completion:essential:player-death-respawn-gates-v1",
+      "path": "C:\\Dev\\.head\\sessions\\코어키퍼-AI-캐릭터\\work\\2026-11\\2026-11-08-행동판단필수보완\\four\\supplement.json",
+      "pointer": "/records/5",
+      "recordSha256": "0eb0b16e514c6c97d15c486c7738dc1c0d2f3ab4ce27a99b676022791788f0a1"
+    }
+  ],
+  "runtimeTested": false,
+  "schemaVersion": 1,
+  "wholeScopeComplete": false
+}

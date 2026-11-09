@@ -1,0 +1,11 @@
+ai-bridge:POST /v1/plan — 멤버의 보고를 받아 구독 CLI, 기억 검색, 응답 검증을 거쳐 계획 응답을 반환한다.
+hook:AIPlayerSpikePatches.SpawnLambdaPrefix — spawn 호출 인자에서 현재 캐릭터 생성 요청을 기억한다.
+pol.exp-no-extra-calls — 경험 기억 때문에 LLM 호출을 늘리지 않는다
+pol.exp-retry-allowed — 실패 횟수만으로 목표를 영구히 피하게 하지 않는다
+pol.explore-dig-by-model — 탐험의 걷기·파기는 판단 모델이 고른다
+pol.explore-end-when-nothing — 탐험할 곳이 없으면 목표를 끝낸다
+pol.path-leak-watch — 길찾기 누출은 지켜보기만 한다
+pol.recall-budget — 검색은 필요할 때만, 한 판단에 최대 2번
+pol.recall-index-then-query — 목차(저해상도)를 늘 넣고 필요한 것만 질의한다
+pol.recall-prompt-cost — 안내·목차로 늘어나는 프롬프트(약 +3,400자)는 감수한다
+pol.weapon-default — AI는 늘 기본 무기를 갖고, 가방에 무기가 있으면 맨손으로 싸우지 않는다

@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "errors": [],
+  "nodes": 54,
+  "edges": 22,
+  "legacyCapabilities": 36,
+  "source": "C/기획/그래프-선언.md",
+  "sha256": "a33e26cbae368870b4cd6513bca99a5b4b53c204bb1e59f9cb5603ec46102eb2",
+  "note": "문서/참조 검사. 게임 화면 검증이 아니며 사용자 유예 부분은 미완료로 유지."
+}

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <NoWarn>CS0649;CS8981</NoWarn>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Compile the complete production scheduler, not a copied/reimplemented scheduling loop. -->
+    <Compile Include="../../Assets/AIPlayerSpike/Scripts/AIBrain.Preparation.cs" Link="AIBrain.Preparation.cs" />
+  </ItemGroup>
+</Project>

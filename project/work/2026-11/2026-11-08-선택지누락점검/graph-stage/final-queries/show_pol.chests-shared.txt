@@ -1,0 +1,100 @@
+{
+  "node": {
+    "class": "사용자 결정 요약",
+    "evidence": [
+      {
+        "anchor": "### 상자 공용",
+        "doc": "gapAgreement",
+        "end": 24,
+        "line": 21,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 21
+      },
+      {
+        "anchor": "기존 가방 합의의",
+        "doc": "gapAgreement",
+        "end": 22,
+        "line": 22,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+        "start": 22
+      }
+    ],
+    "id": "pol.chests-shared",
+    "sourceLocations": [
+      {
+        "end": 24,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 21
+      },
+      {
+        "end": 22,
+        "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+        "start": 22
+      }
+    ],
+    "status": "사용자 결정",
+    "summary": "보관·꺼내기·빠른 쌓기·제작 재료 계산이 호스트·다른 AI 상자를 포함한 모든 상자를 공용으로 쓴다. 제작은 게임처럼 제작대 근처 상자 재료로 바로 한다. 기존 가방 합의의 호스트·다른 AI 상자 제외를 대체한다.",
+    "title": "모든 상자 공용",
+    "type": "정책"
+  },
+  "out": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "### 상자 공용",
+          "doc": "gapAgreement",
+          "end": 24,
+          "line": 21,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 21
+        },
+        {
+          "anchor": "기존 가방 합의의",
+          "doc": "gapAgreement",
+          "end": 22,
+          "line": 22,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 22
+        }
+      ],
+      "from": "pol.chests-shared",
+      "kind": "대체: 상자 접근 부분(trash 경계는 유지)",
+      "to": "pol.bag-boundary",
+      "type": "reference"
+    }
+  ],
+  "in": [
+    {
+      "class": "합의",
+      "evidence": [
+        {
+          "anchor": "### 상자 공용",
+          "doc": "gapAgreement",
+          "end": 24,
+          "line": 21,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 21
+        },
+        {
+          "anchor": "기존 가방 합의의",
+          "doc": "gapAgreement",
+          "end": 22,
+          "line": 22,
+          "path": "../2026-11-08-선택지누락점검/graph-stage/source-pins/agreement.md",
+          "sha256": "26a153e63dfe04511e36522c6b880b35e38054bc24dbe2995aca8801b8574d81",
+          "start": 22
+        }
+      ],
+      "from": "P.chests-shared",
+      "kind": "현재 결정의 정책 요약",
+      "to": "pol.chests-shared",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "R.game-topic.lifecycle",
+  "status": "주제별 개발 참고 및 정확 원본 ID. 모드 지원·실게임 성공은 기존 코드/관측 증거로 판단.",
+  "topics": [
+    {
+      "code": [],
+      "counts": {
+        "action_completion": 3
+      },
+      "id": "R.game-topic.lifecycle",
+      "labels": [
+        "player_death_armor_durability",
+        "player_death_grave_inventory",
+        "player_death_respawn_gates_resources"
+      ],
+      "planning": [
+        "P.result"
+      ],
+      "title": "사망·부활",
+      "unmatchedLabels": [],
+      "targets": [
+        "game:completion:essential:player-death-armor-cost-v1",
+        "game:completion:essential:player-death-grave-inventory-v1",
+        "game:completion:essential:player-death-respawn-gates-v1"
+      ]
+    }
+  ],
+  "recordedEvidence": [],
+  "wholeGraph": [
+    "game",
+    "overview"
+  ],
+  "notice": "각 game: ID의 show에서 원문 ID와 관련 조건·결과·실패를 찾는다. source는 origin이 있는 노드에서 실행한다."
+}

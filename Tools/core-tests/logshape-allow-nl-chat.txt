@@ -1,0 +1,79 @@
+// logshape allow list for combat stage 2 (branch combat-s2; review F3, 4-독립검수.md). Use:
+//   node Tools/core-tests/logshape.mjs diff <base log> <new log> --allow Tools/core-tests/logshape-allow-combat-s2.txt
+// Base logs: the combat baseline (e82eb87, 2026-11-05-전투-기준기록 Player-baseline.log + decisions-055353.log) together with
+// the refactor L2 record (rf-S7, 2026-11-04-리팩토링 runs/L2/collect). The first block is the L2 allow list as it was
+// (runs/L2/logshape-allow.txt); the second block is the combat stage 2 lines, each with its code site (combat-s2 76563bf)
+// and why it is new. Shapes are aids for a person (logshape.mjs header): a shape listed here can still hide a change.
+// Shapes seen in the live runs ① (93ad7d8), ② (d35c9e9) and R3 (0309f4a, 76563bf); the last block is computed from the
+// line format for lines that did not occur in a run (failures, unblocked).
+ASM-IN ## {} |  | ASM-IN	S6a recorder (AIDecisions.cs AsmIn :2528), decisionlog.on only — planned new line
+ASM-OUT ## {} |  | ASM-OUT	S6a recorder (AIDecisions.cs AsmOut :2539) — planned new line
+ASM-OUT ## recursed |  | ASM-OUT	S6a recorder, tool-short rebuild (AIDecisions.cs :2463) — planned new line
+SKILL | reason start end facts wall | SKILL FAILED	TunnelSkill failure facts (AIExplore.cs:955, same text in rf-S0); L0 had no tunnel failure (situation)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set set | DECISION SEND	_setLog ' set=close-fight' + ' set=free-time' (AIDecisions.cs :2403/:2413 = rf-S0 :2584/:2594); L0 had no fight during free time (situation)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set set swarm | DECISION SEND	same as above with swarm field (situation)
+DECISION ## INPUT | rev trigger set set running motion input | DECISION INPUT	same _setLog in the INPUT line (situation)
+BRAIN |  | BRAIN LLM	BRAIN only-wait line (unchanged) whose trigger text '자유 시간 시작: 위쪽 LLM에 5초 뒤…' contains LLM (situation)
+TEST-ONLY nonew |  | TEST-ONLY	extra test command used in L1 X2/X3 (not in L0 set)
+GOAL ended | rev | GOAL	explore end branch (AIDecisions.cs :1002 EndGoal), exercised only in L1 X3 with nonew
+// L2 additions (2026-11-05): each code line has the same text in rf-S0 and rf-S7
+SKILL | reason start end facts emptyInFirst40 items equipped | SKILL DONE	InvSkill facts (/ai inv, test command used in L2 BodyCan setup; AIBodySkills.cs:1933 = rf-S0 :1923)
+TEST-ONLY take |  | TEST-ONLY	test command /ai take (L2 BodyCan setup; AIBodySkills.cs:432 = rf-S0 :424)
+TEST-ONLY give |  | TEST-ONLY	test command /ai give (L2 BodyCan setup; AIBodySkills.cs:410 = rf-S0 :402)
+TEST-ONLY decisionlog |  | TEST-ONLY OFF	decisionlog.on removed for 90 s (L2 S5 SEND check; AIDecisions.cs:163 = rf-S0 :2973)
+GOAL | rev | GOAL	gather count fell below the start (Gemini, scenario 13; AIGoals.cs:254 = rf-S0 AIDecisions.cs:739) — situation
+DECISION ## queued answer not used |  | DECISION	queued answer stale (Grok, scenario 13; AIBrain.Loop.cs:411 = rf-S0 AIDecisions.cs:1054) — situation
+SKILL | d d d | SKILL	TunnelSkill child done with items left on the ground (variable list length; AIBodySkills.cs:2185 = rf-S0 :2175) — situation
+SKILL | d d d d d | SKILL	same as above
+SKILL | d d d d d d | SKILL	same as above
+// ---- combat stage 2 (2026-11-05), AIBrain.Loop.cs / AIShortSkills.cs / AIBrain.Candidates.cs at 76563bf
+DECISION ## PICK step | pred | DECISION PICK	what was chosen against a charger and its prediction code (AIBrain.Loop.cs Apply :943 "PICK {key} run #r pred=..."); new line, only when the option has a prediction (close fight with a MushroomBrute)
+DECISION ## PICK away | pred | DECISION PICK	same line for away:near in the brute close fight (it carries the charge facts)
+DECISION ## PICK attack | pred | DECISION PICK	same line for attack in the brute close fight
+DECISION ## PICK eat | pred | DECISION PICK	same line for eat in the brute close fight
+DECISION ## PICK hit | pred | DECISION PICK	same line for hit once
+DECISION ## PICK hitnext | pred | DECISION PICK	same line for hit again (key hitnext:<entity>)
+DECISION ## PICK combo | pred | DECISION PICK	same line for the composite actions
+DECISION ## PICK approach | pred | DECISION PICK	same line for walk into reach
+DECISION ## PICK hold run ## | pred | DECISION PICK	same line for hold (key 'hold' has no colon, so 'run #' stays in the head)
+DECISION ## PICK step | pred lr | DECISION PICK	PICK line with the left/right record lr=alone(...) (AIBrain.Loop.cs MirrorNote :950, ② record-only decision)
+DECISION ## PICK step | pred lr pred | DECISION PICK	PICK line with lr=tie(... pred=...) / lr=differs(... pred=...) (MirrorNote)
+DECISION ## PICK combo | pred lr | DECISION PICK	MirrorNote on a composite (alone)
+DECISION ## PICK combo | pred lr pred | DECISION PICK	MirrorNote on a composite (tie / differs)
+DECISION ## next swing APPLY at the end of the previous swing |  | DECISION APPLY	hit again started when the swing it waited for is over (AIBrain.Loop.cs ApplyNextHit :538)
+DECISION ## next swing replaced |  | DECISION	a queued hit again replaced by a newer hit again (ApplyOrHold :437)
+DECISION ## next swing dropped |  | DECISION	a queued hit again dropped by a newer answer of another kind (ApplyOrHold :437)
+DECISION ## next swing not started |  | DECISION	the queued hit again was stale when its swing ended (ApplyNextHit :536)
+COMBAT ## answers |  | COMBAT	answer outcomes per fight, session totals (AIBrain.Loop.cs CombatTrack :326); new line at every fight end
+SWITCH |  | SWITCH MID-MOTION	seen in ① / ② only: short actions were counted as MID-MOTION there (review F4). Since 0309f4a a short switch prints '(short action at once by design: ...)' (shape 'SWITCH | | SWITCH'); MID-MOTION remains for a held long switch applied on the 2 s timeout (same text as e82eb87, AIBrain.Loop.cs Switch :511)
+SWITCH |  | SWITCH REVERSAL MID-MOTION	same as above with REVERSAL (① / ② only)
+TEST-ONLY charge stop predicted near the brute | e what walkable top object | TEST-ONLY	testcmds.on only: a predicted charge stop within a tile of the brute (AIBrain.Candidates.cs NoteNearStop, 0309f4a) — found the YellowFirefly cause of review F2
+TEST-ONLY charge stop predicted near the brute | e what walkable top object critterOnly | TEST-ONLY	same line with critterOnly= (76563bf, AIBrain.Candidates.cs NoteNearStop :736)
+SKILL | reason start end facts target wall obj hp reduction ore stand tool slot | SKILL DONE	situation: MineSkill facts led by 'moved X from hotbar slot … for an empty hand' (bare-hand mining, no pick in R3 / K2); AIBodySkills.cs :2090 Facts line unchanged since e82eb87
+// computed from the format (not seen in a run yet)
+DECISION ## failed |  | DECISION	in combat a failed call says its cause and wait (AIBrain.Loop.cs CallFailed :900, HEAD review item 5)
+DECISION ## failed |  | DECISION HTTP	same with an HTTP error text in the reason
+DECISION ## unblocked |  | DECISION	first usable answer after failed calls: how long there was none (AIBrain.Loop.cs HandleResponse :821)
+// R3 after 10:13 (the explore goal ran unattended ~4 h near the core with the host in view; 76563bf)
+DECISION ## PICK retreat | pred | DECISION PICK	PICK line for retreat in a brute close fight (AIBrain.Loop.cs Apply :943)
+DECISION ## no usable answer | type tokens | DECISION	refusal answer (2 in R3, t=14611 / 15228); line unchanged since e82eb87 (AIBrain.Loop.cs HandleResponse :813); followed by the new 'failed (Refusal…)' and 'unblocked' lines
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set swarm players | DECISION SEND	situation: a swarm fight with the host in view (players= field, same SEND format as e82eb87; AIBrain.Loop.cs :764)
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion swarm players | DECISION SEND	same without set=
+SKILL | d d | SKILL	TunnelSkill child done with two items left on the ground (variable list, as the L2 entries above) — situation
+// re-review R1: a charge anticipation drops only the request; the waiting choices stay (AIBrain.cs AbortRequest :309)
+DECISION ## held switch kept |  | DECISION	held switch kept when the request in flight is dropped for a charge anticipation (HEAD decision 1)
+DECISION ## held switch and ## queued answer kept |  | DECISION	same with a prefetched queued answer
+DECISION ## queued answer kept |  | DECISION	same, only a queued answer
+// 자연어 명령 (branch nl-chat; 실게임 2판 5-실게임2.md §4, 1판 Player.log 대비 새 모양 8개). Use with the 1판 log as base:
+//   node Tools/core-tests/logshape.mjs diff runs/Player.log runs2/Player.log --allow Tools/core-tests/logshape-allow-nl-chat.txt
+PLANNER | trigger decision plan order why | PLANNER APPLY	AIPlanner.cs APPLY line (:528): the answer applied, with its plan steps and order (합의 3e, 5433992) — planned new line
+PLANNER | trigger decision order why | PLANNER APPLY	same APPLY line for keep / hold / ask (no plan field) — planned new format
+PLANNER |  | PLANNER LLM	AIPlanner.cs :188 "upper LLM unavailable" (F7 path; the bridge was turned off on purpose in the run) — existing line, first seen
+GOAL cleared | rev | GOAL LLM	AIGoals.cs :57 GOAL cleared, why text from the member-less /ai stop (F3) that names the upper LLM — situation
+DECISION ## HTTP # | net error | DECISION HTTP	AIBrain.Loop.cs :792 action judge HTTP failure (503 from the Decisions API), unchanged code — situation
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion set players | DECISION SEND	AIBrain.Loop.cs :764 SEND with the players field (AITeammates, another player in view) together with a _setLog field, unchanged code — situation
+TEST-ONLY arena go |  | TEST-ONLY	AICombat.cs :900 test command used in the run (testcmds.on)
+TEST-ONLY arena spawn |  | TEST-ONLY	AICombat.cs :931 test command used in the run (testcmds.on)
+// 재검수 작은 지적 9 (9-재검수.md): 1판 대비 3판(9d3ea90, 네 캐릭터)에서 나온 기존 코드 줄 두 모양. Base 1판 log, new 3판 log.
+DECISION ## SEND | rev trigger goal candidates inputChars prep motion swarm | DECISION SEND	AIBrain.Loop.cs :764 SEND with a swarm field and no set= / players= (a fight with several enemies, nobody else in view), unchanged code — situation
+SKILL | d d d d d d d d d d | SKILL	TunnelSkill child done with ten items left on the ground (variable list, as the L2 entries; AIBodySkills.cs :2182-2185), unchanged code — situation

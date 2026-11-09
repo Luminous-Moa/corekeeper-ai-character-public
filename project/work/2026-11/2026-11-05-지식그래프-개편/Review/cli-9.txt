@@ -1,0 +1,24 @@
+== B/snapshot/Assets/AIPlayerSpike/Scripts/AIGoals.cs:175-197 sha256=d869e82b8fc04cabe473d68f18cb1a90269805f25c5966d52c9bc2556b39d753
+175:     public static void SetGoal(World server, Entity player, GoalKind kind, ObjectID item, string itemName, int count, string source)
+176:     {
+177:         float now = Time.realtimeSinceStartup;
+178:         var g = new AIGoal { startTime = now, kind = kind, source = source };
+179:         if (kind == GoalKind.Gather || kind == GoalKind.Craft)
+180:         {
+181:             g.item = item; g.itemName = itemName; g.count = math.max(1, count);
+182:             AIBody.InventoryCounts(server, player).TryGetValue(item, out g.startCount);
+183:         }
+184:         if (kind == GoalKind.Store) { g.item = item; g.itemName = itemName; }   // optional: store only this kind
+185:         if (Goal.kind == GoalKind.Free) AIPlayerSpikeMod.Log($"GOAL free time ends after {now - Goal.startTime:F0}s: a goal came ({source})");
+186:         AIExperience.GoalStarting(server, player, Goal.IsReal ? Goal : new AIGoal(), g);   // experience memory: a new goal run (the running one is replaced; free time is none)
+187:         Goal = g;
+188:         SetBlockNote("", false);   // blocks seen for the previous goal are not this goal's (a stale "도구 부족" added a pick step)
+189:         _sd = false; // a goal replaces a self-defence episode
+190:         Revision++; S.GoalRevision++;
+191:         AbortRequest("new goal");
+192:         _needCall = true;
+193:         _needReason = "새 목표";
+194:         _hpAtLastCall = -1;
+195:         AIPlayerSpikeMod.Log($"GOAL set rev={Revision} source={source}: {g.Text} (start count {g.startCount})");
+196:         if (GoalSource.IsHost(source)) AIPlanner.OnHostGoal(g.Text);
+197:     }

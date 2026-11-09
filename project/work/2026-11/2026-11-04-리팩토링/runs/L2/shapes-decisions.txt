@@ -1,0 +1,44 @@
+  2406  ASM-IN ## {} |  | ASM-IN
+  2406  ASM-OUT ## {} |  | ASM-OUT
+  2244  DECISION ## parsed with fallback reader | type choice tokens bodyChars | DECISION
+  2244  DECISION ## ANSWER | choice probs confidence latency running | DECISION ANSWER
+  1972  SKILL |  | SKILL
+  1925  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT APPLY
+  1760  DECISION ## INPUT | rev trigger running motion input | DECISION INPUT
+  1285  DECISION ## SEND | rev trigger goal candidates inputChars prep motion | DECISION SEND
+  1162  SKILL |  | SKILL START
+  1049  SKILL | pos target dist mode stuck | SKILL
+  1048  SKILL | tileHp pos state near | SKILL
+   751  SKILL | reason start end facts | SKILL DONE
+   502  DECISION ## INPUT | rev trigger set running motion input | DECISION INPUT
+   464  DECISION ## SEND | rev trigger goal candidates inputChars prep motion players | DECISION SEND
+   218  SKILL | reason start end facts | SKILL CANCELLED
+   206  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set | DECISION SEND
+   188  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set players | DECISION SEND
+   149  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT QUEUED
+   144  SKILL | d | SKILL
+   136  DECISION ## queued answer APPLY at skill end |  | DECISION APPLY
+   131  SKILL | me myHp d hp | SKILL
+   108  DECISION ## SEND | rev trigger goal candidates inputChars prep motion set swarm | DECISION SEND
+    98  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT HOLD
+    97  SWITCH |  | SWITCH
+    85  DECISION ## held switch APPLY |  | DECISION APPLY
+    84  SKILL | reason start end facts wall | SKILL DONE
+    72  DECISION ## RESULT | choice top confidence latency tokens cached cost | DECISION RESULT DISCARD
+    47  SKILL | hp d | SKILL
+    46  DECISION ## FULL | input | DECISION FULL
+    40  SKILL | reason start end facts wall | SKILL CANCELLED
+    35  SKILL | reason start end facts wall obj hp reduction ore stand tool slot | SKILL DONE
+    18  SKILL | reason start end facts | SKILL FAILED
+    15  DECISION ## dropped |  | DECISION
+    14  SKILL | reason start end facts wall | SKILL FAILED
+    13  DECISION ## queued answer dropped |  | DECISION
+    12  SWITCH |  | SWITCH REVERSAL
+    11  DECISION ## SEND | rev trigger goal candidates inputChars prep motion swarm | DECISION SEND
+     7  DECISION ## held switch dropped |  | DECISION
+     6  DECISION ## held switch replaced by ## |  | DECISION
+     3  DECISION ## HTTP # | net error | DECISION HTTP
+     3  SKILL | reason start end facts emptyInFirst40 items equipped | SKILL DONE
+     1  SKILL | d d d | SKILL
+     1  SKILL | d d d d d | SKILL
+     1  SKILL | d d d d d d | SKILL

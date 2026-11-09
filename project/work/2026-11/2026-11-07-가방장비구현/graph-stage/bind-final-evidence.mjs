@@ -1,0 +1,9 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const stage=path.dirname(fileURLToPath(import.meta.url)),P='work/2026-11/2026-11-07-기획연결',file=path.join(stage,P,'source.mjs');let s=fs.readFileSync(file,'utf8');
+if(!s.includes('R.bag-source-export'))s+=`
+// Completed bounded review/build evidence, separate from official integration or live-game acceptance.
+Object.assign(documents,{bagFinalImplementation:{layer:'참고',path:'../2026-11-07-가방장비구현/tree-implementation.md'},bagFinalValidation:{layer:'참고',path:'../2026-11-07-가방장비구현/tree-validation.md'},bagFinalReview:{layer:'참고',path:'../2026-11-07-가방장비구현/review-tree.md'},bagRuntimePlan:{layer:'참고',path:'../2026-11-07-가방장비구현/tree-runtime-plan.md'}});
+nodes.push(n('R.bag-review','741 트리 소스·오프라인 및 빌드 근거 독립 검수','참고·독립검수 통과, 공식반영/실게임 미수용','별도 고정 checkout의 메뉴394/0·연결102/102·compile0/0과 소스/상한 경계를 검수했다. Core1204/protocol118/Loop55/primitive67은 b1 독립 실행과 입력 불변 대응으로 구별한다. Unity/source export의 완료 로그·해시도 대조했다.','bagFinalReview','# 가방·장비 선택 트리 독립 검수'),n('R.bag-source-export','741 자체 Unity 컴파일과 설치 없는 SDK 소스 후보','참고·Unity exit0/source SDK export, 미설치·미실게임','101 C#와 manifest의 source 후보이며 런타임 설치나 바이너리 릴리스가 아니다. producer/export raw101일치와 review raw92+EOL-only9를 구별한다. 과거774 Unity나 b1 실패를 현재 성공으로 승계하지 않는다.','bagFinalValidation','## 빌드와 배포의 구분',[ev('bagFinalReview','## 741 Unity·SDK 후보 산출물 읽기 대조 완료') ]));
+edges.push(e('R.bag-validation','R.bag-review','참고: 실제 독립 검수와 수용 범위','bagFinalReview','# 가방·장비 선택 트리 독립 검수'),e('R.bag-validation','R.bag-source-export','참고: 같은 SHA의 자체 빌드·source 후보','bagFinalValidation','## 빌드와 배포의 구분'),e('R.bag-navigation','R.bag-review','참고: 새 메뉴 경계 독립 재현','bagFinalReview','# 가방·장비 선택 트리 독립 검수'),e('R.bag-source-export','R.bag-review','참고: 원시 해시·줄끝 차이의 독립 대조','bagFinalReview','## 741 Unity·SDK 후보 산출물 읽기 대조 완료'));
+`;
+fs.writeFileSync(file,s);console.log('Bound completed independent review and 741 Unity/source SDK evidence without live acceptance.');

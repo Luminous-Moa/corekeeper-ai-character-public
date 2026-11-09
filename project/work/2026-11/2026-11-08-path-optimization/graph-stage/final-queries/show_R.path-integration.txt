@@ -1,0 +1,106 @@
+{
+  "node": {
+    "evidence": [
+      {
+        "anchor": "HEAD는 2차 후보",
+        "doc": "pathAcceptance",
+        "end": 5,
+        "line": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+        "sha256": "0555e074a2b3a9ab035afc65c961ae2a831fefc17554c3520f507cad2d85db7a",
+        "start": 5
+      },
+      {
+        "anchor": "Assets/ModSDK/GameVersionRegistry.asset",
+        "doc": "pathDirtyBefore",
+        "end": 3,
+        "line": 3,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/main-dirty-before.json",
+        "sha256": "116e004dca1a8b95bc027f08e99be86f0b7945c6460040adff15b3530556ea72",
+        "start": 3
+      },
+      {
+        "anchor": "\"Unchanged\": true",
+        "doc": "pathDirtyAfter",
+        "end": 4,
+        "line": 4,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/main-dirty-after.json",
+        "sha256": "1d1bae92dcdf895a61c63e003a4efd638a51ef7ff65ccb43eeb275c71047c3da",
+        "start": 4
+      },
+      {
+        "anchor": "## 2차 복원과 최종 사용자 설치",
+        "doc": "pathLiveFinal",
+        "end": 104,
+        "line": 98,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "sha256": "5c11461c55028c37133fc3d976fe8710831d7ed8b2fdc878039da9138c02f458",
+        "start": 98
+      },
+      {
+        "anchor": "\"installedHash\"",
+        "doc": "pathInstalled",
+        "end": 5,
+        "line": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/final-installed-compare.json",
+        "sha256": "1dbbb5fe2d227c0bb53d950882deea9d9b8ff02094efbe7111984978cf9e83f1",
+        "start": 5
+      }
+    ],
+    "id": "R.path-integration",
+    "layer": "참고",
+    "sourceLocations": [
+      {
+        "end": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+        "start": 5
+      },
+      {
+        "end": 3,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/main-dirty-before.json",
+        "start": 3
+      },
+      {
+        "end": 4,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/main-dirty-after.json",
+        "start": 4
+      },
+      {
+        "end": 104,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/live-final.md",
+        "start": 98
+      },
+      {
+        "end": 5,
+        "path": "../2026-11-08-path-optimization/graph-stage/source-pins/final-installed-compare.json",
+        "start": 5
+      }
+    ],
+    "status": "참고·공식 소스 통합·최종 설치 확인",
+    "summary": "HEAD가 대표 실기를 수용하고 공식 소스를43c3817로 fast-forward 통합했다. 정본 담당이 Git HEAD를 확인했고 기존 dirty 파일은 HEAD의 전후 기록에서 내용 보존을 확인했다. 시험 자료를 복원한 뒤 모드만43c3817로 최종 설치했다. 설치116개 소스 SHA가 일치하며 AI자료·세이브·레지스트리·시험스위치는 시험 전과 같다. 최종 재설치 후 게임은 다시 실행하지 않았다.",
+    "title": "공식 ai-character43c3817 통합과 기존 환경 변경 보존",
+    "type": "기획 참고"
+  },
+  "out": [],
+  "in": [
+    {
+      "class": "해석",
+      "evidence": [
+        {
+          "anchor": "HEAD는 2차 후보",
+          "doc": "pathAcceptance",
+          "end": 5,
+          "line": 5,
+          "path": "../2026-11-08-path-optimization/graph-stage/source-pins/head-acceptance.md",
+          "sha256": "0555e074a2b3a9ab035afc65c961ae2a831fefc17554c3520f507cad2d85db7a",
+          "start": 5
+        }
+      ],
+      "from": "P.path-optimization",
+      "id": "E216",
+      "kind": "참고: 공식 통합과 환경 보존",
+      "to": "R.path-integration",
+      "type": "reference"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+ "status": 200,
+ "body": {
+  "ok": true,
+  "member": "claude",
+  "cli": "claude",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "ms": 4200,
+  "report_id": 7,
+  "goal_rev": 3,
+  "answer": {
+   "decision": "set",
+   "for": {
+    "report": 7,
+    "goal_rev": 3
+   },
+   "goal": {
+    "do": "gather",
+    "item": "Wood",
+    "count": 10000000000
+   }
+  },
+  "raw": "",
+  "error": null,
+  "detail": null,
+  "prompt_chars": 9000,
+  "turn_chars": 4000,
+  "answer_chars": 120,
+  "usage": null,
+  "usage_last": null,
+  "stderr_api_override": false,
+  "calls": 1,
+  "searches": 0,
+  "index_chars": 800,
+  "prefetch_used": false,
+  "recall_summary": ""
+ }
+}

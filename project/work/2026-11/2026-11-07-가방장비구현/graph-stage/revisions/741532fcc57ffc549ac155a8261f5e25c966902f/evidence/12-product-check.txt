@@ -1,0 +1,1262 @@
+{
+  "ok": true,
+  "structuralErrors": [],
+  "stale": [],
+  "baselineDrift": {
+    "baseline": "741532fcc57ffc549ac155a8261f5e25c966902f",
+    "workingTreeHead": "c4a0f5e38016c79567f880bbaea5e56e0eeae347",
+    "warning": "기준 이후 작업트리 HEAD 변경. 고정 snapshot 원문 조회는 유효함."
+  },
+  "validation": {
+    "D1": {
+      "matches": [
+        {
+          "basis": "submitted command and state-list source correspondence",
+          "command": "/ai",
+          "evidence": [
+            "../2026-11-05-지식그래프-실화면/A1/observations.json",
+            "../2026-11-05-지식그래프-실화면/A1/04-ai-help.png",
+            "../2026-11-05-지식그래프-실화면/B/existing-node-mapping.json"
+          ],
+          "featureId": "slash:ai",
+          "inputId": "CKAI-02#3",
+          "observation": "A1/04-ai-help",
+          "outputId": "CKAI-02#2-7",
+          "runtimeTrace": false
+        },
+        {
+          "basis": "independent user flow repeat; state-list visual confirmation",
+          "command": "/ai",
+          "evidence": [
+            "../2026-11-05-지식그래프-실화면/C3/flow-check.md",
+            "../2026-11-05-지식그래프-실화면/C3/04-ai-response.png"
+          ],
+          "featureId": "slash:ai",
+          "inputId": "CKAI-02#3",
+          "observation": "C3/04-ai-response",
+          "outputId": "CKAI-02#2-7",
+          "runtimeTrace": false
+        }
+      ],
+      "reconciliation": [
+        {
+          "action": "partial-inference-supplement; preserve A4 source",
+          "canonicalId": "CORE-01",
+          "sourceId": "CKAI-CORE-01"
+        },
+        {
+          "action": "partial-inference-supplement; preserve A4 source",
+          "canonicalId": "JOURNEY-01",
+          "sourceId": "CKAI-JOURNEY-01"
+        },
+        {
+          "action": "observed-screen-supplement; preserve old HTTP and A4 source",
+          "canonicalId": "IA-01",
+          "sourceId": "CKAI-IA-01"
+        },
+        {
+          "action": "C activity adopts A4 same purpose, preserves detours, refines executable flow after C3",
+          "canonicalId": "CKAI-ACT-01",
+          "sourceId": "CKAI-ACT-01"
+        }
+      ],
+      "structuralErrors": [],
+      "unexecuted": [
+        {
+          "command": "/ai Claude",
+          "evidence": "../2026-11-05-지식그래프-실화면/A1/observations.json",
+          "reason": "draft cancelled; not a request"
+        },
+        {
+          "commands": [
+            "/ai inv",
+            "/ai mem",
+            "/ai goal"
+          ],
+          "reason": "code-only branches, not executed"
+        }
+      ],
+      "unmatched": [
+        {
+          "id": "CKAI-01#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-01#1-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-01#1-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#1-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#1-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-02#2",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-1",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-2",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-3",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-4",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-5",
+          "reason": "전투/기존 로그: 관측만 있음; 변경 실행판의 특정 실행 함수로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-02#2-6",
+          "reason": "게임 채팅 에코; 모드 Reply 출력으로 매칭하지 않음"
+        },
+        {
+          "id": "CKAI-03#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#4-5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#6",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#7",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#8",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#9",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#10",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#10-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#10-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#11",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-03#12",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#6",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-6",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-7",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-8",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-9",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKHUD-01#5-10",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#2",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#2-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#3",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#3-1",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#4",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        },
+        {
+          "id": "CKAI-04#5",
+          "reason": "게임 본체 표시·메뉴·플레이어 관리·HUD/이름표; 모드 추출 범위에 renderer/조작 입구 없음"
+        }
+      ]
+    },
+    "D2": {
+      "frontBoundary": "게임 ChatSendMessage를 모드 hook으로 가로챔. 게임 프론트 코드와 HTTP/IPC/실행 trace 없음.",
+      "observedFeatures": [
+        "slash:ai"
+      ],
+      "observedInput": "CKAI-02#3",
+      "staticEntry": "code:Assets/AIPlayerSpike/Scripts/AIPlayerSpikeMod.Chat.cs#AIPlayerSpikeMod.TryHandleChatCommand(string)",
+      "unobservedFeatures": [
+        "ai-bridge:startup:bridge.mjs.module",
+        "cli:HeadlessSdk.BuildAndInstall",
+        "cli:HeadlessSdk.CompileCheck",
+        "cli:HeadlessSdk.CreateMod",
+        "cli:HeadlessSdk.ImportGameFiles",
+        "hook:AIChatScreenLayer.OnGUI",
+        "hook:AIInfoPanel.OnGUI",
+        "hook:AIPlayerSpikeMod.CanBeUnloaded",
+        "hook:AIPlayerSpikeMod.EarlyInit",
+        "hook:AIPlayerSpikeMod.Init",
+        "hook:AIPlayerSpikeMod.ModObjectLoaded",
+        "hook:AIPlayerSpikeMod.Shutdown",
+        "hook:AIPlayerSpikeMod.Update",
+        "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+        "hook:AIPlayerSpikePatches.ChatSendPrefix",
+        "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+        "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+        "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+        "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+        "hook:ThinClientDriverConstructor.CreateClientDriver",
+        "hook:ThinClientDriverConstructor.CreateServerDriver"
+      ],
+      "verdict": "A1와 C3 입력/출력 및 B 동일 소스 구간 대조. 런타임 함수 coverage 또는 죽은 코드 판정 아님."
+    },
+    "D4": {
+      "corePolicyReview": "기존 정책·의도 유지; A2 표시규칙 후보 6개 지위 유지. C/통합기획.md",
+      "elementsWithFeatureButNoActivity": [],
+      "journey": "C3 흐름 성공/부분 이해를 C4 반영. 새 활동 다음 활동 ID 없음; 기존 저니 필수 단계로 추가하지 않음",
+      "navigation": "실제 Return/Escape 및 A3 플레이어 관리 진입 관측. 게임 navigate 코드 외부 경계; 동선 부재로 판정하지 않음",
+      "screenPolicy": "A2 manifest 표시규칙을 동일 문자열로 적재; 문서 화면 정책 절을 source로 연결",
+      "screensWithoutActivity": [
+        "BRG-01",
+        "BRG-04",
+        "BRG-05"
+      ]
+    },
+    "D5": {
+      "correctionRule": "원본/파서 수정 후 재생성. JSON 직접 수정 금지",
+      "notObserved": [
+        "전체 게임 상태",
+        "목표/가방/기억 명령",
+        "캐릭터 저장·재입장",
+        "실제 함수 trace",
+        "전체 전투판 코드 추출"
+      ],
+      "remaining": [
+        "CKAI-C-U01 명령 발견 경로",
+        "CKAI-C-U02 동료 귀속·목표/행동 구분",
+        "CKAI-C-U03 메시지 가독성·보존",
+        "CKAI-C-U04 휠 입력 부수 효과",
+        "CKAI-C-U05 조회 부수 효과"
+      ]
+    },
+    "bagImplementation": {
+      "acceptance": "격리 체크포인트. 독립검수·최종 수용·공식 적용은 별도 HEAD 판단이다.",
+      "accepted": false,
+      "checkpoint": true,
+      "commonExecutionCommit": "685dde4d27dd91a782a14d8ae33fb576160fa578",
+      "connectedSourceCorrespondence": {
+        "allMatch": true,
+        "boundary": "Raw working tree hashes attest fixture inputs. Snapshot is exact git blob; CRLF/LF normalization is used only to compare those source texts. No game/runtime loading claim.",
+        "files": [
+          {
+            "fixtureRawSha256": "e5b15ec6ca77dd1ab893c6e0bb347c88fa855254736df4d133c7b7367111ad16",
+            "path": "AIInventory.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "fdd10554eceb7896f3e18c4d12cb5ebf680f7ced7bc257ed8459e53742f74bf0",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "fa493a7a04bb94219fd813e0d15b33689e1b34f4ca3411bfeeb25c233e4cf591",
+            "path": "AIInventoryMenu.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "fa493a7a04bb94219fd813e0d15b33689e1b34f4ca3411bfeeb25c233e4cf591",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "2c5aa145473060edc33d8a5faf00fa3b72e0e1940ca13ee8afdc494ae78e1b53",
+            "path": "AIBrain.Loop.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "5018373ff1429fabab16bec5d49a254577b78f0bd15fbc78ade59464f7d83805",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "0108b325118bb5600dbe0b97695a46ef566facd91ecfd9c3a88cc638d09f1460",
+            "path": "AIBrain.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "5e51a7f5299a1d0f72028929802d4400537542ce0ee90e5879f4d32774e00163",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "754a785d1cffc1c5b5680b6ab45ad94360983aac613927d996e7c1ac2e0a33d8",
+            "path": "AIActions.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "565281020b51ab0c3060b4532c523fbe9485ebe8962196f7d747ce1b7bc170a0",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "2c0ecd8fc0a08352fe954d171b135dc477fde06902128da0f8d030af603de0f8",
+            "path": "AIDecisions.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "15d673c797402c9c49164d2bc3c8af71261d7c27c39393c1f383b885ad98ff3b",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "4c2911ba76f613434754fd0ac43ea6e814d8c91cc9d34a834176f2b0a6fa0cc5",
+            "path": "Core/AIInventoryRules.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "9976f68c5e67c6e52f09c318fe8612a023648e714d6e2f912518818fd12231ec",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "9212a065fec8c3c17ee8cb6cb746dffa94a8641a0b1115df6e1f0041e89d69e9",
+            "path": "Core/AIHostOrders.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "8bd324df66a58d5abbef0f968067778b899eaf740714debf7dec07daa2ef67de",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "269929b7a72d3a0a79c2dd877ee8a3e2e4d4863abb172bd9627b153697661ac7",
+            "path": "Core/AIPlanRules.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "45d9f759676588d6e2c1177c18980cf1454ce086e03be1b92550ac2c93e4d684",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "76422133c2d00f13bce521ca166d147617db8bb544d63c3e660e275781420fc8",
+            "path": "Core/AIGoalKinds.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "915186d45a44f4ded72cdcbf78096df201a4bb67eb53da3999dbf813dd93f2b7",
+            "textMatchesGitBlobAfterEolNormalization": true
+          },
+          {
+            "fixtureRawSha256": "86105f10b67903f73f19d7e5cd01cb41230cef181306214148a031872b2255f3",
+            "path": "Core/AIRunGate.cs",
+            "rawMatchesFixture": true,
+            "snapshotBlobSha256": "852b623c8a90bc66422e80419b51dec79fe483d8ac0654cd46051ad82fcab297",
+            "textMatchesGitBlobAfterEolNormalization": true
+          }
+        ],
+        "fixtureSourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+        "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f"
+      },
+      "currentSourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+      "evidenceKind": "compile/offline/source-review; not live game",
+      "gameConsumerExecuted": false,
+      "historicalFlatFeatureCommit": "309522644543f196348e642b0e8c352acc4ba918",
+      "inputs": [
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "agreement.md",
+          "kind": "사용자 합의 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/agreement.md",
+          "sha256": "0ce0661b37dc40b2fb26a3a5623c5964ba8dca60adad82a3eac5a63215d37886",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/agreement.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-agreement.md",
+          "kind": "사용자 합의 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-agreement.md",
+          "sha256": "6cd580bcfe94c7bc56b429721afddfee8cde92372a0fc38f2069667592ecf811",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-agreement.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-spec.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-spec.md",
+          "sha256": "dce9decb47ed57c9c6e7278a86302b90456020d0bafdce627f238bda960b200e",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-spec.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "inventory-category-cap-audit.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/inventory-category-cap-audit.md",
+          "sha256": "28aacd933901811340ecd3382fdd0382e82367a4ac6b46dbc29e88769d3f23a0",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/inventory-category-cap-audit.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "cap-removal-spec.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/cap-removal-spec.md",
+          "sha256": "4325181e4c12e68868885119715fb2e7d806674acaf7ec5b167e6537246ec1b0",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/cap-removal-spec.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-cap-result.md",
+          "kind": "명세·정적 조사/구현 범위 기록",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-cap-result.md",
+          "sha256": "e6beff71f9fc00e558d885a0e4dfef2cb961461328a5c383f670e17da21a9a10",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-cap-result.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-design-review.md",
+          "kind": "설계 독립검토;구현 수용 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-design-review.md",
+          "sha256": "1086ec282712a2810efc208d0637590fed272cb1a1498148b258993eb17bd46f",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-design-review.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-checkpoint-compile.log",
+          "kind": "생산자 체크포인트 오프라인 검사;b1 원검사(역사적 로그)",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-checkpoint-compile.log",
+          "sha256": "1f509bff2519018b963f90f07c94621e6ba88810bc3e13cbb63f1fd51cc36d76",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-checkpoint-compile.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-checkpoint-core.log",
+          "kind": "생산자 체크포인트 오프라인 검사;b1 원검사(역사적 로그)",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-checkpoint-core.log",
+          "sha256": "7398eb389f2f2f37b337310ad4c43c8ee11d2a71dbdeb6e0bd92b4895465415d",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-checkpoint-core.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-checkpoint-protocol.log",
+          "kind": "생산자 체크포인트 오프라인 검사;b1 원검사(역사적 로그)",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-checkpoint-protocol.log",
+          "sha256": "66908eb26e9acd3e75f4fe14135030f36020baf65f7e3eb1c42d9fa2f944a1ed",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-checkpoint-protocol.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-loop-execution.log",
+          "kind": "실제 Loop/공통 입구 소스 링크 검사;World/모델 대역;b1 원검사(역사적 로그)",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-loop-execution.log",
+          "sha256": "d721349dc5dc4a3ddf450e10244a3d556614d09d193b6ff3e5c41347077a17af",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-loop-execution.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-menu-adapter/results.log",
+          "kind": "메뉴·Inventory 소스 링크 단독 어댑터;게임 소비자 미실행;b1 원검사(역사적 로그)",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/results.log",
+          "sha256": "be3729f5c380e0aa1e61785c8dbe4dd0742742295d96b668137c8d0c78fa68d8",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/results.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/payloads.json",
+          "kind": "현재 노드 메뉴 샘플;단독 어댑터 구성;실제 모델 호출 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/payloads.json",
+          "sha256": "ec3c9f0a221b36451cf93e2294ab2fcd924930eb9a56d37ec605d4b5cd6d7836",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/payloads.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/Program.cs",
+          "kind": "단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/Program.cs",
+          "sha256": "d6d555ca3ddf721bebc0af12ae76be523d9074a60d755040ae2d70bb45095039",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/Program.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/Stubs.cs",
+          "kind": "단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/Stubs.cs",
+          "sha256": "2f6a29203ec4dc60b08f6100eca780eb7f79298adccaf7f5b65f9463eb96b2a6",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/Stubs.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/TreeMenu.csproj",
+          "kind": "단독 메뉴 소스 링크 재현 fixture;제품 git 소스와 구별",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/TreeMenu.csproj",
+          "sha256": "022d3aafbb9feeb36b2e45c869ce271725c20e1dc6fb34e22c7ea01a0cdbda91",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/TreeMenu.csproj"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-menu-engine.md",
+          "kind": "소스 모듈 설명/현재 노드 예시;실게임 근거 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-engine.md",
+          "sha256": "b1adbfa7790718cf59ecab247deceae4003ba32891dcdad00029407d89a82cb3",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-engine.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": false,
+          "file": "tree-menu-payload-example.md",
+          "kind": "소스 모듈 설명/현재 노드 예시;실게임 근거 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-payload-example.md",
+          "sha256": "422d77f017192381421845387f081b7c7946bf1fdc2e393564d93fff525594e7",
+          "sourceCommit": null,
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-payload-example.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-adapter/role-results.log",
+          "kind": "741 생산자 단독 메뉴 역할 회귀348/0;원326과 별도",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-adapter/role-results.log",
+          "sha256": "385654c715ae9bf422b62b6c2b3025ae1462cd5802c531f5592ad9168a45fcb8",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-adapter/role-results.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-menu-role-compile.log",
+          "kind": "741 생산자 컴파일0경고·0오류",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-menu-role-compile.log",
+          "sha256": "b1c801c6ec07e71874b9fb531a0bb9722422682a2144992d37298784612ce6f2",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-menu-role-compile.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/run.ps1",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/run.ps1",
+          "sha256": "27022b08598afdb54892cdc99b527db1b6a9c928ab5696c0e1464340c539cf52",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/run.ps1"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/Connected.csproj",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/Connected.csproj",
+          "sha256": "db0f80e9fda37ca19235ad9bf46abd39d88cc3f0bcf7299522f746bef74d40e7",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/Connected.csproj"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/Program.cs",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/Program.cs",
+          "sha256": "4c2da8adad4d2241a7ae97b27f09c273e150b539d3c6842f177c586ed42d539b",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/Program.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/Stubs.cs",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/Stubs.cs",
+          "sha256": "f76938bc2964373dcfd60281cbf0da0bf1962e3bc49d790b32648e5718022b6e",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/Stubs.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/Boundary.cs",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/Boundary.cs",
+          "sha256": "08f318fb44afa565f28130c4666ec27d2e0a4785940d2ada59c3198e5ca4b82f",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/Boundary.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/Production.cs",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/Production.cs",
+          "sha256": "b213ae79ce018af30f7a5e7e7fe8fdfd6b5bcb52bac6873cc6bd992ea2d85074",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/Production.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/source-pin.json",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/source-pin.json",
+          "sha256": "5ae97522ddd0ed4ebbdd3740dd6929268a237d4b577b7863dc3edf2cd3d56bb3",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/source-pin.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/results.log",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/results.log",
+          "sha256": "b6f994976f8df74ac50a057b510fc74dc74c2fbd10c8e3517ee33315c531cad2",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/results.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-connected/connected-trace.json",
+          "kind": "741 실제 메뉴+공개surface/BuildJson+실제Apply/registry+InventorySkill 연결검사;대역World/소비상태",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-connected/connected-trace.json",
+          "sha256": "bebb200f61efa9e3f355e17f55f210070884365a320a8d9b72e5ca62d96325d9",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-connected/connected-trace.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-implementation.md",
+          "kind": "현재 고정판 구현/검증/실게임 준비 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-implementation.md",
+          "sha256": "920250a73e3821bf24576886bee8db84e01470d0c9e3168ed88208423af6b3a6",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-implementation.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-validation.md",
+          "kind": "현재 고정판 구현/검증/실게임 준비 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-validation.md",
+          "sha256": "7ebbd8cbfbeb3511ddfa65686c3617c49fcadcb297791aaf4c05ecef999b89ad",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-validation.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-runtime-plan.md",
+          "kind": "현재 고정판 구현/검증/실게임 준비 원문",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-runtime-plan.md",
+          "sha256": "df99966f37f2e29ced304d8d66de9514e1cfed3d4e2d2a6890504632ab0ca140",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-runtime-plan.md"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-final-unity-input.json",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-final-unity-input.json",
+          "sha256": "a551413fc37856ac06bd664ed1c726641e1a5a046761bb05781e125d27a3a34d",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-final-unity-input.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-final-unity-exit.json",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-final-unity-exit.json",
+          "sha256": "d0c0d3478d8ecf64cdeed09c4418e1c1701035aae87b191c96012ce8645bf1f9",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-final-unity-exit.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-final-unity-export.log",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-final-unity-export.log",
+          "sha256": "c9e1b2f5f5e7830d5d071d3a774d602b5f0f4de0b5684f4da17a8b9fbbf9789f",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-final-unity-export.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-artifact-manifest.json",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-artifact-manifest.json",
+          "sha256": "2d2c94fda2503ba3045bb7e361d04f588009d95b0c77c268f71e85e3a57fb975",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-artifact-manifest.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-package.json",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-package.json",
+          "sha256": "21c5195abff937be72e228e90e1b4f6d0bd37794728725a807f31852f51f3687",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-package.json"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "BagCandidateExport.cs",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/BagCandidateExport.cs",
+          "sha256": "2d0485fcee977b9db749269f01115690628fbc41e3ef7b3dc2fc79b6b6bc1a22",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/BagCandidateExport.cs"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "tree-validation-continuity.json",
+          "kind": "741 Unity compile+설치없는SDK source export;101 .cs와manifest,바이너리배포/실게임 아님",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/tree-validation-continuity.json",
+          "sha256": "d1ce6506e1e191cbb7460200ba262b42690b3f1b0d55694898c5ca68d99ebd91",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/tree-validation-continuity.json"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\compile-741.log",
+          "evidenceAppliesToFinalRevision": true,
+          "file": "independent-review/compile-741.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/compile-741.log",
+          "sha256": "99bbdad7cd11f477f54ea81e24405393f46f12c961c708af733bb951c84daf7d",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/compile-741.log"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\menu-741.log",
+          "evidenceAppliesToFinalRevision": true,
+          "file": "independent-review/menu-741.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/menu-741.log",
+          "sha256": "c103688d2560c4e3168944384fa78fa48380307ebb44024df1c9956d84de2dd3",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/menu-741.log"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\connected.log",
+          "evidenceAppliesToFinalRevision": true,
+          "file": "independent-review/connected.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/connected.log",
+          "sha256": "394f549f8280b20bfff482fbe017f6533d9443881af7970962811c5be4307cf4",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/connected.log"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\741532f-input-pin.json",
+          "evidenceAppliesToFinalRevision": true,
+          "file": "independent-review/741532f-input-pin.json",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/741532f-input-pin.json",
+          "sha256": "444f945fa5d92d60d5001c52cb84670927f6107cd7f93516eeaf7d49dd10582a",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/741532f-input-pin.json"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\export-source-verification.json",
+          "evidenceAppliesToFinalRevision": true,
+          "file": "independent-review/export-source-verification.json",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/export-source-verification.json",
+          "sha256": "41f9d4ef8e3455995283abc6a160445c19cda68b640d3db412e8e04b55b7123f",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/export-source-verification.json"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\core.log",
+          "evidenceAppliesToFinalRevision": false,
+          "file": "independent-review/core.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/core.log",
+          "sha256": "5485151db7ed3f715cab4ab8e855e1ddb171a02a324e14f38a19e825148063ea",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/core.log"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\protocol.log",
+          "evidenceAppliesToFinalRevision": false,
+          "file": "independent-review/protocol.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/protocol.log",
+          "sha256": "16cfbe91aa70b5f471b6e45d0f95b7bc61b2d7bbe05f125c49782df269f22544",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/protocol.log"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\execution.log",
+          "evidenceAppliesToFinalRevision": false,
+          "file": "independent-review/execution.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/execution.log",
+          "sha256": "f2c37098ca6272bab269e649b371717cab45fda0a11b8519d719c53e34b3145f",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/execution.log"
+        },
+        {
+          "absolutePath": "C:\\Dev\\CoreKeeperModSDK-bag-review-tree\\review-repro\\primitive.log",
+          "evidenceAppliesToFinalRevision": false,
+          "file": "independent-review/primitive.log",
+          "kind": "독립 검수 원로그/입력 대응;생산자348과394를 합산하지 않음",
+          "originalPath": "C:/Dev/CoreKeeperModSDK-bag-review-tree/review-repro/primitive.log",
+          "sha256": "c6ab31eae48434c5c5e3ad48599ccf3b1172509619b7addb6b291f1d898bd16b",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/independent-review/primitive.log"
+        },
+        {
+          "evidenceAppliesToFinalRevision": true,
+          "file": "review-tree-741.md",
+          "kind": "741 불변 독립 검수 사본;코드/오프라인/빌드PASS,새공식직접적용불가·통합대기·graph최종수용미완료",
+          "originalPath": "C:/Dev/.head/sessions/코어키퍼-AI-캐릭터/work/2026-11/2026-11-07-가방장비구현/review-tree-741.md",
+          "sha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "stagedPath": "../2026-11-07-가방장비구현/evidence/review-tree-741.md"
+        }
+      ],
+      "liveGameObserved": false,
+      "schemaVersion": 1,
+      "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+      "sourceDocument": "../2026-11-07-가방장비구현/implementation-evidence.json",
+      "validation": {
+        "actualLoop": {
+          "passed": 55,
+          "scope": "실제 Loop/공통 제어 입구 소스 링크;World·모델응답 대역",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce"
+        },
+        "compile": {
+          "errors": 0,
+          "passed": true,
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "warnings": 0
+        },
+        "connectedTrace": {
+          "constructedRequests": 19,
+          "externalModels": 0,
+          "failed": 0,
+          "navigationChoices": 17,
+          "normalSwapRequests": 1,
+          "passed": 102,
+          "scope": "실제 메뉴·surface/BuildJson·Apply/registry·InventorySkill 연결. 대역World·소비상태 수동 공급;완전한 runtime tick/네트워크/게임 소비자 아님",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f"
+        },
+        "core": {
+          "passed": 1204,
+          "scope": "역사적b1 원검사;741 변경은 메뉴파일에 한정",
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce"
+        },
+        "externalModel": {
+          "called": false
+        },
+        "graphReview": {
+          "reviewSha256": "c9b496fb29a1f237614742eb4fef5415d672de79919981116b6c10e729b10a91",
+          "status": "741 provenance 준비읽기 한정;최신 c4+741 통합판 검수 대기"
+        },
+        "independentReview": {
+          "carriedFromB1": {
+            "actualLoop": 55,
+            "core": 1204,
+            "primitive": 67,
+            "protocol": 118,
+            "scope": "b1 독립 실행;741 변경과 관련 입력 불변을 검수자가 대조"
+          },
+          "compile": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "connected": {
+            "failed": 0,
+            "passed": 102
+          },
+          "menu": {
+            "failed": 0,
+            "passed": 394
+          },
+          "passed": true,
+          "scope": "소스·오프라인 검수;Unity/source package 근거 대조. 공식반영·실게임 아님",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f"
+        },
+        "isolatedMenu": {
+          "controlledSelections": 101,
+          "failed": 0,
+          "passed": 348,
+          "scope": "별도 role-results.log. 원326과 독립394를 합산하지 않음;대역World/수동결과",
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f"
+        },
+        "liveGame": {
+          "observed": false
+        },
+        "protocol": {
+          "passed": 118,
+          "sourceCommit": "b1facaaef2afd66af321db66fc4b5d00725af5ce"
+        },
+        "sdkSourcePackage": {
+          "binaryRelease": false,
+          "exportRawMatch": 101,
+          "installed": false,
+          "producerRawMatch": 101,
+          "reviewEolOnly": 9,
+          "reviewRawMatch": 92,
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "sourceFiles": 101,
+          "zipSha256": "5fe44b67281e10778acfe95639f2d40611c8e6b0e62d675e341d7503903fc512"
+        },
+        "unity": {
+          "compileCheckOk": true,
+          "csharpCompilerErrors": 0,
+          "exitCode": 0,
+          "sourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+          "status": "741 자체 컴파일/source export 완료;이전774승계금지"
+        }
+      }
+    },
+    "baseline": {
+      "D1": {
+        "matches": [
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "200",
+            "featureId": "ai-bridge:GET /v1/health",
+            "match": "exact method/path",
+            "method": "GET",
+            "observationId": "OBS-04",
+            "outputId": "BRG-02",
+            "path": "/v1/health",
+            "rawBody": "A/raw/isolated-health.body.txt",
+            "rawHeaders": "A/raw/isolated-health.headers.txt",
+            "rawMeta": "A/raw/isolated-health.meta.json",
+            "runtimeTraceObserved": false,
+            "status": 200,
+            "url": "http://127.0.0.1:18331/v1/health"
+          },
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "400",
+            "featureId": "ai-bridge:POST /v1/plan",
+            "match": "exact method/path",
+            "method": "POST",
+            "observationId": "OBS-06",
+            "outputId": "BRG-04",
+            "path": "/v1/plan",
+            "rawBody": "A/raw/isolated-unknown-member.body.txt",
+            "rawHeaders": "A/raw/isolated-unknown-member.headers.txt",
+            "rawMeta": "A/raw/isolated-unknown-member.meta.json",
+            "requestBody": "A/requests/unknown-member.json",
+            "runtimeTraceObserved": false,
+            "status": 400,
+            "url": "http://127.0.0.1:18331/v1/plan"
+          },
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "500",
+            "featureId": "ai-bridge:POST /v1/plan",
+            "match": "exact method/path",
+            "method": "POST",
+            "observationId": "OBS-07",
+            "outputId": "BRG-05",
+            "path": "/v1/plan",
+            "rawBody": "A/raw/isolated-malformed.body.txt",
+            "rawHeaders": "A/raw/isolated-malformed.headers.txt",
+            "rawMeta": "A/raw/isolated-malformed.meta.json",
+            "requestBody": "A/requests/malformed.json",
+            "runtimeTraceObserved": false,
+            "status": 500,
+            "url": "http://127.0.0.1:18331/v1/plan"
+          }
+        ],
+        "mergeLog": [
+          {
+            "action": "preserve as inference evidence; exclude from authoritative product nodes",
+            "authoritativeId": "JOURNEY-01",
+            "inferredId": "JOURNEY-A-01"
+          },
+          {
+            "action": "preserve as inference evidence; exclude from authoritative product nodes",
+            "authoritativeId": "IA-01",
+            "inferredId": "IA-A-01"
+          },
+          {
+            "action": "preserve as inference evidence; exclude from authoritative product nodes",
+            "authoritativeId": "CORE-01",
+            "inferredId": "CORE-A-01"
+          }
+        ],
+        "structuralErrors": [],
+        "unmatched": [
+          {
+            "classification": "product-http",
+            "clientExitCode": 0,
+            "clientStatus": "404",
+            "method": "GET",
+            "observationId": "OBS-05",
+            "outputId": "BRG-03",
+            "path": "/",
+            "rawBody": "A/raw/isolated-not-found.body.txt",
+            "rawHeaders": "A/raw/isolated-not-found.headers.txt",
+            "rawMeta": "A/raw/isolated-not-found.meta.json",
+            "reason": "No exact declared endpoint. 404 is not a missing feature by itself.",
+            "status": 404,
+            "url": "http://127.0.0.1:18331/"
+          }
+        ]
+      },
+      "D2": {
+        "observedFeatures": [
+          "ai-bridge:GET /v1/health",
+          "ai-bridge:POST /v1/plan"
+        ],
+        "unobservedFeatures": [
+          "ai-bridge:startup:bridge.mjs.module",
+          "cli:HeadlessSdk.BuildAndInstall",
+          "cli:HeadlessSdk.CompileCheck",
+          "cli:HeadlessSdk.CreateMod",
+          "cli:HeadlessSdk.ImportGameFiles",
+          "hook:AIChatScreenLayer.OnGUI",
+          "hook:AIInfoPanel.OnGUI",
+          "hook:AIPlayerSpikeMod.CanBeUnloaded",
+          "hook:AIPlayerSpikeMod.EarlyInit",
+          "hook:AIPlayerSpikeMod.Init",
+          "hook:AIPlayerSpikeMod.ModObjectLoaded",
+          "hook:AIPlayerSpikeMod.Shutdown",
+          "hook:AIPlayerSpikeMod.Update",
+          "hook:AIPlayerSpikePatches.CharacterDataPostfix",
+          "hook:AIPlayerSpikePatches.ChatSendPrefix",
+          "hook:AIPlayerSpikePatches.ServerNetworkUpdatePrefix",
+          "hook:AIPlayerSpikePatches.SpawnLambdaPostfix",
+          "hook:AIPlayerSpikePatches.SpawnLambdaPrefix",
+          "hook:AIPlayerSpikePatches.UnloadWorldsPrefix",
+          "hook:ThinClientDriverConstructor.CreateClientDriver",
+          "hook:ThinClientDriverConstructor.CreateServerDriver",
+          "slash:ai"
+        ],
+        "verdict": "요청 메서드/경로의 정적 입구와 응답 관측을 대조. 실행 trace/게임 프론트 조작 연결은 미관측; 죽은 코드로 단정하지 않음"
+      },
+      "D4": {
+        "corePolicyReview": "C 원문 기반 판정 및 C 확인 목록 참조; 문자열 비교로 의미 충돌을 판정하지 않음",
+        "elementsWithFeatureButNoActivity": [],
+        "journey": "활동 다음 순서와 저니는 C 원문으로 대조; 실제 게임 동선 확인 유예",
+        "navigation": "HTTP 출력/게임 화면 미관측 범위는 navigate 동선 검증 대상 아님. 실화면 확인 유예.",
+        "screenPolicy": "C의 표시 정책 원문/노드 비교는 C 검사 보고와 함께 확인",
+        "screensWithoutActivity": [
+          "BRG-01",
+          "BRG-04",
+          "BRG-05"
+        ]
+      },
+      "D5": {
+        "correctionRule": "문서/추출 규칙 수정 → A/B/C 재적재 → D 재생성. 생성물 직접 수정 금지",
+        "userDeferred": [
+          "게임 화면 탐색/화면 원본·위치 매칭/실게임 처음 사용자 검증"
+        ]
+      }
+    },
+    "supplementalRuntime": {
+      "currentSourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+      "document": "../2026-11-05-지식그래프-실화면/C/refactor-20261106/observations.json",
+      "evidenceAppliesToCurrentRevision": false,
+      "functionTraceObserved": false,
+      "observations": [
+        {
+          "boundary": "Testcmd supplied anvil and bars. This one sequence does not verify every recipe, station path, memory retrieval, goal kind or real-model provider.",
+          "capability": "Actual natural-language plan, place/craft completion and next-goal selection",
+          "developmentCapabilities": [
+            "F.chat-mention",
+            "F.llm-goal",
+            "F.plan-queue",
+            "F.place-goal",
+            "F.craft",
+            "F.exp-memory"
+          ],
+          "id": "RF902-plan-craft-place-next",
+          "status": "observed"
+        },
+        {
+          "boundary": "Upper bridge intentionally stopped at16:57:27. Subsequent upper connection failures are test environment state, not established regression. This scenario does not verify every late response or interruption permutation.",
+          "capability": "Multiple members, host goal replacement and all-stop",
+          "developmentCapabilities": [
+            "F.multi-ai",
+            "F.goal-cmd",
+            "F.host-orders",
+            "F.action-select"
+          ],
+          "id": "RF902-members-stop",
+          "status": "observed"
+        },
+        {
+          "boundary": "Fixture used arena go (also replenishes health/weapon), dig (already clear, walls0) and supplied door. One A* replan after door close was observed; not classified as baseline regression. Does not cover every door ownership/overlap/corridor case. No movetrace CSV was generated: instrumentation is Claude-only and active members were GPT/Gemini. Door timing is supported by Player logs, not frame-level CSV.",
+          "capability": "Remember own door, open, cross, close and arrive",
+          "developmentCapabilities": [
+            "F.my-door",
+            "F.door-pass",
+            "F.place-goal",
+            "F.skill-goto"
+          ],
+          "id": "RF902-own-door",
+          "status": "observed"
+        },
+        {
+          "boundary": "Observed save/reentry subset, not every persistent field or every scenario. Arena testcmd had replaced CopperSword with WoodSword before final save; that difference is not save loss. Trial-world deletion/Cloud cleanup is separately outstanding below.",
+          "capability": "Normal save, complete process exit, same-world reentry and restoration",
+          "developmentCapabilities": [
+            "F.ai-char-save",
+            "F.explore-memory",
+            "F.my-door",
+            "F.multi-ai"
+          ],
+          "id": "RF902-save-reentry",
+          "status": "observed"
+        },
+        {
+          "boundary": "Explosion wall remains a cause candidate; not proven cause, normal outcome or safety-policy success. No same-scene baseline run or complete damage-source trace was supplied. The review did not change code or require a new game run.",
+          "capability": "Death, automatic revival and subsequent goal reassessment",
+          "developmentCapabilities": [
+            "F.vitals",
+            "F.skill-dig",
+            "F.action-select"
+          ],
+          "id": "RF902-down-unclassified",
+          "status": "observed-cause-unresolved-no-new-refactor-blocker-identified"
+        }
+      ],
+      "sameRevision": false,
+      "sourceCommit": "902721ec505df42d74d0b2d245ed34a049faadad",
+      "status": "final-report-synced-cloud-trial-world-deletion-outstanding"
+    },
+    "uiRuntime": {
+      "currentSourceCommit": "741532fcc57ffc549ac155a8261f5e25c966902f",
+      "document": "../2026-11-05-지식그래프-실화면/C/ui-20261106/observations.json",
+      "evidenceAppliesToCurrentRevision": false,
+      "functionTraceObserved": false,
+      "limitations": [
+        "No OS IME composition test",
+        "No simultaneous mouse buttons test",
+        "No extra resolution live test",
+        "No quantitative performance benchmark"
+      ],
+      "observations": [
+        {
+          "boundary": "Actual Korean AI reply 43~44 to24 capture px, 7s+1s fade; input and mention hint remain native size. IME composition not exercised.",
+          "capability": "작은 기본 채팅 출력",
+          "developmentCapabilities": [
+            "F.chat-compact-screen"
+          ],
+          "id": "UI-CHAT-11eb461",
+          "relatedProductFeatures": [
+            "hook:AIChatScreenLayer.OnGUI"
+          ],
+          "status": "observed"
+        },
+        {
+          "boundary": "Skill XP conversion, empty slots, explicit three-slot armor fixture, off/on clearing/restoring. Fixture is test data, not product auto-equip.",
+          "capability": "스킬·착용 장비 읽기",
+          "developmentCapabilities": [
+            "F.ai-info-ui"
+          ],
+          "id": "UI-INFO-11eb461",
+          "relatedProductFeatures": [
+            "hook:AIInfoPanel.OnGUI"
+          ],
+          "status": "observed"
+        }
+      ],
+      "sameRevision": false,
+      "sourceCommit": "11eb461ae122f404acec94563c086b09e002987c",
+      "status": "accepted-bounded-live-verification"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+== ../2026-11-07-가방장비구현/review-integrated.md:1-1 sha256=bda60df20b996d7d9ae8667a4e8266edbdd6faefd348e06da414fc7c8b840fe2
+1: ﻿# 생활·인벤토리 통합판 독립 검수
